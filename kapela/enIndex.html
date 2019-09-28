@@ -1,0 +1,1429 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мандрівна капела</title>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logoBlock">
+                <a href="index.html"><img class="header__logo" src="img/header/kapelaLogo.png"></a>
+                <a href="index.html"><img class="header__logoName" src="img/header/kapelaLogoName.png"></a>
+                <a href="#"><img class="header__about aboutBtn" src="img/header/about.png"></a>
+            </div>
+            <div class="header__menuBtn"><i class="fas fa-bars"></i></div>
+            <div class="header__menuClose wrapper-disabled"><i class="fas fa-times"></i></div>
+            <div class="header__icons">
+                <div class="header__iconsSocial">
+                    <a href="https://www.facebook.com/mandrykapely/" target="_blank"><img class="header__iconsSocial-fb" src="img/header/fbIcon.png"></a>
+                    <a href="https://www.instagram.com/mandrykapely/" target="_blank"><img class="header__iconsSocial-insta" src="img/header/instaIcon.png"></a>
+                    <a href="https://www.youtube.com/channel/UCE9MLCGYTHU7VRGQxAyqOzg?fbclid=IwAR272cZ-fVhxTHhwL8Km7Dpq_-9ipTVXzK5VzrE55sME8saax-UgRbBt0g0" target="_blank"><img class="header__iconsSocial-youtube" src="img/header/youtubeIcon.png"></a>
+                </div>
+                <a href="index.html"><img class="header__iconsLanguage" src="img/header/eng.png"></a>
+            </div>
+            <div class="header__mobile">
+                <div class="header__center">
+                    <div class="header__iconsSocial">
+                        <a href="https://www.facebook.com/mandrykapely/" target="_blank"><img class="header__iconsSocial-fb" src="img/header/fbIcon.png"></a>
+                        <a href="https://www.instagram.com/mandrykapely/" target="_blank"><img class="header__iconsSocial-insta" src="img/header/instaIcon.png"></a>
+                        <a href="https://www.youtube.com/channel/UCE9MLCGYTHU7VRGQxAyqOzg?fbclid=IwAR272cZ-fVhxTHhwL8Km7Dpq_-9ipTVXzK5VzrE55sME8saax-UgRbBt0g0" target="_blank"><img class="header__iconsSocial-youtube" src="img/header/youtubeIcon.png"></a>
+                        <a href="index.html"><img class="header__iconsLanguage" src="img/header/eng.png"></a>
+                    </div>
+                    <a href="#"><img class="header__mobileAbout aboutBtn" src="img/header/about.png"></a>
+                </div>
+            </div>
+            <a href="https://ucf.in.ua/" target="_blank"><img class="header__ukrLogo" src="img/header/ukfLogo.png"></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__content">
+                <img class="main__ukr" src="img/main.png">
+                <div class="main__contentPodorozBlock">
+                    <img class="main__podoroz animated fadeIn" src="img/podoroz.png">
+                </div>
+            </div>
+            <a href="https://ucf.in.ua/" target="_blank"><img class="main__urkLogo" src="img/urkLogo.png"></a>
+        </div>
+        <div class="wrapper__map animated zoomIn">
+            <div class="map__content">
+                <img class="map__map" src="img/map.png">
+
+                <button class="map__button map__button-kyiv"></button>
+                <button class="map__button map__button-lybni"></button>
+                <button class="map__button map__button-romodan"></button>
+                <button class="map__button map__button-kybynci"></button>
+                <button class="map__button map__button-mirgorod"></button>
+                <button class="map__button map__button-garkyshinci"></button>
+                <button class="map__button map__button-poltava"></button>
+                <button class="map__button map__button-kharkiv"></button>
+                <button class="map__button map__button-butenki"></button>
+                <button class="map__button map__button-kobelyaki"></button>
+                <button class="map__button map__button-kremenchuk"></button>
+                <button class="map__button map__button-krykiv"></button>
+                <button class="map__button map__button-loxvica"></button>
+                <button class="map__button map__button-mlini"></button>
+                <button class="map__button map__button-pisky"></button>
+                <button class="map__button map__button-romni"></button>
+                <button class="map__button map__button-zasylya"></button>
+                <button class="map__button map__button-baxmach"></button>
+
+                <span class="map__cityName map__cityName-kyiv"></span>
+                <span class="map__cityName map__cityName-lybni"></span>
+                <span class="map__cityName map__cityName-romodan"></span>
+                <span class="map__cityName map__cityName-kybynci"></span>
+                <span class="map__cityName map__cityName-mirgorod"></span>
+                <span class="map__cityName map__cityName-garkyshinci"></span>
+                <span class="map__cityName map__cityName-poltava"></span>
+                <span class="map__cityName map__cityName-kharkiv"></span>
+                <span class="map__cityName map__cityName-butenki"></span>
+                <span class="map__cityName map__cityName-kremenchuk"></span>
+                <span class="map__cityName map__cityName-loxvica"></span>
+                <span class="map__cityName map__cityName-mlini"></span>
+                <span class="map__cityName map__cityName-romni"></span>
+                <span class="map__cityName map__cityName-baxmach"></span>
+
+                <img class="map__cityIcon map__cityIcon-kyiv" src="img/cityIcons/kyiv.png">
+                <img class="map__cityIcon map__cityIcon-lybni" src="img/cityIcons/lybni.png">
+                <img class="map__cityIcon map__cityIcon-romodan" src="img/cityIcons/romodan.png">
+                <img class="map__cityIcon map__cityIcon-kybynci" src="img/cityIcons/kybynci.png">
+                <img class="map__cityIcon map__cityIcon-mirgorod" src="img/cityIcons/mirgorod.png">
+                <img class="map__cityIcon map__cityIcon-garkyshinci" src="img/cityIcons/garkyshinci.png">
+                <img class="map__cityIcon map__cityIcon-poltava" src="img/cityIcons/poltava.png">
+                <img class="map__cityIcon map__cityIcon-kharkiv" src="img/cityIcons/kharkiv.png">
+                <img class="map__cityIcon map__cityIcon-butenki" src="img/cityIcons/butenki.png">
+                <img class="map__cityIcon map__cityIcon-kremenchuk" src="img/cityIcons/kremenchuk.png">
+                <img class="map__cityIcon map__cityIcon-loxvica" src="img/cityIcons/loxvica.png">
+                <img class="map__cityIcon map__cityIcon-mlini" src="img/cityIcons/mlini.png">
+                <img class="map__cityIcon map__cityIcon-romni" src="img/cityIcons/romni.png">
+                <img class="map__cityIcon map__cityIcon-baxmach" src="img/cityIcons/baxmach.png">
+            </div>
+            <img class="map__infoIcons" src="img/infoIcons.png">
+        </div>
+        <div class="wrapper__about animated">
+            <div class="about__content">
+                <img class="about__closeBtn" src="img/close.png">
+                <iframe class="about__video" width="560" height="315" src="https://www.youtube.com/embed/SB3Wps4oQ-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="about__text">
+                    У липні 1920 року відбувалась велика гастрольна подорож Лівобережною Україною
+                    колективу, що отримав назву &quot;Перша мандрівна капела Дніпросоюзу&quot; і в майбутньому
+                    став основою хорового колективу “Думка” (“Державна українська мандрівна капела”).
+                    Метою діяльності новоствореного колективу було: відродження української народної
+                    пісні, її популяризація, боротьба “з дуже поширеними на Україні хулігансько-лакейськими
+                    піснями”.
+                </p>
+                <p class="about__text">
+                    2003 року до <a target="_blank" href="https://www.facebook.com/vinnytsiamuseum/?__tn__=K-R&amp;eid=ARA61etJ0iOPBvEPx698V_qXx8Ml97x7xOp_DtfVUkbV2BxDCb9gptqNM7b8awkeF7XZfVT6vqHCifV4&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARAkcJaiGYlmpMh6rdT4Qkb5Y9IzGTJT6vBFMxYAjVKbCUxaTvPaerDKIzCymswYQ7FpUgEOrUzPunPQlQDH6jUe-wumZ49mmCmx3eqt2Q6EfJBr0v3QGwBZH2l7Y23HQKBhuWGjUrTfsEfjQPfsywmcJ7MsRcD70IFIhH3-7bhGIOoujfEpVXLCTpzzZo8lZ571J8OUgZTh2u4uOVDJ1hU4ZOBaz_h-7N_8sTBlEwU-ah9Yc9VnHZQtJ_5dXTSah4uMqbVHpJxyAQ8d0JE02JjSYxHXRX-953vJmH0RNvr-xjYkIAtw7TBhhEwjkG_dPH4uoq_d4uVrcmo_XZOVhQQienX9">Вінницький обласний краєзнавчий музей</a> надійшов цілий комплекс
+                    унікальних матеріалів з особистого архіву українського культурного та музичного діяча
+                    20-х років Гната Яструбецького. Серед знайдених документів виявився і рукописний
+                    &quot;Щоденник першої мандрівної капели Дніпросоюзу&quot; відомого українського письменника
+                    Степана Васильченка, який влітку 1920 року супроводжував колектив у мандрівці.
+                    У травні 2019 р. було розпочато роботу над проектом створення інтерактивної онлайн-
+                    мапи &quot;Шляхами мандрівної капели. Розстріляні голоси&quot;, де кожна зупинка матиме
+                    графічну позначку із посиланням на автентичний іконографічний матеріал та відеоролики
+                    з елементами реконструкцій подій подорожі, хорових виступів, локацій.
+                    Проект реалізується за підтримки <a target="_blank" href="https://www.facebook.com/ucf.ua/?__tn__=K-R&amp;eid=ARABFNTAlln2Q5SxS-Apfw-w0yl__aV540fowHhSvdBCkrfKYMcMvebtiZxzddYWawPLo3HEvwWMeznB&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARAkcJaiGYlmpMh6rdT4Qkb5Y9IzGTJT6vBFMxYAjVKbCUxaTvPaerDKIzCymswYQ7FpUgEOrUzPunPQlQDH6jUe-wumZ49mmCmx3eqt2Q6EfJBr0v3QGwBZH2l7Y23HQKBhuWGjUrTfsEfjQPfsywmcJ7MsRcD70IFIhH3-7bhGIOoujfEpVXLCTpzzZo8lZ571J8OUgZTh2u4uOVDJ1hU4ZOBaz_h-7N_8sTBlEwU-ah9Yc9VnHZQtJ_5dXTSah4uMqbVHpJxyAQ8d0JE02JjSYxHXRX-953vJmH0RNvr-xjYkIAtw7TBhhEwjkG_dPH4uoq_d4uVrcmo_XZOVhQQienX9">Український культурний фонд</a> в рамках конкурсної
+                    програми <a target="_blank" href="https://www.facebook.com/cult.produkt.ucf/?__tn__=K-R&amp;eid=ARAOD-sw4SZJnjI6ndp2FwOwT8ve6uXbJc1XI1F6sK7-47o1WiorRj_NT29xO1S91NEuiwEr3kw4-Ra4&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARAkcJaiGYlmpMh6rdT4Qkb5Y9IzGTJT6vBFMxYAjVKbCUxaTvPaerDKIzCymswYQ7FpUgEOrUzPunPQlQDH6jUe-wumZ49mmCmx3eqt2Q6EfJBr0v3QGwBZH2l7Y23HQKBhuWGjUrTfsEfjQPfsywmcJ7MsRcD70IFIhH3-7bhGIOoujfEpVXLCTpzzZo8lZ571J8OUgZTh2u4uOVDJ1hU4ZOBaz_h-7N_8sTBlEwU-ah9Yc9VnHZQtJ_5dXTSah4uMqbVHpJxyAQ8d0JE02JjSYxHXRX-953vJmH0RNvr-xjYkIAtw7TBhhEwjkG_dPH4uoq_d4uVrcmo_XZOVhQQienX9">Створюємо інноваційний культурний продукт - програма УКФ</a>.
+                </p>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-kyiv animated fadeIn" id="1">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/kyiv.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <iframe width="260" height="147" src="https://www.youtube.com/embed/Ar-_I19DNWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="block__infoText">Lots of scientists agree that name “Darnytsia” come from phrase “give a present”.</p>
+                        <p class="block__infoText">
+                            The first mention about Darnytsia as a name of the river was in 1506. It is known that Mykilskyi and
+                            Pecherskyi abbeys of Kyiv were fighting for acres of Darnytsia during years, but the area was faintly
+                            inhabited. Only after Kyiv-Poltava railway construction in the end of XIX century (1899), settlement of
+                            railwaymen was formed around modern Prazka street (so-called Old Darnytsia). In 1896 near current Park
+                            of Partisan’s Honour came to life New Darnytsia village.
+                        </p>
+                        <a href="img/cityInfo/kyiv/PHOTO1.jpg" data-fancybox="imagesKyiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kyiv/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Railway station Darnytsia XX century. Public property
+                        </p>
+                        <p class="block__infoText">
+                            Darnytsia was famous as strategic railway knot, for which there were lots of battles at the beginning of XX
+                            century and during civil war.
+                        </p>
+                        <p class="block__infoText">
+                            The first travelling choral capella of “Dniprosoiuz” went to Left-bank Ukraine for “giving” Ukrainian song as
+                            a present on 12 th of July in 1920.
+                        </p>
+                        <a href="img/cityInfo/kyiv/PHOTO2.jpg" data-fancybox="imagesKyiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kyiv/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            The list of The first travelling choral capella. 1920. Public property
+                        </p>
+                        <a href="img/cityInfo/kyiv/PHOTO3.jpg" data-fancybox="imagesKyiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kyiv/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            The first travelling choral capella of “Dniprosoiuz” 1920. Public property
+                        </p>
+                        <iframe width="260" height="147" src="https://www.youtube.com/embed/hwVhAkIRFtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/kyiv.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-lybni animated fadeIn" id="2">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/lybni.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <iframe width="260" height="147" src="https://www.youtube.com/embed/SmX2l9HNE8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="block__infoText">
+                            За щоденником Степана Васильченка, у Лубнах на початку ХХ ст. діяли місцеві хори. Одним із них був
+                            хор при автокефальній церкві під керівництвом відомого українського композитора Григорія
+                            Давидовського. Серед місцевих, хор славився популярністю і також мав змогу гастролювати
+                            Україною.
+                        </p>
+                        <a href="img/cityInfo/lybni/PHOTO1.jpg" data-fancybox="imagesLybni">
+                            <img class="block__infoPhoto" src="img/cityInfo/lybni/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Лубенський хор разом із кер. Давидовським 1920 р. З архіву Лубенського краєзнавчого
+                            музею
+                        </p>
+                        <p class="block__infoText">
+                            Григорій Митрофанович Давидовський (1866-1952) – хоровий диригент, композитор, співак (тенор),
+                            хпедагог. Організатор і керівник українськиї хорових капел (понад 35-ти), зокрема у рідному селі
+                            Мельня (1888), С.-Петербурзі (1892–1902), Ніцці (1902–03), Ростові-на-Дону (1908; гастролював Росією
+                            до 1917), Москві, Києві (1917–19, 1921), Вінниці (1923–26), Житомирі, Лубнах, Керчі, , Харкові (1944),
+                            Полтаві (1945–49). Завдяки хормейстерського хисту Давидовського, репертуар у його концертах
+                            набув темброво багатого звучання, інтерпретації з елементами театралізації та ефектним хоровим
+                            імітуванням інструментів: прийомів бандури, гітари, кобзи. До репертуару Давидовсього входили
+                            українські народні пісні. Відомими стали сюїти «Бандура» (1896) та «Кобза» (1901).
+                        </p>
+                        <a href="img/cityInfo/lybni/PHOTO2.jpg" data-fancybox="imagesLybni">
+                            <img class="block__infoPhoto" src="img/cityInfo/lybni/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Григорій Давидовський. Суспільне надбання
+                        </p>
+                        <p class="block__infoText">
+                            Ймовірність зустрічі капели «Дніпросоюзу» з хором Давидовського – доволі велика. Адже місцевий
+                            національний хор у 20 рр. ХХ ст. активно давав концерти у Лубнах.
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/lybni.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-romodan animated fadeIn" id="3">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/romodan.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText">
+                            Селище міського типу Ромодан засновано наприкінці ХІХ століття як залізничну станцію, що дістала
+                            назву від сусіднього села. Село ж мало назву від давнього Ромоданського шляху: ромодан — «велика
+                            дорога». За одним переказом, назва шляху пішла від прізвища воєводи Ромодановського. За другим,
+                            вірогіднішим,— від чумака Ромодана. Селище йшло від Путивля через Сміле (нині село Роменського
+                            району Сумської області), перетинав Сулу, далі йшов вододілом між Сулою та Хоролом (притокою
+                            Псла) через сучасні населені пункти Семенівку, Глобине і виходив до Дніпра біля Кременчука.
+                            Наприкінці XVIII століття Ромоданівський шлях обсадили вербами. І до прокладення залізниць у
+                            60—80-х роках ХІХ століття він залишався одним із найважливіших шляхів, яким ходили в Крим
+                            чумаки.
+                        </p>
+                        <a href="img/cityInfo/romodan/PHOTO1.jpg" data-fancybox="imagesRomodan">
+                            <img class="block__infoPhoto" src="img/cityInfo/romodan/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Картина Сергія Васильківського (близько 1900). «Чумацький
+                            Ромоданівський шлях». Суспільне надбання
+                        </p>
+                        <p class="block__infoText">
+                            У 1880-х роках розпочалося будівництво залізниці. Будівництво станції тут завершилося лише в 1896
+                            році. Це приміщення було пристосоване не тільки для зустрічі гостей, а й слугувало для виступів
+                            місцевих аматорів. Працівники залізниці після важкого робочого дня, або тижня, зустрічалися в
+                            залізничному депо і проводили репетиції вистав. Це був аматорський колектив, який робив концерти
+                            для селян. Тому й недивно, що Перша Мандрівна капела співала саме у приміщенні Залізничного
+                            депо.
+                        </p>
+                        <a href="img/cityInfo/romodan/PHOTO2.jpeg" data-fancybox="imagesRomodan">
+                            <img class="block__infoPhoto" src="img/cityInfo/romodan/PHOTO2.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Залізнична станція початку ХХ ст. Суспільне надбання).
+                        </p>
+                        <p class="block__infoText">
+                            Станом на 2019 р. перша залізнична станція не збереглася, недалеко від неї побудували нову
+                            наприкінці ХХ ст.
+                        </p>
+                        <a href="img/cityInfo/romodan/PHOTO3.jpg" data-fancybox="imagesRomodan">
+                            <img class="block__infoPhoto" src="img/cityInfo/romodan/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Сучасний вид залізничної станції Ромодан. Суспільне надбання
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map block__map-romodan">
+                    <img class="block__mapImg" src="img/cityMaps/romodan.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-kybynci animated fadeIn" id="4">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/kybynci.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <iframe width="260" height="147" src="https://www.youtube.com/embed/4763kqQOsuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="block__infoText">Kybyntsi village is located in Myrhorod district within Poltava region, was founded in 1688.</p>
+                        <p class="block__infoText">
+                            In 1920 The first travelling choral capella performed for country folk in economical garden on the
+                            territory of previous Troshchynskyi’s county.
+                        </p>
+                        <a href="img/cityInfo/kybynci/PHOTO1.jpg" data-fancybox="imagesKybynci">
+                            <img class="block__infoPhoto" src="img/cityInfo/kybynci/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Troshchynskyi’s county XIX century. From school’s archive in Kybyntsi</p>
+                        <p class="block__infoText">
+                            Dmytro Troshchynskyi (1749-1829) is Ukrainian aristocrat of Cossacks chiefdom, statesman of Russian
+                            Empire. Patron of Ukrainian culture. In 1788 landlord bought a beautiful county with Italian sculptures,
+                            which was located on the hill near the picturesque pond. He lived there pretty long time (1806-1814,
+                            1817-1829) and created “Little Rus’ Athens”. Library, art gallery, orchestra and theatre functioned here.
+                        </p>
+                        <a href="img/cityInfo/kybynci/PHOTO2.jpg" data-fancybox="imagesKybynci">
+                            <img class="block__infoPhoto" src="img/cityInfo/kybynci/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Troshchynskyi’s county XIX century. From school’s archive in Kybyntsi</p>
+                        <p class="block__infoText">
+                            Сцена театру базувалася прямо посеред ставу і на ній грали Микола Гоголь та його мати, а батько
+                            сімейства Василь Гоголь-Яновський займався постановками п’єс разом із Василем Капністом. У
+                            Кибинці часто приїздив громадський діяч І. Муравйов-Апостол. Маєток Трощинського вважався
+                            одним з осередків української культури першої чверті XIX століття.
+                        </p>
+                        <a href="img/cityInfo/kybynci/PHOTO3.jpg" data-fancybox="imagesKybynci">
+                            <img class="block__infoPhoto" src="img/cityInfo/kybynci/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Маєток Трощинського. Прибудова ХІХ ст. З Кибинського шкільного архіву</p>
+                        <p class="block__infoText">
+                            Після реформи 1861 панську садибу (разом з економією і горілчаним заводом) придбав поміщик
+                            Шишкін, який у свою чергу продав її поміщикам Вульфертам.
+                        </p>
+                        <a href="img/cityInfo/kybynci/PHOTO4.jpg" data-fancybox="imagesKybynci">
+                            <img class="block__infoPhoto" src="img/cityInfo/kybynci/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Посуд з маєтку Трощинського ХІХ ст. З Кибинського шкільного архіву</p>
+                        <a href="img/cityInfo/kybynci/PHOTO5.jpg" data-fancybox="imagesKybynci">
+                            <img class="block__infoPhoto" src="img/cityInfo/kybynci/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Вид від маєтку Трощинського ХІХ ст. З Кибинського шкільного архіву</p>
+                        <p class="block__infoText">
+                            1904 створено сільськогосподарське товариство. На початку XX ст. були свиноферми, вальцьовий
+                            млин, 2 цегельні, горілчаний завод з річним виробництвом спирту на суму близько 10 тис. крб.
+                        </p>
+                        <p class="block__infoText">
+                            Під час воєнних дій 1918–20 рр. влада неодноразово змінювалася. У цей час садиба Трощинського
+                            була розграбована та знищена, залишивши після себе тільки сад, в якому капеляни давали концерт.
+                        </p>
+                        <p class="block__infoText">
+                            На разі від маєтку залишився тільки мальовничий ставок і неймовірний густий ліс.
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/kybynci.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-mirgorod animated fadeIn" id="5">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/mirgorod.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText"><b>Миргород в житті Степана Васильченка</b></p>
+                        <a href="img/cityInfo/mirgorod/PHOTO1.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            С. Васильченко 1902р. З фотоархіву з Миргородського краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            <b>З ІСТОРІЇ МИРГОРОДСЬКИХ ВУЛИЦЬ</b> <br>(Додаткова інформація:
+                            <a href="http://histpol.pl.ua/books/Rozsokha.L_Z_istoriyi_myrhorodskykh_%20vulyts.pdf" target="_blank">http://histpol.pl.ua/books/Rozsokha.L_Z_istoriyi_myrhorodskykh_%20vulyts.pdf</a>
+                        </p>
+                        <p class="block__infoText">
+                            <b>ВУЛИЦЯ ЛАЗОРЕНКА</b><br>
+                            На місці нинішнього будинку № 18 за перших десятиліть ХХ століття стояла хата
+                            козака Михайла Степановича Дубини. Його дружина Парасковія Лук’янівна славилася
+                            тим, що ткала дуже добрі плахти, за які не раз одержувала премії на земських виставках.
+                            Згодом у тій хаті жив їхній син Петро Михайлович і донька Килина Михайлівна Дубина
+                            (1893 – 1984), дружина відомого українського прозаїка Степана Васильченка (справжнє
+                            прізвище Панасенко; 1878 – 1932).
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO3.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Дружина Килина Дубина. З фотоархіву з Миргородського
+                            краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            1914 року письменник приїздив із фронту до Миргорода з нагоди народження його сина
+                            Юрія. Бував тут і згодом.
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO2.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            С. Васильченко 30ті рр. ХХ століття. З фотоархіву з
+                            Миргородського краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            <b>У липні 1920</b> року письменник як кореспондент разом із капелою «Думка» прибув до
+                            Миргорода. На вулиці, де жила його дружина, в саду чоловічої гімназії, славетна капела дала
+                            тоді кілька концертів.
+                        </p>
+                        <p class="block__infoText">
+                            <b>
+                                Спогад дружини Степана Васильченка Килини, про приїзд Мандрівної капели до
+                                Миргорода:
+                            </b>
+                            &quot;Дні, коли хористи давали концерти в Миргороді, й для мене із сином стали святковими – до
+                            нас після багатьох місяців розлуки завітав чоловік і батько. Капела виступала в
+                            гімназіальному саду, що майже поряд із батьківською нашою хатою. На кожному концерті
+                            бувала й я. З якою увагою, захопленням селяни, робітники, червоноармійці слухали пісню.
+                            Свою рідну, українську, яку ще зовсім недавно отак відкрито, не ховаючись, ніхто б і не
+                            осмілився співати перед аудиторією великою. Був схвильований і Степан Васильченко.
+                            Вдивлявся в людські обличчя, прислухався до розмов, міркувань громадян, а коли артисти
+                            після концерту відпочивали, він сідав десь у куточку, виймав свій записник у темній
+                            клейончастій обкладинці, прилаштовував на коліні й дрібним ощадливим почерком
+                            занотовував враження від усього баченого й чутого&quot;. (цитата використана з
+                            <a href="http://libgonchar.org/images/%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D1%87%D0%B5%D0%BD%D0%BA%D0%BE.pdf" target="_blank">http://libgonchar.org/images/%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D1%87%D0%B5%D0%BD%D0%BA%D0%BE.pdf </a>
+                            У нашому місті Миргород С.Васильченком написані фрагменти кількох оповідань. Килина
+
+                            Михайлівна жила з чоловіком у Києві, але по його смерті в 30-х роках повернулася до
+                            рідного Миргорода. Рукописний архів С.Васильченка вона передала до Інституту
+                            української літератури ім. Т.Шевченка АН УРСР. Під час війни працювала в Миргороді на
+                            молочарні, згодом учителювала. По війні одержала нове помешкання на цій самій вулиці
+                            (нині – Лазоренка, № 49), де й доживала віку. Небога Килини Дубини – Тамара Василівна
+                            Король, шанувальниця народного мистецтва й народної творчості, яка теж жила на цій
+                            вулиці, зібрала велику колекцію старовинної української народної вишивки, яку
+                            подарувала Миргородському краєзнавчому музеєві.
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO4.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Вирізка з газети. Спогад про С. Васильченка. З фотоархіву з
+                            Миргородського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO5.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Заповіт С. Васильченка. З фотоархіву з Миргородського
+                            краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO6.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO6.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Телеграма. З фотоархіву з Миргородського краєзнавчого
+                            музею
+                        </p>
+                        <p class="block__infoText">
+                            Син письменника Степана Васильченка Юрій Панасенко (1914 – 1991), відомий під
+                            псевдонімом Кодак, став знаним українським архітектором, із 1949 року жив у Канаді. Він
+                            є автором проектів численних церков, пам’ятників, шкіл у Канаді й США. Підтримував
+                            зв’язки з Миргородом. Помер у м. Оттаві першого року здобуття Україною незалежності.
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO7.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO7.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Вирізка з газети. Спогад про сина Юрія Кодака. З фотоархіву
+                            з Миргородського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/mirgorod/PHOTO8.jpg" data-fancybox="imagesMirgorod">
+                            <img class="block__infoPhoto" src="img/cityInfo/mirgorod/PHOTO8.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Юрій Кодак син С. Васильченка. З фотоархіву з
+                            Миргородського краєзнавчого музею
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/mirgorod.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-garkyshinci animated fadeIn" id="6">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/garkyshinci.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText">
+                            Harkushyntsi village is in Myrhorod district and is located on the left side of Khorol river. For the first
+                            time the name Harkushyntsi appeared on the map of French engineer Guillaume Levasseur de Beauplan
+                            (1630-1648).
+                        </p>
+                        <a href="img/cityInfo/garkyshinci/PHOTO1.jpg" data-fancybox="imagesGarkyshinci">
+                            <img class="block__infoPhoto" src="img/cityInfo/garkyshinci/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Map of the 17th century from Paraskoviia Syrbu’s private photo collection</p>
+                        <p class="block__infoText">
+                            The village come of Cossacks’ colonisation. It was a part of First Myrhorodska Sotnia of Regiment of
+                            Myrhorod.
+                        </p>
+                        <p class="block__infoText">
+                            <b>
+                                “Is your soul crying?<br>
+                                When you will remember, Cossack,<br>
+                                How Poltava was burning,<br>
+                                Pushkarenko was punished,<br>
+                                And for ridicule, for destruction, we were given to the Tatars…”<br>
+                            </b>
+                        </p>
+                        <p class="block__infoText">
+                            The memory about 1st Cossacks Regiment in Myrhorod. This poetry was told by Paraskoviia Hryhorivna
+                            Syrbu, citizen of Harkushyntsi village.
+                        </p>
+                        <p class="block__infoText">
+                            1729 у селі 17, а в 1781 – 73 двори. 1737 р. отаманом села був Петро Горкушинський.
+                        </p>
+                        <p class="block__infoText">
+                            У селі діяла церква Святої Великомучениці Варвари (споруджена 1753 р., новий храм збудований
+                            1873 р.), якою опікувалася родина місцевого дідича Рудя.
+                        </p>
+                        <p class="block__infoText">
+                            За словами мешканки селі, Парасковії Григорівни Сирбу, саме завдяки поміщику Рудю була
+                            збудована церква з дзвіницею і школа (початкове народне училище 1897 р.), <b>
+                                які ще застала Перша
+                                Мандрівна капела «Дніпросоюзу» у 1920р.
+                            </b>
+                        </p>
+                        <a href="img/cityInfo/garkyshinci/PHOTO2.jpg" data-fancybox="imagesGarkyshinci">
+                            <img class="block__infoPhoto" src="img/cityInfo/garkyshinci/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Школа ХХ ст. з домашнього архіву Парасковії Сирбу</p>
+                        <a href="img/cityInfo/garkyshinci/PHOTO3.jpg" data-fancybox="imagesGarkyshinci">
+                            <img class="block__infoPhoto" src="img/cityInfo/garkyshinci/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Школа ХХ ст. з домашнього архіву Парасковії Сирбу</p>
+                        <a href="img/cityInfo/garkyshinci/PHOTO4.jpg" data-fancybox="imagesGarkyshinci">
+                            <img class="block__infoPhoto" src="img/cityInfo/garkyshinci/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Школа ХХ ст. з домашнього архіву Парасковії Сирбу</p>
+                        <p class="block__infoText">
+                            На початку XX ст. неподалік від села діяла цегельня дідича Марковського, близько 1911 р. у
+                            Гаркушинцях працював цегельний завод Г. Рубана. 1926 р. у селі налічувалось 284 господарства, 1491
+                            житель.
+                        </p>
+                        <p class="block__infoText">
+                            У 20 рр. ХХ ст. діяла сільська півча (хор), заснований місцевим талановитим музикою Степаном
+                            Педоричем. За словами Парасковії, цю півчу могла чути Мандрівна капела, коли приїздила у село.
+                        </p>
+                        <a href="img/cityInfo/garkyshinci/PHOTO5.jpg" data-fancybox="imagesGarkyshinci">
+                            <img class="block__infoPhoto" src="img/cityInfo/garkyshinci/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Гаркушинський хор ХХ ст. з домашнього архіву Парасковії Сирбу</p>
+                        <a href="img/cityInfo/garkyshinci/PHOTO6.jpg" data-fancybox="imagesGarkyshinci">
+                            <img class="block__infoPhoto" src="img/cityInfo/garkyshinci/PHOTO6.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Гаркушинський хор ХХ ст. з домашнього архіву Парасковії Сирбу</p>
+                        <p class="block__infoText">
+                            15 березня 1931 р. було створено колгосп імені ДПУ (голова — Федір Варфоломійович Козленко). У
+                            40-х роках колгосп мав назву імені Полякова (названий ім&#39;ям першого голови колгоспу, убитого під
+                            час насильницької колективізації, 1930 р.) 1945 р. головою колгоспу був Костянтин Андрійович
+                            Роґочий. У 20-х — 30-х рр. зазнали репресій члени родин Бутенків, Педоричів, Степур, Устименків,
+                            Шумейків, Якименків та ін.
+                        </p>
+                        <p class="block__infoText">
+                            1944 р. в селі було 247 дворів, 720 жителів; 1980 р. — 550 дворів, 1518 жителів; 1993 р. — 689 дворів,
+                            1603 жителі; 2006 р. — 552 двори, 1400 жителів.
+                        </p>
+                        <p class="block__infoText">
+                            Станом на 2019 р. кількість населення 1402 осіб.
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/garkyshinci.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-poltava animated fadeIn" id="7">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/poltava.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText"><b>Культура Полтави початку ХХ ст.</b></p>
+                        <p class="block__infoText">
+                            Полтава — місто обласного значення в Україні, адміністративний центр Полтавської області.
+                            Засноване у 899 року. За першою літописною згадкою міста, у давньоруському Іпатіївському літописі
+                            відома під назвою «Лтава». Сучасна Полтава походить від найменування річки Лтава, правої притоки
+                            Ворскли.
+                        </p>
+                        <p class="block__infoText">
+                            На початку XX століття щодо міста також вживали термін «Духовний центр України», чому сприяли
+                            діяльність цілої плеяди видатних діячів духовенства, культури і мистецтва, значні церковні та
+                            історичні пам&#39;ятки. Окрім того Полтава була найбільшим центром розвитку української культури та
+                            просвіти того часу.
+                        </p>
+                        <p class="block__infoText">
+                            На Полтавщині сформувалося певне музичне культурне середовище. У Полтаві працював директором
+                            театру письменник І.П. Котляревський, синодальними регентськими курсами керував учень П.І.
+                            Чайковського, піаніст, диригент і композитор П. Щуровський. На цих курсах у Щуровського вивчав
+                            музичну теорію автор всесвітньовідомої музики до «Заповіту» Т.Г. Шевченка Гордій Гладкий.
+                            Полтавщину прославили її видатні земляки: бандуристи Остап Вересай та Федір Кушнерик,
+                            диригенти Нестор Городовенко і Григорій Китастий, Федір Попадич і Володимир Кабачок;
+                            композитори: Ісаак Дунаєвський, Платон і Георгій Майборода, Олександр Білаш, Григорій Чухрай,
+                            Микола Лисенко.
+                        </p>
+                        <p class="block__infoText">
+                            І власне, Перша мандрівна капела «Дінпросоюзу» мала у своєму репертуарі композиції Миколи
+                            Лисенка.
+                        </p>
+                        <a href="img/cityInfo/poltava/PHOTO1.jpg" data-fancybox="imagesPoltava">
+                            <img class="block__infoPhoto" src="img/cityInfo/poltava/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Микола Лисенко (1842-1912). Суспільне надбання</p>
+                        <p class="block__infoText">
+                            Основний внесок Лисенка в національну культуру полягає в тому, що по перше: збираючи скарби
+                            народної музики, досліджуючи та обробляючи їх, композитор повертає народу у «вишуканій
+                            художній оправі»; по друге: він розвив, на основі народного мелосу музику професійної мови.
+                        </p>
+                        <p class="block__infoText">
+                            У 1920 році мандрівна капела виступала у міському театрі.
+                        </p>
+                        <a href="img/cityInfo/poltava/PHOTO2.jpg" data-fancybox="imagesPoltava">
+                            <img class="block__infoPhoto" src="img/cityInfo/poltava/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Міських театр. Полтава. ХХ ст. з Полтавського архіву</p>
+                        <p class="block__infoText">
+                            Полтава і зараз має величезну кількість творчих колективів. Зокрема — Заслужений ансамбль пісні і
+                            танцю України «Лтава» ім. В. Міщенка. Колектив заснований у 1957році. Вони і зараз продовжують
+                            пропагувати українську народну пісню і гастролювати Україною.
+                        </p>
+                        <iframe class="block__infoVideo" width="260" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/poltava.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-kharkiv animated fadeIn" id="8">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/kharkiv.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText">
+                            Театр-Цирк «Муссурі» — будівля театру-цирку в Харкові. Напочатку ХХ століття найбільший театр-
+                            цирк в світі, вміщував 5750 глядачів. Пам&#39;ятка архітектури місцевого значення в стилі модерн.
+                        </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO1.jpeg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO1.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">Театр Муссурі. З архіву Харківського історичного музею</p>
+                        <p class="block__infoText">
+                            Будівлю зведено 1911 року як приміщення цирку. Автор проекту — архітектор Борис Корнєєнко.
+                        </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO2.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Театр Муссурі. Закладання фундаменту. З архіву Харківського історичного
+                            музею
+                        </p>
+                        <p class="block__infoText">
+                            Будівля у стилі модерн, з червоної цегли. Глядацька зала не мала підпірок, висота куполу становила
+                            70 метрів. Місця для глядачів розташовувалися амфітеатром, а сама арена розташовувалася нижче
+                            рівня землі. На той час споруда була найбільшим цирком в світі і вміщував майже 6000 глядачів.
+                        </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO3.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Театр Муссурі. План. Суспільне надбання.
+                        </p>
+                        <p class="block__infoText">
+                            В 1912 у будівлю переобладнали під оперний театр, який став носити назву «Муссурі» — за іменем
+                            театрального підприємця Герасима Михайловича Муссурі, який придбав будівлю. Театр відкрився
+                            виставою «Орфей у пеклі», за участю Остапа Вишні, який створив лібрето до вистави. Була поставлена
+                            українська оперта – «Сорочинський ярмарок», «Весілля в Малинівці». На сцені цього театру
+                            виступали Федір Шаляпін, Володимир Маяковський, Володимир Висоцький та інші.
+                        </p>
+                        <p class="block__infoText">
+                            У 1911–1989 роках — будівля була найбільшою театральною спорудою Харкова.
+                        </p>
+                        <p class="block__infoText">
+                            Проте в архівних документах про цирк Муссурі були не втішні відгуки. У справах на початку ХХ ст.
+                            «Про перевірки усіх театрів і сінематографів у місті Харкові» інженера ми фіксується чимало
+                            порушень.
+                        </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO4.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Акт про порушення. 1913 р. Суспільне надбання</p>
+                        <a href="img/cityInfo/kharkiv/PHOTO5.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Акт про порушення. 1913 р. Суспільне надбання</p>
+                        <p class="block__infoText">
+                            У період з 1919 по 1923 будівля колишнього цирку використовувалася більшовиками для проведення
+                            суспільно-політичних заходів. Тут виступали такі їхні лідери як Надія Крупська, Фелікс Дзержинський.
+                            6 — 10 березня 1919 у приміщенні проходив, повністю контрольований більшовиками, Третій
+                            Всеукраїнський з&#39;їзд Рад Українська Соціалістична Радянська Республіка. На цьому заході було
+                            ухвалено першу конституцію УРСР, крім того це зібрання проголосило формальну «незалежність»
+                            УСРР.
+                        </p>
+                        <p class="block__infoText">
+                            У 1920 році капела Дніпросоюзу «чекала в черзі» свого концерту, адже перед виступом проводилися
+                            політичні заходи і концерти доводилося переносити на наступний день. Як згадується в щоденнику в
+                            акустичному відношенні театр не підходив для виступів співаків.
+                        </p>
+                        <p class="block__infoText">
+                            Близько 60 років в радянський період у будівлі розташовувався Харківський театр музичної комедії,
+                            який зараз знаходиться на тій же стороні цієї вулиці через один будинок, у приміщенні палацу
+                            культури «Харчовик» (вул. Благовіщенська, 32).Через погану акустику й непристосованості до
+                            проведення вистав театр неодноразово перебудовувався, поступово втрачаючи первісний вигляд:
+                            змінювався фасад, губилися деталі, будівлю було обкладено жовтим кахлем.
+                        </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO6.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO6.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Театр Муссурі. З архіву Харківського історичного музею.</p>
+                        <p class="block__infoText">
+                            У 1987 будівлю було визнано аварійною. Вона неодноразово горіла, адже деякі з конструкцій
+                            дерев&#39;яні, а перекриття між дахом та залою для глядачів — з пресованого очерету.
+                        </p>
+                        <p class="block__infoText">
+                            В 2005 будівлю театру було вилучено з переліку пам&#39;яток архітектури.
+                        </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO9.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO9.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Театр Муссурі. 2009р. <a href="https://kharkov.livejournal.com/766934.html" target="_blank">https://kharkov.livejournal.com/766934.html</a> </p>
+                        <a href="img/cityInfo/kharkiv/PHOTO10.jpg" data-fancybox="imagesKharkiv">
+                            <img class="block__infoPhoto" src="img/cityInfo/kharkiv/PHOTO10.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Театр Муссурі. 2009р. <a href="https://kharkov.livejournal.com/766934.html" target="_blank">https://kharkov.livejournal.com/766934.html</a> </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/kharkiv.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-butenki animated fadeIn" id="9">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/butenki.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText"><b>Бутенки</b> — село в Україні, в Кобеляцькому районі Полтавської області , засноване у кінці XVIII століття.</p>
+                        <p class="block__infoText">
+                            У 1870 року між хуторами, на землях козака Бутенка, було прокладено Харківсько-Миколаївську
+                            залізницю. Нова станція отримала назву Кобеляки й стала центром об&#39;єднаного села. Відкриття
+                            залізничної станції сприяло швидкому розвитку села, розширенню торгівлі.
+                        </p>
+                        <p class="block__infoText">
+                            Село Бутенки знаходиться на лівому березі річки Вовча в місці впадання її в річку Кобелячка. Через
+                            село густо проходять автомобільні дороги та залізниця, станція Кобеляки. Власне на цій станції
+                            капеляни зупинилися і на деякий час оселилися, даючи концерти.
+                        </p>
+                        <a href="img/cityInfo/butenki/PHOTO1.jpeg" data-fancybox="imagesButenki">
+                            <img class="block__infoPhoto" src="img/cityInfo/butenki/PHOTO1.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">Пасажирська будівля станції Кобеляки, поч. ХХ ст. Суспільне надбання</p>
+                        <p class="block__infoText"><b>Travelling Capella and city Kobeliaky</b></p>
+                        <p class="block__infoText">
+                            Сity Kobeliaky is located on the bank of Vorskla river (mostly on the right bank) in the place, where the
+                            river Kobeliachky debouch into it, and in distance of 13 km from railway station Kobeliaky. The name of
+                            the city probably came from the river Kobeliachky or was calque of the name of Right-bank’s Kobyliaky
+                            (now the village of Zvenyhoroda district in Cherkasy region). This location was firstly checkmark on the
+                            Kornelii Dankert’s map, in 1620-1636, and Frederick de Wit’s, in 1632.
+                        </p>
+                        <a href="img/cityInfo/kobelyaki/PHOTO1.jpg" data-fancybox="imagesButenki">
+                            <img class="block__infoPhoto" src="img/cityInfo/kobelyaki/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Ancient Kobeliaky. From archive of The museum of local history in Kobeliaky</p>
+                        <p class="block__infoText">
+                            З 1917 року в складі Української Народної Республіки. Після відступу союзників і низки поразок
+                            української армії Полтавську губернію, в тому числі Кобеляки було анексовано більшовиками в 1920
+                            року. У січні 1919 створена повітова антиукраїнська парторганізація більшовиків, що налічувала 60
+                            чоловік, яка підняла заколот проти Української Народної Республіки. 22 січня 1919 р. для придушення
+                            заколоту Кобеляки було здобуто Кінним полком ім. Петра Болбочана Армії УНР, перейменованого
+                            згодом на Кінний полк Чорних Запорожців.
+                        </p>
+                        <p class="block__infoText">
+                            Для капелян подорож Лівобережною Україною, була доволі небезпечною і тривожною. Степан
+                            Васильченко не раз згадує у своєму щоденнику про облоги та ватажок Махна.
+                        </p>
+                        <p class="block__infoText">
+                            Мешканець Кобеляк Матвій Бобошко, у період 1917-1921 рр. вів так званий «Щоденник
+                            прикажчика».
+                        </p>
+                        <a href="img/cityInfo/kobelyaki/PHOTO2.jpg" data-fancybox="imagesButenki">
+                            <img class="block__infoPhoto" src="img/cityInfo/kobelyaki/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Матвій Бобошко (ліворуч крайній у 2 ряді) групове фото з працівниками
+                            магазину 1917 р. З архіву Кобелянського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/kobelyaki/PHOTO3.jpg" data-fancybox="imagesButenki">
+                            <img class="block__infoPhoto" src="img/cityInfo/kobelyaki/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Щоденник Матвія Бобошко. З архіву Кобелянського краєзнавчого музею</p>
+                        <p class="block__infoText">
+                            Він занотував цікаві спостереження щодо участі у поточних подіях анархістів України: &quot;Началась
+                            новая борьба анархистов со всеми: с белами, красными, петлюровцами и вообще со всякой властью.
+                            Слід зазначити, що М. Бобошко вперше у своїх записах помічає анархістів, що дозволяє зробити два
+                            важливі висновки. По-перше, після приєднання частини українських повстанців, які протистояли
+                            білим, до більшовиків, у збройному протестному русі, що продовжував боротьбу проти &quot;диктатури
+                            пролетаріату&quot;, помітне місце займала анархістська ідеологія. По-друге, місцеві повстанці, які восени
+                            1919 р. пристали до махновців, певною мірою поділяли цю ідеологію. Отож, не дивно, що в січні 1920
+                            р., на &quot;старий&quot; Новий рік кобеляцький прикажчик поділився із щоденником такими висновками щодо
+                            махновців: &quot;…Среди большевиков, особенно украинцев, начал ся раскол: Махно, прежний
+                            приверженец Советской Власти, объявил новое положение вещей, а именно: анархию. Долой всякую
+                            власть, Да здравствует Украинская Безвластная Федерация! Высшее право, право восстания!
+                        </p>
+                        <p class="block__infoText">
+                            26-30 липня 1920 р. М. Бобошко вкотре записав у щоденнику: &quot;Все время очень тревожно; ходят
+                            слухи, что кругом города много повстанцев…Жизнь в городе замерла&quot;.
+                        </p>
+                        <p class="block__infoText">
+                            (Більше інформації:
+                            <a href="http://shron1.chtyvo.org.ua/Arkhireiskyi_Dmytro/Schodennyk_prykazhchyka_iak_dzherelo_z_istorii_selianskoho_povstanskoho_rukhu_u_1917-1921_rr_na_pivd.pdf">http://shron1.chtyvo.org.ua/Arkhireiskyi_Dmytro/Schodennyk_prykazhchyka_iak_dzherelo_z_istorii_selianskoho_povstanskoho_rukhu_u_1917-1921_rr_na_pivd.pdf</a>)
+                        </p>
+                        <p class="block__infoText">
+                            Та капеляни попри повстання і напругу, все таки продовжили виступи і давали концерти в Кобеляках,
+                            даруючи їм українські пісні і підіймали настрій містянам.
+                        </p>
+                        <a href="img/cityInfo/kobelyaki/PHOTO4.jpg" data-fancybox="imagesButenki">
+                            <img class="block__infoPhoto" src="img/cityInfo/kobelyaki/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Міський сад, початок ХХ ст.. З архіву Кобелянського краєзнавчого музею</p>
+                        <a href="img/cityInfo/kobelyaki/PHOTO5.jpg" data-fancybox="imagesButenki">
+                            <img class="block__infoPhoto" src="img/cityInfo/kobelyaki/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Народний дім, початок ХХ ст. З архіву Кобелянського краєзнавчого музею</p>
+                        <iframe class="block__infoVideo" width="260" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/butenki.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-kremenchuk animated fadeIn" id="10">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/kremenchuk.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText">
+                            Kremenchuk is the city in Poltava region. It has two mini-districts: Avtozavodskyi and Kriukivskyi. City is
+                            located on Dnipro river (larger side lies on the left bank and smaller side lies on the right bank). Official
+                            date of founding is 1571 year. Most of scientists claim that the name came from Turkic word
+                            “kermenchyk” and means “small tower”. Others suggest versions from Turkic word “ker” (“kyr”), which
+                            means “hill”; or from the name of Cossack Kremen’.
+                        </p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO1.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Old Kremenchuk. From archive of The museum of local history in Kremenchuk</p>
+                        <p class="block__infoText">
+                            Мандрівна капела давала концерти як і в самому Кременчуці так і в поселкові Крюкові. Приміщення,
+                            в яких виступала капела, на сьогодні не збереглися, але про них залишилися цікаві факти.
+                        </p>
+                        <p class="block__infoText">
+                            <b>«Корсо» – електробіограф (кінотеатр).</b> Відкрився в грудні 1913 р. в приміщенні театру «Корсо» в пос.
+                            Крюків (за іншими даними, трохи раніше, у 1909 р.).
+                        </p>
+                        <p class="block__infoText">
+                            Назва «Корсо» походить від італійської назви в тамтешніх містах розважальних заміських потягів, а
+                            також звичайних вечірніх прогулянок у кінних екіпажах головними вулицями міст. Тобто «Корсо» – це
+                            розважальний заклад, де відбувалися не тільки перегляди фільмів, а й відбувалися різні заходи.
+                        </p>
+                        <p class="block__infoText">
+                            Так, капела &quot;Дніпросоюзу&quot; у 1920 р., завітала саме в кінотеатр &quot;Корсо&quot;, який в поселкові Крюків, був
+                            лише один. На разі, залишився тільки фасад кінотеатру &quot;Корсо&quot;.
+                        </p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO2.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Фасад від старого кінотеатру. Суспільне надбання</p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO3.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Старий Крюків. З архіву Кременчуцького краєзнавчого музею</p>
+                        <p class="block__infoText">
+                            <b>Пушкінська народна аудиторія</b> – заклад культури і дозвілля, що з’явився в місті в кінці ΧΙΧ ст. і
+                            названий ім’ям О. С. Пушкіна на честь сторіччя з дня його народження (1899 р.). Являла собою
+                            двоповерхову цегляну споруду на високому підмурку. Знаходилася на розі вул. Городової та вул.
+                            Міщанської (на місці сучасної швейної фабрики).
+                        </p>
+                        <p class="block__infoText">
+                            <b>У Народній аудиторії</b> була велика зала, розміщувалася міська народна бібліотека. Тут відбувалися
+                            театральні вистави (як гастрольні, так і аматорського колективу). Крім театральних вистав, тут
+                            проходили гастрольні концерти, виступи відомих людей того часу: Д. Яворницького, письменника В.
+                            Сологуба, І. Сєвєряніна, А. Рубінштейна, С. Рахманінова та багатьох інших.
+                        </p>
+                        <p class="block__infoText">
+                            Часто відбувалися й заходи суто просвітницькі на кшталт Дня «Білої квітки» – акції, що була
+                            присвячена боротьбі з туберкульозом (1913 р.). З цієї нагоди в приміщенні Народної аудиторії була
+                            влаштована пересувна просвітницька виставка. Головою комітету з проведення Дня «Білої квітки» в
+                            місті була пані Айсштеттен – дружина кременчуцького поліцеймейстера А. І. де Айсштеттена.
+                        </p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO4.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Народна айдиторія. ХХ ст. Суспільне надбання</p>
+                        <p class="block__infoText">
+                            На той час було складно сприймати українську мову, народні пісні, адже Нова система впливала на
+                            містян. Але загалом, Кременчук був налаштований на музичний український лад. За словами наукової
+                            працівниці Кременчуцького краєзнавчого музею, пані Вікторії, з 1918 р. діяла Кременчуцька капела
+                            імені М.В.Лисенка під керівництвом Прокопія Сапсая.
+                        </p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO5.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Кременчуцька капела, кер. Прокопій Сапсай. З архіву Кременчуцького
+                            краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            Прокопій Сапсай - відомий композитор, диригент, режисер та актор. Репертуар капели був складним,
+                            різноманітним, до нього входили українські народні пісні, хорові твори українських композиторів, а
+                            також класичні твори російських і зарубіжних авторів.
+                        </p>
+                        <p class="block__infoText">
+                            У 1920 р. при Кременчуцькій капелі була започаткована художня рада. Найбільш обдарованих
+                            учасників капели направляли на навчання до Київської Державної консерваторії. Кременчуцькі
+                            співаки Нестеренко і Бабенко - згодом потрапили до Мандрівної капели &quot;Дніпросоюзу&quot;.
+                        </p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO6.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO6.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Кременчуцька капела. З архіву Кременчуцького краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            На жаль, гарна споруда Народної аудиторії була частково зруйнована під час Великої Вітчизняної
+                            війни. Руїни її зберігалися до 60-х років ΧΧ ст. Зрештою, вони були знесені, і на її місці зведено
+                            безлику залізобетонну споруду Кременчуцької швейної фабрики.
+                        </p>
+                        <a href="img/cityInfo/kremenchuk/PHOTO7.jpg" data-fancybox="imagesKremenchuk">
+                            <img class="block__infoPhoto" src="img/cityInfo/kremenchuk/PHOTO7.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Зруйнована народна аудиторія. Суспільне надбання
+                        </p>
+                        <p class="block__infoText">
+                            Станом на 2019 культурне співоче життя в Кременчуці не припиняється.. Народний
+                            ансамбль&quot;Славутич&quot;, заснований у 1975 році ,на сьогодні є одним із найбільший серед самодіяльних
+                            колективів міста. Ансамбль поєднує три жанри: вокальний, хореографічний та інструментальний -
+                            кожна складова має свій окремий репертуар, який доповнює загальну концепцію &quot;Славутича&quot;.
+                        </p>
+                        <p class="block__infoText">
+                            За більш ніж чотири десятиліття свого існування у &quot;Славутич&quot; виховав вісім поколінь артистів, які
+                            неодноразово виступали на вітчизняних і закордонних сценах.
+                        </p>
+                        <iframe width="260" height="147" src="https://www.youtube.com/embed/qH9Bu3i2svU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/kremenchuk.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-loxvica animated fadeIn" id="11">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/loxvica.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText"><b>Nestor Horodovenko and choral capella “Dniprosoiuz”</b></p>
+                        <p class="block__infoText">
+                            Capella got in Lokhvytsia to perform by no coincidence. It was very important for band-master Nestor
+                            Horodovenko to visit homeland. Nestor Feofanovych was born in Venslavy within Poltava region (now
+                            Lokhvytsia district in Poltava region).
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO1.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Nestor Horodovenko. Public property</p>
+                        <p class="block__infoText">
+                            He graduated from Teacher’s college of Hlukhiv in 1907, worked in academies of Lokhvytsia and
+                            Pereiaslav, where he professed singing and curated choirs.
+                        </p>
+                        <p class="block__infoText">
+                            Horodovenko has begun his big career and road-concerts trips with choral capella of “Dniprosoiuz” in
+                            1920.
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO2.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Programme of First travelling choral capella of “Dniprosoiuz”. From archive in Museum of local
+                            history in Lokhvytsia
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO3.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Програма Першої Мандрівної капели Дніпросоюзу. З архіву Лохвицького краєзнавчого музею</p>
+                        <a href="img/cityInfo/loxvica/PHOTO4.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Капела Дніпросоюзу у перших мандрах. З архіву Лохвицького краєзнавчого музею</p>
+                        <p class="block__infoText">
+                            Про інтенсивність праці диригента свідчить такий факт: за перші три роки капела дала майже
+                            400 концертів. Н. Городовенком була налагоджена творча співпраця з відомими композиторами і
+                            співаками М. Вериківським, Л. Ревуцьким, Б. Лятошинським, І. Козловським тощо. Діяльність
+                            «Дніпросоюзу» на разі «Думки» відобразила динаміку подальших естетико-художніх перетворень
+                            української хорової культури в умовах тогочасної епохи.
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO5.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Програма капели Дніпросоюзу. З архіву Лохвицького краєзнавчого музею</p>
+                        <p class="block__infoText">
+                            Розпочалася кропітка робота над формуванням і збагаченням репертуару.
+                            Програми концертів були просякнуті національно-пісенним духом. Спершу
+                            вони складалися виключно з народних пісень, проте в скорому часі були
+                            підготовлені тематичні цикли з творів М. Лисенка, М. Леонтовича, календарно-обрядові
+                            (в тому числі Народні пісні Галичини, де були представлені твори С. Людкевича, Н.
+                            Нижанківського, Г. Тополь-ницького та інших), революційні пісні, в середині 20-х
+                            років – музика народів СРСР, російська, а далі зарубіжна музика (від монументальної
+                            ораторії Пори року Й. Гайдна до творів імпресіоністів М. Равеля, К. Дебюссі), яка тоді в Україні ще не виконувалася.
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO6.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO6.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Програма капели Дніпросоюзу. З архіву Лохвицького краєзнавчого музею</p>
+                        <a href="img/cityInfo/loxvica/PHOTO7.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO7.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Програма капели Дніпросоюзу. З архіву Лохвицького краєзнавчого музею</p>
+                        <p class="block__infoText">
+                            У 30-тих роках розпочинається фронтальний наступ на хорову музику, яку
+                            ототожнювали з церковщиною: розпочалися чистки хористів і хормейстерів
+                            із сумнівним соціальним походженням, заборонялися апробовані концертні
+                            програми, класичні твори та репертуар 20-х років замінялися „актуальними”
+                            ударницькими одами. Це не тільки виснажувало учасників хорового руху, але
+                            й привело до масової ліквідації професіональних та аматорських капел. У
+                            пропагандистське русло звернено і Думку, хоч Н. Городовенко прагне зберегти
+                            капелу. У нелегкій більшовицькій дійсності колектив, за його словами, все
+                            ж таки мав „можливість плекати, берегти та ширити пісенну творчість українського
+                            народу”.
+                        </p>
+                        <p class="block__infoText">
+                            В 1934 р. капела вперше виконує Реквієм Д. Верді. Таким чином, Н.
+                            Городовенку належить першопрочитання в Україні багатьох творів світової
+                            класики та піднесення рівня до європейських капел того часу. Згодом
+                            колектив звертається до кантато-ораторіальних творів українських
+                            композиторів. Установка на широкий стильовий спектр виконуваних творів
+                            потребував майстерного володіння всім арсеналом виразових засобів.
+                        </p>
+                        <p class="block__infoText">
+                            В 1936 р. тріумфальний виступ Думки на першій Декаді українського мистецтва в Москві,
+                            на якому був присутній Сталін, послужив звільненню Н. Городовенка з капели. Відомий диригент
+                            посмів поскаржитися „Хазяїну”, що капелі не дозволяють співати духовних творів. Сталін
+                            іронічно відповів: „А ви їх співайте без слів”. Зловісного 1937-го Н. Городовенка було
+                            звільнено і приречено на вигнання, а капелу також „репресували”, вирвавши з її репертуару –
+                            національну хорову класику. Під час війни Н. Городовенко з колишніх співаків Думки та інших
+                            хорових колективів, що залишилися у Києві, створює Українську національну капелу, прощальний
+                            концерт якої в серпні 1943 р. відбувся на сцені оперного театру.
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO8.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO8.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Програма капели Дніпросоюзу. З архіву Лохвицького краєзнавчого музею</p>
+                        <p class="block__infoText">
+                            У 1944 р. виїхав до Німеччини, де 1945 р. організував хор «Україна». З 1949 р.
+                            постійно жив у Канаді (м. Монреаль), де керував хором «Україна».
+                        </p>
+                        <a href="img/cityInfo/loxvica/PHOTO9.jpg" data-fancybox="imagesLoxvica">
+                            <img class="block__infoPhoto" src="img/cityInfo/loxvica/PHOTO9.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Погруддя Нестора Городовенка у Лохвиці. Суспільне надбання</p>
+                        <p class="block__infoText">
+                            (Більше про хоровий рух: <a href="http://194.44.152.155/elib/local/3689.pdf" target="_blank">http://194.44.152.155/elib/local.pdf</a>)
+                        </p>
+                        <iframe class="block__infoVideo" width="260" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/loxvica.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-mlini animated fadeIn" id="12">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/mlini.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText">
+                            <b>Млини</b> — село в Україні, в Лохвицькому районі Полтавської області, засноване не пізніше початку
+                            XVII ст.
+                        </p>
+                        <a href="img/cityInfo/mlini/PHOTO1.jpg" data-fancybox="imagesMlini">
+                            <img class="block__infoPhoto" src="img/cityInfo/mlini/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Зупинка Млини</p>
+                        <p class="block__infoText">
+                            Село Млини знаходиться на лівому березі річки Сула, на протилежному березі - місто Лохвиця. Річка
+                            в цьому місці звивиста, утворює лимани, стариці та заболочені озера. Через село проходить
+                            автомобільна дорога. У 1912 році у Млинах споруджено двокомплектну земську школу за проектом
+                            Опанаса Сластіона. Саме біля цієї школи Перша мандрівна капела Дніпросоюзу, у 1920 році очікувала
+                            на підводи, щоб відправитися у ближнє село Піски.
+                        </p>
+                        <a href="img/cityInfo/mlini/PHOTO2.jpg" data-fancybox="imagesMlini">
+                            <img class="block__infoPhoto" src="img/cityInfo/mlini/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Школа у Млинах</p>
+                        <p class="block__infoText">
+                            <b>Піски</b> — село в Україні, в Лохвицькому районі Полтавської області. Село вперше згадується у 1092
+                            році під назвою Песочень, сучасна назва з 1600 року.
+                        </p>
+                        <p class="block__infoText">
+                            Село Піски, розташоване на території Полтавської області у північно-східній частині України, на
+                            північному сході Лохвицького району у зоні лісостепу. У селі було 7 заводів та одна православна
+                            церква — мурована Успенська церква (1818 р).
+                        </p>
+                        <p class="block__infoText">
+                            Піски 1870-х років були описані в творі Панаса Мирного «Хіба ревуть воли, як ясла повні?».
+                        </p>
+                        <p class="block__infoText">
+                            У 1867—1879 через село прокладено залізничну лінію Кременчук — Бахмач. Діяло народне училище.
+                            У 1910 році Піски — центр волості, 772 двори, 4347 жителі, 25 вітряків, 6 кузень, 2 цегельних заводи,
+                            31 крамниця, народне училище і церковнопарафіяльна школа.
+                        </p>
+                        <p class="block__infoText">
+                            У січні 1918 року село було захоплене більшовиками. Під час боротьби з Денікіним 1919 у селі діяв
+                            підпільний партизанський штаб. У 1920 році створено комнезам. Революційні події вплинули на
+                            культурне життя села. В 1921 році почала діяти семирічка і всі діти шкільного віку були охоплені
+                            навчанням. Навчання проводилося у дві зміни. Школа розміщувалась у кількох навчальних корпусах.
+                            Молодші класи навчалися в колишній земській школі, а також приміщення в якому потім була аптека.
+                            А учні старших класів навчалися в приміщенні економії графа Галагана.
+                        </p>
+                        <a href="img/cityInfo/pisky/PHOTO1.jpg" data-fancybox="imagesMlini">
+                            <img class="block__infoPhoto" src="img/cityInfo/pisky/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">маєток Галагана. Суспільне надбання</p>
+                        <p class="block__infoText">
+                            Станом на 2019 р. від маєтку залишився напівзруйнований підвал, а також де-не-де можна віднайти
+                            цеглу з підписом м. Галаган.
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/mlini.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-romni animated fadeIn" id="13">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/romni.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText"><b>Культурне життя Ромен початку ХХ ст.</b></p>
+                        <p class="block__infoText">
+                            У травні 1918 року відбулося відкриття міського саду, у якому взяли участь місцеві музичні товариства
+                            та члени Київського союзу оркестрантів. У саду постійно грав симфонічний оркестр під керівництвом
+                            М.Г. Свєта та Г.І.Сухаренка.
+                        </p>
+                        <p class="block__infoText">
+                            У квітні 1919 року було відкрито музично-драматичну школу.
+                        </p>
+                        <p class="block__infoText">
+                            У цей період у місті з’являється кінематограф. У міському саду було відкрито перший кінотеатр, який
+                            називався біоскоп. Ось назви деяких фільмів, котрі там демонструвалися (наводяться в оригіналі):
+                            «Яд проклятый», «Жизнь бесприютная, жизнь одинокая», «Дни траура и скорби в Москве»
+                            «Принцесса грез…».
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO1.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Роменський актор театру і кіно Степан Шкурат. З архіву Роменського
+                            краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            У цей період Ромни стали своєрідним культурним центром регіону. Про це свідчить і бурхливе
+                            тогочасне театральне життя. Ще з 1882 року в Ромнах діяв любительський театр. Саме на його сцені
+                            відбувся дебют корифея української сцени Ганни Петрівни Затиркевич-Карпинської.
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO2.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO2.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Українська акторка Ганна Затиркевич-Карпинська (посередині). З архіву
+                            Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO3.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO3.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Ганна Затиркевич-Карпинська. Суспільне надбання
+                        </p>
+                        <p class="block__infoText">
+                            Можливо, саме вона запросила до нашого міста навесні 1918 року своїх колег, київських акторів з
+                            трупи М.Садовського. Про це йшлося в публікації Микити Міщенка в газеті «Народне слово»:
+                            «Запрохало Роменське товариство «Просвіта» на весь літній сезон трупу Миколи Садовського,
+                            артистів та артисток. Згодились і вже приїхали до Ромен: С.Стадник, Л.Ковалевська і Ніжинська, а з
+                            артистів – О.Корольчук, І.Овдієнко, І.Ковалевський. А оце в суботу 25 мая відкрили театр історично
+                            укоханою на Україні поставою «Наталка Полтавка» І.Котляревського. Сю дивну перлу на Україні знає
+                            старе і мале, отже скільки і де б вона не ставилася, стіни тріщать здавна, особливо, коли ще грають
+                            порядні артисти. Нам, роменчанам, пощастило побачити «Наталку Полтавку» у поставі шанованого на
+                            Україні артиста театру Миколи Садовського, Олександра Івановича Корольчука. Довго до Ромен
+                            потикалися і годували публіку гопаком і горілкою всякі русько-малоруські трупи, і здавалося, що
+                            цьому не буде кінця і краю. Та сей рік доля усміхнулась, і ми маєм щастя вітать у себе справжніх
+                            артистів. Вражіння від вистави якнайкращі. Нарешті роменчани зможуть побачити свій народ не
+                            осміяним, не сліпцем, не п’яницею-невдахою, а надзвичайним митцем, що творить красу, особливе
+                            мистецтво і стане рівним серед других народів світу».
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO4.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO4.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Роменська театральна трупа. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO4.1.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO4.1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Режисер Роменського Драматичного Хору в місцевому національному
+                            вбранні. 1920-ті роки. Суспільне надбання
+                        </p>
+                        <p class="block__infoText">
+                            Зі встановленням радянської влади наприкінці січня 1919 року театр у місті не припинив свого
+                            існування, адже був популярний серед населення, тож влада, очевидно, не хотіла втрачати такий
+                            інструмент впливу на маси, тому не взялася за ліквідацію «націоналістичного» товариства «Просвіта».
+                            Проте зміна «політичної погоди» спочатку відбилася лише в назві самого театрального колективу:
+
+                            «Українська радянська трупа при «Просвіті». А з червня 1920 року вже вказували безпосередньо
+                            перед назвою трупи інституцію від більшовицької влади, яка опікувалася мистецькими установами в
+                            той час (як, зокрема, і в Ромні), – «Відділ народної освіти», а тоді вже назву самого театру. Як
+                            довідуємося з афіш (зберігаються у відділі фондів Державного історико-культурного заповідника
+                            «Посулля» в м. Ромнах), Іван Кавалерідзе здійснив у Роменському професійному театрі постановки
+                            таких спектаклів: «Останній сніп» Л.Старицької-Черняхівської (прем’єра відбулася 20 червня 1919 р.),
+                            «Розумний і дурень» І.Тобілевича (прем’єра – 18 липня1919 р.), «Лісова пісня» Лесі Українки
+                            (прем’єра – 4 серпня1919 р.). <b>
+                                Дебютував І.Кавалерідзе як режисер виставою «На перші гулі»
+                                С.Васильченка
+                            </b> 6 листопада 1918 року, для якої створив і декорації.
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO5.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO5.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Афіша. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO6.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO6.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Афіша. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO7.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO7.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Афіша. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            Особливо цінними є свідчення тогочасних газет, котрі виходили в місті. Це такі видання, як «Народне
+                            слово», «Вісник Роменського військово-революційного комітету» (саме з нього починається історія
+                            нашої місцевої газети «Вісті Роменщини», яка нещодавно відзначила своє сторіччя), «Известия
+                            исполнительного комитета Роменского совета рабочих и селянских депутатов», «Голос селянина» та
+                            інші.
+                        </p>
+                        <p class="block__infoText">
+                            Наприклад у газеті Голос селянина, згадується про приїзд капели разом із Степаном Васильченком до
+                            Ромен.
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO8.jpeg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO8.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Газета Голос селянина. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO9.jpeg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO9.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Газета Голос селянина. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO10.jpeg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO10.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Газета Голос селянина. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO11.jpeg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO11.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Газета Голос селянина. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO12.jpeg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO12.jpeg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Газета Голос селянина. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <p class="block__infoText">
+                            Також капеляни давали концерт в Засуллі, яке знаходиться на іншій стороні міста Ромен.
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO13.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO13.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Вид на Засулля. З архіву Роменського краєзнавчого музею
+                        </p>
+                        <a href="img/cityInfo/romni/PHOTO14.jpg" data-fancybox="imagesRomni">
+                            <img class="block__infoPhoto" src="img/cityInfo/romni/PHOTO14.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">
+                            Вид на Засулля. З архіву Роменського краєзнавчого музею
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/romni.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__city wrapper__city-baxmach animated fadeIn" id="14">
+            <div class="block__content">
+                <div class="block__info">
+                    <img class="block__infoImg" src="img/cityNames/baxmach.png">
+                    <img class="block__infoToolbar" src="img/toolbar.png">
+                    <div class="block__infoContent">
+                        <p class="block__infoText">
+                            City Bakhmach came as a working class village in 60s-70s XIX century near old countryside Bakhmach
+                            during building of Kursko–Kyivska and Libavo-Romenska railways.
+                        </p>
+                        <a href="img/cityInfo/baxmach/PHOTO1.jpg" data-fancybox="imagesBaxmach">
+                            <img class="block__infoPhoto" src="img/cityInfo/baxmach/PHOTO1.jpg">
+                        </a>
+                        <p class="block__infoUnderImgText">Bakhmach, beginning of XX c. Public property</p>
+                        <p class="block__infoText">
+                            Regional ethnographer O. Zoiko explains the name of the city:
+                        </p>
+                        <p class="block__infoText">
+                            “Word Bakhmach belongs to a group of ancient Turkic words, that were used in Ukraine before the
+                            Tatars’ irruption. “Bakhmach” means “bashtan”, and argues about the fact that Dukes of Kyiv and
+                            Chernihiv settled captive Pechenegs or other revenants from Turkic hordes, who have given the name to
+                            their settlement at the end of the first millennium CE”.
+                        </p>
+                        <p class="block__infoText">
+                            28-29 квітня 1918 гетьманом України став <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BA%D0%BE%D1%80%D0%BE%D0%BF%D0%B0%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Павло Скоропадський</a> . Один з гетьманських
+                            полків був розміщений у Бахмачі. Штаб гетьманського полку розташовувався у
+                            приміщенні школи села Бахмач. Гетьманських козаків розмістили харчуватися
+                            (квартирувати) за рахунок власників по місцевих садибах — по два козаки на двір.
+                        </p>
+                        <p class="block__infoText">
+                            Була оголошена тотальна мобілізація до лав гетьманської армії. Але ця мобілізація
+                            проходила мляво — народ стомився від війни та революції, й молоді хлопці
+                            дезертирували з армії.
+                        </p>
+                        <p class="block__infoText">
+                            Влітку 1918 року почався масовий вивіз з України продуктів харчування. Якщо раніше
+                            українських селян грабували більшовики, то тепер з навколишніх сіл до станції Бахмач
+                            зганяли худобу та привозили птицю для відправки наживо й для заготівлі в інтересах
+                            німецького союзника. Пункти забою худоби були облаштовані на станціях Бахмач-
+                            Київський та Бахмач-Гомельский.
+                        </p>
+                        <p class="block__infoText">
+                            19 липня відбувся страйк бахмацьких залізничників.
+                        </p>
+                        <p class="block__infoText">
+                            У другій половині листопада війська Росії почали нову інтервенцію в Україну, 20 січня
+                            1919 Бахмач вчергове був окупований більшовиками. Потягнулися страшні часи злиднів,
+                            терору, руйнування церков і депортацій населення.
+                        </p>
+                    </div>
+                </div>
+                <div class="block__map">
+                    <img class="block__mapImg" src="img/cityMaps/baxmach.png">
+                    <img class="block__mapPrev" src="img/prevStation.png">
+                    <img class="block__mapNext" src="img/nextStation.png">
+                    <img class="block__mapClose" src="img/close.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
