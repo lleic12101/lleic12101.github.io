@@ -1,0 +1,740 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bitness__header {
+    position: fixed;
+    background: white;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    z-index: 3;
+    width: 100vw;
+    transition: 1s;
+}
+.bitness__navBarToggleBtn {
+    display: none;
+    padding: 10px;
+    background-color: transparent;
+    border: unset;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.bitness__navBarToggleBtn-open .bitness__navBarToggleBtn-close {
+    display: flex;
+}
+.bitness__navBarToggleBtn-open .bitness__navBarToggleBtn-bars {
+    display: none;
+}
+.bitness__navBarToggleBtn-close {
+    display: none;
+}
+.bitness__navBarToggleBtn-bars {
+    display: flex;
+}
+.bitness__navBarToggleBtn-text {
+    font-size: 20px;
+    margin-left: 8px;
+}
+.bitness__header-scrolled {
+    opacity: .3;
+    transition: 1s;
+    height: 80px;
+}
+.bitness__header-scrolled:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.bitness__navBar {
+   
+}
+.bitness__navBarA {
+    text-decoration: none;
+    color: black;
+    margin-left: 70px;
+    cursor: pointer;
+    transition: .3s;
+}
+.bitness__navBarA:hover {
+    color: lightgrey;
+    transition: .3s;
+}
+.bitness__headerButtons {
+
+}
+.bitness__button-signIn {
+    margin-right: 50px;
+    color: #05b0fe;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.bitness__button-signIn:hover {
+    color: #0d648b;
+    transition: .3s;
+}
+.bitness__button {
+    cursor: pointer;
+    outline: none;
+    background: #05b0fe;
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 10px 50px -10px #05b0fe;
+    transition: box-shadow 6s;
+}
+.bitness__button:after, .bitness__button:before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    height: 0;
+    padding-bottom: 200%;
+    background:#05b0fe;
+    top: 0;
+    z-index: -1;
+    border-radius: 230px;
+    transition: transform 2.5s, background 6s;
+}
+.bitness__button:after {
+    transform: translate3d(-5%, 6em, 0) rotate(-45deg);
+}
+.bitness__button:before {
+    transform: translate3d(5%, 6em, 0) rotate(0deg);
+}
+.bitness__button:hover:before, .bitness__button:hover:after, .bitness__button:focus:before, .bitness__button:focus:after {
+    transform: translate3d(0, -5em, 0) rotate(180deg);
+    background: #1391a9;
+}
+
+.bitness__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.bitness__mainBlock {
+    position: relative;
+    height: 100vh;
+}
+.bitness__mainWordsBlock {
+    position: relative;
+    margin-top: 250px;
+}
+.bitness__bigWord {
+    position: absolute;
+    top: -177px;
+    left: -60px;
+    font-weight: 900;
+    font-size: 408px;
+    color: #f5f6fa;
+    letter-spacing: 28px;
+}
+.bitness__imgWordBlock {
+    margin-top: 133px;
+    margin-left: -210px;
+    position: relative;
+    width: 1140px;
+}
+.bitness__imgWord {
+}
+.bitness__imgWordText {
+    font-weight: 900;
+    color: #05b0fe;
+    letter-spacing: 4.5px;
+    position: absolute;
+    top: -20px;
+    right: 37px;
+    font-size: 18px;
+}
+
+.bitness__mainBlockHeadline {
+    display: block;
+    width: 720px;
+    margin-top: 55px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+.bitness__mainBlockText {
+    display: block;
+    width: 730px;
+    font-size: 18px;
+    color: #8693a6;
+    line-height: 30px;
+    margin-bottom: 85px;
+    letter-spacing: 0px;
+}
+.bitness__mainBlockButton {
+    position: relative;
+}
+.bitness__mainBlockButtonImg {
+    position: absolute;
+    top: -22px;
+    left: 283px;
+    z-index: 2;
+}
+.bitness__button-main {
+    width: 320px;
+    height: 72px;
+    font-size: 18px;
+}
+.bitness__mainBlockSeeMore {
+    position: absolute;
+    right: 82px;
+    top: 700px;
+}
+
+.bitness__aboutBlock {
+    background: #f5f6fa;
+    width: 100%;
+    height: 2225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bitness__aboutVideoBlock {
+}
+.bitness__aboutVideo {
+    margin-top: -30px;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+.bitness__aboutVideoOpport {
+    display: block;
+    font-weight: 900;
+    font-size: 220px;
+    letter-spacing: 15px;
+    color: white;
+    position: absolute;
+    top: 610px;
+    left: 0px;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    z-index: 0;
+}
+.bitness__aboutVideoUnities {
+    display: block;
+    font-weight: 900;
+    font-size: 220px;
+    letter-spacing: 15px;
+    color: white;
+    position: absolute;
+    top: -180px;
+    right: 0px;
+    transform: rotate(-90deg);
+    transform-origin: right;
+    z-index: 0;
+}
+.bitness__aboutTextHeadline {
+    margin: 50px 0 25px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    color: #383838;
+    width: 720px;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0px;
+}
+.bitness__aboutText {
+    line-height: 24px;
+    color: #8693a6;
+    width: 720px;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0px;
+}
+.bitness__aboutDelimiter {
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #05b0fe;
+    margin-top: 25px;
+    margin-bottom: 90px;
+    z-index: 1;
+    position: relative;
+}
+.bitness__aboutInfoBlocks {
+    display: flex;
+    justify-content:space-between;
+    height: 500px;
+    margin-bottom: 0px;
+}
+.bitness__aboutInfoBlock {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    margin-bottom: 35px;
+}
+.bitness__aboutInfoBlockImg {
+    margin-right: 30px;
+    position: relative;
+    z-index:1;
+}
+.bitness__aboutInfoBlockText {
+
+}
+.bitness__aboutInfoHeadline {
+    font-weight: 900;
+    font-size: 18px;
+    color: #383838;
+    margin-bottom: 25px;
+}
+.bitness__aboutInfoText {
+    color: #8693a6;
+    line-height: 24px;
+}
+.bitness__button-knowMore {
+    width: 370px;
+    height: 72px;
+    font-size: 18px;
+}
+
+.bitness__headlineBlock {
+    margin: 150px 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bitness__firstHeadlineBlock {
+    margin: 120px auto 150px;
+}
+.bitness__headlineBlockRow {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #383838;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bitness__headlineTextBlock {
+    background: url('img/bg.png'), no-repeat;
+    width: 1120px;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bitness__headlineText {
+    font-weight: 900;
+    font-size: 36px;
+    color: white;
+}
+
+.bitness__wrapper {
+    width: 1140px;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.bitness__center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bitness__svgWawes-1 {
+    width: 500px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    z-index: -1;
+}
+.bitness__svgWawes-2 {
+    width: 1000px;
+    position: absolute;
+    top: 300px;
+    left: -400px;
+    z-index: -1;
+}
+.bitness__svgWawes-3 {
+    position: absolute;
+    top: 1350px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+.bitness__svgWawes-4 {
+    position: absolute;
+    top: 2160px;
+    left: -255px;
+}
+.bitness__svgWawes-5 {
+    position: absolute;
+    /*top: 2750px;*/
+    top: 2500px;
+    right: 0px;
+}
+
+
+@media screen and (max-height: 940px) {
+    .bitness__mainWordsBlock {
+        margin-top: 200px;
+        transform: scale(0.9);
+    }
+    .bitness__mainBlockSeeMore {
+        top: 640px;
+    }
+}
+@media screen and (max-height: 890px) {
+    .bitness__mainWordsBlock {
+        margin-top: 180px;
+        transform: scale(0.8);
+    }
+    .bitness__mainBlockHeadline {
+        margin-top: 30px;
+    }
+    .bitness__mainBlockSeeMore {
+        top: 590px;
+    }
+}
+@media screen and (max-height: 890px) {
+    .bitness__mainWordsBlock {
+        margin-top: 170px;
+        margin-left: -60px;
+        transform: scale(0.7);
+    }
+    .bitness__mainBlockHeadline {
+        margin-top: 10px;
+    }
+    .bitness__mainBlockSeeMore {
+        top: 570px;
+    }
+}
+@media screen and (max-height: 810px) {
+    .bitness__mainBlockHeadline {
+        margin-top: 0px;
+    }
+    .bitness__mainBlockSeeMore {
+        top: 510px;
+    }
+    .bitness__mainBlockText {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 1503px) {
+    .bitness__header {
+        height: auto;
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+
+    .bitness__header-scrolled {
+        padding: 20px 100px;
+    }
+
+    .bitness__navBar {
+        margin: 20px auto;
+    }
+    .bitness__mainWordsBlock {
+        margin-top: 300px;
+        transform: scale(0.9);
+    }
+    .bitness__mainBlockHeadline {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1510px) {
+    .bitness__bigWord {
+        top: -175px;
+        left: 30px;
+    }
+    .bitness__imgWordBlock {
+        margin-left: -110px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .bitness__mainWordsBlock {
+        margin-top: 220px;
+        transform: scale(0.5);
+        margin-left: -290px;
+    }
+    .bitness__mainBlockHeadline {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .bitness__wrapper {
+        width: 1030px;
+    }
+    .bitness__headlineTextBlock {
+        width: 1000px;
+    }
+    .bitness__svgWawes-5 {
+        right: 0px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .bitness__mainBlock {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .bitness__wrapper {
+        width: 930px;
+    }
+    .bitness__headlineTextBlock {
+        width: 900px;
+    }
+    .bitness__aboutInfoBlocks {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .bitness__aboutBlock {
+        height: auto;
+        padding-bottom: 150px;
+    }
+    .bitness__mainWordsBlock {
+        margin-left: 20px;
+        transform: scale(0.8);
+    }
+    .bitness__bigWord {
+        top: -235px;
+        left: 30px;
+    }
+    .bitness__imgWordBlock {
+        margin-left: -170px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bitness__wrapper {
+        width: 830px;
+    }
+    .bitness__headlineTextBlock {
+        padding: 20px;
+        width: 800px;
+    }
+    .bitness__headlineBlock {
+        height: 130px;
+    }
+    .bitness__aboutBlock {
+        height: auto;
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .bitness__navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bitness__navBar a {
+        margin: 3px 0;
+    }
+    .bitness__svgWawes-4 {
+        width: 100%;
+        left: 0px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .bitness__header {
+        padding: 20px 100px;
+    }
+    .bitness__navBar {
+        margin-top: 0px;
+        display: block;
+        position: absolute;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0s;
+    }
+    .bitness__navBar-active {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        opacity: 1;
+        transform: translateX(0);
+        transition: .5s;
+    }
+    .bitness__navBarToggleBtn {
+        display: flex;
+    }
+    .bitness__mainWordsBlock {
+        margin-top: 200px;
+    }
+    .bitness__mainBlockHeadline {
+        width: 500px;
+    }
+    .bitness__mainBlockText {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .bitness__mainWordsBlock {
+        transform: scale(0.7);
+    }
+}
+@media screen and (max-width: 850px) {
+    .bitness__wrapper {
+        width: 730px;
+    }
+    .bitness__headlineTextBlock {
+        width: 700px;
+    }
+    .bitness__mainBlockHeadline {
+        width: auto;
+    }
+    .bitness__mainBlockText {
+        width: auto;
+    }
+    .bitness__aboutTextHeadline {
+        width: auto;
+    }
+    .bitness__aboutText {
+        width: auto;
+    }
+    .bitness__mainWordsBlock {
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .bitness__wrapper {
+        width: 630px;
+    }
+    .bitness__headlineTextBlock {
+        width: 600px;
+    }
+    .bitness__mainBlockSeeMore {
+        top: 1000px;
+    }
+    .bitness__mainWordsBlock {
+        transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 650px) {
+    .bitness__wrapper {
+        width: 530px;
+    }
+    .bitness__headlineTextBlock {
+        width: 500px;
+    }
+    .bitness__mainBlockSeeMore {
+        display: none;
+    }
+    .bitness__svgWawes-2 {
+        width: 100%;
+        left: 0px;
+    }
+    .bitness__headlineBlock {
+        height: 160px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .bitness__headerButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bitness__button-signIn {
+        margin: 0 0 10px 0;
+    }
+    .bitness__wrapper {
+        width: 430px;
+    }
+    .bitness__headlineTextBlock {
+        width: 400px;
+    }
+    .bitness__imgWordText {
+        display: flex;
+        justify-content: center;
+        position: unset;
+    }
+    .bitness__aboutInfoBlock {
+        width: auto;
+        margin-bottom: 80px;
+    }
+    .bitness__mainBlock {
+        height: 1000px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .bitness__wrapper {
+        width: 320px;
+    }
+    .bitness__headlineTextBlock {
+        width: 290px;
+        height: 260px;
+    }
+    .bitness__aboutInfoBlock {
+        width: auto;
+        margin-bottom: 230px;
+    }
+    .bitness__aboutTextHeadline {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .bitness__headlineBlock {
+        height: 190px;
+    }
+    .bitness__mainBlock {
+        height: auto;
+    }
+    .bitness__aboutDelimiter {
+        margin-bottom: 20px;
+    }
+    .bitness__button-main {
+        width: 290px;
+        margin-bottom: 30px;
+    }
+    .bitness__mainBlockButtonImg {
+        position: absolute;
+        top: -22px;
+        left: 253px;
+        z-index: 2;
+    }
+    .bitness__svgWawes-3 {
+        top: 1850px;
+    }
+    .bitness__svgWawes-5 {
+        top: 3000px;
+    }
+    .bitness__mainWordsBlock {
+        margin-left: 25px;
+    }
+    .bitness__mainWordsBlock {
+        margin-top: 150px;
+        margin-left: -50px;
+        transform: scale(0.4);
+    }
+}
