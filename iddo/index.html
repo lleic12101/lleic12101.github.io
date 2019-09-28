@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IDDO</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <header class="mainHeader">
+        <section class="menuBlock">
+            <div class="menuBlock__height" id="menuBlock__height">
+                <div class="menuBlock__logo">
+                    <img src="img/IDDO.png" />
+                </div>
+                <nav class="headerMenu">
+                    <button class="headerMenu__toggleBtn" id="headerMenu__toggleBtn">
+                        <span class="headerMenu__toggleBtn-bars" id="iconBars">
+                            <i class="fas fa-bars"></i><p class="headerMenu__toggleBtn-text">MENU</p>
+                        </span>
+                        <span class="headerMenu__toggleBtn-close" id="iconClose">
+                            <i class="fas fa-window-close"></i><p class="headerMenu__toggleBtn-text">MENU</p>
+                        </span>
+                    </button>
+                    <ul class="headerMenu__list" id="headerMenu__list">
+                        <li class="headerMenu__item">
+                            <a href="#" class="animated flipInX" data-wow-delay=".1s">Home</a>
+                            <a href="#" class="animated flipInX" data-wow-delay=".2s">Services</a>
+                            <a href="#" class="animated flipInX" data-wow-delay=".3s">Portfolio</a>
+                            <a href="#" class="animated flipInX" data-wow-delay=".4s">About</a>
+                            <a href="#" class="animated flipInX" data-wow-delay=".5s">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="signUpBtn animated bounceInRight" data-wow-delay=".6s">Sign Up</button>
+            </div>
+        </section>
+        <section class="headerContentBlock">
+            <div class="slider">
+                <div class="slider__content"></div>
+                <div class="slider__wrapper">
+                    <div class="slider__btn slider__btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slider__btn slider__btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="slider__dots"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="mainContent">
+        <section class="ourServicesBlock">
+            <div class="ourServicesBlock__height">
+                <div class="blockName ourServicesBlock__name wow bounceInLeft"><b>OUR SERVICES.</b></div>
+                <div class="ourServicesBlock__features">
+                    <div class="ourServicesBlock__feature wow zoomIn" data-wow-delay=".1s">
+                        <div class="ourServicesBlock__feature-img"><img src="img/feature1.png" /></div>
+                        <div class="ourServicesBlock__feature-content">
+                            <div class="ourServicesBlock__feature-headline"><b>WEB</b></div>
+                            <div class="ourServicesBlock__feature-text">
+                                We create working websites, online stores and web services. You will like and want more!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourServicesBlock__feature wow zoomIn" data-wow-delay=".2s">
+                        <div class="ourServicesBlock__feature-img"><img src="img/feature2.png" /></div>
+                        <div class="ourServicesBlock__feature-content">
+                            <div class="ourServicesBlock__feature-headline"><b>HOSTING</b></div>
+                            <div class="ourServicesBlock__feature-text">
+                                For our clients, we offer the services of hosting sites on servers
+                                in the best data centers in Ukraine and Russia.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourServicesBlock__feature wow zoomIn" data-wow-delay=".3s">
+                        <div class="ourServicesBlock__feature-img"><img src="img/feature3.png" /></div>
+                        <div class="ourServicesBlock__feature-content">
+                            <div class="ourServicesBlock__feature-headline"><b>MOBILE</b></div>
+                            <div class="ourServicesBlock__feature-text">
+                                We develop native mobile applications for startups and businesses, as well as any software.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourServicesBlock__feature wow zoomIn" data-wow-delay=".4s">
+                        <div class="ourServicesBlock__feature-img"><img src="img/feature4.png" /></div>
+                        <div class="ourServicesBlock__feature-content">
+                            <div class="ourServicesBlock__feature-headline"><b>SUPPORT</b></div>
+                            <div class="ourServicesBlock__feature-text">
+                                We offer a full range of technical support services for
+                                the affordable and high-quality functioning of your resource.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ourServicesBlock__icons">
+                <div class="ourServicesBlock__icons-height">
+                    <img class="wow flipInY" data-wow-delay=".1s" src="img/icon1.png" />
+                    <img class="wow flipInY" data-wow-delay=".2s" src="img/icon2.png" />
+                    <img class="wow flipInY" data-wow-delay=".3s" src="img/icon3.png" />
+                    <img class="wow flipInY" data-wow-delay=".4s" src="img/icon4.png" />
+                    <img class="wow flipInY" data-wow-delay=".5s" src="img/icon5.png" />
+                    <img class="wow flipInY" data-wow-delay=".6s" src="img/icon6.png" />
+                </div>
+            </div>
+        </section>
+        <section class="ourWorksBlock">
+            <div class="ourWorksBlock__height">
+                <div class="blockName ourWorksBlock__name wow bounceInLeft"><b>OUR WORKS.</b></div>
+                <form class="ourWorksBlock__buttons">
+                    <button type="button" class="ourWorksBlock__btn ourWorksBlock__btn-all ourWorksBlock__btn-active wow bounceIn" data-wow-delay=".1s">All</button>
+                    <button type="button" class="ourWorksBlock__btn ourWorksBlock__btn-website wow bounceIn" data-wow-delay=".2s" data-type="website">Website</button>
+                    <button type="button" class="ourWorksBlock__btn ourWorksBlock__btn-store wow bounceIn" data-wow-delay=".3s" data-type="store">Store</button>
+                </form>
+                <div class="ourWorksBlock__containers">
+                    <div class="ourWorksBlock__container wow fadeIn" data-wow-delay=".1s" data-type="website">
+                        <div class="ourWorksBlock__workCard">
+                            <div class="ourWorksBlock__workCard-img"><img src="img/ourWorks/work1.png" /></div>
+                            <div class="ourWorksBlock__workDescr">
+                                <h3 class="ourWorksBlock__workDescr-title">HORA</h3>
+                                <p class="ourWorksBlock__workDescr-text">designed by OldBoy | April 23, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourWorksBlock__container wow fadeIn" data-wow-delay=".2s" data-type="website">
+                        <div class="ourWorksBlock__workCard">
+                            <div class="ourWorksBlock__workCard-img"><img src="img/ourWorks/work2.png" /></div>
+                            <div class="ourWorksBlock__workDescr">
+                                <h3 class="ourWorksBlock__workDescr-title">ICO.INTRO</h3>
+                                <p class="ourWorksBlock__workDescr-text">designed by Leyth | May 21, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourWorksBlock__container wow fadeIn" data-wow-delay=".3s" data-type="store">
+                        <div class="ourWorksBlock__workCard">
+                            <div class="ourWorksBlock__workCard-img"><img src="img/ourWorks/work3.png" /></div>
+                            <div class="ourWorksBlock__workDescr">
+                                <h3 class="ourWorksBlock__workDescr-title">ZSTROY</h3>
+                                <p class="ourWorksBlock__workDescr-text">designed by Triayla | August 15, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourWorksBlock__container wow fadeIn" data-wow-delay=".4s" data-type="store">
+                        <div class="ourWorksBlock__workCard">
+                            <div class="ourWorksBlock__workCard-img"><img src="img/ourWorks/work4.png" /></div>
+                            <div class="ourWorksBlock__workDescr">
+                                <h3 class="ourWorksBlock__workDescr-title">SWISSPAN BY SORBES</h3>
+                                <p class="ourWorksBlock__workDescr-text">designed by Risletyre | July 30, 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourWorksBlock__container wow fadeIn" data-wow-delay=".5s" data-type="website">
+                        <div class="ourWorksBlock__workCard">
+                            <div class="ourWorksBlock__workCard-img"><img src="img/ourWorks/work5.png" /></div>
+                            <div class="ourWorksBlock__workDescr">
+                                <h3 class="ourWorksBlock__workDescr-title">GOLDEN STAFF</h3>
+                                <p class="ourWorksBlock__workDescr-text">designed by Jesser | June 2, 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourWorksBlock__container wow fadeIn" data-wow-delay=".6s" data-type="store">
+                        <div class="ourWorksBlock__workCard">
+                            <div class="ourWorksBlock__workCard-img"><img src="img/ourWorks/work6.png" /></div>
+                            <div class="ourWorksBlock__workDescr">
+                                <h3 class="ourWorksBlock__workDescr-title">ARISTO</h3>
+                                <p class="ourWorksBlock__workDescr-text">designed by Ferph | September 25, 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="plus-button wow fadeInLeft"><img src="img/plus.png" /></button>
+            </div>
+            <div class="ourWorksBlock__comments">
+                <div class="ourWorksBlock__comments-height wow bounceInRight">
+                    <p class="ourWorksBlock__comments-text">
+                        “We perfectly understand what an Internet product should be
+                        and how to achieve it. We combine digital prowess with innovative
+                        thinking to realize all your ideas and wishes.
+                    </p>
+                    <img class="ourWorksBlock__comments-avatar" src="img/avatar.png" />
+                    <b class="ourWorksBlock__comments-name">JACK EFRON</b>
+                    <form class="ourWorksBlock__buttons-list">
+                        <button class="ourWorksBlock__button" type="button"></button>
+                        <button class="ourWorksBlock__button" type="button"></button>
+                        <button class="ourWorksBlock__button" type="button"></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="ourTeamBlock">
+            <div class="ourTeamBlock__height">
+                <div class="blockName ourTeamBlock__name wow bounceInLeft"><b>OUR TEAM.</b></div>
+                <div class="ourTeamBlock__userInfoBlocks">
+                    <div class="ourTeamBlock__userInfoBlock wow flipInY" data-wow-delay=".1s">
+                        <div class="ourTeamBlock__userInfo">
+                            <div class="ourTeamBlock__photoInfo">
+                                <div class="ourTeamBlock__photoInfo-photo">
+                                    <img src="img/ourTeam/user1.jpg" />
+                                </div>
+                                <ul class="ourTeamBlock__socialIcons">
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <img src="img/icons/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <img src="img/icons/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <img src="img/icons/instagram.png" alt="instagramm">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ourTeamBlock__textInfo">
+                                <h3 class="ourTeamBlock__textInfo-title">Michael Joe</h3>
+                                <p class="ourTeamBlock__textInfo-profession">CEO & Founder</p>
+                                <p class="ourTeamBlock__textInfo-about">
+                                    American computer science theorist in computer science,
+                                    professor of computer science and molecular biology at
+                                    the University of Southern California. He is known as co-author
+                                    of the RSA encryption system  and DNA computing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourTeamBlock__userInfoBlock wow flipInY" data-wow-delay=".2s">
+                        <div class="ourTeamBlock__userInfo">
+                            <div class="ourTeamBlock__photoInfo">
+                                <div class="ourTeamBlock__photoInfo-photo">
+                                    <img src="img/ourTeam/user2.jpg" />
+                                </div>
+                                <ul class="ourTeamBlock__socialIcons">
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <img src="img/icons/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <img src="img/icons/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <img src="img/icons/instagram.png" alt="instagramm">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ourTeamBlock__textInfo">
+                                <h3 class="ourTeamBlock__textInfo-title">Jeremy scott</h3>
+                                <p class="ourTeamBlock__textInfo-profession">Designer</p>
+                                <p class="ourTeamBlock__textInfo-about">
+                                    American entrepreneur and scientist in the field of
+                                    computing, information technology and economics, a
+                                    billionaire, developer and founder of the Google search engine.
+                                    He lives in Los Altos, California.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourTeamBlock__userInfoBlock wow flipInY" data-wow-delay=".3s">
+                        <div class="ourTeamBlock__userInfo">
+                            <div class="ourTeamBlock__photoInfo">
+                                <div class="ourTeamBlock__photoInfo-photo">
+                                    <img src="img/ourTeam/user3.jpg" />
+                                </div>
+                                <ul class="ourTeamBlock__socialIcons">
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <img src="img/icons/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <img src="img/icons/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="ourTeamBlock__socialIcons-item">
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <img src="img/icons/instagram.png" alt="instagramm">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ourTeamBlock__textInfo">
+                                <h3 class="ourTeamBlock__textInfo-title">Justin West</h3>
+                                <p class="ourTeamBlock__textInfo-profession">PHP Programmer</p>
+                                <p class="ourTeamBlock__textInfo-about">
+                                    Danish programmer, who wrote a set of Perl / CGI scripts
+                                    in 1994 that process templates of HTML documents and
+                                    later embodied in the PHP scripting language interpreter,
+                                    which could solve various tasks of web applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="plus-button wow fadeInLeft"><img src="img/plus.png" /></button>
+            </div>
+            <div class="ourTeamBlock__achievements">
+                <div class="ourTeamBlock__achievements-height">
+                    <div class="ourTeamBlock__achievements-item wow zoomInRight" data-wow-delay=".1s">
+                        <img src="img/achievements/present.png" />
+                        <p class="ourTeamBlock__achievements-number">2009</p>
+                        <p class="ourTeamBlock__achievements-text">PERSPICIATIS</p>
+                    </div>
+                    <div class="ourTeamBlock__achievements-item wow zoomInRight" data-wow-delay=".2s">
+                        <img src="img/achievements/message.png" />
+                        <p class="ourTeamBlock__achievements-number">13,562</p>
+                        <p class="ourTeamBlock__achievements-text">COMMENTS</p>
+                    </div>
+                    <div class="ourTeamBlock__achievements-item wow zoomInRight" data-wow-delay=".3s">
+                        <img src="img/achievements/coffee.png" />
+                        <p class="ourTeamBlock__achievements-number">8,710</p>
+                        <p class="ourTeamBlock__achievements-text">COFFEE CUPS</p>
+                    </div>
+                    <div class="ourTeamBlock__achievements-item wow zoomInRight" data-wow-delay=".4s">
+                        <img src="img/achievements/cup.png" />
+                        <p class="ourTeamBlock__achievements-number">715</p>
+                        <p class="ourTeamBlock__achievements-text">AWARDS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ourSkillsBlock">
+            <div class="ourSkillsBlock__height">
+                <div class="blockName ourSkillsBlock__name wow bounceInLeft"><b>OUR SKILLS.</b></div>
+                <div class="ourSkillsBlock__content">
+                    <div class="ourSkillsBlock__content-about">
+                        <div class="ourSkillsBlock__circles">
+                            <img class="ourSkillsBlock__circle-75 wow rotateIn" data-wow-delay=".1s" src="img/75.png" />
+                            <img class="ourSkillsBlock__circle-25 wow rotateIn" data-wow-delay=".2s" src="img/25.png" />
+                            <img class="ourSkillsBlock__circle-75 wow rotateIn" data-wow-delay=".3s" src="img/75.png" />
+                            <img class="ourSkillsBlock__circle-50 wow rotateIn" data-wow-delay=".4s" src="img/50.png" />
+                        </div>
+                        <div class="ourSkillsBlock__content-text wow flipInX">
+                            <h3>SOMETHING ABOUT OUR SKILLS</h3>
+                            <p>
+                                It is not by chance that our agency gathered the
+                                strongest team of designers and interface designers,
+                                frontend and backend programmers, marketers, experts
+                                in the development of mobile applications, specialists
+                                in testing digital products, promotion, and many many
+                                other excellent specialists.
+                            </p>
+                            <p>
+                                Quality is the basis of our agency’s development
+                                and prosperity strategy. Your project may be small,
+                                complex or completely crazy, in any case, we implement
+                                it at the highest level.
+                                We do not take marriage! We do not do marriage!
+                                We do not pass the marriage!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ourSkillsBlock__list">
+                        <div class="ourSkillsBlock__button-div wow slideInRight" data-wow-delay=".1s">
+                            <button class="ourSkillsBlock__list-button">
+                                <div class="ourSkillsBlock__button-icon"><i class="fas fa-rocket"></i></div>
+                                <p class="ourSkillsBlock__button-text">Seo</p>
+                                <p class="ourSkillsBlock__button-sign-plus">+</p>
+                                <p class="ourSkillsBlock__button-sign-minus">-</p>
+                            </button>
+                            <div class="ourSkillsBlock__list-text">
+                                We are engaged in effective promotion
+                                of sites in Yandex and Google.
+                            </div>
+                        </div>
+                        <div class="ourSkillsBlock__button-div wow slideInRight" data-wow-delay=".2s">
+                            <button class="ourSkillsBlock__list-button">
+                                <div class="ourSkillsBlock__button-icon"><i class="fas fa-unlock"></i></div>
+                                <p class="ourSkillsBlock__button-text">PPC</p>
+                                <p class="ourSkillsBlock__button-sign-plus">+</p>
+                                <p class="ourSkillsBlock__button-sign-minus">-</p>
+                            </button>
+                            <div class="ourSkillsBlock__list-text">
+                                Placement of your company's website ads
+                                in Google and Yandex search results.
+                            </div>
+                        </div>
+                        <div class="ourSkillsBlock__button-div wow slideInRight" data-wow-delay=".3s">
+                            <button class="ourSkillsBlock__list-button">
+                                <div class="ourSkillsBlock__button-icon"><i class="fas fa-location-arrow"></i></div>
+                                <p class="ourSkillsBlock__button-text">QA</p>
+                                <p class="ourSkillsBlock__button-sign-plus">+</p>
+                                <p class="ourSkillsBlock__button-sign-minus">-</p>
+                            </button>
+                            <div class="ourSkillsBlock__list-text">
+                                We offer a full range of quality control services:
+                                from planning the testing process to improving
+                                the procedure for developing software products.
+                            </div>
+                        </div>
+                        <div class="ourSkillsBlock__button-div wow slideInRight" data-wow-delay=".4s">
+                            <button class="ourSkillsBlock__list-button">
+                                <div class="ourSkillsBlock__button-icon"><i class="fas fa-phone-alt"></i></div>
+                                <p class="ourSkillsBlock__button-text">Domains</p>
+                                <p class="ourSkillsBlock__button-sign-plus">+</p>
+                                <p class="ourSkillsBlock__button-sign-minus">-</p>
+                            </button>
+                            <div class="ourSkillsBlock__list-text">
+                                We offer domain registration services
+                                in all popular domain zones.
+                            </div>
+                        </div>
+                        <div class="ourSkillsBlock__button-div wow slideInRight" data-wow-delay=".5s">
+                            <button class="ourSkillsBlock__list-button">
+                                <div class="ourSkillsBlock__button-icon"><i class="fas fa-book"></i></div>
+                                <p class="ourSkillsBlock__button-text">Branding</p>
+                                <p class="ourSkillsBlock__button-sign-plus">+</p>
+                                <p class="ourSkillsBlock__button-sign-minus">-</p>
+                            </button>
+                            <div class="ourSkillsBlock__list-text">
+                                We design logos, corporate identity,
+                                advertising and printing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ourSkillsBlock__email">
+                <div class="ourSkillsBlock__email-height wow slideInRight">
+                    <form class="ourSkillsBlock__email-content">
+                        <input class="ourSkillsBlock__email-input" placeholder="Enter your e-mail here..." type="email" name="userEmail">
+                        <input class="ourSkillsBlock__submit" value="Subscribe" type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="ourSkillsBlock__partnership">
+                <div class="ourSkillsBlock__partnership-height">
+                    <div class="ourSkillsBlock__partnership-icons">
+                        <img class="ourSkillsBlock__partnership-icon wow jackInTheBox" data-wow-delay=".1s" src="img/partnership/envato.png" />
+                        <img class="ourSkillsBlock__partnership-icon wow jackInTheBox" data-wow-delay=".2s" src="img/partnership/wordpress.png" />
+                        <img class="ourSkillsBlock__partnership-icon wow jackInTheBox" data-wow-delay=".3s" src="img/partnership/dribble.png" />
+                        <img class="ourSkillsBlock__partnership-icon wow jackInTheBox" data-wow-delay=".4s" src="img/partnership/envato.png" />
+                        <img class="ourSkillsBlock__partnership-icon wow jackInTheBox" data-wow-delay=".5s" src="img/partnership/wordpress.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactUsBlock">
+            <div class="contactUsBlock__height">
+                <div class="blockName contactUsBlock__name wow bounceInLeft"><b>CONTACT US.</b></div>
+                <p class="contactUsBlock__text wow slideInLeft" data-wow-delay=".1s">123A Building, Road Street, Orlando District, US</p>
+                <p class="contactUsBlock__text wow slideInLeft" data-wow-delay=".2s">+01 234 567 89 - +01 234 567 89 | contact@book.com</p>
+                <nav class="contactUsBlock__social">
+                    <ul class="contactUsBlock__social-list">
+                        <li class="contactUsBlock__social-item">
+                            <a href="https://twitter.com/" target="_blank"><img class="wow rotateIn" data-wow-delay=".1s" src="img/social1.png" /></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img class="wow rotateIn" data-wow-delay=".2s" src="img/social2.png" /></a>
+                            <a href="https://www.google.com" target="_blank"><img class="wow rotateIn" data-wow-delay=".3s" src="img/social3.png" /></a>
+                            <a href="https://www.pinterest.com/" target="_blank"><img class="wow rotateIn" data-wow-delay=".4s" src="img/social4.png" /></a>
+                            <a href="https://www.instagram.com" target="_blank"><img class="wow rotateIn" data-wow-delay=".5s" src="img/social5.png" /></a>
+                            <a href="https://www.youtube.com" target="_blank"><img class="wow rotateIn" data-wow-delay=".6s" src="img/social6.png" /></a>
+                            <a href="https://www.skype.com" target="_blank"><img class="wow rotateIn" data-wow-delay=".7s" src="img/social7.png" /></a>
+                            <a href="https://www.ball.com" target="_blank"><img class="wow rotateIn" data-wow-delay=".8s" src="img/social8.png" /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contactUsBlock__container">
+                    <form action="#" method="GET">
+                        <div class="contactUsBlock__form-input">
+                            <input class="contactUsBlock__input contactUsBlock__input-email wow bounceIn" data-wow-delay=".1s" type="email" name="userEmail">
+                            <input class="contactUsBlock__input contactUsBlock__input-name wow bounceIn" data-wow-delay=".2s" type="text" name="userName">
+                        </div>
+                        <div class="contactUsBlock__form-submit">
+                            <textarea class="contactUsBlock__message wow bounceIn" data-wow-delay=".3s" "></textarea>
+                            <input class="contactUsBlock__submit wow bounceIn" data-wow-delay=".4s" type="submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="contactUsBlock__thanksBlock animated fadeIn">
+                    <span class="contactUsBlock__thanksText">Thank you! Your request is accepted</span>
+                    <span class="contactUsBlock__thanksCloseBtn">&times;</span>
+                </div>
+            </div>
+        </section>
+        <section class="requestACall">
+            <div class="requestACall__button">
+                <span class="requestACall__button-iconPhone"><i class="fas fa-phone-alt"></i></span>
+                <span class="requestACall__button-iconClose"><i class="fas fa-times"></i></span>
+                <span class="requestACall__button-text">Request a call</span>
+                <span class="requestACall__button-textClose">Close</span>
+            </div>
+            <div class="requestACall__window animated slideInUp">
+                <span class="requestACall__window-headline">Request a call</span>
+                <form class="requestACall__window-form">
+                    <textarea class="requestACall__window-textarea" placeholder="INPUT NAME"></textarea>
+                    <textarea class="requestACall__window-textarea" placeholder="INPUT NUMBER"></textarea>
+                    <textarea class="requestACall__window-textarea" placeholder="INPUT MESSAGE"></textarea>
+                    <button class="requestACall__window-button">Send</button>
+                </form>
+            </div>
+            <div class="requestACall__reminder animated">
+                <span class="requestACall__reminderHeadline">Do you need help?</span>
+                <span class="requestACall__reminderText"><br>Click the button below</span>
+            </div>
+            <div class="requestACall__thanks animated">
+                <span class="requestACall__thanksCloseBtn">&times;</span>
+                <span class="requestACall__thanksText"><b>Thank you!</b></span>
+                <span class="requestACall__thanksIcon"><i class="fas fa-check"></i></span>
+            </div>
+        </section>
+    </main>
+    <footer class="mainFooter">
+        <div class="mainFooter__height wow fadeIn">
+            <img class="mainFooter__img" src="img/IDDO.png" />
+            <p class="mainFooter__text">© 2014 IDDO. All rights resevered.</p>
+            <p class="mainFooter__text">Designed by DZOAN.</p>
+        </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
