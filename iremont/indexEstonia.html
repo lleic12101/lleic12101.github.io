@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iremont</title>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <header class="remont__header"><img src="img/logo.png" height="60"></header>
+    <main class="remont__main">
+        <div class="remont__form">
+            <p class="remont__inputName">Remondi tellimuse registreerimiseks sisestage palun telefoni number</p>
+            <div class="remont__inputBlock">
+                <img class="remont__inputIcon" src="img/phone.png">
+                <input class="remont__input" placeholder="(+372) 777 - 77 - 77">
+            </div>
+            <div class="remont__closedBlock1">
+                <div class="remont__inputBlock">
+                    <img class="remont__inputIcon" src="img/user.png">
+                    <input class="remont__input" placeholder="Nimi / firma">
+                </div>
+                <div class="remont__inputBlock">
+                    <img class="remont__inputIcon" src="img/email.png">
+                    <input class="remont__input" placeholder="E-mail">
+                </div>
+                <div class="remont__inputBlock">
+                    <img class="remont__inputIcon" src="img/home.png">
+                    <input class="remont__input" placeholder="Linn, Smartpost">
+                </div>
+            </div>
+            <div class="remont__closedBlock2">
+                <p class="remont__mobKind"></p>
+                <div class="remont__center">
+                    <p class="remont__inputName">Sisestage IMEI kood</p>
+                    <div class="remont__inputBlock">
+                        <img class="remont__inputIcon" src="img/imei.png">
+                        <input class="remont__input" placeholder="IMEI">
+                    </div>
+                    <div class="remont__helpBlock">
+                        <div class="remont__helpComment" id="imeiText">Kust leiate IMEI koodi</div>
+                        <span class="remont__help" id="imeiBtn">?</span>
+                    </div>
+                </div>
+                <div class="remont__closedBlock3">
+                    <div class="remont__center">
+                        <p class="remont__inputName">Kas on õige seade?</p>
+                        <div class="remont__inputBlock">
+                            <img class="remont__inputIcon" src="img/apple.png">
+                            <input class="remont__input remont__input-iphone" placeholder="Модель" value="     IPHONE XS">
+                        </div>
+                        <div class="remont__helpBlock-model remont__helpBlock-model-estonia">
+                            <div class="remont__helpComment-model-estonia" id="modelText">Kust vaadata seadme mudeli</div>
+                            <span class="remont__help" id="modelBtn">?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="remont__center">
+                    <button class="remont__buttonPrev">
+                        <img class="remont__buttonPrevIcon" src="img/prev.png">
+                        Tagasi
+                    </button>
+                </div>
+            </div>
+            <button class="remont__buttonNext">
+                Edasi
+                <img class="remont__buttonNextIcon" src="img/next.png">
+            </button>
+            <div class="remont__closedBlock4">
+                <div class="remont__flex remont__flexColumn">
+                    <div class="remont__problemBlock">
+                        <p class="remont__problemHeadline">Kirjeldage palun seadme probleemi</p>
+                        <textarea class="remont__problemText"></textarea>
+                    </div>
+                    <div class="remont__rulesBlock">
+                        <div class="remont__center">
+                            <p class="remont__inputName">Sisestage seadme parool</p>
+                            <div class="remont__inputBlock" id="lockP">
+                                <img class="remont__inputIcon" src="img/lock.png">
+                                <input class="remont__input remont__inputLock" placeholder="**********************" />
+                            </div>
+                        </div>
+                        <p class="remont__rulesHeadline">Remondi tingimustega saab tutvuda <a href="#">siin.</a></p>
+                        <div class="remont__flex remont__flexColumn">
+                            <span class="remont__rulesCheckbox">
+                                <input class="checkbox" type="checkbox" id="accept" name="accept">
+                                <label class="labelSpace" for="accept">Olen tingimustega nõus</label>
+                            </span>
+                            <button class="remont__rulesButton">
+                                Kinnitan tellimuse
+                                <img class="remont__rulesButtonIcon" src="img/lnext.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modalThanks" onclick="void(0)">
+            <div class="modalThanks__content">
+                <img src="img/cat.png" />
+                <p class="modalThanks__title">Täname</p>
+                <p class="modalThanks__headline">Teie taotlus on edukalt kinnitatud!</p>
+                <p class="modalThanks__text">Teie e-postile saatsime kirja juhise ja infoga.</p>
+            </div>
+        </div>
+        <div class="modalIMEI" onclick="void(0)">
+            <div class="modalIMEI__content">
+                <p class="modalIMEI__title">Kust leida Teie seadme IMEI?</p>
+                <p class="modalIMEI__headline">1. Tuvastamise on võimalik teha seadetes</p>
+                <p class="modalIMEI__text">
+                    Lihtsalt järgige järgmist kronoloogiat: «Settings» → «General» → «About».
+                </p>
+                <p class="modalIMEI__headline">2. Sisestage numbrilahtris *#06# et näha teie IMEI</p>
+                <p class="modalIMEI__text">
+                    Piisab sellest, et sisestada *#06# Teie nutiseadmes,
+                    ja IMEI kood tuleb ekraanile kohe ette. See on kõige 
+                    kiirem variant, kui seade on sisselülitatud.
+                </p>
+                <p class="modalIMEI__headline">3. Vaadata IMEI nutitelefoni karbi pealt</p>
+                <p class="modalIMEI__text">
+                    See meetod sobib neile, kel antud hetkel puudub seade käeulatuses ja 
+                    kes ei viska kõike prügikasti. Kas on karp alles? IMEI andmed on alati 
+                    trükitud kleepsu peal brändikarbi tagaosas, sõltumata Apple mudelist.
+                </p>
+                <p class="modalIMEI__headline">4. Vaadata IMEI Teie seadme tagant.</p>
+                <p class="modalIMEI__text">
+                    Mõnel mudelil on IMEI kood trükitud seadme tagaosa peal.
+                </p>
+                <p class="modalIMEI__headline">5. IMEI on samuti SIM-kaardi aluse peal.</p>
+                <p class="modalIMEI__text">
+                    Enamikkel kaasaegseid Apple seadmetel IMEI koodi saab SIM-kaardi aluselt lugeda.
+                </p>
+            </div>
+        </div>
+        <div class="modalModel" onclick="void(0)">
+            <div class="modalModel__content">
+                <p class="modalModel__title">Kuidas saada teada Teie seadme mudeli?</p>
+                <div class="remont__flex remont__flexColumn1">
+                    <div class="modalModel__block modalModel__block-margin">
+                        <p class="modalModel__headline">Info karbi peal</p>
+                        <p class="modalModel__text">
+                            Lihtsaim viis seadme mudeli määramiseks – pakikarp. 
+                            Kui Te pole karbi ära visanud ja Teil on sellele 
+                            praegu juurdepääs, siis keerake karbi ümber ja 
+                            vaadake mudelit ning mudeli kõrval on märgitud ka värvus.
+                        </p>
+                    </div>
+                    <div class="modalModel__block">
+                        <p class="modalModel__headline">Info seadme korpuse peal</p>
+                        <p class="modalModel__text">
+                            Seadme täpne mudel on graveeritud iga iPhone'i tagakorpusele.
+                            Võrrelge iga mudeli üksikasjalikuma kirjelduseks Apple veebisaidil.
+                            <br><br>Näiteks A1709 — on iPad Pro 10.5
+                        </p>
+                    </div>
+                </div>
+                <img src="img/info.png">
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/mainEstonia.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iremont</title>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <header class="remont__header"><img src="img/logo.png" height="60"></header>
+    <main class="remont__main">
+        <div class="remont__form">
+            <p class="remont__inputName">Для регистрации заказа на ремонт введите пожалуйста номер телефона</p>
+            <div class="remont__inputBlock">
+                <img class="remont__inputIcon" src="img/phone.png">
+                <input class="remont__input" placeholder="(+372) 777 - 77 - 77">
+            </div>
+            <div class="remont__closedBlock1">
+                <div class="remont__inputBlock">
+                    <img class="remont__inputIcon" src="img/user.png">
+                    <input class="remont__input" placeholder="Имя / Фирма">
+                </div>
+                <div class="remont__inputBlock">
+                    <img class="remont__inputIcon" src="img/email.png">
+                    <input class="remont__input" placeholder="Email">
+                </div>
+                <div class="remont__inputBlock">
+                    <img class="remont__inputIcon" src="img/home.png">
+                    <input class="remont__input" placeholder="Город / Смартпочта">
+                </div>
+            </div>
+            <div class="remont__closedBlock2">
+                <p class="remont__mobKind"></p>
+                <div class="remont__center">
+                    <p class="remont__inputName">Введите IMEI код</p>
+                    <div class="remont__inputBlock">
+                        <img class="remont__inputIcon" src="img/imei.png">
+                        <input class="remont__input" placeholder="IMEI">
+                    </div>
+                    <div class="remont__helpBlock">
+                        <div class="remont__helpComment" id="imeiText">УЗНАЙТЕ ГДЕ ПОСМОТРЕТЬ IMEI</div>
+                        <span class="remont__help" id="imeiBtn">?</span>
+                    </div>
+                </div>
+                <div class="remont__closedBlock3">
+                    <div class="remont__center">
+                        <p class="remont__inputName">Ваше устройство?</p>
+                        <div class="remont__inputBlock">
+                            <img class="remont__inputIcon" src="img/apple.png">
+                            <input class="remont__input remont__input-iphone" placeholder="Модель" value="     IPHONE XS">
+                        </div>
+                        <div class="remont__helpBlock-model">
+                            <div class="remont__helpComment-model" id="modelText">УЗНАЙТЕ ГДЕ ПОСМОТРЕТЬ МОДЕЛЬ УСТРОЙСТВА</div>
+                            <span class="remont__help" id="modelBtn">?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="remont__center">
+                    <button class="remont__buttonPrev">
+                        <img class="remont__buttonPrevIcon" src="img/prev.png">
+                        НАЗАД
+                    </button>
+                </div>
+            </div>
+            <button class="remont__buttonNext">
+                ДАЛЬШЕ
+                <img class="remont__buttonNextIcon" src="img/next.png">
+            </button>
+            <div class="remont__closedBlock4">
+                <div class="remont__flex remont__flexColumn">
+                    <div class="remont__problemBlock">
+                        <p class="remont__problemHeadline">Опишите проблему на устройстве?</p>
+                        <textarea class="remont__problemText"></textarea>
+                    </div>
+                    <div class="remont__rulesBlock">
+                        <div class="remont__center">
+                            <p class="remont__inputName">Укажите пароль устройства</p>
+                            <div class="remont__inputBlock" id="lockP">
+                                <img class="remont__inputIcon" src="img/lock.png">
+                                <input class="remont__input remont__inputLock" placeholder="**********************" />
+                            </div>
+                        </div>
+                        <p class="remont__rulesHeadline">Полные условия ремонта техники можно узнать <a href="#">здесь.</a></p>
+                        <div class="remont__flex remont__flexColumn">
+                            <span class="remont__rulesCheckbox">
+                                <input class="checkbox" type="checkbox" id="accept" name="accept">
+                                <label class="labelSpace" for="accept">ПРИНЯТЬ УСЛОВИЯ</label>
+                            </span>
+                            <button class="remont__rulesButton">
+                                ОСТАВИТЬ ЗАЯВКУ
+                                <img class="remont__rulesButtonIcon" src="img/lnext.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modalThanks" onclick = "void(0)">
+            <div class="modalThanks__content">
+                <img src="img/cat.png" />
+                <p class="modalThanks__title">Спасибо</p>
+                <p class="modalThanks__headline">Ваша заявка принята!</p>
+                <p class="modalThanks__text">На Ваш емайл мы выслали письмо с инструкциями и информацией.</p>
+            </div>
+        </div>
+        <div class="modalIMEI" onclick = "void(0)">
+            <div class="modalIMEI__content">
+                <p class="modalIMEI__title">Как узнать IMEI вашего устройства?</p>
+                <p class="modalIMEI__headline">1. Узнать идентификатор можно в настройках гаджета</p>
+                <p class="modalIMEI__text">
+                    Просто пройдите по следующему пути: «Настройки» → «Основное» → «Об этом устройстве».
+                </p>
+                <p class="modalIMEI__headline">2. Команда *#06# для отображения IMEI в звонилке</p>
+                <p class="modalIMEI__text">
+                    Достаточно набрать простую команду *#06# в смартфоне, и IMEI тут же высветится на
+                    экране. Это наиболее быстрый вариант, когда iPhone включен.
+                </p>
+                <p class="modalIMEI__headline">3. Посмотреть IMEI на коробке смартфона</p>
+                <p class="modalIMEI__text">
+                    Этот способ подойдет тем, у кого в данный момент нет рядом смартфона и кто ничего не
+                    выбрасывает. Сохранилась фирменная упаковка вашего iPhone? Данные IMEI всегда напечатаны
+                    на наклейке на обратной стороне коробки, вне зависимости от модели iPhone.
+                </p>
+                <p class="modalIMEI__headline">4. Посмотреть IMEI на задней крышке смартфона</p>
+                <p class="modalIMEI__text">
+                    На некоторых моделях IMEI можно посмотреть на задней крышке.
+                </p>
+                <p class="modalIMEI__headline">5. IMEI есть также на лотке SIM-карты</p>
+                <p class="modalIMEI__text">
+                    Большинство современных устройств Apple моделей iPhone IMEI можно прочесть на лотке.
+                </p>
+            </div>
+        </div>
+        <div class="modalModel" onclick = "void(0)">
+            <div class="modalModel__content">
+                <p class="modalModel__title">Как узнать модель вашего устройства?</p>
+                <div class="remont__flex remont__flexColumn1">
+                    <div class="modalModel__block modalModel__block-margin">
+                        <p class="modalModel__headline">Информация на коробке</p>
+                        <p class="modalModel__text">
+                            Самый простой способ определения модели
+                            устройства – упаковочная коробка. Если вы
+                            не выбросили коробку и у вас в настоящий
+                            момент есть к ней доступ, то переворачиваем
+                            коробку и смотрим модель, рядом с моделью указан и цвет.
+                        </p>
+                    </div>
+                    <div class="modalModel__block">
+                        <p class="modalModel__headline">Информация на корпусе устройства</p>
+                        <p class="modalModel__text">
+                            На задней панели любого iPhone выгравирована
+                            точная модель устройства. И сравнить с более детальным описанием
+                            каждой модели на сайте Apple
+                            <br><br>Например, модель A1709 — это iPad Pro
+                            10,5
+                        </p>
+                    </div>
+                </div>
+                <img src="img/info.png">
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
