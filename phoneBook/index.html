@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <div class="phoneBook">
+        <div class="mainHeader">
+            <span class="mainHeader__headline">Phone Book</span>
+            <form class="mainHeader__form">
+                <input class="mainHeader__input" placeholder="SEARCH ABONENT"/>
+                <button class="mainHeader__btn mainHeader__saveBtn"><b>SAVE</b></button>
+                <button class="mainHeader__btn mainHeader__addBtn"><b>ADD</b></button>
+            </form>
+        </div>
+        <div class="mainContent"></div>
+        <div class="modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <span class="modal__closeBtn">&times;</span>
+                    <span class="modal__headline"><b>To add a new subscriber</b></span>
+                </div>
+                <div class="modal__inputs">
+                    <div class="modal__inputBlock">
+                        <input class="modal__input" placeholder="max 20 symbols" name="surname" />
+                        <span class="modal__inputName">Input surname *</span>
+                        <button class="modal__clear">clear</button>
+                    </div>
+                    <div class="modal__inputBlock">
+                        <input class="modal__input" placeholder="max 20 symbols" name="name1" />
+                        <span class="modal__inputName">Input name1</span>
+                        <button class="modal__clear">clear</button>
+                    </div>
+                    <div class="modal__inputBlock">
+                        <input class="modal__input" placeholder="max 20 symbols" name="name2" />
+                        <span class="modal__inputName">Input name2</span>
+                        <button class="modal__clear">clear</button>
+                    </div>
+                    <div class="modal__inputBlock">
+                        <input type="number" class="modal__input" placeholder="max 20 symbols" name="phoneNumber" />
+                        <span class="modal__inputName">Input phone number ( digit only ) *</span>
+                        <button class="modal__clear">clear</button>
+                    </div>
+                    <div class="modal__inputBlock">
+                        <input class="modal__input" placeholder="max 20 symbols" name="email" />
+                        <span class="modal__inputName">Input e-mail ( ####@### ##(#) )</span>
+                        <button class="modal__clear">clear</button>
+                    </div>
+                </div>
+                <span class="modal__requiredToFill">* - required fields</span>
+                <div class="modal__buttons">
+                    <button class="modal__button modal__btn-ok">
+                        <span class="modal__icon modal__icon-ok"><i class="fas fa-check"></i></span>
+                        <span class="modal__buttonText">Ok</span>
+                    </button>
+                    <button class="modal__button modal__btn-reset">
+                        <span class="modal__icon modal__icon-reset"><i class="fas fa-sync-alt"></i></span>
+                        <span class="modal__buttonText">Reset</span>
+                    </button>
+                    <button class="modal__button modal__btn-close">
+                        <span class="modal__icon modal__icon-cancel"><i class="fas fa-times"></i></i></span>
+                        <span class="modal__buttonText">Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modalFill">
+            <div class="modalFill__content">
+                <span class="modalFill__closeBtn">&times;</span>
+                <h1>Fill in the required fields!</h1>
+            </div>
+        </div>
+        <div class="modalEdit">
+            <div class="modalEdit__content">
+                <div class="modalEdit__header">
+                    <span class="modalEdit__closeBtn">&times;</span>
+                    <span class="modalEdit__deleteBtn"><i class="fas fa-user-times"></i></span>
+                    <span class="modalEdit__headline"><b>Editing a subscriber</b></span>
+                </div>
+                <div class="modalEdit__inputs">
+                    <div class="modalEdit__inputBlock">
+                        <input class="modalEdit__input" placeholder="max 20 symbols" name="surname" />
+                        <span class="modalEdit__inputName">Input surname *</span>
+                        <button class="modalEdit__clear">clear</button>
+                    </div>
+                    <div class="modalEdit__inputBlock">
+                        <input class="modalEdit__input" placeholder="max 20 symbols" name="name1" />
+                        <span class="modalEdit__inputName">Input name1</span>
+                        <button class="modalEdit__clear">clear</button>
+                    </div>
+                    <div class="modalEdit__inputBlock">
+                        <input class="modalEdit__input" placeholder="max 20 symbols" name="name2" />
+                        <span class="modalEdit__inputName">Input name2</span>
+                        <button class="modalEdit__clear">clear</button>
+                    </div>
+                    <div class="modalEdit__inputBlock">
+                        <input type="number" class="modalEdit__input" placeholder="max 20 symbols" name="phoneNumber" />
+                        <span class="modalEdit__inputName">Input phone number ( digit only ) *</span>
+                        <button class="modalEdit__clear">clear</button>
+                    </div>
+                    <div class="modalEdit__inputBlock">
+                        <input class="modalEdit__input" placeholder="max 20 symbols" name="email" />
+                        <span class="modalEdit__inputName">Input e-mail ( ####@### ##(#) )</span>
+                        <button class="modalEdit__clear">clear</button>
+                    </div>
+                </div>
+                <span class="modalEdit__requiredToFill">* - required fields</span>
+                <div class="modalEdit__buttons">
+                    <button class="modalEdit__button modalEdit__btn-save">
+                        <span class="modalEdit__icon modalEdit__icon-save"><i class="far fa-save"></i></span>
+                        <span class="modalEdit__buttonText">Save</span>
+                    </button>
+                    <button class="modalEdit__button modalEdit__btn-reset">
+                        <span class="modalEdit__icon modalEdit__icon-reset"><i class="fas fa-sync-alt"></i></span>
+                        <span class="modalEdit__buttonText">Reset</span>
+                    </button>
+                    <button class="modalEdit__button modalEdit__btn-close">
+                        <span class="modalEdit__icon modalEdit__icon-cancel"><i class="fas fa-times"></i></i></span>
+                        <span class="modalEdit__buttonText">Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modalWelcome">
+            <div class="modalWelcome__content">
+                <span class="modalWelcome__closeBtn">&times;</span>
+                <h1>Welcome to my program!</h1>
+                <h2>To begin,  
+                <button class="mainHeader__btn modalWelcome__add"><b>ADD</b></button> 
+                a new user.</h2>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
