@@ -7,13 +7,13 @@
 @font-face {
     font-family: 'Font Awesome';
     src: url('../fonts/FontAwesome5-Regular-400.otf') format('opentype');
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Font Awesome';
+    font-family: 'Font Awesome Solid';
     src: url('../fonts/FontAwesome5-Solid-900.otf') format('opentype');
-    font-weight: 900;
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
@@ -129,8 +129,7 @@ body {
 }
 .sidebar__adminBtn {
     margin-right: 20px;
-    font-family: 'Font Awesome';
-    font-weight: 900;
+    font-family: 'Font Awesome Solid';
     color: #d8d8d8;
     cursor: pointer;
 }
@@ -193,8 +192,7 @@ body {
     color: #22b9ff;
 }
 .sidebar__itemIcon {
-    font-family: 'Font Awesome';
-    font-weight: 900;
+    font-family: 'Font Awesome Solid';
     margin-right: 20px;
     width: 16px;
     display: flex;
@@ -342,8 +340,7 @@ input::-moz-placeholder {
     word-break: break-word;
 }
 .main__lastActivityLinkIcon {
-    font-family: 'Font Awesome';
-    font-weight: 900;
+    font-family: 'Font Awesome Solid';
     line-height: 24px;
     color: #22b9ff;
     font-size: 14px;
@@ -417,8 +414,7 @@ input::-moz-placeholder {
     font-size: 16px;
 }
 .main__socialItemEdit {
-    font-family: 'Font Awesome';
-    font-weight: 900;
+    font-family: 'Font Awesome Solid';
     font-size: 16px;
     color: #c9c9c9;
     margin-right: 5px;
@@ -536,8 +532,7 @@ input::-moz-placeholder {
     }
     .sidebar__adminBtn-mobile {
         margin-left: 20px;
-        font-family: 'Font Awesome';
-        font-weight: 900;
+        font-family: 'Font Awesome Solid';
         color: #d8d8d8;
         cursor: pointer;
     }
@@ -551,8 +546,7 @@ input::-moz-placeholder {
         height: 30px;
     }
     .sidebar__mobileMenuBtn {
-        font-family: 'Font Awesome';
-        font-weight:900;
+        font-family: 'Font Awesome Solid';
         margin-right: 4px;
     }
     .sidebar__adminMenu-mobile {
