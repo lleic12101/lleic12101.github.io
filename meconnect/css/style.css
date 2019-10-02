@@ -89,6 +89,71 @@
     font-style: italic;
 }
 
+.iconEllipsis::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f142';
+}
+.iconChart::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f201';
+}
+.iconCog::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f013';
+}
+.iconUser::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f2bd';
+}
+.iconClipboard::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f46d';
+}
+.iconUsertie::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f508';
+}
+.iconAddresscard::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f2bb';
+}
+.iconComment::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f4ad';
+}
+.iconShopping::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f290';
+}
+.iconSignOut::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f2f5';
+}
+.iconFB::after {
+    font-family: 'Font Awesome Brands';
+    content: '\f082';
+}
+.iconTwitter::after {
+    font-family: 'Font Awesome Brands';
+    content: '\f081';
+}
+.iconLinkedIn::after {
+    font-family: 'Font Awesome Brands';
+    content: '\f08c';
+}
+.iconBars::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f0c9';
+}
+.iconExternLink::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f35d';
+}
+.iconPencil::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f303';
+}
+
 * {
     margin: 0px;
     padding: 0px;
