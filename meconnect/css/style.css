@@ -177,6 +177,408 @@ body {
 
 .sidebar {
     background: #fff;
+    width: 10.41%;
+    height: 100%;
+    padding-left: 1.3%;
+    padding-top: 1.3%;
+    box-shadow: 0 0 55px -40px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+}
+.sidebar__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.74vh;
+}
+.sidebar__header p {
+    font-size: .75vw;
+}
+.sidebar__logo {
+    width: 57%;
+}
+.sidebar__adminBtn {
+    margin-right: 10%;
+    font-family: 'Font Awesome Solid';
+    color: #d8d8d8;
+    cursor: pointer;
+}
+.sidebar__adminBtn-active {
+    color: #22b9ff;
+}
+.sidebar__adminBtn:hover {
+    color: #22b9ff;
+}
+.sidebar__adminMenu {
+    background-color: #fff;
+    box-shadow: 0 12px 55px -40px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    height: 32.7vh;
+    width: 13.5vw;
+    padding: 3.27vh 1.56vw;
+    position: absolute;
+    top: 2.73vh;
+    left: 10.4vw;
+    font-family: 'Roboto Relugar';
+    display: none;
+    flex-direction: column;
+}
+.sidebar__adminMenu-active {
+    display: flex;
+}
+.sidebar__adminMenuTitle {
+    color: #000000;
+    font-size: .81vw;
+    margin-bottom: 1.63vh;
+}
+.sidebar__adminMenuItem {
+    color: #9a9a9a;
+    font-size: .765vw;
+    line-height: 3.93vh;
+    text-decoration: none;
+}
+.sidebar__adminMenuItem-active {
+    color: #22b9ff;
+}
+.sidebar__adminMenuItem:hover {
+    color: #22b9ff;
+}
+.sidebar__menuBlock {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__menuItem {
+    color: #888888;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebar__menuItem p {
+   font-size: .68vw;
+}
+.sidebar__menuItem:hover {
+    color: #22b9ff;
+}
+.sidebar__menuItem-active {
+    color: #22b9ff;
+}
+.sidebar__itemIcon {
+    font-family: 'Font Awesome Solid';
+    margin-right: 1.04vw;
+    width: 0.83vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar__itemText {
+    font-family: 'Roboto Medium';
+    line-height: 4.59vh;
+}
+.sidebar__footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 1.3vw;
+    bottom: 3.82vh;
+}
+.sidebar__footer a {
+    font-size: .765vw;
+}
+.sidebar__footerIcon {
+    font-family: 'Font Awesome Brands';
+    color: #888888;
+    width: 0.78vw;
+    margin-right: 0.52vw;
+    cursor: pointer;
+}
+.sidebar__footerIcon:hover {
+    color: #22b9ff;
+}
+
+.sidebar__mobile {
+    display: none;
+}
+
+.main {
+    padding: 0 1.56vw;
+    margin-left: 10.41%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.main__nameAndInputBlock {
+    margin-bottom: 1.96vh;
+}
+.main__nameAndInputBlock-pass {
+    margin-right: 1.56vw;
+}
+.main__innerTitle {
+    font-family: 'Roboto Medium';
+    font-size: .82vw;
+    color: #666666;
+}
+
+.main__input {
+    width: 100%;
+    height: 4.37vh;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding-left: 0.93vw;
+    font-family: 'Roboto Relugar';
+    font-size: .77vw;
+    margin-top: 1.09vh;
+    outline: none;
+}
+.main__input-addInTeam {
+    margin-bottom: 10px;
+    margin-top: 1.09vh;
+    height: 4.59vh;
+}
+.main__input-password {
+    width: 13.8vw;
+}
+input::-webkit-input-placeholder {
+    color: #ababab;
+}
+input::-moz-placeholder {
+    color: #ababab;
+}
+
+.main__button {
+    font-family: 'Roboto Medium';
+    font-size: .82vw;
+    color: #fff;
+    background-color: #22b9ff;
+    border: none;
+    border-radius: 6px;
+    height: 4.59vh;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1.56vw;
+}
+.main__button-delete {
+    background-color: #ea868f;
+    margin-left: 1.04vw;
+}
+
+.main__headlineBlock {
+    height: 3.49vh;
+    width: 100%;
+    margin-top: 2.73vh;
+}
+.main__headline {
+    font-family: 'Roboto Medium';
+    font-size: .82vw;
+    color: black;
+}
+
+.main__blocks {
+    display: flex;
+    flex-direction: row;
+}
+.main__block {
+    background-color: #fff;
+    box-shadow: 0 12px 55px -40px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    height: 67.9vh;
+    margin-right: 1.56vw;
+    margin-bottom: 3.27vh;
+    padding: 4.37vh 3.12vw;
+}
+
+.main__block-lastActivity {
+    width: 35.4vw;
+}
+.main__block-lastActivityTitle {
+    display: flex;
+    flex-direction: row;
+}
+.main__lastActivityLinkBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2.51vh;
+}
+.main__lastActivityLinkBlock a {
+    text-decoration: none;
+}
+.main__lastActivityLink {
+    color: #22b9ff;
+    line-height: 2.62vh;
+    font-family: 'Roboto Relugar';
+    font-size: .82vw;
+    word-break: break-word;
+}
+.main__lastActivityLinkIcon {
+    font-family: 'Font Awesome Solid';
+    line-height: 2.62vh;
+    color: #22b9ff;
+    font-size: .77vw;
+    margin-left: .52vw;
+}
+.main__lastActivityPassBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__lastActivityButtonBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.main__block-team {
+    width: 23.95vw;
+    margin-right: 0;
+}
+.main__blockHeadline {
+    font-family: 'Roboto Relugar';
+    font-size: .96vw;
+    color: #666666;
+    margin-bottom: 3.82vh;
+}
+.main__blockHeadline-lastActivity {
+    font-size: .77vw;
+    color: #999999;
+}
+.main__blockHeadline-lastActivity:last-child {
+    margin-left: .26vw;
+}
+
+.main__block-social {
+    width: 23.95vw;
+}
+.main__socialItem {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-bottom: 1.63vh;
+}
+.main__socialItem:last-child {
+    margin-bottom: 0;
+}
+.main__socialItem:hover {
+    border-color: #22b9ff;
+}
+.main__socialItem-active {
+    border-color: #22b9ff;
+}
+.main__socialItemHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.09vh .52vw;
+    cursor: pointer;
+}
+.main__socialItemIconTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__socialItemIcon {
+    width: 1.4vw;
+    margin-right: .52vw;
+}
+.main__socialItemTitle {
+    font-family: 'Roboto Medium';
+    font-size: .82vw;
+}
+.main__socialItemEdit {
+    font-family: 'Font Awesome Solid';
+    font-size: .82vw;
+    color: #c9c9c9;
+    margin-right: .26vw;
+}
+.main__socialItemFull {
+    padding: 2.18vh 1.04vw;
+    display: none;
+}
+.main__socialItemFull-active {
+    display: block;
+}
+.main__socialItemText {
+    font-family: 'Roboto Relugar';
+    font-size: .82vw;
+    line-height: 2.62vh;
+    color: #666666;
+    margin-top: -1.09vh;
+    margin-bottom: 1.63vh;
+}
+
+.main__teamTableBlock {
+    margin-top: 2.29vh;
+}
+.main__teamTableTitleBlock {
+    padding: 1.63vh 1.56vw 1.63vh .52vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f0f0f0;
+}
+.main__teamTableTitleText {
+    font-family: 'Roboto Medium';
+    font-size: .79vw;
+    color: #444444;
+}
+.main__teamTableItem {
+    padding: 1.09vh .52vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: 'Roboto Relugar';
+}
+.main__teamItemName {
+    color: #444444;
+    font-size: .79vw;
+}
+.main__teamItemEmail {
+    color: #999999;
+    font-size: .77vw;
+    margin-top: 0.21vh;
+}
+.main__teamTableRoleText {
+    color: #444444;
+    font-size: .79vw;
+}
+
+.main__copyrightBlock {
+    position: absolute;
+    bottom: 0;
+    width: 86.45vw;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 0.54vh;
+    padding-bottom: 1.63vh;
+    padding-left: .52vw;
+}
+.main__copyrightBlockText {
+    font-family: 'Roboto Relugar';
+    font-size: .77vw;
+    line-height: 4.59vh;
+    color: #aaaaaa;
+}
+
+@media screen and (max-width: 1919px){
+    .main {
+        overflow-y: auto;
+    }
+}
+@media screen and (max-width: 960px){
+    body {
+        flex-direction: column;
+        overflow-y: auto;
+        height: auto;
+    }    
+.sidebar {
+    background: #fff;
     min-width: 200px;
     height: 100%;
     padding-left: 25px;
@@ -202,26 +604,6 @@ body {
     color: #d8d8d8;
     cursor: pointer;
 }
-.sidebar__adminBtn-active {
-    color: #22b9ff;
-}
-.sidebar__adminBtn:hover {
-    color: #22b9ff;
-}
-.sidebar__adminMenu {
-    background-color: #fff;
-    box-shadow: 0 12px 55px -40px rgba(0,0,0,0.5);
-    border-radius: 5px;
-    height: 300px;
-    width: 260px;
-    padding: 30px;
-    position: absolute;
-    top: 25px;
-    left: 201px;
-    font-family: 'Roboto Relugar';
-    display: none;
-    flex-direction: column;
-}
 .sidebar__adminMenu-active {
     display: flex;
 }
@@ -246,58 +628,23 @@ body {
     display: flex;
     flex-direction: column;
 }
-.sidebar__menuItem {
-    color: #888888;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
+.sidebar__menuItem p:first-child{
+    font-size: 16px;
 }
-.sidebar__menuItem:hover {
-    color: #22b9ff;
-}
-.sidebar__menuItem-active {
-    color: #22b9ff;
+.sidebar__menuItem p{
+    font-size: 13px;
 }
 .sidebar__itemIcon {
-    font-family: 'Font Awesome Solid';
     margin-right: 20px;
     width: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .sidebar__itemText {
-    font-family: 'Roboto Medium';
-    font-size: 13px;
     line-height: 42px;
-}
-.sidebar__footer {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 25px;
-    bottom: 35px;
-}
-.sidebar__footerIcon {
-    font-family: 'Font Awesome Brands';
-    color: #888888;
-    width: 15px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.sidebar__footerIcon:hover {
-    color: #22b9ff;
-}
-
-.sidebar__mobile {
-    display: none;
 }
 
 .main {
     padding: 0 30px;
-    margin-left: 200px;
+    margin-left: 10.41%;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -556,20 +903,8 @@ input::-moz-placeholder {
     color: #aaaaaa;
 }
 
-@media screen and (max-width: 1919px){
-    .main {
-        overflow-y: auto;
-    }
     .main__copyrightBlock {
         position: relative;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 960px){
-    body {
-        flex-direction: column;
-        overflow-y: auto;
-        height: auto;
     }
     .sidebar {
         display: none;
