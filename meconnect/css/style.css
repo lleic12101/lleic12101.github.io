@@ -1,0 +1,632 @@
+﻿@font-face {
+    font-family: 'Font Awesome Brands';
+    src: url('../fonts/FontAwesome5Brands-Regular-400.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('../fonts/FontAwesome5-Regular-400.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('../fonts/FontAwesome5-Solid-900.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Italic';
+    src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Relugar';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f7f7fa;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.sidebar {
+    background: #fff;
+    min-width: 200px;
+    height: 100%;
+    padding-left: 25px;
+    padding-top: 25px;
+    box-shadow: 0 0 55px -40px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top:0;
+}
+.sidebar__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 43.4px;
+}
+.sidebar__adminBtn {
+    margin-right: 20px;
+    font-family: 'Font Awesome';
+    font-weight: 900;
+    color: #d8d8d8;
+    cursor: pointer;
+}
+.sidebar__adminBtn-active {
+    color: #22b9ff;
+}
+.sidebar__adminBtn:hover {
+    color: #22b9ff;
+}
+.sidebar__adminMenu {
+    background-color: #fff;
+    box-shadow: 0 12px 55px -40px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    height: 300px;
+    width: 260px;
+    padding: 30px;
+    position: absolute;
+    top: 25px;
+    left: 201px;
+    font-family: 'Roboto Relugar';
+    display: none;
+    flex-direction: column;
+}
+.sidebar__adminMenu-active {
+    display: flex;
+}
+.sidebar__adminMenuTitle {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.sidebar__adminMenuItem {
+    color: #9a9a9a;
+    font-size: 15px;
+    line-height: 36px;
+    text-decoration: none;
+}
+.sidebar__adminMenuItem-active {
+    color: #22b9ff;
+}
+.sidebar__adminMenuItem:hover {
+    color: #22b9ff;
+}
+.sidebar__menuBlock {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__menuItem {
+    color: #888888;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebar__menuItem:hover {
+    color: #22b9ff;
+}
+.sidebar__menuItem-active {
+    color: #22b9ff;
+}
+.sidebar__itemIcon {
+    font-family: 'Font Awesome';
+    font-weight: 900;
+    margin-right: 20px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar__itemText {
+    font-family: 'Roboto Medium';
+    font-size: 13px;
+    line-height: 42px;
+}
+.sidebar__footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 25px;
+    bottom: 35px;
+}
+.sidebar__footerIcon {
+    font-family: 'Font Awesome Brands';
+    color: #888888;
+    width: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.sidebar__footerIcon:hover {
+    color: #22b9ff;
+}
+
+.sidebar__mobile {
+    display: none;
+}
+
+.main {
+    padding: 0 30px;
+    margin-left: 200px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.main__nameAndInputBlock {
+    margin-bottom: 18px;
+}
+.main__nameAndInputBlock-pass {
+    margin-right: 30px;
+}
+.main__innerTitle {
+    font-family: 'Roboto Medium';
+    font-size: 16px;
+    color: #666666;
+}
+
+.main__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding-left: 18px;
+    font-family: 'Roboto Relugar';
+    font-size: 15px;
+    margin-top: 10px;
+    outline: none;
+}
+.main__input-addInTeam {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    height: 42px;
+}
+.main__input-password {
+    width: 265px;
+}
+input::-webkit-input-placeholder {
+    color: #ababab;
+}
+input::-moz-placeholder {
+    color: #ababab;
+}
+
+.main__button {
+    font-family: 'Roboto Medium';
+    font-size: 16px;
+    color: #fff;
+    background-color: #22b9ff;
+    border: none;
+    border-radius: 6px;
+    height: 42px;
+    cursor: pointer;
+    outline: none;
+    padding: 0 30px;
+}
+.main__button-delete {
+    background-color: #ea868f;
+    margin-left: 20px;
+}
+
+.main__headlineBlock {
+    height: 32px;
+    width: 100%;
+    margin-top: 25px;
+}
+.main__headline {
+    font-family: 'Roboto Medium';
+    font-size: 16px;
+    color: black;
+}
+
+.main__blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main__block {
+    background-color: #fff;
+    box-shadow: 0 12px 55px -40px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    height: 622px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 40px 60px;
+}
+
+.main__block-lastActivity {
+    width: 680px;
+}
+.main__block-lastActivityTitle {
+    display: flex;
+    flex-direction: row;
+}
+.main__lastActivityLinkBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 23px;
+}
+.main__lastActivityLinkBlock a {
+    text-decoration: none;
+}
+.main__lastActivityLink {
+    color: #22b9ff;
+    line-height: 24px;
+    font-family: 'Roboto Relugar';
+    font-size: 16px;
+    word-break: break-word;
+}
+.main__lastActivityLinkIcon {
+    font-family: 'Font Awesome';
+    font-weight: 900;
+    line-height: 24px;
+    color: #22b9ff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.main__lastActivityPassBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__lastActivityButtonBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.main__block-team {
+    width: 460px;
+    margin-right: 0px;
+}
+.main__blockHeadline {
+    font-family: 'Roboto Relugar';
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 35px;
+}
+.main__blockHeadline-lastActivity {
+    font-size: 14px;
+    color: #999999;
+}
+.main__blockHeadline-lastActivity:last-child {
+    margin-left: 5px;
+}
+
+.main__block-social {
+    width: 460px;
+}
+.main__socialItem {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.main__socialItem:last-child {
+    margin-bottom: 0px;
+}
+.main__socialItem:hover {
+    border-color: #22b9ff;
+}
+.main__socialItem-active {
+    border-color: #22b9ff;
+}
+.main__socialItemHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+.main__socialItemIconTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__socialItemIcon {
+    width: 27px;
+    margin-right: 10px;
+}
+.main__socialItemTitle {
+    font-family: 'Roboto Medium';
+    font-size: 16px;
+}
+.main__socialItemEdit {
+    font-family: 'Font Awesome';
+    font-weight: 900;
+    font-size: 16px;
+    color: #c9c9c9;
+    margin-right: 5px;
+}
+.main__socialItemFull {
+    padding: 20px;
+    display: none;
+}
+.main__socialItemFull-active {
+    display: block;
+}
+.main__socialItemText {
+    font-family: 'Roboto Relugar';
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.main__teamTableBlock {
+    margin-top: 21px;
+}
+.main__teamTableTitleBlock {
+    padding: 15px 30px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f0f0f0;
+}
+.main__teamTableTitleText {
+    font-family: 'Roboto Medium';
+    font-size: 15px;
+    color: #444444;
+}
+.main__teamTableItem {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: 'Roboto Relugar';
+}
+.main__teamItemName {
+    color: #444444;
+    font-size: 15px;
+}
+.main__teamItemEmail {
+    color: #999999;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.main__teamTableRoleText {
+    color: #444444;
+    font-size: 15px;
+}
+
+.main__copyrightBlock {
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.main__copyrightBlockText {
+    font-family: 'Roboto Relugar';
+    font-size: 14px;
+    line-height: 42px;
+    color: #aaaaaa;
+}
+
+@media screen and (max-width: 1919px){
+    .main {
+        overflow-y: auto;
+    }
+    .main__copyrightBlock {
+        position: relative;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 960px){
+    body {
+        flex-direction: column;
+        overflow-y: auto;
+        height: auto;
+    }
+    .sidebar {
+        display: none;
+    }
+    .sidebar__footer {
+        display: none;
+    }
+    .sidebar__mobile {
+        display: block;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+    .sidebar__mobileHeader {
+        box-shadow: 0 0 25px -15px rgba(0,0,0,0.5);
+        background: #fff;
+        height: 50px;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+    }
+    .sidebar__mobileLogoAndAdmin {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sidebar__adminBtn-mobile {
+        margin-left: 20px;
+        font-family: 'Font Awesome';
+        font-weight: 900;
+        color: #d8d8d8;
+        cursor: pointer;
+    }
+    .sidebar__adminBtn-mobile-active {
+        color: #22b9ff;
+    }
+    .sidebar__adminBtn-mobile:hover {
+        color: #22b9ff;
+    }
+    .sidebar__logo-mobile {
+        height: 30px;
+    }
+    .sidebar__mobileMenuBtn {
+        font-family: 'Font Awesome';
+        font-weight:900;
+        margin-right: 4px;
+    }
+    .sidebar__adminMenu-mobile {
+        left: 0;
+        top: 50px;
+        background-color: #fff;
+        box-shadow: 0 12px 55px -40px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        height: 300px;
+        width: 260px;
+        padding: 30px;
+        position: absolute;
+        font-family: 'Roboto Relugar';
+        display: none;
+        flex-direction: column;
+    }
+    .sidebar__adminMenu-mobile-active {
+        display: flex;
+    }
+    .sidebar__adminMenuItems {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar__menuBlock-mobile {
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        padding: 15px 25px;
+        box-shadow: 0 0 55px -40px rgba(0,0,0,0.5);
+        display: none;
+    }
+    .main {
+        overflow: hidden;
+        height: auto;
+        margin: 50px 0 0;
+    }
+    .main__block {
+        height: auto;
+    }
+}
+@media screen and (max-width: 740px) {
+    .main {
+        padding: 0 15px;
+    }
+    .main__block {
+        padding: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .main__lastActivityPassBlock {
+        flex-direction: column;
+    }
+    .main__input-password {
+        width: 100%;
+    }
+    .main__lastActivityButtonBlock {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .main__nameAndInputBlock-pass {
+        margin-right: 0px;
+    }
+    .main__button-delete {
+        margin: 12px 0 0 0;
+    }
+    .main__block-lastActivityTitle {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__blockHeadline-lastActivity:first-child {
+        margin-bottom: 3px;
+    }
+    .main__blockHeadline-lastActivity:last-child {
+        margin-left: 0px;
+    }
+}
