@@ -153,6 +153,10 @@
     font-family: 'Font Awesome Solid';
     content: '\f303';
 }
+.iconTimes::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f00d';
+}
 
 * {
     margin: 0px;

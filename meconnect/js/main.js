@@ -18,11 +18,12 @@ $('.sidebar__adminBtn').click(function(){
 $('.sidebar__mobileMenuBtn').click(function(){
 	if($(this).hasClass('active')) {
 		$(this).removeClass('active');
-		$(this).html('bars');
+		$(this).removeClass('iconTimes');
+		$(this).addClass('iconBars');
 	} else {
-		
 		$(this).addClass('active');
-		$(this).html('times');
+		$(this).addClass('iconTimes');
+		$(this).removeClass('iconBars');
 	}
 	$('.sidebar__menuBlock-mobile').slideToggle();
 });
