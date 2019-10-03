@@ -27,3 +27,15 @@ $('.sidebar__mobileMenuBtn').click(function(){
 	}
 	$('.sidebar__menuBlock-mobile').slideToggle();
 });
+
+$('.main__serviceItemCheckboxInput').click(function(){
+	$(this).parent().parent().toggleClass('main__serviceTableItem-active');
+	var objs = document.querySelectorAll('.main__serviceTableItem-active');
+	var priceSumm = 0;
+	for(var i = 0; i < objs.length; i++){
+		var str = objs[i].querySelector('.main__serviceItemYearPrice').innerHTML;
+		str = +str.slice(0, -5);
+		priceSumm += str;
+	}
+	$('.main__servicePayPrice').html(priceSumm);
+});

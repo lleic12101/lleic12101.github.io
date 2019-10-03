@@ -31,11 +31,11 @@
                 <p class="sidebar__itemIcon iconCog"></p>
                 <p class="sidebar__itemText">НАСТРОЙКИ</p>
             </a>
-            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+            <a href="index.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconUser"></p>
                 <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
             </a>
-            <a href="services.html" class="sidebar__menuItem">
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
                 <p class="sidebar__itemIcon iconClipboard"></p>
                 <p class="sidebar__itemText">УСЛУГИ</p>
             </a>
@@ -94,11 +94,11 @@
                 <p class="sidebar__itemIcon iconCog"></p>
                 <p class="sidebar__itemText">НАСТРОЙКИ</p>
             </a>
-            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+            <a href="index.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconUser"></p>
                 <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
             </a>
-            <a href="services.html" class="sidebar__menuItem">
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
                 <p class="sidebar__itemIcon iconClipboard"></p>
                 <p class="sidebar__itemText">УСЛУГИ</p>
             </a>
@@ -131,121 +131,84 @@
     </aside>
     <main class="main">
         <div class="main__headlineBlock">
-            <p class="main__headline">Учетная запись</p>
+            <p class="main__headline">Услуги</p>
         </div>
         <div class="main__blocks">
-            <div class="main__block main__block-lastActivity">
-                <div class="main__block-lastActivityTitle">
-                    <p class="main__blockHeadline main__blockHeadline-lastActivity">Последняя активность:</p>
-                    <p class="main__blockHeadline main__blockHeadline-lastActivity">2019-09-21 14:07:34</p>
-                </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Ваша персональная ссылка:</p>
-                    <div class="main__lastActivityLinkBlock">
-                        <a href="#" class="main__lastActivityLink">https://meconnect.ru/yournicknameonsite/</a>
-                        <a href="#" class="main__lastActivityLinkIcon iconExternLink"></a>
+            <div class="main__block main__serviceBlock">
+                <p class="main__blockHeadline main__blockHeadline-service">Покупка услуг</p>
+                <div class="main__serviceTableBlock">
+                    <div class="main__serviceTableTitleBlock">
+                        <p class="main__serviceTableTitleService-mobile">Список услуг</p>
+                        <p class="main__serviceTableTitleService">Название услуги</p>
+                        <div class="main__serviceMoneyBlock">
+                            <p class="main__serviceTableTitlePrice">Цена в месяц</p>
+                            <p class="main__serviceTableTitlePrice">Цена в год</p>
+                        </div>
+                        <p class="main__serviceTableTitleCheckbox"></p>
+                    </div>
+                    <div class="main__serviceTableItem">
+                        <div class="main__serviceNameBlock">
+                            <p class="main__serviceItemName">Сообственный фон</p>
+                            <div class="main__serviceMoneyBlock">
+                                <p class="main__serviceItemMonthPrice">100 руб.</p>
+                                <p class="main__serviceItemYearPrice">1000 руб.</p>
+                            </div>
+                        </div>
+                        <label class="main__serviceItemCheckbox">
+                            <input type="checkbox" class="main__serviceItemCheckboxInput" />
+                            <span class="main__serviceItemBox"></span>
+                        </label>
+                    </div>
+                    <div class="main__serviceTableItem">
+                        <div class="main__serviceNameBlock">
+                            <p class="main__serviceItemName">Убрать копирайт</p>
+                            <div class="main__serviceMoneyBlock">
+                                <p class="main__serviceItemMonthPrice">250 руб.</p>
+                                <p class="main__serviceItemYearPrice">2500 руб.</p>
+                            </div>
+                        </div>
+                        <label class="main__serviceItemCheckbox">
+                            <input type="checkbox" class="main__serviceItemCheckboxInput" />
+                            <span class="main__serviceItemBox"></span>
+                        </label>
+                    </div>
+                    <div class="main__serviceTableItem">
+                        <div class="main__serviceNameBlock">
+                            <p class="main__serviceItemName">Уникальный дизайн</p>
+                            <div class="main__serviceMoneyBlock">
+                                <p class="main__serviceItemMonthPrice">1000 руб.</p>
+                                <p class="main__serviceItemYearPrice">10000 руб.</p>
+                            </div>
+                        </div>
+                        <label class="main__serviceItemCheckbox">
+                            <input type="checkbox" class="main__serviceItemCheckboxInput" />
+                            <span class="main__serviceItemBox"></span>
+                        </label>
                     </div>
                 </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Имя пользователя (латиницей):</p>
-                    <input class="main__input" />
+                <div class="main__servicePayBlock">
+                    <select class="main__servicePaySelect">
+                        <option>Способы оплаты:</option>
+                        <option>Qiwi</option>
+                        <option>Webmoney</option>
+                        <option>Яндекс деньги</option>
+                    </select>
+                    <p class="main__servicePayPriceBlock">Сумма: <span class="main__servicePayPrice">0</span> руб.</p>
                 </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Электронный адрес:</p>
-                    <input class="main__input" />
-                </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Текущий пароль:</p>
-                    <input class="main__input" />
-                </div>
-                <div class="main__lastActivityPassBlock">
-                    <div class="main__nameAndInputBlock main__nameAndInputBlock-pass">
-                        <p class="main__innerTitle">Новый пароль:</p>
-                        <input class="main__input main__input-password" />
-                    </div>
-                    <div class="main__nameAndInputBlock">
-                        <p class="main__innerTitle">Повторите новый пароль:</p>
-                        <input class="main__input main__input-password" />
-                    </div>
-                </div>
-                <div class="main__lastActivityButtonBlock">
-                    <button class="main__button">Сохранить</button>
-                    <button class="main__button main__button-delete">Удалить учетную запись</button>
-                </div>
+                <button class="main__button">Купить</button>
             </div>
-            <div class="main__block main__block-social">
-                <p class="main__blockHeadline">Соцсети</p>
-                <div class="main__socialItem">
-                    <div class="main__socialItemHeader">
-                        <div class="main__socialItemIconTitle">
-                            <img class="main__socialItemIcon" src="img/social/ikonka-telegram.png" />
-                            <p class="main__socialItemTitle">Telegram</p>
-                        </div>
-                        <p class="main__socialItemEdit iconPencil"></p>
-                    </div>
-                    <div class="main__socialItemFull">
-                        <p class="main__socialItemText">
-                            Инструкция по поводу изменений
-                            в данной соцсети...
-                        </p>
-                        <button class="main__button">Кнопка</button>
-                    </div>
-                </div>
-                <div class="main__socialItem">
-                    <div class="main__socialItemHeader">
-                        <div class="main__socialItemIconTitle">
-                            <img class="main__socialItemIcon" src="img/social/ikonka-viber.png" />
-                            <p class="main__socialItemTitle">Viber</p>
-                        </div>
-                        <p class="main__socialItemEdit iconPencil"></p>
-                    </div>
-                    <div class="main__socialItemFull">
-                        <p class="main__socialItemText">
-                            Инструкция по поводу изменений
-                            в данной соцсети...
-                        </p>
-                        <button class="main__button">Кнопка</button>
-                    </div>
-                </div>
-                <div class="main__socialItem">
-                    <div class="main__socialItemHeader">
-                        <div class="main__socialItemIconTitle">
-                            <img class="main__socialItemIcon" src="img/social/ikonka-vk.png" />
-                            <p class="main__socialItemTitle">VK</p>
-                        </div>
-                        <p class="main__socialItemEdit iconPencil"></p>
-                    </div>
-                    <div class="main__socialItemFull">
-                        <p class="main__socialItemText">
-                            Инструкция по поводу изменений
-                            в данной соцсети...
-                        </p>
-                        <button class="main__button">Кнопка</button>
-                    </div>
-                </div>
-            </div>
-            <div class="main__block main__block-team">
-                <p class="main__blockHeadline">Команда</p>
-                <input class="main__input main__input-addInTeam" placeholder="Электронная почта" />
-                <button class="main__button">Добавить в команду</button>
-                <div class="main__teamTableBlock">
-                    <div class="main__teamTableTitleBlock">
-                        <p class="main__teamTableTitleText">Имя</p>
-                        <p class="main__teamTableTitleText">Роль</p>
+            <div class="main__block main__serviceBlock">
+                <p class="main__blockHeadline main__blockHeadline-service">Купленные услуги</p>
+                <div class="main__teamTableBlock main__teamTableBlock-service">
+                    <div class="main__teamTableTitleBlock main__tableTitleBlockServices">
+                        <p class="main__teamTableTitleText">Название услуги</p>
+                        <p class="main__teamTableTitleText">Активна до</p>
                     </div>
                     <div class="main__teamTableItem">
                         <div class="main__teamTableNameBlock">
-                            <p class="main__teamItemName">Анна Мазур</p>
-                            <p class="main__teamItemEmail">annmazur@gmail.com</p>
+                            <p class="main__teamItemName">Убрать копирайт</p>
                         </div>
-                        <p class="main__teamTableRoleText">Оператор</p>
-                    </div>
-                    <div class="main__teamTableItem">
-                        <div class="main__teamTableNameBlock">
-                            <p class="main__teamItemName">Игорь Шмидт</p>
-                            <p class="main__teamItemEmail">shmidt.igor@gmail.com</p>
-                        </div>
-                        <p class="main__teamTableRoleText">Владелец</p>
+                        <p class="main__teamTableRoleText">2020-08-22</p>
                     </div>
                 </div>
             </div>
