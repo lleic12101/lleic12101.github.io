@@ -45,9 +45,9 @@
             </a>
             <a href="#" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconAddresscard"></p>
-                <p class="sidebar__itemText">УСЛУГИ</p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="webchat.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconComment"></p>
                 <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
             </a>
@@ -108,9 +108,9 @@
             </a>
             <a href="#" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconAddresscard"></p>
-                <p class="sidebar__itemText">УСЛУГИ</p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="webchat.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconComment"></p>
                 <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
             </a>
@@ -136,66 +136,68 @@
         <div class="main__blocks">
             <div class="main__block main__serviceBlock">
                 <p class="main__blockHeadline main__blockHeadline-service">Покупка услуг</p>
-                <div class="main__serviceTableBlock">
-                    <div class="main__serviceTableTitleBlock">
-                        <p class="main__serviceTableTitleService-mobile">Список услуг</p>
-                        <p class="main__serviceTableTitleService">Название услуги</p>
-                        <div class="main__serviceMoneyBlock">
-                            <p class="main__serviceTableTitlePrice">Цена в месяц</p>
-                            <p class="main__serviceTableTitlePrice">Цена в год</p>
-                        </div>
-                        <p class="main__serviceTableTitleCheckbox"></p>
-                    </div>
-                    <div class="main__serviceTableItem">
-                        <div class="main__serviceNameBlock">
-                            <p class="main__serviceItemName">Сообственный фон</p>
+                <form method="post">
+                    <div class="main__serviceTableBlock">
+                        <div class="main__serviceTableTitleBlock">
+                            <p class="main__serviceTableTitleService-mobile">Список услуг</p>
+                            <p class="main__serviceTableTitleService">Название услуги</p>
                             <div class="main__serviceMoneyBlock">
-                                <p class="main__serviceItemMonthPrice">100 руб.</p>
-                                <p class="main__serviceItemYearPrice">1000 руб.</p>
+                                <p class="main__serviceTableTitlePrice">Цена в месяц</p>
+                                <p class="main__serviceTableTitlePrice">Цена в год</p>
                             </div>
+                            <p class="main__serviceTableTitleCheckbox"></p>
                         </div>
-                        <label class="main__serviceItemCheckbox">
-                            <input type="checkbox" class="main__serviceItemCheckboxInput" />
-                            <span class="main__serviceItemBox"></span>
-                        </label>
-                    </div>
-                    <div class="main__serviceTableItem">
-                        <div class="main__serviceNameBlock">
-                            <p class="main__serviceItemName">Убрать копирайт</p>
-                            <div class="main__serviceMoneyBlock">
-                                <p class="main__serviceItemMonthPrice">250 руб.</p>
-                                <p class="main__serviceItemYearPrice">2500 руб.</p>
+                        <div class="main__serviceTableItem">
+                            <div class="main__serviceNameBlock">
+                                <p class="main__serviceItemName">Сообственный фон</p>
+                                <div class="main__serviceMoneyBlock">
+                                    <p class="main__serviceItemMonthPrice">100 руб.</p>
+                                    <p class="main__serviceItemYearPrice">1000 руб.</p>
+                                </div>
                             </div>
+                            <label class="main__serviceItemCheckbox">
+                                <input type="checkbox" class="main__serviceItemCheckboxInput" />
+                                <span class="main__serviceItemBox"></span>
+                            </label>
                         </div>
-                        <label class="main__serviceItemCheckbox">
-                            <input type="checkbox" class="main__serviceItemCheckboxInput" />
-                            <span class="main__serviceItemBox"></span>
-                        </label>
-                    </div>
-                    <div class="main__serviceTableItem">
-                        <div class="main__serviceNameBlock">
-                            <p class="main__serviceItemName">Уникальный дизайн</p>
-                            <div class="main__serviceMoneyBlock">
-                                <p class="main__serviceItemMonthPrice">1000 руб.</p>
-                                <p class="main__serviceItemYearPrice">10000 руб.</p>
+                        <div class="main__serviceTableItem">
+                            <div class="main__serviceNameBlock">
+                                <p class="main__serviceItemName">Убрать копирайт</p>
+                                <div class="main__serviceMoneyBlock">
+                                    <p class="main__serviceItemMonthPrice">250 руб.</p>
+                                    <p class="main__serviceItemYearPrice">2500 руб.</p>
+                                </div>
                             </div>
+                            <label class="main__serviceItemCheckbox">
+                                <input type="checkbox" class="main__serviceItemCheckboxInput" />
+                                <span class="main__serviceItemBox"></span>
+                            </label>
                         </div>
-                        <label class="main__serviceItemCheckbox">
-                            <input type="checkbox" class="main__serviceItemCheckboxInput" />
-                            <span class="main__serviceItemBox"></span>
-                        </label>
+                        <div class="main__serviceTableItem">
+                            <div class="main__serviceNameBlock">
+                                <p class="main__serviceItemName">Уникальный дизайн</p>
+                                <div class="main__serviceMoneyBlock">
+                                    <p class="main__serviceItemMonthPrice">1000 руб.</p>
+                                    <p class="main__serviceItemYearPrice">10000 руб.</p>
+                                </div>
+                            </div>
+                            <label class="main__serviceItemCheckbox">
+                                <input type="checkbox" class="main__serviceItemCheckboxInput" />
+                                <span class="main__serviceItemBox"></span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="main__servicePayBlock">
-                    <select class="main__servicePaySelect">
-                        <option>Способы оплаты:</option>
-                        <option>Qiwi</option>
-                        <option>Webmoney</option>
-                        <option>Яндекс деньги</option>
-                    </select>
-                    <p class="main__servicePayPriceBlock">Сумма: <span class="main__servicePayPrice">0</span> руб.</p>
-                </div>
-                <button class="main__button">Купить</button>
+                    <div class="main__servicePayBlock">
+                        <select class="main__servicePaySelect">
+                            <option>Способы оплаты:</option>
+                            <option>Qiwi</option>
+                            <option>Webmoney</option>
+                            <option>Яндекс деньги</option>
+                        </select>
+                        <p class="main__servicePayPriceBlock">Сумма: <span class="main__servicePayPrice">0</span> руб.</p>
+                    </div>
+                    <button class="main__button">Купить</button>
+                </form>
             </div>
             <div class="main__block main__serviceBlock">
                 <p class="main__blockHeadline main__blockHeadline-service">Купленные услуги</p>

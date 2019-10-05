@@ -45,9 +45,9 @@
             </a>
             <a href="#" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconAddresscard"></p>
-                <p class="sidebar__itemText">УСЛУГИ</p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="webchat.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconComment"></p>
                 <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
             </a>
@@ -98,19 +98,19 @@
                 <p class="sidebar__itemIcon iconUser"></p>
                 <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
             </a>
-            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+            <a href="services.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconClipboard"></p>
                 <p class="sidebar__itemText">УСЛУГИ</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
                 <p class="sidebar__itemIcon iconUsertie"></p>
                 <p class="sidebar__itemText">ПАРТНЕРКА</p>
             </a>
             <a href="#" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconAddresscard"></p>
-                <p class="sidebar__itemText">УСЛУГИ</p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="webchat.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconComment"></p>
                 <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
             </a>
@@ -183,17 +183,19 @@
                     </div>
                 </div>
                 <p class="main__informationHeadline main__informationHeadlineNone-mobile">Вывод денег</p>
-                <select class="main__informationSelect">
-                    <option>Способ вывода:</option>
-                    <option>Qiwi</option>
-                    <option>Webmoney</option>
-                    <option>Яндекс деньги</option>
-                </select>
-                <div class="main__informationInputsBlock">
-                    <input class="main__input main__input-information" placeholder="Сумма вывода" />
-                    <input class="main__input main__input-information" placeholder="Номер кошелька" />
-                </div>
-                <button class="main__button">Создать заявку</button>
+                <form method="post">
+                    <select class="main__informationSelect">
+                        <option>Способ вывода:</option>
+                        <option>Qiwi</option>
+                        <option>Webmoney</option>
+                        <option>Яндекс деньги</option>
+                    </select>
+                    <div class="main__informationInputsBlock">
+                        <input class="main__input main__input-information" placeholder="Сумма вывода" />
+                        <input class="main__input main__input-information" placeholder="Номер кошелька" />
+                    </div>
+                    <button class="main__button">Создать заявку</button>
+                </form>
             </div>
             <div class="main__block main__informationBlock">
                 <p class="main__blockHeadline">Заявка на вывод</p>

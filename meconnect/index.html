@@ -45,9 +45,9 @@
             </a>
             <a href="#" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconAddresscard"></p>
-                <p class="sidebar__itemText">УСЛУГИ</p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="webchat.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconComment"></p>
                 <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
             </a>
@@ -108,9 +108,9 @@
             </a>
             <a href="#" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconAddresscard"></p>
-                <p class="sidebar__itemText">УСЛУГИ</p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
             </a>
-            <a href="#" class="sidebar__menuItem">
+            <a href="webchat.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconComment"></p>
                 <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
             </a>
@@ -146,32 +146,34 @@
                         <a href="#" class="main__lastActivityLinkIcon iconExternLink"></a>
                     </div>
                 </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Имя пользователя (латиницей):</p>
-                    <input class="main__input" />
-                </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Электронный адрес:</p>
-                    <input class="main__input" />
-                </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Текущий пароль:</p>
-                    <input class="main__input" />
-                </div>
-                <div class="main__lastActivityPassBlock">
-                    <div class="main__nameAndInputBlock main__nameAndInputBlock-pass">
-                        <p class="main__innerTitle">Новый пароль:</p>
-                        <input class="main__input main__input-password" />
+                <form method="post">
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__innerTitle">Имя пользователя (латиницей):</p>
+                        <input class="main__input" />
                     </div>
                     <div class="main__nameAndInputBlock">
-                        <p class="main__innerTitle">Повторите новый пароль:</p>
-                        <input class="main__input main__input-password" />
+                        <p class="main__innerTitle">Электронный адрес:</p>
+                        <input class="main__input" />
                     </div>
-                </div>
-                <div class="main__lastActivityButtonBlock">
-                    <button class="main__button">Сохранить</button>
-                    <button class="main__button main__button-delete">Удалить учетную запись</button>
-                </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__innerTitle">Текущий пароль:</p>
+                        <input class="main__input" />
+                    </div>
+                    <div class="main__lastActivityPassBlock">
+                        <div class="main__nameAndInputBlock main__nameAndInputBlock-pass">
+                            <p class="main__innerTitle">Новый пароль:</p>
+                            <input class="main__input main__input-password" />
+                        </div>
+                        <div class="main__nameAndInputBlock">
+                            <p class="main__innerTitle">Повторите новый пароль:</p>
+                            <input class="main__input main__input-password" />
+                        </div>
+                    </div>
+                    <div class="main__lastActivityButtonBlock">
+                        <button class="main__button">Сохранить</button>
+                        <button class="main__button main__button-delete">Удалить учетную запись</button>
+                    </div>
+                </form>
             </div>
             <div class="main__block main__block-social">
                 <p class="main__blockHeadline">Соцсети</p>
@@ -226,8 +228,10 @@
             </div>
             <div class="main__block main__block-team">
                 <p class="main__blockHeadline">Команда</p>
-                <input class="main__input main__input-addInTeam" placeholder="Электронная почта" />
-                <button class="main__button">Добавить в команду</button>
+                <form method="post">
+                    <input class="main__input main__input-addInTeam" placeholder="Электронная почта" />
+                    <button class="main__button">Добавить в команду</button>
+                </form>
                 <div class="main__teamTableBlock">
                     <div class="main__teamTableTitleBlock">
                         <p class="main__teamTableTitleText">Имя</p>
