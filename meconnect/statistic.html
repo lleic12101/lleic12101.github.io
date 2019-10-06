@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MeConnect</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <aside class="sidebar">
@@ -23,7 +24,7 @@
             <a href="#" class="sidebar__adminMenuItem">Статистика</a>
         </div>
         <div class="sidebar__menuBlock">
-            <a href="statistic.html" class="sidebar__menuItem">
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
                 <p class="sidebar__itemIcon iconChart"></p>
                 <p class="sidebar__itemText">СТАТИСТИКА</p>
             </a>
@@ -31,7 +32,7 @@
                 <p class="sidebar__itemIcon iconCog"></p>
                 <p class="sidebar__itemText">НАСТРОЙКИ</p>
             </a>
-            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+            <a href="index.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconUser"></p>
                 <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
             </a>
@@ -86,7 +87,7 @@
             </div>
         </div>
         <div class="sidebar__menuBlock-mobile">
-            <a href="statistic.html" class="sidebar__menuItem">
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
                 <p class="sidebar__itemIcon iconChart"></p>
                 <p class="sidebar__itemText">СТАТИСТИКА</p>
             </a>
@@ -94,7 +95,7 @@
                 <p class="sidebar__itemIcon iconCog"></p>
                 <p class="sidebar__itemText">НАСТРОЙКИ</p>
             </a>
-            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+            <a href="index.html" class="sidebar__menuItem">
                 <p class="sidebar__itemIcon iconUser"></p>
                 <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
             </a>
@@ -131,125 +132,101 @@
     </aside>
     <main class="main">
         <div class="main__headlineBlock">
-            <p class="main__headline">Учетная запись</p>
+            <p class="main__headline">Статистика</p>
         </div>
-        <div class="main__blocks">
-            <div class="main__block main__block-lastActivity">
-                <div class="main__block-lastActivityTitle">
-                    <p class="main__blockHeadline main__blockHeadline-lastActivity">Последняя активность:</p>
-                    <p class="main__blockHeadline main__blockHeadline-lastActivity">2019-09-21 14:07:34</p>
-                </div>
-                <div class="main__nameAndInputBlock">
-                    <p class="main__innerTitle">Ваша персональная ссылка:</p>
-                    <div class="main__lastActivityLinkBlock">
-                        <a href="#" class="main__lastActivityLink">https://meconnect.ru/yournicknameonsite/</a>
-                        <a href="#" class="main__lastActivityLinkIcon iconExternLink"></a>
+        <div class="main__blocks main__blocks-statistic">
+            <div class="main__block main__block-statistic">
+                <div class="main__statisticHeadlineBlock">
+                    <div class="main__statisticHeadline">
+                        <p class="main__blockHeadline main__blockHeadline-statistic">Просмотров профиля</p>
+                        <p class="main__blockHeadlineText">Всего просмотров за последние 15 дней.</p>
                     </div>
-                </div>
-                <form method="post">
-                    <div class="main__nameAndInputBlock">
-                        <p class="main__innerTitle">Имя пользователя (латиницей):</p>
-                        <input class="main__input" />
-                    </div>
-                    <div class="main__nameAndInputBlock">
-                        <p class="main__innerTitle">Электронный адрес:</p>
-                        <input class="main__input" />
-                    </div>
-                    <div class="main__nameAndInputBlock">
-                        <p class="main__innerTitle">Текущий пароль:</p>
-                        <input class="main__input" />
-                    </div>
-                    <div class="main__lastActivityPassBlock">
-                        <div class="main__nameAndInputBlock main__nameAndInputBlock-pass">
-                            <p class="main__innerTitle">Новый пароль:</p>
-                            <input class="main__input main__input-password" />
+                    <div class="main__statisticListAndCalendar">
+                        <ul class="main__statisticList">
+                            <li class="main__statisticListItem">Главная ссылка</li>
+                            <li class="main__statisticListItem">Кастомные ссылки</li>
+                            <li class="main__statisticListItem">Просмотров профиля</li>
+                            <li class="main__statisticListItem">Мессенджеры</li>
+                        </ul>
+                        <div class="main__statisticDatapickerblock">
+                            <input type="text" value="2019.09.03 - 2019.09.19" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here main__statisticDatapicker" />
                         </div>
-                        <div class="main__nameAndInputBlock">
-                            <p class="main__innerTitle">Повторите новый пароль:</p>
-                            <input class="main__input main__input-password" />
-                        </div>
-                    </div>
-                    <div class="main__lastActivityButtonBlock">
-                        <button class="main__button">Сохранить</button>
-                        <button class="main__button main__button-delete">Удалить учетную запись</button>
-                    </div>
-                </form>
-            </div>
-            <div class="main__block main__block-social">
-                <p class="main__blockHeadline">Соцсети</p>
-                <div class="main__socialItem">
-                    <div class="main__socialItemHeader">
-                        <div class="main__socialItemIconTitle">
-                            <img class="main__socialItemIcon" src="img/social/ikonka-telegram.png" />
-                            <p class="main__socialItemTitle">Telegram</p>
-                        </div>
-                        <p class="main__socialItemEdit iconPencil"></p>
-                    </div>
-                    <div class="main__socialItemFull">
-                        <p class="main__socialItemText">
-                            Инструкция по поводу изменений
-                            в данной соцсети...
-                        </p>
-                        <button class="main__button">Кнопка</button>
                     </div>
                 </div>
-                <div class="main__socialItem">
-                    <div class="main__socialItemHeader">
-                        <div class="main__socialItemIconTitle">
-                            <img class="main__socialItemIcon" src="img/social/ikonka-viber.png" />
-                            <p class="main__socialItemTitle">Viber</p>
-                        </div>
-                        <p class="main__socialItemEdit iconPencil"></p>
-                    </div>
-                    <div class="main__socialItemFull">
-                        <p class="main__socialItemText">
-                            Инструкция по поводу изменений
-                            в данной соцсети...
-                        </p>
-                        <button class="main__button">Кнопка</button>
-                    </div>
-                </div>
-                <div class="main__socialItem">
-                    <div class="main__socialItemHeader">
-                        <div class="main__socialItemIconTitle">
-                            <img class="main__socialItemIcon" src="img/social/ikonka-vk.png" />
-                            <p class="main__socialItemTitle">VK</p>
-                        </div>
-                        <p class="main__socialItemEdit iconPencil"></p>
-                    </div>
-                    <div class="main__socialItemFull">
-                        <p class="main__socialItemText">
-                            Инструкция по поводу изменений
-                            в данной соцсети...
-                        </p>
-                        <button class="main__button">Кнопка</button>
+                <div class="main__viewChart">
+                    <div class="main__viewChartCanvas">
+                        <canvas id="myChart" height="70"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="main__block main__block-team">
-                <p class="main__blockHeadline">Команда</p>
-                <form method="post">
-                    <input class="main__input main__input-addInTeam" placeholder="Электронная почта" />
-                    <button class="main__button">Добавить в команду</button>
-                </form>
-                <div class="main__teamTableBlock">
-                    <div class="main__teamTableTitleBlock">
-                        <p class="main__teamTableTitleText">Имя</p>
-                        <p class="main__teamTableTitleText">Роль</p>
+            <div class="main__block main__block-lastViews">
+                <div class="main__viewsTableTitleBlock">
+                    <div class="main__viewsMessenger">
+                        <p class="main__viewsTitle">Мессенджер</p>
                     </div>
-                    <div class="main__teamTableItem">
-                        <div class="main__teamTableNameBlock">
-                            <p class="main__teamItemName">Анна Мазур</p>
-                            <p class="main__teamItemEmail">annmazur@gmail.com</p>
-                        </div>
-                        <p class="main__teamTableRoleText">Оператор</p>
+                    <div class="main__viewsToday">
+                        <p class="main__viewsTitle">Сегодня</p>
                     </div>
-                    <div class="main__teamTableItem">
-                        <div class="main__teamTableNameBlock">
-                            <p class="main__teamItemName">Игорь Шмидт</p>
-                            <p class="main__teamItemEmail">shmidt.igor@gmail.com</p>
-                        </div>
-                        <p class="main__teamTableRoleText">Владелец</p>
+                    <div class="main__viewsYesterday">
+                        <p class="main__viewsTitle">Вчера</p>
+                    </div>
+                    <div class="main__viewsLastThirty">
+                        <p class="main__viewsTitle">Последние 30 дней</p>
+                    </div>
+                    <div class="main__viewsAll">
+                        <p class="main__viewsTitle">Всего</p>
+                    </div>
+                </div>
+                <div class="main__viewsTableItem">
+                    <div class="main__viewsMessenger">
+                        <p class="main__viewsItemText main__viewsItemMessengerName iconViewUser viewProfile">Просмотров профиля</p>
+                        <p class="main__viewsItemText main__viewsItemMessengerName iconViewUser viewProfile-mobile">Профиль</p>
+                    </div>
+                    <div class="main__viewsToday">
+                        <p class="main__viewsItemText">1</p>
+                    </div>
+                    <div class="main__viewsYesterday">
+                        <p class="main__viewsItemText">1</p>
+                    </div>
+                    <div class="main__viewsLastThirty">
+                        <p class="main__viewsItemText">64</p>
+                    </div>
+                    <div class="main__viewsAll">
+                        <p class="main__viewsItemText">83</p>
+                    </div>
+                </div>
+                <div class="main__viewsTableItem">
+                    <div class="main__viewsMessenger">
+                        <p class="main__viewsItemText main__viewsItemMessengerName iconViewFB">Facebook</p>
+                    </div>
+                    <div class="main__viewsToday">
+                        <p class="main__viewsItemText">-</p>
+                    </div>
+                    <div class="main__viewsYesterday">
+                        <p class="main__viewsItemText">-</p>
+                    </div>
+                    <div class="main__viewsLastThirty">
+                        <p class="main__viewsItemText">1</p>
+                    </div>
+                    <div class="main__viewsAll">
+                        <p class="main__viewsItemText">1</p>
+                    </div>
+                </div>
+                <div class="main__viewsTableItem">
+                    <div class="main__viewsMessenger">
+                        <p class="main__viewsItemText main__viewsItemMessengerName iconViewInstagram">Instagram</p>
+                    </div>
+                    <div class="main__viewsToday">
+                        <p class="main__viewsItemText">-</p>
+                    </div>
+                    <div class="main__viewsYesterday">
+                        <p class="main__viewsItemText">1</p>
+                    </div>
+                    <div class="main__viewsLastThirty">
+                        <p class="main__viewsItemText">1</p>
+                    </div>
+                    <div class="main__viewsAll">
+                        <p class="main__viewsItemText">2</p>
                     </div>
                 </div>
             </div>
@@ -259,6 +236,9 @@
         </div>
     </main>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/chartSettings.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

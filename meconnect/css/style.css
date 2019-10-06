@@ -1053,6 +1053,179 @@ textarea::-webkit-input-placeholder {
     margin-top: 2.18vh;
 }
 
+.main__blocks-statistic {
+    flex-direction: column;
+}
+.main__block-statistic {
+    width: 86.45vw;
+    height: 52.45vh;
+    padding: 3.27vh 1.56vw;
+}
+.main__statisticHeadlineBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__blockHeadline-statistic {
+    margin-bottom: 0.54vh;
+}
+.main__blockHeadlineText {
+    font-family: 'Roboto Relugar';
+    color: #aaaaaa;
+    font-size: .77vw;
+}
+.main__statisticList {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.main__statisticListAndCalendar {
+    margin-top: 2.73vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__statisticListItem {
+    color: #444444;
+    font-family: 'Roboto Relugar';
+    font-size: .73vw;
+    margin-right: 2.34vw;
+    position: relative;
+}
+.main__statisticListItem:nth-child(4){
+    margin-right: 4.16vw;
+}
+.main__statisticListItem:after {
+    content:'';
+    display: block;
+    width: .83vw;
+    height: 1.74vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -1.4vw;
+}
+.main__statisticListItem:nth-child(1):after {
+    background-color: #36a2eb;
+}
+.main__statisticListItem:nth-child(2):after {
+    background-color: #ffa500;
+}
+.main__statisticListItem:nth-child(3):after {
+    background-color: #ff6384;
+}
+.main__statisticListItem:nth-child(4):after {
+    background-color: #9966ff;
+}
+.main__statisticDatapicker {
+    border: none;
+    cursor: pointer;
+    color: #666666;
+    font-family: 'Roboto Relugar';
+    font-size: .73vw;
+    text-decoration: dotted;
+    outline: none;
+}
+.main__statisticDatapickerblock {
+    position: relative;
+    margin-left: 1.04vw;
+}
+.main__statisticDatapickerblock:after {
+    font-family: 'Font Awesome Solid';
+    content: '\f073';
+    color: #888888;
+    font-size: .82vw;
+    position: absolute;
+    top: 0.54vh;
+    left: -1.3vw;
+}
+.main__statisticDatapickerblock:hover .main__statisticDatapicker {
+    color: #22b9ff;
+}
+.main__statisticDatapickerblock:hover:after {
+    color: #22b9ff;
+}
+#myChart {
+    max-height: 38.25vh;
+    margin-top: 3.27vh;
+    font-family: 'Roboto Relugar';
+    font-size: .73vw;
+}
+.main__block-lastViews {
+    width: 86.45vw;
+    height: 27.86vh;
+    padding: 3.27vh 1.56vw;
+}
+.main__viewsTableTitleBlock {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.04vw;
+    padding-bottom: 1.63vh;
+    border-bottom: 2px solid #f5f5f5;
+}
+.main__viewsMessenger {
+    width: 26.82vw;
+}
+.main__viewsToday {
+    width: 12.5vw;
+}
+.main__viewsYesterday {
+    width: 11.71vw;
+}
+.main__viewsLastThirty {
+    width: 21.61vw;
+}
+.main__viewsAll {
+    width: 8.33vw;
+}
+.main__viewsTitle {
+    color: #000000;
+    font-family: 'Roboto Medium';
+    font-size: .79vw;
+}
+.main__viewsTableItem {
+    display: flex;
+    flex-direction: row;
+    padding: 2.18vh 1.04vw;
+    border-bottom: 1px solid #f5f5f5;
+}
+.main__viewsItemText {
+    color: #666666;
+    font-family: 'Roboto Relugar';
+    font-size: .79vw;
+}
+.main__viewsItemMessengerName {
+    margin-left: 1.56vw;
+    position: relative;
+}
+.viewProfile-mobile {
+    display: none;
+}
+.iconViewUser::after {
+    content: '\f007';
+    font-family: 'Font Awesome Solid';
+    position: absolute;
+    top: 1px;
+    left: -1.56vw;
+    font-size: .79vw;
+}
+.iconViewFB::after {
+    content: '\f082';
+    font-family: 'Font Awesome Brands';
+    position: absolute;
+    top: 0px;
+    left: -1.56vw;
+    font-size: .82vw;
+}
+.iconViewInstagram::after {
+    content: '\f16d';
+    font-family: 'Font Awesome Brands';
+    position: absolute;
+    top: 0px;
+    left: -1.56vw;
+    font-size: .82vw;
+}
+
 .main__copyrightBlock {
     position: absolute;
     bottom: 0;
@@ -2035,6 +2208,200 @@ textarea::-webkit-input-placeholder {
     .main__chatIconSend {
         margin-right: 10px;
     }
+    .main__blocks-statistic {
+    flex-direction: column;
+}
+.main__block-statistic {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+.main__viewChart {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+.main__viewChartCanvas {
+    width: 1660px;
+}
+#myChart {
+    margin-top: 30px;
+    font-family: 'Roboto Relugar';
+    font-size: 13px;
+    height: 378px;
+    width: 500px;
+}
+.main__statisticHeadlineBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+}
+.main__blockHeadline-statistic {
+    margin-bottom: 5px;
+}
+.main__blockHeadlineText {
+    font-family: 'Roboto Relugar';
+    color: #aaaaaa;
+    font-size: 12px;
+}
+.main__statisticList {
+    display: flex;
+    max-width: 270px;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.main__statisticListAndCalendar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+}
+.main__statisticListItem {
+    color: #444444;
+    font-family: 'Roboto Relugar';
+    font-size: 12px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 12px;
+    margin-left: 18px;
+}
+.main__statisticListItem:nth-child(4){
+    margin-right: 0;
+}
+.main__statisticListItem:after {
+    content:'';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: -18px;
+}
+.main__statisticListItem:nth-child(1):after {
+    background-color: #36a2eb;
+}
+.main__statisticListItem:nth-child(2):after {
+    background-color: #ffa500;
+}
+.main__statisticListItem:nth-child(3):after {
+    background-color: #ff6384;
+}
+.main__statisticListItem:nth-child(4):after {
+    background-color: #9966ff;
+}
+.main__statisticDatapicker {
+    border: none;
+    cursor: pointer;
+    color: #666666;
+    font-family: 'Roboto Relugar';
+    font-size: 13px;
+    text-decoration: dotted;
+    outline: none;
+}
+.main__statisticDatapickerblock {
+    position: relative;
+    margin-left: 25px;
+}
+.main__statisticDatapickerblock:after {
+    font-family: 'Font Awesome Solid';
+    content: '\f073';
+    color: #888888;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: -25px;
+}
+.main__statisticDatapickerblock:hover .main__statisticDatapicker {
+    color: #22b9ff;
+}
+.main__statisticDatapickerblock:hover:after {
+    color: #22b9ff;
+}
+.main__block-lastViews {
+    width: 100%;
+    height: 255px;
+    padding: 30px;
+}
+.main__viewsTableTitleBlock {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f5f5f5;
+    justify-content: space-between;
+}
+.main__viewsMessenger {
+    width: auto;
+}
+.main__viewsToday {
+    width: 60px;
+    text-align: center;
+}
+.main__viewsYesterday {
+    width: 225px;
+    display: none;
+}
+.main__viewsLastThirty {
+    width: 415px;
+    display: none;
+}
+.main__viewsAll {
+    width: 160px;
+    display: none;
+}
+.main__viewsTitle {
+    color: #000000;
+    font-family: 'Roboto Medium';
+    font-size: 15px;
+}
+.main__viewsTableItem {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-bottom: 1px solid #f5f5f5;
+    justify-content: space-between;
+}
+.main__viewsItemText {
+    color: #666666;
+    font-family: 'Roboto Relugar';
+    font-size: 15px;
+}
+.main__viewsItemMessengerName {
+    margin-left: 30px;
+    position: relative;
+}
+.viewProfile {
+    display: none;
+}
+.viewProfile-mobile {
+    display: block;
+}
+.iconViewUser::after {
+    content: '\f007';
+    font-family: 'Font Awesome Solid';
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    font-size: 15px;
+}
+.iconViewFB::after {
+    content: '\f082';
+    font-family: 'Font Awesome Brands';
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    font-size: 16px;
+}
+.iconViewInstagram::after {
+    content: '\f16d';
+    font-family: 'Font Awesome Brands';
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    font-size: 16px;
+}
 }
 @media screen and (max-width: 860px) {
     .main__serviceTableTitleService-mobile {
