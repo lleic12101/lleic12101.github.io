@@ -76,6 +76,100 @@ $('.main__backToChatIcon').click(function(){
 	$('.main__backToChatListBlock').removeClass('main__backToChatListBlock-active');
 });
 
+$('.main__settingButton').click(function(){
+	var blocks = document.querySelectorAll('.main__settingBlock');
+	for(var i = 0; i < blocks.length; i++){
+		if(blocks[i].id == this.id){
+			$('.main__settingsButtonBlock').addClass('main__settingsButtonBlock-disabled');
+			blocks[i].classList.add('main__settingBlock-active');
+			return;
+		}
+	}
+});
+$('.main__settingBlockBackBtn').click(function(){
+	$('.main__settingBlock').removeClass('main__settingBlock-active');
+	$('.main__settingsButtonBlock').removeClass('main__settingsButtonBlock-disabled');
+});
+
+var thatBlock = document.querySelector('.trash');
+$('.main__settingColorBlock').click(function(){
+	var objs = document.querySelectorAll('#closeablePicker');
+	for(var i = 0; i < objs.length; i++){
+		if(this.parentNode.parentNode.querySelector('#closeablePicker') != objs[i]) {
+			$(objs[i]).hide();
+		}
+	}
+	getThatBlockColor();
+	$(this).parent().parent().find('#closeablePicker').slideToggle();
+	thatBlock = this;
+});
+
+function colorUpdate(){
+	var gradientBlock = document.querySelector('.main__settingColorBlock-longGradient');
+	var firstPicker = document.querySelector('.main__settingSelectColor1');
+	var secondPicker = document.querySelector('.main__settingSelectColor2');
+	$(gradientBlock).css({'background-image': 'linear-gradient(90deg,' + firstPicker.style.background + ',' + secondPicker.style.background +')'});
+	$(gradientBlock).css({'background-image': '-webkit-linear-gradient(90deg,' + firstPicker.style.background + ',' + secondPicker.style.background +')'});
+}
+
+$("#backgroundStyle").on("change",function(){
+  var val = $(this).find('option:selected').val();
+  var objs = document.querySelectorAll('.main__settingNameAndInputBlock-option');
+	for(var i = 0; i < objs.length; i++){
+		if(val != objs[i].id) objs[i].classList.add('main__settingNameAndInputBlock-disabled');
+		else objs[i].classList.remove('main__settingNameAndInputBlock-disabled');
+	}
+});
+
+function getThatBlock(){
+	colorUpdate();
+	return thatBlock;
+}
+function getThatBlockColor(){
+	return thatBlock.style.background;
+}
+
+var dropZone = $('.main__settingUploadPhotoForm');
+dropZone.on('drag dragstart dragend dragover dragenter dragleave drop', function(){
+     return false;
+});
+dropZone.on('dragover dragenter', function() {
+     dropZone.addClass('dragover');
+});
+dropZone.on('dragleave', function(e) {
+     dropZone.removeClass('dragover');
+});
+dropZone.on('dragleave', function(e) {
+     let dx = e.pageX - dropZone.offset().left;
+     let dy = e.pageY - dropZone.offset().top;
+     if ((dx < 0) || (dx > dropZone.width()) || (dy < 0) || (dy > dropZone.height())) {
+          dropZone.removeClass('dragover');
+     };
+});
+dropZone.on('drop', function(e) {
+     dropZone.removeClass('dragover');
+     let files = e.originalEvent.dataTransfer.files;
+     sendFiles(files);
+});
+$('#file-input').change(function() {
+     let files = this.files;
+     sendFiles(files);
+});
+
+$('.main__settingDesignBtn').click(function(){
+	var objs = this.parentNode.querySelectorAll('.main__settingDesignBtn');
+	for(var i = 0; i < objs.length; i++){
+		if(this.id != i)objs[i].classList.remove('main__settingDesignBtn-active');
+		else objs[i].classList.add('main__settingDesignBtn-active')
+	}
+});
+
+$('.main__settingInstallButton').click(function(){
+	var obj = this.querySelector('.main__settingInstallButtonIcon');
+	$(obj).toggleClass('main__settingInstallButtonIcon-active');
+	$('.main__settingInstallBlock').slideToggle();
+});
+
 containerSize();
 window.onresize = function() {
 	containerSize();	

@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeConnect</title>
+    <link rel="stylesheet" href="colorJoe/css/pygment_trac.css">
+    <link rel="stylesheet" href="colorJoe/css/iehacks.css">
+    <link rel="stylesheet" href="colorJoe/css/colorjoe.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar__header">
+            <img class="sidebar__logo" src="img/logo.png" />
+            <p class="sidebar__adminBtn iconEllipsis"></p>
+        </div>
+        <div class="sidebar__adminMenu">
+            <p class="sidebar__adminMenuTitle">Панель администратора</p>
+            <a href="#" class="sidebar__adminMenuItem">Пользователи</a>
+            <a href="#" class="sidebar__adminMenuItem sidebar__adminMenuItem-active">Страницы</a>
+            <a href="#" class="sidebar__adminMenuItem">Платежи</a>
+            <a href="#" class="sidebar__adminMenuItem">Настройки сайта</a>
+            <a href="#" class="sidebar__adminMenuItem">Extra Settings</a>
+            <a href="#" class="sidebar__adminMenuItem">Статистика</a>
+        </div>
+        <div class="sidebar__menuBlock">
+            <a href="statistic.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconChart"></p>
+                <p class="sidebar__itemText">СТАТИСТИКА</p>
+            </a>
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+                <p class="sidebar__itemIcon iconCog"></p>
+                <p class="sidebar__itemText">НАСТРОЙКИ</p>
+            </a>
+            <a href="index.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconUser"></p>
+                <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
+            </a>
+            <a href="services.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconClipboard"></p>
+                <p class="sidebar__itemText">УСЛУГИ</p>
+            </a>
+            <a href="affiliate.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconUsertie"></p>
+                <p class="sidebar__itemText">ПАРТНЕРКА</p>
+            </a>
+            <a href="#" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconAddresscard"></p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
+            </a>
+            <a href="webchat.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconComment"></p>
+                <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
+            </a>
+            <a href="#" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconShopping"></p>
+                <p class="sidebar__itemText">МАГАЗИН</p>
+            </a>
+            <a href="#" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconSignOut"></p>
+                <p class="sidebar__itemText">ВЫХОД</p>
+            </a>
+        </div>
+        <div class="sidebar__footer">
+            <a class="sidebar__footerIcon iconFB"></a>
+            <a class="sidebar__footerIcon iconTwitter"></a>
+            <a class="sidebar__footerIcon iconLinkedIn"></a>
+        </div>
+    </aside>
+    <aside class="sidebar__mobile">
+        <div class="sidebar__mobileHeader">
+            <div class="sidebar__mobileLogoAndAdmin">
+                <img class="sidebar__logo sidebar__logo-mobile" src="img/logo.png" />
+                <p class="sidebar__adminBtn sidebar__adminBtn-mobile iconEllipsis"></p>
+            </div>
+            <p class="sidebar__mobileMenuBtn iconBars"></p>
+        </div>
+        <div class="sidebar__adminMenu-mobile">
+            <p class="sidebar__adminMenuTitle">Панель администратора</p>
+            <div class="sidebar__adminMenuItems">
+                <a href="#" class="sidebar__adminMenuItem">Пользователи</a>
+                <a href="#" class="sidebar__adminMenuItem sidebar__adminMenuItem-active">Страницы</a>
+                <a href="#" class="sidebar__adminMenuItem">Платежи</a>
+                <a href="#" class="sidebar__adminMenuItem">Настройки сайта</a>
+                <a href="#" class="sidebar__adminMenuItem">Extra Settings</a>
+                <a href="#" class="sidebar__adminMenuItem">Статистика</a>
+            </div>
+        </div>
+        <div class="sidebar__menuBlock-mobile">
+            <a href="statistic.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconChart"></p>
+                <p class="sidebar__itemText">СТАТИСТИКА</p>
+            </a>
+            <a href="#" class="sidebar__menuItem sidebar__menuItem-active">
+                <p class="sidebar__itemIcon iconCog"></p>
+                <p class="sidebar__itemText">НАСТРОЙКИ</p>
+            </a>
+            <a href="index.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconUser"></p>
+                <p class="sidebar__itemText">УЧЕТНАЯ ЗАПИСЬ</p>
+            </a>
+            <a href="services.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconClipboard"></p>
+                <p class="sidebar__itemText">УСЛУГИ</p>
+            </a>
+            <a href="affiliate.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconUsertie"></p>
+                <p class="sidebar__itemText">ПАРТНЕРКА</p>
+            </a>
+            <a href="#" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconAddresscard"></p>
+                <p class="sidebar__itemText">ВИЗИТКА</p>
+            </a>
+            <a href="webchat.html" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconComment"></p>
+                <p class="sidebar__itemText">ВЕБ-ЧАТ</p>
+            </a>
+            <a href="#" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconShopping"></p>
+                <p class="sidebar__itemText">МАГАЗИН</p>
+            </a>
+            <a href="#" class="sidebar__menuItem">
+                <p class="sidebar__itemIcon iconSignOut"></p>
+                <p class="sidebar__itemText">ВЫХОД</p>
+            </a>
+        </div>
+        <div class="sidebar__footer">
+            <a class="sidebar__footerIcon iconFB"></a>
+            <a class="sidebar__footerIcon iconTwitter"></a>
+            <a class="sidebar__footerIcon iconLinkedIn"></a>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__headlineBlock">
+            <p class="main__headline">Настройки</p>
+        </div>
+        <div class="main__blocks">
+            <div class="main__block main__block-phone">
+                <div class="main__phoneIcons">
+                    <p class="main__phoneIcon iconTh"></p>
+                    <p class="main__phoneIcon iconTh"></p>
+                </div>
+                <div class="main__phoneBlock">
+                    <img src="img/phone.png" class="main__phoneImage">
+                    <div class="main__phoneBlockSettings">
+                        <p class="main__phoneBlockTitle">Имя ...</p>
+                        <p class="main__phoneBlockDescription">
+                            Тут можно вставить небольшое описание
+                            своей жизни ...
+                        </p>
+                        <button class="main__phoneAddBlockBtn">Добавить новый блок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main__block main__block-settings">
+                <div class="main__settingsButtonBlock">
+                    <div class="main__settingButton" id="0">
+                        <img class="main__settingButtonIcon" src="img/settings/text.png" />
+                        <p class="main__settingButtonText">Текст</p>
+                    </div>
+                    <div class="main__settingButton" id="1">
+                        <img class="main__settingButtonIcon" src="img/settings/chat.png" />
+                        <p class="main__settingButtonText">Мессенджеры</p>
+                    </div>
+                    <div class="main__settingButton" id="2">
+                        <img class="main__settingButtonIcon" src="img/settings/link.png" />
+                        <p class="main__settingButtonText">Веб-ссылка</p>
+                    </div>
+                    <div class="main__settingButton" id="3">
+                        <img class="main__settingButtonIcon" src="img/settings/gallery.png" />
+                        <p class="main__settingButtonText">Галерея</p>
+                    </div>
+                    <div class="main__settingButton" id="4">
+                        <img class="main__settingButtonIcon" src="img/settings/chart.png" />
+                        <p class="main__settingButtonText">Аналитика</p>
+                    </div>
+                    <div class="main__settingButton" id="5">
+                        <img class="main__settingButtonIcon" src="img/settings/widget.png" />
+                        <p class="main__settingButtonText">Виджеты</p>
+                    </div>
+                    <div class="main__settingButton" id="6">
+                        <img class="main__settingButtonIcon" src="img/settings/design.png" />
+                        <p class="main__settingButtonText">Дизайн</p>
+                    </div>
+                    <div class="main__settingButton" id="7">
+                        <img class="main__settingButtonIcon" src="img/settings/maps.png" />
+                        <p class="main__settingButtonText">Карты</p>
+                    </div>
+                    <div class="main__settingButton" id="8">
+                        <img class="main__settingButtonIcon" src="img/settings/video.png" />
+                        <p class="main__settingButtonText">Видео</p>
+                    </div>
+                    <div class="main__settingButton" id="9">
+                        <img class="main__settingButtonIcon" src="img/settings/pay.png" />
+                        <p class="main__settingButtonText">Оплата</p>
+                    </div>
+                    <div class="main__settingButton" id="10">
+                        <img class="main__settingButtonIcon" src="img/settings/ask.png" />
+                        <p class="main__settingButtonText">Вопрос-Ответ</p>
+                    </div>
+                    <div class="main__settingButton" id="11">
+                        <img class="main__settingButtonIcon" src="img/settings/gears.png" />
+                        <p class="main__settingButtonText">Как установить</p>
+                    </div>
+                </div>
+                <div class="main__settingBlock" id="0">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div id="toolbar-container"></div>
+                    <div id="editor">
+                        <p>
+                            <b>Деятельность</b> — процесс (процессы) активного взаимодействия субъекта (живого существа) с объектом (окружающей
+                            действительностью), во время которого субъект целенаправленно воздействует на объект, удовлетворяя какие-либо свои
+                            потребности, достигая цели.<br><br>
+
+                            Из-за чрезвычайной сложности и непрерывной изменчивости внешних условий уже на ранних стадиях филогенеза возникают
+                            психические формы управления практическим взаимодействием живого существа с окружающей средой. Особое значение
+                            имеет развитие ориентировочно-исследовательской деятельности. Основным видом человеческой деятельности, сыгравшим
+                            решающую роль в происхождении и развитии физических и духовных свойств человека, является труд.<br><br>
+
+                            В процессе эволюции животных их практическое взаимодействие с окружающей действительностью, а вместе с тем
+                            их ориентировочно-исследовательская деятельность становятся всё сложнее и разнообразнее. Но на всех ступенях своего
+                            развития деятельность животных сохраняет достаточно узкоприспособительный инстинктивный характер, они способны
+                            ориентироваться лишь на внешнюю, непосредственно воспринимаемую или наглядно представляемую сторону окружающих
+                            предметов и явлений. Деятельность, в зависимости от цели, может носить созидательный или разрушительный характер.
+                            Деятельность регулируется системой ценностей, а управляется мотивационными процессами.
+                        <p>
+                    </div>
+                    <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/decoupled-document/ckeditor.js"></script>
+                    <script>
+                        DecoupledEditor
+                            .create(document.querySelector('#editor'), {
+                                toolbar: ['bold', 'underline', 'alignment']
+                            })
+                            .then(editor => {
+                                const toolbarContainer = document.querySelector('#toolbar-container');
+
+                                toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+                            })
+                            .catch(error => {
+                                console.error(error);
+                            });
+                    </script>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="1">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__messengersBlock">
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-vk.png" />
+                                <p class="main__messengerBlockText">Vk</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-fb.png" />
+                                <p class="main__messengerBlockText">Facebook</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-insta.png" />
+                                <p class="main__messengerBlockText">Instagram</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-ok.png" />
+                                <p class="main__messengerBlockText">Ok</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-viber.png" />
+                                <p class="main__messengerBlockText">Viber</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="XXXXXXXXXXX" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-whatsapp.png" />
+                                <p class="main__messengerBlockText">WhatsApp</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="XXXXXXXXXXX" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-telegram.png" />
+                                <p class="main__messengerBlockText">Telegram</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-telefon.png" />
+                                <p class="main__messengerBlockText">Телефон</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="+XXXXXXXXXX" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-pochta.png" />
+                                <p class="main__messengerBlockText">Email</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Электронная почта" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-fbchat.png" />
+                                <p class="main__messengerBlockText">Fb Messenger</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="ID" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-vkchat.png" />
+                                <p class="main__messengerBlockText">Вконтакте Чат</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="ID" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-itunes.png" />
+                                <p class="main__messengerBlockText">iTunes</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-skype.png" />
+                                <p class="main__messengerBlockText">Skype</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-youtube-kanal.png" />
+                                <p class="main__messengerBlockText">YouTube канал</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Название канала" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-twitter.png" />
+                                <p class="main__messengerBlockText">Twitter</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-pinterest.png" />
+                                <p class="main__messengerBlockText">Pinterest</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-snapchat.png" />
+                                <p class="main__messengerBlockText">Snapchat</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-github.png" />
+                                <p class="main__messengerBlockText">GitHub</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-linkedin.png" />
+                                <p class="main__messengerBlockText">LinkedIn</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-reddit.png" />
+                                <p class="main__messengerBlockText">Reddit</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-fl.png" />
+                                <p class="main__messengerBlockText">FL.ru</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-behance.png" />
+                                <p class="main__messengerBlockText">Behance</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                    </div>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="2">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__settingInputsBlock">
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Ссылка на сайт или портфолио:</p>
+                            <input class="main__input main__settingInput" placeholder="http://..." />
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Введите название кнопки:</p>
+                            <input class="main__input main__settingInput" placeholder="Кнопка ..." />
+                        </div>
+                    </div>
+                    <div class="main__settingInputsBlock">
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Выбрать фон кнопки:</p>
+                            <div class="main__settingBlockColorpick">
+                                <span class="main__settingColorBlock" style="background: #4cdbcf"></span>
+                            </div>
+                            <div id="closeablePicker"></div>
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Выбрать цвет шрифта:</p>
+                            <div class="main__settingBlockColorpick">
+                                <span class="main__settingColorBlock" style="background: #f5f5f5"></span>
+                            </div>
+                            <div id="closeablePicker"></div>
+                        </div>
+                    </div>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="3">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <p class="main__settingInputName">Загрузка фотографий</p>
+                    <div class="main__settingUploadPhotoBlock">
+                        <form class="main__settingUploadPhotoForm" method="post">
+                            <img class="main__settingUploadIcon" src="img/uploadImg.png" />
+                            <div class="main__settingUploadBlock">
+                                <input id="file-input" type="file" name="file" multiple>
+                                <label for="file-input">
+                                    Нажмите тут для того чтобы<br>
+                                    загрузить фотографии
+                                </label>
+                            </div>
+                        </form>
+                        <div class="main__settingLoadedPhotosBlock">
+                            <img class="main__settingLoadedPhoto" src="img/waitForUpload.png">
+                            <img class="main__settingLoadedPhoto" src="img/waitForUpload.png">
+                            <img class="main__settingLoadedPhoto" src="img/waitForUpload.png">
+                            <img class="main__settingLoadedPhoto" src="img/waitForUpload.png">
+                            <img class="main__settingLoadedPhoto" src="img/waitForUpload.png">
+                        </div>
+                    </div>
+                    <p class="main__settingMaxPhotosText">Максимальное количество загружeнных фото - 5.</p>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="4">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__settingInputsBlock">
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Введите номер пикселя Facebook:</p>
+                            <input class="main__input main__settingInput" />
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Введите номер пикселя Вконтакте:</p>
+                            <input class="main__input main__settingInput" />
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Введите номер счетчика Яндекс.Метрики:</p>
+                            <input class="main__input main__settingInput" />
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Введите номер счетчика Google Analytics:</p>
+                            <input class="main__input main__settingInput" />
+                        </div>
+                    </div>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="5">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <p class="main__settingInputName">Вставте код виджета:</p>
+                    <textarea class="main__settingWidgetTextarea" placeholder="Поле для вставки кода виджета"></textarea>
+                    <p class="main__settingWidgetSorry">К сожалению, но данную интеграцию мы пока не поддерживаем. Напишите к нам в поддержку.</p>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="6">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__settingUploadAndNameBlock">
+                        <p class="main__settingInputName">Загрузка аватарки:</p>
+                        <div class="main__settingSelectFileBlock">
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file">Выбрать файл</label>
+                            <span class="main__settingSelectText">Файл не выбран ...</span>
+                        </div>
+                    </div>
+                    <div class="main__settingUploadAndNameBlock">
+                        <p class="main__settingInputName">Установите собственный баннер (над аватаркой):</p>
+                        <div class="main__settingSelectFileBlock">
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file">Выбрать файл</label>
+                            <span class="main__settingSelectText">Файл не выбран ...</span>
+                        </div>
+                    </div>
+                    <div class="main__settingDesignSelectBlock">
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Шаблон визитки:</p>
+                            <select class="main__settinhDesignSelect">
+                                <option>Большая фотография</option>
+                                <option>Маленькая фотография</option>
+                            </select>
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Стиль фона:</p>
+                            <select class="main__settinhDesignSelect" id="backgroundStyle">
+                                <option value="0">Сообственная картинка</option>
+                                <option value="1">Цвет</option>
+                                <option value="2">Градиент</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option" id="0">
+                        <p class="main__settingInputName">Выбрать собственную картинку:</p>
+                        <div class="main__settingSelectFileBlock">
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file">Выбрать файл</label>
+                            <span class="main__settingSelectText">Файл не выбран ...</span>
+                        </div>
+                    </div>
+                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="1">
+                        <p class="main__settingInputName">Выбрать цвет фона:</p>
+                        <div class="main__settingBlockColorpick main__settingBlockColorpick-long">
+                            <span class="main__settingColorBlock main__settingColorBlock-long" style="background: #dadada"></span>
+                        </div>
+                        <div id="closeablePicker"></div>
+                    </div>
+                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="2">
+                        <p class="main__settingInputName">Выбрать градиент:</p>
+                        <div class="main__settingBlockColorpick main__settingBlockColorpick-longGradient">
+                            <span class="main__settingColorBlock-longGradient" style="background: linear-gradient(90deg, #fe7b01, #2a0a59)"></span>
+                            <div class="main__settingSelectColorBlock">
+                                <div class="main__settingSelectPickBlock">
+                                    <div class="main__settingBlockColorpick main__settingBlockColorpick-short">
+                                        <span class="main__settingColorBlock main__settingSelectColor main__settingSelectColor1" style="background: #fe7b01"><span>Выбрать цвет 1</span></span>
+                                    </div>
+                                    <div id="closeablePicker"></div>
+                                </div>
+                                <div class="main__settingSelectPickBlock">
+                                    <div class="main__settingBlockColorpick main__settingBlockColorpick-short">
+                                        <span class="main__settingColorBlock main__settingSelectColor main__settingSelectColor2" style="background: #2a0a59"><span>Выбрать цвет 2</span></span>
+                                    </div>
+                                    <div id="closeablePicker"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__settingNameAndInputBlock">
+                        <p class="main__settingInputName">Выбрать цвет подложки:</p>
+                        <div class="main__settingBlockColorpick main__settingBlockColorpick-long">
+                            <span class="main__settingColorBlock main__settingColorBlock-long" style="background: #003761"></span>
+                        </div>
+                        <div id="closeablePicker"></div>
+                    </div>
+                    <div class="main__settingNameAndInputBlock">
+                        <p class="main__settingInputName">Выбрать язык:</p>
+                        <div class="main__settingDesignBtns">
+                            <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Русский</button>
+                            <button id="1" class="main__settingDesignBtn">English</button>
+                        </div>
+                    </div>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="7">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__messengerBlock">
+                        <div class="main__messengerBlockName">
+                            <img class="main__messengerBlockIcon" src="img/social/yandexMaps.png" />
+                            <p class="main__messengerBlockText">Яндекс.Карта</p>
+                        </div>
+                        <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                    </div>
+                    <div class="main__messengerBlock">
+                        <div class="main__messengerBlockName">
+                            <img class="main__messengerBlockIcon" src="img/social/googleMaps.png" />
+                            <p class="main__messengerBlockText">Google Maps</p>
+                        </div>
+                        <input class="main__input main__messengerBlockInput" placeholder="Ссылка" />
+                    </div>
+                    <button class="main__button main__button-maps">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="8">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__messengerBlock">
+                        <div class="main__messengerBlockName">
+                            <img class="main__messengerBlockIcon" src="img/social/youtube.png" />
+                            <p class="main__messengerBlockText">Youtube видео</p>
+                        </div>
+                        <input class="main__input main__messengerBlockInput" placeholder="Ссылка на видео" />
+                    </div>
+                    <div class="main__messengerBlock">
+                        <div class="main__messengerBlockName">
+                            <img class="main__messengerBlockIcon" src="img/social/vimeo.png" />
+                            <p class="main__messengerBlockText">Vimeo</p>
+                        </div>
+                        <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                    </div>
+                    <button class="main__button main__button-maps">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="9">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__settingInputsBlock">
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Яндекс.Деньги</p>
+                            <input class="main__input main__settingInput" placeholder="Номер кошелька" />
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">QIWI Кошелек</p>
+                            <input class="main__input main__settingInput" placeholder="Номер кошелька" />
+                        </div>
+                    </div>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="10">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <p class="main__settingInputName">Вопрос-Ответ (1)</p>
+                    <div class="main__settingAskTextareaBlock">
+                        <textarea class="main__settingAskTextarea" placeholder="Введите вопрос"></textarea>
+                        <textarea class="main__settingAskTextarea" placeholder="Введите ответ"></textarea>
+                    </div>
+                    <div class="main__settingAddBtn">
+                        <p class="main__settingAddBtnIcon"></p>
+                        <p class="main__settingAddBtnText">Добавить</p>
+                    </div>
+                    <button class="main__button">Сохранить</button>
+                </div>
+                <div class="main__settingBlock" id="11">
+                    <p class="main__settingBlockBackBtn">Назад</p>
+                    <div class="main__settingInstallButton">
+                        <p class="main__settingInstallButtonText">Есть ли у Вас виджет для сайта?</p>
+                        <p class="main__settingInstallButtonIcon"></p>
+                    </div>
+                    <div class="main__settingInstallBlock">
+                        <div class="main__settingInstallRow">
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Выбрать цвет подложки:</p>
+                                <div class="main__settingBlockColorpick">
+                                    <span class="main__settingColorBlock" style="background: #003761"></span>
+                                </div>
+                                <div id="closeablePicker"></div>
+                            </div>
+                            <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-install">
+                                <p class="main__settingInputName">Позиция виджета:</p>
+                                <div class="main__settingDesignBtns">
+                                    <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Слева</button>
+                                    <button id="1" class="main__settingDesignBtn">Справа</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Приветственное сообщение:</p>
+                            <div class="main__settingDesignBtns main__settingDesignBtns-install">
+                                <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Вкл</button>
+                                <button id="1" class="main__settingDesignBtn">Выкл</button>
+                            </div>
+                            <textarea class="main__settingInstallTextarea" placeholder="Если у вас есть какие-либо вопросы - напишите нам!"></textarea>
+                        </div>
+                        <div class="main__settingNameAndInputBlock">
+                            <p class="main__settingInputName">Вставьте данный код перед тегом &lt;/body&gt;:</p>
+                            <textarea class="main__settingInstallTextarea main__settingInstallTextarea-install">&lt;script src="https://new.meconnect.ru/widget/test123.js" async&gt;&lt;/script&gt;
+&lt;a href="https://meconnect.ru" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/a&gt;</textarea>
+                            <p class="main__settingInstallText">Если у Вас есть сайт, но Вы не знаете, как вставить код, то напишите в поддержку и мы Вам поможем.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__copyrightBlock">
+            <p class="main__copyrightBlockText">© Copyright 2019. All Rights Reserved.</p>
+        </div>
+        <div class="trash"></div>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src='colorJoe/js/scale.fix.js'></script>
+    <script src='colorJoe/dist/colorjoe.js'></script>
+    <script src='colorJoe/js/demo.js'></script>
+</body>
+</html>
