@@ -1242,7 +1242,7 @@ textarea::-webkit-input-placeholder {
 .main__phoneIcon {
     color: #c9c9c9;
     font-size: .82vw;
-    cursor: pointer;
+    opacity: 0;
     margin-bottom: 3.27vh;
 }
 .main__phoneBlock {
@@ -1262,6 +1262,20 @@ textarea::-webkit-input-placeholder {
     flex-direction: column;
     align-items: center;
 }
+.main__phoneDragItem {
+    position: relative;
+    width: 14.32vw;
+}
+.main__phoneDragItem::after {
+    position: absolute;
+    top: 27%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome Solid';
+    content: '\f00a';
+    color: #c9c9c9;
+    cursor: pointer;
+    left: -3.64vw;
+}
 .main__phoneImage {
     width: 100%;
     top: 0;
@@ -1272,6 +1286,7 @@ textarea::-webkit-input-placeholder {
     color: black;
     margin-bottom: 2.18vh;
     position: relative;
+    text-align :center;
 }
 .main__phoneBlockTitle:after {
     font-family: 'Font Awesome Solid';
@@ -3005,7 +3020,6 @@ textarea::-webkit-input-placeholder {
 .main__phoneIcon {
     color: #c9c9c9;
     font-size: 16px;
-    cursor: pointer;
     margin-bottom: 30px;
 }
 .main__phoneBlock {
@@ -3024,6 +3038,20 @@ textarea::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.main__phoneDragItem {
+    position: relative;
+    width: 100%;
+}
+.main__phoneDragItem::after {
+    position: absolute;
+    top: 27%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome Solid';
+    content: '\f00a';
+    color: #c9c9c9;
+    cursor: pointer;
+    left: -70px;
 }
 .main__phoneBlockTitle {
     font-family: 'Roboto Medium';
@@ -3713,6 +3741,16 @@ textarea::-webkit-input-placeholder {
     .main__block-chat {
         height: 481px;
     }
+    .main__settingButton {
+        width: 150px;
+        height: 150px;
+    }
+    .main__settingButtonIcon {
+        width: 45px;
+    }
+    .main__settingButtonText {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 490px){
     .main__phoneBlock {
@@ -3725,6 +3763,9 @@ textarea::-webkit-input-placeholder {
         z-index: 3;
         position: relative;
     }
+        .main__phoneDragItem::after {
+            left: -65px;
+        }
     .main__phoneBlockTitle {
     font-family: 'Roboto Medium';
     font-size: 18px;
@@ -3788,6 +3829,17 @@ textarea::-webkit-input-placeholder {
     flex-direction: column;
     align-items: flex-start;
 }
+    .main__settingButton {
+        width: 115px;
+        height: 115px;
+    }
+    .main__settingButtonIcon {
+        width: 35px;
+        margin-bottom: 5px;
+    }
+    .main__settingButtonText {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 460px) {
         .main__phoneBlock {
@@ -3832,6 +3884,9 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
     margin-bottom: 50px;
 }
+        .main__phoneDragItem::after {
+            left: -80px;
+        }
 }
 @media screen and (max-width: 450px) {
     .main__servicePayBlock {
@@ -3848,6 +3903,16 @@ textarea::-webkit-input-placeholder {
     }
     .main__serviceItemName {
         width: auto;
+    }
+}
+@media screen and (max-width: 420px) {
+    .main__phoneDragItem::after {
+        left: -60px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .main__phoneDragItem::after {
+        left: -50px;
     }
 }
 @media screen and (max-width: 380px) {
@@ -3893,4 +3958,36 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
     margin-bottom: 50px;
 }
+    .main__settingButton {
+        width: 105px;
+        height: 105px;
+    }
+    .main__settingButtonIcon {
+        width: 30px;
+        margin-bottom: 5px;
+    }
+    .main__settingButtonText {
+        font-size: 13px;
+    }
+    .main__block-settings {
+        padding: 15px 7px;
+    }
+        .main__phoneDragItem::after {
+            left: -70px;
+        }
+}
+@media screen and (max-width: 360px) {
+    .main__phoneDragItem::after {
+        left: -60px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .main__phoneDragItem::after {
+        left: -50px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .main__phoneDragItem::after {
+        left: -45px;
+    }
 }
