@@ -3841,6 +3841,21 @@ textarea::-webkit-input-placeholder {
         font-size: 14px;
     }
 }
+@media screen and (max-width: 550px) {
+    .main__settingBlockColorpick-longGradient {
+        width: 235px;
+    }
+    .main__settingColorBlock-longGradient{ 
+        width: 215px;
+    }
+    .main__settingSelectColorBlock {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main__settingSelectColor {
+        margin-top: 5px;
+    }
+}
 @media screen and (max-width: 460px) {
         .main__phoneBlock {
         display: flex;
