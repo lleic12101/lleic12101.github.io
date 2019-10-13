@@ -256,8 +256,9 @@
                 <div class="main__chatSendBlock">
                     <input class="main__input main__input-chat" placeholder="Введите текст сообщения...">
                     <div class="main__chatButtons">
-                        <p class="main__chatIcon iconSmile"></p>
-                        <p class="main__chatIcon iconUpload"></p>
+                        <!--<p class="main__chatIcon iconSmile"></p>-->
+                        <input id="upload" class="main__chatIconUpload" type="file" />
+                        <label for="upload" class="main__chatIcon iconUpload"></label>
                         <div class="main__chatSendButtonBlock">
                             <p class="main__chatIconSend iconSend"></p>
                             <p class="main__chatSendText">Отправить</p>
@@ -282,6 +283,7 @@
         </div>
     </main>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/inputEmoji.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,10 @@
-﻿$('.main__socialItemHeader').click(function(){
+﻿$(function () {
+  $('.main__input-chat').emoji({
+    place: 'after'
+  });
+})
+
+$('.main__socialItemHeader').click(function(){
 	if(!$(this).parent().hasClass('main__socialItem-active')){
 		$('.main__socialItem').removeClass('main__socialItem-active');
 		$('.main__socialItemFull').slideUp();
