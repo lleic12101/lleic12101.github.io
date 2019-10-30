@@ -5,6 +5,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MeConnect</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="froala/css/froala_editor.css">
+    <link rel="stylesheet" href="froala/css/froala_style.css">
+    <link rel="stylesheet" href="froala/css/plugins/code_view.css">
+    <link rel="stylesheet" href="froala/css/plugins/draggable.css">
+    <link rel="stylesheet" href="froala/css/plugins/colors.css">
+    <link rel="stylesheet" href="froala/css/plugins/emoticons.css">
+    <link rel="stylesheet" href="froala/css/plugins/image_manager.css">
+    <link rel="stylesheet" href="froala/css/plugins/image.css">
+    <link rel="stylesheet" href="froala/css/plugins/line_breaker.css">
+    <link rel="stylesheet" href="froala/css/plugins/table.css">
+    <link rel="stylesheet" href="froala/css/plugins/char_counter.css">
+    <link rel="stylesheet" href="froala/css/plugins/video.css">
+    <link rel="stylesheet" href="froala/css/plugins/fullscreen.css">
+    <link rel="stylesheet" href="froala/css/plugins/file.css">
+    <link rel="stylesheet" href="froala/css/plugins/quick_insert.css">
+    <link rel="stylesheet" href="froala/css/plugins/help.css">
+    <link rel="stylesheet" href="froala/css/third_party/spell_checker.css">
+    <link rel="stylesheet" href="froala/css/plugins/special_characters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
     <link rel="stylesheet" href="colorJoe/css/pygment_trac.css">
     <link rel="stylesheet" href="colorJoe/css/iehacks.css">
     <link rel="stylesheet" href="colorJoe/css/colorjoe.css">
@@ -209,7 +231,8 @@
                 </div>
                 <div class="main__settingBlock" id="0">
                     <p class="main__settingBlockBackBtn">Назад</p>
-                    <div id="toolbar-container"></div>
+                    <div id="toolbar-container">
+                    </div>
                     <div id="editor">
                         <p>
                             <b>Деятельность</b> — процесс (процессы) активного взаимодействия субъекта (живого существа) с объектом (окружающей
@@ -227,7 +250,27 @@
                             ориентироваться лишь на внешнюю, непосредственно воспринимаемую или наглядно представляемую сторону окружающих
                             предметов и явлений. Деятельность, в зависимости от цели, может носить созидательный или разрушительный характер.
                             Деятельность регулируется системой ценностей, а управляется мотивационными процессами.
+                        </p>
+                    </div>
+                    <!--<div id="toolbar-container"></div>
+                    <div id="editor">
                         <p>
+                            <b>Деятельность</b> — процесс (процессы) активного взаимодействия субъекта (живого существа) с объектом (окружающей
+                            действительностью), во время которого субъект целенаправленно воздействует на объект, удовлетворяя какие-либо свои
+                            потребности, достигая цели.<br><br>
+
+                            Из-за чрезвычайной сложности и непрерывной изменчивости внешних условий уже на ранних стадиях филогенеза возникают
+                            психические формы управления практическим взаимодействием живого существа с окружающей средой. Особое значение
+                            имеет развитие ориентировочно-исследовательской деятельности. Основным видом человеческой деятельности, сыгравшим
+                            решающую роль в происхождении и развитии физических и духовных свойств человека, является труд.<br><br>
+
+                            В процессе эволюции животных их практическое взаимодействие с окружающей действительностью, а вместе с тем
+                            их ориентировочно-исследовательская деятельность становятся всё сложнее и разнообразнее. Но на всех ступенях своего
+                            развития деятельность животных сохраняет достаточно узкоприспособительный инстинктивный характер, они способны
+                            ориентироваться лишь на внешнюю, непосредственно воспринимаемую или наглядно представляемую сторону окружающих
+                            предметов и явлений. Деятельность, в зависимости от цели, может носить созидательный или разрушительный характер.
+                            Деятельность регулируется системой ценностей, а управляется мотивационными процессами.
+                        </p>
                     </div>
                     <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/decoupled-document/ckeditor.js"></script>
                     <script>
@@ -243,7 +286,7 @@
                             .catch(error => {
                                 console.error(error);
                             });
-                    </script>
+                    </script>-->
                     <button class="main__button">Сохранить</button>
                 </div>
                 <div class="main__settingBlock" id="1">
@@ -685,6 +728,61 @@
         </div>
         <div class="trash"></div>
     </main>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+
+    <script type="text/javascript" src="froala/js/froala_editor.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/align.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/char_counter.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/code_beautifier.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/code_view.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/colors.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/draggable.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/emoticons.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/entities.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/file.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/font_size.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/font_family.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/fullscreen.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/image.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/image_manager.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/line_breaker.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/inline_style.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/link.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/lists.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/paragraph_format.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/paragraph_style.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/quick_insert.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/quote.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/table.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/save.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/url.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/video.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/help.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/print.min.js"></script>
+    <script type="text/javascript" src="froala/js/third_party/spell_checker.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/special_characters.min.js"></script>
+    <script type="text/javascript" src="froala/js/plugins/word_paste.min.js"></script>
+    <script>
+        (function () {
+            new FroalaEditor("#editor", {
+                toolbarButtons: {
+                    'moreText': {
+                        'buttons': ['bold', 'underline']
+                    },
+                    'moreParagraph': {
+                        'buttons': ['alignLeft', 'alignJustify', 'alignRight']
+                    },
+                    'moreRich': {
+                        'buttons': ['emoticons']
+                    },
+                },
+            });
+        })()
+    </script>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src='colorJoe/js/scale.fix.js'></script>
