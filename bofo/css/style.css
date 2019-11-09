@@ -1,6 +1,5 @@
 ﻿@font-face {
     font-family: 'Montserrat-Regular';
-	font-display:swap;
     src: url('fonts/Montserrat-Regular.otf') format('opentype');
     src: url('fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -8,7 +7,6 @@
 }
 @font-face {
     font-family: 'Montserrat-Bold';
-	font-display:swap;
     src: url('fonts/Montserrat-Bold.otf') format('opentype');
     src: url('fonts/Montserrat-Bold.ttf') format('truetype');
     font-weight: normal;
@@ -16,7 +14,6 @@
 }
 @font-face {
     font-family: 'Montserrat-Medium';
-	font-display:swap;
     src: url('fonts/Montserrat-Medium.otf') format('opentype');
     src: url('fonts/Montserrat-Medium.ttf') format('truetype');
     font-weight: normal;
@@ -24,7 +21,6 @@
 }
 @font-face {
     font-family: 'Montserrat-SemiBold';
-	font-display:swap;
     src: url('fonts/Montserrat-SemiBold.otf') format('opentype');
     src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
     font-weight: normal;
@@ -32,35 +28,30 @@
 }
 @font-face {
     font-family: 'MyriadPro-Regular';
-	font-display:swap;
     src: url('fonts/MyriadPro-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-Regular';
-	font-display:swap;
     src: url('fonts/OpenSans-Regular.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-Bold';
-	font-display:swap;
     src: url('fonts/OpenSans-Bold.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-ExtraBold';
-	font-display:swap;
     src: url('fonts/OpenSans-ExtraBold.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-Italic';
-	font-display:swap;
     src: url('fonts/OpenSans-Italic.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
