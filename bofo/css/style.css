@@ -67,7 +67,7 @@
     position: relative;
 }
 .main__headerBlock {
-    height: 57vh;
+    height: 425px;
     background: #fdfefe url(../img/bg.png) no-repeat;
     background-size: 100% 100%;
 }
