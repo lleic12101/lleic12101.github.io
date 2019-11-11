@@ -162,7 +162,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .5);
     opacity: 0;
     visibility: hidden;
     transform: scale(1.1);
@@ -189,6 +189,13 @@ body {
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.closeModalBtn {
+    top: 12px;
+    right: 18px;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
 }
 
 /*MODAL END*/
@@ -285,6 +292,7 @@ body {
     margin: 21px;
     cursor: pointer;
     transition: color .3s;
+    text-decoration: none;
 }
 .header__navLink:hover {
     color: #FB801D;
@@ -1299,6 +1307,9 @@ body {
     .button-comments {
         margin-bottom: 60px;
     }
+    .modal__content {
+        height: 600px;
+    }
 }
 @media only screen and (max-width: 1150px) {
     .main__videos {
@@ -1455,6 +1466,13 @@ body {
     .main__numbersItem {
         margin: 20px 0;
     }
+    .header__contentPreTitle {
+        max-width: 300px;
+        line-height: 20px;
+    }
+    .main__masterContent {
+        margin-top: 300px;
+    }
 }
 @media only screen and (max-width: 900px) {
     .header {
@@ -1501,6 +1519,9 @@ body {
     .main__saysImgs {
         width: 600px;
     }
+    .modal__content {
+        height: 450px;
+    }
 }
 @media only screen and (max-width: 785px) {
     .main__videos{
@@ -1545,6 +1566,9 @@ body {
     .main__says {
         margin-bottom: 20px;
     }
+    .modal__content {
+        height: 350px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .main__questionsItems {
@@ -1577,6 +1601,14 @@ body {
         margin-top: 20px;
         margin-left: 100px;
     }
+    .main__masterContent {
+        margin-top: 250px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .header__contentPreTitle {
+        max-width: 200px;
+    }
 }
 @media only screen and (max-width: 520px) {
     .main__dreamBlockItemsDelimiter {
@@ -1585,9 +1617,13 @@ body {
     }
     .main__dreamBlockItem {
         margin: 10px 20px;
+        width: 100%;
     }
     .main__dreamDelimiterRow {
         width: 50px;
+    }
+    .main__dreamBlock {
+        padding: 10px;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -1623,6 +1659,9 @@ body {
     .main__questionsItems:last-child .main__questionsRightItem {
         margin-top: 10px;
     }
+    .video  {
+        height: 220px;
+    }
 }
 @media only screen and (max-width: 420px) {
     .main__videos .video {
@@ -1657,5 +1696,22 @@ body {
     }
     .main__powerPrice {
         width: 280px;
+    }
+    .wrapper {
+        padding: 0 10px;
+    }
+    .header__contentBlock {
+        padding-left: 0px;
+    }
+    .modal__content {
+        height: 250px;
+    }
+    .main__masterContent {
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .main__masterContent {
+        margin-top: 150px;
     }
 }

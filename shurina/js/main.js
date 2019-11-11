@@ -1,4 +1,18 @@
 ﻿$('.video').click(function(){
+	var modalContent  = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/laeovvkWX5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+	var modalBtn = document.createElement('p');
+	modalBtn.classList.add('closeModalBtn');
+	modalBtn.innerHTML = '<i class="fas fa-times"></i>';
+	$(modalBtn).click(function(){
+		$('.modal__content').html('');
+		toggleModal();
+	});
+	$('.modal__content').html(modalContent);
+	$('.modal__content').append(modalBtn);
+	toggleModal();
+});
+$('.closeModalBtn').click(function(){
+	$('.modal__content').html('');
 	toggleModal();
 });
 	
@@ -65,6 +79,7 @@ function toggleModal() {
 function windowOnClick(event) {
 	if (event.target === modal) {
         toggleModal();
+		$('.modal__content').html('');
 	}
 }
 

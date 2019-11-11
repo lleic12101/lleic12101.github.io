@@ -17,10 +17,10 @@
                 <div class="js-header-wrap">
                     <div class="header__navBlock">
                         <div class="header__navLinks">
-                            <a class="header__navLink">Курс</a>
-                            <a class="header__navLink">Программа</a>
-                            <a class="header__navLink">Отзывы</a>
-                            <a class="header__navLink">Кто ведёт</a>
+                            <a href="#curs" class="header__navLink js-header-link">Курс</a>
+                            <a href="#programm" class="header__navLink js-header-link">Программа</a>
+                            <a href="#comments" class="header__navLink js-header-link">Отзывы</a>
+                            <a href="#who" class="header__navLink js-header-link">Кто ведёт</a>
                         </div>
                     </div>
                     <div class="header__navPhoneBlock">
@@ -45,7 +45,7 @@
                     Встречайте полностью <span class="underline">обновленную</span> интенсивную авторскую программу
                 </p>
                 <div class="header__contentBlock">
-                    <p class="header__contentBlockTitle">Лидеры нового времени III<br> Сила продаж</p>
+                    <p class="header__contentBlockTitle" id="curs">Лидеры нового времени III<br> Сила продаж</p>
                     <p class="header__contentBlockText">
                         Всего за 14 дней вы освоите один из важнейших
                         навыков успешного человека и навсегда закроете для себя вопрос финансов. Начнете
@@ -279,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__systems">
+        <div class="main__systems" id="programm">
             <div class="wrapper">
                 <h2 class="main__title">Программа состоит из 7-ми систем</h2>
                 <div class="main__numbers main__numbers-systems">
@@ -332,7 +332,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="main__title">КТО ВЕДЕТ ПРОГРАММУ</h2>
+        <h2 class="main__title"  id="who">КТО ВЕДЕТ ПРОГРАММУ</h2>
         <div class="main__master">
             <div class="wrapper">
                 <div class="main__masterContent">
@@ -523,7 +523,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__comments">
+        <div class="main__comments" id="comments">
             <div class="wrapper">
                 <h2 class="main__title main__commentsTitle">Отзывы участников обучающих программ Виктории</h2>
                 <div class="main__videos main__commentsVideos">
@@ -615,6 +615,7 @@
     <div class="modal" onclick="void(0)">
         <div class="modal__content">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/laeovvkWX5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="closeModalBtn"><i class="fas fa-times"></i></p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
