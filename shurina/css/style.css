@@ -292,7 +292,7 @@ body {
     margin: 21px;
     cursor: pointer;
     transition: color .3s;
-    text-decoration: none;
+    text-decoration: none; 
 }
 .header__navLink:hover {
     color: #FB801D;
@@ -344,12 +344,19 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #424242;
+    font-weight: bold;
 }
 .header__contentPreTitle:first-child {
     margin-bottom: 6px;
 }
 .header__contentPreTitle .bold {
     font-weight: bold;
+    background-image: -webkit-linear-gradient(357.07deg, #FFBA07 0%, #FF7324 100%);
+    background-image: -o-linear-gradient(357.07deg, #FFBA07 0%, #FF7324 100%);
+    background-image: linear-gradient(92.93deg, #FFBA07 0%, #FF7324 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 .header__contentPreTitle .underline {
     border-bottom: .5px solid gray;
@@ -357,6 +364,18 @@ body {
 }
 .header__contentBlock {
     padding: 14px 0 0 30px;
+}
+.header__contentBlock-start {
+    margin-top: 23px;
+    margin-bottom: 34px;
+}
+.header__contentBlockText .orange {
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(357.07deg, #FFBA07 0%, #FF7324 100%);
+    background-image: -o-linear-gradient(357.07deg, #FFBA07 0%, #FF7324 100%);
+    background-image: linear-gradient(92.93deg, #FFBA07 0%, #FF7324 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .header__contentBlockTitle {
     font-family: PlayfairDisplay-Black;
@@ -385,6 +404,8 @@ body {
     line-height: 140%;
     color: #424242;
     margin-bottom: 30px;
+    text-align: center;
+    margin-top: 21px;
 }
 .header__contentBlockUnderButtonText {
     width: 276px;
@@ -395,7 +416,6 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #424242;
-    margin-top :11px;
 }
 .header__contentBlockUnderButtonText .bold {
     font-weight: bold;
@@ -1661,6 +1681,14 @@ body {
     }
     .video  {
         height: 220px;
+    }
+    .main__regularText main__studyProccessContentText {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .main__numbers-systems .main__numbersItem {
+        margin-right: 0px;
     }
 }
 @media only screen and (max-width: 420px) {
