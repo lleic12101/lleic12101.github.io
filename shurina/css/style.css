@@ -662,10 +662,11 @@ body {
 .main__dreamBlock {
     width: 100%;
     background: #fff url(../img/star.png) no-repeat;
+    background-size: auto 100%;
     margin-top: 50px;
-    padding: 40px 55px 50px; 
+    padding: 0px 55px 50px; 
     width: 1066px;
-    height: 311px; 
+    height: 401px; 
     display: flex;
     flex-direction: column;
 }
@@ -678,12 +679,37 @@ body {
     flex-direction: row;
 }
 .main__dreamBlockItem {
-     width: 148px;
+     width: 205px;
      min-width: 140px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+.main__dreamBlockItem:nth-last-child(2n+1) .main__dreamBlockItemTextBlock{
+    margin-bottom: 76px;
+}
+.main__dreamBlockItem:nth-last-child(2n) .main__dreamBlockItemTextBlock{
+    margin-top: 76px;
+}
+.main__dreamBlockItem p {
+    max-width: 140px;
+}
+.main__dreamBlockItem img {
+    margin: 5px 0;
+    border-radius: 0 20px 20px 0;
+}
+.main__dreamBlockItem:last-child {
+    width: 150px;
+}
+.main__dreamBlockItemTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;    
 }
 .main__dreamBlockItemsDelimiter {
     display: block;
-    margin: 40px 31px 0 20px;
+    margin: 40px 30px 0 20px;
     height: 41px;
     width: 1px;
     background: -webkit-linear-gradient(105.6deg, #FB7B1E 1.73%, #FFBE16 102.25%);
@@ -1436,10 +1462,14 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .main__dream {
+        height: auto;
+    }
     .main__dreamBlock {
         flex-direction: column;
         height: auto;
-        background-size: 100%;
+        padding: 10px;
+        background-size: 100% 100%;
     }
     .main__dreamBlockItems {
         margin-top: 35px;
@@ -1636,14 +1666,29 @@ body {
 
     }
     .main__dreamBlockItem {
-        margin: 10px 20px;
+        margin: 10px 0;
         width: 100%;
+        display: flex;
+        align-items:center;
+    }
+    .main__dreamBlockItem .main__regularText {
+        width: 100%; 
+        max-width: 300px;
+    }
+    .main__dreamBlockItem:nth-last-child(2n+1) .main__dreamBlockItemTextBlock {
+        margin-bottom: 0px;
+    }   
+    .main__dreamBlockItem:nth-last-child(2n) .main__dreamBlockItemTextBlock {
+        margin-top: 0px;
     }
     .main__dreamDelimiterRow {
         width: 50px;
     }
     .main__dreamBlock {
         padding: 10px;
+    }
+    .main__dreamBlockItem:last-child {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 500px) {

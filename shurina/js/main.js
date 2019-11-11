@@ -6,7 +6,7 @@
 	$(modalBtn).click(function(){
 		$('.modal__content').html('');
 		toggleModal();
-	});Что
+	});
 	$('.modal__content').html(modalContent);
 	$('.modal__content').append(modalBtn);
 	toggleModal();
