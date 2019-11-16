@@ -903,12 +903,12 @@ body, html {
         line-height: 26px;
     }
     .main__firstBlockContent img {
-        width: 210px;
+        width: 160px;
         margin: -10px 0 10px 25px;
     }
     .main__firstBlockListItem img {
         width: 25px;
-        margin-right: 10px;
+        margin: 0 10px 0 0;
     }
     .main__firstBlockListItem p {
         font-size: 14px;
