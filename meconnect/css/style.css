@@ -181,6 +181,15 @@
     font-family: 'Font Awesome Solid';
     content: '\f00a';
 }
+.iconTrash::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f2ed';
+}
+.iconAdd::after {
+    font-family: 'Font Awesome Solid';
+    content: '\f055';
+}
+
 
 * {
     margin: 0px;
@@ -351,6 +360,41 @@ body {
     color: #666666;
 }
 
+.main__settingInputsBlocks {
+    margin-bottom: 2.18vh;
+}
+.main__settingInputsBlock-link {
+    margin-top: 3.27vh;
+}
+.main__settingInputsBlock-link:first-child {
+    margin-top: 0px;
+}
+.main__button-addLink {
+    width: 15.62vw;
+}
+.main__settingNameAndDeleteInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+}
+.main__settingNameAndDeleteInput button {
+    width: 2.08vw;
+    height: 4.37vh;
+    margin-top: 1.09vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: .43vh .2vw;
+    margin-left: .52vw;
+    cursor: pointer;
+}
+.main__settingLink-input {
+    width: 21.35vw;
+    height: 4.37vh;
+}
+
 .main__input {
     width: 100%;
     height: 4.37vh;
@@ -408,6 +452,7 @@ input::-moz-placeholder {
 .main__blocks {
     display: flex;
     flex-direction: row;
+    z-index: -10;
 }
 .main__block {
     background-color: #fff;
@@ -417,6 +462,7 @@ input::-moz-placeholder {
     margin-right: 1.56vw;
     margin-bottom: 3.27vh;
     padding: 4.37vh 3.12vw;
+    z-index: 1;
 }
 
 .main__block-lastActivity {
@@ -1702,6 +1748,8 @@ textarea::-webkit-input-placeholder {
 }
 .main__settingDesignBtns {
     margin-top: 1.09vh;
+    display: flex;
+    flex-direction: row;
 }
 .main__settingDesignBtn {
     padding: 0 1.14vw;
@@ -1716,6 +1764,15 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
     outline: none;
     transition: background-color .2s ease-in-out;
+}
+.main__settingDesignInputBtn {
+    position: relative;
+}
+.main__settingDesignInputBtn input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
 }
 .main__settingDesignBtn-active {
     background-color: #666666;
@@ -1740,6 +1797,40 @@ textarea::-webkit-input-placeholder {
 .main__settingNameAndInputBlock-disabled {
     display: none;
 }
+
+.imgDataInput {
+    display: none;
+}
+.main__settingImgsBlock {
+    width: 27.91vw;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.main__settingImg-wrapper {
+    width: 6.56vw;
+    height: 13.69vh;
+    margin: 0 .41vw .87vh 0;
+    border-radius: .32vh .12vw;
+    background: rgba(0,0,0,0.0);
+    position: relative;
+    transition: .3s;
+}
+.main__settingImg-wrapper:hover {
+    background: rgba(0,0,0,0.1);
+}
+.main__settingImg-active {
+    background: rgba(0,0,0,0.1);
+}
+.main__settingImg {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
 .main__settingBlockColorpick-longGradient {
     width: 23.95vw;
     display: flex;
@@ -1783,6 +1874,9 @@ textarea::-webkit-input-placeholder {
     background-color: white;
     display :block;
     height: 1.63vh;
+}
+.main__settingColorBlockInput {
+    display:none;
 }
 .main__buttonMarginTop {
     margin-top: 2.18vh;
@@ -1868,12 +1962,330 @@ textarea::-webkit-input-placeholder {
     color: #aaaaaa;
 }
 
-@media screen and (max-width: 1024px){
+.main__block-crm {
+    width: 86.45vw;
+    height: 80.43vh;
+    padding: 2.18vh 1.56vw;
+    display: flex;
+    flex-direction: column;
+}
+.main__crmButtonsBlock {
+    display: flex;
+    flex-direction: row;
+}
+.main__crmButtonsBlock-double {
+    margin-right: .52vw;
+    display: flex;
+    flex-direction: row;
+}
+.main__crmButton {
+    width: 5.72vw;
+    height: 3.93vh;
+    border-radius: 0.54vh .26vw;
+    border: none;
+    margin-right: .52vw;
+    background-color: #1d99d3;
+    color: white;
+    font-size: .82vw;
+    font-family: 'Roboto Medium';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.main__crmButton p {
+    margin-right: .41vw;
+}
+.main__crmButton-delete {
+    background-color: #ea868f;
+    width: 6.87vw;
+}
+.main__crmButton-add {
+    background-color: #22b9ff;
+    width: 6.87vw;
+}
+.main__crmTable {
+    margin-top: 4.37vh;
+}
+.main__crmTableTitleBlock {
+    padding: 0px 1.04vw 1.63vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f0f0f0;
+}
+.main__crmTableTitle {
+    color: #000000;
+    font-family: 'Roboto Medium';
+    font-size: .79vw;
+}
+.main__crmTableCheck {
+    width: 3.12vw;
+}
+.main__crmTableName {
+    width: 12.23vw;
+}
+.main__crmTablePhone {
+    width: 11.97vw;
+}
+.main__crmTableEmail {
+    width: 13.54vw;
+}
+.main__crmTableComment {
+    width: 22.65vw;
+}
+.main__crmTableStatus {
+    width: 14.06vw;
+}
+.main__crmTableButtons {
+    width: 3.64vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.main__crmTableItems {
+
+}
+.main__crmTableItem {
+    display: flex;
+    flex-direction: row;
+    padding: 1.63vh 1.04vw;
+    border-bottom: 1px solid #f5f5f5;
+    justify-content: space-between;
+}
+.main__crmTableItemText {
+    color: #666666;
+    font-family: 'Roboto Relugar';
+    font-size: .79vw;
+}
+.main__crmItemCheckboxInput {
+    display: none;
+}
+.main__crmItemCheckboxInput:checked + .main__crmItemBox {
+    background-color: #22b9ff;
+}
+.main__crmItemCheckboxInput:checked + .main__crmItemBox::after {
+    color: white;
+}
+.main__crmItemBox:after {
+    font-family: 'Font Awesome Solid';
+    content: '\f00c';
+    font-size: .73vw;
+    color: #e6e6e6;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+}
+.main__crmItemBox {
+    display: block;
+    float: left;
+    width: 1.04vw;
+    height: 2.18vh;
+    border-radius: .54vh .26vw;
+    background-color: #e6e6e6;
+    transition: background-color .2s ease-in-out;
+    position: relative;
+}
+.main__crmTableButton {
+    width: 1.4vw;
+    height: 2.82vh;
+    background-color: #f2f2f5;
+    border-radius: .43vh .2vw;
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+    font-size: .73vw;
+    color: #979797;
+}
+.main__crmTableButton-remove {
+    margin-left: .52vw;
+    background-color: #ea868f;
+    color: white;
+}
+
+.modalAdd {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 10;
+}
+.modalAdd__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 3.27vh 1.56vw;
+    height: auto;
+    width: 19.58vw;
+    border-radius: .87vh .41vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.modalAdd__title {
+    font-size: .96vw;
+    font-family: 'Roboto Relugar';
+    color: black;
+    margin-bottom: 2.18vh;
+}
+.main__input-crm {
+    width: 100%;
+    height: 5.02vh;
+    border-radius: .54vh .26vw;
+    font-size: .82vw;
+}
+.main__textarea-crm {
+    resize: none;
+    height: 13.11vh;
+    padding-top: 1.09vh;
+    border-radius: .54vh .26vw;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    padding-left: .93vw;
+    font-family: 'Roboto Relugar';
+    font-size: .82vw;
+    margin-top: 1.09vh;
+    outline: none;
+}
+.main__select-crm {
+    background-color: white;
+    width: 100%;
+    height: 5.02vh;
+    border: 1px solid #e6e6e6;
+    border-radius: .54vh .26vw;
+    padding-left: .78vw;
+    font-family: 'Roboto Relugar';
+    font-size: .82vw;
+    color: #888888;
+    outline: none;
+    cursor: pointer;
+    margin-top: .65vh;
+}
+.main__select-crmTableItem {
+    background-color: white;
+    width: 90%;
+    font-family: 'Roboto Relugar';
+    font-size: .79vw;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    height: auto;
+}
+.main__button-crm {
+    width: 100%;
+    margin-top: 2.18vh;
+    font-family: 'Roboto Relugar';
+    font-size: .96vw;
+}
+.titleAdd {
+    display: none;
+}
+.titleEdit{
+    display: none;
+}
+.titleActive {
+    display: block;
+}
+.show-modalAdd {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 1024px) {
     * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
         font-size: 16px;
+    }
+    .main__block-scroll {
+        overflow-y: unset;
+    }
+    .imgDataInput {
+    display: none;
+}
+    .main__settingInputsBlocks {
+    margin-bottom: 20px;
+}
+
+.main__settingInputsBlock-link {
+    margin-top: 30px;
+}
+.main__settingInputsBlock-link:first-child {
+    margin-top: 0px;
+}
+.main__button-addLink {
+    width: 300px;
+}
+.main__settingLink-input {
+    width: 410px;
+    height: 40px;
+}
+.main__settingNameAndDeleteInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+}
+.main__settingNameAndDeleteInput button {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.main__settingImgsBlock {
+    width: auto;
+    display: flex;
+    flex-wrap:wrap;
+    cursor: pointer;
+}
+.main__settingImg-wrapper {
+    width: 122.5px;
+    height: 122.5px;
+    margin: 0 8px 8px 0;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.0);
+    position: relative;
+    transition: .3s;
+}
+.main__settingImg-wrapper:hover {
+    background: rgba(0,0,0,0.1);
+}
+.main__settingImg-active {
+    background: rgba(0,0,0,0.1);
+}
+.main__settingImg {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+    .main__select-crm {
+        height: 40px;
     }
     .toolbar-container {
         width: 120px;
@@ -3383,7 +3795,8 @@ textarea::-webkit-input-placeholder {
 }
 .main__settingLoadedPhotosBlock {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 20px;
     align-items: center;
 }
@@ -3392,7 +3805,7 @@ textarea::-webkit-input-placeholder {
     height: 120px;
     border-radius: 6px;
     margin-top: 10px;
-
+    margin-right: 10px;
 }
 .main__settingMaxPhotosText {
     color: #888888;
@@ -3665,6 +4078,244 @@ textarea::-webkit-input-placeholder {
     font-size: 14px;
     color: #444444;
 }
+
+
+.main__block-crm {
+    width: 100%;
+    height: 740px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.main__crmButtonsBlock {
+    display: flex;
+    flex-direction: row;
+}
+.main__crmButtonsBlock-double {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.main__crmButton {
+    width: 110px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    background-color: #1d99d3;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto Medium';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.main__crmButton p {
+    margin-right: 8px;
+}
+.main__crmButton-delete {
+    background-color: #ea868f;
+    width: 132px;
+}
+.main__crmButton-add {
+    background-color: #22b9ff;
+    width: 132px;
+}
+.main__crmTable {
+    max-width: 100%;
+    overflow-x: scroll;
+    margin-top: 40px;
+}
+.main__crmTableTitleBlock {
+    width:1460px;
+    padding: 0px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f0f0f0;
+}
+.main__crmTableTitle {
+    color: #000000;
+    font-family: 'Roboto Medium';
+    font-size: 15px ;
+}
+.main__crmTableCheck {
+    width: 60px;
+}
+.main__crmTableName {
+    width: 235px;
+}
+.main__crmTablePhone {
+    width: 230px;
+}
+.main__crmTableEmail {
+    width: 260px;
+}
+.main__crmTableComment {
+    width: 435px;
+}
+.main__crmTableStatus {
+    width: 270px;
+}
+.main__crmTableButtons {
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+.main__crmTableItems {
+
+}
+.main__crmTableItem {
+    width: 1460px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f5f5f5;
+    justify-content: space-between;
+}
+.main__crmTableItemText {
+    color: #666666;
+    font-family: 'Roboto Relugar';
+    font-size: 15px;
+}
+.main__crmItemCheckboxInput {
+    display: none;
+}
+.main__crmItemCheckboxInput:checked + .main__crmItemBox {
+    background-color: #22b9ff;
+}
+.main__crmItemCheckboxInput:checked + .main__crmItemBox::after {
+    color: white;
+}
+.main__crmItemBox:after {
+    font-family: 'Font Awesome Solid';
+    content: '\f00c';
+    font-size: 13px;
+    color: #e6e6e6;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+}
+.main__crmItemBox {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    transition: background-color .2s ease-in-out;
+    position: relative;
+}
+.main__crmTableButton {
+    width: 27px;
+    height: 26px;
+    background-color: #f2f2f5;
+    border-radius: 4px;
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #979797;
+}
+.main__crmTableButton-remove {
+    margin-left: 10px;
+    background-color: #ea868f;
+    color: white;
+}
+
+.modalAdd {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 10;
+}
+.modalAdd__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    height: auto;
+    width: 376px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.modalAdd__title {
+    font-size: 18px;
+    font-family: 'Roboto Relugar';
+    color: black;
+    margin-bottom: 20px;
+}
+.main__input-crm {
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.main__textarea-crm {
+    resize: none;
+    height: 120px;
+    padding-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    padding-left: 18px;
+    font-family: 'Roboto Relugar';
+    font-size: 16px;
+    margin-top: 10px;
+    outline: none;
+}
+.main__select-crm {
+    background-color: white;
+    width: 100%;
+    height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-family: 'Roboto Relugar';
+    font-size: 16px;
+    color: #888888;
+    outline: none;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.main__select-crmTableItem {
+    background-color: white;
+    width: 90%;
+    font-family: 'Roboto Relugar';
+    font-size: 15px ;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    height: auto;
+}
+.main__button-crm {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Roboto Relugar';
+    font-size: 18px;
+}
+.show-modalAdd {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
 }
 @media screen and (max-width: 860px) {
     .main__serviceTableTitleService-mobile {
@@ -3805,6 +4456,20 @@ textarea::-webkit-input-placeholder {
     }
     .main__settingButtonText {
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 594px) {
+    .main__crmButtonsBlock {
+        flex-direction: column;
+    }
+    .main__crmButtonsBlock-double {
+        margin-bottom: 10px;
+    }
+    .main__crmTable {
+        margin-top: 30px;
+    }
+    .main__crmButton:last-child {
+        margin-right: 0px;
     }
 }
 @media screen and (max-width: 490px){
@@ -3978,6 +4643,16 @@ textarea::-webkit-input-placeholder {
 @media screen and (max-width: 420px) {
     .main__phoneDragItem::after {
         left: -60px;
+    }
+    .modalAdd__content {
+        width: 90%;
+    }
+    .main__button-addLink {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .main__settingLink-input {
+        width: 100%;
     }
 }
 @media screen and (max-width: 390px) {

@@ -30,7 +30,10 @@
     <link rel="stylesheet" href="colorJoe/css/pygment_trac.css">
     <link rel="stylesheet" href="colorJoe/css/iehacks.css">
     <link rel="stylesheet" href="colorJoe/css/colorjoe.css">
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="OverlayScrollbars/css/OverlayScrollbars.css" />
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <aside class="sidebar">
@@ -178,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main__block main__block-settings">
+            <div class="main__block main__block-settings main__block-scroll">
                 <div class="main__settingsButtonBlock">
                     <div class="main__settingButton" id="0">
                         <img class="main__settingButtonIcon" src="img/settings/text.png" />
@@ -230,12 +233,12 @@
                     </div>
                 </div>
                 <div class="main__settingBlock" id="0">
+                    <!-- <style>
+                        .fr-wrapper > div:first-child {
+                            display: none;
+                        }
+                    </style>  <!-- Разкоментировать если сайт на хостинге (убирает панель про лицензию) -->
                     <p class="main__settingBlockBackBtn">Назад</p>
-                    <style>
-						.fr-wrapper > div:first-child {
-							display: none;
-						}
-					</style>
                     <div id="toolbar-container">
                     </div>
                     <div id="editor">
@@ -451,26 +454,54 @@
                             </div>
                             <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
                         </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-behance.png" />
+                                <p class="main__messengerBlockText">Behance</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-behance.png" />
+                                <p class="main__messengerBlockText">Behance</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
+                        <div class="main__messengerBlock">
+                            <div class="main__messengerBlockName">
+                                <img class="main__messengerBlockIcon" src="img/social/ikonka-behance.png" />
+                                <p class="main__messengerBlockText">Behance</p>
+                            </div>
+                            <input class="main__input main__messengerBlockInput" placeholder="Nickname" />
+                        </div>
                     </div>
                     <button class="main__button">Сохранить</button>
                 </div>
                 <div class="main__settingBlock" id="2">
                     <p class="main__settingBlockBackBtn">Назад</p>
-                    <div class="main__settingInputsBlock">
-                        <div class="main__settingNameAndInputBlock">
-                            <p class="main__settingInputName">Ссылка на сайт или портфолио:</p>
-                            <input class="main__input main__settingInput" placeholder="http://..." />
+                    <div class="main__settingInputsBlocks">
+                        <div class="main__settingInputsBlock main__settingInputsBlock-link">
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Ссылка на сайт или портфолио:</p>
+                                <div class="main__settingNameAndDeleteInput">
+                                    <input class="main__input main__settingLink-input" placeholder="http://..." />
+                                    <button class="iconTrash deleteInputIcon"></button>
+                                </div>
+                            </div>
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Введите название кнопки:</p>
+                                <input class="main__input main__settingInput" placeholder="Кнопка ..." />
+                            </div>
                         </div>
-                        <div class="main__settingNameAndInputBlock">
-                            <p class="main__settingInputName">Введите название кнопки:</p>
-                            <input class="main__input main__settingInput" placeholder="Кнопка ..." />
-                        </div>
+                        <button class="main__button main__button-addLink">Добавить ещё одну ссылку</button>
                     </div>
                     <div class="main__settingInputsBlock">
                         <div class="main__settingNameAndInputBlock">
                             <p class="main__settingInputName">Выбрать фон кнопки:</p>
                             <div class="main__settingBlockColorpick">
                                 <span class="main__settingColorBlock" style="background: #4cdbcf"></span>
+                                <input class="main__settingColorBlockInput">
                             </div>
                             <div id="closeablePicker"></div>
                         </div>
@@ -478,6 +509,7 @@
                             <p class="main__settingInputName">Выбрать цвет шрифта:</p>
                             <div class="main__settingBlockColorpick">
                                 <span class="main__settingColorBlock" style="background: #f5f5f5"></span>
+                                <input class="main__settingColorBlockInput">
                             </div>
                             <div id="closeablePicker"></div>
                         </div>
@@ -567,13 +599,55 @@
                         <div class="main__settingNameAndInputBlock">
                             <p class="main__settingInputName">Стиль фона:</p>
                             <select class="main__settinhDesignSelect" id="backgroundStyle">
-                                <option value="0">Сообственная картинка</option>
-                                <option value="1">Цвет</option>
-                                <option value="2">Градиент</option>
+                                <option value="0">Картинка</option>
+                                <option value="1">Сообственная картинка</option>
+                                <option value="2">Цвет</option>
+                                <option value="3">Градиент</option>
                             </select>
                         </div>
                     </div>
                     <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option" id="0">
+                        <input type="text" class="imgDataInput">
+                        <div class="main__settingImgsBlock">
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="0" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="1" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="2" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="3" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="4" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="5" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="6" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="7" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="8" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="9" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="10" />
+                            </div>
+                            <div class="main__settingImg-wrapper">
+                                <img class="main__settingImg" src="img/waitForUpload.png" data-value="11" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="1">
                         <p class="main__settingInputName">Выбрать собственную картинку:</p>
                         <div class="main__settingSelectFileBlock">
                             <input type="file" name="file" id="file" class="inputfile" />
@@ -581,14 +655,15 @@
                             <span class="main__settingSelectText">Файл не выбран ...</span>
                         </div>
                     </div>
-                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="1">
+                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="2">
                         <p class="main__settingInputName">Выбрать цвет фона:</p>
                         <div class="main__settingBlockColorpick main__settingBlockColorpick-long">
                             <span class="main__settingColorBlock main__settingColorBlock-long" style="background: #dadada"></span>
+                            <input class="main__settingColorBlockInput">
                         </div>
                         <div id="closeablePicker"></div>
                     </div>
-                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="2">
+                    <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-option main__settingNameAndInputBlock-disabled" id="3">
                         <p class="main__settingInputName">Выбрать градиент:</p>
                         <div class="main__settingBlockColorpick main__settingBlockColorpick-longGradient">
                             <span class="main__settingColorBlock-longGradient" style="background: linear-gradient(90deg, #fe7b01, #2a0a59)"></span>
@@ -596,12 +671,14 @@
                                 <div class="main__settingSelectPickBlock">
                                     <div class="main__settingBlockColorpick main__settingBlockColorpick-short">
                                         <span class="main__settingColorBlock main__settingSelectColor main__settingSelectColor1" style="background: #fe7b01"><span>Выбрать цвет 1</span></span>
+                                        <input class="main__settingColorBlockInput">
                                     </div>
                                     <div id="closeablePicker"></div>
                                 </div>
                                 <div class="main__settingSelectPickBlock">
                                     <div class="main__settingBlockColorpick main__settingBlockColorpick-short">
                                         <span class="main__settingColorBlock main__settingSelectColor main__settingSelectColor2" style="background: #2a0a59"><span>Выбрать цвет 2</span></span>
+                                        <input class="main__settingColorBlockInput">
                                     </div>
                                     <div id="closeablePicker"></div>
                                 </div>
@@ -612,14 +689,21 @@
                         <p class="main__settingInputName">Выбрать цвет подложки:</p>
                         <div class="main__settingBlockColorpick main__settingBlockColorpick-long">
                             <span class="main__settingColorBlock main__settingColorBlock-long" style="background: #003761"></span>
+                            <input class="main__settingColorBlockInput">
                         </div>
                         <div id="closeablePicker"></div>
                     </div>
                     <div class="main__settingNameAndInputBlock">
                         <p class="main__settingInputName">Выбрать язык:</p>
                         <div class="main__settingDesignBtns">
-                            <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Русский</button>
-                            <button id="1" class="main__settingDesignBtn">English</button>
+                            <div class="main__settingDesignInputBtn">
+                                <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Русский</button>
+                                <input type="radio" name="language" value="1" autocomplete="off" checked>
+                            </div>
+                            <div class="main__settingDesignInputBtn">
+                                <button id="1" class="main__settingDesignBtn">English</button>
+                                <input type="radio" name="language" value="2" autocomplete="off">
+                            </div>
                         </div>
                     </div>
                     <button class="main__button">Сохранить</button>
@@ -689,40 +773,105 @@
                 </div>
                 <div class="main__settingBlock" id="11">
                     <p class="main__settingBlockBackBtn">Назад</p>
-                    <div class="main__settingInstallButton">
-                        <p class="main__settingInstallButtonText">Есть ли у Вас виджет для сайта?</p>
-                        <p class="main__settingInstallButtonIcon"></p>
-                    </div>
-                    <div class="main__settingInstallBlock">
-                        <div class="main__settingInstallRow">
+                    <div class="main__settingInstallBlockAndButton">
+                        <div class="main__settingInstallButton">
+                            <p class="main__settingInstallButtonText">Есть ли у Вас виджет для сайта?</p>
+                            <p class="main__settingInstallButtonIcon"></p>
+                        </div>
+                        <div class="main__settingInstallBlock">
+                            <div class="main__settingInstallRow">
+                                <div class="main__settingNameAndInputBlock">
+                                    <p class="main__settingInputName">Выбрать цвет подложки:</p>
+                                    <div class="main__settingBlockColorpick">
+                                        <span class="main__settingColorBlock" style="background: #003761"></span>
+                                        <input class="main__settingColorBlockInput">
+                                    </div>
+                                    <div id="closeablePicker"></div>
+                                </div>
+                                <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-install">
+                                    <p class="main__settingInputName">Позиция виджета:</p>
+                                    <div class="main__settingDesignBtns">
+                                        <div class="main__settingDesignInputBtn">
+                                            <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Слева</button>
+                                            <input type="radio" name="language" value="1" autocomplete="off" checked>
+                                        </div>
+                                        <div class="main__settingDesignInputBtn">
+                                            <button id="1" class="main__settingDesignBtn">Справа</button>
+                                            <input type="radio" name="language" value="2" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="main__settingNameAndInputBlock">
-                                <p class="main__settingInputName">Выбрать цвет подложки:</p>
-                                <div class="main__settingBlockColorpick">
-                                    <span class="main__settingColorBlock" style="background: #003761"></span>
+                                <p class="main__settingInputName">Приветственное сообщение:</p>
+                                <div class="main__settingDesignBtns main__settingDesignBtns-install">
+                                    <div class="main__settingDesignInputBtn">
+                                        <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Вкл</button>
+                                        <input type="radio" name="language" value="1" autocomplete="off" checked>
+                                    </div>
+                                    <div class="main__settingDesignInputBtn">
+                                        <button id="1" class="main__settingDesignBtn">Выкл</button>
+                                        <input type="radio" name="language" value="2" autocomplete="off">
+                                    </div>
                                 </div>
-                                <div id="closeablePicker"></div>
+                                <textarea class="main__settingInstallTextarea" placeholder="Если у вас есть какие-либо вопросы - напишите нам!"></textarea>
                             </div>
-                            <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-install">
-                                <p class="main__settingInputName">Позиция виджета:</p>
-                                <div class="main__settingDesignBtns">
-                                    <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Слева</button>
-                                    <button id="1" class="main__settingDesignBtn">Справа</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main__settingNameAndInputBlock">
-                            <p class="main__settingInputName">Приветственное сообщение:</p>
-                            <div class="main__settingDesignBtns main__settingDesignBtns-install">
-                                <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Вкл</button>
-                                <button id="1" class="main__settingDesignBtn">Выкл</button>
-                            </div>
-                            <textarea class="main__settingInstallTextarea" placeholder="Если у вас есть какие-либо вопросы - напишите нам!"></textarea>
-                        </div>
-                        <div class="main__settingNameAndInputBlock">
-                            <p class="main__settingInputName">Вставьте данный код перед тегом &lt;/body&gt;:</p>
-                            <textarea class="main__settingInstallTextarea main__settingInstallTextarea-install">&lt;script src="https://new.meconnect.ru/widget/test123.js" async&gt;&lt;/script&gt;
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Вставьте данный код перед тегом &lt;/body&gt;:</p>
+                                <textarea class="main__settingInstallTextarea main__settingInstallTextarea-install">&lt;script src="https://new.meconnect.ru/widget/test123.js" async&gt;&lt;/script&gt;
 &lt;a href="https://meconnect.ru" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/a&gt;</textarea>
-                            <p class="main__settingInstallText">Если у Вас есть сайт, но Вы не знаете, как вставить код, то напишите в поддержку и мы Вам поможем.</p>
+                                <p class="main__settingInstallText">Если у Вас есть сайт, но Вы не знаете, как вставить код, то напишите в поддержку и мы Вам поможем.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__settingInstallBlockAndButton">
+                        <div class="main__settingInstallButton">
+                            <p class="main__settingInstallButtonText">Есть ли у Вас виджет для сайта?</p>
+                            <p class="main__settingInstallButtonIcon"></p>
+                        </div>
+                        <div class="main__settingInstallBlock">
+                            <div class="main__settingInstallRow">
+                                <div class="main__settingNameAndInputBlock">
+                                    <p class="main__settingInputName">Выбрать цвет подложки:</p>
+                                    <div class="main__settingBlockColorpick">
+                                        <span class="main__settingColorBlock" style="background: #003761"></span>
+                                    </div>
+                                    <div id="closeablePicker"></div>
+                                </div>
+                                <div class="main__settingNameAndInputBlock main__settingNameAndInputBlock-install">
+                                    <p class="main__settingInputName">Позиция виджета:</p>
+                                    <div class="main__settingDesignBtns">
+                                        <div class="main__settingDesignInputBtn">
+                                            <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Слева</button>
+                                            <input type="radio" name="language" value="1" autocomplete="off" checked>
+                                        </div>
+                                        <div class="main__settingDesignInputBtn">
+                                            <button id="1" class="main__settingDesignBtn">Справа</button>
+                                            <input type="radio" name="language" value="2" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Приветственное сообщение:</p>
+                                <div class="main__settingDesignBtns main__settingDesignBtns-install">
+                                    <div class="main__settingDesignInputBtn">
+                                        <button id="0" class="main__settingDesignBtn main__settingDesignBtn-active">Вкл</button>
+                                        <input type="radio" name="language" value="1" autocomplete="off" checked>
+                                    </div>
+                                    <div class="main__settingDesignInputBtn">
+                                        <button id="1" class="main__settingDesignBtn">Выкл</button>
+                                        <input type="radio" name="language" value="2" autocomplete="off">
+                                    </div>
+                                </div>
+                                <textarea class="main__settingInstallTextarea" placeholder="Если у вас есть какие-либо вопросы - напишите нам!"></textarea>
+                            </div>
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Вставьте данный код перед тегом &lt;/body&gt;:</p>
+                                <textarea class="main__settingInstallTextarea main__settingInstallTextarea-install">&lt;script src="https://new.meconnect.ru/widget/test123.js" async&gt;&lt;/script&gt;
+&lt;a href="https://meconnect.ru" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/a&gt;</textarea>
+                                <p class="main__settingInstallText">Если у Вас есть сайт, но Вы не знаете, как вставить код, то напишите в поддержку и мы Вам поможем.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -789,6 +938,7 @@
     </script>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
     <script src="js/main.js"></script>
     <script src='colorJoe/js/scale.fix.js'></script>
     <script src='colorJoe/dist/colorjoe.js'></script>

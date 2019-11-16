@@ -129,10 +129,24 @@ $("#backgroundStyle").on("change",function(){
 
 function getThatBlock(){
 	colorUpdate();
+	getThatInput();
 	return thatBlock;
 }
 function getThatBlockColor(){
 	return thatBlock.style.background;
+}
+function getThatInput(){
+	return $(thatBlock).parent().find('.main__settingColorBlockInput');
+}
+function setThatInputValue(inputValue){
+	var input = $(thatBlock).parent().find('.main__settingColorBlockInput').val(rgb2hex(inputValue));
+}
+function rgb2hex(orig){
+ var rgb = orig.replace(/\s/g,'').match(/^rgba?\((\d+),(\d+),(\d+)/i);
+ return (rgb && rgb.length === 4) ? "#" +
+  ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : orig;
 }
 
 var dropZone = $('.main__settingUploadPhotoForm');
@@ -163,22 +177,62 @@ $('#file-input').change(function() {
 });
 
 $('.main__settingDesignBtn').click(function(){
-	var objs = this.parentNode.querySelectorAll('.main__settingDesignBtn');
+	var objs = this.parentNode.parentNode.querySelectorAll('.main__settingDesignBtn');
 	for(var i = 0; i < objs.length; i++){
 		if(this.id != i)objs[i].classList.remove('main__settingDesignBtn-active');
 		else objs[i].classList.add('main__settingDesignBtn-active')
 	}
+	$(this).parent().find('input[type="radio"]').not(':checked').prop("checked", true);
 });
 
 $('.main__settingInstallButton').click(function(){
 	var obj = this.querySelector('.main__settingInstallButtonIcon');
 	$(obj).toggleClass('main__settingInstallButtonIcon-active');
-	$('.main__settingInstallBlock').slideToggle();
+	$(this).parent().find('.main__settingInstallBlock').slideToggle();
 });
 
+$('.main__settingImg-wrapper').click(function(){
+	$('.imgDataInput').val($(this).find('.main__settingImg').attr('data-value'));
+	$('.main__settingImg-wrapper').removeClass('main__settingImg-active');
+	$(this).addClass('main__settingImg-active');
+});
+
+$('.main__block-scroll').overlayScrollbars({}); 
 containerSize();
 window.onresize = function() {
 	containerSize();	
+}
+
+/*
+$('.deleteInputIcon').click(function(){
+	this.parentNode.parentNode.parentNode.remove();
+});
+$('.main__button-addLink').click(function(){
+	var inputBlock = `<div class="main__settingInputsBlock main__settingInputsBlock-link">
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Ссылка на сайт или портфолио:</p>
+                                <div class="main__settingNameAndDeleteInput">
+                                    <input class="main__input main__settingLink-input" placeholder="http://..." />
+                                    <button class="iconTrash deleteInputIcon"></button>
+                                </div>
+                            </div>
+                            <div class="main__settingNameAndInputBlock">
+                                <p class="main__settingInputName">Введите название кнопки:</p>
+                                <input class="main__input main__settingInput" placeholder="Кнопка ..." />
+                            </div>
+                        </div>`;
+	$(inputBlock).insertBefore(this);
+	$('.deleteInputIcon').click(function(){
+		this.parentNode.parentNode.parentNode.remove();
+	});
+});*/
+
+document.onkeydown = function(e){
+	e = e || window.event;
+	if(e.keyCode === 27) {
+		$('.main__settingBlock').removeClass('main__settingBlock-active');
+		$('.main__settingsButtonBlock').removeClass('main__settingsButtonBlock-disabled');
+  }
 }
 
 function containerSize(){
@@ -186,5 +240,29 @@ function containerSize(){
 		var width = $('.main__block-allChats').outerWidth();
 		$('.main__block-currentPage').outerWidth(width);
 		$('.main__block-chat').outerWidth(width);
+		
+		var instance = OverlayScrollbars(document.querySelector('.main__block-scroll'), { });
+		instance.destroy(); 
 	}
 }
+
+var modalAdd = document.querySelector('.modalAdd');
+function toggleModalAdd() {
+	modalAdd.classList.toggle('show-modalAdd');
+}
+function windowOnClick(event) {
+	if (event.target === modalAdd) {
+        toggleModalAdd();
+	}
+}
+$('.main__crmButton-add').click(function(){
+	$('.titleEdit').removeClass('titleActive');
+	$('.titleAdd').addClass('titleActive');
+	toggleModalAdd();
+});
+$('.main__crmTableButton-edit').click(function(){
+	$('.titleEdit').addClass('titleActive');
+	$('.titleAdd').removeClass('titleActive');
+	toggleModalAdd();
+});
+window.addEventListener("click", windowOnClick);	
