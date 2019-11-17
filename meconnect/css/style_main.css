@@ -91,7 +91,7 @@ body, html {
 .header__navLink {
     margin-left: 50px;
     font-family: 'Roboto Medium';
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     text-decoration: none;
     transition: color .3s ease-in-out;
@@ -124,14 +124,14 @@ body, html {
 }
 
 .main__firstBlock {
-    height:100vh;
+    height:95vh;
     background: white url(../img/landing/bg.png) no-repeat;
     background-size: 100% 100%;
     padding-top: 80px;
     background-origin: content-box;
 }
 .main__firstBlock .wrapper {
-    height: calc(100vh - 80px);
+    height: calc(95vh - 80px);
     position: relative;
     display: flex;
     align-items: center;
@@ -165,8 +165,9 @@ body, html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 323px;
+    max-width: 600px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 .main__firstBlockListItem img {
     width: 30px;
@@ -199,6 +200,7 @@ body, html {
     cursor: pointer;
     height: 72px;
     bottom: -36px;
+    z-index: 3;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -450,7 +452,7 @@ body, html {
 }
 .footer__links a {
     font-family:'Roboto Medium';
-    font-size: 20px;
+    font-size:  16px;
     line-height: 23px;
     color: #FFFFFF;
     text-decoration: none;
@@ -462,7 +464,7 @@ body, html {
 }
 .footer__politic {
     font-family: Intro-Regular;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     text-decoration-line: underline;
     color: #F3F7FF;
@@ -480,7 +482,7 @@ body, html {
 }
 .footer__by {
     font-family:'Roboto Medium';
-    font-size: 20px;
+    font-size: 16px;
     line-height: 23px;
     color: #FFFFFF;
 }
@@ -629,7 +631,7 @@ body, html {
         height: calc(100vh - 40px);
     }
     .main__firstBlockContent {
-        padding: 0 0 0 30px;
+        padding: 20px 0 20px 30px;
     }
     .main__firstBlockText {
         max-width: 500px;
@@ -764,6 +766,9 @@ body, html {
     }
     .main__secondBlockItem7 p {
         max-width: 230px;
+    }
+    .main__firstBlockContent {
+        padding: 0 0 0 30px;
     }
 }
 
