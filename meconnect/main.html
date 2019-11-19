@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MeConnect</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/screen.css" />
     <link rel="stylesheet" href="css/style_main.css" />
 </head>
 <body>
@@ -53,7 +56,28 @@
                         </div>
                         <button class="main__firstBlockButton">Попробовать</button>
                     </div>
-                    <img src="img/landing/headerPhone.png" />
+                    <!--<img src="img/landing/headerPhone.png" />-->
+                    <div class="index-screens-container is-right">
+                        <div class="index-screens is-centered">
+                            <div class="is-screen is-front is-shadow-less screen-sliders" style="right: -65px;margin-left: -65px;">
+                                <img class="is-screen" src="img/landing/slider/instagram.png">
+                            </div>
+                            <div class="device is-front">
+                                <div class="phoneMainBlock">
+                                    <img class="phoneMain" style="position: absolute;"src="img/landing/slider/phone.png">
+                                    <div class="screen is-clipped slickPhone" style="background: #f0f1f6">
+                                        <img src="img/landing/slider/instagram.png">
+                                        <img src="img/landing/slider/screen6.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="is-arrow" width="116" height="81" viewBox="0 0 116 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="dotted-line" d="M1.5 79.5C9 42 52.5 5 106 5" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 4"></path>
+                                <path d="M106.823 9.93698L115.712 5.3724C116.1 5.17298 116.095 4.63886 115.703 4.44583L106.798 0.0588227C106.433 -0.120845 105.999 0.1328 106 0.525123L106.017 9.47671C106.017 9.87216 106.459 10.1241 106.823 9.93698Z" fill="#D20F8C"></path>
+                                <defs> <linearGradient id="paint0_linear" x1="-7" y1="85.6045" x2="123" y2="70.1045" gradientUnits="userSpaceOnUse"> <stop stop-color="#4C9EEA"></stop> <stop offset="1" stop-color="#D20F8C"></stop> </linearGradient> </defs>
+                            </svg>
+                        </div>
+                    </div>
                     <button class="main__firstBlockButton main__firstBlockButton-mobile">Попробовать</button>
                 </div>
                 <img class="main__firstBlockMouse js-scroll-link" href="#second" src="img/landing/mouse.svg" />
@@ -309,6 +333,9 @@
         </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/mainPage.js"></script>
 </body>
 </html>

@@ -65,6 +65,65 @@ body, html {
 }
 
 
+/*SLIDER*/
+
+.device {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 45px;
+    background-color:transparent;
+    padding: 0;
+    border: none;
+	width: 230px;
+	height: 461px;
+}
+.index-screens .is-screen {
+    width: 173px;
+	height: 362px;
+    box-shadow: 0 0.5rem 2rem 0.5rem rgba(0,0,0,.1);
+    position: relative;
+}
+.is-screen.screen-sliders {
+    width: 173px!important;
+    height: 362px!important;
+}
+.index-screens .is-front {
+    z-index: 10;
+}
+.screen {
+    max-width: 100%;
+}
+.phoneMainBlock {
+    position:relative;  
+    width: 100%;
+    height: 100%;
+}
+.phoneMain {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: 1000;
+}
+.device .screen-sliders, .index-screens .device.is-screen img {
+    width: unset;
+    height: 100%;
+}
+.index-screens-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+@media (max-width: 1080px) {
+    .device .screen-sliders, .index-screens .device.is-screen img {
+        width: unset; 
+        height: 100%;
+    }
+}
+
+/*SLIDER END*/
+
 /*HEADER*/
 
 .header {
@@ -152,7 +211,7 @@ body, html {
     padding: 0 100px 0 159px;
 }
 .main__firstBlockText {
-    
+	margin-right: 30px;
 }
 .main__firstBlockHeadline {
     margin-bottom: 50px;
@@ -742,10 +801,6 @@ body, html {
         margin: 20px auto;
         flex-direction: column;
     }
-    .main__firstBlockContent img {
-        margin-top: -20px;
-        margin-bottom: -20px;
-    }
     .main__firstBlockButton {
         display: none;
     }
@@ -777,6 +832,9 @@ body, html {
 /* 767PX */
 
 @media screen and (max-width: 767px) {
+	.main__firstBlockText {
+	margin-right: 0px;
+}
     .main__firstBlockContent {
         margin-bottom: 0;
     }
@@ -785,9 +843,6 @@ body, html {
     }
     .main__firstBlockListItem {
         margin-bottom: 15px;
-    }
-    .main__firstBlockContent img {
-        margin-top: -35px;
     }
     .main__firstBlockButton-mobile {
         margin-bottom: 20px;
@@ -907,10 +962,6 @@ body, html {
         font-size: 26px;
         line-height: 26px;
     }
-    .main__firstBlockContent img {
-        width: 160px;
-        margin: -10px 0 10px 25px;
-    }
     .main__firstBlockListItem img {
         width: 25px;
         margin: 0 10px 0 0;
@@ -974,4 +1025,36 @@ body, html {
         right: 30px;
         width: 100px;
     }
+}
+@media screen and (max-width: 420px) {
+	.device {
+		width: 101px;
+		height: 203px;
+	}
+	.index-screens .is-screen {
+		width: 76px;
+		height: 160px;
+		margin-right: 45px;
+		border-radius: 5px;
+	}
+	.is-screen.screen-sliders {
+		width: 76px!important;
+		height: 160px!important;
+		border-radius: 5px!important;
+	}
+	.device .screen {
+		margin: 5px;
+		border-radius: 5px;
+		line-height: 0;
+	}
+	.index-screens .is-arrow {
+		width: 80px;
+		left: 20px;
+		margin-top: -30px;
+		transform: scale(.7);
+	}
+	.index-screens-container {
+		padding-top: 10px;
+		padding-bottom: 20x;
+	}
 }

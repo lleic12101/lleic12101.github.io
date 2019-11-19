@@ -19,3 +19,15 @@ $('.ham').click(function(){
 	this.classList.toggle('active');
 	$('.header__navWrapper').slideToggle();
 });
+
+$(document).ready(function(){
+    $('.slickPhone').slick({
+		fade: true,
+		arrows: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2700,
+		cssEase: 'linear',
+	});
+});
