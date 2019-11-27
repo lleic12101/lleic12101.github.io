@@ -6,6 +6,8 @@
 		nextArrow: $('.js-slider-right'),
 		dots: true,
 		dotsClass: 'main__sliderDots',
+        autoplay: true,
+        autoplaySpeed: 4000,
 	});
 
     //small slider clients
@@ -34,18 +36,6 @@
                     slidesToShow: 3,
                 }
             },
-            {
-                breakpoint: 620,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 450,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
 		]
     });
 
@@ -62,6 +52,43 @@
 	$('#burger1').click(function(){
 		$('.header__mobileMenu').slideToggle();
 	});
+
+	//number animation
+    var show = true;
+    var countbox = ".main__achievementsItems";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false;
+        var w_top = $(window).scrollTop();
+        var e_top = $(countbox).offset().top;
+        var w_height = $(window).height();
+        var d_height = $(document).height();
+        var e_height = $(countbox).outerHeight();
+        if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.main__achievementsItemNumber').css('opacity', '1');
+            $('.main__achievementsItemNumber').spincrement({
+                thousandSeparator: "",
+                duration: 2500
+            });
+
+            show = false;
+        }
+    });
+
+    //accordeon
+    $('.main__plusItemBlock').click(function () {
+        if(!$(this).hasClass('active')) {
+            $('.main__plusItemBlockText').slideUp();
+            $('.main__plusItem-sign').html('+');
+            $('.main__plusItemBlock').removeClass('active');
+
+            $(this).find('.main__plusItemBlockText').slideToggle();
+
+            if(!$(this).hasClass('active')){
+                $(this).find('.main__plusItem-sign').html('-');
+                $(this).addClass('active');
+            }
+        }
+    });
 });	
 
 //youtube preloader

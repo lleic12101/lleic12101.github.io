@@ -372,7 +372,7 @@ html, body {
     font-family: 'Roboto Bold';
 }
 .main__videosItemText {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     color: #222324;
     font-family: 'Roboto Relugar';
@@ -434,6 +434,7 @@ html, body {
     letter-spacing: 0.8px;
     color: #f0c830;
     margin-bottom:15px;
+    opacity: 0;
 }
 .main__achievementsItemText {
     font-family: 'Roboto Bold';
@@ -468,6 +469,19 @@ html, body {
 .main__plusItemsBlock:first-child {
     margin-right:30px;
 }
+.main__plusItemBlock {
+
+}
+.main__plusItemBlockText {
+    margin-bottom: 10px;
+    position: relative;
+    font-family: 'Roboto Relugar';
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 0 5px;
+    display: none;
+}
 .main__plusItem {
     display: flex;
     flex-direction: row;
@@ -475,6 +489,7 @@ html, body {
     align-items:center;
     background-color: #fff;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 .main__plusItem:last-child {
     margin-bottom: 0px;
@@ -523,7 +538,7 @@ html, body {
 .main__workItem {
     position: relative;
     font-family: 'Roboto Relugar';
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     color: #222324;
     margin-left:36px;
@@ -567,12 +582,19 @@ html, body {
     text-align: center;
     font-family: "Roboto Relugar";
     line-height: 18px;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 55px;
+}
+.main__chooseItem img {
+    transform: rotate(0deg);
+    transition: transform 1.2s;
+}
+.main__chooseItem img:hover {
+    transform: rotate(360deg);
 }
 .main__chooseItemHeadline {
     font-family: "Roboto Bold";
-    font-size: 13px;
+    font-size: 15px;
     color: #f0c830;
     letter-spacing: 0.8px;
     text-transform: uppercase;
@@ -618,6 +640,25 @@ html, body {
     justify-content: center;
     align-items: center;
     margin: 0 20px;
+    cursor: pointer;
+}
+.main__smallSlide img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    cursor: pointer;
+    transition: filter .3s ease-in-out;
+    max-height: 110px;
+    max-width: 180px;
+}
+.main__smallSlide img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
 }
 .main__smallSlider .slick-initialized .slick-slide {
     display: flex;
@@ -728,7 +769,7 @@ html, body {
     color: #222324;
     font-family: "Roboto Bold";
     font-size: 22px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 .main__servicesTextSmall {
     color: #323435;
@@ -782,7 +823,7 @@ html, body {
     margin-left: 21px;
     color: #000000;;
     font-family: "Roboto Bold";
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing:0.8px;
     margin-top: 15px;
 }
@@ -797,7 +838,7 @@ html, body {
 .main__teamItemWork {
     font-family: "Roboto Relugar";
     color: #c7c7c8;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     margin-top: 13px;
     margin-bottom: 18px;
@@ -805,7 +846,7 @@ html, body {
 .main__teamItemText {
     font-family: "Roboto Relugar";
     color: #222324;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
 }
 .social-team {
@@ -881,6 +922,7 @@ html, body {
     color:#fff;
     line-height: 14px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 .footer__contactText:last-child {
     margin-bottom: 0;
@@ -915,7 +957,7 @@ html, body {
 
 
 /*MEDIA 1230px*/
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1400px) {
     .header__phone {
         margin-right: 0;
     }
@@ -925,6 +967,21 @@ html, body {
 }
 /*MEDIA 1230px END*/
 
+
+/*MEDIA 1270px*/
+@media screen and (max-width: 1270px) {
+    .header__phone img {
+        margin-right:3px;
+    }
+    .header__phone p {
+        display: flex;
+        flex-direction:column;
+    }
+    .header__phone p span {
+        display:none;
+    }
+}
+/*MEDIA 1270px END*/
 
 
 /*MEDIA 1210px*/
@@ -936,33 +993,11 @@ html, body {
         width: 100%;
     }
 }
-/*MEDIA 1230px END*/
+/*MEDIA 1210px END*/
 
 
-
-/*MEDIA 1110px*/
-@media screen and (max-width: 1110px) {
-    .header__phone img {
-        margin-right:3px;
-    }
-    .header__phone p {
-        display: flex;
-        flex-direction:column;
-    }
-    .header__phone p span {
-        display:none;
-    }
-
-    .footer__contactBlocks{
-        justify-content: space-around;
-    }
-}
-/*MEDIA 1110px END*/
-
-
-
-/*MEDIA 960px*/
-@media screen and (max-width: 960px) {
+/*MEDIA 1120px*/
+@media screen and (max-width: 1120px) {
     .header__mobileMenu {
         width: 100%;
         position: absolute;
@@ -999,7 +1034,22 @@ html, body {
         display: flex;
         transform: scale(.7);
     }
+}
+/*MEDIA 1120px END*/
 
+
+/*MEDIA 1110px*/
+@media screen and (max-width: 1110px) {
+    .footer__contactBlocks{
+        justify-content: space-around;
+    }
+}
+/*MEDIA 1110px END*/
+
+
+
+/*MEDIA 960px*/
+@media screen and (max-width: 960px) {
     .main__videos {
         padding: 50px 0;
     }
@@ -1093,7 +1143,6 @@ html, body {
     }
     .main__plusItemsBlock:first-child {
         margin-right: 0;
-        margin-bottom: 5px;
     }
 
     .main__workBlocks {
@@ -1139,6 +1188,15 @@ html, body {
 }
 /*MEDIA 750px END*/
 
+
+/*MEDIA 650px*/
+@media screen and (max-width: 650px) {
+    .main__smallSlide img {
+        max-height: 90px;
+        max-width: 150px;
+    }
+}
+/*MEDIA 650px END*/
 
 
 /*MEDIA 610px*/
@@ -1186,6 +1244,23 @@ html, body {
     .main__servicesButton {
         margin-top: 20px;
     }
+
+
+    .main__choose .wrapper {
+        padding: 0 10px;
+    }
+    .main__chooseItem {
+        width:160px;
+        margin: 5px;
+    }
+    .main__chooseItem img {
+        width: 100%;
+    }
+
+    .main__smallSlide img {
+        max-height: 70px;
+        max-width: 100px;
+    }
 }
 /*MEDIA 550px END*/
 
@@ -1204,6 +1279,21 @@ html, body {
 
     .main__blockTitle {
         margin-bottom: 25px;
+    }
+
+    .main__choose .wrapper {
+        padding: 0 10px;
+    }
+    .main__chooseItemHeadline {
+        font-size: 15px;
+    }
+    .main__chooseItem {
+        width:130px;
+        margin: 5px;
+        font-size: 13px;
+    }
+    .main__chooseItem img {
+        width: 100%;
     }
 
     .main__achievements {
@@ -1243,6 +1333,15 @@ html, body {
 }
 /*MEDIA 450px END*/
 
+
+/*MEDIA 400px*/
+@media screen and (max-width: 400px) {
+    .main__smallSlide img {
+        max-height: 60px;
+        max-width: 70px;
+    }
+}
+/*MEDIA 400px END*/
 
 
 /*MEDIA 340px*/
