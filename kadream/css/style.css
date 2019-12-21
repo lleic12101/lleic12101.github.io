@@ -300,7 +300,7 @@ html, body {
     background: url(../img/slider/slide1.png) center;
 }
 .main__slide-2 {
-    background: url(../img/slider/slide1.png) center;
+    background: url(../img/slider/slide2.jpg) center;
 }
 .main__slide-3 {
     background: url(../img/slider/slide1.png) center;
@@ -622,6 +622,22 @@ html, body {
     top:50%;
     transform: translateY(-50%);
     z-index:1;
+}
+.main_smallSliderArrows-left {
+    width: min-content;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 3;
+ }
+.main_smallSliderArrows-right {
+    width: min-content;
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 3;
 }
 .main__smallSlides {
     padding: 0 30px;
@@ -951,6 +967,25 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+.footer__copyright {
+    font-family:"Roboto Relugar";
+    color:#fff;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+	margin: 30px auto 10px;
+	text-align:center;
+}
+.footer__copyright a {
+    color: #f2ca30;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.footer__copyright a:hover {
+    color: #7e7f81;
+}
+
 
 /*FOOTER END*/
 
@@ -1033,6 +1068,10 @@ html, body {
     .burger {
         display: flex;
         transform: scale(.7);
+    }
+    .footer__copyright {
+        text-align: center;
+        margin: 10px auto 30px;
     }
 }
 /*MEDIA 1120px END*/

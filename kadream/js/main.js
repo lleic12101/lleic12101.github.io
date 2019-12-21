@@ -8,6 +8,9 @@
 		dotsClass: 'main__sliderDots',
         autoplay: true,
         autoplaySpeed: 4000,
+		fade: true,
+		cssEase: 'linear',
+		speed: 1000,
 	});
 
     //small slider clients
