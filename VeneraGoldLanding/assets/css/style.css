@@ -33,6 +33,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0px;
@@ -560,6 +567,118 @@ h1 {
 /*MAIN END*/
 
 
+/*MARKETING*/
+
+.header-marketing {
+    background: #f4f6f8 url(../img/marketing/headerBg.png) no-repeat;
+    background-size: 125% 2000px;
+    background-position: top center;
+}
+.headerContentBlock-marketing {
+    justify-content: center;
+}
+.headerContent-marketing {
+    align-items: center;
+}
+.headerContentText-marketing {
+    text-align: center;
+    font-size: 30.55px;
+    line-height: 46.48px;
+    max-width: 785px;
+    font-family:Montserrat-Light;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.header__underline {
+    width: 597px;
+    margin-bottom: 15px;
+}
+.header__investBlock {
+
+}
+.header__investBlock .wrapper {
+    height: auto;
+}
+.header__BlocksText {
+    font-family:Montserrat-Light;
+    font-size: 17.93px;
+    line-height: 24.57px;
+    color: #4c5e66;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.header__BlocksText:last-child {
+    margin-bottom: 0;
+}
+.header__BlocksText-margin {
+    margin-top: 37px;
+}
+.header__investItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+.header__investItem {
+    width: 476px;
+    height: auto;
+    background: #fff url(../img/marketing/investBg.png) no-repeat;
+    background-position: center center;
+    background-size: 150% 155%;
+    border-radius: 30px;
+    margin: 0 20px 0;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 40px;
+
+}
+.header__investItem:nth-child(1) {
+    margin-bottom: 90px;
+}
+.header__investItem:nth-child(2) {
+    margin-bottom: 90px;
+}
+
+
+.header__investItemHeadline {
+    font-family:Montserrat-Italic;
+    font-size: 28.56px;
+    color: #ffffff;
+    margin-top: 28px;
+    margin-bottom: 79px;
+}
+.header__investItemProfit {
+    font-family:Montserrat-SemiBold;
+    font-size: 27.23px;
+    color: #314464;
+}
+.header__investItemDelimiter {
+    width: 361px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.header__investItemTextInvest {
+    font-family:Montserrat-Regular;
+    font-size: 19.26px;
+    color: #4c5e66;
+    margin-bottom: 7px;
+}
+.header__investItemTextInvest span {
+    color: #e49945;
+}
+.headerContentButton-invest {
+    margin-top: 33px;
+}
+.headerContentButton-invest:last-child {
+    margin-left: 10px;
+}
+
+/*MARKETING END*/
+
+
 /*FOOTER*/
 
 .footer {
@@ -790,6 +909,21 @@ h1 {
     }
 }
 
+@media screen and (max-width: 1071px) {
+    .header__investItem:nth-child(1) {
+        margin-bottom: 60px;
+    }
+    .header__investItem:nth-child(2) {
+        margin-bottom: 60px;
+    }
+    .header__investItem {
+        margin-bottom: 60px;
+    }
+    .header__investItem:last-child{
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .header .wrapper {
         height:auto;
@@ -845,6 +979,12 @@ h1 {
         text-align: right;
         margin: 0;
     }
+    .header__investBlock {
+        margin-top: 100px;
+    }
+    .header-marketing {
+        background-size: 125% 1600px;
+    }
 }
 
 @media screen and (max-width: 853px) {
@@ -882,6 +1022,12 @@ h1 {
     }
     .main__productsBlock {
         background-size: auto 100%;
+    }
+    .header-marketing {
+        background-size: 300% 1600px;
+    }
+    .header__investBlock {
+        margin-bottom: -50px;
     }
 }
 
@@ -941,6 +1087,12 @@ h1 {
         max-width: 400px;
         width: 100%;
     }
+    .header__underline {
+        width: 100%;
+    }
+    .headerContentText-marketing {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 569px) {
@@ -958,6 +1110,19 @@ h1 {
     }
     .main__mapBlockItems {
         margin-right: 20px;
+    }
+    .header__investItem {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header__investItemDelimiter {
+        width: 100%;
+    }
+    .header__investItemTextInvest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1074,11 +1239,33 @@ h1 {
     .main__aboutBlockItems {
         margin-bottom: -100px;
     }
+    .header__investBlock {
+        margin-top: 50px;
+    }
+    .header__investItemProfit {
+        font-size: 23px;
+    }
+    .header__investBlock {
+        margin-bottom: -120px;
+    }
 }
 
 @media screen and (max-width: 370px) {
     .wrapper-text {
         padding-top: 220px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header__investItemProfit {
+        font-size: 18px;
+    }
+    .header__investItemTextInvest {
+        text-align: center;
+        font-size: 16px;
+    }
+    .header__investItemDelimiter {
+        height: 1px;
     }
 }
 
