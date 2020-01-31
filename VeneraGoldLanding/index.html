@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+	<link rel="stylesheet" href="assets/css/preloader.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $preloader = $('.preloader'),
+                $gif = $('.preloader').find('.preloader__gif');
+            $gif.delay(800).fadeOut('slow');
+            $preloader.delay(1000).fadeOut('slow');
+            $('body').addClass('bgc');
+        });
+    </script>
+    <div class="preloader">
+        <img src="assets/img/veneraLogoPreloader.gif" class="preloader__gif" />
+    </div>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__navWrapper">
+                <div class="header__navBlockWrapper">
+                    <img src="assets/img/logo.png" class="header__navLogo-mobile" />
+                    <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+                    <label for="checkbox1">
+                        <div class="hamburger hamburger1">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                            <span class="bar bar4"></span>
+                        </div>
+                    </label>
+                </div>
+                <div class="headerNavBlock">
+                    <div class="headerNavTopBlock">
+                        <nav class="headerNav">
+                            <a href="#" class="headerNavLink">ГЛАВНАЯ</a>
+                            <a href="#company" class="headerNavLink js-scroll-link">О КОМПАНИИ</a>
+                            <a href="#products" class="headerNavLink js-scroll-link">ПРОДУКТЫ</a>
+                            <a href="#roadmap" class="headerNavLink js-scroll-link">РОДМЭП</a>
+                            <a href="#" class="headerNavLink">МАРКЕТИНГ</a>
+                            <a href="#" class="headerNavLink">ПАРТНЕРАМ</a>
+                        </nav>
+                        <div class="headerLoginBlock">
+                            <a href="#" class="headerLoginBlockLink">ВХОД</a>
+                            <a href="#" class="headerLoginBlockLink">РЕГИСТРАЦИЯ</a>
+                        </div>
+                    </div>
+                    <div class="headerNavSocial">
+                        <div class="headerNavSocialBlock">
+                            <div class="headerNavSocialBlockMail">
+                                <a class="headerNavSocialBlockIcon">
+                                    <img src="assets/img/icons/mail.png" />
+                                </a>
+                                <p class="headerNavSocialBlockMailText">support@venera.gold</p>
+                            </div>
+                            <div class="headerNavSocialBlockMessengers">
+                                <a href="#" class="headerNavSocialBlockIcon">
+                                    <img src="assets/img/icons/twitter.png" />
+                                </a>
+                                <a href="#" class="headerNavSocialBlockIcon">
+                                    <img src="assets/img/icons/youtube.png" />
+                                </a>
+                                <a href="#" class="headerNavSocialBlockIcon">
+                                    <img src="assets/img/icons/telegram.png" />
+                                </a>
+                                <a href="#" class="headerNavSocialBlockIcon">
+                                    <img src="assets/img/icons/facebook.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__firstBlock">
+            <div class="headerContentBlock">
+                <div class="wrapper">
+                    <div class="headerContent">
+                        <img src="assets/img/logo.png" class="headerContentLogo" />
+                        <p class="headerContentText">
+                            Внебирживой сервис обмена и услуг
+                            с более чем 10ти летним опытом
+                        </p>
+                        <div class="headerContentButtons">
+                            <button class="headerContentButton">вход</button>
+                            <button class="headerContentButton">регистрация</button>
+                        </div>
+                    </div>
+                    <div class="headerContentImg">
+                        <img src="assets/img/gold.png" />
+                    </div>
+                </div>
+            </div>
+            <a href="#video" class="headerScrollDownBtn js-scroll-link"><img src="assets/img/mouse.png" /></a>
+            <div class="header__videoBlock" >
+                <div class="wrapper">
+                    <div class="main__titleBlock" id="video">
+                        <h1 class="main__titleBlockText">Видео-промоушен</h1>
+                        <img src="assets/img/titleUnderline.png" />
+                    </div>
+                    <div class="header__video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WNeLUngb-Xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__aboutBlock" >
+            <div class="wrapper">
+                <div class="main__titleBlock" id="company">
+                    <h1 class="main__titleBlockText">О компаниии</h1>
+                    <img src="assets/img/titleUnderline.png" />
+                </div>
+                <div class="main__aboutBlockItems">
+                    <div class="main__aboutBlockItem">
+                        <div class="main__aboutHeadlineBlock">
+                            <img class="main__aboutHeadlineBlockImg" src="assets/img/about/1.png" />
+                            <p class="main__aboutHeadlineBlockText">ОГРОМНЫЙ ОПЫТ</p>
+                        </div>
+                        <p class="main__aboutBlockItemText">
+                            С 2011го года мы осуществляем нашу деятельность на рынке
+                            внебиржевой торговли в Европе, на Ближнем востоке и Азии.
+                            Наша бизнес схема проста и эффективна - мы выступаем
+                            в качестве поставщика, или брокера при заключении
+                            внебиржевых сделок при покупке/продаже физического
+                            золота или биткоина, который также называют
+                            "цифровым золотом".
+                        </p>
+                    </div>
+                    <div class="main__aboutBlockItem">
+                        <div class="main__aboutHeadlineBlock">
+                            <img class="main__aboutHeadlineBlockImg" src="assets/img/about/2.png" />
+                            <p class="main__aboutHeadlineBlockText">КОНФИДЕНЦИАЛЬНОСТЬ И БЕЗОПАСНОСТЬ</p>
+                        </div>
+                        <p class="main__aboutBlockItemText">
+                            Обеспечивая нашим клиентам как полную конфиденциальность
+                            так и абсолютную безопасность каждой сделки.
+                            Наша служба безопасности проверяет каждого нового клиента,
+                            а также каждую сделку на предмет возможности исполнения
+                            обязательств каждой из сторон. Биткоины мы можем поставлять
+                            напрямую от майнеров. Эти биткоины не имеют истории
+                            и более анонимны.
+                        </p>
+                    </div>
+                    <div class="main__aboutBlockItem">
+                        <div class="main__aboutHeadlineBlock">
+                            <img class="main__aboutHeadlineBlockImg" src="assets/img/about/3.png" />
+                            <p class="main__aboutHeadlineBlockText">ИНДИВИДУАЛЬНЫЙ ПОДХОД</p>
+                        </div>
+                        <p class="main__aboutBlockItemText">
+                            Для каждого клиента мы подбираем индивидуальные условия,
+                            в зависимости от его потребностей, объемов и нашего опыта
+                            работы с ним, именно поэтому сотрудничество с нашими
+                            многоуважаемыми клиентами продолжается уже много лет.
+                        </p>
+                    </div>
+                    <div class="main__aboutBlockItem">
+                        <div class="main__aboutHeadlineBlock">
+                            <img class="main__aboutHeadlineBlockImg" src="assets/img/about/4.png" />
+                            <p class="main__aboutHeadlineBlockText">ДОСТУПНОСТЬ</p>
+                        </div>
+                        <p class="main__aboutBlockItemText">
+                            До 2019го мы работали  с нашими клиентами исключительно в
+                            индивидуальном порядке в закрытом формате. Но получив за 9 лет
+                            огромный опыт и заработав репутацию в узких кругах,
+                            мы решили начать расширить свой бизнес, сделав его более
+                            публичным и доступным каждому. Предлагаем ознакомиться
+                            Вам с нашими продуктами ниже
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__productsBlock" >
+            <div class="wrapper">
+                <div class="main__titleBlock" id="products">
+                    <h1 class="main__titleBlockText main__titleBlockText-products">Наши продукты</h1>
+                    <img src="assets/img/titleUnderline.png" />
+                </div>
+                <p class="main__productsBlockTitleText">
+                    Сегодня вы можете воспользоваться
+                    несколькими нашими продуктами, доступными на сегодня:
+                </p>
+                <div class="main__productsBlockItems">
+                    <div class="main__productsBlockItem">
+                        <div class="main__productsBlockItemInfo">
+                            <div class="main__productsBlockItemInfoText">
+                                <p class="main__productsBlockItemInfoHeadline">Инвестиции в ОТС сделки</p>
+                                <p class="main__productsBlockItemInfoText">
+                                    На сегодняшний день наша ОТС платформа работает также в закрытом режиме
+                                    с индивидуальными клиентами, однако теперь мы предоставляем возможность
+                                    частным лицам поучаствовать в нашем бизнесе, путем предоставления средств
+                                    для закупки актива и получении в результате инвестиционной прибыли
+                                    при реализации нами форвардного контракта с использованием данного актива.</p>
+                            </div>
+                            <button class="headerContentButton headerContentButton-product">подробнее</button>
+                        </div>
+                        <div class="main__productsBlockItemImg main__productsBlockItemImg-down main__productsBlockItemImg-right">
+                            <img src="assets/img/products/1.png" />
+                        </div>
+                    </div>
+                    <div class="main__productsBlockItem">
+                        <div class="main__productsBlockItemImg main__productsBlockItemImg-down main__productsBlockItemImg-left">
+                            <img src="assets/img/products/2.png" />
+                        </div>
+                        <div class="main__productsBlockItemInfo main__productsBlockItemInfo-right">
+                            <div class="main__productsBlockItemInfoText">
+                                <p class="main__productsBlockItemInfoHeadline">Партнерская программа</p>
+                                <p class="main__productsBlockItemInfoText">
+                                    Популяризация платформы - это основная задача нашей команды на 2020й год.
+                                    Для того, чтобы стимулировать пользователей инвестиционных продуктов
+                                    Venera привлекать новых инвесторов, мы подготовили уникальную реферальную
+                                    программу, которая сможет установить взаимовыгодные партнерские отношения
+                                    с нашими инвесторами, а также позволит им зарабатывать значительные средства,
+                                    совместно продвигая наш бизнес.</p>
+                            </div>
+                            <button class="headerContentButton headerContentButton-product headerContentButton-productRight">подробнее</button>
+                        </div>
+                    </div>
+                    <div class="main__productsBlockItem">
+                        <div class="main__productsBlockItemInfo">
+                            <div class="main__productsBlockItemInfoText">
+                                <p class="main__productsBlockItemInfoHeadline">OTC обмен</p>
+                                <p class="main__productsBlockItemInfoText">
+                                    Если вы хотите осуществить сделку начиная от 10 000 долларов, мы будем рады
+                                    предложить вам сотрудничество с нашей площадкой. Подайте заявку на почту ********
+                                    в свободной форме и мы предоставим вам список документов для проведения
+                                    нами аудита вашей личности и вашей сделки. После одобрения нашей
+                                    службы безопасности, вы получите подробную инструкцию для проведения
+                                    дальнейших действий по совершению сделки.</p>
+                            </div>
+                        </div>
+                        <div class="main__productsBlockItemImg main__productsBlockItemImg-right">
+                            <img src="assets/img/products/3.png" />
+                        </div>
+                    </div>
+                    <div class="main__productsBlockItem">
+                        <div class="main__productsBlockItemImg main__productsBlockItemImg-down">
+                            <img src="assets/img/products/4.png" />
+                        </div>
+                        <div class="main__productsBlockItemInfo main__productsBlockItemInfo-right">
+                            <div class="main__productsBlockItemInfoText">
+                                <p class="main__productsBlockItemInfoHeadline">Услуги аудита котрагентов</p>
+                                <p class="main__productsBlockItemInfoText">
+                                    Вы хотите провести сделку по обмену физического золота или биткоина,
+                                    но сомневаетесь в чистоплотности и платежеспособности контрагента?
+                                    Мы можем помочь вам прояснить ситуацию и выявить все подводные камни
+                                    планируемой сделки. Мы можем предоставить вам услуги полного, как открытого
+                                    (с уведомлением контрагента), так и тайного закрытого аудита, через наши каналы
+                                    получения информации. Вы можете подать заявку на почту ******** в свободной форме,
+                                    после чего мы свяжемся с вами для планирования наших дальнейших действий,
+                                    а также о расчете стоимости услуги. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__productsBlockItem">
+                        <div class="main__productsBlockItemInfo">
+                            <div class="main__productsBlockItemInfoText">
+                                <p class="main__productsBlockItemInfoHeadline">Эскроу услуги</p>
+                                <p class="main__productsBlockItemInfoText">
+                                    Если вы уже решили провести сделку и уверены в платежеспособности
+                                    контрагента, но вы хотите 100% гарантий безопасности проведения сделки,
+                                    мы предоставлеям услуги гаранта при совершении сделок практически
+                                    любого объема. Все сделки проводятся в одном из наших охраняемых
+                                    офисов, адреса которых вы можете узнать, также оставив заявку.
+                                    Узнать подробно об условиях и стоимости услуги, вы можете узнать,
+                                    отправив запрос на электронную почту в свободной форме.</p>
+                            </div>
+                        </div>
+                        <div class="main__productsBlockItemImg main__productsBlockItemImg-down main__productsBlockItemImg-right">
+                            <img src="assets/img/products/5.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__mapBlock">
+            <div class="wrapper">
+                <div class="main__titleBlock"  id="roadmap">
+                    <h1 class="main__titleBlockText">Дорожная карта</h1>
+                    <img src="assets/img/titleUnderline.png" />
+                </div>
+                <div class="main__mapBlockContent">
+                    <img src="assets/img/mapWay.png" class="main__mapBlockContentImg" />
+                    <div class="main__mapBlockItems">
+                        <div class="main__mapBlockItem">
+                            <div class="main__mapBlockItem-left">
+                                <p class="main__mapBlockItemTime main__mapBlockItemTime-active">Q1 2020</p>
+                            </div>
+                            <div class="main__mapBlockItem-right">
+                                <p class="main__mapBlockItemText main__mapBlockItemText-active">
+                                    Запуск сайта Venera Gold,
+                                    как инвестиционной платформы,
+                                    с возможностью полноценно пользоваться
+                                    всем спектром услуг компании.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__mapBlockItem">
+                            <div class="main__mapBlockItem-left">
+                                <p class="main__mapBlockItemTime">Q2-Q3 2020</p>
+                            </div>
+                            <div class="main__mapBlockItem-right">
+                                <p class="main__mapBlockItemText">
+                                    Создание и запуск собственной монеты,
+                                    дающей бонусы партнерам и лидерам компании
+                                    помимо стандартной реферальной комиссии.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__mapBlockItem">
+                            <div class="main__mapBlockItem-left">
+                                <p class="main__mapBlockItemTime">Q3-Q4 2020</p>
+                            </div>
+                            <div class="main__mapBlockItem-right">
+                                <p class="main__mapBlockItemText">
+                                    Онлайн обменник для более удобного
+                                    и быстрого совершения OTC сделок.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__mapBlockItem">
+                            <div class="main__mapBlockItem-left">
+                                <p class="main__mapBlockItemTime">Q1-Q2 2021</p>
+                            </div>
+                            <div class="main__mapBlockItem-right">
+                                <p class="main__mapBlockItemText">
+                                    Платежная система Venera Pay,
+                                    которая помимо низких комиссий,
+                                    позволит всем пользователям совершать
+                                    сделки по более выгодным курсам.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__mapBlockItem">
+                            <div class="main__mapBlockItem-left">
+                                <p class="main__mapBlockItemTime">Q3-Q4 2021</p>
+                            </div>
+                            <div class="main__mapBlockItem-right">
+                                <p class="main__mapBlockItemText">
+                                    Расширение бизнеса: игровая и рекламная
+                                    площадка, с интегрированным в неё
+                                    обменником Venera Хchange и
+                                    платёжной системой Venera Pay.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__mapBlockItem">
+                            <div class="main__mapBlockItem-left">
+                                <p class="main__mapBlockItemTime">2022</p>
+                            </div>
+                            <div class="main__mapBlockItem-right">
+                                <p class="main__mapBlockItemHeadline">VENERA PROTOCOL EXCHANGE</p>
+                                <p class="main__mapBlockItemText">
+                                    Полностью децентрализованная и
+                                    анонимная площадка на основе
+                                    dark node, о которой вы  может узнать
+                                    ниже.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__veneraTextBlock">
+            <div class="wrapper">
+                <p class="main__veneraTextBlockHeadline">VENERA PROTOCOL EXCHANGE</p>
+                <p class="main__veneraTextBlockText">
+                    Запуск инвестиционной платформы лишь первый этап расширения и модернизации нашего бизнеса. Время не стоит на месте
+                    и на сегодняшний день блокчейн технологии позволяют вывести наш бизнес на качественно новый уровень удобства, скорости
+                    и анонимности. Поэтому конечным этампом преобразования нашего бизнеса, будет релиз в 2022м году будущго ОТС обмена
+                    децентрализованных активов - Venera Protocol,
+                </p>
+                <p class="main__veneraTextBlockText">
+                    Venera Protocol станет основой децентрализованной ОТС биржи по обмену Bitcoin, Ethereum и ERC20-токенов, предоставляющей
+                    возможность использования dark pool. Возможность cross-chain обмена позволит обменивать активы разных блокчейнов через
+                    атомарный своп без необходимости использования посредников. Система Venera Protocol представляет из себя
+                    децентрализованный обменник со скрытым order book, исполняющий заказы без разглашения особых деталей, где токен VEN ,
+                    будет использоваться, как мотиватор и средство защиты системы. Это обеспечивается схемой разделения секрета Шамира
+                    и специализированной распределенной сетью, производящей вычисления по поиску соответствий лишь во фрагментах
+                    изначальных ордеров. Таким образом, ордера не видны для узлов сети. Вычисления проверяются через Zero-knoledge proof
+                    Мотивационным стимулятором работы сети будет токен VEN, обеспечивающий конкуренцию и трейдеров, ордера которых
+                    будут выше в приоритете в зависимости от комиссии, и нод, желающих обрабатывать максимально выгодные для себя ордера.
+                </p>
+            </div>
+            <div class="wrapper-textBg">
+                <div class="wrapper-text">
+                    <p class="main__veneraTextBlockText main__veneraTextBlockText-small">
+                        Преимущества системы Venera Protocol
+                    </p>
+                    <p class="main__veneraTextBlockText main__veneraTextBlockText-small">
+                        1. Уникальная система идентификации личности участников Venera Dark Pool.
+                    </p>
+                    <p class="main__veneraTextBlockText main__veneraTextBlockText-small">
+                        2. Трейдерам не будет необходимости быть в сети в момент,
+                        когда удовлетворяющий их ордер будет найден.
+                        Как только торговое предложение размещено, узлы сети будут
+                        искать подходящее встречное предложение, пока не найдут,
+                        или же пока ордер не истечет или не будет отменен.
+                    </p>
+                    <p class="main__veneraTextBlockText main__veneraTextBlockText-small">
+                        3. Информация об ордере защищена до момента его исполнения.
+                        После этого, некоторые детали операции станут известны.
+                        Это абсолютно естественный лимит безопасности, учитывая,
+                        что обе стороны знают, что их предложение было удовлетворено,
+                        а также в какой момент это было сделано.
+                        Но, естественно, подобная информация никаких преимуществ
+                        или угроз в себе не несет.
+                    </p>
+                    <p class="main__veneraTextBlockText main__veneraTextBlockText-small">
+                        4. Общая ликвидность Venera Dark Pool не может быть достоверно
+                        оценена любым участником.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <p class="main__veneraTextBlockText main__veneraTextBlockText-left">
+                    VEN Token<br><br>
+                    В связи с озвученными выше предположениями, вычислительные узлы сети должны быть заинтересованы в проведении
+                    вычислений для сопоставления ордеров.
+                    Для этой миссии мы проведем первичную продажу VEN токена, который будет использоваться для оплаты «мотивации»
+                    для нод в виде комиссии.<br>
+                    В дополнении к этому, токен будет использоваться как некий залог, необходимый для Registrar ( умный контракт Ethereum ,
+                    который собирает узлы сети в сетевую топологию, что
+                    устанавливает необоснованно высокую цену для злоумышленника на «сбор» фрагментов,  и позволяющий трейдерам и
+                    нодам принимать участие в Dark Pool.Враждебные же ноды и торговцы ищутся и наказываются лишением залога,
+                    взимаемого со всех участников сети.<br><br>
+                    Venera Protocol протокол уже находится в разработке, следите за обновлениями
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__logoAndSocial">
+                <img src="assets/img/logo.png" class="footer__logo" />
+                <div class="headerNavSocialBlock-footer">
+                    <div class="headerNavSocialBlockMail">
+                        <a class="headerNavSocialBlockIcon">
+                            <img src="assets/img/icons/mail.png" />
+                        </a>
+                        <p class="headerNavSocialBlockMailText">support@venera.gold</p>
+                    </div>
+                    <div class="headerNavSocialBlockMessengers">
+                        <a href="#" class="headerNavSocialBlockIcon">
+                            <img src="assets/img/icons/twitter.png" />
+                        </a>
+                        <a href="#" class="headerNavSocialBlockIcon">
+                            <img src="assets/img/icons/youtube.png" />
+                        </a>
+                        <a href="#" class="headerNavSocialBlockIcon">
+                            <img src="assets/img/icons/telegram.png" />
+                        </a>
+                        <a href="#" class="headerNavSocialBlockIcon">
+                            <img src="assets/img/icons/facebook.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text">
+                <nav class="headerNav-footer">
+                    <a href="#" class="headerNavLink-footer">ГЛАВНАЯ</a>
+                    <a href="#" class="headerNavLink-footer">О КОМПАНИИ</a>
+                    <a href="#" class="headerNavLink-footer">ПРОДУКТЫ</a>
+                    <a href="#" class="headerNavLink-footer">РОДМЭП</a>
+                    <a href="#" class="headerNavLink-footer">МАРКЕТИНГ</a>
+                    <a href="#" class="headerNavLink-footer">ПАРТНЕРАМ</a>
+                </nav>
+                <a href="#" class="footer__textRules">ПРАВИЛА ИСПОЛЬЗОВАНИЯ САЙТА И ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
+                <div class="footer__copyrightAndLogin">
+                    <p class="footer__copyright">© 2019. Venera Gold | Все права защищены.</p>
+                    <div class="headerLoginBlock-footer">
+                        <a href="#" class="headerLoginBlockLink-footer">ВХОД</a>
+                        <a href="#" class="headerLoginBlockLink-footer">РЕГИСТРАЦИЯ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
