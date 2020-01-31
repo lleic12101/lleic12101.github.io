@@ -40,6 +40,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0px;
@@ -49,6 +56,9 @@
 
 html, body {
     overflow-x: hidden;
+    background-color: #030303;
+}
+.bgc {
     background-color: #f4f6f8;
 }
 
@@ -123,12 +133,21 @@ h1 {
 /*HEADER*/
 
 .header {
-    background: #f4f6f8 url(../img/headerBg.png) no-repeat;
-    background-size: 125% 100%;
-    background-position: top center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+.header-scrolled {
+    position: fixed;
+    background-color: #131f2f;
+    transition: .6s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.header-scrolled .headerNavSocial {
+    display: none;
 }
 .header .wrapper {
-    height: 100vh;
+
 }
 .headerNavBlock {
 
@@ -213,10 +232,14 @@ h1 {
 }
 
 .headerContentBlock {
-    margin-top: 25px;
+
+}
+.headerContentBlock .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100vh;
+    padding-top: 210px;
 }
 .headerContent {
     display: flex;
@@ -291,7 +314,7 @@ h1 {
 }
 
 .header__videoBlock {
-    padding-top: 50px;
+    padding-top: 115px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -314,7 +337,7 @@ h1 {
 /*MAIN*/
 
 .main {
-    padding-top: 150px;
+
 }
 
 .main__titleBlock {
@@ -331,6 +354,13 @@ h1 {
 .main__titleBlock img {
     width: 597px;
     margin-top: 20px;
+}
+
+.main__firstBlock {
+    background: #f4f6f8 url(../img/headerBg.png) no-repeat;
+    background-size: 125% 100%;
+    background-position: top center;
+    margin-bottom: 70px;
 }
 
 .main__aboutBlock {
@@ -473,7 +503,7 @@ h1 {
     position: relative;
 }
 .main__mapBlockContentImg {
-    height: 1172px;
+    height: 1168px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -579,6 +609,7 @@ h1 {
 }
 .headerContent-marketing {
     align-items: center;
+    margin: 0 auto;
 }
 .headerContentText-marketing {
     text-align: center;
@@ -594,7 +625,7 @@ h1 {
     margin-bottom: 15px;
 }
 .header__investBlock {
-
+    padding-top: 115px;
 }
 .header__investBlock .wrapper {
     height: auto;
@@ -690,6 +721,9 @@ h1 {
     background-size: 125% 2000px;
     background-position: top center;
 }
+.header__parthnerBlock {
+    padding-top: 115px;
+}
 .header__parthnerBlock .wrapper{
     height: auto;
 }
@@ -776,6 +810,236 @@ h1 {
 
 
 /*PARTHNER END*/
+
+
+/*FAQ*/
+
+.main__faqItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+    min-height: 500px;
+}
+.main__faqItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 1049px;
+}
+.main__faqItemHeader {
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(#1f3153, #141f31);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 13px 23px 11px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1;
+    position: relative;
+}
+.main__faqItemHeader p {
+    font-family: Montserrat-Medium;
+    font-size:21.25px;
+    color: #fff;
+    line-height: 24.57px;
+    margin-left: 19px;
+}
+.main__faqItemHeaderText {
+    font-family: Montserrat-Medium;
+    font-size:21.25px;
+    color: #fff;
+    line-height: 24.57px;
+    margin-left: 19px;
+}
+.main__faqItemSignBlock {
+    width: 16px;
+    position: relative;
+}
+.main__faqItemSignMinus {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 16px;
+    height: 3px;
+    border-radius: 2px;
+}
+.main__faqItemSignPlus {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 16px;
+    height: 2px;
+    border-radius: 2px;
+    transform: rotate(90deg);
+}
+.main__faqItemContent{
+    width: calc(100% - 30px);
+    background-color: #fbfcfd;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 45px 36px 36px 45px;
+    display: none;
+    margin-top: -10px;
+}
+.main__faqItemContent p {
+    font-family:Montserrat-Light;
+    color: #424d52;
+    font-size: 17.93px;
+}
+.main__faqItemContentText {
+    font-family:Montserrat-Light;
+    color: #424d52;
+    font-size: 17.93px;
+}
+
+/*FAQ END*/
+
+
+/*NEWS*/
+
+.main__newsItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 67px;
+}
+.main__newsItem {
+    margin-bottom: 39px;
+    width: 1029px;
+    background: linear-gradient(#ffffff, #f4f3ea);
+    border-radius: 12px;
+    padding: 32px 30px 52px 72px;
+    border: 1px solid #0d1625;
+    display: flex;
+    flex-direction: column;
+}
+.main__newsItemDate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 27px;
+}
+.main__newsItemDateImg {
+    width: 18px;
+    height: 18px;
+}
+.main__newsItemDateText {
+    font-family:Montserrat-Regular;
+    color: #0d1625;
+    font-size: 17.39px;
+    margin-left: 7px;
+    margin-right: 17px;
+    line-height: 14px;
+}
+.main__newsItemTitle {
+    color: #0d1625;
+    font-family:Montserrat-Regular;
+    font-size: 27.89px;
+    width: 100%;
+    text-align: center;
+}
+.main__newsItemDelimiter {
+    width: 409px;
+    height: 2px;
+    margin: 17px auto 53px;
+}
+.main__newsItemContentBlock {
+    display: flex;
+    flex-direction: row;
+}
+.main__newsItemContentBlockImg {
+    width: 429px;
+    height: 264px;
+    object-fit: cover;
+    margin-right: 57px;
+}
+.main__newsItemContentBlockImgInText {
+    width: 429px;
+    height: 264px;
+    object-fit: cover;
+    margin-right: 57px;
+    margin-bottom: 36px;
+    float: left;
+}
+.main__newsItemContentBlockText {
+    color: #424d52;
+    font-family:Montserrat-Light;
+    font-size: 17.93px;
+    line-height: 24.57px;
+}
+.main__newsItemBtnBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 37px;
+}
+.main__newsItemBtn {
+    border-radius: 5px;
+    border: none;
+    width: 204px;
+    height: 36px;
+    background-color: #1c2f4b;
+    color: #fff;
+    font-family:Montserrat-SemiBold;
+    font-size: 15.44px;
+    cursor: pointer;
+}
+
+.main__paginator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1033px;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+.main__paginatorNumber {
+    border-radius: 5px;
+    border: none;
+    background-color: #1c2f4b;
+    color: #fff;
+    font-family: Montserrat-SemiBold;
+    font-size: 15.44px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 7px;
+    min-width: 35px;
+    margin: 2px;
+    border: 2px solid transparent;
+    transition: .3s ease-in-out;
+}
+.main__paginatorNumber a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.main__paginatorNumber:hover {
+    border: 2px solid #d8b147;
+}
+.main__paginatorNumber:hover a {
+    color: #d8b147;
+}
+.main__paginatorNumber-active {
+    border: 2px solid #d8b147;
+}
+.main__paginatorNumber-active a {
+    color: #d8b147;
+}
+
+/*NEWS END*/
 
 
 /*FOOTER*/
@@ -903,6 +1167,9 @@ h1 {
 }
 
 @media screen and (max-width: 1150px) {
+    .header-scrolled .headerNavSocial {
+        display: flex;
+    }
     .header__navWrapper {
         position: relative;
         z-index: 10;
@@ -922,7 +1189,7 @@ h1 {
         top: 0;
         z-index: 2;
     }
-    .headerContentBlock {
+    .headerContentBlock .wrapper {
         padding-top: 190px;
         margin-top: 0;
     }
@@ -1015,6 +1282,12 @@ h1 {
     .header__parthnerTableBlock {
         width: 100%;
     }
+    .main__faqItem {
+        width: 100%;
+    }
+    .main__newsItem {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1071px) {
@@ -1036,7 +1309,7 @@ h1 {
     .header .wrapper {
         height:auto;
     }
-    .headerContentBlock {
+    .headerContentBlock .wrapper {
         padding-top: 140px;
         flex-direction: column;
         align-items: center;
@@ -1088,16 +1361,32 @@ h1 {
         margin: 0;
     }
     .header__investBlock {
-        margin-top: 100px;
+        margin-top: 50px;
+        padding-top: 0;
     }
     .header__parthnerBlock {
-        margin-top: 100px;
+        margin-top: 50px;
+        padding-top:0;
     }
     .header-marketing {
         background-size: 125% 1600px;
     }
     .header-parther {
         background-size: 125% 1600px;
+    }
+    .main__newsItemContentBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__newsItemContentBlockImg {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .main__newsItemDelimiter {
+        margin-bottom: 40px;
+    }
+    .main__newsItem {
+        padding: 30px 30px 40px;
     }
 }
 
@@ -1159,8 +1448,8 @@ h1 {
         height:390px;
         margin-top: 50px;
     }
-    .headerContentBlock {
-        padding-top: 120px;
+    .headerContentBlock .wrapper {
+        padding-top: 70px;
     }
     .main {
         padding-top: 100px;
@@ -1182,6 +1471,15 @@ h1 {
     }
     .main__aboutBlockItems {
         margin-bottom: -70px;
+    }
+    .main__faqItemContent {
+        padding: 35px 26px 26px 35px;
+    }
+    .main__newsItemContentBlockImgInText {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
@@ -1216,7 +1514,7 @@ h1 {
 }
 
 @media screen and (max-width: 569px) {
-    .headerContentBlock {
+    .headerContentBlock .wrapper {
         width: 100%;
     }
     .headerContentLogo {
@@ -1243,6 +1541,16 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .main__newsItemContentBlockImg {
+        width: 100%;
+        height: auto;
+    }
+    .main__newsItemDelimiter {
+        width: calc(100% - 60px);
+    }
+    .main__newsItems {
+        margin-top: 40px;
     }
 }
 
@@ -1291,6 +1599,9 @@ h1 {
     .main__veneraTextBlockHeadline {
         margin-top: 60px;
     }
+    .main__newsItemContentBlockText {
+        font-size: 15.87px;
+    }
 }
 
 @media screen and (max-width: 435px) {
@@ -1304,6 +1615,21 @@ h1 {
     }
     .header__video {
         height:270px;
+    }
+    .main__newsItemTitle {
+        font-size: 23px;
+    }
+    .main__newsItemContentBlockImg {
+        margin-bottom: 20px;
+    }
+    .main__newsItemDelimiter {
+        margin-bottom: 20px;
+    }
+    .main__newsItemBtnBlock {
+        margin-top: 20px;
+    }
+    .main__newsItem {
+        padding: 20px;
     }
 }
 

@@ -1,0 +1,39 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: #030303;
+}
+
+
+
+.preloader {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+.preloader__gif {
+    transform: scale(0.5);
+}
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}

@@ -5,9 +5,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Venera Gold</title>
+	<link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $preloader = $('.preloader'),
+                $gif = $('.preloader').find('.preloader__gif');
+            $gif.delay(800).fadeOut('slow');
+            $preloader.delay(1000).fadeOut('slow');
+            $('body').addClass('bgc');
+        });
+    </script>
+    <div class="preloader">
+        <img src="assets/img/veneraLogoPreloader.gif" class="preloader__gif" />
+    </div>
     <header class="header">
         <div class="wrapper">
             <div class="header__navWrapper">
@@ -27,9 +43,9 @@
                     <div class="headerNavTopBlock">
                         <nav class="headerNav">
                             <a href="#" class="headerNavLink">ГЛАВНАЯ</a>
-                            <a href="#" class="headerNavLink">О КОМПАНИИ</a>
-                            <a href="#" class="headerNavLink">ПРОДУКТЫ</a>
-                            <a href="#" class="headerNavLink">РОДМЭП</a>
+                            <a href="#company" class="headerNavLink js-scroll-link">О КОМПАНИИ</a>
+                            <a href="#products" class="headerNavLink js-scroll-link">ПРОДУКТЫ</a>
+                            <a href="#roadmap" class="headerNavLink js-scroll-link">РОДМЭП</a>
                             <a href="#" class="headerNavLink">МАРКЕТИНГ</a>
                             <a href="#" class="headerNavLink">ПАРТНЕРАМ</a>
                         </nav>
@@ -64,40 +80,44 @@
                     </div>
                 </div>
             </div>
-            <div class="headerContentBlock">
-                <div class="headerContent">
-                    <img src="assets/img/logo.png" class="headerContentLogo" />
-                    <p class="headerContentText">
-                        Внебирживой сервис обмена и услуг
-                        с более чем 10ти летним опытом
-                    </p>
-                    <div class="headerContentButtons">
-                        <button class="headerContentButton">вход</button>
-                        <button class="headerContentButton">регистрация</button>
-                    </div>
-                </div>
-                <div class="headerContentImg">
-                    <img src="assets/img/gold.png" />
-                </div>
-            </div>
-            <a href="#video" class="headerScrollDownBtn js-scroll-link"><img src="assets/img/mouse.png" /></a>
-        </div>
-        <div class="header__videoBlock" id="video">
-            <div class="wrapper">
-                <div class="main__titleBlock">
-                    <h1 class="main__titleBlockText">Видео-промоушен</h1>
-                    <img src="assets/img/titleUnderline.png" />
-                </div>
-                <div class="header__video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WNeLUngb-Xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
         </div>
     </header>
     <main class="main">
-        <div class="main__aboutBlock">
+        <div class="main__firstBlock">
+            <div class="headerContentBlock">
+                <div class="wrapper">
+                    <div class="headerContent">
+                        <img src="assets/img/logo.png" class="headerContentLogo" />
+                        <p class="headerContentText">
+                            Внебирживой сервис обмена и услуг
+                            с более чем 10ти летним опытом
+                        </p>
+                        <div class="headerContentButtons">
+                            <button class="headerContentButton">вход</button>
+                            <button class="headerContentButton">регистрация</button>
+                        </div>
+                    </div>
+                    <div class="headerContentImg">
+                        <img src="assets/img/gold.png" />
+                    </div>
+                </div>
+            </div>
+            <a href="#video" class="headerScrollDownBtn js-scroll-link"><img src="assets/img/mouse.png" /></a>
+            <div class="header__videoBlock" >
+                <div class="wrapper">
+                    <div class="main__titleBlock" id="video">
+                        <h1 class="main__titleBlockText">Видео-промоушен</h1>
+                        <img src="assets/img/titleUnderline.png" />
+                    </div>
+                    <div class="header__video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WNeLUngb-Xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__aboutBlock" >
             <div class="wrapper">
-                <div class="main__titleBlock">
+                <div class="main__titleBlock" id="company">
                     <h1 class="main__titleBlockText">О компаниии</h1>
                     <img src="assets/img/titleUnderline.png" />
                 </div>
@@ -109,7 +129,7 @@
                         </div>
                         <p class="main__aboutBlockItemText">
                             С 2011го года мы осуществляем нашу деятельность на рынке
-                            внебиржевой торговли в Ев ропе, на Ближнем востоке и Азии.
+                            внебиржевой торговли в Европе, на Ближнем востоке и Азии.
                             Наша бизнес схема проста и эффективна - мы выступаем
                             в качестве поставщика, или брокера при заключении
                             внебиржевых сделок при покупке/продаже физического
@@ -161,9 +181,9 @@
                 </div>
             </div>
         </div>
-        <div class="main__productsBlock">
+        <div class="main__productsBlock" >
             <div class="wrapper">
-                <div class="main__titleBlock">
+                <div class="main__titleBlock" id="products">
                     <h1 class="main__titleBlockText main__titleBlockText-products">Наши продукты</h1>
                     <img src="assets/img/titleUnderline.png" />
                 </div>
@@ -266,7 +286,7 @@
         </div>
         <div class="main__mapBlock">
             <div class="wrapper">
-                <div class="main__titleBlock">
+                <div class="main__titleBlock"  id="roadmap">
                     <h1 class="main__titleBlockText">Дорожная карта</h1>
                     <img src="assets/img/titleUnderline.png" />
                 </div>
@@ -468,9 +488,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
