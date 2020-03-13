@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ШЭЛ Весенняя акция</title>
+    <link rel="stylesheet" href="OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <nav class="header__nav">
+                <a href="#about" class="header__navLink js-scroll-link">О ШКОЛЕ</a>
+                <a href="#program" class="header__navLink js-scroll-link">ПРОГРАММА ОБУЧЕНИЯ</a>
+                <a href="#gets" class="header__navLink js-scroll-link">ЧТО ДАЕТ</a>
+                <a href="#training" class="header__navLink js-scroll-link">ВЫГОДЫ</a>
+            </nav>
+            <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
+            <label for="checkbox2">
+                <div class="hamburger hamburger2">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="header__animateBlock">
+            <nav class="header__nav header__nav-mobile">
+                <a href="#about" class="header__navLink js-scroll-link">О ШКОЛЕ</a>
+                <a href="#program" class="header__navLink js-scroll-link">ПРОГРАММА ОБУЧЕНИЯ</a>
+                <a href="#gets" class="header__navLink js-scroll-link">ЧТО ДАЕТ</a>
+                <a href="#training" class="header__navLink js-scroll-link">ВЫГОДЫ</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__school">
+            <div class="wrapper">
+                <h1 class="main__headline">ШКОЛА ЭФФЕКТИВНЫХ <span>ЛИДЕРОВ</span></h1>
+                <div class="main__schoolPDFBlock">
+                    <div class="main__schoolPDF">
+                        <p class="main__schoolPDFName">ВАШ ПОДАРОК</p>
+                        <p class="main__schoolPDFText">5 ПРИНЦИПОВ УСПЕШНОГО ПОВЕДЕНИЯ</p>
+                        <a href="#" class="button-download">СКАЧАТЬ PDF</a>
+                    </div>
+                    <img src="img/icon.png" alt="icon" class="main__schoolPDFIcon" />
+                </div>
+                <div class="main__schoolGetBlock">
+                    <p class="main__schoolGetText">
+                        Уникальная возможность получить доступ к закрытой премиальной программе обучения Школы Эффективных Лидеров.
+                    </p>
+                    <p class="main__schoolGetText">
+                        Только с 15 по 31 марта <span>беспрецедентная скидка 75%</span> на премиальную программу обучения.
+                    </p>
+                    <p class="main__schoolGetText">
+                        В рамках весенней акции у Вас есть возможность получить доступ к уникальным материалам Школы
+                    </p>
+                    <p class="main__schoolGetText">
+                        <span>Всего за 75 евро вместо <span class="line"> 300 евро.</span></span>
+                    </p>
+                    <a class="button button-get">ПОЛУЧИТЬ ДОСТУП -75%</a>
+                </div>
+            </div>
+        </div>
+        <div class="main__about" id="about">
+            <div class="wrapper">
+                <h1 class="main__headline main__headline-medium">О ШКОЛЕ ЭФФЕКТИВНЫХ <span>ЛИДЕРОВ</span></h1>
+                <div class="main__aboutTextBlock">
+                    <p class="main__aboutText">
+                        ШЭЛ существует с 2000 года и предлагает отработанную временем программу обучения
+                        «Эффективный Лидер», которая гарантировано способствует личному и социальному успеху.
+                    </p>
+                    <p class="main__aboutText">
+                        Программа обучения ШЭЛ включает 33 авторских курса и разделены на 5 блоков, общей
+                        продолжительностью 1380 часов (69 недель) или 16 месяцев.
+                    </p>
+                    <p class="main__aboutText">
+                        Для прохождения обучения в школе необходимо иметь статус члена клуба, который,
+                        открывает доступ к обучающим материалам и предоставляет существенные льготы в
+                        сообществе ШЭЛ (скидки на спецкурсы и семинары).
+                    </p>
+                </div>
+                <a class="button button-be">СТАТЬ ЧЛЕНОМ КЛУБА -75%</a>
+            </div>
+        </div>
+        <div class="main__program" id="program">
+            <div class="wrapper">
+                <h1 class="main__headline">ПРОГРАММА ОБУЧЕНИЯ</h1>
+                <p class="main__programUnderHeadline">МОДУЛЬ СДЕЛАТЬ СЕБЯ</p>
+                <div class="main__programBlock">
+                    <p class="main__programSubject">9 КУРСОВ ЗА 75 ЕВРО ВМЕСТО <span>300 ЕВРО</span></p>
+                    <div class="main__programItems">
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">ЭЛЕМЕНТЫ ПСИХОЛОГИИ</p>
+                            </div>
+                            <a class="main__programItemMore" id="0">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">ПОСТИНДУСТРИАЛЬНАЯ ЦИВИЛИЗАЦИЯ</p>
+                            </div>
+                            <a class="main__programItemMore" id="1">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">ШАГИ К ЛИЧНОСТНОМУ РОСТУ</p>
+                            </div>
+                            <a class="main__programItemMore" id="2">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">АУТОТРЕНИНГ</p>
+                            </div>
+                            <a class="main__programItemMore" id="3">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">СТРАТЕГИЯ ВАШЕЙ СВОБОДЫ</p>
+                            </div>
+                            <a class="main__programItemMore" id="4">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">СМЕНА УСТАНОВКИ</p>
+                            </div>
+                            <a class="main__programItemMore" id="5">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">ЗДОРОВЬЕ И ПСИХИЧЕСКАЯ УСТОЙЧИВОСТЬ</p>
+                            </div>
+                            <a class="main__programItemMore" id="6">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="main__programItem">
+                            <div class="main__programItemBlock">
+                                <span class="main__programItemCircle"></span>
+                                <p class="main__programItemText">ВЛАДЕНИЕ СОБСТВЕННЫМ ТЕЛОМ</p>
+                            </div>
+                            <a class="main__programItemMore" id="7">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="button button-program">СТАТЬ ЧЛЕНОМ КЛУБА -75%</a>
+            </div>
+        </div>
+        <div class="main__gets" id="gets">
+            <div class="wrapper">
+                <p class="main__getsHeadline">ЧТО ТЫ ПОЛУЧИШЬ ПОСЛЕ ПРОХОЖДЕНИЯ НАШЕЙ ПРОГРАММЫ?</p>
+                <div class="main__getsItems">
+                    <div class="main__getsItem">
+                        <span class="main__getsItemCircle"></span>
+                        <p class="main__getsItemText">
+                            Будешь спокойным и уверенным, избавишься от страхов, слабостей, нытья и прочих преград для успеха
+                        </p>
+                    </div>
+                    <div class="main__getsItem">
+                        <span class="main__getsItemCircle"></span>
+                        <p class="main__getsItemText">
+                            Научишься общаться: узнаешь, как продавливать свой интерес в деловом общении
+                            и как возбуждать партнера в личном общении
+                        </p>
+                    </div>
+                    <div class="main__getsItem">
+                        <span class="main__getsItemCircle"></span>
+                        <p class="main__getsItemText">
+                            Узнаешь, что такое лидерство и власть, сможешь стать на путь эффективного лидера
+                        </p>
+                    </div>
+                    <div class="main__getsItem">
+                        <span class="main__getsItemCircle"></span>
+                        <p class="main__getsItemText">
+                            Обретешь адекватные реальности представления о современном мире, экономике и обществе
+                        </p>
+                    </div>
+                </div>
+                <a class="button button-gets">ОТКРЫТЬ КУРСЫ -75%</a>
+            </div>
+        </div>
+        <div class="main__training" id="training">
+            <div class="wrapper">
+                <p class="main__trainingText">
+                    Для того чтобы стать членом клуба, необходимо внести вступительный взнос.
+                    Обычная стоимость всех курсов модуля СДЕЛАТЬ СЕБЯ составляет 300 евро. В
+                    течении периода действия акции все эти курсы можно <span>получить всего за 75 евро!</span>
+                </p>
+                <p class="main__trainingText">
+                    Для получения доступа Вам необходимо внести вступительный взнос, после чего Вам будут
+                    предоставлены пароль и логин с доступом к системе и открытие курса модуля СДЕЛАТЬ СЕБЯ
+                </p>
+                <a class="button button-training">СТАТЬ ЧЛЕНОМ КЛУБА И НАЧАТЬ ОБУЧЕНИЕ ПРЯМО СЕЙЧАС</a>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__navLink">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
+                        <a class="footer__navLink footer__navLink-mail">SUPPORT@LSG.RU</a>
+                        <a href="tel:+7 (499) 348 24 19" class="footer__navLink">+7 (499) 348 24 19</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modalPay" onclick="void(0)">
+        <div class="modalPay__content">
+            <svg class="modalPay__close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C6.71371 0 0 6.71371 0 15C0 23.2863 6.71371 30 15 30C23.2863 30 30 23.2863 30 15C30 6.71371 23.2863 0 15 0ZM15 27.0968C8.31653 27.0968 2.90323 21.6835 2.90323 15C2.90323 8.31653 8.31653 2.90323 15 2.90323C21.6835 2.90323 27.0968 8.31653 27.0968 15C27.0968 21.6835 21.6835 27.0968 15 27.0968ZM21.1573 11.2379L17.3952 15L21.1573 18.7621C21.4415 19.0464 21.4415 19.506 21.1573 19.7903L19.7903 21.1573C19.506 21.4415 19.0464 21.4415 18.7621 21.1573L15 17.3952L11.2379 21.1573C10.9536 21.4415 10.494 21.4415 10.2097 21.1573L8.84274 19.7903C8.55847 19.506 8.55847 19.0464 8.84274 18.7621L12.6048 15L8.84274 11.2379C8.55847 10.9536 8.55847 10.494 8.84274 10.2097L10.2097 8.84274C10.494 8.55847 10.9536 8.55847 11.2379 8.84274L15 12.6048L18.7621 8.84274C19.0464 8.55847 19.506 8.55847 19.7903 8.84274L21.1573 10.2097C21.4415 10.494 21.4415 10.9536 21.1573 11.2379V11.2379Z" fill="white"/>
+            </svg>
+            <p class="modalPay__text">
+                Перед выбором системы оплаты просьба ввести Ваш Email.
+                На него будет зарегистрирован аккаунт в системе СДО ШЭЛ 3.0
+            </p>
+            <input class="modalPay__input" placeholder="example@gmail.com" />
+            <a class="button-pay">ОПЛАТИТЬ</a>
+        </div>
+    </div>
+    <div class="modalProgram" onclick="void(0)">
+        <div class="modalProgram__content">
+            <svg class="modalProgram__close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C6.71371 0 0 6.71371 0 15C0 23.2863 6.71371 30 15 30C23.2863 30 30 23.2863 30 15C30 6.71371 23.2863 0 15 0ZM15 27.0968C8.31653 27.0968 2.90323 21.6835 2.90323 15C2.90323 8.31653 8.31653 2.90323 15 2.90323C21.6835 2.90323 27.0968 8.31653 27.0968 15C27.0968 21.6835 21.6835 27.0968 15 27.0968ZM21.1573 11.2379L17.3952 15L21.1573 18.7621C21.4415 19.0464 21.4415 19.506 21.1573 19.7903L19.7903 21.1573C19.506 21.4415 19.0464 21.4415 18.7621 21.1573L15 17.3952L11.2379 21.1573C10.9536 21.4415 10.494 21.4415 10.2097 21.1573L8.84274 19.7903C8.55847 19.506 8.55847 19.0464 8.84274 18.7621L12.6048 15L8.84274 11.2379C8.55847 10.9536 8.55847 10.494 8.84274 10.2097L10.2097 8.84274C10.494 8.55847 10.9536 8.55847 11.2379 8.84274L15 12.6048L18.7621 8.84274C19.0464 8.55847 19.506 8.55847 19.7903 8.84274L21.1573 10.2097C21.4415 10.494 21.4415 10.9536 21.1573 11.2379V11.2379Z" fill="black"/>
+            </svg>
+            <div class="modalProgram__contentData">
+
+            </div>
+        </div>
+    </div>
+    <div class="modalProgramItems">
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">ЭЛЕМЕНТЫ ПСИХОЛОГИИ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">ПОСТИНДУСТРИАЛЬНАЯ ЦИВИЛИЗАЦИЯ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">ШАГИ К ЛИЧНОСТНОМУ РОСТУ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">АУТОТРЕНИНГ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">СТРАТЕГИЯ ВАШЕЙ СВОБОДЫ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">СМЕНА УСТАНОВКИ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">ЗДОРОВЬЕ И ПСИХИЧЕСКАЯ УСТОЙЧИВОСТЬ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modalProgramItem">
+            <h1 class="modalProgram__headline">ВЛАДЕНИЕ СОБСТВЕННЫМ ТЕЛОМ</h1>
+            <div class="modalProgram__block">
+                <div class="modalProgram__imgBlock">
+                    <img src="img/program/program0.jpg" alt="img" class="modalProgram__img" />
+                </div>
+                <div class="modalProgram__textBlock">
+                    <p class="modalProgram__text">
+                        В рамках курса в популярной форме разъясняются основные понятия и идеи психологии,
+                        которые затем понадобятся нам в практической работе над собой, в освоении тренингов
+                        и учебного материала - бессознательное, память, мышление, внимание, эмоции, реципрокность
+                        полушарий мозга, стресс, фрустрация, сексуальность и многое другое. В этом вводном курсе
+                        курсанты знакомятся с нашей психологической концепцией.
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Практическая информация и знания:</span>
+                    </p>
+                    <p class="modalProgram__text modalProgram__text-margin">
+                        инстинкты и бессознательное;<br>
+                        сон и сновидения, природа сексуальности, сексуальность в культурном контексте и ее невроз;<br>
+                        психика, мозг, мышление, речь, логика и память;<br>
+                        процесс социализации, символы и личность;<br>
+                        эмоции, стресс, эмпатия.<br>
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Продолжительность курса:</span> 2 недели / 14 учебных дней / 40 учебных часов
+                    </p>
+                    <p class="modalProgram__text">
+                        <span>Стоимость курса:</span> 41 КЭЛ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
