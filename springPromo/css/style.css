@@ -41,7 +41,9 @@ html, body {
     padding: 0 39px;
     cursor: pointer;
     outline: none;
-    transition: background .3s;
+    transition: background .3s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 .button:hover {
     background: #ea6623;
@@ -147,7 +149,7 @@ html, body {
     cursor: pointer;
     border: none;
     outline: none;
-    transition: background .3s;
+    transition: background .3s ease-in-out;
 }
 .success__dataCopyBtn:hover {
     background: rgba(255, 255, 255, 0.3);
