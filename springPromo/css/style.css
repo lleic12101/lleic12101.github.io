@@ -1001,6 +1001,10 @@ h1 {
     .main__trainingText {
         margin-bottom: 25px;
     }
+	.button-training {
+		padding: 14px 22px;
+		height: auto;
+	}
 }
 /*MEDIA 556px END*/
 
@@ -1048,7 +1052,7 @@ h1 {
 
     .button-training {
         height: auto;
-        padding: 3px 22px;
+        padding: 14px 22px;
     }
     .button-get {
         left: 50%;
