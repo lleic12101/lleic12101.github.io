@@ -1,0 +1,306 @@
+﻿@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('../fonts/Oswald-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*BUTTON*/
+.button {
+    height: 48px;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    line-height: 19px;
+    color:#fff;
+    background: #CC6423;
+    border: 0.2px solid #000000;
+    box-shadow: 0px 0px 40px rgba(236, 225, 161, 0.6);
+    border-radius: 40px;
+    padding: 0 39px;
+    cursor: pointer;
+    outline: none;
+    transition: background .3s;
+}
+.button:hover {
+    background: #ea6623;
+}
+/*BUTTON END*/
+
+
+/*SUCCESS PAGE*/
+.main-success {
+    height: 100%;
+    background: url(../img/bgSuccess.jpg) no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 82px;
+}
+
+.success__headline {
+    font-family: Oswald-Light;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+.success__text {
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.success__text-under {
+    line-height: 24px;
+}
+
+.success__dataBlock {
+    width: 628px;
+    height: 288px;
+    background: #4235C4;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 11px 20px 0px;
+}
+.success__dataText {
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 61px;
+}
+.success__dataText-high {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    color: #fff;
+    text-align: center;
+}
+.success__dataInputBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 16px;
+}
+.success__dataInput {
+    margin-left: 42px;
+    width: 236px;
+    background-color: transparent;
+    color: #FFE345;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 18px;
+    border: none;
+}
+.success__dataCopyBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background .3s;
+}
+.success__dataCopyBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.button-success {
+    position: absolute;
+    bottom: -24px;
+}
+
+.success__supportBlock {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.success__supportBlockText {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+}
+.success__supportBlockText a {
+    text-decoration: none;
+}
+.success__supportMailBlock {
+    display: flex;
+    flex-direction: row;
+    margin-left: 109px;
+    padding: 28px 69px 28px 24px;
+    background-color: #fff;
+    border: 0.5px solid #E3E0E0;
+    border-radius: 2px;
+}
+.success__supportMailBlock p:first-child {
+    margin-right: 139px;
+}
+/*SUCCESS PAGE END*/
+
+
+/*SUCCESS MEDIA*/
+
+/*MEDIA 946px*/
+@media screen and (max-width: 946px) {
+    .success__supportBlock {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .success__supportMailBlock {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+/*MEDIA 946px END*/
+
+/*MEDIA 798px*/
+@media screen and (max-height: 798px) {
+    .main-success {
+        height: auto;
+    }
+}
+/*MEDIA 798px END*/
+
+/*MEDIA 658px*/
+@media screen and (max-width: 658px) {
+    .success__dataBlock {
+        width: 100%;
+    }
+}
+/*MEDIA 658px END*/
+
+/*MEDIA 576px*/
+@media screen and (max-width: 576px) {
+    .success__supportMailBlock p:first-child {
+        margin-right: 3px;
+    }
+    .success__supportBlock {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .success__supportMailBlock {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+/*MEDIA 576px END*/
+
+/*MEDIA 470px*/
+@media screen and (max-width: 470px) {
+    .success__dataBlock {
+        margin-top: 30px;
+        height: auto;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+    }
+    .success__headline {
+        margin-bottom: 25px;
+    }
+    .success {
+        margin-bottom: 20px;
+    }
+    .success__dataInput {
+        width: 150px;
+    }
+    .button-success {
+        margin: 0 15px;
+        transform: translateX(-15px);
+    }
+}
+/*MEDIA 470px END*/
+
+/*MEDIA 420px*/
+@media screen and (max-width: 420px) {
+    .main-success {
+        height: 100%;
+    }
+}
+/*MEDIA 420px END*/
+
+/*MEDIA 406px*/
+@media screen and (max-width: 406px) {
+    .success__headline {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .success {
+        margin-top: 30px;
+    }
+    .success__dataBlock {
+        margin-top: 25px;
+    }
+    .success__supportBlock {
+        margin-top: 30px;
+    }
+    .success__dataInput {
+        width: 100px;
+        margin-left: 20px;
+    }
+    .button-success {
+        padding: 0 35px;
+    }
+    .success__supportBlockText {
+        text-align: center;
+    }
+}
+/*MEDIA 406px END*/
+
+/*MEDIA 360px*/
+@media screen and (max-width: 360px) {
+    .main-success {
+        height: auto;
+    }
+}
+/*MEDIA 360px END*/
+
+/*SUCCESS MEDIA END*/
