@@ -538,6 +538,17 @@ h1 {
 .footer__logo {
     margin-bottom: 7px;
 }
+.footer__infoBlockLogo {
+    font-family: Oswald-Regular;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+}
+.footer__infoBlockLogo span {
+    font-family: Oswald-DemiBold;
+    font-size: 42px;
+    color: #FFE345;
+}
 .footer__infoBlock {
     display: flex;
     flex-direction: column;
