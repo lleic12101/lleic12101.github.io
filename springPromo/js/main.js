@@ -1,17 +1,10 @@
 ﻿var doc = document;
 
 //Scroll To obj
-if(document.documentElement.clientWidth > 619) {
+if (document.documentElement.clientWidth > 556) {
     link = $('.js-scroll-link');
     link.on('click', function () {
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1500);
-    });
-} else if (document.documentElement.clientWidth > 556) {
-    link = $('.js-scroll-link');
-    link.on('click', function () {
-        var scrollTo = ($('main').offset().top + 48)*-1;
+        var scrollTo = ($('main').offset().top + 72)*-1;
         var id = $(this).attr('href'),
             top = $(id).offset().top;
         scrollTo += top;
@@ -91,6 +84,16 @@ doc.querySelector('.modalPay__input').addEventListener("input", function () {
     } else {
         $('.button-pay').removeClass('button-pay-active');
     }
+    if(doc.querySelector('.modalPay__input').value.trim() !== "") {
+        $('.modalPay__input').removeClass("modalPay__input-error");
+    }
+});
+doc.querySelector('.button-pay').addEventListener("click", function () {
+   if(doc.querySelector('.modalPay__input').value.trim() === "") {
+       $('.modalPay__input').addClass("modalPay__input-error");
+   } else {
+       $('.modalPay__input').removeClass("modalPay__input-error");
+   }
 });
 
 

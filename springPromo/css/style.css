@@ -161,7 +161,7 @@ h1 {
 
 /*MAIN PAGE*/
 .header {
-    width: 100vw;
+    width: 100%;
     height: 72px;
     position: relative;
     z-index: 1;
@@ -171,10 +171,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 72px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    position: relative;
+    position: fixed;
     z-index: 1;
+    top:0;
+    background-color: #3B2EAE;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .header__nav {
     display: flex;
@@ -492,7 +495,7 @@ h1 {
     line-height: 24px;
     color: #fff;
     max-width: 819px;
-    margin-bottom: 112px;
+    margin-bottom: 70px;
     text-align: center;
 }
 .main__trainingText span {
@@ -505,33 +508,70 @@ h1 {
     margin-top: 20px;
 }
 .footer {
-    height: 81px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     width: 100vw;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 123px;
+    margin-top: 90px;
+    padding: 21px 0 46px;
 }
-.footer__nav {
+.footer .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
-.footer__navLink {
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
+.footer__logo {
+    margin-bottom: 7px;
+}
+.footer__infoBlock {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    align-items: center;
+    min-height: 109px;
+}
+.footer__infoBlock-img {
+    justify-content: center;
+}
+.footer__infoHeadline {
+    margin-bottom: 26px;
+    color: #FFE345;
     font-family: Oswald-Regular;
     font-size: 18px;
-    color: #fff;
 }
-.footer__navLink:hover {
-    border-bottom: 1px solid #fff;
-}
-.footer__navLink-mail:hover {
+.footer__infoText {
     border-bottom: 1px solid transparent;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 18px;
+}
+.footer__infoText:hover {
+    border-bottom: 1px solid white;
+}
+.footer__infoText-mail {
+    cursor: default;
+}
+.footer__infoText-mail:hover {
+    border-bottom: 1px solid transparent;
+}
+.footer__infoSocialBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 21px;
+}
+.footer__infoSocial {
+    margin-right: 20px;
+}
+.footer__infoSocial:last-child {
+    margin-right: 0;
 }
 /*MAIN PAGE END*/
 
@@ -589,6 +629,12 @@ h1 {
     font-size: 16px;
     line-height: 16px;
     border: none;
+    box-shadow: inset 0px 1px 3px #BDBABA;
+    border: 2px solid transparent;
+    transition: border .3s ease-in-out;
+}
+.modalPay__input-error {
+    border: 2px solid #CC3A23;
 }
 .button-pay {
     height: 48px;
@@ -779,6 +825,10 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
+
+    .footer .wrapper {
+        justify-content: space-around;
+    }
 }
 /*MEDIA 1032px END*/
 
@@ -871,8 +921,6 @@ h1 {
 /*MEDIA 619px*/
 @media screen and (max-width: 619px) {
     .header__content {
-        position: fixed;
-        top: 0;
         height: 48px;
         background-color: #3B2EAE;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -1005,6 +1053,24 @@ h1 {
 		padding: 14px 22px;
 		height: auto;
 	}
+
+    .footer__infoBlock-img {
+        margin-top: 20px;
+    }
+    .footer__infoSocialBlock {
+        margin-top: 0;
+    }
+    .footer__infoHeadline {
+        margin-bottom: 15px;
+    }
+    .footer__infoBlock {
+        margin-bottom: 10px;
+        min-height: auto;
+    }
+    .footer__infoBlock:last-child {
+        margin-bottom: 20px;
+    }
+
 }
 /*MEDIA 556px END*/
 
