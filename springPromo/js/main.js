@@ -19,6 +19,7 @@ if (document.documentElement.clientWidth > 556) {
         scrollTo += top;
         $('.checkbox2').prop('checked', false);
         $('.header__animateBlock').slideUp();
+        $('.header__closebleMask').hide();
         $('body,html').animate({ scrollTop: scrollTo }, 1500);
     });
 }
@@ -99,5 +100,11 @@ doc.querySelector('.button-pay').addEventListener("click", function () {
 
 //hamburger
 doc.querySelector('.hamburger').addEventListener("click",function () {
+    $('.header__closebleMask').toggle();
     $('.header__animateBlock').slideToggle();
+});
+doc.querySelector('.header__closebleMask').addEventListener("click", function () {
+    $('.checkbox2').prop('checked', false);
+    $('.header__animateBlock').slideUp();
+    $('.header__closebleMask').hide();
 });

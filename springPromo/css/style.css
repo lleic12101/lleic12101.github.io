@@ -199,6 +199,16 @@ h1 {
 .header__navLink:hover {
     border-bottom: 1px solid #FFE345;
 }
+.header__closebleMask {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: transparent;
+    display: none;
+}
 
 .main {
     width: 100%;
