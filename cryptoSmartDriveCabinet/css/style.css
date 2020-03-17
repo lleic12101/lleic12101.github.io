@@ -23,27 +23,22 @@
     font-style: normal;
 }
 
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
 html, body {
     overflow-x: hidden;
+    min-height: 100%;
 }
-
 body {
     background: linear-gradient(126deg, #03040f, #101223);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 15px;
-}
-
-
-.wrapper {
-    width: 1364px;
 }
 
 
@@ -159,7 +154,7 @@ h1 {
 /*HEADER END*/
 
 
-/*MAIN*/
+/*CABINET*/
 .main {
     max-width: 1364px;
     width: 100%;
@@ -322,12 +317,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding: 0 42px 42px;
+    width: 100%;
 }
 .main__contentHeadline {
     color: #fff;
     font-family: Mont-Light;
     font-size: 27.09px;
     margin-top: 33px;
+    font-weight: 300;
 }
 .main__contentHeadline-cabinet {
     margin-top: 47px;
@@ -524,11 +521,9 @@ h1 {
 .main__cabinetWayInfoItem-test .main__cabinetWayInfoCircleLight {
     background: radial-gradient(#101725, transparent 70%);
 }
+/*CABINET END*/
 
-/*MAIN END*/
-
-
-/*MAIN MEDIA*/
+/*CABINET MEDIA*/
 @media screen and (max-width: 1430px){
     .main__cabinetWayInfoItems {
         justify-content: space-around;
@@ -659,7 +654,243 @@ h1 {
         width: 112px;
     }
 }
-/*MAIN MEDIA END*/
+/*CABINET MEDIA END*/
+
+
+/*LINKS*/
+.main__linksShareBlock {
+    display: flex;
+    flex-direction: row;
+    max-width: 939px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+.main__linksQrBlock {
+    width: 477px;
+    height: 232px;
+    border-radius: 12px;
+    padding: 33px 30px 0;
+    box-shadow: -5px -5px 5px #171b2f, 5px 5px 5px #05070f;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main__linksQrTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+.main__linksQrText {
+    color: #fff;
+    font-family: Mont-Light;
+    font-size: 14.63px;
+}
+.main__linksQrText-headline {
+    font-size: 16.67px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main__linksQrImg {
+    max-width: 145px;
+    margin-top: 12px;
+}
+.main__linksSocialBlock {
+    width: 416px;
+    height: 232px;
+    border-radius: 12px;
+    padding: 33px 30px 0;
+    box-shadow: -5px -5px 5px #171b2f, 5px 5px 5px #05070f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__linksSocialItems {
+    display: flex;
+    flex-direction: row;
+    max-width: 303px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.main__linksSocialItem {
+    cursor: default;
+    width: 56px;
+    height: 56px;
+    position: relative;
+}
+.main__linksSocialItemImg {
+    width: 116px;
+    height: 116px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+}
+.main__linksSocialItemHover {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+.main__linksAdBlock {
+    max-width: 939px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    padding: 0 50px;
+    box-shadow: -5px -5px 5px #171b2f, 5px 5px 5px #05070f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 57px;
+}
+.main__linksAdItems {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    margin-bottom: 22px;
+}
+.main__linksAdItem {
+    max-width: 383px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 26px;
+}
+.main__linksAdItemText {
+    font-family: Mont-Light;
+    font-size: 14.63px;
+    color: #fff;
+    margin-bottom: 17px;
+}
+.main__linksAdItemBanner {
+    background-color: #fff;
+}
+.main__linksAdItemBanner-1 {
+    width: 137px;
+    height: 108px;
+}
+.main__linksAdItemBanner-2 {
+    width: 263px;
+    height: 93px;
+}
+.main__linksAdItemBanner-3 {
+    width: 340px;
+    height: 69px;
+}
+.main__linksAdItemBanner-4 {
+    width: 383px;
+    height: 127px;
+}
+/*LINKS END*/
+
+/*LINKS MEDIA*/
+@media screen and (max-width: 1374px){
+    .main__linksShareBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__linksQrBlock {
+        margin-bottom: 30px;
+    }
+    .main__linksAdBlock {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .main__linksAdItems {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 610px) {
+    .main__linksAdBlock {
+        padding: 0 30px;
+    }
+    .main__linksAdItemBanner {
+        transform: scale(.8);
+    }
+    .main__linksAdItemText {
+        margin-bottom: 0;
+    }
+    .main__linksAdItems {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    .main__linksAdItem {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 596px){
+    .main__linksQrBlock {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        padding: 30px;
+        width: auto;
+    }
+    .main__linksQrImg {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .main__linksQrTextBlock {
+        align-items: center;
+        margin-right: 0;
+    }
+    .main__linksQrText-headline {
+        margin-bottom: 5px;
+    }
+    .main__linksSocialBlock {
+        height: auto;
+        padding: 30px;
+        width: auto;
+    }
+    .main__linksSocialItems {
+        flex-wrap: wrap;
+        margin-top: 15px;
+        justify-content: space-around;
+    }
+    .main__linksSocialItem {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main__linksAdItemBanner {
+        transform: scale(.6);
+    }
+    .main__linksAdBlock {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__linksQrBlock {
+        padding: 15px;
+    }
+    .main__linksSocialBlock {
+        padding: 15px;
+    }
+    .main__linksShareBlock {
+        margin-top: 25px;
+    }
+    .main__linksAdBlock {
+        padding: 0 15px;
+    }
+    .main__linksAdItem:last-child {
+        margin-bottom: 0px;
+    }
+}
+/*LINKS MEDIA END*/
 
 
 /*ICONS*/
