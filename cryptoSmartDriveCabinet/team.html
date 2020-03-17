@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Smart Drive</title>
+    <link rel="stylesheet" href="OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__buttonBlock">
+            <a href="#" class="header__button">Главная</a>
+        </div>
+        <div class="header__buttonBlock">
+            <a href="#" class="header__button">Выход <span class="icon-power"></span></a>
+        </div>
+    </header>
+    <main class="main">
+        <aside class="main__aside">
+            <div class="main__asideHeader">
+                <div class="main__asideHeaderLogoBlock">
+                    <p class="main__asideHeaderText">CryptoSmartDrive</p>
+                    <img class="main__asideHeaderLogo" src="img/logo.png" alt="logo" />
+                </div>
+                <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
+                <label for="checkbox2">
+                    <div class="hamburger hamburger2">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+            <div class="main__asideItemsSlideBlock">
+                <div class="main__asideItems">
+                    <a href="#" class="main__asideItem">
+                        <p class="main__asideItemText"><span class="icon-user"></span>Личный кабинет</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-statistic" src="img/icons/statistics.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Статистика</p>
+                    </a>
+                    <a href="#" class="main__asideItem main__asideItem-active">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-refs" src="img/icons/refs.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Моя команда</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-upline" src="img/icons/population.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Партнерская программа</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-bag" src="img/icons/money-bag.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Лотерея</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <p class="main__asideItemText"><span class="icon-dollar"></span>Вывод средств</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-mail" src="img/icons/mail.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Внутренняя почта</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-support" src="img/icons/support.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Техническая поддержка</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-logout" src="img/icons/logout.png" alt="logout" />
+                        </div>
+                        <p class="main__asideItemText">Выход</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="main__contentBlock">
+            <div class="main__contentHeader">
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Ваш id</p>
+                    <p class="main__contentHeaderText main__contentHeaderText-gray">5651</p>
+                </div>
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Всего заработано</p>
+                    <p class="main__contentHeaderText main__contentHeaderText-gray">822.25 ETH</p>
+                </div>
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Партнерская ссылка</p>
+                    <input class="main__contentHeaderText main__contentHeaderText-gray main__contentHeaderText-input" value="https://cryptosmartdive.com/ru/?aft=1" />
+                </div>
+            </div>
+            <div class="main__content">
+                <h1 class="main__contentHeadline main__contentHeadline-cabinet">Моя команда</h1>
+                <div class="main__contentWays">
+                    <div class="main__contentWay main__contentWay-active" id="businessWay">
+                        <img src="img/ways/business.png" alt="business" class="main__contentWayImg" />
+                        <div class="main__contentWayHover"></div>
+                        <img src="img/ways/business-active.png" alt="business" class="main__contentWayImg main__contentWayImg-light" />
+                    </div>
+                    <div class="main__contentWay" id="basisWay">
+                        <img src="img/ways/basis.png" alt="basis" class="main__contentWayImg" />
+                        <div class="main__contentWayHover"></div>
+                        <img src="img/ways/basis-active.png" alt="basis" class="main__contentWayImg main__contentWayImg-light" />
+                    </div>
+                    <div class="main__contentWay" id="economWay">
+                        <img src="img/ways/econom.png" alt="econom" class="main__contentWayImg" />
+                        <div class="main__contentWayHover"></div>
+                        <img src="img/ways/econom-active.png" alt="econom" class="main__contentWayImg main__contentWayImg-light" />
+                    </div>
+                    <div class="main__contentWay" id="testWay">
+                        <img src="img/ways/test.png" alt="test" class="main__contentWayImg" />
+                        <div class="main__contentWayHover"></div>
+                        <img src="img/ways/test-active.png" alt="test" class="main__contentWayImg main__contentWayImg-light main__contentWayImg-light-test" />
+                    </div>
+                </div>
+                <div class="main__contentWaysContent">
+                    <div class="main__contentWayContent main__contentWayContent-team main__contentWayContent-active" id="business">
+                        <div class="main__teamLevelItems main__teamStructureCircleAndText-business">
+                            <a href="#" class="main__teamLevelItemText">1 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">2 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">3 ур.</a>
+                            <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">4 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">5 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">6 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">7 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">8 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">9 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">10 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">11 ур.</a>
+                        </div>
+                        <div class="main__teamBlock">
+                            <div class="main__teamButtonsItems">
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText">Поиск рефералов</p>
+                                    <input type="text" class="main__teamButtonsItemInput" />
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Найти</a>
+                                    </div>
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 1й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 2й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                            </div>
+                            <div class="main__teamStructure">
+                                <p class="main__teamStructureHeadline">Струткура рефeрала id№5321</p>
+                                <div class="main__teamStructureBlock">
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-crown main__teamStructureCircleAndText-business">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-center main__teamStructureCircleAndText-business">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCenter"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-1"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-2"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-3"></div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-left main__teamStructureCircleAndText-business">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-right main__teamStructureCircleAndText-business">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__teamIdItems main__teamStructureCircleAndText-business">
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__contentWayContent main__contentWayContent-team" id="basis">
+                        <div class="main__teamLevelItems main__teamStructureCircleAndText-basis">
+                            <a href="#" class="main__teamLevelItemText">1 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">2 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">3 ур.</a>
+                            <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">4 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">5 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">6 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">7 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">8 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">9 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">10 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">11 ур.</a>
+                        </div>
+                        <div class="main__teamBlock">
+                            <div class="main__teamButtonsItems">
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText">Поиск рефералов</p>
+                                    <input type="text" class="main__teamButtonsItemInput" />
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Найти</a>
+                                    </div>
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 1й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 2й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                            </div>
+                            <div class="main__teamStructure">
+                                <p class="main__teamStructureHeadline">Струткура рефeрала id№5321</p>
+                                <div class="main__teamStructureBlock">
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-crown main__teamStructureCircleAndText-basis">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-center main__teamStructureCircleAndText-basis">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCenter"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-1"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-2"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-3"></div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-left main__teamStructureCircleAndText-basis">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-right main__teamStructureCircleAndText-basis">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__teamIdItems main__teamStructureCircleAndText-basis">
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__contentWayContent main__contentWayContent-team" id="econom">
+                        <div class="main__teamLevelItems main__teamStructureCircleAndText-econom">
+                            <a href="#" class="main__teamLevelItemText">1 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">2 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">3 ур.</a>
+                            <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">4 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">5 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">6 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">7 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">8 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">9 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">10 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">11 ур.</a>
+                        </div>
+                        <div class="main__teamBlock">
+                            <div class="main__teamButtonsItems">
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText">Поиск рефералов</p>
+                                    <input type="text" class="main__teamButtonsItemInput" />
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Найти</a>
+                                    </div>
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 1й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 2й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                            </div>
+                            <div class="main__teamStructure">
+                                <p class="main__teamStructureHeadline">Струткура рефeрала id№5321</p>
+                                <div class="main__teamStructureBlock">
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-crown main__teamStructureCircleAndText-econom">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-center main__teamStructureCircleAndText-econom">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCenter"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-1"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-2"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-3"></div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-left main__teamStructureCircleAndText-econom">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-right main__teamStructureCircleAndText-econom">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__teamIdItems main__teamStructureCircleAndText-econom">
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__contentWayContent main__contentWayContent-team" id="test">
+                        <div class="main__teamLevelItems main__teamStructureCircleAndText-test">
+                            <a href="#" class="main__teamLevelItemText">1 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">2 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">3 ур.</a>
+                            <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">4 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">5 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">6 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">7 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">8 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">9 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">10 ур.</a>
+                            <a href="#" class="main__teamLevelItemText">11 ур.</a>
+                        </div>
+                        <div class="main__teamBlock">
+                            <div class="main__teamButtonsItems">
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText">Поиск рефералов</p>
+                                    <input type="text" class="main__teamButtonsItemInput" />
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Найти</a>
+                                    </div>
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 1й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                                <div class="main__teamButtonsItem">
+                                    <p class="main__teamButtonsItemText main__teamButtonsItemText-sponsor">Мой спонсор 2й линии</p>
+                                    <div class="main__teamButtonsItemButtonBlock">
+                                        <a href="#" class="main__teamButtonsItemButton">Связаться</a>
+                                    </div>
+                                    <img src="img/crown.png" alt="crown" class="main__teamButtonsItemImg" />
+                                </div>
+                            </div>
+                            <div class="main__teamStructure">
+                                <p class="main__teamStructureHeadline">Струткура рефeрала id№5321</p>
+                                <div class="main__teamStructureBlock">
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-crown main__teamStructureCircleAndText-test">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-center main__teamStructureCircleAndText-test">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCenter"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-1"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-2"></div>
+                                        <div class="main__teamStructureLine main__teamStructureLine-3"></div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-left main__teamStructureCircleAndText-test">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                    <div class="main__teamStructureCircleAndText main__teamStructureCircleAndText-right main__teamStructureCircleAndText-test">
+                                        <div class="main__teamStructureCircle"></div>
+                                        <div class="main__teamStructureCircleTextBlock">
+                                            <p class="main__teamStructureCircleText">id№5321</p>
+                                        </div>
+                                        <div class="main__teamStructureCircleLight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__teamIdItems main__teamStructureCircleAndText-test">
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText main__teamLevelItemText-active">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                                <a href="#" class="main__teamLevelItemText">id№5321</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

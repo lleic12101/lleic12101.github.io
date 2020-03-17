@@ -392,11 +392,10 @@ h1 {
     width: 100%;
     background: linear-gradient(126deg, #17192f, #03040f);
     border-radius: 15px;
-    box-shadow: 0 0 10px 5px #17192d;
+    box-shadow: -5px -5px 5px #171b2f, 5px 5px 5px #05070f;
     display: none;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #0f1122;
     padding: 0 40px;
 }
 .main__contentWayContent-active {
@@ -891,6 +890,464 @@ h1 {
     }
 }
 /*LINKS MEDIA END*/
+
+
+/*TEAM*/
+.main__contentWayContent-team {
+    background: linear-gradient(126deg, #121426, #060714);
+    padding: 23px 35px 33px 45px;
+}
+.main__teamLevelItems {
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    box-shadow: -3px -3px 3px #171b2f, 3px 3px 3px #05070f;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__teamLevelItemText {
+    color: #fff;
+    font-family: Mont-Light;
+    font-size: 16.67px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.main__teamLevelItemText:hover {
+    text-decoration: underline;
+}
+.main__teamLevelItemText-active {
+    cursor: default;
+}
+
+.main__teamBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    max-height: 510px;
+    height: 510px;
+    width: 100%;
+}
+.main__teamButtonsItems {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.main__teamButtonsItem {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -2px -2px 2px #171b2f, 2px 2px 2px #05070f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 0 20px 0;
+    margin-bottom: 33px;
+    position: relative;
+}
+.main__teamButtonsItem:last-child {
+    margin-bottom: 0;
+}
+.main__teamButtonsItemText {
+    font-family: Mont-Light;
+    color: #fff;
+    font-size: 14.63px;
+    position: relative;
+    z-index: 1;
+}
+.main__teamButtonsItemText-sponsor {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.main__teamButtonsItemInput {
+    width: 139px;
+    height:27px;
+    background-color: #1a1c30;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: inset 2px 2px 3px rgba(0,0,0,.5);
+    outline: none;
+    padding-left: 10px;
+    font-family: Mont-Light;
+    color: #fff;
+    margin-top: 10px;
+}
+.main__teamButtonsItemButtonBlock {
+    min-width: 138px;
+    height: 35px;
+    border-radius: 6px;
+    background: linear-gradient(126deg, #141629, #0e0f20);
+    box-shadow: -2px -2px 7px #171b2f, 2px 2px 7px #05070f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__teamButtonsItemButton {
+    width: 132px;
+    height: 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-family: Mont-Light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11.82px;
+    box-shadow: -1px -1px 1px #171b2f, 1px 1px 1px #05070f;
+    background: transparent;
+    transition: background .3s ease-in-out;
+}
+.main__teamButtonsItemButton:hover {
+    background: #171f35;
+}
+.main__teamButtonsItemImg {
+    width: 82px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main__teamStructure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    position: relative;
+}
+.main__teamStructureHeadline {
+    font-family: Mont-Light;
+    font-size: 16.79px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+.main__teamStructureBlock {
+    position: relative;
+    margin-top: 39px;
+    width: 370px;
+    height: 400px;
+}
+
+.main__teamStructureCircleAndText {
+    position: absolute;
+    z-index: 2;
+}
+.main__teamStructureCircleAndText-crown {
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main__teamStructureCircleAndText-center {
+    top: 164px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.main__teamStructureCircleAndText-left {
+    top: 278px;
+    left: 8px;
+    z-index: 2;
+}
+.main__teamStructureCircleAndText-right {
+    top: 278px;
+    right: 8px;
+    z-index: 2;
+}
+
+.main__teamStructureCircle {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: -2px -2px 3px #171b2f, 2px 2px 3px #05070f;
+}
+.main__teamStructureCircleTextBlock {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    padding: 7px 17px 4px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 5px #171b2f, 3px 3px 5px #05070f;
+}
+.main__teamStructureCircleText {
+    font-family: Mont-Light;
+}
+.main__teamStructureCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -34%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.main__teamStructureLine {
+    position: absolute;
+    z-index: 1;
+    height: 70px;
+    width: 2px;
+}
+.main__teamStructureLine-1 {
+    top: -91px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main__teamStructureLine-2 {
+    bottom: -91px;
+    left: -63px;
+    transform: rotate(55deg);
+}
+.main__teamStructureLine-3 {
+    bottom: -91px;
+    right: -63px;
+    transform: rotate(-55deg);
+}
+.main__teamStructureCircleLight {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main__teamStructureCircleAndText-business .main__teamStructureCircle {
+    background: linear-gradient(#ff4778, #fe736f);
+}
+.main__teamStructureCircleAndText-business .main__teamStructureCircleTextBlock {
+    background-color: #171527;
+}
+.main__teamStructureCircleAndText-business .main__teamStructureCircleText {
+    background: linear-gradient(#ff4778, #fe736f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-business .main__teamStructureCenter {
+    box-shadow: -1px -1px 2px #ff4778, 1px 1px 2px #fe736f;
+}
+.main__teamStructureCircleAndText-business .main__teamStructureCircleLight {
+    box-shadow: 0 0 60px 60px #161220;
+}
+.main__teamStructureCircleAndText-business .main__teamLevelItemText-active {
+    background: linear-gradient(#ff4778, #fe736f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-business .main__teamStructureLine {
+    background: linear-gradient(#ff4778, #fe736f);
+}
+
+.main__teamStructureCircleAndText-basis .main__teamStructureCircle {
+    background: linear-gradient(#a681ff, #6c40db);
+}
+.main__teamStructureCircleAndText-basis .main__teamStructureCircleTextBlock {
+    background-color: #171527;
+}
+.main__teamStructureCircleAndText-basis .main__teamStructureCircleText {
+    background: linear-gradient(#a681ff, #6c40db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-basis .main__teamStructureCenter {
+    box-shadow: -1px -1px 2px #a681ff, 1px 1px 2px #6c40db;
+}
+.main__teamStructureCircleAndText-basis .main__teamStructureCircleLight {
+    box-shadow: 0 0 60px 60px #151429;
+}
+.main__teamStructureCircleAndText-basis .main__teamLevelItemText-active {
+    background: linear-gradient(#a681ff, #6c40db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-basis .main__teamStructureLine {
+    background: linear-gradient(#a681ff, #6c40db);
+}
+
+.main__teamStructureCircleAndText-econom .main__teamStructureCircle {
+     background: linear-gradient(#1fb7da, #1784ea);
+ }
+.main__teamStructureCircleAndText-econom .main__teamStructureCircleTextBlock {
+    background-color: #171527;
+}
+.main__teamStructureCircleAndText-econom .main__teamStructureCircleText {
+    background: linear-gradient(#1fb7da, #1784ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-econom .main__teamStructureCenter {
+    box-shadow: -1px -1px 2px #1fb7da, 1px 1px 2px #1784ea;
+}
+.main__teamStructureCircleAndText-econom .main__teamStructureCircleLight {
+    box-shadow: 0 0 60px 60px #191e38;
+}
+.main__teamStructureCircleAndText-econom .main__teamLevelItemText-active {
+    background: linear-gradient(#1fb7da, #1784ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-econom .main__teamStructureLine {
+    background: linear-gradient(#1fb7da, #1784ea);
+}
+
+.main__teamStructureCircleAndText-test .main__teamStructureCircle {
+    background: linear-gradient(#29bef7, #42dbcf);
+}
+.main__teamStructureCircleAndText-test .main__teamStructureCircleTextBlock {
+    background-color: #171527;
+}
+.main__teamStructureCircleAndText-test .main__teamStructureCircleText {
+    background: linear-gradient(#29bef7, #42dbcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-test .main__teamStructureCenter {
+    box-shadow: -1px -1px 2px #29bef7, 1px 1px 2px #42dbcf;
+}
+.main__teamStructureCircleAndText-test .main__teamStructureCircleLight {
+    box-shadow: 0 0 60px 60px #101725;
+}
+.main__teamStructureCircleAndText-test .main__teamLevelItemText-active {
+    background: linear-gradient(#29bef7, #42dbcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__teamStructureCircleAndText-test .main__teamStructureLine {
+    background: linear-gradient(#29bef7, #42dbcf);
+}
+
+.main__teamIdItems {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #080914;
+    width: 110px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 6px rgba(0,0,0,.7);
+    padding: 20px 5px 15px 20px;
+    align-items: center;
+}
+.main__teamIdItems a {
+    margin-top: 5px;
+}
+/*TEAM END*/
+
+/*TEAM MEDIA*/
+@media screen and (max-width: 1250px){
+    .main__teamBlock {
+        flex-direction: column;
+        max-height: unset;
+        height: auto;
+        align-items: center;
+    }
+    .main__teamButtonsItems {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main__teamButtonsItem:last-child {
+        margin-bottom: 33px;
+    }
+    .main__teamStructure {
+        margin-top: 10px;
+    }
+    .main__teamIdItems {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .main__teamIdItems a {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .main__teamButtonsItems {
+        justify-content: space-around;
+    }
+    .main__teamButtonsItem {
+        margin: 0 20px 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main__teamLevelItems {
+        flex-wrap: wrap;
+    }
+    .main__teamLevelItems a {
+        margin: 0 5px 3px;
+    }
+    .main__contentWayContent-team {
+        padding: 23px 35px 33px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .main__teamStructure {
+        margin-top: 0;
+        width: 100%;
+    }
+    .main__teamStructureHeadline {
+        text-align: center;
+    }
+    .main__teamStructureBlock {
+        transform: scale(.9);
+        margin-top: 15px;
+    }
+    .main__teamIdItems {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 538px) {
+    .main__teamStructureBlock {
+        transform: scale(.7);
+        margin-top: -20px;
+        margin-bottom: -40px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .main__teamStructureBlock {
+        transform: scale(.6);
+        margin-top: -50px;
+        margin-bottom: -70px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__contentWayContent-team {
+        padding: 15px;
+    }
+    .main__contentWaysContent {
+        margin-top: 17px;
+    }
+    .main__teamBlock {
+        margin-top: 20px;
+    }
+    .main__teamButtonsItem {
+        margin-bottom: 20px;
+    }
+    .main__teamButtonsItem:last-child {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .main__teamStructureBlock {
+        transform: scale(.55);
+        margin-top: -70px;
+        margin-bottom: -80px;
+    }
+}
+/*TEAM MEDIA END*/
 
 
 /*ICONS*/

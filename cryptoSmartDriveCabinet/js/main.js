@@ -16,3 +16,9 @@ for(var i = 0; i < waysBtn.length; i++) {
 doc.querySelector('.hamburger').addEventListener("click", function () {
    $('.main__asideItemsSlideBlock').slideToggle();
 });
+
+//Team scroll for id
+var scroll = doc.querySelector('.main__teamIdItems');
+if(scroll != null) {
+    $('.main__teamIdItems').overlayScrollbars({});
+}
