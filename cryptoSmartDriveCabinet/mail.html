@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Smart Drive</title>
+    <link rel="stylesheet" href="OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__buttonBlock">
+            <a href="#" class="header__button">Главная</a>
+        </div>
+        <div class="header__buttonBlock">
+            <a href="#" class="header__button">Выход <span class="icon-power"></span></a>
+        </div>
+    </header>
+    <main class="main">
+        <aside class="main__aside">
+            <div class="main__asideHeader">
+                <div class="main__asideHeaderLogoBlock">
+                    <p class="main__asideHeaderText">CryptoSmartDrive</p>
+                    <img class="main__asideHeaderLogo" src="img/logo.png" alt="logo" />
+                </div>
+                <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
+                <label for="checkbox2">
+                    <div class="hamburger hamburger2">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+            <div class="main__asideItemsSlideBlock">
+                <div class="main__asideItems">
+                    <a href="#" class="main__asideItem">
+                        <p class="main__asideItemText"><span class="icon-user"></span>Личный кабинет</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-statistic" src="img/icons/statistics.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Статистика</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-refs" src="img/icons/refs.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Моя команда</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-upline" src="img/icons/population.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Партнерская программа</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-bag" src="img/icons/money-bag.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Лотерея</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <p class="main__asideItemText"><span class="icon-dollar"></span>Вывод средств</p>
+                    </a>
+                    <a href="#" class="main__asideItem main__asideItem-active">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-mail" src="img/icons/mail.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Внутренняя почта</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-support" src="img/icons/support.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Техническая поддержка</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-logout" src="img/icons/logout.png" alt="logout" />
+                        </div>
+                        <p class="main__asideItemText">Выход</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="main__contentBlock">
+            <div class="main__contentHeader">
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Ваш id</p>
+                    <p class="main__contentHeaderText main__contentHeaderText-gray">5651</p>
+                </div>
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Всего заработано</p>
+                    <p class="main__contentHeaderText main__contentHeaderText-gray">822.25 ETH</p>
+                </div>
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Партнерская ссылка</p>
+                    <input class="main__contentHeaderText main__contentHeaderText-gray main__contentHeaderText-input" value="https://cryptosmartdive.com/ru/?aft=1" />
+                </div>
+            </div>
+            <div class="main__content">
+                <h1 class="main__contentHeadline">Внутренняя почта</h1>
+                <div class="main__mailButtons">
+                    <div class="main__mailButtonBlock main__mailButtonBlock-active" id="receivedBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-received">
+                            <div class="main__mailButtonBlockBlock" >
+                                <a class="main__mailButtonBlockText">Полученные</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailButtonBlock" id="sentBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-sent">
+                            <div class="main__mailButtonBlockBlock">
+                                <a class="main__mailButtonBlockText">Отправленные</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailButtonBlock" id="writeBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-write">
+                            <div class="main__mailButtonBlockBlock">
+                                <a class="main__mailButtonBlockText">Написать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__mailTabs">
+                    <div class="main__mailTab main__mailTab-active" id="received">
+                        <h1 class="main__contentHeadline">Полученные сообщения</h1>
+                        <div class="main__contentTableBlock">
+                            <table class="main__contentTable">
+                                <tr>
+                                    <td>№</td>
+                                    <td>Отправитель</td>
+                                    <td>Сообщение</td>
+                                    <td>Дата</td>
+                                    <td>Выбор</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>id#5521</td>
+                                    <td>Уважаемый Семен Семенович, рады вам сообщить, что...</td>
+                                    <td>20.12.2020</td>
+                                    <td>
+                                        <input type="checkbox" class="checkbox checkbox-business" id="received1" />
+                                        <label for="received1"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>id#5521</td>
+                                    <td>Уважаемый Семен Семенович, рады вам сообщить, что...</td>
+                                    <td>20.12.2020</td>
+                                    <td>
+                                        <input type="checkbox" class="checkbox checkbox-business" id="received2" />
+                                        <label for="received2"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>id#5521</td>
+                                    <td>Уважаемый Семен Семенович, рады вам сообщить, что...</td>
+                                    <td>20.12.2020</td>
+                                    <td>
+                                        <input type="checkbox" class="checkbox checkbox-business" id="received3" />
+                                        <label for="received3"></label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main__mailBtnsAndArrowsBlock">
+                            <div class="main__mailTabBtnsBlock">
+                                <div class="main__mailTabBtnBlock">
+                                    <a href="#" class="main__mailTabBtn">Открыть</a>
+                                </div>
+                                <div class="main__mailTabBtnBlock">
+                                    <a href="#" class="main__mailTabBtn">Удалить</a>
+                                </div>
+                            </div>
+                            <div class="main__contentTableBtnsBlock main__contentTableBtnsBlock-btn">
+                                <a href="#" class="main__contentTableBtn main__contentTableBtn-button"><</a>
+                                <a href="#" class="main__contentTableBtn">1</a>
+                                <a href="#" class="main__contentTableBtn main__contentTableBtn-button">></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailTab" id="sent">
+                        <h1 class="main__contentHeadline">Отправленные сообщения</h1>
+                        <div class="main__contentTableBlock">
+                            <table class="main__contentTable">
+                                <tr>
+                                    <td>№</td>
+                                    <td>Отправитель</td>
+                                    <td>Сообщение</td>
+                                    <td>Дата</td>
+                                    <td>Выбор</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>id#5521</td>
+                                    <td>Уважаемый Семен Семенович, рады вам сообщить, что...</td>
+                                    <td>20.12.2020</td>
+                                    <td>
+                                        <input type="checkbox" class="checkbox checkbox-basis" id="sent1" />
+                                        <label for="sent1"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>id#5521</td>
+                                    <td>Уважаемый Семен Семенович, рады вам сообщить, что...</td>
+                                    <td>20.12.2020</td>
+                                    <td>
+                                        <input type="checkbox" class="checkbox checkbox-basis" id="sent2" />
+                                        <label for="sent2"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>id#5521</td>
+                                    <td>Уважаемый Семен Семенович, рады вам сообщить, что...</td>
+                                    <td>20.12.2020</td>
+                                    <td>
+                                        <input type="checkbox" class="checkbox checkbox-basis" id="sent3" />
+                                        <label for="sent3"></label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main__mailBtnsAndArrowsBlock">
+                            <div class="main__mailTabBtnsBlock">
+                                <div class="main__mailTabBtnBlock">
+                                    <a href="#" class="main__mailTabBtn">Открыть</a>
+                                </div>
+                                <div class="main__mailTabBtnBlock">
+                                    <a href="#" class="main__mailTabBtn">Удалить</a>
+                                </div>
+                            </div>
+                            <div class="main__contentTableBtnsBlock main__contentTableBtnsBlock-btn">
+                                <a href="#" class="main__contentTableBtn main__contentTableBtn-button"><</a>
+                                <a href="#" class="main__contentTableBtn">1</a>
+                                <a href="#" class="main__contentTableBtn main__contentTableBtn-button">></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailTab" id="write">
+                        <h1 class="main__contentHeadline">Написать сообщение</h1>
+                        <div class="main__mailWriteBlock">
+                            <div class="main__mailTextAndInputBlock">
+                                <p class="main__mailTextAndInputBlockText">Выберите получателя</p>
+                                <select class="main__mailTextAndInputBlockSelect">
+                                    <option>Написать всем</option>
+                                    <option>Написать Василию</option>
+                                    <option>Написать Катерине</option>
+                                </select>
+                            </div>
+                            <div class="main__mailTextAndInputBlock">
+                                <p class="main__mailTextAndInputBlockText">Сообщение</p>
+                                <textarea class="main__mailTextAndInputBlockSelect main__mailTextAndInputBlockTextarea"></textarea>
+                            </div>
+                            <div class="main__mailAddFile">
+                                <input type="file" name="file" id="file1" class="main__mailAddFileInput" />
+                                <label for="file1"><span>+</span>прикрепить скриншот</label>
+                            </div>
+                            <div class="main__mailAddFile">
+                                <input type="file" name="file" id="file2" class="main__mailAddFileInput" />
+                                <label for="file2"><span>+</span>прикрепить файл</label>
+                            </div>
+                            <div class="main__mailTabBtnBlock main__mailTabBtnBlock-write">
+                                <a href="#" class="main__mailTabBtn">Отправить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

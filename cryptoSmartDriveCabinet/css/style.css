@@ -204,6 +204,7 @@ h1 {
     font-family: Mont-Regular;
     letter-spacing:1.52px;
     margin-right: 17px;
+    margin-left: 30px;
 }
 .main__asideHeaderLogo {
     width: 134px;
@@ -570,6 +571,9 @@ h1 {
         padding: 0 23px;
         height: 70px;
         box-shadow: none;
+    }
+    .main__asideHeaderText {
+        margin-left: 0;
     }
     .main__aside {
         border-top-right-radius: 25px;
@@ -1453,6 +1457,7 @@ h1 {
 }
 .main__contentTableBlock {
     max-width: 100%;
+    overflow-y: hidden;
     overflow-x: auto;
     margin-top: 25px;
 }
@@ -1466,7 +1471,7 @@ h1 {
 .main__contentTable td {
     border: 2px solid #1f2337;
     text-align: center;
-    padding: 10px 7px;
+    padding: 10px 20px;
 }
 .main__contentTable tr:first-child {
     border-top: 5px solid #1f2337;
@@ -1474,13 +1479,14 @@ h1 {
 }
 .main__contentTable tr:first-child td {
     font-size: 16.67px;
-    padding: 7px
+    padding: 7px 20px;
 }
 .main__contentTableBtnsBlock {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
     margin-top: 18px;
 }
 .main__contentTableBtn {
@@ -1772,6 +1778,285 @@ h1 {
 /*WITHDRAW MEDIA END*/
 
 
+/*MAIL*/
+.main__mailButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
+    max-width: 940px;
+    width: 100%;
+}
+.main__mailButtonBlock {
+    width: 204px;
+    height: 52px;
+    border-radius: 10px;
+    background: linear-gradient(126deg, #141629, #0e0f20);
+    box-shadow: -2px -2px 7px #171b2f, 2px 2px 7px #05070f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 36px;
+}
+.main__mailButtonBlock:last-child {
+    margin-right: 0;
+}
+.main__mailButtonBlockColor {
+    width: 195px;
+    height: 46px;
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__mailButtonBlockBlock {
+    width: 190px;
+    height: 42px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Mont-Light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16.79px;
+    box-shadow: -1px -1px 1px #171b2f, 1px 1px 1px #05070f;
+    background: #141629;
+    transition: background .3s ease-in-out;
+}
+.main__mailButtonBlockBlock:hover {
+    background: #171f35;
+}
+.main__mailButtonBlockText {
+    text-decoration: none;
+    color: #555e7d;
+}
+
+.main__mailButtonBlock-active .main__mailButtonBlock-received {
+    background: linear-gradient(#ff4778, #fe736f);
+}
+.main__mailButtonBlock-active .main__mailButtonBlock-received .main__mailButtonBlockText {
+    background: linear-gradient(#ff4778, #fe736f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__mailButtonBlock-active .main__mailButtonBlock-sent {
+    background: linear-gradient(#a681ff, #6c40db);
+}
+.main__mailButtonBlock-active .main__mailButtonBlock-sent .main__mailButtonBlockText {
+    background: linear-gradient(#a681ff, #6c40db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__mailButtonBlock-active .main__mailButtonBlock-write {
+    background: linear-gradient(#1fb7da, #1784ea);
+}
+.main__mailButtonBlock-active .main__mailButtonBlock-write .main__mailButtonBlockText {
+    background: linear-gradient(#1fb7da, #1784ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__mailTabs {
+    max-width: 940px;
+    width: 100%;
+}
+.main__mailTab {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px #171b2f, 5px 5px 5px #05070f;
+    margin-top: 55px;
+    padding: 0 30px 45px;
+}
+.main__mailTab-active {
+    display: flex;
+}
+.main__mailBtnsAndArrowsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px;
+}
+.main__contentTableBtnsBlock-btn {
+    margin-top: 0;
+}
+.main__mailTabBtnsBlock {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.main__mailTabBtnBlock {
+    width: 147px;
+    height: 38px;
+    border-radius: 6px;
+    background: linear-gradient(126deg, #141629, #0e0f20);
+    box-shadow: -2px -2px 7px #171b2f, 2px 2px 7px #05070f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__mailTabBtnBlock:first-child {
+    margin-right: 30px;
+}
+.main__mailTabBtn {
+    width: 139px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #555e7d;
+    text-decoration: none;
+    font-family: Mont-Light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14.63px;
+    box-shadow: -1px -1px 1px #171b2f, 1px 1px 1px #05070f;
+    background: transparent;
+    transition: background .3s ease-in-out;
+}
+.main__mailTabBtn:hover {
+    background: #171f35;
+}
+
+.main__mailWriteBlock {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 46px;
+}
+.main__mailTextAndInputBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.main__mailTextAndInputBlockText {
+    color:#fff;
+    font-family: Mont-Light;
+    font-size: 16.67px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+.main__mailTextAndInputBlockSelect {
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 20px;
+    background: #101224;
+    border: none;
+    box-shadow: -2px -2px 2px #171b2f, 2px 2px 2px #05070f;
+    font-family: Mont-Light;
+    font-size: 14.63px;
+    color: #555e7d;
+    cursor: pointer;
+}
+.main__mailTextAndInputBlockTextarea {
+    resize: none;
+    cursor: auto;
+    padding-top: 15px;
+    height: 238px;
+    box-shadow: inset 2px 2px 2px #05070f;
+    background: linear-gradient(126deg, #121426, #0f101f);
+    color: #fff;
+}
+.main__mailAddFile {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin-bottom: 15px;
+}
+.main__mailTabBtnBlock-write {
+    margin-top: 20px;
+}
+.main__mailAddFileInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.main__mailAddFileInput + label {
+    color: #555e7d;
+    cursor: pointer;
+    font-family: Mont-Light;
+    font-size: 14.63px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.main__mailAddFileInput + label span {
+    margin-right: 15px;
+    font-size: 36.02px;
+    background: linear-gradient(#1fb7da, #1784ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*MAIL END*/
+
+/*MAIL MEDIA*/
+@media screen and (max-width: 1120px) {
+    .main__mailButtons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main__mailButtonBlock {
+        margin: 0 20px 15px;
+    }
+    .main__mailButtonBlock:last-child {
+        margin-right: 20px;
+    }
+    .main__mailTab {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 756px) {
+    .main__mailBtnsAndArrowsBlock {
+        flex-direction: column;
+    }
+    .main__contentTableBtnsBlock-btn {
+        margin-top: 15px;
+    }
+    .main__mailTabBtnsBlock {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .main__mailTabBtnBlock:first-child {
+        margin-right: 15px;
+    }
+    .main__mailTabBtnBlock {
+        margin: 0 15px 10px;
+    }
+    .main__mailTabBtnBlock-write {
+        margin: 5px 0 0;
+    }
+    .main__mailWriteBlock {
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__mailButtons {
+        margin-top: 20px;
+    }
+    .main__mailTab {
+        padding: 0 15px 15px;
+    }
+}
+/*MAIL MEDIA END*/
+
+
 /*ICONS*/
 .icon-power::after {
     font-family: 'Font Awesome Solid';
@@ -1811,3 +2096,78 @@ h1 {
     max-height: 12px;
 }
 /*ICONS END*/
+
+
+/*CHECKBOX*/
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked){
+    min-height:20px;
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top:1px;
+    width: 16px;
+    height: 16px;
+}
+.checkbox-business:checked + label:before,
+.checkbox-business:not(:checked) + label:before{
+    box-shadow: 0px 0px 2px 1px #ff4778, 0px 0px 2px 1px #fe736f;
+}
+.checkbox-basis:checked + label:before,
+.checkbox-basis:not(:checked) + label:before{
+    box-shadow: 0px 0px 2px 1px #a681ff, 0px 0px 2px 1px #6c40db;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 10.5px;
+    top: 6px;
+    width: 7px;
+    height: 4px;
+    border-radius: 1px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.checkbox-business:checked + label:after,
+.checkbox-business:not(:checked) + label:after {
+    border-left: 2px solid #ff4778;
+    border-bottom: 2px solid #ff4778;
+}
+.checkbox-basis:checked + label:after,
+.checkbox-basis:not(:checked) + label:after {
+    border-left: 2px solid #a681ff;
+    border-bottom: 2px solid #a681ff;
+}
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+/*CHECKBOX END*/

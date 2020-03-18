@@ -12,6 +12,18 @@ for(var i = 0; i < waysBtn.length; i++) {
     });
 }
 
+//Mail tabs
+var mailsBtn = doc.querySelectorAll('.main__mailButtonBlockBlock');
+for(var i = 0; i < mailsBtn.length; i++) {
+    mailsBtn[i].addEventListener("click", function () {
+        $('.main__mailButtonBlock').removeClass('main__mailButtonBlock-active');
+        $(this).parent().parent().addClass('main__mailButtonBlock-active');
+        var id = this.parentNode.parentNode.id.substr(0, this.parentNode.parentNode.id.length - 3);
+        $('.main__mailTab').removeClass('main__mailTab-active');
+        $('#'+id).addClass('main__mailTab-active');
+    });
+}
+
 //Burger menu
 doc.querySelector('.hamburger').addEventListener("click", function () {
    $('.main__asideItemsSlideBlock').slideToggle();
@@ -21,10 +33,4 @@ doc.querySelector('.hamburger').addEventListener("click", function () {
 var scroll = doc.querySelector('.main__teamIdItems');
 if(scroll != null) {
     $('.main__teamIdItems').overlayScrollbars({});
-}
-
-//Scroll for table
-var scrollTable = doc.querySelector('.main__contentTableBlock');
-if(scrollTable != null) {
-    $(scrollTable).overlayScrollbars({});
 }
