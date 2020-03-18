@@ -34,3 +34,11 @@ var scroll = doc.querySelector('.main__teamIdItems');
 if(scroll != null) {
     $('.main__teamIdItems').overlayScrollbars({});
 }
+
+//Statistic buttons
+var statisticBtns = doc.querySelectorAll('.main__statisticBtnBlock');
+for(var i = 0; i < statisticBtns.length; i++) {
+    statisticBtns[i].addEventListener("click", function () {
+       $(this).toggleClass("main__statisticBtnBlock-active");
+    });
+}

@@ -325,6 +325,7 @@ h1 {
     align-items: center;
     padding: 0 42px 42px;
     width: 100%;
+    max-width: calc(100vw - 319px);;
 }
 .main__contentHeadline {
     color: #fff;
@@ -555,6 +556,9 @@ h1 {
     }
 }
 @media screen and (max-width: 1023px) {
+    .main__content {
+        max-width: 100%;
+    }
     .hamburger {
         display: block;
     }
@@ -1457,6 +1461,7 @@ h1 {
 }
 .main__contentTableBlock {
     max-width: 100%;
+    width: 100%;
     overflow-y: hidden;
     overflow-x: auto;
     margin-top: 25px;
@@ -1857,6 +1862,14 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.main__mailButtonBlock-active .main__mailButtonBlock-all {
+    background: linear-gradient(#29bef7, #42dbcf);
+}
+.main__mailButtonBlock-active .main__mailButtonBlock-all .main__mailButtonBlockText {
+    background: linear-gradient(#29bef7, #42dbcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .main__mailTabs {
     max-width: 940px;
@@ -2058,6 +2071,117 @@ h1 {
     }
 }
 /*MAIL MEDIA END*/
+
+
+/*STATISTIC*/
+.main__contentTableBtnsBlock-statistic {
+    width: 100%;
+}
+.main__statisticBtns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -15px;
+    margin-top: 35px;
+}
+.main__statisticBtnBlock {
+    width: 192px;
+    height: 46px;
+    box-shadow: -1px -1px 1px #171b2f,1px 1px 1px #05070f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 20px;
+}
+.main__statisticBtnBlock:hover {
+    background: #121326;
+}
+.main__statisticBtnCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 25px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main__statisticBtnCircle-business {
+    background: linear-gradient(#ff4778, #fe736f);
+    box-shadow: 0 0 60px 30px #211a2c;
+}
+.main__statisticBtnCircle-basis {
+    background: linear-gradient(#a681ff, #6c40db);
+    box-shadow: 0 0 60px 30px #19163a;
+}
+.main__statisticBtnCircle-econom {
+    background: linear-gradient(#1fb7da, #1784ea);
+    box-shadow: 0 0 60px 30px #0f1b33;
+}
+.main__statisticBtnCircle-test {
+    background: linear-gradient(#29bef7, #42dbcf);
+    box-shadow: 0 0 60px 30px #0c2031;
+}
+.main__statisticBtnText {
+    font-family:Mont-SemiBold;
+    color: #353c53;
+    font-size: 14.36px;
+    position: relative;
+    z-index: 1;
+}
+
+.main__statisticBtnBlock-active .main__statisticBtnText-business {
+    background: linear-gradient(#ff4778, #fe736f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__statisticBtnBlock-active .main__statisticBtnText-basis {
+    background: linear-gradient(#a681ff, #6c40db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__statisticBtnBlock-active .main__statisticBtnText-econom {
+    background: linear-gradient(#1fb7da, #1784ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__statisticBtnBlock-active .main__statisticBtnText-test {
+    background: linear-gradient(#29bef7, #42dbcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*STATISTIC END*/
+
+/*STATISTIC MEDIA*/
+@media screen and (max-width: 1354px) {
+    .main__mailButtons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main__mailButtonBlock {
+        margin: 0 20px 15px;
+    }
+    .main__mailButtonBlock:last-child {
+        margin-right: 20px;
+    }
+    .main__mailTab {
+        margin-top: 10px;
+    }
+    .main__statisticBtns {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main__statisticBtnBlock {
+        margin: 0 20px 15px;
+    }
+}
+/*STATISTIC MEDIA END*/
 
 
 /*ICONS*/

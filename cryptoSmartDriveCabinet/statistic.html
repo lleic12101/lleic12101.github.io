@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Smart Drive</title>
+    <link rel="stylesheet" href="OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__buttonBlock">
+            <a href="#" class="header__button">Главная</a>
+        </div>
+        <div class="header__buttonBlock">
+            <a href="#" class="header__button">Выход <span class="icon-power"></span></a>
+        </div>
+    </header>
+    <main class="main">
+        <aside class="main__aside">
+            <div class="main__asideHeader">
+                <div class="main__asideHeaderLogoBlock">
+                    <p class="main__asideHeaderText">CryptoSmartDrive</p>
+                    <img class="main__asideHeaderLogo" src="img/logo.png" alt="logo" />
+                </div>
+                <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
+                <label for="checkbox2">
+                    <div class="hamburger hamburger2">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+            <div class="main__asideItemsSlideBlock">
+                <div class="main__asideItems">
+                    <a href="#" class="main__asideItem">
+                        <p class="main__asideItemText"><span class="icon-user"></span>Личный кабинет</p>
+                    </a>
+                    <a href="#" class="main__asideItem main__asideItem-active">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-statistic" src="img/icons/statistics.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Статистика</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-refs" src="img/icons/refs.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Моя команда</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-upline" src="img/icons/population.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Партнерская программа</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-bag" src="img/icons/money-bag.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Лотерея</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <p class="main__asideItemText"><span class="icon-dollar"></span>Вывод средств</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-mail" src="img/icons/mail.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Внутренняя почта</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-support" src="img/icons/support.png" alt="support" />
+                        </div>
+                        <p class="main__asideItemText">Техническая поддержка</p>
+                    </a>
+                    <a href="#" class="main__asideItem">
+                        <div class="main__asideItemImgBlock">
+                            <img class="main__asideItemImg icon-logout" src="img/icons/logout.png" alt="logout" />
+                        </div>
+                        <p class="main__asideItemText">Выход</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="main__contentBlock">
+            <div class="main__contentHeader">
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Ваш id</p>
+                    <p class="main__contentHeaderText main__contentHeaderText-gray">5651</p>
+                </div>
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Всего заработано</p>
+                    <p class="main__contentHeaderText main__contentHeaderText-gray">822.25 ETH</p>
+                </div>
+                <div class="main__contentHeaderTextBlock">
+                    <p class="main__contentHeaderText">Партнерская ссылка</p>
+                    <input class="main__contentHeaderText main__contentHeaderText-gray main__contentHeaderText-input" value="https://cryptosmartdive.com/ru/?aft=1" />
+                </div>
+            </div>
+            <div class="main__content">
+                <h1 class="main__contentHeadline">Статистика</h1>
+                <div class="main__mailButtons main__mailButtons-statistic">
+                    <div class="main__mailButtonBlock main__mailButtonBlock-active" id="receivedBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-received">
+                            <div class="main__mailButtonBlockBlock" >
+                                <a class="main__mailButtonBlockText">Доходы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailButtonBlock" id="sentBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-sent">
+                            <div class="main__mailButtonBlockBlock">
+                                <a class="main__mailButtonBlockText">Расходы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailButtonBlock" id="writeBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-write">
+                            <div class="main__mailButtonBlockBlock">
+                                <a class="main__mailButtonBlockText">Искажения</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mailButtonBlock" id="allBtn">
+                        <div class="main__mailButtonBlockColor main__mailButtonBlock-all">
+                            <div class="main__mailButtonBlockBlock">
+                                <a class="main__mailButtonBlockText">Общие</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__mailTabs">
+                    <div class="main__mailTab main__mailTab-active" id="received">
+                        <h1 class="main__contentHeadline">Начисления от партнеров</h1>
+                        <div class="main__contentTableBlock">
+                            <table class="main__contentTable">
+                                <tr>
+                                    <td>Участник</td>
+                                    <td>Тариф</td>
+                                    <td>Цикл</td>
+                                    <td>Уровень</td>
+                                    <td>Сумма</td>
+                                    <td>Дата</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main__contentTableBtnsBlock main__contentTableBtnsBlock-statistic">
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button"><</a>
+                            <a href="#" class="main__contentTableBtn">1</a>
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button">></a>
+                        </div>
+                    </div>
+                    <div class="main__mailTab" id="sent">
+                        <h1 class="main__contentHeadline">Покупка уровней</h1>
+                        <div class="main__contentTableBlock">
+                            <table class="main__contentTable">
+                                <tr>
+                                    <td>Участник</td>
+                                    <td>Тариф</td>
+                                    <td>Цикл</td>
+                                    <td>Уровень</td>
+                                    <td>Сумма</td>
+                                    <td>Дата</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main__contentTableBtnsBlock main__contentTableBtnsBlock-statistic">
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button"><</a>
+                            <a href="#" class="main__contentTableBtn">1</a>
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button">></a>
+                        </div>
+                    </div>
+                    <div class="main__mailTab" id="write">
+                        <h1 class="main__contentHeadline">Искажение структуры</h1>
+                        <div class="main__contentTableBlock">
+                            <table class="main__contentTable">
+                                <tr>
+                                    <td>Участник</td>
+                                    <td>Тариф</td>
+                                    <td>Цикл</td>
+                                    <td>Уровень</td>
+                                    <td>Сумма</td>
+                                    <td>Дата</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Id 121315</td>
+                                    <td>Business Drive</td>
+                                    <td>#1</td>
+                                    <td>#1</td>
+                                    <td>626.62 ETH</td>
+                                    <td>20.12.2020</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main__contentTableBtnsBlock main__contentTableBtnsBlock-statistic">
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button"><</a>
+                            <a href="#" class="main__contentTableBtn">1</a>
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button">></a>
+                        </div>
+                    </div>
+                    <div class="main__mailTab" id="all">
+                        <div class="main__statisticBtns">
+                            <div class="main__statisticBtnBlock main__statisticBtnBlock-active">
+                                <div class="main__statisticBtnCircle main__statisticBtnCircle-business"></div>
+                                <p class="main__statisticBtnText main__statisticBtnText-business">Business Drive</p>
+                            </div>
+                            <div class="main__statisticBtnBlock main__statisticBtnBlock-active">
+                                <div class="main__statisticBtnCircle main__statisticBtnCircle-basis"></div>
+                                <p class="main__statisticBtnText main__statisticBtnText-basis">Basis Drive</p>
+                            </div>
+                            <div class="main__statisticBtnBlock main__statisticBtnBlock-active">
+                                <div class="main__statisticBtnCircle main__statisticBtnCircle-econom"></div>
+                                <p class="main__statisticBtnText main__statisticBtnText-econom">Econom Drive</p>
+                            </div>
+                            <div class="main__statisticBtnBlock main__statisticBtnBlock-active">
+                                <div class="main__statisticBtnCircle main__statisticBtnCircle-test"></div>
+                                <p class="main__statisticBtnText main__statisticBtnText-test">Test Drive</p>
+                            </div>
+                        </div>
+                        <h1 class="main__contentHeadline">Количество партнеров</h1>
+                        <div class="main__contentTableBlock">
+                            <table class="main__contentTable">
+                                <tr>
+                                    <td>Цикл</td>
+                                    <td>Уровень</td>
+                                    <td>Количество</td>
+                                    <td>Цикл</td>
+                                    <td>Уровень</td>
+                                    <td>Количество</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main__contentTableBtnsBlock main__contentTableBtnsBlock-statistic">
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button"><</a>
+                            <a href="#" class="main__contentTableBtn">1</a>
+                            <a href="#" class="main__contentTableBtn main__contentTableBtn-button">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
