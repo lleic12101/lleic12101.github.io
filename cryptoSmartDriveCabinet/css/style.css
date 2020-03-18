@@ -1969,6 +1969,9 @@ h1 {
     background: linear-gradient(126deg, #121426, #0f101f);
     color: #fff;
 }
+.main__mailTextAndInputBlockInput {
+    cursor: auto;
+}
 .main__mailAddFile {
     display: flex;
     flex-direction: row;
