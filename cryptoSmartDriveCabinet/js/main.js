@@ -22,3 +22,9 @@ var scroll = doc.querySelector('.main__teamIdItems');
 if(scroll != null) {
     $('.main__teamIdItems').overlayScrollbars({});
 }
+
+//Scroll for table
+var scrollTable = doc.querySelector('.main__contentTableBlock');
+if(scrollTable != null) {
+    $(scrollTable).overlayScrollbars({});
+}
