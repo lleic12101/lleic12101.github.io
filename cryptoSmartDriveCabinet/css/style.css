@@ -22,6 +22,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Mont-SemiBold';
+    src: url('../fonts/Mont-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 * {
@@ -1531,7 +1537,239 @@ h1 {
 /*LOTTERY MEDIA END*/
 
 
+/*WITHDRAW*/
+.main__withdrawItems {
+    max-width: 940px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    justify-content: space-between;
+}
+.main__withdrawItem {
+    width: 226px;
+    height: 226px;
+    border-radius: 30px;
+    border: 2px solid #0b1022;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.main__withdrawItemColorBlock {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.main__withdrawItemColorBlock-business {
+    background: linear-gradient(126deg, #4e2036, #261017);
+}
+.main__withdrawItemColorBlock-basis {
+    background: linear-gradient(126deg, #28204e, #131428);
+}
+.main__withdrawItemColorBlock-econom {
+    background: linear-gradient(126deg, #1f2c52, #131428);
+}
+.main__withdrawItemColorBlock-test {
+    background: linear-gradient(126deg, #214153, #131528 );
+}
+.main__withdrawItemLight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main__withdrawItemLight-business {
+    box-shadow: 0 0 70px 55px #6f343f;
+}
+.main__withdrawItemLight-basis {
+    box-shadow: 0 0 70px 55px #3b2580;
+}
+.main__withdrawItemLight-econom {
+    box-shadow: 0 0 70px 55px #133b6b;
+}
+.main__withdrawItemLight-test {
+    box-shadow: 0 0 70px 55px #125d6d;
+}
+.main__withdrawItemNumber {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-family: Mont-Bold;
+    font-size: 27.4px;
+    color: #fff;
+    max-width: 183px;
+    width: 100%;
+    text-align: center;
+}
+.main__withdrawItemNumber-business {
+    background: linear-gradient(#ff4778, #fe736f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__withdrawItemNumber-basis {
+    background: linear-gradient(#a681ff, #6c40db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__withdrawItemNumber-econom {
+    background: linear-gradient(#1fb7da, #1784ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__withdrawItemNumber-test {
+    background: linear-gradient(#29bef7, #42dbcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__withdrawItemDrive {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-family: Mont-SemiBold;
+    font-size: 22.49px;
+    color: #fff;
+    max-width: 183px;
+    width: 100%;
+    text-align: center;
+}
+.main__withdrawItemDrive-business {
+    color: #a8575f;
+}
+.main__withdrawItemDrive-basis {
+    color: #52558e;
+}
+.main__withdrawItemDrive-econom {
+    color: #415990;
+}
+.main__withdrawItemDrive-test {
+    color: #2f5b75;
+}
 
+.main__withdrawBlock {
+    max-width: 940px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px #171b2f, 5px 5px 5px #05070f;
+    margin-top: 36px;
+    padding: 0 30px 78px;
+}
+.main__withdrawTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__withdrawTextBlockText {
+    font-family: Mont-Light;
+    font-size: 16.67px;
+    color: #fff;
+    margin-right: 45px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.main__withdrawNumberBlock {
+    position: relative;
+}
+.main__withdrawNumberBlockText {
+    font-family: Mont-Bold;
+    font-size: 27.4px;
+    background: linear-gradient(#ff4778, #fe736f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.main__withdrawNumberBlockLight {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 50px 35px #1b1221;
+}
+.main__withdrawButtonBlock {
+    width: 225px;
+    height: 50px;
+    border-radius: 6px;
+    background: linear-gradient(126deg, #141629, #0e0f20);
+    box-shadow: -2px -2px 7px #171b2f, 2px 2px 7px #05070f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.main__withdrawButton {
+    width: 215px;
+    height: 44px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-family: Mont-Light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14.63px;
+    box-shadow: -1px 1px 1px #171b2f, 1px 0px 2px #993f58;
+    background: transparent;
+    transition: background .3s ease-in-out;
+}
+.main__withdrawButton:hover {
+    background: #171f35;
+}
+/*WITHDRAW END*/
+
+/*WITHDRAW MEDIA*/
+@media screen and (max-width: 1360px) {
+    .main__withdrawItems {
+        justify-content: space-around;
+    }
+    .main__withdrawItem {
+        margin: 0 15px 15px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .main__withdrawTextBlock {
+        flex-direction: column;
+    }
+    .main__withdrawTextBlockText {
+        margin-right: 0;
+    }
+    .main__withdrawBlock {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .main__withdrawBlock {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__withdrawBlock {
+        padding: 0 15px 20px;
+    }
+    .main__withdrawTextBlock {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .main__withdrawItems {
+        margin-top: 22px;
+    }
+}
+/*WITHDRAW MEDIA END*/
 
 
 /*ICONS*/
