@@ -1381,6 +1381,8 @@ h1 {
     border-bottom: 1px solid #fff;
     padding-bottom: 14px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 .main__lotteryNumberBlock {
     width: 100%;
@@ -1391,12 +1393,15 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-top: 18px;
+    position: relative;
 }
 .main__lotteryNumber {
     font-family: Mont-Bold;
     font-size: 28.48px;
     color: #fff;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 .main__lotteryNumber-red {
     font-size: 27.4px;
@@ -1413,6 +1418,23 @@ h1 {
     background: linear-gradient(#a681ff, #6c40db);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.main__lotteryNumberLight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    transform: translate(-50%, -50%);
+}
+.main__lotteryNumberLight-red {
+    width: 100%;
+    box-shadow: 0 0 60px 40px #1d192d;
+}
+.main__lotteryNumberLight-blue {
+    box-shadow: 0 0 60px 40px #0e1830;
+}
+.main__lotteryNumberLight-purple {
+    box-shadow: 0 0 60px 40px #181630;
 }
 
 .main__lotteryWinners {
@@ -1507,6 +1529,9 @@ h1 {
     }
 }
 /*LOTTERY MEDIA END*/
+
+
+
 
 
 /*ICONS*/
