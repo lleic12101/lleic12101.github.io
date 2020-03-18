@@ -1501,6 +1501,10 @@ h1 {
     .main__lotteryNumberItems {
         margin-top: 25px;
     }
+    .main__lotteryNumberItem {
+        margin: 0 0 25px;
+        padding-top: 20px;
+    }
 }
 /*LOTTERY MEDIA END*/
 
