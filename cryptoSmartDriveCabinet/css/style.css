@@ -1498,6 +1498,9 @@ h1 {
     .main__lotteryWinners {
         padding: 0 15px 15px;
     }
+    .main__lotteryNumberItems {
+        margin-top: 25px;
+    }
 }
 /*LOTTERY MEDIA END*/
 
