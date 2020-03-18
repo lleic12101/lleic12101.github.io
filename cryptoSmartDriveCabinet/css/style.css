@@ -1083,6 +1083,17 @@ h1 {
     position: relative;
     z-index: 2;
     box-shadow: -2px -2px 3px #171b2f, 2px 2px 3px #05070f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__teamStructureCircleCrown {
+    max-height: 34px;
+    filter: brightness(0%) invert(5%) sepia(13%) saturate(3714%) hue-rotate(201deg)  contrast(99%);
+}
+.main__teamStructureCircleUser {
+    max-height: 42px;
+    filter: brightness(0%) invert(5%) sepia(13%) saturate(3714%) hue-rotate(201deg)  contrast(99%);
 }
 .main__teamStructureCircleTextBlock {
     position: absolute;
