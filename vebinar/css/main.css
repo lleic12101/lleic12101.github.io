@@ -633,6 +633,7 @@ header .header__log ul li:hover {
     flex-direction: column;
     align-items: center;
     padding-top: 4px;
+    position: relative;
 }
 .watcher__button {
     background: #679967;
@@ -664,8 +665,8 @@ header .header__log ul li:hover {
     cursor: auto;
     background: #E3E0E0;
     color: #4F6180;
-    margin-bottom: 16px;
     box-shadow: none;
+    margin-bottom: 16px;
 }
 .watcher__button-disabled:hover {
     background: #E3E0E0;
@@ -698,6 +699,23 @@ header .header__log ul li:hover {
     font-size: 24px;
     line-height: 24px;
     color: #000000;
+}
+.watcher__buttonBlockText-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-34%);
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.watcher__buttonBlockText-dots:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis 2s infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
 }
 .watcher__blockContentClosedText {
     max-width: 690px;
