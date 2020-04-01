@@ -702,13 +702,16 @@ header .header__log ul li:hover {
 }
 .watcher__buttonBlockText-dots {
     position: absolute;
-    bottom: 12px;
+    top: 60px;
     left: 50%;
     transform: translateX(-34%);
     width: 100%;
     text-align: left;
     opacity: 0;
     transition: .3s ease-in-out;
+}
+.watcher__button-call {
+    margin-bottom: 40px;
 }
 .watcher__buttonBlockText-dots:after {
     overflow: hidden;
