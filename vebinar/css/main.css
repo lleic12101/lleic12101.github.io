@@ -651,7 +651,6 @@ header .header__log ul li:hover {
     color: #FFFFFF;
     border:none;
     cursor: pointer;
-    outline: none;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
     transition: .3s ease-in-out;
 }
@@ -804,11 +803,14 @@ header .header__log ul li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 .teacher__block {
     width: 742px;
     height: 336px;
     border: 1px solid #E3E0E0;
+    margin-right: 24px;
 }
 .teacher__users {
     width: 416px;
