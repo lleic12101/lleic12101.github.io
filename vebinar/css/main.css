@@ -655,17 +655,20 @@ header .header__log ul li:hover {
     transition: .3s ease-in-out;
 }
 .watcher__button:hover {
-    box-shadow: 1px 2px 5px rgba(0,0,0,0);
     background: #77ae77;
+}
+.watcher__button:focus {
+    box-shadow: 1px 2px 5px rgba(0,0,0,0);
 }
 .watcher__button-disabled {
     cursor: auto;
     background: #E3E0E0;
     color: #4F6180;
     margin-bottom: 16px;
+    box-shadow: none;
 }
 .watcher__button-disabled:hover {
-    background: #eeebeb;
+    background: #E3E0E0;
 }
 .watcher__button-stop {
     width: 120px;
