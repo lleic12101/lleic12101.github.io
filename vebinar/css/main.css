@@ -796,6 +796,29 @@ header .header__log ul li:hover {
 /*WATCHER END*/
 
 
+/*TEACHER*/
+.chat__wrapper-teacher .chat__body {
+    height: 274px;
+}
+.teacher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.teacher__block {
+    width: 742px;
+    height: 336px;
+    border: 1px solid #E3E0E0;
+}
+.teacher__users {
+    width: 416px;
+    height: 336px;
+    background: #FFFFFF;
+    border: 1px solid #E3E0E0;
+}
+/*TEACHER END*/
+
+
 @media screen and (max-width: 1228px) {
     .container:not(.container-fluid) {
         width: 1149px; }
@@ -840,8 +863,10 @@ header .header__log ul li:hover {
         height: 341px; }
     .watcher__blockItem {
         max-width: 610px;}
-    .chat__wrapper {
+    .chat__wrapper-watcher {
         min-width: 370px; }
+    .chat__wrapper {
+        width: 370px; }
     .chat__wrapper .chat__footer .form textarea {
         width: 220px; }
     .container__video {
@@ -866,8 +891,10 @@ header .header__log ul li:hover {
         width: 587px; }
     .container__video .description__video {
         width: 483px; }
-    .chat__wrapper {
+    .chat__wrapper-watcher {
         min-width: 320px; }
+    .chat__wrapper {
+        width: 320px; }
     .chat__wrapper .chat__footer .form textarea {
         width: 170px; }
     .watcher__text-big {

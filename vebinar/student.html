@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>document project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div class="row__between">
+        <div class="header__logo"><a href="#!"><img src="./img/logo.png" alt="logo"></a></div>
+        <div class="header__watcherBlock">
+            <div class="header__watcher" id="headerItem1">
+                <a href="#"><img src="img/phone-green.png" alt="phone" class="header__watcherImg" /></a>
+            </div>
+            <div class="header__watcher header__watcher-active" id="headerItem2">
+                <p class="header__watcherText">ДОЗВАНИВАЕМСЯ</p>
+                <a href="#"><img src="img/phone-gray.png" alt="phone" class="header__watcherImg" /></a>
+            </div>
+            <div class="header__menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </div>
+    <div class="row__end header__log">
+        <ul>
+            <li><a href="#!">Вход / Регистрация</a></li>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <div class="wrapper__content row__between">
+        <div class="watcher">
+            <div class="video">
+                <video poster="./img/video-preview.png">
+                    <source src="">
+                </video>
+                <div class="video__control">
+                    <div class="control__logo"><a href="#!"><img src="./img/logo-chanel.png" alt="logo chanel" draggable="false"></a></div>
+                    <div class="control__options row__between">
+                        <ul class="row">
+                            <li class="option__item"><i class="fas fa-volume-up"></i></li>
+                            <li class="option__item option__item-camera"><i class="fas fa-video"></i></li>
+                            <li class="option__item option__item-stop"><i class="fas fa-play"></i></li>
+                        </ul>
+                        <ul>
+                            <li class="option__item option__item-full"><i class="fas fa-expand"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="watcher__block">
+                <div class="watcher__blockItem watcher__blockItem-active" id="blockItem1">
+                    <div class="watcher__blockHeader">
+                        <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <p class="watcher__text">
+                            Звонок по видеосвязи, доступен тем, кто внес от 20 донат.
+                            Ответ на Ваш вопрос станет частью обсуждения данной трансляции.
+                        </p>
+                        <div class="watcher__buttonBlock">
+                            <button class="watcher__button watcher__button-call">ПОЗВОНИТЬ</button>
+                            <p class="watcher__buttonBlockText watcher__buttonBlockText-dots">Дозваниваемся</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="watcher__blockItem" id="blockItem2">
+                    <div class="watcher__blockHeader">
+                        <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <p class="watcher__text">
+                            Звонок по видеосвязи, доступен тем, кто внес от 20 донат.
+                            Ответ на Ваш вопрос станет частью обсуждения данной трансляции.
+                        </p>
+                        <div class="watcher__buttonBlock">
+                            <button class="watcher__button watcher__button-disabled" disabled>ПОЗВОНИТЬ</button>
+                            <p class="watcher__buttonBlockText">Линия занята</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="watcher__blockItem" id="blockItem3">
+                    <div class="watcher__blockHeader">
+                        <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <p class="watcher__text-big">
+                            Вы разговариваете с публикатором
+                        </p>
+                        <div class="watcher__buttonBlock">
+                            <button class="watcher__button watcher__button-stop">ЗАКОНЧИТЬ</button>
+                            <p class="watcher__buttonBlockText watcher__buttonBlockText-bold">00:12:45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="watcher__blockItem" id="blockItem4">
+                    <div class="watcher__blockHeader watcher__blockHeader-disabled">
+                        <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР ЗАПРЕЩЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <p class="watcher__blockContentClosedText">
+                            Публикатор ограничил звонки в эфир. Когда возможность возобновится,
+                            справа появится соответствующая кнопка
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Этот код для демонстрации, его нужно убрать после просмотра -->
+            <div class="switcher">
+                <a class="switcher__btn switcher__btn-before"><</a>
+                <a class="switcher__btn switcher__btn-next">></a>
+            </div>
+            <script type="text/javascript">
+                var watcherItems = document.querySelectorAll('.watcher__blockItem');
+                var watcherBeforeBtn = document.querySelector('.switcher__btn-before');
+                var watcherNextBtn = document.querySelector('.switcher__btn-next');
+                var watcherNumber = 0;
+
+                watcherBeforeBtn.addEventListener("click", function () {
+                    if(watcherNumber != 0) watcherNumber--;
+                    else watcherNumber = watcherItems.length-1;
+                    showWatcherItem(watcherNumber);
+                });
+                watcherNextBtn.addEventListener("click", function () {
+                    if(watcherNumber < watcherItems.length-1) watcherNumber++;
+                    else watcherNumber = 0;
+                    showWatcherItem(watcherNumber);
+                });
+
+                function showWatcherItem (num) {
+                    for(var i = 0; i < watcherItems.length; i++) {
+                        watcherItems[i].classList.remove('watcher__blockItem-active');
+                    }
+                    watcherItems[num].classList.add('watcher__blockItem-active');
+                }
+            </script>
+            <!-- Этот код для демонстрации, его нужно убрать после просмотра -->
+
+        </div>
+        <div class="chat__wrapper chat__wrapper-watcher">
+            <div class="chat">
+                <div class="chat__header">
+                    <p>На стриме присутствуют: <span>279</span></p>
+                </div>
+                <div class="chat__body chat__body-watcher">
+                    <ul>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                        <li>
+                            <div class="messages"><span class="name">Андрей</span><span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat__footer">
+                    <div class="user"><span class="name">Андрей</span></div>
+                    <div class="form" action="#!">
+                        <div class="row">
+                            <textarea class="input-message" type="text" placeholder="Добавить комментарий"></textarea><span class="counter-symbol"><span class="counter">0 </span>/ 250</span>
+                        </div>
+                        <div class="send">
+                            <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container__video">
+        <div class="description__video">
+            <div class="video__link"><a href="#!">Архив записей - </a><a href="#!">Будущие стримы - </a><a href="#!">Прошедшие стримы </a></div>
+            <div class="video__title">
+                <h3>Успех в эпоху коммунизма</h3>
+            </div>
+            <div class="video__description">
+                <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="response__content">
+    <div class="content__log">
+        <ul>
+            <li><a href="#!">Вход / </a></li>
+            <li><a href="#!">Регистрация</a></li>
+        </ul>
+    </div>
+    <div class="container__video">
+        <div class="description__video">
+            <div class="video__link"><a href="#!">Архив записей - </a><a href="#!">Будущие стримы - </a><a href="#!">Прошедшие стримы </a></div>
+            <div class="video__title">
+                <h3>Успех в эпоху коммунизма</h3>
+            </div>
+            <div class="video__description">
+                <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const header = document.querySelector('header')
+    const container = document.querySelector('.container')
+    const input = document.querySelector('.input-message')
+    const sendButton = document.querySelector('.send-message')
+    const counterSymbol = document.querySelector('.counter-symbol .counter')
+    const chatWrapp = document.querySelector('.chat__wrapper')
+    const chatBody = document.querySelector('.chat__body')
+    const contentWrapp = document.querySelector('.wrapper__content')
+    const chatList = chatBody.querySelector('ul')
+    const chatFooter = document.querySelector('.chat__wrapper .chat .chat__footer')
+    const video = document.querySelector('.video')
+    const videoControlFull = video.querySelector('.option__item-full')
+    const userName = document.querySelector('.chat__footer .user .name').textContent
+    const responseContent = document.querySelector('.response__content')
+    const menu = document.querySelector('.header__menu i')
+    const textVideo = document.querySelector('.container__video')
+
+    menu.addEventListener('click', function() {
+        this.classList.toggle('fa-times')
+        responseContent.classList.toggle('response__content-active')
+        chatWrapp.classList.toggle('chat__wrapper-hide')
+    })
+
+    input.addEventListener('input', function() {
+        counterSymbol.textContent = this.value.length + ' '
+        if (this.value.length >= 250) {
+            this.classList.add('error')
+            document.querySelector('.counter-symbol').classList.add('error')
+            sendButton.disabled = true
+        } else {
+            this.classList.remove('error')
+            document.querySelector('.counter-symbol').classList.remove('error')
+            sendButton.disabled = false
+        }
+    })
+
+    const sendMessage = () => {
+        if (input.value.length === 0) {
+            return false
+        }
+        if (!(input.value.length >= 250)) {
+            chatList.innerHTML += `
+                  <li>
+                      <div class="messages">
+                          <span class="name">${userName}</span>
+                          <span class="text">${input.value}</span>
+                      </div>
+                  </li>
+              `
+            chatBody.scrollTo({ top: chatList.offsetHeight, behavior: 'smooth' })
+            input.value = ''
+            counterSymbol.textContent = '0 '
+        }
+    }
+
+    sendButton.addEventListener('click', () => {
+        sendMessage()
+    })
+    input.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+        sendMessage()
+    }
+    })
+
+    videoControlFull.addEventListener('click', function() {
+        const el = this.querySelector('i')
+
+        header.classList.toggle('hide')
+        chatWrapp.classList.toggle('chat__wrapper-hide')
+        container.classList.toggle('container-fluid')
+        textVideo.classList.toggle('container__video-hide')
+        video.classList.toggle('video-full')
+
+
+        if (el.classList.contains('fa-expand')) {
+            el.classList.remove('fa-expand')
+            el.classList.add('fa-compress')
+        } else {
+            el.classList.remove('fa-compress')
+            el.classList.add('fa-expand')
+        }
+    })
+
+    var watcherBlock = document.querySelector('.watcher__block');
+    var chatHeader = document.querySelector('.chat__header');
+    var chatBodyWatcher = document.querySelector('.chat__body-watcher');
+
+    if(window.innerWidth > 736){
+        var chatBodyHeight = (24 + video.clientHeight + watcherBlock.clientHeight) - chatHeader.clientHeight - chatFooter.clientHeight - 4;
+        chatBodyWatcher.style.height = chatBodyHeight + 'px';
+    }
+
+    var callBtn = document.querySelector('.watcher__button-call');
+    callBtn.addEventListener("click", function () {
+        document.querySelector('.watcher__buttonBlockText-dots').style.opacity = 1;
+    });
+</script>
+</body>
+</html>
