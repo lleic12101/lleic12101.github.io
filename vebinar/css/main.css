@@ -289,10 +289,12 @@ header .header__log ul li:hover {
     width: 8px; }
 
 .chat__wrapper .chat__body::-webkit-scrollbar-track-piece {
-    background-color: #bebebe; }
+    background-color: #BEBEBE;
+    }
 
 .chat__wrapper .chat__body::-webkit-scrollbar-thumb {
-    background-color: #faf9f9; }
+    background: #4174CC;
+    border: 1px solid #C8C4C4; }
 
 .chat__wrapper .chat__body ul li {
     display: -webkit-box;
