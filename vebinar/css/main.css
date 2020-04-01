@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 
-
+body {
+    background: #f9f9f9;
+}
 .container {
     width: 1184px;
     margin: 0 auto; }
@@ -268,6 +270,7 @@ header .header__log ul li:hover {
     border: 1px solid #e3e0e0; }
 
 .chat__wrapper .chat__header {
+    background: #fff;
     padding: 16px;
     border-bottom: 1px solid #e3e0e0; }
 
@@ -282,6 +285,7 @@ header .header__log ul li:hover {
 
 .chat__body {
     padding: 24px 13px;
+    background: #fff;
     overflow-y: scroll;
     height: 222px; }
 
@@ -321,6 +325,7 @@ header .header__log ul li:hover {
 
 .chat__wrapper .chat__footer {
     border-top: 1px solid #e3e0e0;
+    background: #fff;
     padding: 15px 13px; }
 
 .chat__wrapper .chat__footer.position {
@@ -419,13 +424,14 @@ header .header__log ul li:hover {
 .chat__wrapper .chat__footer .form .counter-symbol {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 2px;
+    padding-top: -1px;
     border-bottom: 1px solid #e3e0e0;
     color: #4f6180;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px; }
-
+    font-size: 11px;
+    margin-bottom: 3px;
+}
 .chat__wrapper .chat__footer .form .counter-symbol.error {
     border-bottom-color: #cc3a23; }
 
@@ -652,6 +658,7 @@ header .header__log ul li:hover {
     line-height: 19px;
     color: #FFFFFF;
     border:none;
+    outline: none;
     cursor: pointer;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
     transition: .3s ease-in-out;
@@ -810,15 +817,449 @@ header .header__log ul li:hover {
 }
 .teacher__block {
     width: 742px;
-    height: 336px;
+    max-height: 336px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+}
+.teacher__blockBtns {
+    flex-direction: column;
+    min-width: 48px;
+}
+.teacher__blockBtn {
+    height: 144px;
+    background: #E3E0E0;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    color: #4F6180;;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teacher__blockBtn:last-child {
+    border-top: 1px solid #4F6180;
+}
+.teacher__blockBtn:hover {
+    background: #DAD5D5;
+}
+.teacher__blockBtn-active {
+    background: #345CA0;
+    color: #fff;
+}
+.teacher__blockBtn-active:hover {
+    background: #345CA0;
+}
+.teacher__blockBtn-sygnal {
+    width: 48px;
+    height: 48px;
+    border-top: none;
+    font-size: 26px;
+    border-bottom: 1px solid #4F6180;
+    background: #E3E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    transition: .3s ease-in-out;
+}
+.teacher__blockBtn-sygnal.teacher__blockBtn-active {
+     background: #E3E0E0;
+ }
+.teacher__blockBtn-sygnal-green.teacher__blockBtn-active {
+    background: #679967;
+    cursor: pointer;
+}
+.teacher__blockBtn-sygnal-green {
+    background: #679967;
+    cursor: pointer;
+}
+.teacher__blockBtn-sygnal-calling {
+    color: transparent;
+    animation: calling 2s infinite ease-in-out;
+}
+.teacher__blockBtn-sygnal.teacher__blockBtn-symbol-calling {
+    animation: none;
+}
+@keyframes calling {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.teacher__blockTabs {
+    width: 100%;
+    height: 100%;
+    background:#fff;
+}
+.teacher__blockTab {
+    width: 100%;
+    height: calc(100% - 48px);
+    display: none;
+    background: #FFFFFF;
+    flex-direction: column;
+}
+.teacher__blockTab-active {
+    display: flex;
+}
+.teacher__blockTab-calls {
+    display: none;
+    height: 100%;
+}
+.teacher__blockTabCalls-active {
+    display: flex;
+}
+.teacher__blockTabHeader {
+    width: 100%;
+    min-height: 48px;
+    background: #E3E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.teacher__blockTabHeaderText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #4F6180;
+    transition: .3s ease-in-out;
+}
+.teacher__blockTabHeader-green {
+    background: #679967;
+}
+.teacher__blockTabHeader-green p {
+    color: #FFFFFF;
+}
+.teacher__blockTabHeaderImg-dark {
+    position: absolute;
+    left: 122px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.teacher__blockTabHeaderImg-light {
+    position: absolute;
+    left: 122px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.teacher__blockTabHeaderImg-active {
+    z-index: 1;
+    opacity: 1;
+}
+.teacher__blockTabContent {
+    width: 100%;
+    height: 100%;
     border: 1px solid #E3E0E0;
+}
+.teacher__blockTabContent-scroll::-webkit-scrollbar {
+    width: 8px; }
+.teacher__blockTabContent-scroll::-webkit-scrollbar-track-piece {
+    background-color: #BEBEBE;
+}
+.teacher__blockTabContent-scroll::-webkit-scrollbar-thumb {
+    background: #4174CC;
+    border: 1px solid #C8C4C4;
+}
+.teacher__blockTabTextarea {
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    outline: none;
+    padding: 24px 32px 22px 24px;
+}
+.teacher__blockTabTextarea::-webkit-scrollbar {
+    width: 8px; }
+.teacher__blockTabTextarea::-webkit-scrollbar-track-piece {
+    background-color: #BEBEBE;
+}
+.teacher__blockTabTextarea::-webkit-scrollbar-thumb {
+    background: #4174CC;
+    border: 1px solid #C8C4C4;
+}
+
+.teacher__blockTabContentYesTab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teacher__blockTabContentYesText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 73px;
+}
+.teacher__blockTabContentYesBtns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 69px;
+}
+.teacher__blockTabBtn {
+    border-radius: 2px;
+    width: 120px;
+    height: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+    border: none;
+    outline: none;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+}
+.teacher__blockTabBtn:focus {
+    box-shadow: 1px 2px 5px rgba(0,0,0,0);
+}
+.teacher__blockTabBtn-green {
+    background: #679967;
+}
+.teacher__blockTabBtn-green:hover {
+    background: #77ae77;
+}
+.teacher__blockTabBtn-red {
+    background: #CC432D;
+}
+.teacher__blockTabBtn-red:hover {
+    background: #e5482d;
+}
+.teacher__blockTabContentYesBtns .teacher__blockTabBtn-green {
+    margin-right: 48px;
+}
+
+.teacher__blockTabEmptyText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-top: 95px;
+}
+
+.teacher__blockTabTalkingText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 35px;
+}
+.teacher__blockTabTalkingTime {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 37px;
+    margin-bottom: 30px;
+}
+
+.teacher__blockTabListItem:first-child {
+    margin-top: 24px;
+}
+.teacher__blockTabListItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15px 24px;
+}
+.teacher__blockTabListItemName {
+    width: 140px;
+    margin-right: 23px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.teacher__blockTabListItemMail {
+    width: 180px;
+    margin-right: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.teacher__blockTabListItem .teacher__blockTabBtn-green {
     margin-right: 24px;
 }
+
 .teacher__users {
     width: 416px;
     height: 336px;
     background: #FFFFFF;
     border: 1px solid #E3E0E0;
+    display: flex;
+    flex-direction: column;
+}
+.teacher__usersHeader {
+    width: 100%;
+    border-bottom: 1px solid #E3E0E0;
+    height: 48px;
+    padding-left: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.teacher__usersHeaderText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+.teacher__usersButtons {
+    border-bottom: 1px solid #E3E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.teacher__usersButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: background .3s ease-in-out;
+    cursor: pointer;
+    width: 138px;
+    height: 49px;
+}
+.teacher__usersButton:hover {
+    background: #F9F9F9;
+}
+.teacher__usersButton-active {
+    background: #F9F9F9;
+}
+.teacher__usersButtonText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+.teacher__usersText-green {
+    color: #679967;
+}
+.teacher__usersText-red {
+    color: #CC432D;
+}
+.teacher__usersText-gray {
+    color: #636060;
+}
+.teacher__usersTabs {
+    overflow-y: scroll;
+    max-height: 240px;
+}
+.teacher__usersTabs::-webkit-scrollbar {
+    width: 8px; }
+.teacher__usersTabs::-webkit-scrollbar-track-piece {
+    background-color: #BEBEBE;
+}
+.teacher__usersTabs::-webkit-scrollbar-thumb {
+    background: #4174CC;
+    border: 1px solid #C8C4C4;
+}
+.teacher__usersTab {
+    display: none;
+    width: 100%;
+    flex-direction: column;;
+}
+.teacher__usersTab-active {
+    display: flex;
+}
+.teacher__usersSort {
+    display: flex;
+    flex-direction: row;
+    padding-top: 13px;
+    padding-bottom: 7.62px;
+}
+.teacher__usersSort a i {
+    color: #4174CC;
+    font-size: 14px;
+    opacity: 1;
+}
+.teacher__usersName {
+    padding-left: 18px;
+    width: 137px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+}
+.teacher__usersMail {
+    padding-left: 25px;
+    color: #4174CC;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.teacher__usersMail i {
+    font-size: 14px;
+    cursor: pointer;
+    color: #4F6180;
+    padding-right: 13.29px;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.teacher__usersLine {
+    width: 100%;
+    height: 32px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .3s ease-in-out;
+    margin-bottom: -7px;
+}
+.teacher__usersLine:hover {
+    background: #FFFAE0;
+}
+.teacher__usersLine:hover .teacher__usersMail i {
+    /*opacity: 1; */
 }
 /*TEACHER END*/
 
@@ -856,6 +1297,21 @@ header .header__log ul li:hover {
     .watcher__text-big {
         margin-top: 0;
         text-align: center;
+    }
+    .teacher {
+        flex-direction: column;
+        align-items: center;
+    }
+    .teacher__blockTabs {
+        min-height: 336px;
+        height: 100%;
+    }
+    .teacher__blockTabContent {
+        height: 288px;
+    }
+    .teacher__block {
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 }
 
@@ -955,7 +1411,11 @@ header .header__log ul li:hover {
     .container__video {
         width: 399px; }
     .container__video .description__video {
-        width: 380px; } }
+        width: 380px; }
+    .teacher__block {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 736px) {
     .header__watcher-active {
@@ -1024,7 +1484,7 @@ header .header__log ul li:hover {
     .chat__wrapper .chat .chat__footer .form .row textarea {
         width: 100%; }
     .chat__wrapper .chat .chat__footer .form .row .counter-symbol {
-        width: 40px; }
+        min-width: 60px; }
     .watcher__block {
         margin-top: 8px;
         margin-bottom: 5px;
@@ -1036,6 +1496,9 @@ header .header__log ul li:hover {
         display: none;
     }
     .switcher {
+        display: none;
+    }
+    .teacher {
         display: none;
     }
 }

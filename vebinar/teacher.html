@@ -121,10 +121,248 @@
     </div>
     <div class="teacher">
         <div class="teacher__block">
-
+            <div class="teacher__blockBtns">
+                <div class="teacher__blockBtn-sygnal" id="btnCalls">
+                    <i class="fas fa-podcast"></i>
+                </div>
+                <div class="teacher__blockBtn teacher__blockBtn-active" id="btnNotice1">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="teacher__blockBtn" id="btnNotice2">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+            </div>
+            <div class="teacher__blockTabs">
+                <div class="teacher__blockTabHeader">
+                    <img src="img/switch-dark.svg" alt="switch" class="teacher__blockTabHeaderImg-dark teacher__blockTabHeaderImg-active" />
+                    <img src="img/switch-light.svg" alt="switch" class="teacher__blockTabHeaderImg-light" />
+                    <p class="teacher__blockTabHeaderText">РАЗРЕШИТЬ ЗВОНКИ В ЭФИР</p>
+                </div>
+                <div class="teacher__blockTab teacher__blockTab-active" id="tabNotice1">
+                    <div class="teacher__blockTabContent">
+                        <textarea class="teacher__blockTabTextarea">Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки.</textarea>
+                    </div>
+                </div>
+                <div class="teacher__blockTab" id="tabNotice2">
+                    <div class="teacher__blockTabContent">
+                        <textarea class="teacher__blockTabTextarea">Тут будут шпаргалки.2 Тут будут шпаргалки.2 Тут будут шпаргалки.2 Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки. Тут будут шпаргалки.</textarea>
+                    </div>
+                </div>
+                <div class="teacher__blockTab" id="tabCalls">
+                    <div class="teacher__blockTab-calls" id="tabYes">
+                        <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                            <p class="teacher__blockTabContentYesText">Вы собираетесь разрешить звонки в эфир</p>
+                            <div class="teacher__blockTabContentYesBtns">
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-green" id="btnOpenYes">РАЗРЕШИТЬ</button>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-red" id="btnOpenNo">ОТКЛОНИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher__blockTab-calls" id="tabNo">
+                        <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                            <p class="teacher__blockTabContentYesText">Вы собираетесь запретить звонки в эфир</p>
+                            <div class="teacher__blockTabContentYesBtns">
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-green" id="btnCloseYes">ЗАПРЕТИТЬ</button>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-red" id="btnCloseNo">ОТКЛОНИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher__blockTab-calls" id="tabEmpty">
+                        <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                            <p class="teacher__blockTabEmptyText">Пока ни одного звонящего...</p>
+                        </div>
+                    </div>
+                    <div class="teacher__blockTab-calls" id="tabTalking">
+                        <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                            <p class="teacher__blockTabTalkingText">Вы разговариваете с Василий</p>
+                            <p class="teacher__blockTabTalkingTime">00:12:45</p>
+                            <button class="teacher__blockTabBtn teacher__blockTabBtn-red" id="btnTalkingStop">ЗАКОНЧИТЬ</button>
+                        </div>
+                    </div>
+                    <div class="teacher__blockTab-calls" id="tabList">
+                        <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                            <div class="teacher__blockTabListItem">
+                                <p class="teacher__blockTabListItemName">Василий</p>
+                                <p class="teacher__blockTabListItemMail">vasil@ukr.net</p>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-green btnAcceptPeople">ПРИНЯТЬ</button>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-red btnDeclinePeople">ОТКЛОНИТЬ</button>
+                            </div>
+                            <div class="teacher__blockTabListItem">
+                                <p class="teacher__blockTabListItemName">Пётр</p>
+                                <p class="teacher__blockTabListItemMail">vasil@ukr.net</p>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-green btnAcceptPeople">ПРИНЯТЬ</button>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-red btnDeclinePeople">ОТКЛОНИТЬ</button>
+                            </div>
+                            <div class="teacher__blockTabListItem">
+                                <p class="teacher__blockTabListItemName">Геннадий</p>
+                                <p class="teacher__blockTabListItemMail">vasil@ukr.net</p>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-green btnAcceptPeople">ПРИНЯТЬ</button>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-red btnDeclinePeople">ОТКЛОНИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="teacher__users">
-
+            <div class="teacher__usersHeader">
+                <p class="teacher__usersHeaderText">Зарегистрированные участники: 529</p>
+            </div>
+            <div class="teacher__usersButtons">
+                <div class="teacher__usersButton teacher__usersButton-active" id="btnOnline">
+                    <p class="teacher__usersButtonText teacher__usersText-green">ОНЛАЙН (172)</p>
+                </div>
+                <div class="teacher__usersButton" id="btnLeft">
+                    <p class="teacher__usersButtonText teacher__usersText-red">ВЫШЛИ (35)</p>
+                </div>
+                <div class="teacher__usersButton" id="btnOffline">
+                    <p class="teacher__usersButtonText teacher__usersText-gray">НЕ ВХОДИЛИ (14)</p>
+                </div>
+            </div>
+            <div class="teacher__usersTabs">
+                <div class="teacher__usersTab teacher__usersTab-active" id="tabOnline">
+                    <div class="teacher__usersSort">
+                        <p class="teacher__usersName"><a href="#"><i class="fas fa-sort-amount-down"></i></a></p>
+                        <p class="teacher__usersMail"><a href="#"><i class="fas fa-sort-amount-down"></i></a></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-green">Василий</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-green">Андрей</p>
+                        <p class="teacher__usersMail">koriandr@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Капитан</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Кто здесь</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                </div>
+                <div class="teacher__usersTab" id="tabLeft">
+                    <div class="teacher__usersSort">
+                        <p class="teacher__usersName"><a href="#"><i class="fas fa-sort-amount-down"></i></a></p>
+                        <p class="teacher__usersMail"><a href="#"><i class="fas fa-sort-amount-down"></i></a></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-green">Василий</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-green">Андрей</p>
+                        <p class="teacher__usersMail">koriandr@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Капитан</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Кто здесь</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                </div>
+                <div class="teacher__usersTab" id="tabOffline">
+                    <div class="teacher__usersSort">
+                        <p class="teacher__usersName"><a href="#"><i class="fas fa-sort-amount-down"></i></a></p>
+                        <p class="teacher__usersMail"><a href="#"><i class="fas fa-sort-amount-down"></i></a></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-gray">Тут его там</p>
+                        <p class="teacher__usersMail">ups@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-green">Василий</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-green">Андрей</p>
+                        <p class="teacher__usersMail">koriandr@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Капитан</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                    <div class="teacher__usersLine">
+                        <p class="teacher__usersName teacher__usersText-red">Кто здесь</p>
+                        <p class="teacher__usersMail">vasil@ukr.net<i class="fas fa-ellipsis-v"></i></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -243,6 +481,153 @@
             el.classList.add('fa-expand')
         }
     })
+
+    var userBtns = document.querySelectorAll('.teacher__usersButton');
+    var userTabs = document.querySelectorAll('.teacher__usersTab');
+    for(var i = 0; i < userBtns.length; i++) {
+        userBtns[i].addEventListener("click", function () {
+            for(var i = 0; i < userBtns.length; i++) {
+                userBtns[i].classList.remove('teacher__usersButton-active');
+            }
+            this.classList.add('teacher__usersButton-active');
+            for(var i = 0; i < userTabs.length; i++) {
+                userTabs[i].classList.remove('teacher__usersTab-active');
+            }
+            document.querySelector("#tab" + this.id.substr(3, this.id.length)).classList.add('teacher__usersTab-active');
+        });
+    }
+
+    var tabsBlockBtns = document.querySelectorAll('.teacher__blockBtn');
+    var tabsBlockTabs = document.querySelectorAll('.teacher__blockTab');
+    for(var i = 0; i < tabsBlockBtns.length; i++) {
+        tabsBlockBtns[i].addEventListener("click", function () {
+            for(var i = 0; i < tabsBlockBtns.length; i++) {
+                tabsBlockBtns[i].classList.remove('teacher__blockBtn-active');
+            }
+            this.classList.remove('teacher__blockBtn-switcher-calling');
+            this.classList.add('teacher__blockBtn-active');
+            for(var i = 0; i < tabsBlockTabs.length; i++) {
+                tabsBlockTabs[i].classList.remove('teacher__blockTab-active');
+            }
+            document.querySelector("#tab" + this.id.substr(3, this.id.length)).classList.add('teacher__blockTab-active');
+        });
+    }
+
+    var darkBtn = document.querySelector('.teacher__blockTabHeaderImg-dark');
+    var lightBtn = document.querySelector('.teacher__blockTabHeaderImg-light');
+    var blockHeader = document.querySelector('.teacher__blockTabHeader');
+    var blockHeaderText = document.querySelector('.teacher__blockTabHeaderText');
+    var squareHeader = document.querySelector('.teacher__blockBtn-sygnal');
+
+    darkBtn.addEventListener("click", function () {
+       onlyOpenTab("tabCalls");
+       openInnerTab("tabYes");
+    });
+    var btnOpenYes = document.querySelector("#btnOpenYes");
+    var btnOpenNo = document.querySelector("#btnOpenNo");
+    btnOpenYes.addEventListener("click", function () {
+        openTab("tabCalls", "btnCalls", 1);
+        openInnerTab("tabList");
+        darkBtn.classList.remove('teacher__blockTabHeaderImg-active');
+        lightBtn.classList.add('teacher__blockTabHeaderImg-active');
+        blockHeader.classList.add('teacher__blockTabHeader-green');
+        squareHeader.classList.add('teacher__blockBtn-sygnal-green');
+        blockHeaderText.innerHTML = "ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ";
+    });
+    btnOpenNo.addEventListener("click", function () {
+        openTabForBtn()
+    });
+
+    lightBtn.addEventListener("click", function () {
+        var tab = document.querySelector('#tabTalking');
+        if(!tab.classList.contains("teacher__blockTabCalls-active")){
+            onlyOpenTab("tabCalls");
+            openInnerTab("tabNo");
+        }
+    });
+    var btnCloseYes = document.querySelector("#btnCloseYes");
+    var btnCloseNo = document.querySelector("#btnCloseNo");
+    btnCloseYes.addEventListener("click", function () {
+        openTab("tabNotice1", "btnNotice1");
+        var tabsInner = document.querySelectorAll('.teacher__blockTab-calls');
+        for(var i = 0; i < tabsInner.length; i++) {
+            tabsInner[i].classList.remove('teacher__blockTabCalls-active');
+        }
+        lightBtn.classList.remove('teacher__blockTabHeaderImg-active');
+        darkBtn.classList.add('teacher__blockTabHeaderImg-active');
+        blockHeader.classList.remove('teacher__blockTabHeader-green');
+        squareHeader.classList.remove('teacher__blockBtn-sygnal-green');
+        squareHeader.classList.remove('teacher__blockBtn-active');
+        blockHeaderText.innerHTML = "РАЗРЕШИТЬ ЗВОНКИ В ЭФИР";
+    });
+    btnCloseNo.addEventListener("click", function () {
+        openInnerTab("tabList");
+    });
+
+    var greenBtn = document.querySelector('.teacher__blockBtn-sygnal');
+    greenBtn.addEventListener("click", function () {
+        if(this.classList.length != 1) {
+            openTab("tabCalls", "btnCalls", 1);
+        }
+    });
+
+    var acceptBtn = document.querySelectorAll(".btnAcceptPeople");
+    var declineBtn = document.querySelectorAll(".btnDeclinePeople");
+    for(var i = 0; i < acceptBtn.length; i++) {
+        acceptBtn[i].addEventListener("click", function () {
+            var textTag = document.querySelector('.teacher__blockTabTalkingText');
+            textTag.innerHTML = "Вы разговариваете с " + this.parentNode.firstChild.nextSibling.textContent;
+           openInnerTab("tabTalking");
+        });
+        declineBtn[i].addEventListener("click", function () {
+            var parent = this.parentNode;
+            this.parentNode.parentNode.removeChild(parent);
+            var btns = document.querySelectorAll(".btnAcceptPeople");
+            if(btns.length == 0) {
+                var tab = document.querySelector("#tabList");
+                var empty = document.querySelector("#tabEmpty");
+                tab.firstElementChild.innerHTML = empty.firstElementChild.innerHTML;
+            }
+        });
+    }
+
+    var stopTalkingBtn = document.querySelector("#btnTalkingStop");
+    stopTalkingBtn.addEventListener("click", function () {
+       openInnerTab("tabList");
+    });
+
+    function onlyOpenTab(id){
+        that = document.querySelector("#" + id);
+        for(var i = 0; i < tabsBlockTabs.length; i++) {
+            tabsBlockTabs[i].classList.remove('teacher__blockTab-active');
+        }
+        that.classList.add('teacher__blockTab-active');
+    }
+    function openTab(id, buttonId, mode){
+        that = document.querySelector("#" + id);
+        thatBtn = document.querySelector("#" + buttonId);
+        for(var i = 0; i < tabsBlockBtns.length; i++) {
+            tabsBlockBtns[i].classList.remove('teacher__blockBtn-active');
+        }
+        thatBtn.classList.remove('teacher__blockBtn-switcher-calling');
+        thatBtn.classList.add('teacher__blockBtn-active');
+        for(var i = 0; i < tabsBlockTabs.length; i++) {
+            tabsBlockTabs[i].classList.remove('teacher__blockTab-active');
+        }
+        that.classList.add('teacher__blockTab-active');
+    }
+    function openInnerTab(id){
+        that = document.querySelector("#" + id);
+        var tabs = document.querySelectorAll('.teacher__blockTab-calls');
+        for(var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('teacher__blockTabCalls-active');
+        }
+        that.classList.add('teacher__blockTabCalls-active');
+    }
+    function openTabForBtn() {
+        var btn = document.querySelector(".teacher__blockBtn-active");
+        openTab("tab" + btn.id.substr(3, btn.id.length), btn.id);
+    }
 </script>
 </body>
 </html>
