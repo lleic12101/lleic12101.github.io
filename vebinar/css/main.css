@@ -652,12 +652,20 @@ header .header__log ul li:hover {
     cursor: pointer;
     outline: none;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+    transition: .3s ease-in-out;
+}
+.watcher__button:hover {
+    box-shadow: 1px 2px 5px rgba(0,0,0,0);
+    background: #77ae77;
 }
 .watcher__button-disabled {
     cursor: auto;
     background: #E3E0E0;
     color: #4F6180;
     margin-bottom: 16px;
+}
+.watcher__button-disabled:hover {
+    background: #eeebeb;
 }
 .watcher__button-stop {
     width: 120px;
@@ -666,7 +674,10 @@ header .header__log ul li:hover {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    margin-bottom: 18px;
+    margin: 0 32px 18px;
+}
+.watcher__button-stop:hover {
+    background: #e5482d;
 }
 .watcher__buttonBlockText {
     font-family: Roboto;
@@ -790,6 +801,10 @@ header .header__log ul li:hover {
     }
     .watcher__buttonBlock {
         margin-left: 30px;
+    }
+    .watcher__text-big {
+        margin-top: 0;
+        text-align: center;
     }
 }
 
