@@ -504,7 +504,9 @@
             el.classList.remove('fa-compress');
             el.classList.add('fa-expand');
             video.style.width = "";
-            teacherColumn.style.marginTop = '24px';
+            if(window.innerWidth > 736) {
+                teacherColumn.style.marginTop = '24px';
+            }
         }
     })
 
