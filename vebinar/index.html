@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="header__watcher">
-            <p class="header__watcherText">ДОЗВАНИВАЕМСЯ</p>
+            <p class="header__watcherText">ЗВОНИМ</p>
             <i class="fas fa-phone-square header__watcherPhone"></i>
         </div>
         <div class="watcher__headerSocialItems-mobile">
@@ -439,12 +439,20 @@
         buttonMobOld.classList.remove("watcher__headerBtnBlock-active");
         watchTab1.classList.add("watcher__tab-active");
         watchTab2.classList.remove("watcher__tab-active");
+        responseContent.classList.remove('response__content-active');
+        chatWrapp.classList.remove('chat__wrapper-hide');
+        menu.classList.remove('fa-times');
+        menu.parentNode.parentNode.classList.remove('watcher__headerBtnBlock-active');
     });
     buttonMobOld.addEventListener("click", function () {
         this.classList.add("watcher__headerBtnBlock-active");
         buttonMobLive.classList.remove("watcher__headerBtnBlock-active");
         watchTab2.classList.add("watcher__tab-active");
         watchTab1.classList.remove("watcher__tab-active");
+        responseContent.classList.remove('response__content-active');
+        chatWrapp.classList.remove('chat__wrapper-hide');
+        menu.classList.remove('fa-times');
+        menu.parentNode.parentNode.classList.remove('watcher__headerBtnBlock-active');
     });
     buttonMobShare.addEventListener("click", function () {
         mobShareBlock.classList.toggle("watcher__headerSocialItems-mobile-active");
