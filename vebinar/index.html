@@ -11,15 +11,32 @@
 <header>
     <div class="row__between">
         <div class="header__logo"><a href="#!"><img src="./img/logo.png" alt="logo"></a></div>
-        <div class="header__watcherBlock">
-            <div class="header__watcher" id="headerItem1">
-                <a href="#"><img src="img/phone-green.png" alt="phone" class="header__watcherImg" /></a>
+        <div class="watcher__headerBtnsBlock">
+            <div class="watcher__headerBtnBlock">
+                <div class="header__menu"><i class="fas fa-bars"></i></div>
             </div>
-            <div class="header__watcher header__watcher-active" id="headerItem2">
-                <p class="header__watcherText">ДОЗВАНИВАЕМСЯ</p>
-                <a href="#"><img src="img/phone-gray.png" alt="phone" class="header__watcherImg" /></a>
+            <div class="watcher__headerBtnBlock watcher__headerBtnBlock-active"  id="btnMobLive">
+                <i class="fas fa-podcast"></i>
             </div>
-            <div class="header__menu"><i class="fas fa-bars"></i></div>
+            <div class="watcher__headerBtnBlock"  id="btnMobOld">
+                <i class="fas fa-video"></i>
+            </div>
+            <div class="watcher__headerBtnBlock"  id="btnMobShare">
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+        <div class="header__watcher">
+            <p class="header__watcherText">ДОЗВАНИВАЕМСЯ</p>
+            <i class="fas fa-phone-square header__watcherPhone"></i>
+        </div>
+        <div class="watcher__headerSocialItems-mobile">
+            <div class="watcher__headerSocialItems">
+                <a href="#" class="watcher__headerSocialItem"><img src="img/fb.png" alt="fb" /></a>
+                <a href="#" class="watcher__headerSocialItem"><img src="img/vk.png" alt="vk" /></a>
+                <a href="#" class="watcher__headerSocialItem"><img src="img/tg.png" alt="rg" /></a>
+                <a href="#" class="watcher__headerSocialItem"><img src="img/insta.png" alt="insta" /></a>
+                <a href="#" class="watcher__headerSocialItem"><img src="img/wtsapp.png" alt="wtsapp" /></a>
+            </div>
         </div>
     </div>
     <div class="row__end header__log">
@@ -49,6 +66,7 @@
         </div>
     </div>
 </div>
+<div class="watcher__headerSocialClick"></div>
 <div class="container">
     <div class="watcher__tab watcher__tab-active" id="watcTab1">
         <div class="wrapper__content row__between">
@@ -245,14 +263,14 @@
     <div class="watcher__tab" id="watcTab2">
         <div class="watcher__oldItems">
             <div class="watcher__oldItem">
-                <div class="watcher__oldItemVideoBlock"><img src="img/video-preview.png" alt="video" ></div>
+                <div class="watcher__oldItemVideoBlock video"><img src="img/video-preview.png" alt="video" ></div>
                 <div class="watcher__oldItemTextBlock">
                     <p class="watcher__oldItemHeadline">Часть 1</p>
                     <p class="watcher__oldItemText">Вопросы - ответы на тему лекции: Мир после коронавируса, новый мировой порядок.</p>
                 </div>
             </div>
             <div class="watcher__oldItem">
-                <div class="watcher__oldItemVideoBlock"><img src="img/video-preview.png" alt="video" ></div>
+                <div class="watcher__oldItemVideoBlock video"><img src="img/video-preview.png" alt="video" ></div>
                 <div class="watcher__oldItemTextBlock">
                     <p class="watcher__oldItemHeadline">Часть 2</p>
                     <p class="watcher__oldItemText">Вопросы - ответы на тему лекции: Мир после коронавируса, новый мировой порядок.</p>
@@ -294,6 +312,7 @@
     </div>
 </div>
 <script type="text/javascript">
+    const body = document.querySelector('body');
     const header = document.querySelector('header')
     const container = document.querySelector('.container')
     const input = document.querySelector('.input-message')
@@ -314,7 +333,8 @@
     menu.addEventListener('click', function() {
         this.classList.toggle('fa-times')
         responseContent.classList.toggle('response__content-active')
-        chatWrapp.classList.toggle('chat__wrapper-hide')
+        chatWrapp.classList.toggle('chat__wrapper-hide');
+        body.classList.toggle('body-offScroll');
     })
 
     input.addEventListener('input', function() {
@@ -406,6 +426,37 @@
         liveBtn.classList.remove("watcher__headerBtn-active");
         watchTab2.classList.add("watcher__tab-active");
         watchTab1.classList.remove("watcher__tab-active");
+    });
+
+    var buttonMobLive = document.querySelector('#btnMobLive');
+    var buttonMobOld = document.querySelector('#btnMobOld');
+    var buttonMobShare = document.querySelector('#btnMobShare');
+    var mobShareBlock = document.querySelector('.watcher__headerSocialItems-mobile');
+    var mobShareHover = document.querySelector('.watcher__headerSocialClick');
+    buttonMobLive.addEventListener("click", function () {
+        this.classList.add("watcher__headerBtnBlock-active");
+        buttonMobOld.classList.remove("watcher__headerBtnBlock-active");
+        watchTab1.classList.add("watcher__tab-active");
+        watchTab2.classList.remove("watcher__tab-active");
+    });
+    buttonMobOld.addEventListener("click", function () {
+        this.classList.add("watcher__headerBtnBlock-active");
+        buttonMobLive.classList.remove("watcher__headerBtnBlock-active");
+        watchTab2.classList.add("watcher__tab-active");
+        watchTab1.classList.remove("watcher__tab-active");
+    });
+    buttonMobShare.addEventListener("click", function () {
+        mobShareBlock.classList.toggle("watcher__headerSocialItems-mobile-active");
+        mobShareHover.classList.toggle("watcher__headerSocialClick-active");
+    });
+    mobShareHover.addEventListener("click", function () {
+        mobShareHover.classList.remove("watcher__headerSocialClick-active");
+        mobShareBlock.classList.remove("watcher__headerSocialItems-mobile-active");
+    });
+
+    var phoneBtn = document.querySelector('.header__watcherPhone');
+    phoneBtn.addEventListener("click", function () {
+        this.parentNode.classList.toggle('header__watcher-active');
     });
 </script>
 </body>
