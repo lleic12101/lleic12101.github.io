@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -66,7 +73,6 @@ body {
     flex-wrap: wrap; }
 
 header {
-    margin-bottom: 24px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -565,9 +571,136 @@ header .header__log ul li:hover {
 
 
 /*WATCHER*/
+.watcher__header {
+    width: 100%;
+    background: #fff;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.watcher__headerContent {
+    width: 1184px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 98px;
+    justify-content: space-between;
+}
+.watcher__headerBtns {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.watcher__headerBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    height: 72px;
+    padding: 0 14px;
+    color: #4F6180;
+    margin-right: 14px;
+}
+.watcher__headerBtn i {
+    margin-right: 12px;
+    font-size: 23px;
+}
+.watcher__headerBtn p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+.watcher__headerBtn:first-child {
+    padding-left: 0;
+}
+.watcher__headerBtn-active {
+    color: #CC432D;
+}
+.watcher__headerBtnUnder {
+    position: absolute;
+    height: 2px;
+    background: #4F6180;
+    transition: .3s ease-in-out;
+    bottom: 0;
+    left: 217px;
+    width: 138px;
+}
+.watcher__headerBtn:first-child.watcher__headerBtn-active .watcher__headerBtnUnder {
+    left: 0;
+    width: 203px;
+}
+.watcher__headerSocialItems {
+    margin-top: 7px;
+}
+.watcher__headerSocialItem {
+    margin-left: 8px;
+}
+
+.watcher__tab {
+    display: none;
+}
+.watcher__tab-active {
+    display: flex;
+}
+.watcher__oldItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.watcher__oldItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.watcher__oldItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.watcher__oldItemVideoBlock {
+    min-width: 742px;
+    height: 415.28px;
+}
+.watcher__oldItemVideoBlock img {
+    height: 100%;
+    width: 100%;
+}
+.watcher__oldItemTextBlock {
+    margin-left: 48px;
+    padding-top: 14px;
+}
+.watcher__oldItemHeadline {
+    font-family: Oswald-Regular;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 27px;
+}
+.watcher__oldItemText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
 .watcher {
     display: flex;
     flex-direction: column;
+    margin-right: 24px;
 }
 .chat__body-watcher  {
     height: 456px;
@@ -811,6 +944,7 @@ header .header__log ul li:hover {
 /*TEACHER*/
 .teacher__column{
     position: relative;
+    margin-top: 24px;
 }
 .chat__wrapper-teacher .chat__body {
     height: 274px;
@@ -1105,7 +1239,7 @@ header .header__log ul li:hover {
 .teacher__blockTabTalkingTime {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bolder;
     font-size: 24px;
     line-height: 24px;
     color: #000000;
@@ -1173,6 +1307,15 @@ header .header__log ul li:hover {
     line-height: 24px;
     color: #000000;
 }
+.teacher__usersHeaderText-bold {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 2px;
+}
 .teacher__usersButtons {
     border-bottom: 1px solid #E3E0E0;
     display: flex;
@@ -1197,8 +1340,7 @@ header .header__log ul li:hover {
 }
 .teacher__usersButtonText {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 12px;
     line-height: 24px;
 }
@@ -1514,7 +1656,6 @@ header .header__log ul li:hover {
         display: flex;
     }
     header {
-        margin-bottom: 8px;
         padding: 0 12px;
         height: 48px; }
     header .row__between {
@@ -1601,6 +1742,15 @@ header .header__log ul li:hover {
     .teacher__users {
         display: none;
     }
+    .watcher {
+        margin-right: 0;
+    }
+    .watcher__header {
+        margin-bottom: 8px;
+    }
+    .teacher__column {
+        margin-top: 8px;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -1620,7 +1770,6 @@ header .header__log ul li:hover {
         margin-top: 8px;
     }
 }
-
 @media screen and (max-width: 520px) {
     .video {
         height: 54vw; }
@@ -1640,7 +1789,6 @@ header .header__log ul li:hover {
         padding-left: 0px; }
     .chat__wrapper .chat__footer .user {
         margin-bottom: 7px; } }
-
 @media screen and (max-width: 400px) {
     .video:not(.video-full) {
         height: 53vw; }
@@ -1665,11 +1813,9 @@ header .header__log ul li:hover {
         text-align: center;
     }
 }
-
 @media screen and (max-width: 440px) {
     header .row__between .header__log ul li {
         width: 95px; } }
-
 @media screen and (max-width: 380px) {
     header .row__between .header__log ul li {
         width: 70px; }
@@ -1681,39 +1827,32 @@ header .header__log ul li:hover {
     .video .video__control .control__logo a img {
         width: 36px;
         height: 36px; } }
-
 @media (max-height: 850px) and (max-width: 520px) {
     .chat__wrapper .chat .chat__body {
         height: 370px; } }
-
 @media (max-height: 823px) and (max-width: 520px) {
     .video {
         height: 53.7vw; }
     .chat__wrapper .chat .chat__body {
         height: 364px; } }
-
 @media (max-height: 736px) and (max-width: 520px) {
     .video {
         height: 53.8vw; }
     .chat__wrapper .chat .chat__body {
         height: 276px; } }
-
 @media (max-height: 731px) and (max-width: 520px) {
     .video {
         height: 53.5vw; }
     .chat__wrapper .chat .chat__body {
         height: 271px; } }
-
 @media (max-height: 667px) and (max-width: 520px) {
     .chat__wrapper .chat .chat__body {
         height: 231px; } }
-
 @media (max-height: 640px) and (max-width: 520px) {
     .video {
         height: 53.2vw; }
     .chat__wrapper .chat .chat__body {
         height: 210px; } }
-
 @media (max-height: 568px) and (max-width: 520px) {
     .chat__wrapper .chat .chat__body {
         height: 160px; } }
