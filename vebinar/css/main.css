@@ -164,8 +164,8 @@ header .header__log ul li:hover {
 
 
 .video-full {
-    width: 100%;
-    height: 54.9vw; }
+    height: 54.9vw;
+}
 
 .video video {
     position: absolute;
@@ -1431,6 +1431,9 @@ header .header__log ul li:hover {
 }
 /*TEACHER END*/
 
+.forceHide {
+    display: none;
+}
 
 @media screen and (max-width: 1228px) {
     .container:not(.container-fluid) {
@@ -1820,7 +1823,7 @@ header .header__log ul li:hover {
         margin-bottom: 8px;
     }
     .teacher__column {
-        margin-top: 8px;
+        margin-top: 0px;
     }
 
     .watcher__oldItem {
@@ -1845,7 +1848,7 @@ header .header__log ul li:hover {
     .watcher__header {
         display: none;
     }
-    header .header__logo {
+    header .header__logo-index {
         display: none;
     }
     .watcher__row {
@@ -1871,7 +1874,7 @@ header .header__log ul li:hover {
     .watcher__headerBtnBlock-active {
         background: transparent;
     }
-    header {
+    .header-index {
         padding: 0 8px 0 0;
     }
     .header__watcher {
@@ -2008,32 +2011,3 @@ header .header__log ul li:hover {
     .video .video__control .control__logo a img {
         width: 36px;
         height: 36px; } }
-@media (max-height: 850px) and (max-width: 520px) {
-    .chat__wrapper .chat .chat__body {
-        height: 370px; } }
-@media (max-height: 823px) and (max-width: 520px) {
-    .video {
-        height: 53.7vw; }
-    .chat__wrapper .chat .chat__body {
-        height: 364px; } }
-@media (max-height: 736px) and (max-width: 520px) {
-    .video {
-        height: 53.8vw; }
-    .chat__wrapper .chat .chat__body {
-        height: 276px; } }
-@media (max-height: 731px) and (max-width: 520px) {
-    .video {
-        height: 53.5vw; }
-    .chat__wrapper .chat .chat__body {
-        height: 271px; } }
-@media (max-height: 667px) and (max-width: 520px) {
-    .chat__wrapper .chat .chat__body {
-        height: 231px; } }
-@media (max-height: 640px) and (max-width: 520px) {
-    .video {
-        height: 53.2vw; }
-    .chat__wrapper .chat .chat__body {
-        height: 210px; } }
-@media (max-height: 568px) and (max-width: 520px) {
-    .chat__wrapper .chat .chat__body {
-        height: 160px; } }

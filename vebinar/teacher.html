@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <div class="teacher__column">
+        <div class="teacher__column teacher__column-2">
             <div class="chat__wrapper chat__wrapper-teacher">
             <div class="chat">
                 <div class="chat__header">
@@ -408,6 +408,7 @@
     </div>
 </div>
 <script type="text/javascript">
+    const body = document.querySelector('body');
     const header = document.querySelector('header')
     const container = document.querySelector('.container')
     const input = document.querySelector('.input-message')
@@ -424,6 +425,14 @@
     const responseContent = document.querySelector('.response__content')
     const menu = document.querySelector('.header__menu i')
     const textVideo = document.querySelector('.container__video')
+
+    var watcherBlock = document.querySelector('.watcher__block');
+    var chatHeader = document.querySelector('.chat__header');
+    var chatBodyWatcher = document.querySelector('.chat__body');
+
+    const teacherColumn2 = document.querySelector('.teacher__column-2');
+    const teacherColumn = document.querySelector('.teacher__column');
+    const teacherBlock = document.querySelector('.teacher__block');
 
     menu.addEventListener('click', function() {
         this.classList.toggle('fa-times')
@@ -473,21 +482,29 @@
     })
 
     videoControlFull.addEventListener('click', function() {
-        const el = this.querySelector('i')
+        const el = this.querySelector('i');
 
-        header.classList.toggle('hide')
-        chatWrapp.classList.toggle('chat__wrapper-hide')
-        container.classList.toggle('container-fluid')
-        textVideo.classList.toggle('container__video-hide')
-        video.classList.toggle('video-full')
+        header.classList.toggle('hide');
+        teacherColumn2.classList.toggle('forceHide');
+        teacherBlock.classList.toggle('forceHide');
+
+
+        chatWrapp.classList.toggle('chat__wrapper-hide');
+        container.classList.toggle('container-fluid');
+        textVideo.classList.toggle('container__video-hide');
+        video.classList.toggle('video-full');
+        video.style.width = body.clientWidth + "px";
+        teacherColumn.style.marginTop = 0;
 
 
         if (el.classList.contains('fa-expand')) {
-            el.classList.remove('fa-expand')
-            el.classList.add('fa-compress')
+            el.classList.remove('fa-expand');
+            el.classList.add('fa-compress');
         } else {
-            el.classList.remove('fa-compress')
-            el.classList.add('fa-expand')
+            el.classList.remove('fa-compress');
+            el.classList.add('fa-expand');
+            video.style.width = "";
+            teacherColumn.style.marginTop = '24px';
         }
     })
 
@@ -604,6 +621,11 @@
     stopTalkingBtn.addEventListener("click", function () {
        openInnerTab("tabList");
     });
+
+    if(window.innerWidth < 736){
+        var chatHeight = window.innerHeight - 48 - 8 - 16 - video.clientHeight - chatHeader.clientHeight - chatFooter.clientHeight - 4;
+        chatBodyWatcher.style.height = chatHeight + 'px';
+    }
 
     function onlyOpenTab(id){
         that = document.querySelector("#" + id);

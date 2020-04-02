@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>
+<header class="header-index">
     <div class="row__between">
-        <div class="header__logo"><a href="#!"><img src="./img/logo.png" alt="logo"></a></div>
+        <div class="header__logo header__logo-index"><a href="#!"><img src="./img/logo.png" alt="logo"></a></div>
         <div class="watcher__headerBtnsBlock">
             <div class="watcher__headerBtnBlock">
                 <div class="header__menu"><i class="fas fa-bars"></i></div>
@@ -329,6 +329,9 @@
     const responseContent = document.querySelector('.response__content')
     const menu = document.querySelector('.header__menu i')
     const textVideo = document.querySelector('.container__video')
+    const indexHeader = document.querySelector('.watcher__header');
+    const indexTabs = document.querySelector('.watcher__block');
+    const indexSwitcher = document.querySelector('.switcher');
 
     menu.addEventListener('click', function() {
         this.classList.toggle('fa-times');
@@ -380,21 +383,27 @@
     })
 
     videoControlFull.addEventListener('click', function() {
-        const el = this.querySelector('i')
+        const el = this.querySelector('i');
 
-        header.classList.toggle('hide')
-        chatWrapp.classList.toggle('chat__wrapper-hide')
-        container.classList.toggle('container-fluid')
-        textVideo.classList.toggle('container__video-hide')
-        video.classList.toggle('video-full')
+        header.classList.toggle('hide');
+        indexHeader.classList.toggle('forceHide');
+        indexTabs.classList.toggle('forceHide');
+        indexSwitcher.classList.toggle('forceHide');
+
+        chatWrapp.classList.toggle('chat__wrapper-hide');
+        container.classList.toggle('container-fluid');
+        textVideo.classList.toggle('container__video-hide');
+        video.classList.toggle('video-full');
+        video.style.width = body.clientWidth + "px";
 
 
         if (el.classList.contains('fa-expand')) {
-            el.classList.remove('fa-expand')
-            el.classList.add('fa-compress')
+            el.classList.remove('fa-expand');
+            el.classList.add('fa-compress');
         } else {
-            el.classList.remove('fa-compress')
-            el.classList.add('fa-expand')
+            el.classList.remove('fa-compress');
+            el.classList.add('fa-expand');
+            video.style.width = "";
         }
     })
 
@@ -405,6 +414,9 @@
     if(window.innerWidth > 736){
         var chatBodyHeight = (24 + video.clientHeight + watcherBlock.clientHeight) - chatHeader.clientHeight - chatFooter.clientHeight - 4;
         chatBodyWatcher.style.height = chatBodyHeight + 'px';
+    } else {
+        var chatHeight = window.innerHeight - 48 - 8 - 16 - video.clientHeight - chatHeader.clientHeight - chatFooter.clientHeight - 4;
+        chatBodyWatcher.style.height = chatHeight + 'px';
     }
 
     var callBtn = document.querySelector('.watcher__button-call');
