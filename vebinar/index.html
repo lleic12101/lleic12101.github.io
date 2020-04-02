@@ -331,7 +331,8 @@
     const textVideo = document.querySelector('.container__video')
 
     menu.addEventListener('click', function() {
-        this.classList.toggle('fa-times')
+        this.classList.toggle('fa-times');
+        this.parentNode.parentNode.classList.toggle('watcher__headerBtnBlock-active');
         responseContent.classList.toggle('response__content-active')
         chatWrapp.classList.toggle('chat__wrapper-hide');
         body.classList.toggle('body-offScroll');
@@ -448,10 +449,12 @@
     buttonMobShare.addEventListener("click", function () {
         mobShareBlock.classList.toggle("watcher__headerSocialItems-mobile-active");
         mobShareHover.classList.toggle("watcher__headerSocialClick-active");
+        this.classList.toggle('watcher__headerBtnBlock-active');
     });
     mobShareHover.addEventListener("click", function () {
         mobShareHover.classList.remove("watcher__headerSocialClick-active");
         mobShareBlock.classList.remove("watcher__headerSocialItems-mobile-active");
+        buttonMobShare.classList.remove('watcher__headerBtnBlock-active');
     });
 
     var phoneBtn = document.querySelector('.header__watcherPhone');

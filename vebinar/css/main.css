@@ -1868,9 +1868,6 @@ header .header__log ul li:hover {
         color: #ffffff;
         transition: .3s ease-in-out;
     }
-    .watcher__headerBtnBlock:hover {
-        background: transparent;
-    }
     .watcher__headerBtnBlock-active {
         background: transparent;
     }
