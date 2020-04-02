@@ -1005,27 +1005,26 @@ header .header__log ul li:hover {
 .teacher__blockBtn-sygnal-green.teacher__blockBtn-active {
     background: #679967;
     cursor: pointer;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,.3);
 }
 .teacher__blockBtn-sygnal-green {
     background: #679967;
     cursor: pointer;
 }
 .teacher__blockBtn-sygnal-calling {
-    color: transparent;
+    color: #fff;
     animation: calling 2s infinite ease-in-out;
-}
-.teacher__blockBtn-sygnal.teacher__blockBtn-symbol-calling {
-    animation: none;
 }
 @keyframes calling {
     0% {
-        color: transparent;
+        color: rgba(255,255,255,.4);
     }
     50% {
         color: #fff;
     }
     100% {
-        color: transparent;
+        color: rgba(255,255,255,.4);
     }
 }
 
@@ -1596,6 +1595,47 @@ header .header__log ul li:hover {
     .teacher__column:first-child {
         margin-bottom: 243px;
     }
+
+    .teacher__blockTabTextarea {
+        font-size: 20px;
+        line-height:unset;
+    }
+    .teacher__usersHeaderText {
+        font-size: 16px;
+        line-height:unset;
+    }
+    .teacher__usersHeaderText-bold {
+        font-size: 16px;
+        line-height:unset;
+    }
+    .teacher__usersButtonText {
+        font-size: 14px;
+        line-height:unset;
+    }
+    .teacher__usersMail {
+        font-size: 15px;
+        line-height:unset;
+    }
+    .teacher__usersName {
+        font-size: 15px;
+        line-height:unset;
+    }
+    .teacher__usersSort a i {
+        font-size: 16px;
+        line-height:unset;
+    }
+    .teacher__blockTabBtn {
+        font-size: 16px;
+        line-height:unset;
+    }
+    .teacher__blockTabListItemName {
+        font-size: 17px;
+        line-height:unset;
+    }
+    .teacher__blockTabListItemMail {
+        font-size: 17px;
+        line-height:unset;
+    }
 }
 @media screen and (max-width: 840px) {
     .container:not(.container-fluid) {
@@ -1623,6 +1663,15 @@ header .header__log ul li:hover {
         top: 369px;
         transform: scale(.77);
     }
+    .teacher__blockTabTextarea {
+        font-size: 22px;
+    }
+    .teacher__blockTabListItemName {
+        font-size: 19px;
+    }
+    .teacher__blockTabListItemMail {
+        font-size: 19px;
+    }
 }
 @media screen and (max-width: 770px) {
     .container:not(.container-fluid) {
@@ -1649,6 +1698,15 @@ header .header__log ul li:hover {
         left: -48px;
         top: 369px;
         transform: scale(.77);
+    }
+    .teacher__blockTabTextarea {
+        font-size: 25px;
+    }
+    .teacher__blockTabListItemName {
+        font-size: 21px;
+    }
+    .teacher__blockTabListItemMail {
+        font-size: 21px;
     }
 }
 @media screen and (max-width: 736px) {
