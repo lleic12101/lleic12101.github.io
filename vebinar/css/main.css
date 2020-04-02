@@ -9,6 +9,7 @@
 
 body {
     background: #f9f9f9;
+    overflow-x: hidden;
 }
 .container {
     width: 1184px;
@@ -287,7 +288,10 @@ header .header__log ul li:hover {
     padding: 24px 13px;
     background: #fff;
     overflow-y: scroll;
-    height: 222px; }
+    height: 222px;
+    scrollbar-color: #4174CC #BEBEBE ;
+    scrollbar-width: thin;
+}
 
 .chat__wrapper .chat__body::-webkit-scrollbar {
     width: 8px; }
@@ -298,7 +302,8 @@ header .header__log ul li:hover {
 
 .chat__wrapper .chat__body::-webkit-scrollbar-thumb {
     background: #4174CC;
-    border: 1px solid #C8C4C4; }
+    border: 1px solid #C8C4C4;
+}
 
 .chat__wrapper .chat__body ul li {
     display: -webkit-box;
@@ -371,7 +376,6 @@ header .header__log ul li:hover {
     padding-left: 5px;
     outline: none;
     border: none;
-    padding-bottom: 6px;
     border-bottom: 1px solid #e3e0e0; }
 
 .chat__wrapper .chat__footer .form textarea::-webkit-scrollbar {
@@ -805,22 +809,20 @@ header .header__log ul li:hover {
 
 
 /*TEACHER*/
+.teacher__column{
+    position: relative;
+}
 .chat__wrapper-teacher .chat__body {
     height: 274px;
 }
-.teacher {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 24px;
-    margin-bottom: 20px;
-}
 .teacher__block {
     width: 742px;
-    max-height: 336px;
+    height: 336px;
     margin-right: 24px;
     display: flex;
     flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 .teacher__blockBtns {
     flex-direction: column;
@@ -910,7 +912,23 @@ header .header__log ul li:hover {
 }
 .teacher__blockTab-calls {
     display: none;
+    max-height: 100%;
     height: 100%;
+    overflow-y: auto;
+    scrollbar-color: #4174CC #BEBEBE ;
+    scrollbar-width: thin;
+}
+.teacher__blockTab-calls::-webkit-scrollbar {
+    width: 8px; }
+.teacher__blockTab-calls::-webkit-scrollbar-track-piece {
+    background-color: #BEBEBE;
+}
+.teacher__blockTab-calls::-webkit-scrollbar-thumb {
+    background: #4174CC;
+    border: 1px solid #C8C4C4;
+}
+.teacher__blockTab {
+
 }
 .teacher__blockTabCalls-active {
     display: flex;
@@ -944,6 +962,7 @@ header .header__log ul li:hover {
 .teacher__blockTabHeaderImg-dark {
     position: absolute;
     left: 122px;
+    top: 9px;
     opacity: 0;
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -951,6 +970,7 @@ header .header__log ul li:hover {
 .teacher__blockTabHeaderImg-light {
     position: absolute;
     left: 122px;
+    top: 9px;
     opacity: 0;
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -963,6 +983,8 @@ header .header__log ul li:hover {
     width: 100%;
     height: 100%;
     border: 1px solid #E3E0E0;
+    scrollbar-color: #4174CC #BEBEBE ;
+    scrollbar-width: thin;
 }
 .teacher__blockTabContent-scroll::-webkit-scrollbar {
     width: 8px; }
@@ -987,6 +1009,8 @@ header .header__log ul li:hover {
     color: #000000;
     outline: none;
     padding: 24px 32px 22px 24px;
+    scrollbar-color: #4174CC #BEBEBE ;
+    scrollbar-width: thin;
 }
 .teacher__blockTabTextarea::-webkit-scrollbar {
     width: 8px; }
@@ -1035,6 +1059,9 @@ header .header__log ul li:hover {
     outline: none;
     transition: .3s ease-in-out;
     text-transform: uppercase;
+}
+.teacher__blockTabBtn-small {
+    width: 96px;
 }
 .teacher__blockTabBtn:focus {
     box-shadow: 1px 2px 5px rgba(0,0,0,0);
@@ -1126,6 +1153,8 @@ header .header__log ul li:hover {
     border: 1px solid #E3E0E0;
     display: flex;
     flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 .teacher__usersHeader {
     width: 100%;
@@ -1185,6 +1214,8 @@ header .header__log ul li:hover {
 .teacher__usersTabs {
     overflow-y: scroll;
     max-height: 240px;
+    scrollbar-color: #4174CC #BEBEBE ;
+    scrollbar-width: thin;
 }
 .teacher__usersTabs::-webkit-scrollbar {
     width: 8px; }
@@ -1216,7 +1247,7 @@ header .header__log ul li:hover {
 }
 .teacher__usersName {
     padding-left: 18px;
-    width: 137px;
+    width: 230px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -1252,7 +1283,7 @@ header .header__log ul li:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    transition: .3s ease-in-out;
+    transition: .1s ease-in-out;
     margin-bottom: -7px;
 }
 .teacher__usersLine:hover {
@@ -1282,8 +1313,6 @@ header .header__log ul li:hover {
     .watcher__blockItem {
         max-width: 670px;
   }
-    .chat__wrapper {
-        margin-left: 24px; }
     .container__video {
         width: 670px; }
     .container__video .description__video {
@@ -1298,10 +1327,6 @@ header .header__log ul li:hover {
         margin-top: 0;
         text-align: center;
     }
-    .teacher {
-        flex-direction: column;
-        align-items: center;
-    }
     .teacher__blockTabs {
         min-height: 336px;
         height: 100%;
@@ -1309,12 +1334,17 @@ header .header__log ul li:hover {
     .teacher__blockTabContent {
         height: 288px;
     }
+    .teacher__column:first-child {
+        margin-right: 24px;
+    }
+
     .teacher__block {
-        margin-bottom: 20px;
-        margin-right: 0;
+        transform: scale(.905);
+        position: absolute;
+        left: -36px;
+        top: 361px;
     }
 }
-
 @media screen and (max-width: 1160px) {
     .container:not(.container-fluid) {
         width: 1018px; }
@@ -1337,8 +1367,22 @@ header .header__log ul li:hover {
         margin-left: 15px;
         font-size: 20px;
     }
-}
 
+    .teacher__block {
+        transform: scale(.823);
+        left: -66px;
+        top: 312px;
+    }
+    .teacher__users {
+        position: absolute;
+        left: -23px;
+        top: 394px;
+        transform: scale(.89);
+    }
+    .teacher__column:first-child {
+        margin-bottom: 320px;
+    }
+}
 @media screen and (max-width: 1030px) {
     .container:not(.container-fluid) {
         width: 920px; }
@@ -1360,8 +1404,20 @@ header .header__log ul li:hover {
     .watcher__text-big {
         margin-left: 0;
     }
+    .teacher__block {
+        transform: scale(.74);
+        left: -96px;
+        top: 263px;
+    }
+    .teacher__users {
+        left: -48px;
+        top: 374px;
+        transform: scale(.77);
+    }
+    .teacher__column:first-child {
+        margin-bottom: 270px;
+    }
 }
-
 @media screen and (max-width: 930px) {
     .container:not(.container-fluid) {
         width: 833px; }
@@ -1385,8 +1441,20 @@ header .header__log ul li:hover {
     .watcher__text-big {
         margin-top: 0;
     }
+    .teacher__block {
+        transform: scale(.647);
+        left: -131px;
+        top: 205px;
+    }
+    .teacher__users {
+        left: -48px;
+        top: 369px;
+        transform: scale(.77);
+    }
+    .teacher__column:first-child {
+        margin-bottom: 243px;
+    }
 }
-
 @media screen and (max-width: 840px) {
     .container:not(.container-fluid) {
         width: 760px; }
@@ -1398,8 +1466,22 @@ header .header__log ul li:hover {
     .container__video {
         width: 437px; }
     .container__video .description__video {
-        width: 396px; } }
-
+        width: 396px; }
+    .teacher__block {
+        transform: scale(.554);
+        left: -166px;
+        top: 147px;
+    }
+    .teacher__column:first-child {
+        margin-right: 16px;
+        margin-bottom: 210px;
+    }
+    .teacher__users {
+        left: -48px;
+        top: 369px;
+        transform: scale(.77);
+    }
+}
 @media screen and (max-width: 770px) {
     .container:not(.container-fluid) {
         width: 725px; }
@@ -1412,11 +1494,21 @@ header .header__log ul li:hover {
         width: 399px; }
     .container__video .description__video {
         width: 380px; }
+
     .teacher__block {
-        width: 100%;
+        transform: scale(.5);
+        left: -186px;
+        top: 117px;
+    }
+    .teacher__column:first-child {
+        margin-bottom: 160px;
+    }
+    .teacher__users {
+        left: -48px;
+        top: 369px;
+        transform: scale(.77);
     }
 }
-
 @media screen and (max-width: 736px) {
     .header__watcher-active {
         display: flex;
@@ -1498,7 +1590,15 @@ header .header__log ul li:hover {
     .switcher {
         display: none;
     }
-    .teacher {
+
+    .teacher__block {
+        display: none;
+    }
+    .teacher__column:first-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .teacher__users {
         display: none;
     }
 }
