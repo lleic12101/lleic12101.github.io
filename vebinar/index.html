@@ -38,6 +38,21 @@
                 <a href="#" class="watcher__headerSocialItem"><img src="img/wtsapp.png" alt="wtsapp" /></a>
             </div>
         </div>
+        <div class="watcher__headerVideo-mobile">
+            <div class="watcher__headerVideo">
+                <div class="watcher__headerVideoBtnAndText">
+                    <div class="watcher__headerVideoBtn" id="btnMobToggleHelp"><i class="fas fa-sort"></i></div>
+                    <p class="watcher__headerVideoText">* Важно</p>
+                </div>
+                <div class="watcher__headerVideoBtn" id="btnMobCamera"><i class="fas fa-video"></i><i class="fas fa-video-slash"></i></div>
+            </div>
+            <div class="watcher__headerVideoHelp watcher__headerVideoHelp-active">
+                <p class="watcher__headerVideoHelpText">
+                    Звук будет включен автоматически.
+                    Для активации видео-камеры нажмите на иконку видео.
+                </p>
+            </div>
+        </div>
     </div>
     <div class="row__end header__log">
         <ul>
@@ -95,10 +110,16 @@
                             <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
                         </div>
                         <div class="watcher__blockContent">
-                            <p class="watcher__text">
-                                Звонок по видеосвязи, доступен тем, кто внес от 20 донат.
-                                Ответ на Ваш вопрос станет частью обсуждения данной трансляции.
-                            </p>
+                            <div class="watcher__checkerBlock">
+                                <div class="watcher__checker">
+                                    <p class="watcher__checkerBlockText">* Важно</p>
+                                    <input id="camera" type="checkbox" name="talking" value="camera">
+                                    <label for="camera"><i class="fas fa-video-slash"></i><i class="fas fa-video"></i></label>
+                                </div>
+                                <p class="watcher__text">
+                                    Звук будет включен автоматически. Для активации видео-камеры поставьте галочку.
+                                </p>
+                            </div>
                             <div class="watcher__buttonBlock">
                                 <button class="watcher__button watcher__button-call">ПОЗВОНИТЬ</button>
                                 <p class="watcher__buttonBlockText watcher__buttonBlockText-dots">Дозваниваемся</p>
@@ -110,10 +131,16 @@
                             <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
                         </div>
                         <div class="watcher__blockContent">
-                            <p class="watcher__text">
-                                Звонок по видеосвязи, доступен тем, кто внес от 20 донат.
-                                Ответ на Ваш вопрос станет частью обсуждения данной трансляции.
-                            </p>
+                            <div class="watcher__checkerBlock">
+                                <div class="watcher__checker">
+                                    <p class="watcher__checkerBlockText">* Важно</p>
+                                    <input id="camera1" type="checkbox" name="talking" value="camera">
+                                    <label for="camera1"><i class="fas fa-video-slash"></i><i class="fas fa-video"></i></label>
+                                </div>
+                                <p class="watcher__text">
+                                    Звук будет включен автоматически. Для активации видео-камеры поставьте галочку.
+                                </p>
+                            </div>
                             <div class="watcher__buttonBlock">
                                 <button class="watcher__button watcher__button-disabled" disabled>ПОЗВОНИТЬ</button>
                                 <p class="watcher__buttonBlockText">Линия занята</p>
@@ -477,9 +504,20 @@
         buttonMobShare.classList.remove('watcher__headerBtnBlock-active');
     });
 
+    var videoBtnMob = document.querySelector('#btnMobCamera');
+    var videoBlockMob = document.querySelector('.watcher__headerVideo-mobile');
+    var helpBtnMob = document.querySelector('#btnMobToggleHelp');
+    var helpBlockMob = document.querySelector('.watcher__headerVideoHelp');
     var phoneBtn = document.querySelector('.header__watcherPhone');
     phoneBtn.addEventListener("click", function () {
         this.parentNode.classList.toggle('header__watcher-active');
+        videoBlockMob.classList.toggle('watcher__headerVideo-mobile-active');
+    });
+    videoBtnMob.addEventListener("click", function () {
+        this.classList.toggle('watcher__headerVideoBtn-active');
+    });
+    helpBtnMob.addEventListener("click", function () {
+        helpBlockMob.classList.toggle('watcher__headerVideoHelp-active');
     });
 </script>
 </body>

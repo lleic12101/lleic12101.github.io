@@ -686,6 +686,9 @@ header .header__log ul li:hover {
 .watcher__headerSocialItems-mobile {
     display: none;
 }
+.watcher__headerVideo-mobile {
+    display: none;
+}
 
 .watcher__tab {
     display: none;
@@ -748,7 +751,7 @@ header .header__log ul li:hover {
     height: 456px;
 }
 .watcher__block {
-    height: 168px;
+    height: auto;
     width: 100%;
     max-width: 742px;
     margin-top: 24px;
@@ -793,6 +796,97 @@ header .header__log ul li:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 36px 0 24px;
+}
+.watcher__checkerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.watcher__checker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 9px;
+    height: 24px;
+    margin-right: 70px;
+}
+.watcher__checkerBlock .watcher__text {
+    max-width: 380px;
+}
+.watcher__checkerBlockText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #CC432D;
+    margin-right: 26px;
+}
+input[type=checkbox] {
+    opacity: 0;
+    float:left;
+}
+input[type=checkbox] + label {
+    margin: 0 0 0 19px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+    float: left;
+    color: #4F6180;
+    padding-left:14px;
+    height: 20px;
+    width: 15px;
+}
+input[type=checkbox] + label .fa-video {
+    display: none
+}
+input[type=checkbox] + label ~ label {
+    margin: 0 0 0 40px;
+}
+input[type=checkbox] + label::before {
+    content: ' ';
+    position: absolute;
+    left: -35px;
+    top: 0px;
+    width: 25px;
+    height: 22.12px;
+    display: block;
+    box-shadow: inset 0px 0px 3px rgba(79, 97, 128, 0.9);
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+input[type=checkbox] + label::after {
+    content: ' ';
+    position: absolute;
+    left: -33px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
+    -ms-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    transition: all .3s ease;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    filter: invert(59%) sepia(12%) saturate(1101%) hue-rotate(71deg) brightness(90%) contrast(86%);
+}
+input[type=checkbox]:checked + label::after {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+input[type=checkbox]:checked + label .fa-video-slash {
+    display: none;
+}
+input[type=checkbox]:checked + label .fa-video {
+    display: block;
+    color: #679967;
 }
 .watcher__text {
     font-family: Roboto;
@@ -1647,6 +1741,9 @@ header .header__log ul li:hover {
         font-size: 17px;
         line-height:unset;
     }
+    .watcher__checker {
+        margin-right: 40px;
+    }
 }
 @media screen and (max-width: 840px) {
     .container:not(.container-fluid) {
@@ -1924,6 +2021,85 @@ header .header__log ul li:hover {
     }
     .watcher__headerSocialItems-mobile-active {
         display: block;
+    }
+    .watcher__headerVideo-mobile {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+        z-index: 11;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .watcher__headerVideo {
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 8px;
+    }
+    .watcher__headerVideoBtnAndText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .watcher__headerVideoBtn {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #4F6180;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #4F6180;
+        transition: .3s ease-in-out;
+    }
+    .watcher__headerVideoBtn .fa-video{
+        display: none;
+    }
+    .watcher__headerVideoBtn-active .fa-video {
+        display: block;
+    }
+    .watcher__headerVideoBtn-active .fa-video-slash {
+        display: none;
+    }
+    .watcher__headerVideoBtn-active {
+        color: #679967;
+        border: 1px solid #679967;
+    }
+    .watcher__headerVideoText {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #CC432D;
+        margin-left: 4px;
+    }
+    .watcher__headerVideoHelp {
+        padding: 14px 10px;
+        display: none;
+    }
+    .watcher__headerVideoHelp-active {
+        display: block;
+    }
+    .watcher__headerVideoHelpText {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    .watcher__headerVideo-mobile-active {
+        display: flex;
     }
     .watcher__headerSocialClick {
         width: 100vh;
