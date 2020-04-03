@@ -94,7 +94,7 @@
                         <div class="control__logo"><a href="#!"><img src="./img/logo-chanel.png" alt="logo chanel" draggable="false"></a></div>
                         <div class="control__options row__between">
                             <ul class="row">
-                                <li class="option__item"><i class="fas fa-volume-up"></i></li>
+                                <li class="option__item option__item-sound"><i class="fas fa-volume-up"></i><i class="fas fa-volume-off"></i></li>
                                 <li class="option__item option__item-camera"><i class="fas fa-video"></i></li>
                                 <li class="option__item option__item-stop"><i class="fas fa-play"></i></li>
                             </ul>
@@ -359,6 +359,11 @@
     const indexHeader = document.querySelector('.watcher__header');
     const indexTabs = document.querySelector('.watcher__block');
     const indexSwitcher = document.querySelector('.switcher');
+
+    const btnSound = document.querySelector('.option__item-sound');
+    btnSound.addEventListener("click", function () {
+       btnSound.classList.toggle('option__item-sound-active');
+    });
 
     menu.addEventListener('click', function() {
         this.classList.toggle('fa-times');

@@ -219,7 +219,17 @@ header .header__log ul li:hover {
     font-size: 16px; }
 
 .video .control__options ul .option__item-sound i {
-    color: #ffffff; }
+    color: #000000; 
+}
+.option__item-sound .fa-volume-off {
+    display: none;
+}
+.option__item-sound-active .fa-volume-up {
+    display: none;
+}
+.option__item-sound-active .fa-volume-off {
+    display: block;
+}
 
 .video .control__options ul .option__item-camera i {
     color: #000000; }

@@ -30,7 +30,7 @@
                     <div class="control__logo"><a href="#!"><img src="./img/logo-chanel.png" alt="logo chanel" draggable="false"></a></div>
                     <div class="control__options row__between">
                         <ul class="row">
-                            <li class="option__item"><i class="fas fa-volume-up"></i></li>
+                            <li class="option__item option__item-sound"><i class="fas fa-volume-up"></i><i class="fas fa-volume-off"></i></li>
                             <li class="option__item option__item-camera"><i class="fas fa-video"></i></li>
                             <li class="option__item option__item-stop"><i class="fas fa-play"></i></li>
                         </ul>
@@ -425,6 +425,11 @@
     const responseContent = document.querySelector('.response__content')
     const menu = document.querySelector('.header__menu i')
     const textVideo = document.querySelector('.container__video')
+
+    const btnSound = document.querySelector('.option__item-sound');
+    btnSound.addEventListener("click", function () {
+        btnSound.classList.toggle('option__item-sound-active');
+    });
 
     var watcherBlock = document.querySelector('.watcher__block');
     var chatHeader = document.querySelector('.chat__header');
