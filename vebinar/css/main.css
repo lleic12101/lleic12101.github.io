@@ -2049,8 +2049,8 @@ input[type=checkbox]:checked + label .fa-video {
         align-items: center;
     }
     .watcher__headerVideoBtn {
-        width: 32px;
-        height: 32px;
+        width: 35px;
+        height: 35px;
         border: 1px solid #4F6180;
         border-radius: 3px;
         display: flex;
