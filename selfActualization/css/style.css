@@ -1,0 +1,309 @@
+﻿@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*PLACEHOLDER*/
+input::-moz-placeholder { color: #6E7E99; }
+input::-webkit-input-placeholder { color: #6E7E99; }
+/*PLACEHOLDER END*/
+
+/*BUTTON*/
+.button {
+    height: 48px;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    line-height: 19px;
+    color:#fff;
+    background: #CC6423;
+    border: 0.2px solid #000000;
+    box-shadow: 0px 0px 40px rgba(236, 225, 161, 0.6);
+    border-radius: 40px;
+    padding: 0 39px;
+    cursor: pointer;
+    outline: none;
+    transition: background .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover {
+    background: #ea6623;
+}
+.button-get {
+    text-align: center;
+    width: 318.24px;
+    justify-content: center;
+    padding: 0 30px;
+}
+/*BUTTON END*/
+
+/*MAIN*/
+.main {
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #100A46 6.38%, #140D51 18.44%, #171158 26.56%, #130C56 26.57%, #191161 36.56%, #19106C 52.08%, #191068 52.09%, #1B1270 61%, #1B1372 68.69%, #1B1476 73.62%, #1B1375 77.08%, #190F70 81.62%, #180E6E 87.75%, #160C66 94.81%, #160D6B 97.5%, #170D6B 100%);
+    padding: 44px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main__textBlock {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1416px;
+    width: 100%;
+}
+.button-get {
+    margin-top: 76px;
+}
+.main__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.main__textBlockHeadline {
+    margin-bottom: 61px;
+    font-family: Oswald-Regular;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.main__textBlockHeadline span {
+    color: #FFE345;
+}
+.main__textBlockText {
+    margin-bottom: 30px;
+    max-width: 809px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+/*MAIN END*/
+
+/*MODAL PAY*/
+.modalPay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, z-index 0.25s;
+    z-index: -1;
+    backdrop-filter: blur(1.5px);
+}
+.modalPay__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 67px 15px 0;
+    height: 436px;
+    width: 628px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4598FF;
+    border: 0.5px solid #000000;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+.modalPay__close {
+    position: absolute;
+    right: 16px;
+    top: 17px;
+    cursor: pointer;
+}
+.modalPay__text {
+    max-width: 523px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 37px;
+    text-align: center;
+}
+.modalPay__input {
+    margin-bottom: 13px;
+    padding-left: 24px;
+    height: 48px;
+    width: 350px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    box-shadow: inset 0px 1px 3px #BDBABA;
+    border: 2px solid transparent;
+    transition: border .3s ease-in-out;
+}
+.modalPay__input-error {
+    border: 2px solid #CC3A23;
+}
+.button-pay {
+    height: 48px;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    line-height: 19px;
+    color:#fff;
+    background: #DEA867;
+    border: 0.2px solid #000000;
+    box-shadow: 0px 0px 40px rgba(236, 225, 161, 0.6);
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: background .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 54px;
+    margin-top: 15px;
+}
+.button-pay-active {
+    background: #CC6423;
+}
+.button-pay:hover {
+    background: #ea6623;
+}
+.modalPay__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.show-modalPay {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/*MODAL PAY END*/
+
+/*MAIN MEDIA*/
+
+/*MEDIA 1100px*/
+@media screen and (max-width: 1100px) {
+    .main__img {
+        display: none;
+    }
+}
+/*MEDIA 1100px END*/
+
+/*MEDIA 912px*/
+@media screen and (max-width: 912px) {
+    .main__textBlockHeadline {
+        margin-bottom: 40px;
+    }
+    .button-get {
+        margin-top: 40px;
+    }
+}
+/*MEDIA 912px END*/
+
+/*MEDIA 746px*/
+@media screen and (max-width: 746px) {
+    .main__gets {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .main__getsItems {
+        margin: 0 20px 10px 30px;
+    }
+    .main__getsHeadline {
+        margin-bottom: 35px;
+    }
+}
+/*MEDIA 746px END*/
+
+/*MEDIA 683px*/
+@media screen and (max-width: 683px) {
+    .modalPay__content {
+        width: 95%;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .modalPay__text {
+        margin-bottom: 40px;
+    }
+}
+/*MEDIA 683px END*/
+
+/*MEDIA 660px*/
+@media screen and (max-width: 660px) {
+    .main__textBlockHeadline {
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .main__textBlockText {
+        text-align: center;
+        font-size: 13px;
+    }
+    .main__textBlock {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .button-get {
+        margin-top: 5px;
+        width: 224px;
+    }
+    .main {
+        padding: 24px 24px 39px;
+    }
+}
+/*MEDIA 660pxEND*/
+
+/*MEDIA 415px*/
+@media screen and (max-width: 415px) {
+    .modalPay__input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .modalPay__content {
+        padding-bottom: 30px;
+    }
+    .modalPay__text {
+        margin-bottom: 20px;
+    }
+}
+/*MEDIA 415px END*/
+
+/*MAIN MEDIA END*/
