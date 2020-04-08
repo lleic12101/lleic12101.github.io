@@ -53,6 +53,18 @@ doc.querySelector('.button-pay').addEventListener("click", function () {
 
 //input mask
 $(document).ready(function(){
-    $('.modalPay__input-phone').inputmask({"mask": "(999) 999-99-99"}); //specifying options
+    // $('.modalPay__input-phone').inputmask({"mask": "+9{1,2}(999) 999-99-99"}); //specifying options
     $('.modalPay__input-mail').inputmask("*{1,35}@*{1,20}.*{1,10}");
+    $('.modalPay__input-phone').inputmask("+9{1}(999) 999-99-99");
+    Inputmask({
+        mask: "+V{1,2}(999) 999-99-99",
+        definitions: {
+            "V": {
+                validator: "[3,7,8]",
+                casing: "upper"
+            }
+        },
+        clearIncomplete: true,
+        autoUnmask: true
+    }).mask('.modalPay__input-phone');
 });

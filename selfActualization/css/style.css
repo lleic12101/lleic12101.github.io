@@ -84,7 +84,7 @@ input::-webkit-input-placeholder { color: #6E7E99; }
     width: 100%;
 }
 .button-get {
-    margin-top: 76px;
+    margin-top: 100px;
 }
 .main__img {
     position: absolute;
@@ -93,7 +93,7 @@ input::-webkit-input-placeholder { color: #6E7E99; }
     height: 100%;
 }
 .main__textBlockHeadline {
-    margin-bottom: 61px;
+    margin-bottom: 105px;
     font-family: Oswald-Regular;
     font-size: 36px;
     line-height: 44px;
@@ -104,7 +104,7 @@ input::-webkit-input-placeholder { color: #6E7E99; }
 }
 .main__textBlockText {
     margin-bottom: 30px;
-    max-width: 809px;
+    max-width: 800px;
     font-family: Roboto-Regular;
     font-size: 16px;
     line-height: 24px;
