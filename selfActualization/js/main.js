@@ -49,6 +49,11 @@ doc.querySelector('.button-pay').addEventListener("click", function () {
     } else {
         $('.modalPay__input-mail').removeClass("modalPay__input-error");
     }
+    if( doc.querySelector('.modalPay__input-name').value.trim() !== "" &&
+        doc.querySelector('.modalPay__input-phone').value.trim() !== "" &&
+        doc.querySelector('.modalPay__input-mail').value.trim() !== ""){
+        alert('Письмо со ссылкой на скачивание тренинга отправлена на Ваш e-mail');
+    }
 });
 
 //input mask
@@ -61,10 +66,7 @@ $(document).ready(function(){
         definitions: {
             "V": {
                 validator: "[3,7,8]",
-                casing: "upper"
             }
         },
-        clearIncomplete: true,
-        autoUnmask: true
     }).mask('.modalPay__input-phone');
 });
