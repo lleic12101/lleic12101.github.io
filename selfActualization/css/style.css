@@ -68,7 +68,7 @@ input::-webkit-input-placeholder { color: #6E7E99; }
 .main {
     min-height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #100A46 6.38%, #140D51 18.44%, #171158 26.56%, #130C56 26.57%, #191161 36.56%, #19106C 52.08%, #191068 52.09%, #1B1270 61%, #1B1372 68.69%, #1B1476 73.62%, #1B1375 77.08%, #190F70 81.62%, #180E6E 87.75%, #160C66 94.81%, #160D6B 97.5%, #170D6B 100%);
+    background: linear-gradient(180deg, #100A46 6.38%, #140D51 18.44%, #130C56 26.57%, #191161 36.56%, #19106C 52.08%, #191068 52.09%, #1B1270 61%, #1B1372 68.69%, #1B1476 73.62%, #1B1375 77.08%, #190F70 81.62%, #180E6E 87.75%, #160C66 94.81%, #160D6B 97.5%, #170D6B 100%);
     padding: 44px 60px;
     position: relative;
     display: flex;
@@ -275,6 +275,7 @@ input::-webkit-input-placeholder { color: #6E7E99; }
     .main__textBlockText {
         text-align: center;
         font-size: 13px;
+        margin-bottom: 20px;
     }
     .main__textBlock {
         align-items: center;
@@ -282,7 +283,7 @@ input::-webkit-input-placeholder { color: #6E7E99; }
         flex-direction: column;
     }
     .button-get {
-        margin-top: 5px;
+        margin-top: 10px;
         width: 224px;
     }
     .main {
