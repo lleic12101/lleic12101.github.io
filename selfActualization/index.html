@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Самоактуализация</title>
+    <link rel="icon" sizes="192x192" href="img/icon.png" />
+    <link rel="stylesheet" href="css/intlTelInput.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -41,7 +43,8 @@
                     Для получения тренинга “САМОАКТУАЛИЗАЦИЯ ЛИЧНОСТИ И ОБЩЕНИЯ” заполните необходимые поля
                 </p>
                 <input class="modalPay__input modalPay__input-name" placeholder="Введите Ваше имя" />
-                <input class="modalPay__input modalPay__input-phone" type="tel" placeholder="Введите Ваш телефон" />
+                <input class="modalPay__input modalPay__input-phone" type="tel" id="phone" />
+                <!--<input class="modalPay__input modalPay__input-phone" type="tel" placeholder="Введите Ваш телефон" />-->
                 <input class="modalPay__input modalPay__input-mail" placeholder="example@gmail.com" />
                 <a class="button-pay">ОТКРЫТЬ ТРЕНИНГ</a>
             </form>
@@ -50,6 +53,8 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.inputmask.js"></script>
     <script src="js/inputmask.binding.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

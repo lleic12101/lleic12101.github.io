@@ -60,13 +60,17 @@ doc.querySelector('.button-pay').addEventListener("click", function () {
 $(document).ready(function(){
     // $('.modalPay__input-phone').inputmask({"mask": "+9{1,2}(999) 999-99-99"}); //specifying options
     $('.modalPay__input-mail').inputmask("*{1,35}@*{1,20}.*{1,10}");
-    $('.modalPay__input-phone').inputmask("+9{1}(999) 999-99-99");
-    Inputmask({
-        mask: "+V{1,2}(999) 999-99-99",
-        definitions: {
-            "V": {
-                validator: "[3,7,8]",
-            }
-        },
-    }).mask('.modalPay__input-phone');
+});
+
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {});
+
+intlTelInput(input, {
+    initialCountry: "auto",
+    geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            success(countryCode);
+        });
+    },
 });
