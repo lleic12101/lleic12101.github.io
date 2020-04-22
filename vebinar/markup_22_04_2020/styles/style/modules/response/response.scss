@@ -1,0 +1,332 @@
+@media screen and (max-width: 1228px) {
+  .container:not(.container-fluid) {
+    width: 1149px;
+  }
+  .wrapper__content {
+    display: flex;
+    justify-content: center;
+  }
+  .video:not(.video-full) {
+    width: 670px;
+    height: 375px;
+    margin-right: 24px;
+  }
+  .container__video {
+    width: 670px;
+    .description__video {
+      width: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .container:not(.container-fluid) {
+    width: 1018px;
+  }
+  .video:not(.video-full) {
+    width: 610px;
+    height: 341px;
+  }
+  .chat__wrapper {
+    width: 370px;
+    .chat__footer .form textarea {
+      width: 220px;
+    }
+  }
+  .container__video {
+    width: 641px;
+    .description__video {
+      width: 530px;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container:not(.container-fluid) {
+    width: 920px;
+  }
+  .video:not(.video-full) {
+    width: 550px;
+    height: 308px;
+  }
+  .container__video {
+    width: 587px;
+    .description__video {
+      width: 483px;
+    }
+  }
+  .chat__wrapper {
+    width: 320px;
+    .chat__footer .form textarea {
+      width: 170px;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .container:not(.container-fluid) {
+    width: 833px;
+  }
+  .video:not(.video-full) {
+    width: 480px;
+    height: 269px;
+  }
+  .container__video {
+    width: 509px;
+    .description__video {
+      width: 470px;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container:not(.container-fluid) {
+    width: 760px;
+  }
+  .video:not(.video-full) {
+    width: 410px;
+    height: 230px;
+  }
+  .container__video {
+    width: 437px;
+    .description__video {
+      width: 396px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container:not(.container-fluid) {
+    width: 725px;
+  }
+  .video:not(.video-full) {
+    width: 370px;
+    height: 207px;
+  }
+  .container__video {
+    width: 399px;
+    .description__video {
+      width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  header {
+    margin-bottom: 8px;
+    padding: 0 12px;
+    height: 48px;
+    .row__between {
+      width: 100%;
+    }
+    .header {
+      &__log {
+        display: none;
+      }
+      &__logo {
+        height: 48px !important;
+        a img {
+          width: 64px;
+          height: 35px;
+        }
+      }
+      &__menu {
+        display: block !important;
+      }
+    }
+  }
+  .container__video {
+    display: none;
+  }
+  .container:not(.container-fluid) {
+    width: calc(100% - 16px);
+  }
+  .video:not(.video-full) {
+    margin: 0 auto;
+    width: 100%;
+    height: 54.7vw;
+    .control__options {
+      padding: 12px;
+      ul .option__item:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+  .wrapper__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__video {
+    width: 100%;
+    .description__video {
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
+  .chat__wrapper {
+    width: 100%;
+    margin: 8px auto;
+    .chat {
+      margin: 0 auto;
+      .chat {
+        &__header {
+          padding: 13px;
+          p {
+            font-size: 12px;
+          }
+        }
+        &__footer .form .row {
+          width: 100%;
+          textarea {
+            width: 100%;
+          }
+          .counter-symbol {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .chat__wrapper .chat .chat__footer .form {
+    .row {
+      width: 90%;
+      textarea {
+        width: 85%;
+      }
+      .counter-symbol {
+        width: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .video {
+    height: 54vw;
+    .control__options {
+      ul .option__item {
+        width: 32px;
+        height: 32px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .chat__wrapper {
+    width: 100%;
+    .chat {
+      &__footer {
+        .form {
+          justify-content: flex-start;
+          .row textarea {
+            padding-left: 0px;
+          }
+        }
+        .user {
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video:not(.video-full) {
+    height: 53vw;
+  }
+  .response__content .container__video .description__video {
+    .video {
+      &__title h3 {
+        font-size: 22px;
+      }
+      &__link a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  header .row__between .header__log ul li {
+    width: 95px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header .row__between .header__log ul li {
+    width: 70px;
+    a {
+      font-size: 9px;
+    }
+  }
+  .video {
+    .video__control {
+      .control__logo {
+        right: 3px;
+        top: 3px;
+        a img {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 850px) and (max-width: 520px) {
+  .chat__wrapper .chat .chat__body {
+    height: 370px;
+  }
+}
+
+@media (max-height: 823px) and (max-width: 520px) {
+  .video {
+    height: 53.7vw;
+  }
+  .chat__wrapper .chat .chat__body {
+    height: 364px;
+  }
+}
+
+@media (max-height: 736px) and (max-width: 520px) {
+  .video {
+    height: 53.8vw;
+  }
+  .chat__wrapper .chat .chat__body {
+    height: 276px;
+  }
+}
+
+@media (max-height: 731px) and (max-width: 520px) {
+  .video {
+    height: 53.5vw;
+  }
+  .chat__wrapper .chat .chat__body {
+    height: 271px;
+  }
+}
+
+@media (max-height: 667px) and (max-width: 520px) {
+  .chat__wrapper .chat .chat__body {
+    height: 231px;
+  }
+}
+
+@media (max-height: 640px) and (max-width: 520px) {
+  .video {
+    height: 53.2vw;
+  }
+  .chat__wrapper .chat .chat__body {
+    height: 210px;
+  }
+}
+
+@media (max-height: 568px) and (max-width: 520px) {
+  .chat__wrapper .chat .chat__body {
+    height: 160px;
+  }
+}

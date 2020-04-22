@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat 2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/markupApril2020.css">
+</head>
+<body>
+
+<div id="verContainer" style="position: absolute; color:#cad8ed; z-index: 1000; display: none;"></div>
+
+<div class="container">
+    <div class="wrapper__content row__between">
+        <div class="wrapper__column">
+
+            <div id="video-container" class="video">
+                <div id="participantsContainer" class="video__items">
+
+                </div>
+                <div class="video__control">
+                    <div class="control__logo">
+                        <a href="#!">
+                            <img src="styles/img/logo-chanel.png" alt="logo chanel" draggable="false">
+                        </a>
+                    </div>
+
+                    <div class="control__options row__between">
+                        <ul class="row">
+                            <li id="audioToggleButton" class="option__item option__item-sound">
+                                <i id="audioToggleButtonIcon" class="fas fa-volume-up"></i>
+                            </li>
+                            <li id="videoToggleButton" class="option__item option__item-camera" style="display: none;">
+                                <i id="videoToggleButtonIcon" class="fas fa-video"></i>
+                            </li>
+                            <li id="stopButton" class="option__item option__item-stop">
+                                <i id="stopButtonIcon" class="fas fa-play"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li id="fullscreenButton" class="option__item option__item-full" style="display: none;">
+                                <i class="fas fa-expand"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="publisherCallOnlineElement" class="teacher__block">
+                <div class="teacher__blockBtns">
+                    <div class="teacher__blockBtn-sygnal" id="btnCalls">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <div class="teacher__blockBtn teacher__blockBtn-active" id="btnNotice1">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="teacher__blockBtn" id="btnNotice2">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+
+                <div class="teacher__blockTabs">
+                    <div id="teacher__blockTabHeader" class="teacher__blockTabHeader">
+                        <img id="callOnlineAvailabilityToggleButton" src="styles/img/darkBtn.png" alt="switch" class="teacher__blockTabHeaderImg-dark teacher__blockTabHeaderImg-active" />
+                        <p id="teacher__blockTabHeaderText" class="teacher__blockTabHeaderText">РАЗРЕШИТЬ ЗВОНКИ В ЭФИР</p>
+                    </div>
+
+
+                    <div class="teacher__blockTab teacher__blockTab-active" id="tabNotice1">
+                        <div class="teacher__blockTabContent">
+                            <textarea class="teacher__blockTabTextarea">Note 1</textarea>
+                        </div>
+                    </div>
+                    <div class="teacher__blockTab" id="tabNotice2">
+                        <div class="teacher__blockTabContent">
+                            <textarea class="teacher__blockTabTextarea">Note 2</textarea>
+                        </div>
+                    </div>
+
+                    <div class="teacher__blockTab" id="tabCalls">
+                        <div class="teacher__blockTab-calls" id="tabYes">
+                            <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                                <p class="teacher__blockTabContentYesText">Вы собираетесь разрешить звонки в эфир</p>
+                                <div class="teacher__blockTabContentYesBtns">
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-green teacher__blockTabBtn-small" id="btnOpenYes">ДА</button>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-red teacher__blockTabBtn-small" id="btnOpenNo">НЕТ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teacher__blockTab-calls" id="tabNo">
+                            <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                                <p class="teacher__blockTabContentYesText">Вы собираетесь запретить звонки в эфир</p>
+                                <div class="teacher__blockTabContentYesBtns">
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-green teacher__blockTabBtn-small" id="btnCloseYes">ДА</button>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-red teacher__blockTabBtn-small" id="btnCloseNo">НЕТ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teacher__blockTab-calls" id="tabEmpty">
+                            <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                                <p class="teacher__blockTabEmptyText">Пока ни одного звонящего...</p>
+                            </div>
+                        </div>
+
+                        <div class="teacher__blockTab-calls" id="tabTalking">
+                            <div class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                                <p class="teacher__blockTabTalkingText">Вы разговариваете с <span id="currentCallerName">Василий</span></p>
+                                <p id="currentCallDuration" class="teacher__blockTabTalkingTime"></p>
+                                <button class="teacher__blockTabBtn teacher__blockTabBtn-red" id="btnTalkingStop">ЗАКОНЧИТЬ</button>
+                            </div>
+                        </div>
+
+                        <div class="teacher__blockTab-calls" id="tabList">
+                            <div id="callersList" class="teacher__blockTabContent teacher__blockTabContentYesTab">
+                                <div class="teacher__blockTabListItem">
+                                    <p class="teacher__blockTabListItemName">Василий</p>
+                                    <p class="teacher__blockTabListItemMail">vasil@ukr.net</p>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-green btnAcceptPeople">ПРИНЯТЬ</button>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-red btnDeclinePeople">ОТКЛОНИТЬ</button>
+                                </div>
+                                <div class="teacher__blockTabListItem">
+                                    <p class="teacher__blockTabListItemName">Василий</p>
+                                    <p class="teacher__blockTabListItemMail">vasil@ukr.net</p>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-green btnAcceptPeople">ПРИНЯТЬ</button>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-red btnDeclinePeople">ОТКЛОНИТЬ</button>
+                                </div>
+                                <div class="teacher__blockTabListItem">
+                                    <p class="teacher__blockTabListItemName">Василий</p>
+                                    <p class="teacher__blockTabListItemMail">vasil@ukr.net</p>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-green btnAcceptPeople">ПРИНЯТЬ</button>
+                                    <button class="teacher__blockTabBtn teacher__blockTabBtn-red btnDeclinePeople">ОТКЛОНИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="callContainer" class="watcher__block" style="display: none;">
+                <!-- CALLS DISABLED -->
+                <div id="callsDisabled" class="watcher__blockItem watcher__blockItem">
+                    <div class="watcher__blockHeader watcher__blockHeader-disabled">
+                        <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР ЗАПРЕЩЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <p class="watcher__blockContentClosedText">
+                            Публикатор ограничил звонки в эфир. Когда возможность возобновится,
+                            справа появится соответствующая кнопка
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CALLS ENABLED -->
+                <div id="callsEnabled" class="watcher__blockItem watcher__blockItem">
+                    <div class="watcher__blockHeader">
+                        <p class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <div class="watcher__checkerBlock" style="">
+                            <div class="watcher__checker">
+                                <p class="watcher__checkerBlockText">* Важно</p>
+                                <input id="useOwnCameraCheckBox" type="checkbox" name="talking" value="camera">
+                                <label for="useOwnCameraCheckBox"><i class="fas fa-video-slash"></i><i class="fas fa-video"></i></label>
+                            </div>
+                            <p class="watcher__text">
+                                Звук будет включен автоматически. Для активации видео-камеры поставьте галочку.
+                            </p>
+                        </div>
+
+                        <div class="watcher__buttonBlock">
+                            <button id="callButton" class="watcher__button watcher__button-call">ПОЗВОНИТЬ</button>
+                            <p class="watcher__buttonBlockText"></p><!-- тут вписываются текст совстояний под кнопкой. Дозваниваемся, линия занята-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TALKING -->
+                <div id="talking" class="watcher__blockItem watcher__blockItem">
+                    <div class="watcher__blockHeader">
+                        <p id="callStateInfo" class="watcher__blockHeaderText">ЗВОНКИ В ЭФИР РАЗРЕШЕНЫ</p>
+                    </div>
+                    <div class="watcher__blockContent">
+                        <p class="watcher__text-big">
+                            Вы разговариваете с публикатором
+                        </p>
+                        <div class="watcher__buttonBlock">
+                            <button id="cancelCurrentCallButton" class="watcher__button watcher__button-stop">ЗАКОНЧИТЬ</button>
+                            <p id="currentCallTimerView" class="watcher__buttonBlockText watcher__buttonBlockText-bold">00:12:45</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="teacher__column">
+            <!--markup_22_04_2020-->
+            <div class="chat__wrapper chat__wrapper-teacher">
+                <div class="chat">
+                    <!--
+                    <div style="width: 100%; float: left; display: block; padding: 16px;">
+                        <input id="textChatAutoscrollCheckBox" name="textChatAutoscrollCheckBox" type="checkbox"><label for="textChatAutoscrollCheckBox" style="font-size: 0.85em;">автопромотка</label>
+                    </div>
+                    -->
+                    <div class="chat__header">
+                        <div class="chat__headerBlock">
+                            <p>На стриме: <span id="textChatTotalParticipants">0</span></p>
+                        </div>
+                        <div class="chat__headerBlock chat__headerBlock-autoscroll">
+                            <p>Автоскролл</p>
+                            <div class="container-chat__header">
+                                <input type="checkbox" name="group2" id="autoscrollCheck" checked>
+                                <label for="autoscrollCheck"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat__body">
+                        <ul id="textMessagesContainer"></ul>
+                    </div>
+
+                    <div class="chat__footer">
+                        <div class="user">
+                            <span id="currentUserName" class="name">Андрей</span>
+                        </div>
+
+                        <div id="sendTextMessageContainer" class="form" action="#!">
+                            <div class="row">
+                                <textarea id="textMessageInput" class="input-message" type="text" placeholder="Добавить комментарий"></textarea>
+                                <span class="counter-symbol"><span class="counter" id="totalChars">0 </span>/ 250</span>
+                            </div>
+                            <div class="send">
+                                <button class="send-message" id="sendTextMessageButton">ОТПРАВИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--endOfMArkup22_04_2020-->
+
+            <div id="userListContainer" class="teacher__users">
+                <div class="teacher__usersHeader">
+                    <p class="teacher__usersHeaderText">Зарегистрированные участники:</p>
+                    <p id="totalUsersElement" class="teacher__usersHeaderText-bold">0</p>
+                </div>
+
+                <div class="teacher__usersButtons">
+                    <div class="teacher__usersButton teacher__usersButton-active" id="btnOnline">
+                        <p id="onlineElement" class="teacher__usersButtonText teacher__usersText-green">ОНЛАЙН ()</p>
+                    </div>
+                    <div class="teacher__usersButton" id="btnLeft">
+                        <p id="goneElement" class="teacher__usersButtonText teacher__usersText-red">ВЫШЛИ ()</p>
+                    </div>
+                    <div class="teacher__usersButton" id="btnOffline">
+                        <p id="offlineElement" class="teacher__usersButtonText teacher__usersText-gray">НЕ ВХОДИЛИ ()</p>
+                    </div>
+                </div>
+
+                <div id="userList" class="teacher__usersTabs">
+                    <div class="teacher__usersTab teacher__usersTab-active" id="tabOnline"></div>
+                    <div class="teacher__usersTab" id="tabLeft"></div>
+                    <div class="teacher__usersTab" id="tabOffline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="teacher"></div>
+
+    <div id="infoOverlay">
+        <div id="infoText"></div>
+        <a style="display:none; position: absolute; z-index: 3;" id="copyLogButton2" href="#">Скопировать лог</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="js/lib/collections/collections.js"></script>
+<script src="js/lib/events/EventBus.js"></script>
+<script src="js/div0/service/socket/SocketEvent.js"></script>
+
+<script src="js/div0/textChat/TextChatMessageRenderer.js"></script>
+
+<script src="js/div0/call/publisher/teacherTabs/TeacherTabsController.js"></script>
+<script src="js/div0/call/publisher/teacherTabs/TeacherTabsModel.js"></script>
+<script src="js/div0/call/publisher/teacherTabs/TeacherTabsView.js"></script>
+<script src="js/div0/call/publisher/teacherTabs/TeacherTabsEvent.js"></script>
+
+<script src="js/div0/call/publisher/callOnline/CallOnlineEvent.js"></script>
+<script src="js/div0/call/publisher/callOnline/Caller.js"></script>
+<script src="js/div0/call/publisher/callOnline/CallOnlineView.js"></script>
+<script src="js/div0/call/publisher/callOnline/CallOnlineModel.js"></script>
+<script src="js/div0/call/publisher/callOnline/CallOnlineController.js"></script>
+
+<script src="js/div0/call/publisher/callersList/CallersListItemRenderer.js"></script>
+<script src="js/div0/call/publisher/callersList/CallersListEvent.js"></script>
+<script src="js/div0/call/publisher/callersList/CallersListView.js"></script>
+<script src="js/div0/call/publisher/callersList/CallersListModel.js"></script>
+<script src="js/div0/call/publisher/callersList/CallersListController.js"></script>
+
+<script src="js/div0/call/publisher/currentCall/CurrentCallEvent.js"></script>
+<script src="js/div0/call/publisher/currentCall/CurrentCallView.js"></script>
+<script src="js/div0/call/publisher/currentCall/CurrentCallModel.js"></script>
+<script src="js/div0/call/publisher/currentCall/CurrentCallController.js"></script>
+
+<script src="js/div0/user/userList/UserListEvent.js"></script>
+<script src="js/div0/user/userList/UserListController.js"></script>
+<script src="js/div0/user/userList/UserListModel.js"></script>
+<script src="js/div0/user/userList/UserListView.js"></script>
+<script src="js/div0/user/userList/UserParser.js"></script>
+<script src="js/div0/user/userList/UserListRenderer.js"></script>
+
+<script src="js/div0/user/userList/header/UserListHeaderController.js"></script>
+<script src="js/div0/user/userList/header/UserListHeaderModel.js"></script>
+<script src="js/div0/user/userList/header/UserListHeaderView.js"></script>
+
+
+<script src="markupApp.js"></script>
+
+<script>
+    $(document).ready(function () {
+        startApplication("PUBLISHER");
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.sidebar {
+  aside {
+    background-color: $bg_header;
+    width: 68px;
+    height: 800px;
+    overflow: hidden;
+    .menu {
+      .menu__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: 48px;
+        border-bottom: 0.2px solid $color_border;
+        border-left: 4px solid $bg_header;
+        &-active {
+          border-left: 4px solid $border_active;
+          border-bottom-color: $color_text;
+        }
+        a {
+          color: $color_btn;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

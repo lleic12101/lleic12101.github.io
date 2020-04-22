@@ -1,0 +1,41 @@
+.container__video {
+  &-hide {
+    display: none;
+  }
+  width: 742px;
+  .description__video {
+    width: 689px;
+    margin: 20px auto 20px;
+    .video {
+      &__link {
+        a {
+          color: $color_link;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 15px;
+        }
+      }
+      &__title {
+        h3 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 28px;
+          margin-top: 10px;
+          color: $color_text;
+        }
+      }
+      &__description {
+        margin-top: 10px;
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 24px;
+          color: $color_text;
+        }
+      }
+    }
+  }
+}

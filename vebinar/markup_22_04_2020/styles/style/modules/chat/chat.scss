@@ -1,0 +1,180 @@
+.chat__wrapper {
+  width: 416px;
+  &-hide {
+    display: none;
+  }
+  &.top {
+    margin-top: 300px;
+  }
+  .chat {
+    border: 1px solid $chat_border_color;
+    &__header {
+       padding: 16px;
+       border-bottom: 1px solid $chat_border_color;
+       p {
+         color: $color_text;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 13px;
+         span {
+           font-weight: bold;
+         }
+       }
+     }
+    &__header2 {
+      padding: 16px;
+      border-bottom: 1px solid $chat_border_color;
+      p {
+        color: $color_text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    &__body {
+      padding: 24px 13px;
+      overflow-y: scroll;
+      height: 222px;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+      &::-webkit-scrollbar-track-piece {
+        background-color: #bebebe;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #faf9f9;
+      }
+
+      ul li {
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+        display: flex;
+        .messages {
+          .name {
+            margin-right: 10px;
+            color: $chat_user_color;
+            font-size: 12px;
+            line-height: 13px;
+          }
+          .text {
+            color: $color_text;
+            font-size: 12px;
+            line-height: 13px;
+            &.donation {
+              color: $bg_sound;
+            }
+          }
+        }
+      }
+    }
+    &__footer {
+      border-top: 1px solid $chat_border_color;
+      padding: 15px 13px;
+      &.position {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 87.9%;
+        margin: 0 auto;
+        background-color: $color_btn;
+        border: 0.5px solid $chat_border_color;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+        span {
+          font-size: 11px;
+          color: $chat_user_color;
+        }
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        textarea {
+          &::-webkit-scrollbar {
+            width: 0;
+          }
+          & {
+            -ms-overflow-style: none;
+          }
+          & {
+            overflow: -moz-scrollbars-none;
+          }
+          resize: none;
+          height: 16px;
+          background-color: inherit;
+          width: 250px;
+          padding-left: 5px;
+          outline: none;
+          border: none;
+          padding-bottom: 6px;
+          border-bottom: 1px solid $chat_border_color;
+          &::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 13px;
+            color: $color_input;
+          }
+          &.error {
+            border-bottom-color: $bg_sound;
+          }
+        }
+        .counter-symbol {
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 2px;
+          border-bottom: 1px solid $chat_border_color;
+          color: $color_input;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          &.error {
+            border-bottom-color: $bg_sound;
+          }
+        }
+        .send {
+          display: flex;
+          align-items: center;
+          margin-left: 22px;
+          button {
+            outline: none;
+            border: none;
+            background-color: inherit;
+            color: $color_link;
+            font-size: 16px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .support {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    button {
+      outline: none;
+      border: none;
+      width: 184px;
+      height: 34px;
+      border-radius: 2px;
+      background-color: $bg_sound;
+      text-transform: uppercase;
+      color: $color_btn;
+      font-style: normal;
+      font-weight: normal;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+  }
+}

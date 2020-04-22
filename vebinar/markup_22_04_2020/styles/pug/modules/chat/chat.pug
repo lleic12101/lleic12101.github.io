@@ -1,0 +1,23 @@
+.chat
+    .chat__header
+        p На стриме присутствуют: 
+            span 279
+    .chat__body
+        ul
+            each item in [1,2,3,4,5,6,7,9,10,11,12,13,14,15,16,17,18,19,20]
+                li
+                    .messages
+                        span.name Андрей
+                        span.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    .chat__footer
+        .user
+            span.name Андрей
+        .form(action="#!")
+            .row
+                textarea(type='text',class="input-message", placeholder="Добавить комментарий")
+                span.counter-symbol
+                    span.counter 0 
+                    | / 250
+            .send
+                button(class="send-message")
+                    i.fas.fa-paper-plane

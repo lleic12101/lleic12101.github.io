@@ -1,0 +1,104 @@
+doctype html
+html(lang = 'en')
+    head
+        title document project
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.1.0/css/all.css', integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt', crossorigin='anonymous')
+        link(href='https://fonts.googleapis.com/css?family=Roboto&display=swap', rel='stylesheet')
+        link(rel="stylesheet", href="css/main.css")
+    body
+        header
+            include ./modules/header/header.pug
+        .container
+            .wrapper__content.row__between
+                .video
+                    include ./modules/video/video.pug
+                .chat__wrapper
+                    include ./modules/chat/chat.pug
+        .container
+            include ./modules/textVideo/textVideo.pug
+        include ./modules/responseContent/responseContent.pug
+
+        script(type='text/javascript').
+            const header = document.querySelector('header')
+            const container = document.querySelector('.container')
+            const input = document.querySelector('.input-message')
+            const sendButton = document.querySelector('.send-message')
+            const counterSymbol = document.querySelector('.counter-symbol .counter')
+            const chatWrapp = document.querySelector('.chat__wrapper')
+            const chatBody = document.querySelector('.chat__body')
+            const contentWrapp = document.querySelector('.wrapper__content')
+            const chatList = chatBody.querySelector('ul')
+            const chatFooter = document.querySelector('.chat__wrapper .chat .chat__footer')
+            const video = document.querySelector('.video')
+            const videoControlFull = video.querySelector('.option__item-full')
+            const userName = document.querySelector('.chat__footer .user .name').textContent
+            const responseContent = document.querySelector('.response__content')
+            const menu = document.querySelector('.header__menu i')
+            const textVideo = document.querySelector('.container__video')
+
+            menu.addEventListener('click', function() { 
+                this.classList.toggle('fa-times')
+                responseContent.classList.toggle('response__content-active')
+                chatWrapp.classList.toggle('chat__wrapper-hide')
+            })
+
+            input.addEventListener('input', function() {
+                counterSymbol.textContent = this.value.length + ' '
+                if (this.value.length >= 250) {
+                    this.classList.add('error')
+                    document.querySelector('.counter-symbol').classList.add('error')
+                    sendButton.disabled = true
+                } else {
+                    this.classList.remove('error')
+                    document.querySelector('.counter-symbol').classList.remove('error')
+                    sendButton.disabled = false
+                }
+            })
+            
+            const sendMessage = () => {
+                if (input.value.length === 0) {
+                    return false
+                }
+                if (!(input.value.length >= 250)) {
+                    chatList.innerHTML += `
+                        <li>
+                            <div class="messages">
+                                <span class="name">${userName}</span>
+                                <span class="text">${input.value}</span>
+                            </div>
+                        </li>
+                    `
+                    chatBody.scrollTo({ top: chatList.offsetHeight, behavior: 'smooth' })
+                    input.value = ''
+                    counterSymbol.textContent = '0 '
+                }
+            }
+
+            sendButton.addEventListener('click', () => {
+                sendMessage()
+            })
+            input.addEventListener('keydown', (e) => {
+                if (e.keyCode === 13) {
+                    sendMessage()
+                }
+            })
+
+            videoControlFull.addEventListener('click', function() {
+                const el = this.querySelector('i')
+                
+                header.classList.toggle('hide')
+                chatWrapp.classList.toggle('chat__wrapper-hide')
+                container.classList.toggle('container-fluid')
+                textVideo.classList.toggle('container__video-hide')
+                video.classList.toggle('video-full')
+                
+
+                if (el.classList.contains('fa-expand')) {
+                    el.classList.remove('fa-expand')
+                    el.classList.add('fa-compress')
+                } else {
+                    el.classList.remove('fa-compress')
+                    el.classList.add('fa-expand')
+                }
+            })
