@@ -1,0 +1,1377 @@
+﻿@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.otf') format('opentype');
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat-Black.otf') format('opentype');
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.otf') format('opentype');
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.otf') format('opentype');
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../fonts/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-Light';
+    src: url('../fonts/Mont-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-SemiBold';
+    src: url('../fonts/Mont-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/*BURGER*/
+input {
+    display: none;
+    outline: none;
+}
+.burger {
+    width: 40px;
+    height: 42px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+}
+.burger label {
+    width: 50px;
+    height: 42px;
+    display: block;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+.bar {
+    width: 100%;
+    height: 6px;
+    display: block;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    pointer-events: none;
+}
+.bar-1 {
+    top: 4px;
+}
+.bar-2 {
+    top: 18px;
+}
+.bar-3 {
+    top: 32px;
+}
+.txt {
+    display: none;
+}
+.burger-1 input:checked ~ label .bar-1 {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.burger-1 input:checked ~ label .bar-2 {
+    left: -100%;
+}
+.burger-1 input:checked ~ label .bar-3 {
+    top: 18px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/*BURGER END*/
+
+/*SIDEBAR*/
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar:before {
+    content: '';
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#e9c169, #c5864b);
+}
+.sidebar__content {
+    margin-top: 49px;
+    margin-bottom: 49px;
+    width: 302px;
+    padding: 47px 21px 47px 23px;
+    background: #141414;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    box-shadow: -21px 0 43px rgba(0,0,0,0.56);
+}
+.sidebar__logoBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar__logoImg {
+    width: 37px;
+    height: 59px;
+    margin-right: 9px;
+    margin-left: 4px;
+}
+.sidebar__logoText {
+    font-family: Montserrat-Regular;
+    font-size:20.58px;
+    color: #ffffff;
+}
+.sidebar__logoText span {
+    color: #ffcb67;
+}
+.sidebar__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 53px;
+}
+.sidebar__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 259px;
+    height: 38px;
+    border-radius: 6px;
+    padding-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebar__item:not(last-child) {
+    margin-bottom: 7px;
+}
+.sidebar__itemIconBlock {
+    width: 23px;
+    margin-right: 17px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar__itemIcon {
+    max-width: 23px;
+    filter: invert(64%) sepia(5%) saturate(0%) hue-rotate(147deg) brightness(87%) contrast(94%);
+    transition: .3s;
+}
+.sidebar__itemText {
+    font-family:Mont-Regular;
+    font-size: 13.61px;
+    color: #8f8f8f;
+    transition: .3s;
+}
+.sidebar__item:hover .sidebar__itemText {
+    color: #fff;
+}
+.sidebar__item:hover .sidebar__itemIcon {
+    filter: invert(100%);
+}
+.sidebar__item-active .sidebar__itemText {
+    color: #fff;
+}
+.sidebar__item-active .sidebar__itemIcon {
+    filter: invert(100%);
+}
+.sidebar__item-active {
+    background: linear-gradient(100deg, #bf9d56, #9e6c3d);
+}
+.sidebar__closebleMask {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: transparent;
+    display: none;
+}
+/*SIDEBAR END*/
+
+/*MAIN*/
+.main {
+    background: #ebebeb;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__content {
+    margin-top: 49px;
+    margin-bottom: 49px;
+    width: 1064px;
+    background: linear-gradient(149deg, #f1f1f1, #fdfdfd);
+    box-shadow: -21px 0 43px rgba(0,0,0,0.56);
+    padding: 49px 56px 87px 68px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__headlineBlock {
+    padding: 15px 17px 16px 25px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.main__blockPattern {
+    background: #ffffff;
+    border-radius: 11px;
+    border: 1px solid #a0a09f;
+}
+.main__headlineText {
+    font-family:Mont-Light;
+    color: #484848;
+    font-size: 25.5px;
+    text-align: center;
+}
+.main__block-row {
+    display: flex;
+    flex-direction: row;
+}
+.main__block-row-sb {
+    width: 100%;
+    justify-content: space-between;
+}
+.main__block-column {
+    display: flex;
+    flex-direction: column;
+}
+.main__tableBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px 28px 28px;
+    margin-top: 24px;
+}
+.main__tableHeadline {
+    font-family:Mont-Light;
+    font-size: 21.06px;
+    color: #484848;
+}
+.main__tableWrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+.main__table {
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 26px;
+}
+.main__table, th, td {
+    border: 1px solid #dfdfdf;
+    border-collapse: collapse;
+    font-family:Mont-Light;
+    font-size: 13.61px;
+    color: #484848;
+    font-weight: normal;
+}
+.main__table th {
+    padding: 16px 80px 18px 80px;
+}
+.main__table td {
+    text-align: center;
+    height: 28px;
+}
+.main__tableButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.main__tableButton {
+    font-family: Mont-Light;
+    font-size: 11.96px;
+    color: #484848;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #676767;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.main__tableButton-last {
+    margin-right: 0;
+}
+.main__tableButton:hover {
+    text-decoration: underline;
+}
+.main__tableButtonDots {
+    font-family: Mont-Light;
+    font-size: 22.69px;
+    color: #5e5e5e;
+    margin-bottom: -6px;
+    margin-right: 5px;
+}
+/*MAIN END*/
+
+/*ACCOUNT*/
+.main__accountMoneyBlock {
+    width: 239px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__accountMoneyBlock:first-child {
+    margin-right: 26px;
+}
+.main__accountMoneyText {
+    display: block;
+    font-family:Mont-Light;
+    font-size: 18.99px;
+    color: #868686;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #d3d2d2;
+    margin-top: 13px;
+}
+.main__accountMoneyText-bold {
+    font-family: Mont-SemiBold;
+    font-size: 26.34px;
+    color: #595959;
+    margin-top: 6px;
+}
+.main__accountLevelBlock {
+    width: 394px;
+    height: 198px;
+    padding: 25px 30px 0 26px;
+    margin-bottom: 27px;
+}
+.main__accountLevelHeadline {
+    font-family:Mont-Regular;
+    font-size: 23.26px;
+    color: #868686;
+    margin-bottom: 11px;
+}
+.main__accountLevelCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(102deg, #fdda8f, #e3ab76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 16px 0 13px rgba(0,0,0,0.06), inset 0 0 5px rgba(0,0,0,0.66);
+    border: 2px solid #be956c;
+}
+.main__accountLevelCircleText {
+    font-family:Mont-SemiBold;
+    font-size: 57.67px;
+    color: #484848;
+    text-shadow: 5px 3px 2px rgba(0,0,0,0.27);
+}
+.main__accountLevelItems {
+    display: flex;
+    flex-direction: column;
+    width: 205px;
+}
+.main__accountLevelItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+}
+.main__accountLevelItem:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.main__accountLevelItemText {
+    font-family:Mont-Regular;
+    font-size: 15.28px;
+    color: #868686;
+}
+.main__accountLevelItemText-bold {
+    font-family:Mont-SemiBold;
+    font-size: 20.06px;
+    color: #595959;
+    line-height: 20px;
+}
+.main__accountMoneyBlock-small {
+    height: 109px;
+    width: 184px;
+}
+.main__accountMoneyBlock-small .main__accountMoneyText {
+    margin-top: 12px;
+    padding-bottom: 7px;
+}
+.main__accountSlider {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    position: relative;
+    max-width: 503px;
+}
+.main__accountSliderItems {
+    display: flex;
+    flex-direction: row;
+    width: 503px;
+}
+.main__accountSliderItemWrapper {
+    width: 148px;
+    margin-right: 26px;
+}
+.main__accountSliderItem {
+    background: url(../img/sliderCard.png) no-repeat;
+    background-size: 100% 100%;
+    width: 148px;
+    height: 172px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.32);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 23px 12px 0 0;
+    margin: 5px 0;
+}
+.main__accountSliderItemText {
+    font-family:Montserrat-Black;
+    font-size: 31.12px;
+    color: #3e3b37;
+    line-height: 21px;
+    margin-bottom: 14px;
+}
+.main__accountSliderItemText-time {
+    font-family:Montserrat-Black;
+    font-size: 12.02px;
+    color: #3e3b37;
+    line-height: 16px;
+    margin-bottom: 43px;
+}
+.main__accountSliderItemText-time span {
+    font-size: 19.98px;
+}
+.main__accountSliderItemText-money {
+    font-family:Montserrat-SemiBold;
+    font-size: 20.38px;
+    color: #30281c;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+.main__accountSliderItemText-date {
+    font-family:Montserrat-SemiBold;
+    font-size: 13.01px;
+    color: #30281c;
+    line-height: 13px;
+}
+.main__accountSliderArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 42px;
+    cursor: pointer;
+}
+.main__accountSliderArrow-left {
+    left: -28px;
+}
+.main__accountSliderArrow-right {
+    right: -28px;
+}
+/*ACCOUNT END*/
+
+/*ACCOUNT MEDIA*/
+@media screen and (max-width: 1420px) {
+    .main__content {
+        max-width: calc(100vw - 60px - 302px);
+        margin: 30px 30px 30px 0;
+        padding: 50px;
+    }
+    .main__tableBlock {
+        padding: 40px 28px 28px;
+    }
+    .sidebar__content {
+        margin: 30px 0 30px 30px;
+    }
+    .main__block-row-accountMobile {
+        flex-direction: column;
+    }
+    .main__block-column-accountMobile-margin {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .main__block-column-accountMobile {
+        align-items: center;
+    }
+    .main__accountSlider {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 968px) {
+    .main {
+        align-items: flex-start;
+    }
+    .sidebar__content {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        border-radius: 0;
+        padding: 0 7px 0 20px;
+        height: 84px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        box-shadow: 0 0 10px rgba(0,0,0,0.56);
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .sidebar__items {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 83px;
+        background: #141414;
+        margin-top: 0;
+        padding: 15px 15px 10px;
+        border-bottom-left-radius: 20px;
+    }
+    .sidebar:before {
+        display: none;
+    }
+    .main__content {
+        max-width: calc(100vw - 40px);
+        margin: 104px 20px 20px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .burger {
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main__content {
+        padding: 20px;
+    }
+    .main__headlineBlock {
+        margin-bottom: 16px;
+    }
+    .main__accountMoneyBlock:first-child {
+        margin-right: 16px;
+    }
+    .main__tableBlock {
+        margin-top: 16px;
+    }
+    .main__accountLevelBlock {
+        margin-bottom: 16px;
+    }
+    .main__block-column-accountMobile-margin {
+        margin-bottom: 16px;
+    }
+    .main__accountSlider {
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 644px) {
+    .main__tableBlock {
+        padding-top: 28px;
+        padding-bottom: 24px;
+    }
+    .main__table {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .main__accountSlider {
+        max-width: 80%;
+    }
+    .main__accountSliderItems {
+        width: 100%;
+    }
+    .main__block-row-accountMobile2 {
+        flex-direction: column;
+    }
+    .main__block-row-accountMobile2 .main__accountMoneyBlock:first-child {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .main__tableHeadline {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 478px) {
+    .main__block-row {
+        flex-direction: column;
+    }
+    .main__accountMoneyBlock:first-child {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .main__accountLevelBlock {
+        width: 100%;
+        height: auto;
+        padding-bottom: 26px;
+        align-items: center;
+    }
+    .main__accountLevelBlock .main__block-row {
+        align-items: center;
+    }
+    .main__accountLevelCircle {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .sidebar__logoImg {
+        display: none;
+    }
+}
+/*ACCOUNT MEDIA END*/
+
+/*FINANCE*/
+.main__financeItems {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    flex-wrap: wrap;
+}
+.main__financeItem {
+    width: 209px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 20px 0;
+    margin-right: 34px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.19);
+}
+.main__financeItem:last-child {
+    margin-right: 0;
+}
+.main__financeItemText {
+    font-family: Mont-Light;
+    font-size: 21.06px;
+    color: #484848;
+    border-bottom: 1px solid #d3d2d2;
+    padding-bottom: 9px;
+}
+.main__financeItemText-bold {
+    font-family:Mont-SemiBold;
+    font-size: 32.24px;
+    color: #595959;
+    margin-bottom: 12px;
+    margin-top: 9px;
+}
+.main__financeItemButton {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(102deg, #fdda8f, #e3ab76);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Mont-Regular;
+    font-size: 11.35px;
+    color: #3d3d3d;
+}
+.main__financeItemButton:last-child {
+    margin-top: 14px;
+}
+.main__tableBlock-finance {
+    box-shadow: 0 0 70px rgba(0,0,0,0.19);
+}
+/*FINANCE END*/
+
+/*FINANCE MEDIA*/
+@media screen and (max-width: 1420px) {
+    .main__financeItems {
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .main__financeItem {
+        margin: 10px;
+    }
+    .main__financeItem:last-child {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 968px) {
+    .main__financeItems {
+        margin: 0;
+    }
+}
+/*FINANCE MEDIA END*/
+
+/*PACKETS*/
+.main__headlineBlock-packets {
+    width: 219px;
+    display: flex;
+    justify-content: center;
+    padding: 21px 25px 17px 17px;
+}
+.main__packetsItems {
+    width: 100%;
+    padding: 35px 30px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.19);
+}
+.main__packetsItem {
+    width: 190px;
+    height: 153px;
+    box-shadow: 3px -3px 7px rgba(0,0,0,0.15);
+    background: url(../img/packets/smallPacket.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 13px;
+    margin: 13px;
+}
+.main__packetsItemBigTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-left: 44px;
+}
+.main__packetsItemBigText {
+    font-family:Montserrat-Bold;
+    font-size: 19.2px;
+    color: #30281c;
+}
+.main__packetsItemBigText-small {
+    font-family:Montserrat-Bold;
+    font-size: 15.06px;
+    color: #30281c;
+}
+.main__packetsItemBigText-auto {
+    font-size: 27.65px;
+    margin-bottom: 12px;
+}
+.main__packetsItemRange {
+    font-family:Montserrat-Regular;
+    font-size: 11.94px;
+    color: #a4a29f;
+}
+.main__packetsItemButton {
+    width: 88px;
+    height: 23px;
+    border-radius: 11px;
+    background: linear-gradient(102deg, #fdda8f, #e3ab76);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat-Medium;
+    font-size: 10.55px;
+    color: #423d35;
+    margin-top: 8px;
+}
+.main__packetsBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__packetsChooseBlock {
+    box-shadow: 0 0 32px rgba(0,0,0,0.19);
+    width: 546px;
+    height: 255px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 41px;
+}
+.main__packetsChooseLogo {
+    width: 141px;
+    height: 222px;
+    margin-right: 64px;
+}
+.main__packetsChooseTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__packetsChooseText {
+    font-family:Montserrat-Light;
+    font-size: 19.19px;
+    color: #4a4a4a;
+    margin-bottom: 9px;
+}
+.main__packetsChooseText-big {
+    font-family:Montserrat-Bold;
+    font-size: 58.24px;
+    color: #30281c;
+    margin-bottom: 2px;
+}
+.main__packetsChooseText-time {
+    font-family:Montserrat-SemiBold;
+    font-size: 28.9px;
+    color: #30281c;
+    margin-bottom: 5px;
+}
+.main__packetsChooseText-range {
+    font-family: Montserrat-Regular;
+    font-size: 19.32px;
+    color: #a4a29f;
+}
+.main__packetsPayBlock {
+    box-shadow: 0 0 32px rgba(0,0,0,0.19);
+    width: 357px;
+    height: 255px;
+    padding: 28px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__packetsPayInputBlock {
+    display: flex;
+    flex-direction: column;
+}
+.main__packetsPayText {
+    font-family:Montserrat-Regular;
+    font-size: 15.74px;
+    color: #4a4a4a;
+}
+.main__packetsPayInput {
+    display: block;
+    font-family:Mont-Light;
+    font-size: 14.97px;
+    color: #3d3d3d;
+    width: 138px;
+    height:27px;
+    border-radius: 3px;
+    border: 1px solid #a8a8a8;
+    text-align: center;
+    margin-top: 10px;
+}
+.main__packetsPayInput-disabled {
+    font-family:Mont-SemiBold;
+}
+.main__packetsPayInput-long {
+    width: 173px;
+    margin-bottom: 16px;
+}
+.main__packetsPayRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.main__packetsPayButton {
+    width: 138px;
+    height:29px;
+    border-radius: 5px;
+    background: linear-gradient(102deg, #fdda8f, #e3ab76);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Montserrat-Medium;
+    font-size: 14.35px;
+    color: #423d35;
+}
+/*PACKETS END*/
+
+/*PACKETS MEDIA*/
+@media screen and (max-width: 1380px) {
+    .main__packetsBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__packetsItems {
+        margin-bottom: 20px;
+    }
+    .main__packetsChooseBlock {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1008px) {
+    .main__packetsChooseLogo {
+        margin-right: 40px;
+    }
+    .main__packetsChooseBlock {
+        width: 516px;
+    }
+}
+@media screen and (max-width: 592px) {
+    .main__packetsChooseLogo {
+        display: none;
+    }
+    .main__packetsChooseBlock {
+        justify-content: center;
+        padding: 0 20px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 438px) {
+    .main__packetsPayRow {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .main__packetsPayBlock {
+        height: auto;
+        width: 100%;
+    }
+    .main__packetsPayInput-long {
+        margin-bottom: 0;
+    }
+    .main__packetsPayInputBlock {
+        margin-bottom: 16px;
+    }
+    .main__packetsChooseBlock {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .main__packetsItems {
+        padding: 20px;
+    }
+    .main__packetsChooseText-big {
+        font-size: 50px;
+    }
+    .main__packetsChooseText-range {
+        text-align: center;
+        font-size: 15px;
+    }
+    .main__packetsChooseText-time {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+/*PACKETS MEDIA END*/
+
+/*PROFILE*/
+.main__profileBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    justify-content: space-between;
+    width: 100%;
+}
+.main__profileDataBlock {
+    display: flex;
+    flex-direction: column;
+}
+.main__profileDataRow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.main__profileSelfData {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+.main__profileContactData {
+    display: flex;
+    flex-direction: column;
+}
+.main__profileSystemsData {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.main__profileSystemsDataItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 455px;
+}
+.main__profileSystemsDataItems .main__profileNameAndInputBlock:nth-child(2n-1) {
+    margin-right: 45px;
+}
+.main__profileDataHeadline {
+    font-family:Mont-Light;
+    font-size: 21.06px;
+    color: #484848;
+    margin-bottom: 14px;
+}
+.main__profileNameAndInputBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+.main__profileNameAndInputBlock-withoutEdit {
+    margin-right: 24px;
+}
+.main__profileInputText {
+    margin-left: 5px;
+    font-family:Mont-Light;
+    font-size: 12.86px;
+    color: #3d3d3d;
+    margin-bottom: 3px;
+}
+.main__profileInputBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__profileInput {
+    width: 173px;
+    height:27px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #a8a8a8;
+    font-family:Mont-Light;
+    font-size: 11.35px;
+    color: #3d3d3d;
+    padding-left: 17px;
+}
+.main__profileInputEditImg img {
+    width: 14px;
+    height: 15px;
+    margin-left: 10px;
+}
+.main__profileUserBlock {
+    width: 322px;
+    height:510px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 34px;
+    margin-right: 55px;
+}
+.main__profileUserHeadline {
+    font-family:Mont-Light;
+    font-size: 21.06px;
+    color: #484848;
+}
+.main__profileUserImgBlock {
+    position: relative;
+    margin-top: 27px;
+    margin-bottom: 29px;
+}
+.main__profileUserImg {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.main__profileUserImgChange {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main__profileUserImgChange img {
+    height: 19px;
+    width: 19px;
+}
+.main__profileUserButton {
+    width: 161px;
+    height: 29px;
+    background: linear-gradient(102deg, #fee5b0, #ebc49f);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3d3d3d;
+    font-family:Mont-Regular;
+    font-size: 11.35px;
+}
+.main__profileUserButton:last-child {
+    margin-bottom: 0;
+}
+.main__profileUserButton-top {
+    margin-top: 14px;
+}
+/*PROFILE END*/
+
+/*PROFILE MEDIA*/
+@media screen and (max-width: 1360px) {
+    .main__profileBlock {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main__profileUserBlock {
+        margin-right: 0;
+    }
+    .main__profileSystemsData {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .main__profileDataRow {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__profileSelfData {
+        margin-right: 0;
+        align-items: center;
+    }
+    .main__profileContactData {
+        align-items: center;
+    }
+    .main__profileSystemsDataItems {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__profileSystemsDataItems .main__profileNameAndInputBlock:nth-child(2n-1) {
+        margin-right: 0;
+    }
+    .main__profileSystemsData {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 402px) {
+    .main__profileUserBlock {
+        width: 100%;
+        height: auto;
+        padding-bottom: 35px;
+        padding-top: 25px;
+    }
+    .main__profileUserImgBlock {
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+}
+/*PROFILE MEDIA END*/
+
+/*WITHDRAW*/
+.main__headlineBlock-withdraw {
+    padding-right: 25px;
+}
+.main__withdrawBlock {
+    width: 100%;
+    padding: 43px 63px 50px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.19);
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__withdrawHeadline {
+    font-family:Mont-Light;
+    font-size: 19px;
+    color: #484848;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 25px;
+}
+.main__withdrawNameAndInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}
+.main__withdrawText {
+    font-family:Mont-Light;
+    font-size: 15.82px;
+    color: #484848;
+}
+.main__withdrawInput {
+    display: block;
+    font-family:Mont-Light;
+    font-size: 15.82px;
+    color: #484848;
+    width: 413px;
+    height:30px;
+    border-radius: 3px;
+    border: 1px solid #a8a8a8;
+    padding-left: 10px;
+    outline: none;
+}
+.main__withdrawNameAndInput-select .main__withdrawInput {
+    padding-left: 5px;
+    background: #ececec;
+}
+.main__withdrawButton {
+    width: 134px;
+    height: 29px;
+    background: linear-gradient(102deg, #fee5b0, #ebc49f);
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #423d35;
+    font-family:Montserrat-Medium;
+    font-size: 13.04px;
+    margin-top: 26px;
+}
+/*WITHDRAW END*/
+
+/*WITHDRAW MEDIA*/
+@media screen and (max-width: 1006px) {
+    .main__withdrawNameAndInput {
+        width: 100%;
+    }
+    .main__withdrawInput {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 545px) {
+    .main__withdrawBlock {
+        padding: 30px;
+    }
+}
+/*WITHDRAW MEDIA END*/
+
+/*BANNERS*/
+.main__headlineBlock-banners {
+    width: 219px;
+}
+.main__bannersBlock {
+    width: 100%;
+    padding:45px 55px 0;
+    margin-top: 7px;
+}
+.main__bannersHeadline {
+    font-family:Mont-Light;
+    font-size: 20.15px;
+    color: #484848;
+}
+.main__bannersBlock .main__withdrawInput {
+    padding-left: 24px;
+    width: 378px;
+    height: 30px;
+    font-family:Mont-Light;
+    font-size: 11.35px;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+.main__bannersItems {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main__bannersItem {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-bottom: 40px;
+}
+.main__bannersItemImg {
+    width: 193px;
+    height: 113px;
+    background: #cdcdcd;
+    box-shadow: 2px -2px 8px rgba(0,0,0,0.59);
+    margin-top: 34px;
+}
+/*BANNERS END*/
+
+/*BANNERS*/
+@media screen and (max-width: 660px) {
+    .main__bannersItems {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__bannersBlock {
+        padding: 20px 20px 0 20px;
+    }
+    .main__bannersBlock .main__withdrawInput {
+        width: 100%;
+    }
+    .main__bannersItem {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    .main__bannersItemImg {
+        margin-top: 10px;
+    }
+    .main__bannersItem {
+        margin-bottom: 25px;
+    }
+}
+/*BANNERS END*/
+
+/*TICKETS*/
+.main__headlineBlock-tickets {
+    width: 219px;
+    padding-left: 25px;
+}
+.main__ticketsTextarea {
+    height: 141px;
+    resize: none;
+    padding-top: 5px;
+}
+.main__withdrawButton-tickets {
+    margin-top: 11px;
+}
+.main__tableBlock-tickets {
+    padding:0;
+    margin-top: 10px;
+}
+.main__tableBlock-tickets .main__table {
+    margin-top: 20px;
+}
+.main__tableBlock-tickets .main__table th {
+    padding: 16px 70px 18px 70px;
+}
+/*TICKETS END*/
+
+/*TICKETS MEDIA*/
+@media screen and (max-width: 846px) {
+    .main__tableBlock-tickets {
+        margin-top: 35px;
+    }
+}
+/*TICKETS MEDIA END*/
