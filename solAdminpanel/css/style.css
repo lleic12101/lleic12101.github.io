@@ -1820,6 +1820,8 @@ body {
         margin-right: 0;
         display: flex;
         flex-direction: column-reverse;
+        position: absolute;
+        top: 796px
     }
 
     .chat {
@@ -2124,11 +2126,16 @@ body {
         position: absolute;
         top: 2060px;
     }
+    .chats {
+        position: absolute;
+        top: 1186px
+    }
 }
 @media screen and (max-width: 455px) {
     .chats {
         width: calc(100% - 30px);
-        margin: 0 15px;
+        position: absolute;
+        top: 1049px;
     }
     .chat__footer .form textarea {
         width: 200px;
