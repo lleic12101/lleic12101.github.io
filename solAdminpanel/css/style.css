@@ -1383,7 +1383,7 @@ body {
         padding: 20px;
         margin: 0 15px 15px;
         position: absolute;
-        top: 1305px;
+        top: 1670px;
         left: 0;
     }
     .manageBlock__header {
@@ -2156,6 +2156,9 @@ body {
     }
     .videoBlock {
         height: 655px;
+    }
+    .manageBlock__headerInput {
+        width: 150px;
     }
 }
 /*MEDIA END*/
