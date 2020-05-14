@@ -491,9 +491,8 @@ body {
 }
 .manage__wrapper {
     overflow-y: auto;
-    max-height: 29.78vh;
-    margin-top: 1.74vh;
-    height: 29.78vh;
+    max-height: 36vh;
+    height: 36vh;
     scrollbar-color: #397FF3 #F3F3F4;
     scrollbar-width: thin;
 }
@@ -503,6 +502,7 @@ body {
     align-items: flex-start;
     max-height: 34.78vh;
     height: 34.78vh;
+	margin-top: 1.74vh;
 }
 .manage__wrapper::-webkit-scrollbar {
     width:.41vw;
