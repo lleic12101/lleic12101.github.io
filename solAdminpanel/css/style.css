@@ -1065,14 +1065,13 @@ body {
 @media screen and (max-width: 1024px){
     body {
         overflow-y: auto;
-    }
-    .body__wrapper {
         flex-direction: column;
     }
     /*ROOMS*/
     .rooms {
         width: 100%;
         height: auto;
+        min-height: 364px;
         background: #FFFFFF;
         box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.1);
         display: flex;
@@ -1177,6 +1176,7 @@ body {
         cursor: pointer;
         background: transparent;
         transition: .3s;
+        min-height: 82.6px;
     }
     .rooms__roomItem:hover {
         background: #F4F5FC;
@@ -1370,14 +1370,20 @@ body {
         display: none;
     }
 
+    .videoAndManage {
+        position: relative;
+    }
     .manageBlock {
-        width: auto;
+        width: calc(100% - 30px);
         height: auto;
         background: #FFFFFF;
         box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08);
         border-radius: 6px;
         padding: 20px;
         margin: 0 15px 15px;
+        position: absolute;
+        top: 1305px;
+        left: 0;
     }
     .manageBlock__header {
         display: flex;
@@ -1811,13 +1817,15 @@ body {
     .chats {
         width: 425px;
         margin-right: 0;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .chat {
         width: 100%;
         height: 403px;
         background: #FFFFFF;
-        box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.08);
         border-radius: 6px;
         margin-bottom: 15px;
         position: relative;
@@ -2013,7 +2021,7 @@ body {
         width: 100%;
         height: 440px;
         background: #FFFFFF;
-        box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.08);
         border-radius: 6px;
         position: relative;
         margin-bottom: 15px;
@@ -2110,6 +2118,10 @@ body {
     }
     .manageBlock__header {
         padding-bottom: 20px;
+    }
+    .manageBlock {
+        position: absolute;
+        top: 1560px;
     }
 }
 @media screen and (max-width: 455px) {
