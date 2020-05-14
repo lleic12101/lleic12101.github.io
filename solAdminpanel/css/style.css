@@ -2121,7 +2121,7 @@ body {
     }
     .manageBlock {
         position: absolute;
-        top: 1560px;
+        top: 1700px;
     }
 }
 @media screen and (max-width: 455px) {
@@ -2148,6 +2148,10 @@ body {
     }
     .rooms__adminName {
         max-width: 160px;
+    }
+    .manageBlock {
+        position: absolute;
+        top: 1560px;
     }
 }
 /*MEDIA END*/
