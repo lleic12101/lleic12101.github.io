@@ -1066,6 +1066,7 @@ body {
     body {
         overflow-y: auto;
         flex-direction: column;
+        position: relative;
     }
     /*ROOMS*/
     .rooms {
@@ -1371,7 +1372,7 @@ body {
     }
 
     .videoAndManage {
-        position: relative;
+        
     }
     .manageBlock {
         width: calc(100% - 30px);
@@ -2121,7 +2122,7 @@ body {
     }
     .manageBlock {
         position: absolute;
-        top: 1700px;
+        top: 2060px;
     }
 }
 @media screen and (max-width: 455px) {
@@ -2151,7 +2152,7 @@ body {
     }
     .manageBlock {
         position: absolute;
-        top: 1560px;
+        top: 1922px;
     }
     .videoBlock {
         height: 655px;
