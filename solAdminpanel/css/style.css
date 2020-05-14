@@ -2107,7 +2107,7 @@ body {
 }
 @media screen and (max-width: 726px) {
     .videoBlock {
-        height: auto;
+        height: 791px;
     }
     .manageBlock__header {
         flex-direction: column;
