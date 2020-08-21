@@ -816,6 +816,112 @@ input {
 }
 /*MARKETING END*/
 
+/*PRODUCTS*/
+.main-products {
+    background: #000000;
+}
+.main__productsHeadline {
+    font-family:Montserrat-Medium;
+    font-size: 44.2px;
+    color: #ffffff;
+    margin-bottom: 90px;
+}
+.main__postProject-products {
+    width: 100%;
+    background: url(../img/products/bg.png) no-repeat center;
+    background-size: 100% 100%;
+    margin-bottom: 296px;
+    margin-top: 28px;
+}
+.main__productsBlock {
+    width: 100%;
+    background: url(../img/products/bg1.png) no-repeat center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    /*height: 4200px;*/
+}
+.main__productsHeaderHeadline {
+    font-family:Montserrat-Black;
+    font-size: 48.4px;
+    color: #ffffff;
+    margin-top: 212px;
+    margin-bottom: 615px;
+    margin-left: 60px;
+}
+.body-products .header__navLink-active {
+    color: #ff2168;
+    text-shadow: 0 0 20px 4px rgba(255, 44, 117, 0.5)
+}
+.main__productsExchange {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main__productsExchange .main__paymentsImgAndBlockText {
+    max-width: 820px;
+}
+.main__productsHeadline-gambling {
+    color: #141414;
+    margin-top: 415px;
+}
+.main__productsGambling {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main__productsGambling .main__paymentsImgAndBlockText {
+    color: #131313;
+}
+.main__productsHeadline-token {
+    margin-top: 400px;
+}
+.main__productsTokenImg {
+    margin-bottom: -225px;
+    margin-top: -370px;
+}
+.main__productsTokenText {
+    font-family:Montserrat-Regular;
+    font-size: 17.1px;
+    color: #ffffff;
+    text-align: center;
+    max-width: 1170px;
+    line-height: 40.98px;
+    margin-bottom: 214px;
+}
+/*PRODUCTS END*/
+
+/*PAYMENTS*/
+.main__payments {
+    background: url(../img/products/bg2.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-top: 156px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__paymentsImgAndBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main__paymentsImgAndBlockImg {
+    margin-right: 36px;
+    margin-bottom: 58px;
+}
+.main__paymentsImgAndBlockText {
+    font-family:Montserrat-Regular;
+    font-size: 17.1px;
+    color:#ffffff;
+    line-height: 40.98px;
+    text-indent: 20px;
+}
+/*PAYMENTS END*/
+
 /*MAIN END*/
 
 /*FOOTER*/
@@ -891,6 +997,9 @@ input {
     .main__ourTeamBg {
         width: 120%;
     }
+    .main__payments {
+        background-size: auto 100%;
+    }
 }
 @media screen and (max-width: 1450px) {
     .main__ourTeamBg {
@@ -909,6 +1018,9 @@ input {
     .footer__copyright {
         padding-top: 20px;
         padding-bottom: 40px;
+    }
+    .main__postProject-products {
+        margin-bottom: 256px;
     }
 }
 @media screen and (max-width: 1245px) {
@@ -945,6 +1057,10 @@ input {
     }
     .main__postProject {
         padding-bottom: 170px;
+    }
+    .main__postProject-products {
+        margin-bottom: 226px;
+        margin-top: 40px;
     }
 }
 @media screen and (max-width: 1090px) {
@@ -1192,6 +1308,59 @@ input {
         width: 100%;
         padding: 20px 0;
     }
+
+    .main__postProject-products {
+        margin-bottom: 276px;
+        margin-top: 0px;
+    }
+
+    .main__productsHeaderHeadline {
+        margin-top: 200px;
+        margin-bottom: 400px;
+        margin-left: 0;
+    }
+    .main__productsHeadline-gambling {
+        margin-top: 300px;
+    }
+    .main__productsExchange {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__paymentsImgAndBlockImg {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 350px;
+    }
+    .main__productsHeadline {
+        margin-bottom: 45px;
+    }
+    .main__productsGambling {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main__productsExchange .main__paymentsImgAndBlockText {
+        max-width: unset;
+    }
+    .main__paymentsImgAndBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__payments {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .main__productsHeadline {
+        text-align: center;
+    }
+
+    .main__paymentsImgAndBlockText {
+        text-align: center;
+    }
+    .main__productsExchangeContent {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
 }
 @media screen and (max-width: 880px) {
     .main__ourTeamLogo {
@@ -1287,6 +1456,30 @@ input {
         font-size: 60px;
     }
 }
+@media screen and (max-width: 767px) {
+    .main__productsTokenText {
+        margin-bottom: 100px;
+    }
+    .main__productsHeadline {
+        margin-top: 300px;
+    }
+    .main__productsHeaderHeadline {
+        margin-bottom: 0px;
+        margin-top: 150px;
+    }
+    .main__productsHeadline {
+        margin-top: 180px;
+    }
+    .main__payments .main__productsHeadline {
+        margin-top: 0;
+    }
+    .main__productsHeaderHeadline {
+        text-align: center;
+    }
+    .main__paymentsImgAndBlockImg {
+        width: 300px;
+    }
+}
 @media screen and (max-width: 680px) {
     .main__ourTeamBlock {
         flex-direction: column;
@@ -1317,7 +1510,8 @@ input {
         text-align: center;
     }
     .main__postProjectImg {
-        width: 300px;
+        width: 280px;
+        margin-left: 0;
     }
     .main__tabs {
         margin-top: 40px;
@@ -1328,6 +1522,11 @@ input {
     }
     .main__marketingHeaderTextBlock {
         margin-top: 0;
+    }
+
+    .main__postProject-products {
+        margin-bottom: 286px;
+        padding-top: 70px;
     }
 }
 @media screen and (max-width: 580px) {
@@ -1365,6 +1564,16 @@ input {
 
     .main__marketingContent .main__postProject {
         padding-top: 20px;
+    }
+
+    .main__postProject-products {
+        margin-bottom: 360px;
+        padding-top: 70px;
+    }
+
+    .main__payments {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -1407,6 +1616,17 @@ input {
     }
     .main__marketingExchangeBanner {
         margin-top: 20px;
+    }
+    .main__postProject-products {
+        margin-bottom: 430px;
+        padding-top: 55px;
+    }
+
+    .main__productsTokenText {
+        margin-bottom: 60px;
+    }
+    .main__productsHeadline {
+        margin-top: 150px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -1462,6 +1682,21 @@ input {
     .main__postProjectHeadline {
         font-size: 36px;
     }
+
+    .main__paymentsImgAndBlockImg {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__productsHeadline {
+        margin-top: 170px;
+    }
+    .main__productsHeaderHeadline {
+        margin-top: 120px;
+    }
+    .main__productsExchangeContent {
+        margin-bottom: 60px;
+    }
 }
 @media screen and (max-width: 380px) {
     .main__toolsHeaderHeadline {
@@ -1515,5 +1750,10 @@ input {
     .main__marketingExchangeItem {
         width: 144px;
         height:80px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .main__productsExchangeContent {
+        margin-bottom: 200px;
     }
 }
