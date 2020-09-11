@@ -35,12 +35,12 @@
     box-sizing: border-box;
     font-family: FuturaPT-Medium;
 }
-
 img {
     pointer-events: none;
     user-select: none;
 }
-
+input::-webkit-input-placeholder { color: #949494; }
+input::-moz-placeholder { color: #949494; }
 body {
     min-width: 1440px;
     background: #F9F9F9;
@@ -51,6 +51,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 .header__wrapper {
     max-width: 1310px;
@@ -314,6 +316,283 @@ a.header__infoText:hover {
     margin-bottom: 26px;
 }
 /*SERVICES END*/
+
+/*ARTICLE*/
+.main__articleImgBlock {
+    width: 100%;
+    height: 529px;
+}
+.main__articleImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main__articleAskBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #78C0DE url(../img/article/askBg.png) no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 187px;
+}
+.main__articleAskBlock .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 64px 0 65px 112px;
+}
+.main__articleAskTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__articleAskHeadline {
+    font-family:FuturaPT-Bold;
+    font-size: 56px;
+    line-height: 62px;
+    max-width: 276px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+.main__articleAskText {
+    font-size: 26px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.main__articleAskForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__articleAskFormInput {
+    background: #ffffff;
+    border: none;
+    width: 335px;
+    height: 50px;
+    padding-left: 22px;
+    font-family: FuturaPT-Book;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+    margin-bottom: 14px;
+}
+.main__articleAskFormTextarea {
+    background: #ffffff;
+    border: none;
+    width: 335px;
+    height: 165px;
+    padding-left: 22px;
+    padding-top: 17px;
+    font-family: FuturaPT-Book;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+    margin-bottom: 26px;
+    resize: none;
+}
+.main__articleAskFormButton {
+    font-size: 16px;
+    color: #ffffff;
+    width: 226px;
+    height: 50px;
+    background: #000000;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.main__articleAskFormButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main__articleAskImg {
+    margin: -70px -60px -152px -171px;
+}
+.main__articleContentBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__articleContentBlock .wrapper {
+    padding: 33px 0 174px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.main__articleContentMoreArticles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9px;
+}
+.main__articleContentMoreArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 11px;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    padding-bottom: 37.81px;
+}
+.main__articleContentMoreArticle:last-child {
+    margin-bottom: 0;
+}
+.main__articleContentMoreArticleImg {
+    margin-bottom: 19px;
+}
+.main__articleContentMoreArticleDate {
+    width: 100%;
+    padding-right: 27px;
+    text-align: right;
+    font-size: 14px;
+    color: #949494;
+    margin-bottom: 3px;
+}
+.main__articleContentMoreArticleHeadline {
+    font-family:FuturaPT-Bold;
+    font-size: 22px;
+    line-height: 25px;
+    max-width: 190px;
+    margin-left: 30px;
+    margin-bottom: 13px;
+    color: #000000;
+}
+.main__articleContentMoreArticleText {
+    margin-left: 30px;
+    font-family: FuturaPT-Book;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    max-width: 244px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main__articleContentMoreArticleLinkBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 22px;
+    margin-top: 28px;
+}
+.main__articleContentMoreArticleLinkImg {
+    margin-right: 4.68px;
+}
+.main__articleContentMoreArticleLink {
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+}
+.main__articleContentMoreArticleLink:hover {
+    text-decoration: underline;
+}
+.main__articleContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 223px;
+}
+.main__articleBreadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 33px;
+}
+.main__articleBreadcrumb {
+    font-family:FuturaPT-Book;
+    font-size: 14px;
+    color: #949494;
+    margin-right: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.main__articleBreadcrumb:hover {
+    text-decoration: underline;
+}
+.main__articleBreadcrumb::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #FFBD54;
+    right: -11px;
+    top: 57%;
+    transform: translateY(-50%);
+}
+.main__articleBreadcrumb:last-child {
+    margin-right: 0;
+    color: #333333;
+}
+.main__articleBreadcrumb:last-child:hover {
+    cursor: auto;
+    text-decoration: none;
+}
+.main__articleBreadcrumb:last-child::after {
+    display: none;
+}
+.main__articleContentHeadline {
+    font-family:FuturaPT-Bold;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+    margin-bottom: 28px;
+    max-width: 638px;
+}
+.main__articleContentHeadline span {
+    color: #FFBD54;
+}
+.main__articleContentText {
+    margin-bottom: 22px;
+    color: #949494;
+    font-family:FuturaPT-Book;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 638px;
+}
+.main__articleContentText:last-child {
+    margin-bottom: 0;
+}
+.main__articleContentButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 64px;
+}
+.main__articleContentButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    background: #FFBD54;
+    border-radius: 3px;
+    margin-right: 21px;
+    height: 50px;
+    padding: 0 35px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.main__articleContentButton:last-child {
+    margin-right: 0;
+}
+.main__articleContentButton:hover {
+    text-decoration: underline;
+}
+.main__articleContentButton-black {
+    background: #333333;
+}
+.main__articleContentButtonIcon {
+    margin-right: 6.75px;
+}
+/*ARTICLE END*/
 
 /*FAQ*/
 .main__headlineContentButton {
