@@ -201,6 +201,7 @@ a.header__infoText:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .main__headlineBlock .wrapper {
     display: flex;
@@ -214,7 +215,6 @@ a.header__infoText:hover {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 118px;
-    margin-bottom: 140px;
 }
 .main__headlineContentTitle {
     font-family:FuturaPT-Bold;
@@ -315,6 +315,137 @@ a.header__infoText:hover {
 }
 /*SERVICES END*/
 
+/*FAQ*/
+.main__headlineContentButton {
+    width: 201px;
+    height: 50px;
+    background: #78C0DE;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+.main__headlineContentButton:hover {
+    text-decoration: underline;
+}
+.main__headlineContentButtonIcon {
+    margin-right: 6px;
+}
+.main__headlineBlockImg-faq {
+    margin-top: 58px;
+    right: 58px;
+    position: absolute;
+}
+.main__faqContentBlock {
+    margin-top: 63px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__faqContentBlock .wrapper {
+    position: relative;
+}
+.main__faqTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 112px;
+    margin-bottom: 255px;
+    position: relative;
+    z-index: 1;
+}
+.main__faqTab {
+    width: 752px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+    padding: 27px 41px 32px 63px;
+    margin-bottom: 18px;
+    min-height: 129px;
+    cursor: pointer;
+}
+.main__faqTabInfoBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 9.23px;
+}
+.main__faqTabInfoImg {
+    margin-right: 6.8px;
+}
+.main__faqTabInfoDate {
+    font-family:FuturaPT-Book;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+    margin-right: 28px;
+}
+.main__faqTabInfoName {
+    font-family:FuturaPT-Demi;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: #78C0DE;
+    letter-spacing: 0.08em;
+}
+.main__faqTabContentBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.main__faqTabContentHeadline {
+    max-width: 539px;
+    color: #333333;
+    font-family: FuturaPT-Demi;
+    font-size: 20px;
+    line-height: 22px;
+}
+.main__faqTabContentArrow {
+    margin-top: 6px;
+    transition: .3s;
+}
+.main__faqTabText {
+    font-family:FuturaPT-Book;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    max-width: 577px;
+    margin-top: 23px;
+    margin-bottom: 43px;
+    display: none;
+}
+.main__faqTabContentArrow-active {
+    transform: rotate(180deg);
+}
+.main__faqTabContentClock {
+    display: none;
+}
+.main__faqTab-wait {
+    opacity: .5;
+    cursor: default;
+}
+.main__faqTab-wait .main__faqTabContentClock {
+    display: block;
+}
+.main__faqTab-wait .main__faqTabContentArrow {
+    display: none;
+}
+.main__faqContentBird {
+    position: absolute;
+    bottom: 61px;
+    right: -58px;
+}
+/*FAQ END*/
+
 /*FOOTER*/
 .footer {
     background: #F3F3F3;
@@ -413,3 +544,27 @@ a.footer__infoText:hover {
     margin-top: 17px;
 }
 /*FOOTER END*/
+
+/*MEDIA*/
+
+/*FAQ*/
+@media screen and (min-width: 1921px) {
+    .main__headlineBlock .wrapper {
+        position: relative;
+    }
+    .main__headlineBlockImg-faq {
+        right: 0;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .main__headlineBlock .wrapper {
+        position: relative;
+    }
+    .main__headlineBlockImg-faq {
+        right: 0;
+        margin-right: -64px;
+    }
+}
+/*FAQ END*/
+
+/*MEDIA END*/
