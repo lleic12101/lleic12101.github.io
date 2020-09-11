@@ -51,8 +51,9 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 .header__wrapper {
     max-width: 1310px;
@@ -190,6 +191,7 @@ a.header__infoText:hover {
     flex-direction: column;
     align-items: center;
     background: #F9F9F9 url(../img/bg.png);
+    padding-top: 100px;
 }
 .wrapper {
     max-width: 1310px;
@@ -725,6 +727,116 @@ a.header__infoText:hover {
 }
 /*FAQ END*/
 
+/*CONTACTS*/
+.main__headlineBlockImg-contacts {
+    margin-top: 18px;
+    right: 58px;
+    position: absolute;
+}
+.main__contactsInfoBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 117px;
+}
+.main__contactsInfoBlock .wrapper {
+    padding-left: 112px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main__contactsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 120px;
+}
+.main__contactsInfo:last-child {
+    margin-right: 0;
+}
+.main__contactsInfoImg {
+    margin-bottom: 30px;
+    height: 73px;
+}
+.main__contactsInfoText {
+    font-size: 16px;
+    color: #333333;
+}
+.main__contactsInfoText span {
+    font-family:FuturaPT-Demi;
+}
+a.main__contactsInfoText {
+    text-decoration: none;
+}
+a.main__contactsInfoText:hover {
+    text-decoration: underline;
+}
+.main__contactsMapBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    width: 100%;
+}
+.main__contactsMapHeadlineBlock {
+    width: 100%;
+    height: 389px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__contactsMapHeadlineBlock .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+.main__contactsMapHeadlineDog {
+    margin-left: -42px;
+    margin-bottom: -46px;
+}
+.main__contactsMapHeadlineImgAndText {
+    padding-bottom: 59px;
+    padding-left: 47px;
+}
+.main__contactsMapHeadlineText {
+    font-family:FuturaPT-Bold;
+    font-size: 48px;
+    color: #333333;
+}
+.main__contactsMapHeadlineImg {
+    margin-bottom: 24.4px;
+    margin-left: 183px;
+}
+.main__contactsMapHeadlineBgImg {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+.main__contactsMapContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 206px;
+    height: 466px;
+}
+.main__contactsMapContentGoogleBlock {
+    width: 58%;
+    height: 100%;
+    background: gray;
+}
+.main__contactsMapContentImg {
+    width: 42%;
+    height: 100%;
+    object-fit: cover;
+}
+/*CONTACTS END*/
+
 /*FOOTER*/
 .footer {
     background: #F3F3F3;
@@ -834,6 +946,9 @@ a.footer__infoText:hover {
     .main__headlineBlockImg-faq {
         right: 0;
     }
+    .main__headlineBlockImg-contacts {
+        right: 0;
+    }
 }
 @media screen and (max-width: 1440px) {
     .main__headlineBlock .wrapper {
@@ -842,6 +957,10 @@ a.footer__infoText:hover {
     .main__headlineBlockImg-faq {
         right: 0;
         margin-right: -64px;
+    }
+    .main__headlineBlockImg-contacts {
+        right: 0;
+        margin-right: -65px;
     }
 }
 /*FAQ END*/

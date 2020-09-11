@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>VET Clinic</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__infoBlock">
+            <div class="header__wrapper">
+                <div class="header__infoHomeBlock">
+                    <img src="img/icons/home.svg" alt="home" class="header__infoIcon header__infoIcon-home" />
+                    <p class="header__infoText">г. Мариуполь, проспект Победы, 48а</p>
+                </div>  
+                <div class="header__infoPhoneBlock">
+                    <img src="img/icons/phone.svg" alt="phone" class="header__infoIcon header__infoIcon-phone" />
+                    <a href="tel:0676347574" class="header__infoText">(067) 634 -75 - 74</a>
+                    <a href="tel:0637570131" class="header__infoText header__infoText-phone">(063) 757 - 01 - 31</a>
+                    <a href="tel:0982664389" class="header__infoText header__infoText-phone">(098) 266 - 43 - 89</a>
+                </div>
+                <div class="header__infoCalendarBlock">
+                    <img src="img/icons/calendar.svg" alt="calendar" class="header__infoIcon header__infoIcon-calendar" />
+                    <p class="header__infoText"><span>Пн - Пт</span> 8:00 - 18:00</p>
+                    <p class="header__infoText header__infoText-calendar"><span>Сб - Вс</span> 8:00 - 14:00 </p>
+                </div>
+            </div>
+        </div>
+        <div class="header__navBlock">
+            <div class="header__wrapper">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="logo" />
+                </a>
+                <nav class="header__nav">
+                    <a href="#" class="header__navLink">Главная</a>
+                    <a href="#" class="header__navLink">О Клинике</a>
+                    <a href="#" class="header__navLink">Наши Услуги</a>
+                    <a href="#" class="header__navLink">Полезные Статьи</a>
+                    <a href="#" class="header__navLink">FAQ</a>
+                    <a href="#" class="header__navLink header__navLink-active">Контакты</a>
+                </nav>
+                <div class="header__questionBlock">
+                    <img src="img/icons/pet.svg" alt="pet" class="header__questionIcon" />
+                    <a href="#" class="header__questionText">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__headlineBlock">
+            <div class="wrapper">
+                <div class="main__headlineContentBlock">
+                    <h1 class="main__headlineContentTitle">Контакты</h1>
+                    <p class="main__headlineContentText">
+                        Узнать информацию о наших услугах, записаться на прием
+                        к врачу или проконсультироваться вы можете по телефону, в
+                        любое удобное для вас время.
+                    </p>
+                </div>
+                <img src="img/contacts/dog.png" alt="dog" class="main__headlineBlockImg main__headlineBlockImg-contacts" />
+            </div>
+        </div>
+        <div class="main__contactsInfoBlock">
+            <div class="wrapper">
+                <div class="main__contactsInfo">
+                    <img src="img/contacts/1.svg" alt="1" class="main__contactsInfoImg" />
+                    <p class="main__contactsInfoText"><span>г. Мариуполь,</span></p>
+                    <p class="main__contactsInfoText">проспект Победы, 48а</p>
+                </div>
+                <div class="main__contactsInfo">
+                    <img src="img/contacts/2.svg" alt="2" class="main__contactsInfoImg" />
+                    <p class="main__contactsInfoText"><span>Пн - Пт</span> 8:00 - 18:00</p>
+                    <p class="main__contactsInfoText"><span>Сб - Вс</span> 8:00 - 14:00 </p>
+                </div>
+                <div class="main__contactsInfo">
+                    <img src="img/contacts/3.svg" alt="3" class="main__contactsInfoImg" />
+                    <a href="tel:0676347574" class="main__contactsInfoText">(067) 634 -75 - 74</a>
+                    <a href="tel:0637570131" class="main__contactsInfoText">(063) 757 - 01 - 31</a>
+                    <a href="tel:0982664389" class="main__contactsInfoText">(098) 266 - 43 - 89</a>
+                </div>
+            </div>
+        </div>
+        <div class="main__contactsMapBlock">
+            <div class="main__contactsMapHeadlineBlock">
+                <div class="wrapper">
+                    <img src="img/contacts/pets.png" alt="bg" class="main__contactsMapHeadlineBgImg" />
+                    <img src="img/contacts/dog-map.png" alt="dog-map" class="main__contactsMapHeadlineDog" />
+                    <div class="main__contactsMapHeadlineImgAndText">
+                        <img src="img/contacts/find.svg" alt="find" class="main__contactsMapHeadlineImg" />
+                        <h2 class="main__contactsMapHeadlineText">Как нас найти?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="main__contactsMapContent">
+                <div id="map" class="main__contactsMapContentGoogleBlock"></div>
+                <img src="img/contacts/house.png" alt="house" class="main__contactsMapContentImg" />
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__contentBlock">
+                <a href="#" class="footer__logo" >
+                    <img src="img/logo-footer.svg" alt="logo-footer" />
+                </a>
+                <div class="footer__navBlock">
+                    <div class="footer__navColumn">
+                        <a href="#" class="footer__navLink">Главная</a>
+                        <a href="#" class="footer__navLink">О Клинике</a>
+                        <a href="#" class="footer__navLink">Наши Услуги</a>
+                    </div>
+                    <div class="footer__navColumn">
+                        <a href="#" class="footer__navLink">Полезные Статьи</a>
+                        <a href="#" class="footer__navLink">FAQ</a>
+                        <a href="#" class="footer__navLink">Контакты</a>
+                    </div>
+                </div>
+                <div class="footer__infoBlock">
+                    <div class="footer__infoColumn">
+                        <img src="img/icons/calendar.svg" alt="calendar-footer" class="footer__infoIcon" />
+                        <div class="footer__infoTextBlock">
+                            <p class="footer__infoText"><span>Пн - Пт</span> 8:00 - 18:00</p>
+                            <p class="footer__infoText"><span>Сб - Вс</span> 8:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="footer__infoColumn footer__infoColumn-home">
+                        <img src="img/icons/home.svg" alt="home-footer" class="footer__infoIcon" />
+                        <div class="footer__infoTextBlock">
+                            <p class="footer__infoText">г. Мариуполь,</p>
+                            <p class="footer__infoText">проспект Победы, 48а</p>
+                        </div>
+                    </div>
+                    <div class="footer__infoColumn footer__infoColumn-home">
+                        <img src="img/icons/phone.svg" alt="phone-footer" class="footer__infoIcon" />
+                        <div class="footer__infoTextBlock">
+                            <a href="tel:0676347574" class="footer__infoText">(067) 634 -75 - 74</a>
+                            <a href="tel:0637570131" class="footer__infoText">(063) 757 - 01 - 31</a>
+                            <a href="tel:0982664389" class="footer__infoText">(098) 266 - 43 - 89</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">© 2020 example. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf5mU9TPXG51aH66BmbXlBKZsgUGD0u7g&callback=initMap" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
