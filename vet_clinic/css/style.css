@@ -1169,9 +1169,11 @@ a.main__contactsInfoText:hover {
     height: 435px;
     transition: .3s all;
 	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .main__articleContentMoreArticle-slide:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .main__articleContentMoreArticle-slide-active {
     width: 640px;
@@ -1276,7 +1278,7 @@ a.main__contactsInfoText:hover {
 .main__indexServicesTabButton {
     height: 201px;
     width: 193px;
-    margin: 0 6.5px 14px;
+    margin: 10px 6.5px 14px;
     background: #FFFFFF;
     border: 1px solid #F3F3F3;
     border-radius: 5px;
@@ -1288,7 +1290,7 @@ a.main__contactsInfoText:hover {
 	box-shadow:none;
 }
 .main__indexServicesTabButton:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .main__indexServicesTabButtonImg {
     height: 78px;
