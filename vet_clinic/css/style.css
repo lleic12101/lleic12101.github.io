@@ -1296,6 +1296,11 @@ a.main__contactsInfoText:hover {
 .main__indexServicesTabButton:hover {
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+.main__indexServicesTabButton-active:hover {
+	box-shadow:none;
+	cursor: none;
+	pointer-events:none;
+}
 .main__indexServicesTabButtonImg {
     height: 78px;
     margin-top: 30px;
