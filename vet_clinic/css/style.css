@@ -1162,7 +1162,7 @@ a.main__contactsInfoText:hover {
     display: flex;
 }
 .slick-track {
-    /* transition: 1s all; */
+    transition: 1s all;
 }
 .main__articleContentMoreArticle-slide {
     width: 305px;
@@ -1170,12 +1170,18 @@ a.main__contactsInfoText:hover {
     transition: .3s all;
 	cursor: pointer;
 }
+.main__articleContentMoreArticle-slide:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 .main__articleContentMoreArticle-slide-active {
     width: 640px;
     background: #ffffff;
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
+}
+.main__articleContentMoreArticle-slide-active:hover {
+	box-shadow: none;
 }
 .main__articleContentMoreArticle-slide-active .main__articleContentMoreArticleImg {
     height: 100%;
@@ -1279,6 +1285,10 @@ a.main__contactsInfoText:hover {
     align-items: center;
     cursor: pointer;
     transition: .3s ;
+	box-shadow:none;
+}
+.main__indexServicesTabButton:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .main__indexServicesTabButtonImg {
     height: 78px;
