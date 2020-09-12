@@ -1162,12 +1162,13 @@ a.main__contactsInfoText:hover {
     display: flex;
 }
 .slick-track {
-    transition: 1s all;
+    /* transition: 1s all; */
 }
 .main__articleContentMoreArticle-slide {
     width: 305px;
     height: 435px;
     transition: .3s all;
+	cursor: pointer;
 }
 .main__articleContentMoreArticle-slide-active {
     width: 640px;

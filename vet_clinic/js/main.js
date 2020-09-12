@@ -42,7 +42,8 @@ if($('*').is('.main__indexArticleSlides')){
 		centerMode: true,
 		slidesToShow: 3,
 		variableWidth: true,
-		draggable: false,
+		draggable: true,
+		focusOnSelect: true,
 		prevArrow: $('.main__indexArticleControlsArrow-prev'),
 		nextArrow: $('.main__indexArticleControlsArrow-next')
 	});
