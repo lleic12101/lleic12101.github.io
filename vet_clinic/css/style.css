@@ -1073,7 +1073,7 @@ a.main__contactsInfoText:hover {
     align-items: center;
 }
 .main__indexArticleSliderHeadline {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     font-family:FuturaPT-Bold;
     font-size: 48px;
     color: #333333;
@@ -1121,7 +1121,7 @@ a.main__contactsInfoText:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 170px;
 }
 .main__indexArticleControls .wrapper {
@@ -1169,19 +1169,21 @@ a.main__contactsInfoText:hover {
     height: 435px;
     transition: .3s all;
 	cursor: pointer;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .main__articleContentMoreArticle-slide:hover {
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .main__articleContentMoreArticle-slide-active {
-    width: 640px;
+    /* width: 640px; */
     background: #ffffff;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     padding-bottom: 0;
+	transform: scale(1.1);
 }
+/*
 .main__articleContentMoreArticle-slide-active .main__articleContentMoreArticleImg {
     height: 100%;
     width: 305px;
@@ -1216,6 +1218,7 @@ a.main__contactsInfoText:hover {
     padding-right: 35px;
     -webkit-line-clamp: 9;
 }
+*/
 .main__indexArticleControlsNumBlock {
     position: relative;
     margin-left: 74px;
