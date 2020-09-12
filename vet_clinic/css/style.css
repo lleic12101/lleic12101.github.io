@@ -1162,7 +1162,7 @@ a.main__contactsInfoText:hover {
     display: flex;
 }
 .slick-track {
-    transition: 1s all;
+    /* transition: 1s all; */
 }
 .main__articleContentMoreArticle-slide {
     width: 305px;
@@ -1181,9 +1181,6 @@ a.main__contactsInfoText:hover {
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
-}
-.main__articleContentMoreArticle-slide-active:hover {
-	box-shadow: none;
 }
 .main__articleContentMoreArticle-slide-active .main__articleContentMoreArticleImg {
     height: 100%;
