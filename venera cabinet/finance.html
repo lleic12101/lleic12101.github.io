@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+    <link rel="stylesheet" href="assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" type="text/css" href="assets2/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets2/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets2/css/style.css" />
+</head>
+<body>
+    <aside class="aside">
+        <div class="aside__header">
+            <img class="aside__headerLogo" src="assets2/img/sidebar/logo.png" />
+            <img class="aside__headerBurger" src="assets2/img/sidebar/burger.png" />
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="aside__toggleWrapper">
+            <div class="aside__userInfoBlock">
+                <img src="assets2/img/sidebar/user.png" class="aside__userInfoAvatar"/>
+                <div class="aside__userInfoTextBlock">
+                    <p class="aside__userInfoName">Иван Петров</p>
+                    <p class="aside__userInfoMail">user12923@gmail.com</p>
+                </div>
+            </div>
+            <div class="aside__navBlock">
+                <div class="aside__navBlockItem">
+                    <a href="/" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/main.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Статистика</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Профайл</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem aside__navBlockItem-active">
+                    <a href="/lk/finance.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/finance.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Финансы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/products.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/products.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Продукты</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/partners.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/parthners.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Партнеры</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/materials.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/material.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Материалы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/promo.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Промоушен</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                            <p class="aside__navBlockItemText">Выход</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__nameBlock">
+            <p class="main__name">Финансы</p>
+            <button class="main__nameBlockSupportBtn">
+                <img src="assets2/img/main/support.png" />
+                Поддержка
+            </button>
+        </div>
+        <div class="main__block main__block-finance">
+            <div class="main__financeBalanceAndDeposit">
+                <div class="main__financeBalanceBlock">
+                    <p class="main__financeBlockName">Балансы</p>
+                    <div class="main__financeBalanceBlocks">
+                        <div class="main__partnersInfoRefBalanceBlock main__partnersInfoRefBalanceBlock-finance">
+                            <p class="main__partnersInfoRefText main__partnersInfoRefText-finance">Основной счет:</p>
+                            <div class="main__partnersInfoRefBalanceBlockCash">
+                                <img src="assets2/img/main/finance.png" />
+                                <p class="main__partnersInfoRefBalance">10 0000.00$</p>
+                            </div>
+                            <button class="button">Пополнить счет</button>
+                            <button class="button">Перевести средства</button>
+                        </div>
+                        <div class="main__partnersInfoRefBalanceBlock main__partnersInfoRefBalanceBlock-finance">
+                            <p class="main__partnersInfoRefText main__partnersInfoRefText-finance">Инвестиционный счет:</p>
+                            <div class="main__partnersInfoRefBalanceBlockCash">
+                                <img src="assets2/img/main/finance.png" />
+                                <p class="main__partnersInfoRefBalance">10 0000.00$</p>
+                            </div>
+                            <button class="button">Пополнить счет</button>
+                            <button class="button">Вывести средства</button>
+                        </div>
+                        <div class="main__partnersInfoRefBalanceBlock main__partnersInfoRefBalanceBlock-finance">
+                            <p class="main__partnersInfoRefText main__partnersInfoRefText-finance">Реферальный счет:</p>
+                            <div class="main__partnersInfoRefBalanceBlockCash">
+                                <img src="assets2/img/main/finance.png" />
+                                <p class="main__partnersInfoRefBalance">10 0000.00$</p>
+                            </div>
+                            <button class="button">Пополнить счет</button>
+                            <button class="button">Вывести средства</button>
+                        </div>
+                        <div class="main__partnersInfoRefBalanceBlock main__partnersInfoRefBalanceBlock-finance">
+                            <p class="main__partnersInfoRefText main__partnersInfoRefText-finance">Количество Points:</p>
+                            <div class="main__partnersInfoRefBalanceBlockCash">
+                                <img src="assets2/img/main/finance.png" />
+                                <p class="main__partnersInfoRefBalance">3545 points</p>
+                            </div>
+                            <button class="button">Вывести Points</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__financeDepositBlock">
+                <p class="main__financeBlockName main__financeBlockName-deposit">Ваши депозиты</p>
+                <div class="main__financeDepositBlockSlider">
+                    <div class="main__financeDepositBlockSliderArrows">
+                        <img src="assets2/img/main/sliderArrowLeft.png" class="main__financeDepositBlockSliderArrow main__financeDepositBlockSliderArrow-left" />
+                        <img src="assets2/img/main/sliderArrowRight.png" class="main__financeDepositBlockSliderArrow main__financeDepositBlockSliderArrow-right" />
+                    </div>
+                    <div class="main__financeDepositBlockSliderContent">
+                        <div class="header__investItem main__financeInvestItem">
+                            <p class="header__investItemHeadline main__financeInvestItemHeadline">Professional</p>
+                            <p class="header__investItemProfit">Депозит: $ 5000</p>
+                            <img class="header__investItemDelimiter" src="assets2/img/main/investDelimiter.png"/>
+                            <p class="header__investItemTextInvest">Дата создания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Дата окончания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Начислено: <span>$ 250</span></p>
+                            <p class="header__investItemTextInvest">Осталось: <span>$ 250</span></p>
+                        </div>
+                        <div class="header__investItem main__financeInvestItem">
+                            <p class="header__investItemHeadline main__financeInvestItemHeadline">Professional</p>
+                            <p class="header__investItemProfit">Депозит: $ 5000</p>
+                            <img class="header__investItemDelimiter" src="assets2/img/main/investDelimiter.png"/>
+                            <p class="header__investItemTextInvest">Дата создания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Дата окончания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Начислено: <span>$ 250</span></p>
+                            <p class="header__investItemTextInvest">Осталось: <span>$ 250</span></p>
+                        </div>
+                        <div class="header__investItem main__financeInvestItem">
+                            <p class="header__investItemHeadline main__financeInvestItemHeadline">Professional</p>
+                            <p class="header__investItemProfit">Депозит: $ 5000</p>
+                            <img class="header__investItemDelimiter" src="assets2/img/main/investDelimiter.png"/>
+                            <p class="header__investItemTextInvest">Дата создания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Дата окончания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Начислено: <span>$ 250</span></p>
+                            <p class="header__investItemTextInvest">Осталось: <span>$ 250</span></p>
+                        </div>
+                        <div class="header__investItem main__financeInvestItem">
+                            <p class="header__investItemHeadline main__financeInvestItemHeadline">Professional</p>
+                            <p class="header__investItemProfit">Депозит: $ 5000</p>
+                            <img class="header__investItemDelimiter" src="assets2/img/main/investDelimiter.png"/>
+                            <p class="header__investItemTextInvest">Дата создания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Дата окончания: <span>01.01.2020</span></p>
+                            <p class="header__investItemTextInvest">Начислено: <span>$ 250</span></p>
+                            <p class="header__investItemTextInvest">Осталось: <span>$ 250</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__partnersStatistic">
+                <p class="main__partnersStatisticTitle main__financeTableTitle">Финансовая статистика:</p>
+                <div class="main__financeRadioButtons">
+                    <input id="main" type="radio" onchange="checkTab1()" name="score" checked>
+                    <label for="main">Основной счет:</label>
+                    <input id="invest" type="radio" onchange="checkTab2()" name="score">
+                    <label for="invest">Инвестиционный счет:</label>
+                    <input id="ref" type="radio" onchange="checkTab3()" name="score">
+                    <label for="ref">Реферальный счет:</label>
+                </div>
+                <div class="main__financeTableBtns">
+                    <button class="button button-dark button__finance-active">История транзакций</button>
+                    <button class="button button-dark">Заявки</button>
+                </div>
+                <div class="main__financeTabs">
+                    <div class="main__financeTab" id="mainTab">
+                        <div class="main__partnersStatisticTableSettings">
+                            <div class="main__partnersStatisticTableSettingsNameAndInput">
+                                <p>Количество записей:</p>
+                                <input class="main__partnersStatisticTableSettingsNameAndInput-small" type="number" value="25"/>
+                            </div>
+                            <div class="main__partnersStatisticTableSettingsNameAndInput">
+                                <p>Поиск:</p>
+                                <input class="main__partnersStatisticTableSettingsNameAndInput-big" type="text" value=""/>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableWrapper">
+                            <div class="main__partnersStatisticTableHeader">
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-system">
+                                    <p>Платежная система</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-size">
+                                    <p>Размер</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-order">
+                                    <p>Ордер</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-time">
+                                    <p>Дата/Время</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-status">
+                                    <p>Статус</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                            </div>
+                            <div class="main__partnersStatisticTableItem">
+                                <p class="main__partnersStatisticTableText main__financeTableText-system">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-size">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-order">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-time">
+                                    28.12.2019
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-status">
+                                    Отправлено
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableArrowsBlock">
+                            <div class="main__partnersStatisticNumberBlock">
+                                <a href="#" class="main__partnersStatisticNumber">1</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__financeTab" id="investTab">
+                        <div class="main__partnersStatisticTableSettings">
+                            <div class="main__partnersStatisticTableSettingsNameAndInput">
+                                <p>Количество записей:</p>
+                                <input class="main__partnersStatisticTableSettingsNameAndInput-small" type="number" value="25"/>
+                            </div>
+                            <div class="main__partnersStatisticTableSettingsNameAndInput">
+                                <p>Поиск:</p>
+                                <input class="main__partnersStatisticTableSettingsNameAndInput-big" type="text" value=""/>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableWrapper">
+                            <div class="main__partnersStatisticTableHeader">
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-system">
+                                    <p>Платежная система</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-size">
+                                    <p>Размер</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-order">
+                                    <p>Ордер</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-time">
+                                    <p>Дата/Время</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-status">
+                                    <p>Статус</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                            </div>
+                            <div class="main__partnersStatisticTableItem">
+                                <p class="main__partnersStatisticTableText main__financeTableText-system">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-size">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-order">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-time">
+                                    28.12.2019
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-status">
+                                    Отправлено
+                                </p>
+                            </div>
+                            <div class="main__partnersStatisticTableItem">
+                                <p class="main__partnersStatisticTableText main__financeTableText-system">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-size">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-order">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-time">
+                                    28.12.2019
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-status">
+                                    Отправлено
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableArrowsBlock">
+                            <div class="main__partnersStatisticNumberBlock">
+                                <a href="#" class="main__partnersStatisticNumber">1</a>
+                                <a href="#" class="main__partnersStatisticNumber">2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__financeTab" id="refTab">
+                        <div class="main__partnersStatisticTableSettings">
+                            <div class="main__partnersStatisticTableSettingsNameAndInput">
+                                <p>Количество записей:</p>
+                                <input class="main__partnersStatisticTableSettingsNameAndInput-small" type="number" value="25"/>
+                            </div>
+                            <div class="main__partnersStatisticTableSettingsNameAndInput">
+                                <p>Поиск:</p>
+                                <input class="main__partnersStatisticTableSettingsNameAndInput-big" type="text" value=""/>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableWrapper">
+                            <div class="main__partnersStatisticTableHeader">
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-system">
+                                    <p>Платежная система</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-size">
+                                    <p>Размер</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-order">
+                                    <p>Ордер</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-time">
+                                    <p>Дата/Время</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                                <div class="main__partnersStatisticTableText-title main__financeTableText-status">
+                                    <p>Статус</p>
+                                    <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                                </div>
+                            </div>
+                            <div class="main__partnersStatisticTableItem">
+                                <p class="main__partnersStatisticTableText main__financeTableText-system">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-size">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-order">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-time">
+                                    28.12.2019
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-status">
+                                    Отправлено
+                                </p>
+                            </div>
+                            <div class="main__partnersStatisticTableItem">
+                                <p class="main__partnersStatisticTableText main__financeTableText-system">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-size">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-order">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-time">
+                                    28.12.2019
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-status">
+                                    Отправлено
+                                </p>
+                            </div>
+                            <div class="main__partnersStatisticTableItem">
+                                <p class="main__partnersStatisticTableText main__financeTableText-system">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-size">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-order">
+                                    Василий
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-time">
+                                    28.12.2019
+                                </p>
+                                <p class="main__partnersStatisticTableText main__financeTableText-status">
+                                    Отправлено
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableArrowsBlock">
+                            <div class="main__partnersStatisticNumberBlock">
+                                <a href="#" class="main__partnersStatisticNumber">1</a>
+                                <a href="#" class="main__partnersStatisticNumber">2</a>
+                                <a href="#" class="main__partnersStatisticNumber">3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script type="text/javascript" src="assets2/slick/slick.min.js"></script>
+    <script src="assets2/js/main.js"></script>
+	<script src="assets2/js/slider.js"></script>
+</body>
+</html>

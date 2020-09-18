@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+    <link rel="stylesheet" href="assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="assets2/css/style.css" />
+</head>
+<body>
+    <aside class="aside">
+        <div class="aside__header">
+            <img class="aside__headerLogo" src="assets2/img/sidebar/logo.png" />
+            <img class="aside__headerBurger" src="assets2/img/sidebar/burger.png" />
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="aside__toggleWrapper">
+            <div class="aside__userInfoBlock">
+                <img src="assets2/img/sidebar/user.png" class="aside__userInfoAvatar"/>
+                <div class="aside__userInfoTextBlock">
+                    <p class="aside__userInfoName">Иван Петров</p>
+                    <p class="aside__userInfoMail">user12923@gmail.com</p>
+                </div>
+            </div>
+            <div class="aside__navBlock">
+                <div class="aside__navBlockItem aside__navBlockItem-active">
+                    <a href="/" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/main.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Статистика</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Профайл</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/finance.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/finance.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Финансы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/products.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/products.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Продукты</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/partners.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/parthners.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Партнеры</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/materials.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/material.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Материалы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/promo.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Промоушен</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                            <p class="aside__navBlockItemText">Выход</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__nameBlock">
+            <p class="main__name">Статистика</p>
+            <button class="main__nameBlockSupportBtn">
+                <img src="assets2/img/main/support.png" />
+                Поддержка
+            </button>
+        </div>
+        <div class="main__block main__block-partners">
+            <div class="main__partnersInfo">
+                <p class="main__partnersInfoTitle">Ваша статистика</p>
+                <div class="main__partnersInfoContent main__partnersInfoContent-statistic">
+                    <div class="main__partnersInfoRang">
+                        <div class="main__partnersInfoRangTable">
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Баланс счетов (USD):</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    10 0000.00$
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Ваш спонсор:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    admin
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Ваш ранг:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    <span>President</span>
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Личные инвестиции (USD):</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    10 0000.00$
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Доход в сутки:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    10 0000.00$
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Количество людей в 1й линии:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    <img src="assets2/img/main/tableUser.png" class="main__partnersInfoRangTableItemImg-user" />
+                                    123
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Количество людей в структуре:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    10 0000.00$
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Количество Points:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    0 - 0 - 0 - 0 - 0
+                                </div>
+                            </div>
+                            <div class="main__partnersInfoRangTableItem main__partnersInfoRangTableItem-statistic">
+                                <p class="main__partnersInfoRangTableItemText">Ваша реферальная ссылка:</p>
+                                <div class="main__partnersInfoRangTableItemNumberBlock">
+                                    <span>http://vg.com/user/join/?partner=</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button main__statisticBtn">Пополнить счет</button>
+                <p class="main__partnersInfoTitle">История транзакций</p>
+                <div class="main__statisticTable">
+                    <div class="main__partnersStatisticTableSettings">
+                        <div class="main__partnersStatisticTableSettingsNameAndInput">
+                            <p>Количество записей:</p>
+                            <input class="main__partnersStatisticTableSettingsNameAndInput-small" type="number" value="25"/>
+                        </div>
+                        <div class="main__partnersStatisticTableSettingsNameAndInput">
+                            <p>Поиск:</p>
+                            <input class="main__partnersStatisticTableSettingsNameAndInput-big" type="text" value=""/>
+                        </div>
+                    </div>
+                    <div class="main__partnersStatisticTableWrapper">
+                        <div class="main__partnersStatisticTableHeader">
+                            <div class="main__partnersStatisticTableText-title main__statisticTableText-id">
+                                <p>ID заявки</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__statisticTableText-event">
+                                <p>Событие</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__statisticTableText-summ">
+                                <p>Сумма</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__statisticTableText-about">
+                                <p>Описание</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__statisticTableText-date">
+                                <p>Дата/Время</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__statisticTableText-idText">
+                                121
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-eventText">
+                                Прибытие
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-summText">
+                                10000$
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-aboutText">
+                                Длинное, очень длинное описание
+                            </p>
+                            <p class="main__partnersStatisticTableText main__statisticTableText-dateText">
+                                19.01.2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__partnersStatisticTableArrowsBlock">
+                        <div class="main__partnersStatisticNumberBlock">
+                            <a href="#" class="main__partnersStatisticNumber">1</a>
+                            <a href="#" class="main__partnersStatisticNumber">2</a>
+                            <a href="#" class="main__partnersStatisticNumber">3</a>
+                            <a href="#" class="main__partnersStatisticNumber">4</a>
+                            <a href="#" class="main__partnersStatisticNumber">5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="assets2/js/main.js"></script>
+</body>
+</html>

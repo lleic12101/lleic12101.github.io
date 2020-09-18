@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+    <link rel="stylesheet" href="assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="assets2/css/style.css" />
+</head>
+<body>
+    <aside class="aside">
+        <div class="aside__header">
+            <img class="aside__headerLogo" src="assets2/img/sidebar/logo.png" />
+            <img class="aside__headerBurger" src="assets2/img/sidebar/burger.png" />
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="aside__toggleWrapper">
+            <div class="aside__userInfoBlock">
+                <img src="assets2/img/sidebar/user.png" class="aside__userInfoAvatar"/>
+                <div class="aside__userInfoTextBlock">
+                    <p class="aside__userInfoName">Иван Петров</p>
+                    <p class="aside__userInfoMail">user12923@gmail.com</p>
+                </div>
+            </div>
+            <div class="aside__navBlock">
+                <div class="aside__navBlockItem">
+                    <a href="/" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/main.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Статистика</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem aside__navBlockItem-active">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Профайл</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/finance.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/finance.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Финансы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/products.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/products.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Продукты</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/partners.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/parthners.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Партнеры</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/materials.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/material.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Материалы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/promo.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Промоушен</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                            <p class="aside__navBlockItemText">Выход</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__nameBlock">
+            <p class="main__name">Восстановление пароля</p>
+            <button class="main__nameBlockSupportBtn">
+                <img src="assets2/img/main/support.png" />
+                Поддержка
+            </button>
+        </div>
+        <div class="main__block main__block-profile main__block-login">
+            <div class="main__profileBlocks main__profileBlocks-login">
+                <div class="main__registerBlock main__loginBlock">
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Восстановление пароля</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите Ваш Email" />
+                    </div>
+                    <p class="main__loginCaptchaText">
+                        Введите адрес электронной почты,
+                        на котором вы зарегистрировали
+                        свой аккаунт. Мы вышлем вам письмо
+                        с дальнейшими инструкциями.
+                        Если вы потеряли доступ к электронной
+                        почте, обратитесь в службу поддержки.
+                    </p>
+                </div>
+                <div class="main__registerBlock main__loginBlock">
+                    <p class="main__loginBlockText">Пройдите Recapcha</p>
+                    <div class="main__registerCaptcha main__registerCaptcha-login"></div>
+                    <button class="button button-dark main__recoverButton">Восстановить</button>
+                    <button class="button button-dark main__recoverButton-top">Назад</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="assets2/js/main.js"></script>
+</body>
+</html>

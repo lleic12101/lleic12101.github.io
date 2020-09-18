@@ -1,0 +1,2316 @@
+﻿@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Montserrat-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    src: url('../fonts/Montserrat-ExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    src: url('../fonts/Montserrat-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome5-Regular-400.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: #0b1422;
+}
+
+.bgc {
+    background-color: #0b1422;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+/*ICOND*/
+
+.saveIcon:before {
+    position: absolute;
+    content: "\f0c7";
+    font-family:FontAwesome;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    margin-left: 10px;
+    bottom: 23px;
+}
+
+/*ICOND END*/
+
+/*HAMBURGER MENU*/
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+h1 {
+    text-align: center;
+}
+.hamburger {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+.bar1 {
+    top: 0;
+}
+.bar2,
+.bar3 {
+    top: 13px;
+}
+.bar3 {
+    right: 0;
+}
+.bar4 {
+    bottom: 0;
+}
+.checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+/*HAMBURGER MENU END*/
+
+/*ASIDE*/
+
+.aside {
+    width: 285px;
+    height: 100vh;
+    background: linear-gradient(90deg, #c2c2c2, #efefef);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+}
+.aside__header {
+    background: transparent url(../img/sidebar/header.png) no-repeat;
+    height: 146px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside__headerLogo {
+    width: 218.25px;
+}
+.aside__headerBurger {
+    width: 17px;
+    margin-top: 27px;
+}
+
+.aside__userInfoBlock {
+    margin-top: 31px;
+    margin-bottom: 39px;
+    padding-left: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.aside__userInfoAvatar {
+    width: 65px;
+}
+.aside__userInfoTextBlock {
+    margin-left: 17px;
+}
+.aside__userInfoName {
+    margin-bottom: 7px;
+    font-family: Montserrat-Medium;
+    font-size: 16.9px;
+    color: #131e2e;
+}
+.aside__userInfoMail {
+    font-family:Montserrat-Medium;
+    font-size: 9.73px;
+    color: #475365;
+}
+
+.aside__navBlock {
+
+}
+.aside__navBlockItem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.aside__navBlockItemLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+.aside__navBlockItemTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0 8px 30px;
+    width: 241px;
+    background: linear-gradient(90deg, transparent, transparent);
+    transition: background .3s ease-in-out;
+}
+.aside__navBlockItemIcon {
+    width: 30px;
+}
+.aside__navBlockItemIcon-exit {
+    width: 27px;
+    margin: 0 1.5px;
+}
+.aside__navBlockItemText {
+    font-family:Montserrat-Medium;
+    font-size: 16.9px;
+    color: #131e2e;
+    margin-left: 29px;
+}
+.aside__navBlockItemArrow {
+    width: 11px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.aside__navBlockItem-active .aside__navBlockItemTextBlock{
+    background: linear-gradient(90deg, #efc94d, transparent);
+}
+.aside__navBlockItem-active .aside__navBlockItemArrow{
+    opacity: 1;
+}
+.aside__navBlockItem:hover .aside__navBlockItemArrow {
+    opacity: 1;
+}
+
+
+/*ASIDE END*/
+
+
+/*MAIN*/
+
+.main {
+    padding: 28px 32px;
+    width: 100%;
+}
+
+.main__nameBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.main__name {
+    font-family:Montserrat-Medium;
+    color: #404c5f;
+    font-size: 24.06px;
+}
+.main__nameBlockSupportBtn {
+    border-radius: 5px;
+    background-color: #121e31;
+    border: none;
+    padding: 4px 25px 4px 19px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family:Montserrat-Medium;
+    color: #44556d;
+    font-size: 15.87px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background-color .3s ease-in-out;
+}
+.main__nameBlockSupportBtn:hover {
+    background-color: #1d314e;
+}
+.main__nameBlockSupportBtn img {
+    width: 24px;
+    margin-right: 15px;
+}
+
+.main__block {
+    width: 100%;
+    height: calc(100% - 56px);
+    background: linear-gradient(#141f30, #0b1422);;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.os-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*MAIN END*/
+
+
+/*BUTTONS*/
+
+.button {
+    width: 210px;
+    min-height:37px;
+    background-color: #d8b147;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    outline: none;
+    cursor: pointer;
+    font-family: Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    transition: background-color .3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration:none;
+}
+.button:hover {
+    background-color: #bf8721;
+}
+.button-dark {
+    background-color: #1c2f4b;
+}
+.button-dark:hover {
+    background-color: #214061;
+}
+
+/*BUTTONS END*/
+
+
+
+/*NAME AND INPUT*/
+
+input::-moz-placeholder { color: #46566e; }
+input::-webkit-input-placeholder { color: #46566e; }
+textarea:-moz-placeholder { color: #46566e; }
+textarea::-webkit-input-placeholder { color: #46566e; }
+.main__nameAndInputBlock {
+    margin-bottom: 20px;
+}
+.main__nameAndInputName {
+    margin-left: 13px;
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    margin-bottom: 14px;
+}
+.main__nameAndInputInput {
+    width: 311px;
+    height: 38px;
+    background-color: #1b2a3f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 17px;
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+}
+.main__nameAndInputInput-long {
+    width: 450px;
+}
+.main__nameAndInputInput-disabled {
+    background-color: transparent;
+    color: #46566e;
+    padding-left: 13px;
+}
+.main__nameAndIconBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+}
+
+/*NAME AND INPUT END*/
+
+
+
+/*PROFILE*/
+
+.main__block-profile {
+    padding: 33px 48px 18px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__profileBlocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.main__profilePhotoBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.main__profilePhotoBlockText {
+    font-family:Montserrat-Regular;
+    font-size: 15.87px;
+    color: #46566e;
+    max-width: 109px;
+    margin-bottom: 16px;
+    margin-left: 23px;
+}
+.main__profilePhotoBlockImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+.main__profilePhotoBlockImg img {
+    width: 106px;
+}
+.main__profilePhotoBlock-button {
+    margin-bottom: 28px;
+}
+.main__profileNameBlock {
+    margin-right: 15px;
+}
+.main__profileNameBlockText {
+    font-family:Montserrat-Medium;
+    color: #46566e;
+    font-size: 10.24px;
+    margin-left: 13px;
+    margin-top: -15px;
+    max-width: 209px;
+}
+.main__profilePhoneBlock {
+    margin-right: 15px;
+}
+.main__profileRefBlock input {
+    width: 205px;
+}
+.main__profileRefBlockText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    padding-top: 11px;
+}
+.main__profileRefSponsor {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+    max-width: 250px;
+}
+.main__profileRefSponsorAvatar {
+    width: 37px;
+    margin-right: 10px;
+}
+.main__profileRefSponsorTextBlock {
+    display: flex;
+    flex-direction: column;
+}
+.main__profileRefSponsorName {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+}
+.main__profileRefSponsorSocialBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3px;
+}
+.main__profileRefSponsorSocial img {
+    width: 21px;
+    margin-right: 10px;
+}
+.main__profileBlock-button {
+    margin: 40px auto 70px;
+}
+.main__profilePassBlock {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__profileBlockName {
+    font-family:Montserrat-Regular;
+    font-size: 15.87px;
+    color:#46566e;
+    margin-bottom: 19px;
+    width: 100%;
+    text-align: left;
+    margin-left: 5px;
+}
+.main__profileWalletsBlock {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__profileSecutiryBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__profileSecutiryBlockText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    max-width: 270px;
+    margin-bottom: 45px;
+    margin-left: 5px;
+}
+.main__profileRecoverPassBlock {
+    margin-top: 30px;
+}
+.main__profileRecoverPassBlockText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    margin-bottom: 20px;
+}
+
+/*PROFILE END*/
+
+
+/*PRODUCTS*/
+
+.main__block-products {
+    padding-top: 45px;
+}
+.header__investItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 840px;
+}
+.header__investItem {
+    width: 350px;
+    height: auto;
+    background: #fff url(../img/main/investBg.png) no-repeat;
+    background-position: center center;
+    background-size: 150% 155%;
+    border-radius: 30px;
+    margin: 0 20px 70px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 20px;
+
+}
+.header__investItem button {
+    margin-top: 23px;
+}
+
+
+.header__investItemHeadline {
+    font-family:Montserrat-Italic;
+    font-size: 20.88px;
+    color: #ffffff;
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.header__investItemProfit {
+    font-family:Montserrat-SemiBold;
+    font-size: 19.91px;
+    color: #314464;
+    text-align: center;
+}
+.header__investItemDelimiter {
+    width: 264px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.header__investItemTextInvest {
+    font-family:Montserrat-Regular;
+    font-size: 14.08px;
+    color: #4c5e66;
+    margin-bottom: 7px;
+}
+.header__investItemTextInvest span {
+    color: #e49945;
+}
+.main__productsButton {
+    margin: -20px auto 100px;
+}
+
+/*PRODUCTS END*/
+
+
+/*MATERIALS*/
+
+.main__block-materials {
+    height: calc(100% - 189px);
+    padding: 47px 44px 0;
+    align-items: flex-start;
+}
+.main__materialTabsBtns {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+}
+.main__materialTabsBtn {
+    width: 195px;
+    height: 76px;
+    background-color: #1b2a3f;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.main__materialTabsBtn:hover {
+    background-color: #d8b147;
+}
+.main__materialTabsBtn:first-child {
+    margin-right: 24px;
+}
+.main__materialTabsBtn-active {
+    background-color: #d8b147;
+}
+
+.main__materialTab {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    display: none;
+}
+.main__materialTab-active {
+    display: flex;
+}
+.main__materialTabBlock {
+
+}
+.main__materialTabBlockName {
+    margin-bottom: 41px;
+    font-family:Montserrat-Medium;
+    color: #ffffff;
+    font-size: 24.06px;
+    padding-left: 7px;
+}
+.main__materialTabImgBlock {
+    width: 403px;
+    height: 282px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main__materialTabImgBlockBigImg {
+    background: linear-gradient(90deg, #c2c2c2, #efefef);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main__materialTabImgBlockBigImg img {
+    width: 100%;
+}
+.main__materialTabBlockImgSize {
+    font-family:Montserrat-Medium;
+    color: #46566e;
+    font-size: 15.87px;
+    margin: 17px 0 20px;
+}
+
+.main__materialTabSelectBlock {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__materialTabSelectBlockText {
+    margin-right: 17px;
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+}
+.main__materialTabSelect {
+    background-color: #1a293d;
+    width: 161px;
+    height:31px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 14px;
+    font-family:Montserrat-Medium;
+    color: #46566e;
+    font-size: 15.87px;
+}
+.main__materialTabBlock-presentation {
+    margin-right: 53px;
+}
+.main__materialTabImgBlockItem-long {
+    background: linear-gradient(90deg, #c2c2c2, #efefef);
+    width: 100%;
+    height: 20.21%;
+}
+.main__materialTabImgBlockItem-square {
+    background: linear-gradient(90deg, #c2c2c2, #efefef);
+    width: 53.1%;
+    height: 100%;
+}
+.main__materialTabImgBlockItem-smallLong {
+    background: linear-gradient(90deg, #c2c2c2, #efefef);
+    width: 100%;
+    height: 31.68%;
+}
+.main__materialTabImgBlockItem-smallSquare {
+    background: linear-gradient(90deg, #c2c2c2, #efefef);
+    width: 100%;
+    height: 55.94%;
+}
+.main__materialTabImgBlockItemWrapper-row {
+    width: 100%;
+    height: 71.63%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__materialTabImgBlockItemWrapper-column {
+    width: 41.43%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*MATERIALS END*/
+
+
+/*PARTNERS*/
+
+.main__block-partners {
+    padding-top: 50px;
+    padding-left: 58px;
+    padding-right: 45px;
+    max-width: calc(100vw - 336px);
+}
+.main__block-partners .os-content {
+    align-items: flex-start;
+}
+.main__partnersInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    width: 100%;
+}
+.main__partnersInfoTitle{
+    font-family:Montserrat-Bold;
+    color:#ffffff;
+    font-size: 23.03px;
+}
+.main__partnersInfoContent{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main__partnersInfoRef {
+
+}
+.main__partnersInfoContentHeader {
+    display: flex;
+    flex-direction: row;
+}
+.main__partnersRankBlock {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+.main__partnersInfoRefText {
+    font-family:Montserrat-SemiBold;
+    color: #46566e;
+    font-size: 17.92px;
+    margin-right: 33px;
+}
+.main__partnersInfoRefBalanceBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__partnersInfoRefBalanceBlock img {
+    width: 38px;
+    margin-right: 17px;
+}
+.main__partnersInfoRefBalance {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 23.55px;
+}
+.main__partnersInfoRefButtons {
+    margin-top: 21px;
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+}
+.main__partnersInfoRefButtons button:first-child {
+    margin-right: 26px;
+}
+
+.main__partnersInfoRefBalanceBlockCash {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__partnersInfoRang {
+    display: flex;
+    flex-direction: column;
+}
+.main__partnersInfoRangTitle {
+    font-family:Montserrat-ExtraBold;
+    color: #d8b147;
+    font-size: 28.15px;
+    margin-bottom: 17px;
+}
+.main__partnersInfoRangTitleMore {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    text-decoration: none;
+    margin-bottom: 46px;
+}
+.main__partnersInfoRangTitleMore:hover {
+    text-decoration: underline;
+}
+.main__partnersInfoRangTable {
+    overflow-x: auto;
+    width: 100%;
+    height: max-content;
+}
+.main__partnersInfoRangTableItem {
+    width: 100%;
+    min-width: 650px;
+    padding: 16px 18px 16px 14px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__partnersInfoRangTableItem:nth-child(2n-1) {
+    background-color: #1b2a3f;
+}
+.main__partnersInfoRangTableItemText {
+    font-family:Montserrat-SemiBold;
+    color: #46566e;
+    font-size: 15.87px;
+}
+.main__partnersInfoRangTableItemNumberBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+}
+.main__partnersInfoRangTableItemNumberBlock span:first-child {
+    color: #d8b147;
+}
+.main__partnersInfoRangTableItemNumberBlock img {
+    margin: 0 5px;
+}
+.main__partnersInfoRangTableItemNumberBlock p {
+    text-align: center;
+}
+.main__partnersInfoRangTableItemNumberBlock-small {
+    color: #ffffff;
+    font-size: 13.31px;
+}
+.main__partnersInfoRangTableItemImg-user {
+    width: 16px;
+}
+.main__partnersInfoRangTableItemImg-arrow {
+    width: 20px;
+}
+
+.main__partnersStatistic {
+    margin-top: 23px;
+    width: 100%;
+}
+.main__partnersStatisticTitle {
+    font-family:Montserrat-Bold;
+    color:#ffffff;
+    font-size: 23.03px;
+    margin-bottom: 13px;
+    padding-left: 10px;
+}
+.main__partnersStatisticTableSettings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 26px 0 10px;
+    margin-bottom: 18px;
+}
+.main__partnersStatisticTableSettingsNameAndInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__partnersStatisticTableSettingsNameAndInput p {
+    margin-right: 14px;
+    font-family: Montserrat-SemiBold;
+    color: #46566e;
+    font-size: 15.87px;
+}
+.main__partnersStatisticTableSettingsNameAndInput input {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    border-radius:5px;
+    border: none;
+    background-color: #1b2a3f;
+    height:28px;
+    padding-left: 16px;
+}
+.main__partnersStatisticTableSettingsNameAndInput-small {
+    width: 60px;
+    text-align: center;
+}
+.main__partnersStatisticTableSettingsNameAndInput-big {
+    width: 141px;
+}
+
+.main__partnersStatisticTableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+.main__partnersStatisticTableItem {
+    width: 100%;
+    min-width: 1052px;
+    height: 42px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 33px 0 15px;
+    justify-content: space-between;
+}
+.main__partnersStatisticTableItem:nth-child(even){
+    background-color: #1b2a3f;
+}
+.main__partnersStatisticTableItem:last-child {
+    margin-bottom: 27px;
+}
+.main__partnersStatisticTableArrowsBlock {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 35px;
+}
+.main__partnersStatisticTableArrows {
+    width: 84px;
+    height:40px;
+    background-color: #1b2a3f;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 9px;
+}
+.main__partnersStatisticNumberBlock {
+    background-color: #1b2a3f;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+}
+.main__partnersStatisticNumber {
+    font-family: Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 12.8px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main__partnersStatisticNumber:hover {
+    text-decoration: underline;
+}
+.main__partnersStatisticNumber-active {
+    color: #d8b147;
+}
+.main__partnersStatisticTableArrows img {
+    width: 14.76px;
+    margin-top: 5px;
+}
+
+.main__partnersStatisticTableHeader {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 1052px;
+    width: 100%;
+}
+.main__partnersStatisticTableText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 12.8px;
+}
+.main__partnersStatisticTableText-name {
+    width: 133px;
+}
+.main__partnersStatisticTableText-date {
+    width: 156px;
+}
+.main__partnersStatisticTableText-ref {
+    width: 168px;
+}
+.main__partnersStatisticTableText-refUsd {
+    width: 179px;
+}
+.main__partnersStatisticTableText-summ {
+    width: 77px;
+}
+.main__partnersStatisticTableText-line {
+    width: 79px;
+}
+.main__partnersStatisticTableText-contact {
+    width: 54.54px;
+}
+.main__partnersStatisticTableText-title {
+    font-family:Montserrat-SemiBold;
+    color: #46566e;
+    font-size: 12.8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__partnersStatisticTableSortBtn {
+    width: 16px;
+}
+.main__partnersButtonsBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main__partnersButtonsBlock p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main__partnersButtonsBlock input {
+    margin: 2px;
+    outline: none;
+    height: 33.2px;
+}
+.main__partnersBtn {
+    font-family: Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    background-color: #1b2a3f;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    margin: 2px;
+    border: 2px solid transparent;
+    transition: .1s ease-in-out;
+    border-radius: 5px;
+}
+.main__partnersBtn-active {
+    border: 2px solid #d8b147;
+}
+.main__partnersBtn:hover {
+    border: 2px solid #d8b147;
+}
+.main__partnersInputBlock{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+}
+.main__partnersInputBlock p {
+    margin: 5px 5px 5px 0px;
+}
+.main__partnersInputBlock input  {
+    width: 87px;
+}
+
+/*PARTNERS END*/
+
+
+/*FINANCE*/
+
+.main__block-finance {
+    padding: 60px;
+    max-width: calc(100vw - 336px);
+}
+.main__block-finance .os-content {
+    align-items: unset;
+}
+.button__finance-active {
+    background-color: #d8b147;
+}
+.button__finance-active:hover {
+    background-color: #d8b147;
+}
+.main__financeTableBtns {
+    padding-top: 10px;
+    margin-bottom: 9px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main__financeTableBtns button {
+    margin-right: 19px;
+    margin-bottom: 10px;
+}
+.main__financeTableBtns button:last-child {
+    margin-right: 0;
+}
+
+.main__financeEarned {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 27px;
+}
+.main__financeEarnedText {
+    font-family:Montserrat-SemiBold;
+    color: #46566e;
+    font-size: 17.91px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.main__financeEarnedText span {
+    color: #ffffff;
+    font-size: 23.54px;
+    margin-left: 13px;
+}
+.main__financeTableTitle {
+    padding-left: 0;
+}
+.main__financeBalanceAndDeposit {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main__financeBlockName {
+    margin-bottom: 22px;
+    font-family:Montserrat-Bold;
+    color: #ffffff;
+    font-size: 23.03px;
+}
+.main__financeBalanceBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main__financeBalanceBlock button {
+    margin-top: 26px;
+}
+.main__financeBalanceWalletName {
+    font-family:Montserrat-SemiBold;
+    color: #46566e;
+    font-size: 17.91px;
+    margin-bottom: -14px;
+}
+.main__financeBalanceWalletName-margin {
+    margin-top: 17px;
+}
+.main__financeTableText-system {
+    width: 198px;
+}
+.main__financeTableText-size {
+    width: 143px;
+}
+.main__financeTableText-order {
+    width: 134px;
+}
+.main__financeTableText-time {
+    width: 183px;
+}
+.main__financeTableText-status {
+    width: 102px;
+}
+
+.main__financeDepositBlock {
+    min-width: 780px;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+.main__financeBlockName-deposit {
+    margin-bottom: 30px;
+}
+.main__financeDepositBlockSlider {
+    position: relative;
+    width: 100%;
+    min-width: 780px;
+}
+.main__financeDepositBlockSliderArrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main__financeDepositBlockSliderArrow {
+    width: 26px;
+    cursor: pointer;
+}
+.main__financeDepositBlockSliderArrow-left {
+
+}
+.main__financeDepositBlockSliderArrow-right {
+
+}
+.main__financeDepositBlockSliderContent {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.main__financeInvestItem {
+    width: 307px;
+    margin-bottom: 0;
+    padding-bottom: 26px;
+    position: relative;
+    z-index: 4;
+    margin: 0 15px;
+}
+.slick-initialized .slick-slide{
+    display: flex;
+}
+.main__financeInvestItemHeadline {
+    margin-top: 14px;
+    margin-bottom: 54px;
+}
+.main__partnersInfoRefBalanceBlock-finance {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 60px;
+    margin-bottom: 52px;
+}
+.main__partnersInfoRefBalanceBlock-finance:last-child {
+    margin-right: 0;
+}
+.main__partnersInfoRefText-finance {
+    margin-right: 0;
+    margin-bottom: 9px;
+}
+.main__financeBalanceBlocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main__financeRadioButtons {
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+.main__financeRadioButtons label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-family:Montserrat-SemiBold;
+    padding-left: 35px;
+    margin-right: 50px;
+    font-size: 17.92px;
+    color: #46566e;
+    margin-bottom: 15px;
+}
+.main__financeRadioButtons input[type=radio] {
+    display: none;
+}
+.main__financeRadioButtons label:before {
+    content: "";
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.main__financeRadioButtons input[type=radio]:checked + label:before {
+    font-family:Arial;
+    content: "\2022";
+    color: #0b1523;
+    font-size: 36px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.main__financeTabs {
+
+}
+.main__financeTab {
+    display: none;
+}
+#mainTab {
+    display: block;
+}
+
+/*FINANCE END*/
+
+
+
+/*REGISTER*/
+
+.aside__navBlock-register {
+    margin-top: 134px;
+}
+.aside__navBlockItemIcon-login {
+    width: 38px;
+    margin-right: -8px;
+}
+.main__profileRefSponsor-register {
+    margin-top: 0;
+    margin-left: 5px;
+    margin-bottom: 22px;
+}
+.main__nameAndInputName-register {
+    margin-left: 10px;
+}
+.main__registerBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 37px;
+}
+.main__registerBlock:last-child {
+    margin-right: 0;
+}
+.main__block-register {
+    padding: 33px 75px 140px 83px;
+    height: auto;
+}
+
+.main__registerCaptchaBlock {
+    margin-top: 13px;
+    width: 100%;
+    align-items: flex-start;
+}
+.main__registerCaptchaTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.main__registerCaptchaText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    max-width: 333px;
+    margin-right: 20px;
+}
+.main__registerCaptcha {
+    width: 300px;
+    height:74px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.main__profileBlocks-register {
+    justify-content:  space-between;
+    width: 100%;
+}
+
+.main__registerCaptchaAcceptBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__registerCaptchaAcceptInputBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 36px;
+}
+.main__registerCaptchaAcceptInputBlock input {
+    margin: 0 18px 0 12px;
+    cursor: pointer;
+}
+.main__registerCaptchaAcceptInputBlock label {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    max-width: 274px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.main__registerCaptchaAcceptInputBlock label a{
+    color: #ffffff;
+}
+
+/*REGISTER END*/
+
+
+/*LOGIN*/
+
+.main__loginBlockText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    margin-bottom: 14px;
+}
+.main__profileBlocks-login {
+    justify-content: flex-start;
+    width: 100%;
+}
+.main__registerCaptcha-login {
+
+}
+.main__block-login {
+    padding: 33px 75px 94px 83px;
+    height: auto;
+    margin-bottom: 48px;
+}
+.main__loginBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 47px;
+}
+.main__loginBlock:last-child {
+    margin-right: 0;
+}
+.main__loginCaptchaText {
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    max-width: 333px;
+}
+.main__loginButton {
+    margin-top: 22px;
+}
+.main__recoverButton {
+    margin-top: 12px;
+}
+.main__recoverButton-top {
+    margin-top: 20px;
+}
+.main-login {
+    overflow-y: scroll;
+}
+
+/*LOGIN END*/
+
+
+/*STATISTIC*/
+
+.main__statisticBtn {
+    text-decoration: inherit;
+    margin-bottom: 60px;
+}
+.main__partnersInfoContent-statistic {
+    margin-top: 49px;
+    margin-bottom: 35px;
+}
+.main__partnersInfoRangTableItem-statistic {
+    padding-left: 36px;
+    padding-right: 20px;
+}
+.main__statisticTable {
+    margin-top: 41px;
+}
+.main__statisticTableText-id p{
+    width: 130px;
+    text-align: center;
+}
+.main__statisticTableText-event p {
+    width: 180px;
+    text-align: center;
+}
+.main__statisticTableText-summ p {
+    width: 120px;
+    text-align: center;
+}
+.main__statisticTableText-about p {
+    width: 340px;
+    text-align: center;
+}
+.main__statisticTableText-date p{
+    width: 155px;
+    text-align: center;
+}
+
+.main__statisticTableText-idText {
+    width: 130px;
+    text-align: center;
+    margin-right: 16px;
+}
+.main__statisticTableText-eventText {
+    width: 180px;
+    text-align: center;
+    margin-right: 16px;
+}
+.main__statisticTableText-summText {
+    width: 120px;
+    text-align: center;
+    margin-right: 16px;
+}
+.main__statisticTableText-aboutText {
+    width: 340px;
+    text-align: center;
+    margin-right: 16px;
+}
+.main__statisticTableText-dateText {
+    width: 155px;
+    text-align: center;
+    margin-right: 16px;
+}
+
+/*STATISTIC END*/
+
+
+/*SUPPORT*/
+
+.main__block-support {
+    padding: 32px 88px 37px 66px;
+}
+.main__partnersInfoTitle-support {
+    margin-bottom: 38px;
+}
+.main__profileBlocks-support {
+    flex-direction: column;
+}
+.main__supportInputAndTextarea {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.main__supportInputsBlock {
+    margin-right: 30px;
+}
+.main__nameAndInputTextarea {
+    width: 100%;
+    height: 128px;
+    background-color: #1b2a3f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 17px;
+    font-family:Montserrat-SemiBold;
+    color: #ffffff;
+    font-size: 15.87px;
+    resize: none;
+    padding-top: 10px;
+}
+.main__nameAndInputBlock-support {
+    width: 100%;
+}
+.main__supportButtonsBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 19px;
+}
+.main__supportButtonsBlock button:first-child {
+    margin-right: 27px;
+}
+
+/*SUPPORT END*/
+
+
+/*WITHDRAW REQUESTS*/
+
+.main__withdrawTableText-id p {
+    width: 110px;
+    text-align: center;
+}
+.main__withdrawTableText-system p {
+    width: 180px;
+    text-align: center;
+}
+.main__withdrawTableText-size p {
+    width: 125px;
+    text-align: center;
+}
+.main__withdrawTableText-to p {
+    width: 135px;
+    text-align: center;
+}
+.main__withdrawTableText-date p {
+    width: 120px;
+    text-align: center;
+}
+.main__withdrawTableText-processed p {
+    width: 115px;
+    text-align: center;
+}
+.main__withdrawTableText-status p {
+    width: 90px;
+    text-align: center;
+}
+
+.main__withdrawTableText-id {
+    width: 110px;
+    text-align: center;
+}
+.main__withdrawTableText-system {
+    width: 180px;
+    text-align: center;
+}
+.main__withdrawTableText-size {
+    width: 125px;
+    text-align: center;
+}
+.main__withdrawTableText-to {
+    width: 135px;
+    text-align: center;
+}
+.main__withdrawTableText-date  {
+    width: 120px;
+    text-align: center;
+}
+.main__withdrawTableText-processed  {
+    width: 115px;
+    text-align: center;
+}
+.main__withdrawTableText-status  {
+    width: 90px;
+    text-align: center;
+}
+
+/*deposit*/
+.main__withdrawTableText-tarif {
+    width: 100px;
+    text-align: center;
+}
+.main__withdrawTableText-tarif p {
+    width: 100px;
+    text-align: center;
+}
+.main__withdrawTableText-summ {
+    width: 100px;
+    text-align: center;
+}
+.main__withdrawTableText-summ p {
+    width: 100px;
+    text-align: center;
+}
+.main__withdrawTableText-creating {
+    width: 95px;
+    text-align: center;
+}
+.main__withdrawTableText-creating p {
+    width: 95px;
+    text-align: center;
+}
+.main__withdrawTableText-nachis {
+    width: 95px;
+    text-align: center;
+}
+.main__withdrawTableText-nachis p {
+    width: 95px;
+    text-align: center;
+}
+.main__withdrawTableText-end {
+    width: 95px;
+    text-align: center;
+}
+.main__withdrawTableText-end p {
+    width: 95px;
+    text-align: center;
+}
+
+
+.main__withdrawButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+/*WITHDRAW REQUESTS END*/
+
+
+/*TRANSFER*/
+
+.main__block-transfer {
+    padding-top: 32px;
+    padding-left: 61px;
+}
+.main__transferBlocks {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: row;
+}
+.main__transferBlock {
+
+}
+.main__materialTabSelect-long {
+    width: 450px;
+    height: 38px;
+}
+.main__transferButtonsBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    margin-bottom: 10px;
+}
+.main__transferButtonsBlock button:first-child {
+    margin-right: 27px;
+}
+
+/*TRANSFER END*/
+
+
+/*WITHDRAW*/
+
+.main__transferBlocks {
+    flex-wrap: wrap;
+}
+.main__transferBlock:first-child {
+    margin-right: 60px;
+}
+.main__withdrawText {
+    max-width: 350px;
+    color: #bf2a2a;
+    font-family:Montserrat-SemiBold;
+    font-size: 15.87px;
+    margin-top: 32px;
+}
+.main__withdrawText-white {
+    color: #ffffff;
+}
+.header__investItem-transfer {
+    margin: 0;
+}
+.header__investItemHeadline-transfer {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+.header__investItemTextInvest-transfer {
+    margin-bottom: 30px;
+}
+
+/*WITHDRAW END*/
+
+
+
+@media screen and (min-width: 1537px) {
+    .main__financeDepositBlockSliderContent {
+        min-width: 940px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1526px) {
+    .main__financeDepositBlock {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .main__financeBlockName-deposit {
+        padding-left: 0;
+    }
+    .main__financeDepositBlockSliderContent {
+        width: calc(100% - 128px);
+        margin-right: 64px;
+    }
+}
+
+@media screen and (max-width: 1498px) {
+    .main__profileBlocks {
+        justify-content: center;
+    }
+    .main__profilePhotoBlock {
+        margin-bottom: 20px;
+    }
+    .main__profileNameBlock {
+        margin-bottom: 20px;
+    }
+    .main__profilePhoneBlock {
+        margin-bottom: 20px;
+    }
+    .main__profileRefBlock {
+        margin-bottom: 20px;
+    }
+    .main__profilePassBlock {
+        margin-bottom: 20px;
+    }
+    .main__profileWalletsBlock {
+        margin-bottom: 20px;
+    }
+    .main__profileBlock-button {
+        margin-top: 10px;
+    }
+    .main__partnersInfoRefBalanceBlock-finance:last-child {
+        margin-right: 10px;
+    }
+    .main__partnersInfoRefBalanceBlock-finance {
+        margin: 0 10px 52px;
+    }
+    .main__financeBalanceBlocks {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1445px) {
+    .main__block-partners {
+        padding-left: 45px;
+    }
+    .main__partnersInfoRang {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1335px) {
+    .main__transferBlocks {
+        flex-direction: column-reverse;
+    }
+    .main__transferBlock:first-child {
+        margin-right: 0;
+    }
+    .main__withdrawText {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .header__investItem-transfer {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .main__materialTabBlock-presentation {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .main__materialTab {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__financeDepositBlockSlider {
+        min-width: unset;
+    }
+    .main__financeDepositBlock {
+        min-width: unset;
+    }
+    .main__partnersInfoContentHeader {
+        flex-direction: column;
+    }
+    .main__partnersInfoRef {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__partnersRankBlock {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__partnersInfoRangTitleMore {
+        margin-bottom: 0;
+    }
+    .main__partnersInfoRang {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1176px) {
+    .header__investItems {
+        width: 100%;
+    }
+    .main__financeTableBtns {
+        justify-content: center;
+    }
+    .main__financeEarned {
+        flex-direction: column;
+    }
+    .main__financeEarned button {
+        margin-top: 10px;
+    }
+    .main__block-register {
+        height: calc(100% - 56px);
+    }
+    .main__profileBlocks-register {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__registerBlock {
+        margin-right: 0;
+    }
+
+    .main__registerCaptchaTextBlock {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .main__registerCaptchaText {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+    .main__registerCaptchaAcceptBlock {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__registerCaptchaAcceptInputBlock {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .main__loginCaptchaText {
+        margin-bottom: 15px;
+    }
+
+    .main__supportInputAndTextarea {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1073px) {
+    .main__partnersInfoRangTableItem {
+        min-width: auto;
+        flex-direction: column;
+    }
+    .main__partnersInfoRangTableItemNumberBlock {
+        margin-top: 10px;
+    }
+    .main__partnersInfoRangTableItem-statistic {
+        padding: 16px 18px 16px 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main__profileSecutiryBlock {
+        align-items: center;
+    }
+    .main__profilePhotoBlockText {
+        max-width: none;
+        text-align: center;
+        margin-left: 0;
+    }
+    .main__profileSecutiryBlockText {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .main__profileBlockName {
+        margin-left: 0;
+        text-align: center;
+    }
+    .main__profileBlocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__profileNameBlock {
+        margin-right: 0;
+    }
+    .main__profilePhoneBlock {
+        margin-right: 0;
+    }
+    .main__profileRefBlock {
+        margin-right: 0;
+    }
+    .main__profilePassBlock {
+        margin-right: 0;
+    }
+    .main__profileWalletsBlock {
+        margin-right: 0;
+    }
+    .main__block-materials {
+        padding: 47px 20px 10px;
+    }
+    .main__profilePhotoBlock {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main__partnersStatisticTableSettings {
+        flex-direction: column;
+    }
+    .main__partnersStatisticTableSettingsNameAndInput:last-child {
+        margin-top: 10px;
+    }
+    .main__partnersInfoRangTable {
+        width: 100%;
+    }
+    .main__partnersInfoRang {
+        width: calc(100% - 8px);
+    }
+    .main__partnersInfoRefButtons {
+        margin-bottom: 25px;
+    }
+    .main__partnersInfoRefButtons button {
+        margin-bottom: 15px;
+    }
+    .main__partnersInfoContent {
+        display: block;
+    }
+    .main__financeTableBtns {
+        flex-direction: column;
+    }
+    .main__financeTableBtns button {
+        margin-right: 0;
+    }
+    .main__block-finance {
+        padding: 40px 30px 0;
+    }
+    .main__partnersStatisticTableArrowsBlock {
+        margin-bottom: 10px;
+    }
+    .main__financeEarnedText {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__financeEarnedText span {
+        margin-top: 5px;
+    }
+    .main__financeDepositBlockSliderContent {
+        width: calc(100% - 70px);
+        margin: 0 35px;
+    }
+
+    .main__block-login {
+        padding: 33px 50px 60px 45px;
+    }
+    .main__supportButtonsBlock {
+        flex-direction: column;
+    }
+    .main__supportButtonsBlock {
+        margin-top: 0px;
+    }
+    .main__supportButtonsBlock button:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main__nameAndInputInput-long {
+        width: 320px;
+    }
+    .main__materialTabSelect-long {
+        width: 320px;
+    }
+    .main__transferButtonsBlock {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .main__transferButtonsBlock button:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        max-height: none;
+        overflow-y: auto;
+    }
+
+    .main__profileBlocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        padding: 20px 20px;
+        margin-top: 59.03px;
+    }
+    .main-login {
+        height: 100%;
+    }
+    .main__nameBlock {
+        margin-bottom: 13px;
+    }
+    .main__block {
+        height: auto;
+        padding: 30px 20px 20px
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    .aside__headerBurger {
+        display: none;
+    }
+    .aside__header {
+        background: #121b2c;
+        position: fixed;
+        z-index: 10;
+        flex-direction: row;
+        padding: 10px 20px;
+        height:auto;
+        justify-content: space-between;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    }
+
+    .aside {
+        width: unset;
+        height: unset;
+    }
+    .aside__toggleWrapper {
+        position: fixed;
+        background: linear-gradient(90deg, #c2c2c2, #efefef);
+        z-index: 9;
+        top: 59.03px;
+        right: 0;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+        display: none;
+        padding-bottom: 15px;
+    }
+    .aside__userInfoBlock {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    .aside__navBlockItemArrow {
+        display: none;
+    }
+    .aside__navBlockItem {
+        padding-right: 0;
+    }
+    .aside__navBlock-register {
+        margin-top: 22px;
+    }
+
+    .main__block-partners {
+        max-width: 100%;
+    }
+    .main__block-finance {
+        max-width: 100%;
+    }
+    .main__partnersInfoContent-statistic {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .main__partnersInfoRefButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__partnersInfoRefButtons button:first-child {
+        margin-right: 0;
+    }
+    .main__partnersInfoRefBalanceBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__partnersInfoRefText {
+        margin-bottom: 15px;
+    }
+    .main__financeBalanceBlocks {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 483px) {
+    .main__materialTab {
+        width: 100%;
+    }
+    .main__materialTabBlock {
+        width: 100%;
+    }
+    .main__materialTabImgBlock {
+        width: 100%;
+    }
+    .main__financeDepositBlock {
+        padding: 0;
+    }
+    .main__financeDepositBlockSliderArrow {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .main__nameBlock {
+        flex-direction: column-reverse;
+    }
+    .main__nameBlockSupportBtn {
+        margin-bottom: 10px;
+    }
+    .header__investItem {
+        width: 100%;
+        margin: 0 0 40px;
+    }
+    .header__investItem:last-child {
+        margin-bottom: 10px;
+    }
+    .main__materialTabsBtn:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .main__materialTabsBtn {
+        width: 100%;
+    }
+    .main__materialTabsBtns {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .main__financeInvestItem {
+        margin-bottom: 0;
+    }
+    .main__productsButton {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .main__block-profile div {
+        width: 100%;
+    }
+    .main__nameAndInputInput {
+        width: 100%;
+    }
+    .main__profileRefBlock input {
+        width: calc(100% - 50px);
+    }
+    .saveIcon:before {
+        margin-left: -30px;
+    }
+    .main__profilePhotoBlock {
+        align-items: center;
+    }
+    .header__investItemDelimiter {
+        width: 100%;
+    }
+    .header__investItemTextInvest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__investItem button {
+        margin-top: 9px;
+    }
+    .header__investItemProfit {
+        font-size: 17px;
+    }
+    .main__materialTabImgBlock {
+        height: 230px;
+    }
+    .main__materialTabSelectBlock {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main__materialTabSelectBlockText {
+        margin-bottom: 10px;
+    }
+    .main__materialTabSelect-long {
+        width: 100%;
+    }
+    .main__partnersButtonsBlock input {
+        width: 100%;
+    }
+    .main__partnersStatisticTableSettings {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main__materialTabImgBlock {
+        height: 180px;
+    }
+}

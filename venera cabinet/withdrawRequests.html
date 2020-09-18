@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+    <link rel="stylesheet" href="assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="assets2/css/style.css" />
+</head>
+<body>
+    <aside class="aside">
+        <div class="aside__header">
+            <img class="aside__headerLogo" src="assets2/img/sidebar/logo.png" />
+            <img class="aside__headerBurger" src="assets2/img/sidebar/burger.png" />
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="aside__toggleWrapper">
+            <div class="aside__userInfoBlock">
+                <img src="assets2/img/sidebar/user.png" class="aside__userInfoAvatar"/>
+                <div class="aside__userInfoTextBlock">
+                    <p class="aside__userInfoName">Иван Петров</p>
+                    <p class="aside__userInfoMail">user12923@gmail.com</p>
+                </div>
+            </div>
+            <div class="aside__navBlock">
+                <div class="aside__navBlockItem aside__navBlockItem-active">
+                    <a href="/" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/main.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Статистика</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Профайл</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/finance.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/finance.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Финансы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/products.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/products.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Продукты</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/partners.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/parthners.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Партнеры</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/materials.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/material.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Материалы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/promo.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Промоушен</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                            <p class="aside__navBlockItemText">Выход</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__nameBlock">
+            <p class="main__name">Заявки на вывод с инвестиционного счета</p>
+            <button class="main__nameBlockSupportBtn">
+                <img src="assets2/img/main/support.png" />
+                Поддержка
+            </button>
+        </div>
+        <div class="main__block main__block-partners">
+            <div class="main__partnersInfo">
+                <p class="main__partnersInfoTitle">Список Ваших заявок на вывод</p>
+                <div class="main__statisticTable">
+                    <div class="main__partnersStatisticTableSettings">
+                        <div class="main__partnersStatisticTableSettingsNameAndInput">
+                            <p>Количество записей:</p>
+                            <input class="main__partnersStatisticTableSettingsNameAndInput-small" type="number" value="25"/>
+                        </div>
+                        <div class="main__partnersStatisticTableSettingsNameAndInput">
+                            <p>Поиск:</p>
+                            <input class="main__partnersStatisticTableSettingsNameAndInput-big" type="text" value=""/>
+                        </div>
+                    </div>
+                    <div class="main__partnersStatisticTableWrapper">
+                        <div class="main__partnersStatisticTableHeader">
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-id">
+                                <p>ID заявки</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-system">
+                                <p>Платежная система</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-size">
+                                <p>Размер</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-to">
+                                <p>К получению</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-date">
+                                <p>Дата/Время</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-processed">
+                                <p>Обработано</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-status">
+                                <p>Статус</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="assets2/img/main/sort.png" /></a>
+                            </div>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                123
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-system">
+                                QIWI
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-size">
+                                128
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                Артём
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                19.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-processed">
+                                20.01.2020
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Успех
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__partnersStatisticTableArrowsBlock">
+                        <div class="main__partnersStatisticTableArrows">
+                            <a href="#"><img src="assets2/img/main/arrowLeft.png" /></a>
+                            <a href="#"><img src="assets2/img/main/arrowRight.png" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__withdrawButton">
+                    <button class="button button-dark">Назад</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="assets2/js/main.js"></script>
+</body>
+</html>

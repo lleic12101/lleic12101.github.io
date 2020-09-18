@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+    <link rel="stylesheet" href="assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="assets2/css/style.css" />
+</head>
+<body>
+    <aside class="aside">
+        <div class="aside__header">
+            <img class="aside__headerLogo" src="assets2/img/sidebar/logo.png" />
+            <img class="aside__headerBurger" src="assets2/img/sidebar/burger.png" />
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="aside__toggleWrapper">
+            <div class="aside__navBlock aside__navBlock-register">
+                <div class="aside__navBlockItem aside__navBlockItem-active">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Регистрация</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/login.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-login" />
+                            <p class="aside__navBlockItemText">Вход</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                            <p class="aside__navBlockItemText">Назад</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__nameBlock">
+            <p class="main__name">Регистрация в системе</p>
+            <button class="main__nameBlockSupportBtn">
+                <img src="assets2/img/main/support.png" />
+                Поддержка
+            </button>
+        </div>
+        <div class="main__block main__block-profile main__block-register">
+            <div class="main__profileBlocks main__profileBlocks-register">
+                <div class="main__registerBlock">
+                    <p class="main__nameAndInputName main__nameAndInputName-register">Вас пригласил</p>
+                    <div class="main__profileRefSponsor main__profileRefSponsor-register">
+                        <img src="assets2/img/main/sponsor.png" class="main__profileRefSponsorAvatar" />
+                        <div class="main__profileRefSponsorTextBlock">
+                            <p class="main__profileRefSponsorName">Леонид Агутин</p>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Email</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите Ваш Email" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Пароль</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите Ваш пароль" />
+                    </div>
+                </div>
+                <div class="main__registerBlock">
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Имя</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите Ваше имя" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Фамилия</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите Вашу фамилию" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Повторите пароль</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Повторите Ваш пароль" />
+                    </div>
+                </div>
+                <div class="main__registerBlock">
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Телефон</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите ваш номер телефона" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Вконтакте</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Ссылка на профиль" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Телеграм</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="@ имя в телеграме" />
+                    </div>
+                </div>
+            </div>
+            <div class="main__registerCaptchaBlock">
+                <div class="main__registerCaptchaTextBlock">
+                    <p class="main__registerCaptchaText">
+                        Пароль должен содержать не менее
+                        8 символов и содержать как минимум
+                        одну заглавную букву, одно число
+                        и один специальный символ.
+                    </p>
+                    <div class="main__registerCaptcha"></div>
+                </div>
+                <div class="main__registerCaptchaAcceptBlock">
+                    <div class="main__registerCaptchaAcceptInputBlock">
+                        <input type="checkbox" id="rules" name="rules" />
+                        <label for="rules">
+                            Я согласен с условиями
+                            <a href="#">Пользовательского соглашения</a>
+                        </label>
+                    </div>
+                    <button class="button">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="assets2/js/main.js"></script>
+</body>
+</html>

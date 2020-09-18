@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venera Gold</title>
+    <link rel="stylesheet" href="assets2/css/preloader.css" />
+    <link rel="stylesheet" href="assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" href="assets2/css/style.css" />
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $preloader = $('.preloader'),
+                $gif = $('.preloader').find('.preloader__gif');
+            $gif.delay(800).fadeOut('slow');
+            $preloader.delay(1000).fadeOut('slow');
+            $('body').addClass('bgc');
+        });
+    </script>
+    <div class="preloader">
+        <img src="assets2/img/veneraLogoPreloader.gif" class="preloader__gif" />
+    </div>
+    <aside class="aside">
+        <div class="aside__header">
+            <img class="aside__headerLogo" src="assets2/img/sidebar/logo.png" />
+            <img class="aside__headerBurger" src="assets2/img/sidebar/burger.png" />
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        <div class="aside__toggleWrapper">
+            <div class="aside__userInfoBlock">
+                <img src="assets2/img/sidebar/user.png" class="aside__userInfoAvatar"/>
+                <div class="aside__userInfoTextBlock">
+                    <p class="aside__userInfoName">Иван Петров</p>
+                    <p class="aside__userInfoMail">user12923@gmail.com</p>
+                </div>
+            </div>
+            <div class="aside__navBlock">
+                <div class="aside__navBlockItem">
+                    <a href="/" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/main.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Статистика</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem aside__navBlockItem-active">
+                    <a href="/lk/index.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Профайл</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/finance.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/finance.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Финансы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/products.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/products.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Продукты</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/partners.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/parthners.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Партнеры</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="/lk/materials.html" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/material.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Материалы</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/promo.png" class="aside__navBlockItemIcon" />
+                            <p class="aside__navBlockItemText">Промоушен</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+                <div class="aside__navBlockItem">
+                    <a href="#" class="aside__navBlockItemLink">
+                        <div class="aside__navBlockItemTextBlock">
+                            <img src="assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                            <p class="aside__navBlockItemText">Выход</p>
+                        </div>
+                        <img src="assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="main__nameBlock">
+            <p class="main__name">Профайл</p>
+            <button class="main__nameBlockSupportBtn">
+                <img src="assets2/img/main/support.png" />
+                Поддержка
+            </button>
+        </div>
+        <div class="main__block main__block-profile">
+            <div class="main__profileBlocks">
+                <div class="main__profilePhotoBlock">
+                    <p class="main__profilePhotoBlockText">
+                        Личная
+                        информация
+                    </p>
+                    <div class="main__profilePhotoBlockImg">
+                        <img src="assets2/img/main/user.png" />
+                    </div>
+                    <button class="button main__profilePhotoBlock-button">Изменить фото</button>
+                    <button class="button button-dark">Удалить фото</button>
+                </div>
+                <div class="main__profileNameBlock">
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Имя</p>
+                        <input type="text" class="main__nameAndInputInput" value="Иван" placeholder="Введите Ваше имя" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Фалимия</p>
+                        <input type="text" class="main__nameAndInputInput" value="Петров" placeholder="Введите Вашу фамилию" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Email</p>
+                        <input type="text" class="main__nameAndInputInput main__nameAndInputInput-disabled" value="user12923@gmail.com" placeholder="Введите Вашу почту" disabled />
+                    </div>
+                    <p class="main__profileNameBlockText">
+                        Если вы потеряли доступ к почте,
+                        свяжитесь с технической поддержкой
+                    </p>
+                </div>
+                <div class="main__profilePhoneBlock">
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Телефон</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите ваш номер телефона" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Вконтакте</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Ссылка на профиль" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Телеграм</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="@ имя в телеграме" />
+                    </div>
+                </div>
+                <div class="main__profileRefBlock">
+                    <div class="main__nameAndIconBlock">
+                        <div class="main__nameAndInputBlock">
+                            <p class="main__nameAndInputName">Реферальная ссылка:</p>
+                            <input type="text" class="main__nameAndInputInput" value="Сделайте депозит" placeholder="" disabled/>
+                        </div>
+                        <span class="saveIcon"></span>
+                    </div>
+                    <div class="main__nameAndIconBlock">
+                        <div class="main__nameAndInputBlock">
+                            <p class="main__nameAndInputName">Короткая реф. ссылка:</p>
+                            <input type="text" class="main__nameAndInputInput" value="Сделайте депозит" placeholder="" disabled />
+                        </div>
+                        <span class="saveIcon"></span>
+                    </div>
+                    <p class="main__profileRefBlockText">Ваш спонсор</p>
+                    <div class="main__profileRefSponsor">
+                        <img src="assets2/img/main/sponsor.png" class="main__profileRefSponsorAvatar" />
+                        <div class="main__profileRefSponsorTextBlock">
+                            <p class="main__profileRefSponsorName">Леонид Агутин</p>
+                            <div class="main__profileRefSponsorSocialBlock">
+                                <a href="#" class="main__profileRefSponsorSocial">
+                                    <img src="assets2/img/main/mail.png" />
+                                </a>
+                                <a href="#" class="main__profileRefSponsorSocial">
+                                    <img src="assets2/img/main/telegram.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button main__profileBlock-button">Сохранить настройки</button>
+            <div class="main__profileBlocks">
+                <div class="main__profilePassBlock">
+                    <p class="main__profileBlockName">Изменить пароль</p>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Старый пароль</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите старый пароль" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Новый пароль</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите новый пароль" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Повторите пароль</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Повторите новый пароль" />
+                    </div>
+                    <button class="button">Сохранить настройки</button>
+                </div>
+                <div class="main__profileWalletsBlock">
+                    <p class="main__profileBlockName">Кошелёк для вывода</p>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Кошелек Perfect Money</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите адрес кошелька" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Кошелек Payeer</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите адрес кошелька" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Кошелек Bitcoin</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите адрес кошелька" />
+                    </div>
+                    <div class="main__nameAndInputBlock">
+                        <p class="main__nameAndInputName">Кошелек Etherium</p>
+                        <input type="text" class="main__nameAndInputInput" value="" placeholder="Введите адрес кошелька" />
+                    </div>
+                    <button class="button">Сохранить настройки</button>
+                </div>
+                <div class="main__profileSecutiryBlock">
+                    <p class="main__profileBlockName">Настройки безопасности</p>
+                    <p class="main__profileSecutiryBlockText">
+                        Двухфакторная верификация
+                        поможет лучше защитить ваш
+                        аккаунт. Выберите однe из опций
+                        для подключения 2FA:
+                    </p>
+                    <button class="button">Google authenticator</button>
+                    <div class="main__profileRecoverPassBlock">
+                        <p class="main__profileRecoverPassBlockText">Забыли пароль?</p>
+                        <button class="button button-dark">Восстановить пароль</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="assets2/js/main.js"></script>
+</body>
+</html>

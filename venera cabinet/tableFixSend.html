@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ваши депозиты - Venera Gold</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="all,follow" />
+
+    <link rel="stylesheet" href="/assets2/OverlayScrollbars/css/OverlayScrollbars.css" />
+    <link rel="stylesheet" type="text/css" href="/assets2/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets2/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/assets2/css/style.css" />
+
+    <link rel="stylesheet" href="/assets2/css/preloader.css" />
+
+</head>
+<body>
+
+<div class="preloader">
+    <img src="/assets2/img/veneraLogoPreloader.gif" class="preloader__gif" />
+</div>
+
+<aside class="aside">
+    <div class="aside__header">
+        <img class="aside__headerLogo" src="/assets2/img/sidebar/logo.png" />
+        <img class="aside__headerBurger" src="/assets2/img/sidebar/burger.png" />
+        <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+        <label for="checkbox1">
+            <div class="hamburger hamburger1">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
+    </div>
+    <!-- пусто -->
+
+    <div class="aside__toggleWrapper">
+        <div class="aside__userInfoBlock">
+            <img src="/assets2/img/sidebar/user.png" class="aside__userInfoAvatar"/>
+            <div class="aside__userInfoTextBlock">
+                <p class="aside__userInfoName">admin admin</p>
+                <p class="aside__userInfoMail">admin@venera.gold</p>
+            </div>
+        </div>
+        <div class="aside__navBlock">
+            <div class="aside__navBlockItem ">
+                <a href="/user/index" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/main.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Статистика</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem ">
+                <a href="/user/data" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/profile.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Профайл</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem ">
+                <a href="/user/control" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/finance.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Финансы</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem aside__navBlockItem-active">
+                <a href="/user/product" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/products.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Продукты</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem ">
+                <a href="/user/team" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/parthners.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Партнеры</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem ">
+                <a href="/user/banners" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/material.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Материалы</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem">
+                <a href="#" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/promo.png" class="aside__navBlockItemIcon" />
+                        <p class="aside__navBlockItemText">Промоушен</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+            <div class="aside__navBlockItem ">
+                <a href="/user/exit" class="aside__navBlockItemLink">
+                    <div class="aside__navBlockItemTextBlock">
+                        <img src="/assets2/img/sidebar/icons/exit.png" class="aside__navBlockItemIcon aside__navBlockItemIcon-exit" />
+                        <p class="aside__navBlockItemText">Выход</p>
+                    </div>
+                    <img src="/assets2/img/sidebar/icons/arrow.png" class="aside__navBlockItemArrow" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- пусто -->
+</aside>
+
+<!-- пусто -->
+
+<main class="main">
+
+    <!-- -->
+
+    <div class="main__nameBlock">
+        <p class="main__name">Ваши депозиты</p>
+        <button class="main__nameBlockSupportBtn" onclick="location.href='/user/support';">
+            <img src="/assets2/img/main/support.png" />
+            Поддержка
+        </button>
+    </div>
+    <div class="main__block main__block-partners">
+        <div class="main__partnersInfo">
+            <p class="main__partnersInfoTitle">Список всех ваших депозитов</p>
+            <div class="main__statisticTable">
+                <!--<div class="main__partnersStatisticTableSettings">
+                    <div class="main__partnersStatisticTableSettingsNameAndInput">
+                        <p>Количество записей:</p>
+                        <input class="main__partnersStatisticTableSettingsNameAndInput-small" type="number" value="25"/>
+                    </div>
+                    <div class="main__partnersStatisticTableSettingsNameAndInput">
+                        <p>Поиск:</p>
+                        <input class="main__partnersStatisticTableSettingsNameAndInput-big" type="text" value=""/>
+                    </div>
+                </div>-->
+                <div id="content-list">
+                    <div class="main__partnersStatisticTableWrapper">
+                        <div class="main__partnersStatisticTableHeader">
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-id">
+                                <p>ID депозита</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-tarif">
+                                <p>Тариф</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-summ">
+                                <p>Сумма</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-to">
+                                <p>%, в день \ всего</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-date">
+                                <p>Доход</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-creating">
+                                <p>Создание</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-nachis">
+                                <p>Начисление</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-end">
+                                <p>Завершение</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                            <div class="main__partnersStatisticTableText-title main__withdrawTableText-status">
+                                <p>Статус</p>
+                                <a href="#"><img class="main__partnersStatisticTableSortBtn" src="/assets2/img/main/sort.png" /></a>
+                            </div>
+                        </div>
+
+                        <div class="main__partnersStatisticTableItem">
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-id">
+                                #5
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-tarif">
+                                Professional
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-summ">
+                                500.00 $
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-to">
+                                0.55 % \ 50.00 %
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-date">
+                                0.00 \ 0.00
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-creating">
+                                08.02.2020 г. 14:08:30
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-nachis">
+                                08.02.2020 г. 14:08:30
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-end">
+                                08.02.2020 г. 14:08:30
+                            </p>
+                            <p class="main__partnersStatisticTableText main__withdrawTableText-status">
+                                Новый<i class="far fa-clock"></i>
+                            </p>
+                        </div>
+                        </div></div><div class='main__partnersStatisticTableArrowsBlock'><div class='main__partnersStatisticNumberBlock'><a class='main__partnersStatisticNumber' href='/user/product/listing/page/1'>[1]</a></div></div>
+
+                <!--</div>
+                </div>-->
+                <!--<div class="main__partnersStatisticTableArrowsBlock">
+                    <div class="main__partnersStatisticTableArrows">
+                        <a href="#"><img src="/assets2/img/main/arrowLeft.png" /></a>
+                        <a href="#"><img src="/assets2/img/main/arrowRight.png" /></a>
+                    </div>
+                </div>-->
+            </div>
+            <div class="main__withdrawButton">
+                <button class="button button-dark" onclick="location.href='/user/product';">Назад</button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="/assets2/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+<script src="/assets2/js/main.js"></script>
+
+<script type="text/javascript" src="/assets2/slick/slick.min.js"></script>
+<script src="/assets2/js/slider.js"></script>
+
+<script type="text/javascript">
+    $(window).on('load', function () {
+        var $preloader = $('.preloader'),
+            $gif = $('.preloader').find('.preloader__gif');
+        $gif.delay(800).fadeOut('slow');
+        $preloader.delay(1000).fadeOut('slow');
+        $('body').addClass('bgc');
+    });
+</script>
+
+</body>
+</html>
