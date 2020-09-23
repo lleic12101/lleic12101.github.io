@@ -44,7 +44,7 @@
                     </nav>
                     <div class="header__questionBlock">
                         <img src="img/icons/pet.svg" alt="pet" class="header__questionIcon" />
-                        <a href="#" class="header__questionText">Задать вопрос</a>
+                        <a href="#!" class="header__questionText">Задать вопрос</a>
                     </div>
                 </div>
             </div>
@@ -187,6 +187,21 @@
                 <p class="footer__copyright">© 2020 example. All Rights Reserved.</p>
             </div>
         </footer>
+        <div class="modal modalQuestions" onclick="void(0)">
+            <div class="modal__content">
+                <img src="img/popup/close.svg" alt="close" class="modal__closeBtn modal__closeBtn-questions" />
+                <div class="modal__contentFormBlock">
+                    <h2 class="modal__contentFormBlockTitle">Остались вопросы?</h2>
+                    <form action="#!" class="main__articleAskForm">
+                        <input type="text" class="main__articleAskFormInput" placeholder="Ваше имя" />
+                        <input type="email" class="main__articleAskFormInput" placeholder="Email для обратной связи" />
+                        <textarea class="main__articleAskFormTextarea" placeholder="Опишите Ваш вопрос."></textarea>
+                        <button class="main__articleAskFormButton">Задать вопрос</button>
+                    </form>
+                </div>
+                <img src="img/popup/dog.png" alt="dog" class="modal__contentImg" />
+            </div>
+        </div>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/main.js"></script>
     </body>

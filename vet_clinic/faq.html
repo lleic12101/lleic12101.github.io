@@ -44,7 +44,7 @@
                     </nav>
                     <div class="header__questionBlock">
                         <img src="img/icons/pet.svg" alt="pet" class="header__questionIcon" />
-                        <a href="#" class="header__questionText">Задать вопрос</a>
+                        <a href="#!" class="header__questionText">Задать вопрос</a>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                             Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в
                             любое удобное для вас время.
                         </p>
-                        <a href="#" class="main__headlineContentButton">
+                        <a href="#!" class="main__headlineContentButton">
                             <img src="img/icons/doc.svg" alt="doc" class="main__headlineContentButtonIcon" />
                             Задать вопрос</a
                         >
@@ -238,6 +238,46 @@
                 <p class="footer__copyright">© 2020 example. All Rights Reserved.</p>
             </div>
         </footer>
+        <div class="modal modalQuestions" onclick="void(0)">
+            <div class="modal__content">
+                <img src="img/popup/close.svg" alt="close" class="modal__closeBtn modal__closeBtn-questions" />
+                <div class="modal__contentFormBlock">
+                    <h2 class="modal__contentFormBlockTitle">Остались вопросы?</h2>
+                    <form action="#!" class="main__articleAskForm">
+                        <input type="text" class="main__articleAskFormInput" placeholder="Ваше имя" />
+                        <input type="email" class="main__articleAskFormInput" placeholder="Email для обратной связи" />
+                        <textarea class="main__articleAskFormTextarea" placeholder="Опишите Ваш вопрос."></textarea>
+                        <button class="main__articleAskFormButton">Задать вопрос</button>
+                    </form>
+                </div>
+                <img src="img/popup/dog.png" alt="dog" class="modal__contentImg" />
+            </div>
+        </div>
+        <div class="modal modalFaq" onclick="void(0)">
+            <div class="modal__content">
+                <img src="img/popup/close.svg" alt="close" class="modal__closeBtn modal__closeBtn-faq" />
+                <div class="modal__contentAuthBlock">
+                    <p class="modal__contentAuthBlockText">Авторизация:</p>
+                    <a href="#!" class="modal__contentAuthBlockItem">
+                        <img src="img/popup/google.svg" alt="icon" class="modal__contentAuthBlockItemIcon" />
+                        Войти через Google
+                    </a>
+                    <a href="#!" class="modal__contentAuthBlockItem">
+                        <img src="img/popup/facebook.svg" alt="icon" class="modal__contentAuthBlockItemIcon" />
+                        Войти через Facebook
+                    </a>
+                </div>
+                <div class="modal__contentFormBlock">
+                    <h2 class="modal__contentFormBlockTitle">Задать вопрос</h2>
+                    <form action="#!" class="main__articleAskForm">
+                        <input type="text" class="main__articleAskFormInput" placeholder="Ваше имя" />
+                        <textarea class="main__articleAskFormTextarea" placeholder="Опишите Ваш вопрос."></textarea>
+                        <button class="main__articleAskFormButton">Отправить</button>
+                    </form>
+                </div>
+                <img src="img/popup/dog2.png" alt="dog" class="modal__contentImg" />
+            </div>
+        </div>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/main.js"></script>
     </body>

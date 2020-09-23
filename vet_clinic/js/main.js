@@ -110,27 +110,41 @@ if ($("*").is(".notification__subscribe")) {
 }
 
 //modal questions
-if ($("*").is(".modalQuestions")) {
-    var modal = document.querySelector('.modalQuestions');
+var modalQuest = document.querySelector('.modalQuestions');
 
-    function toggleModalQuestions() {
-        modal.classList.toggle('show-modal');
-    }
-
-    function windowOnClickQuestions(event) {
-        if (event.target === modal) {
-            toggleModalQuestions();
-        }
-    }
-
-    $('.header__questionText').click(function () {
-        toggleModalQuestions();
-    });
-    $('.modal__closeBtn-questions').click(function () {
-        toggleModalQuestions();
-    });
-    toggleModalQuestions();
-    window.addEventListener("click", windowOnClickQuestions);
+function toggleModalQuestions() {
+    $(modalQuest).toggleClass('show-modal');
 }
+
+$('.header__questionText').click(function () {
+    toggleModalQuestions();
+});
+$('.modal__closeBtn-questions').click(function () {
+    toggleModalQuestions();
+});
+
+//modal faq
+var modalFaq = document.querySelector('.modalFaq');
+
+function toggleModalFaq() {
+    $(modalFaq).toggleClass('show-modal');
+}
+
+function windowOnClick(event) {
+    if (event.target === modalFaq) {
+        toggleModalFaq();
+    }
+    if (event.target === modalQuest) {
+        toggleModalQuestions();
+    }
+}
+
+$('.main__headlineContentButton').click(function () {
+    toggleModalFaq();
+});
+$('.modal__closeBtn-faq').click(function () {
+    toggleModalFaq();
+});
+window.addEventListener("click", windowOnClick);
 
 
