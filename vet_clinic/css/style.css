@@ -1447,6 +1447,20 @@ a.main__contactsInfoText:hover {
 .main__blogArticlesMoreImg {
     margin-right: 6px;
 }
+.main__blogArticlesMore-loading .main__blogArticlesMoreImg {
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(-360deg);
+    }
+}
 /*BLOG END*/
 
 /*ABOUT*/
