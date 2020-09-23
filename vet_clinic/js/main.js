@@ -88,7 +88,7 @@ if ($("*").is(".main__aboutSliderWrapper")) {
     $(".main__aboutSliderWrapper").slick({
         dots: false,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         draggable: true,
         autoplay: true,
@@ -110,16 +110,27 @@ if ($("*").is(".notification__subscribe")) {
 }
 
 //modal questions
-var modal = document.querySelector('.modalQuestions');
-function toggleModalQuestions() {
-    modal.classList.toggle('show-modal');
-}
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModalQuestions();
+if ($("*").is(".modalQuestions")) {
+    var modal = document.querySelector('.modalQuestions');
+
+    function toggleModalQuestions() {
+        modal.classList.toggle('show-modal');
     }
+
+    function windowOnClickQuestions(event) {
+        if (event.target === modal) {
+            toggleModalQuestions();
+        }
+    }
+
+    $('.header__questionText').click(function () {
+        toggleModalQuestions();
+    });
+    $('.modal__closeBtn-questions').click(function () {
+        toggleModalQuestions();
+    });
+    toggleModalQuestions();
+    window.addEventListener("click", windowOnClickQuestions);
 }
-toggleModalQuestions();
-window.addEventListener("click", windowOnClick);
 
 
