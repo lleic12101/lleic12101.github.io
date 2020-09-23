@@ -82,24 +82,25 @@ if ($("*").is(".main__indexArticleSlides")) {
         asNavFor: ".main__indexServicesTabButtons",
     });
 }
-if ($("*").is(".main__aboutSliderSlides")) {
-    //about slider
-    $(".main__aboutSliderSlides").slick({
+
+//aboutSlider
+if ($("*").is(".main__aboutSliderWrapper")) {
+    $(".main__aboutSliderWrapper").slick({
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 2,
+        slidesToShow: 1,
         draggable: true,
-        focusOnSelect: true,
-        variableWidth: true,
         prevArrow: $(".main__aboutControlsArrow-prev"),
         nextArrow: $(".main__aboutControlsArrow-next"),
     });
 
-    $(".main__aboutSliderSlides").on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+    $(".main__aboutSliderWrapper").on("beforeChange", function (event, slick, currentSlide, nextSlide) {
         $(".main__indexArticleControlsNum-bold").html(nextSlide + 1);
     });
 }
+
+//notification
 if ($("*").is(".notification__subscribe")) {
     $(".notification__subscribeCloseImg").click(function () {
         $(this).parent().parent().removeClass("notification__subscribe-active");
