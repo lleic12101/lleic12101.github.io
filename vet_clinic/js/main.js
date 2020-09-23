@@ -91,6 +91,8 @@ if ($("*").is(".main__aboutSliderWrapper")) {
         speed: 300,
         slidesToShow: 1,
         draggable: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         prevArrow: $(".main__aboutControlsArrow-prev"),
         nextArrow: $(".main__aboutControlsArrow-next"),
     });
@@ -106,5 +108,18 @@ if ($("*").is(".notification__subscribe")) {
         $(this).parent().parent().removeClass("notification__subscribe-active");
     });
 }
+
+//modal questions
+var modal = document.querySelector('.modalQuestions');
+function toggleModalQuestions() {
+    modal.classList.toggle('show-modal');
+}
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModalQuestions();
+    }
+}
+toggleModalQuestions();
+window.addEventListener("click", windowOnClick);
 
 
