@@ -389,6 +389,15 @@ p.header__navLink:hover ~ .header__navList {
     text-decoration: none;
     margin-bottom: 15px;
 }
+.section__serviceItemTitle h2 {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222222;
+    text-decoration: none;
+}
 .section__serviceItemTitle:hover {
     text-decoration: underline;
 }
@@ -1033,6 +1042,9 @@ p.header__navLink:hover ~ .header__navList {
 .modal__contentNavLiBtn-active img {
     transform: rotate(180deg);
 }
+.section__servicesMobileFilter {
+    display: none;
+}
 /*MOBILE MENU END*/
 
 /*MEDIA*/
@@ -1287,6 +1299,7 @@ p.header__navLink:hover ~ .header__navList {
         font-size: 10px;
         line-height: 11px;
         color: #555555;
+        padding-bottom: 2px;
     }
     .header__navCityBtn {
         display: flex;
@@ -1339,6 +1352,93 @@ p.header__navLink:hover ~ .header__navList {
     }
     .header__navLink {
         font-size: 10px;
+    }
+    .header {
+        box-shadow: none;
+    }
+    .section__servicesMobileFilter {
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 0px 4px 4px;
+        padding: 5px;
+    }
+    .section__servicesMobileFilterItem {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2px;
+    }
+    .section__servicesMobileFilterItem:last-child {
+        margin-bottom: 0;
+    }
+    .section__servicesMobileFilterItemHeadline {
+        width: 100%;
+        height: 31px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFFFFF;
+        border: 1px solid #DCDCDC;
+        border-radius: 4px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    .section__servicesMobileFilterItemHeadline img {
+        transform: rotate(0deg);
+        transition: .3s;
+    }
+    .section__servicesMobileFilterItemHeadline-active img {
+        transform: rotate(180deg);
+    }
+    .section__servicesMobileFilterItemText {
+        font-family: Archivo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 13px;
+        color: #222222;
+    }
+    .section__servicesMobileFilterList {
+        display: none;
+        width: calc(100% - 10px);
+        margin: 0 5px 2px;
+        background: #F8F8F8;
+        list-style: none;
+        padding-left: 15px;
+        padding-bottom: 1px;
+        padding-top: 10px;
+        border-radius: 0px 0px 4px 4px;
+    }
+    .section__servicesMobileFilterListLi {
+        font-family: Archivo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #5C5C5C;
+        margin-bottom: 10px;
+    }
+    .section__servicesMobileFilterListLi a {
+        font-family: Archivo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #5C5C5C;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    .section__servicesMobileFilterListLi a:hover {
+        text-decoration: underline;
+    }
+    .section__servicesMobileFilterItem-city {
+        display: none;
+    }
+    .section__servicesMobileFilterItem-part {
+        display: none;
+    }
+    .section__servicesMobileFilterItem-area {
+        display: none;
     }
 }
 /*MEDIA END*/
