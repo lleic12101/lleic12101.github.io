@@ -440,8 +440,11 @@ p.header__navLink:hover ~ .header__navList {
 .section__serviceItemText-price {
     margin-right: 18px;
 }
+.section__servicesPersonWrapper .section__serviceItemIconAndText:nth-child(2) {
+    margin-top: 15px;
+}
 .services__serviceItemSeparator {
-    margin: 9px 0 16px;
+    margin: 21px 0 16px;
     width: 100%;
     height: 1px;
     background: #B8B7B7;
@@ -495,6 +498,14 @@ p.header__navLink:hover ~ .header__navList {
     flex-direction: row;
     align-items: center;
     margin-top: 11px;
+}
+.section__serviceItemReviewsBlock span {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    color: #555555;
 }
 .section__serviceItemReviewsText {
     font-family: Archivo;
