@@ -41,6 +41,8 @@ body {
     align-items: center;
     background: #FFFFFF;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
 }
 .header .wrapper {
     height: 100%;
@@ -176,6 +178,10 @@ p.header__navLink:hover ~ .header__navList {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.section__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 /*SERVICES*/
 .section__services {
