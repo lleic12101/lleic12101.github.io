@@ -3,11 +3,11 @@
     for (var i = 0; i < $('.section__servicesFilterListLiItem p').length; i++) {
         var text = $('.section__servicesFilterListLiItem p')[i];
         if (text.innerHTML === openName) {
-            $(text).parent().parent().parent().slideDown();
-            $(text).parent().parent().parent().parent().parent().slideDown();
-            $(text).parent().parent().children('.section__servicesFilterList').slideDown();
-            $(text).parent().parent().parent().parent().children('.section__servicesFilterList').slideDown();
-            $(text).parent().parent().parent().parent().parent().parent().parent().parent().children('.section__servicesFilterList').slideDown();
+            $(text).parent().parent().parent().show();
+            $(text).parent().parent().parent().parent().parent().show();
+            $(text).parent().parent().children('.section__servicesFilterList').show();
+            $(text).parent().parent().parent().parent().children('.section__servicesFilterList').show();
+            $(text).parent().parent().parent().parent().parent().parent().parent().parent().children('.section__servicesFilterList').show();
 
             $(text).parent().parent().parent().parent().children('.section__servicesFilterItemTitle').children('.section__servicesFilterSignBlock').toggleClass('section__servicesFilterSignBlock-active');
             $(text).parent().parent().parent().parent().parent().parent().parent().parent().children('.section__servicesFilterItemTitle').children('.section__servicesFilterSignBlock').toggleClass('section__servicesFilterSignBlock-active');
