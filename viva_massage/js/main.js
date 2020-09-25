@@ -308,6 +308,7 @@ if ($(window).width() <= 480) {
 
     if (country != null) {
         $('.section__servicesMobileFilter').show();
+        $('.header__navCityBtn').addClass("header__navBtn-active");
         itemClick(null, 'section__servicesMobileFilterItem-country', country);
     }
     if (city != null) {
