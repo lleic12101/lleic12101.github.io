@@ -1295,9 +1295,9 @@ p.header__navLink:hover ~ .header__navList {
     .header__navCityBtnText {
         font-family: Archivo;
         font-style: normal;
-        font-weight: 600;
         font-size: 10px;
         line-height: 11px;
+        font-weight: 500;
         color: #555555;
         padding-bottom: 2px;
     }
@@ -1320,6 +1320,7 @@ p.header__navLink:hover ~ .header__navList {
     }
     .header__navBtn-active .header__navCityBtnText {
         color: #1E1E1E;
+        font-weight: 600;
     }
     .header__navListBlock {
         display: flex;
@@ -1333,6 +1334,10 @@ p.header__navLink:hover ~ .header__navList {
     }
     .header__navLink {
         margin-left: 0;
+        font-size: 10px;
+    }
+    .header__navLink:hover {
+        font-weight: 600;
     }
     .header__navList {
         top: 60px;
@@ -1349,9 +1354,6 @@ p.header__navLink:hover ~ .header__navList {
     .header__navListBlock:hover {
         background: #F3F3F3;
         border-bottom: 2px solid #DD0A6A;
-    }
-    .header__navLink {
-        font-size: 10px;
     }
     .header {
         box-shadow: none;

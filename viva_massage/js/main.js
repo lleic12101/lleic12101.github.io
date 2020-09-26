@@ -268,6 +268,7 @@ function initFilterMobile() {
 
 initFilterMobile();
 
+
 //filter storage
 if (sessionStorage.getItem('opened') != null) {
     var width = $(window).width();
@@ -296,6 +297,11 @@ if (sessionStorage.getItem('opened') != null) {
     }
 }
 if ($(window).width() <= 480) {
+    $('.header__navListBlock').click(function () {
+        $('.section__servicesMobileFilter').hide();
+        $('.header__navCityBtn').removeClass("header__navBtn-active");
+    });
+
     var country = sessionStorage.getItem('section__servicesMobileFilterItem-country');
     var city = sessionStorage.getItem('section__servicesMobileFilterItem-city');
     var part = sessionStorage.getItem('section__servicesMobileFilterItem-part');
@@ -317,7 +323,8 @@ if ($(window).width() <= 480) {
     if (part != null) {
         itemClick(null, 'section__servicesMobileFilterItem-part', part);
     }
-    if (area != null) {
+    if (area != null && area != "null") {
+        $('.section__servicesMobileFilter').hide();
         itemClick(null, 'section__servicesMobileFilterItem-area', area);
     }
 }
