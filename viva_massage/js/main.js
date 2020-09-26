@@ -296,7 +296,7 @@ if (sessionStorage.getItem('opened') != null) {
         }
     }
 }
-if ($(window).width() <= 480) {
+if ($(window).width() <= 656) {
     $('.header__navListBlock').click(function () {
         $('.section__servicesMobileFilter').hide();
         $('.header__navCityBtn').removeClass("header__navBtn-active");
