@@ -3,24 +3,28 @@
     src: url('../fonts/Archivo-regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Archivo';
     src: url('../fonts/Archivo-medium.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Archivo';
     src: url('../fonts/Archivo-semibold.ttf') format('truetype');
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Archivo';
     src: url('../fonts/Archivo-semibold.ttf') format('truetype');
     font-style: normal;
     font-weight: bold;
+    font-display: swap;
 }
 * {
     margin: 0px;
@@ -33,6 +37,170 @@ html, body {
     background: #E5E5E5;
     overflow-x: hidden;
 }
+/*ICONS*/
+.logo {
+    display: block;
+    background: url(../img/logo.svg) no-repeat;
+    background-size: contain;
+}
+.therapists {
+    background: url(../img/icons/therapists.svg) no-repeat;
+    background-size: contain;
+    width: 20px;
+}
+.treatment {
+    background: url(../img/icons/treatment.svg) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 16px;
+}
+.point {
+    background: url(../img/icons/point.svg) no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 16px;
+}
+.burger {
+    background: url(../img/icons/burger.svg) no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 16px;
+}
+.user {
+    background: url(../img/icons/user.svg) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 12px;
+}
+.plus {
+    background: url(../img/icons/plus.svg) no-repeat center;
+    width: 14px;
+    height: 14px;
+}
+.star {
+    background: url(../img/icons/star.svg) no-repeat center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+}
+.check {
+    background: url(../img/icons/check.svg) no-repeat center;
+    background-size: contain;
+    width: 14px;
+    height: 11px;
+}
+.home {
+    background: url(../img/icons/home.svg) no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+}
+.car {
+    background: url(../img/icons/car.svg) no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 11px;
+}
+.phone {
+    background: url(../img/icons/phone.svg) no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+}
+.euro {
+    background: url(../img/icons/euro.svg) no-repeat center;
+    background-size: contain;
+    width: 10px;
+    height: 12px;
+}
+.map {
+    background: url(../img/icons/map.svg) no-repeat center;
+    background-size: contain;
+    width: 9px;
+    height: 12px;
+}
+.user2 {
+    background: url(../img/icons/user2.svg) no-repeat center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+}
+.arrow {
+    background: url(../img/icons/arrow.svg) no-repeat center;
+    background-size: contain;
+    width: 4px;
+    height: 8px;
+}
+.left-arrow {
+    background: url(../img/icons/left-arrow.svg) no-repeat center;
+    background-size: contain;
+    width: 4px;
+    height: 8px;
+}
+.right-arrow {
+    background: url(../img/icons/right-arrow.svg) no-repeat center;
+    background-size: contain;
+    width: 4px;
+    height: 8px;
+}
+.filter-plus {
+    display: block;
+    background: url(../img/icons/filter-plus.svg) no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+}
+.filter-minus {
+    display: block;
+    background: url(../img/icons/filter-minus.svg) no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 2px;
+}
+.openFilter {
+    display: block;
+    background: url(../img/icons/openFilter.svg) no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 5px;
+}
+.insta {
+    display: block;
+    background: url(../img/icons/insta.svg) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+.vk {
+    display: block;
+    background: url(../img/icons/vk.svg) no-repeat center;
+    background-size: contain;
+    width: 17px;
+    height: 10px;
+}
+.youtube {
+    display: block;
+    background: url(../img/icons/youtube.svg) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 14px;
+}
+.close {
+    display: block;
+    background: url(../img/icons/close.svg) no-repeat center;
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+}
+.openList {
+    display: block;
+    background: url(../img/icons/openList.svg) no-repeat center;
+    background-size: contain;
+    width: 10px;
+    height: 5px;
+}
+/*ICONS END*/
+
 /*HEADER*/
 .header {
     height: 60px;
@@ -57,6 +225,10 @@ html, body {
 .header__logoLink {
     margin-top: 4px;
 }
+.header__logo {
+    width: 88px;
+    height: 40px;
+}
 .header__contentBlock {
     display: flex;
     flex-direction: row;
@@ -71,12 +243,12 @@ html, body {
     margin-top: 3px;
 }
 .header__navLink {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 13px;
-    color: #555555;
+    color: #777777;
     border-bottom: 1px solid transparent;
     transition: .3s;
     text-decoration: none;
@@ -89,9 +261,11 @@ html, body {
 }
 a.header__navLink:hover {
     border-bottom: 1px solid #DD0A6A;
+    color: #555555;
 }
 .header__navLink-active {
     border-bottom: 1px solid #DD0A6A;
+    color: #555555;
 }
 .header__navListBlock {
     position: relative;
@@ -110,8 +284,8 @@ a.header__navLink:hover {
 .header__navList .header__navLink {
     margin: 10px;
     width: inherit;
-    font-weight: normal;
-    max-width: 100px;
+    font-weight: 500;
+    max-width: 120px;
 }
 p.header__navLink:hover ~ .header__navList {
     display: flex;
@@ -143,7 +317,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: center;
 }
 .header__actionLink {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -171,6 +345,7 @@ p.header__navLink:hover ~ .header__navList {
 }
 .header__navBtnIcon {
     display: none;
+    height: 16px;
 }
 /*HEADER END*/
 
@@ -237,7 +412,7 @@ p.header__navLink:hover ~ .header__navList {
     padding-left: 20px;
 }
 .section__servicesFilterItemTitle p {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -257,7 +432,7 @@ p.header__navLink:hover ~ .header__navList {
 .section__servicesFilterSignImg-minus {
     position: absolute;
     left: 0;
-    top: 7px;
+    top: 4px;
     opacity: 0;
 }
 .section__servicesFilterList {
@@ -292,7 +467,7 @@ p.header__navLink:hover ~ .header__navList {
     padding: 0;
 }
 .section__servicesFilterListLi p {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -322,7 +497,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: flex-start;
 }
 .section__servicesTitle {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -380,7 +555,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-right: 0;
 }
 .section__serviceItemTitle {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -390,7 +565,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-bottom: 15px;
 }
 .section__serviceItemTitle h2 {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -418,7 +593,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-bottom: 0;
 }
 .section__serviceItemText {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -441,7 +616,7 @@ p.header__navLink:hover ~ .header__navList {
     text-decoration: none;
 }
 .gray {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -449,7 +624,7 @@ p.header__navLink:hover ~ .header__navList {
     color: #555555;
 }
 .bold {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -490,7 +665,7 @@ p.header__navLink:hover ~ .header__navList {
     overflow: hidden;
 }
 .section__serviceItemSeeMoreLink {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -516,7 +691,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-top: 11px;
 }
 .section__serviceItemReviewsBlock span {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -524,7 +699,7 @@ p.header__navLink:hover ~ .header__navList {
     color: #555555;
 }
 .section__serviceItemReviewsText {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -533,7 +708,7 @@ p.header__navLink:hover ~ .header__navList {
 }
 .section__serviceItemReviewsLink {
     text-decoration: none;
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -574,7 +749,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: center;
     justify-content: center;
     width: 32px;
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -625,7 +800,7 @@ p.header__navLink:hover ~ .header__navList {
     margin: 0 20px;
 }
 .section__questionsTitle {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -638,7 +813,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: flex-start;
 }
 .section__questionsItemTitle {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -646,7 +821,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-bottom: 14px;
 }
 .section__questionsItemText {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -666,7 +841,7 @@ p.header__navLink:hover ~ .header__navList {
     padding: 88px 0 85px;
 }
 .section__therapistTitle {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -674,7 +849,7 @@ p.header__navLink:hover ~ .header__navList {
     color: #FFFFFF;
 }
 .section__therapistText {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -686,7 +861,7 @@ p.header__navLink:hover ~ .header__navList {
 .section__therapistBtn {
     background: #DD0A6A;
     border-radius: 2px;
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -727,13 +902,17 @@ p.header__navLink:hover ~ .header__navList {
     margin-bottom: 50px;
     width: 100%;
 }
+.footer__logo {
+    width: 88px;
+    height: 40px;
+}
 .footer__logoBlock {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .footer__logoBlockText {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -777,7 +956,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-left: 104px;
 }
 .footer__blockTitle {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -793,7 +972,7 @@ p.header__navLink:hover ~ .header__navList {
     margin-top: 3px;
 }
 .footer__navLink {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -810,7 +989,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: flex-start;
 }
 .footer__formText {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -830,7 +1009,7 @@ p.header__navLink:hover ~ .header__navList {
     background: #FFFFFF;
     border: 1px solid #DCDCDC;
     border-radius: 4px;
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -848,7 +1027,7 @@ p.header__navLink:hover ~ .header__navList {
     border-radius: 2px;
     width: 140px;
     height: 36px;
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -863,7 +1042,7 @@ p.header__navLink:hover ~ .header__navList {
     text-decoration: underline;
 }
 .footer__copyright {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -929,6 +1108,7 @@ p.header__navLink:hover ~ .header__navList {
 }
 .modal__contentHeaderLogo {
     height: 42px;
+    width: 92px;
     margin-top: 34px;
 }
 .modal__contentFooter {
@@ -962,7 +1142,12 @@ p.header__navLink:hover ~ .header__navList {
     padding-top: 20px;
     padding-bottom: 57px;
 }
-.modal__contentFooter .header__actionIcon {
+.modal__contentFooter .user {
+    width: 14px;
+    height: 12px;
+}
+.modal__contentFooter .plus {
+    width: 12px;
     height: 12px;
 }
 .modal__contentFooter .header__actionLink {
@@ -980,7 +1165,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #DCDCDC;
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -991,7 +1176,7 @@ p.header__navLink:hover ~ .header__navList {
     min-height: 35px;
 }
 .modal__contentNavLi a {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1000,7 +1185,7 @@ p.header__navLink:hover ~ .header__navList {
     text-decoration: none;
 }
 .modal__contentNavLi span {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1013,7 +1198,7 @@ p.header__navLink:hover ~ .header__navList {
     justify-content: center;
     margin-left: 20px;
 }
-.modal__contentNavLi span img {
+.modal__contentNavLi span i {
     margin-left: 10px;
 }
 .modal__contentNavListBlock {
@@ -1026,7 +1211,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: center;
 }
 .modal__contentNavListItem {
-    font-family: Archivo;
+    font-family: Archivo, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1037,11 +1222,11 @@ p.header__navLink:hover ~ .header__navList {
 .modal__contentNavLiBtn {
     cursor: pointer;
 }
-.modal__contentNavLiBtn img {
+.modal__contentNavLiBtn i {
     transition: .3s;
     transform: rotate(0deg);
 }
-.modal__contentNavLiBtn-active img {
+.modal__contentNavLiBtn-active i {
     transform: rotate(180deg);
 }
 .section__servicesMobileFilter {
@@ -1140,6 +1325,19 @@ p.header__navLink:hover ~ .header__navList {
     .header__navListBlock:last-child .header__navLink {
         margin-right: 0;
     }
+    .header__navList {
+        right: -5px;
+        left: unset;
+    }
+    .user {
+        width: 12px;
+        height: 10px;
+    }
+    .plus {
+        background-size: contain;
+        width: 11px;
+        height: 11px;
+    }
 }
 @media screen and (max-width: 886px) {
     .section__servicesControlsBtn {
@@ -1214,10 +1412,6 @@ p.header__navLink:hover ~ .header__navList {
     .section__servicesItems {
         margin-top: 19px;
     }
-    .header__navList {
-        right: -5px;
-        left: unset;
-    }
     .header__navLink {
         margin-right: 0;
         margin-left: 30px;
@@ -1252,6 +1446,7 @@ p.header__navLink:hover ~ .header__navList {
     }
     .header__logo {
         height: 28px;
+        width: 60px;
     }
     .header .wrapper {
         padding-right: 0px;
@@ -1271,11 +1466,11 @@ p.header__navLink:hover ~ .header__navList {
         cursor: pointer;
     }
     .header__navCityBtnText {
-        font-family: Archivo;
+        font-family: Archivo, sans-serif;
         font-style: normal;
         font-size: 10px;
         line-height: 11px;
-        font-weight: 500;
+        font-weight: 600;
         color: #555555;
         padding-bottom: 2px;
     }
@@ -1287,6 +1482,7 @@ p.header__navLink:hover ~ .header__navList {
         height: 100%;
         padding: 0 7px;
         margin-bottom: 4px;
+        border-bottom: 2px solid transparent;
     }
     .header__navBtnIcon {
         margin-bottom: 4px;
@@ -1307,12 +1503,15 @@ p.header__navLink:hover ~ .header__navList {
         justify-content: center;
         height: 100%;
         padding: 0 7px;
-        cursor: pointer;
+        /*cursor: pointer;*/
         margin: 0 2px 4px;
+        border-bottom: 2px solid transparent;
     }
     .header__navLink {
         margin-left: 0;
         font-size: 10px;
+        font-weight: 600;
+        cursor: default;
     }
     .header__navLink:hover {
         font-weight: 600;
@@ -1332,6 +1531,10 @@ p.header__navLink:hover ~ .header__navList {
     .header__navListBlock:hover {
         background: #F3F3F3;
         border-bottom: 2px solid #DD0A6A;
+    }
+    .header__navListBlock:hover p {
+        color: #1E1E1E;
+        font-weight: 600;
     }
     .header {
         box-shadow: none;
@@ -1387,15 +1590,15 @@ p.header__navLink:hover ~ .header__navList {
         padding: 0 20px;
         cursor: pointer;
     }
-    .section__servicesMobileFilterItemHeadline img {
+    .section__servicesMobileFilterItemHeadline i {
         transform: rotate(0deg);
         transition: .3s;
     }
-    .section__servicesMobileFilterItemHeadline-active img {
+    .section__servicesMobileFilterItemHeadline-active i {
         transform: rotate(180deg);
     }
     .section__servicesMobileFilterItemText {
-        font-family: Archivo;
+        font-family: Archivo, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -1414,7 +1617,7 @@ p.header__navLink:hover ~ .header__navList {
         border-radius: 0px 0px 4px 4px;
     }
     .section__servicesMobileFilterListLi {
-        font-family: Archivo;
+        font-family: Archivo, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -1422,7 +1625,7 @@ p.header__navLink:hover ~ .header__navList {
         margin-bottom: 10px;
     }
     .section__servicesMobileFilterListLi a {
-        font-family: Archivo;
+        font-family: Archivo, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -1464,8 +1667,5 @@ p.header__navLink:hover ~ .header__navList {
     .footer__formText {
         max-width: unset;
     }
-}
-@media screen and (max-width: 480px) {
-
 }
 /*MEDIA END*/
