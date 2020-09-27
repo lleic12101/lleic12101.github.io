@@ -73,6 +73,24 @@ $('.modal__contentNavLiBtn').click(function () {
     $(this).toggleClass('modal__contentNavLiBtn-active');
 });
 
+//swiper js
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    lazy: true,
+    // zoom: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+
 //mobile filter
 function setCountries(iClass, names, links) {
     var $listBlock = $(iClass).children('.section__servicesMobileFilterList');
