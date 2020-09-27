@@ -140,15 +140,16 @@ var mySwiper = new Swiper('.swiper-container', {
 
                         var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
                         lightBox.init();
+                        lightBox.preload = 1;
+                        lightBox.listen('beforeChange', function () {
+                            that.slideTo(this.getCurrentIndex() + 1, 300, true);
+                        });
                     });
                 }
             });
         },
         slideChange: function () {
             $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
-        },
-        click: function () {
-
         }
     },
 });

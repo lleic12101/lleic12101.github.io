@@ -553,6 +553,17 @@ p.header__navLink:hover ~ .header__navList {
     height: 100%;
     width: 100%;
 }
+.swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 100%;
+    top: 8px;
+}
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-button-next {
+    right: 0;
+}
 .section__servicesItemImg {
     position: relative;
     z-index: 1;
@@ -1309,10 +1320,6 @@ p.header__navLink:hover ~ .header__navList {
     .footer__navBlocks {
         margin: 0 70px;
     }
-    .section__servicesItemImgWrapper {
-        min-width: 260px;
-        height: 200px;
-    }
 }
 @media screen and (max-width: 930px) {
     .footer__navBlocks {
@@ -1332,6 +1339,10 @@ p.header__navLink:hover ~ .header__navList {
     }
     .section__servicesItemImgWrapper {
         margin-right: 0;
+        min-width: unset;
+        max-width: calc(100vw - 368px);
+        width: 100%;
+        height: 200px;
     }
     .section__serviceItemBtns {
         margin-top: 10px;
