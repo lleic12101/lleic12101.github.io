@@ -73,12 +73,16 @@ $('.modal__contentNavLiBtn').click(function () {
     $(this).toggleClass('modal__contentNavLiBtn-active');
 });
 
+//photoswipe js
+var $pswp = $('.pswp')[0];
+var image = [];
+// $('.section__servicesItemImg').lazy();
+
 //swiper js
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     lazy: true,
-    // zoom: true,
 
     pagination: {
         el: '.swiper-pagination',
@@ -89,7 +93,65 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-})
+    on: {
+        init: function () {
+            $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+            var that = this;
+            $('.section__servicesItemImg-link').click(function (e) {
+                e.preventDefault();
+                if (!$(that.slides)[0].parentNode.classList.contains('active-gallery')) {
+                    $(that.slides)[0].parentNode.classList.add('active-gallery');
+                    var $pic = $($(that.slides)[0].parentNode.parentNode),
+                        getItems = function () {
+                            var items = [];
+                            $pic.find('a').each(function () {
+                                var $href = $(this).attr('href'),
+                                    $size = $(this).data('size').split('x'),
+                                    $width = $size[0],
+                                    $height = $size[1];
+
+                                var item = {
+                                    src: $href,
+                                    w: $width,
+                                    h: $height
+                                }
+                                items.push(item);
+                            });
+                            return items;
+                        }
+
+                    var items = getItems();
+                    items.pop();
+                    items.shift();
+
+                    $.each(items, function (index, value) {
+                        image[index] = new Image();
+                        image[index].setAttribute('data-src', value['src']);
+                    });
+
+                    $pic.on('click', 'a', function (event) {
+                        event.preventDefault();
+                        var $index = that.realIndex;
+                        var options = {
+                            index: $index,
+                            bgOpacity: 0.7,
+                            showHideOpacity: true
+                        }
+
+                        var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                        lightBox.init();
+                    });
+                }
+            });
+        },
+        slideChange: function () {
+            $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+        },
+        click: function () {
+
+        }
+    },
+});
 
 //mobile filter
 function setCountries(iClass, names, links) {

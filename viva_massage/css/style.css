@@ -549,6 +549,10 @@ p.header__navLink:hover ~ .header__navList {
     position: relative;
     border-radius: 4px;
 }
+.swiper-slide figure {
+    height: 100%;
+    width: 100%;
+}
 .section__servicesItemImg {
     position: relative;
     z-index: 1;
@@ -556,11 +560,14 @@ p.header__navLink:hover ~ .header__navList {
     width: 100%;
     object-fit: contain;
     border-radius: 4px;
+    background: transparent;
 }
 .section__servicesItemImg-bg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    z-index: 0;
+    background-size: cover;
+    background-position: center center;
     filter: blur(5px);
     position: absolute;
     top: 0;
@@ -1559,7 +1566,7 @@ p.header__navLink:hover ~ .header__navList {
     .header__navList {
         top: 60px;
         padding: 10px 5px 7px;
-        z-index: 1;
+        z-index: 2;
     }
     .header__navListBlock:hover .header__navList {
         display: flex;
