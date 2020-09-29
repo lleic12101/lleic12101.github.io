@@ -100,7 +100,8 @@ var mySwiper = new Swiper('.swiper-container', {
             var observer = lozad(el, {
                 loaded: function (el) {
                     var src = $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr('src');
-                    $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr("srcset", src);
+                    var dataSrc = $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr('data-srcset');
+                    $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr("srcset", dataSrc);
                     $(el).parent().parent().children('.section__servicesItemImg-bg').css('background-image', 'url(' + src + ')');
                     $(el).parent().parent().children('.swiper-lazy-preloader').hide();
                 }
@@ -159,28 +160,17 @@ var mySwiper = new Swiper('.swiper-container', {
             });
         },
         slideChange: function () {
-            var that = this;
             var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
             var observer = lozad(el, {
                 loaded: function (el) {
                     var src = $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr('src');
-                    $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr("srcset", src);
+                    var dataSrc = $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr('data-srcset');
+                    $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr("srcset", dataSrc);
                     $(el).parent().parent().children('.section__servicesItemImg-bg').css('background-image', 'url(' + src + ')');
                     $(el).parent().parent().children('.swiper-lazy-preloader').hide();
                 }
             });
             observer.observe();
-            // var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
-            // var observer = lozad(el, {
-            //     loaded: function (el) {
-            //         $(el).parent().parent().children('.swiper-lazy-preloader').hide();
-            //         console.log("loaded");
-            //     }
-            // });
-            // observer.observe();
-            // el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
-            // observer = lozad(el);
-            // observer.observe();
         }
     },
 });
