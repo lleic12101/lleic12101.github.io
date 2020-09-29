@@ -82,7 +82,7 @@ var image = [];
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
-    lazy: true,
+    // lazy: true,
 
     pagination: {
         el: '.swiper-pagination',
@@ -95,15 +95,18 @@ var mySwiper = new Swiper('.swiper-container', {
     },
     on: {
         init: function () {
-            // $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+            var that = this;
             var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
-            var observer = lozad(el);
+            var observer = lozad(el, {
+                loaded: function (el) {
+                    $(el).parent().parent().parent().children('.swiper-lazy-preloader').hide();
+                }
+            });
             observer.observe();
             el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
             observer = lozad(el);
             observer.observe();
 
-            var that = this;
             $('.section__servicesItemImg-link').click(function (e) {
                 e.preventDefault();
                 if (!$(that.slides)[0].parentNode.classList.contains('active-gallery')) {
@@ -156,9 +159,12 @@ var mySwiper = new Swiper('.swiper-container', {
             });
         },
         slideChange: function () {
-            // $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
             var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
-            var observer = lozad(el);
+            var observer = lozad(el, {
+                loaded: function (el) {
+                    $(el).parent().parent().parent().children('.swiper-lazy-preloader').hide();
+                }
+            });
             observer.observe();
             el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
             observer = lozad(el);
