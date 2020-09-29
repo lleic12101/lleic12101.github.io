@@ -701,6 +701,20 @@ p.header__navLink:hover ~ .header__navList {
 }
 .section__serviceItemText-price {
     margin-right: 18px;
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    color: #222222;
+}
+.section__serviceItemText-about {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #555555;
 }
 .services__serviceItemSeparator {
     margin: 16px 0 16px;
