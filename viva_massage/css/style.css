@@ -546,9 +546,10 @@ p.header__navLink:hover ~ .header__navList {
     height: 260px;
     margin-right: 30px;
 }
-.section__servicesItemImg-link p {
+.section__servicesItemImg-link {
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 .swiper-container {
     width: 100%;

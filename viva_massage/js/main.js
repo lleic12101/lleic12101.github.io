@@ -99,12 +99,12 @@ var mySwiper = new Swiper('.swiper-container', {
             var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
             var observer = lozad(el, {
                 loaded: function (el) {
-                    $(el).parent().parent().parent().children('.swiper-lazy-preloader').hide();
+                    var src = $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr('src');
+                    $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr("srcset", src);
+                    $(el).parent().parent().children('.section__servicesItemImg-bg').css('background-image', 'url(' + src + ')');
+                    $(el).parent().parent().children('.swiper-lazy-preloader').hide();
                 }
             });
-            observer.observe();
-            el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
-            observer = lozad(el);
             observer.observe();
 
             $('.section__servicesItemImg-link').click(function (e) {
@@ -114,8 +114,8 @@ var mySwiper = new Swiper('.swiper-container', {
                     var $pic = $($(that.slides)[0].parentNode.parentNode),
                         getItems = function () {
                             var items = [];
-                            $pic.find('a').each(function () {
-                                var $href = $(this).attr('href'),
+                            $pic.find('p').each(function () {
+                                var $href = $(this).data('href'),
                                     $size = $(this).data('size').split('x'),
                                     $width = $size[0],
                                     $height = $size[1];
@@ -139,7 +139,7 @@ var mySwiper = new Swiper('.swiper-container', {
                         image[index].setAttribute('data-src', value['src']);
                     });
 
-                    $pic.on('click', 'a', function (event) {
+                    $pic.on('click', 'p', function (event) {
                         event.preventDefault();
                         var $index = that.realIndex;
                         var options = {
@@ -159,16 +159,28 @@ var mySwiper = new Swiper('.swiper-container', {
             });
         },
         slideChange: function () {
+            var that = this;
             var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
             var observer = lozad(el, {
                 loaded: function (el) {
-                    $(el).parent().parent().parent().children('.swiper-lazy-preloader').hide();
+                    var src = $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr('src');
+                    $(el).parent().parent().children('.section__servicesItemImg-link').children('.section__servicesItemImg').attr("srcset", src);
+                    $(el).parent().parent().children('.section__servicesItemImg-bg').css('background-image', 'url(' + src + ')');
+                    $(el).parent().parent().children('.swiper-lazy-preloader').hide();
                 }
             });
             observer.observe();
-            el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
-            observer = lozad(el);
-            observer.observe();
+            // var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
+            // var observer = lozad(el, {
+            //     loaded: function (el) {
+            //         $(el).parent().parent().children('.swiper-lazy-preloader').hide();
+            //         console.log("loaded");
+            //     }
+            // });
+            // observer.observe();
+            // el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
+            // observer = lozad(el);
+            // observer.observe();
         }
     },
 });
