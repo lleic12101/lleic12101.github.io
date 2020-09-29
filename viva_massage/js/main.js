@@ -95,7 +95,14 @@ var mySwiper = new Swiper('.swiper-container', {
     },
     on: {
         init: function () {
-            $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+            // $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+            var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
+            var observer = lozad(el);
+            observer.observe();
+            el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
+            observer = lozad(el);
+            observer.observe();
+
             var that = this;
             $('.section__servicesItemImg-link').click(function (e) {
                 e.preventDefault();
@@ -149,7 +156,13 @@ var mySwiper = new Swiper('.swiper-container', {
             });
         },
         slideChange: function () {
-            $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+            // $(this.slides[this.activeIndex]).children('.section__servicesItemImg').lazy();
+            var el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg');
+            var observer = lozad(el);
+            observer.observe();
+            el = this.slides[this.activeIndex].querySelector('.section__servicesItemImg-bg');
+            observer = lozad(el);
+            observer.observe();
         }
     },
 });
@@ -372,6 +385,9 @@ if (sessionStorage.getItem('opened') != null) {
 
                 $(text).parent().parent().children('.section__servicesFilterListLiItem').addClass('section__servicesFilterListLiItem-active');
                 $(text).parent().parent().parent().parent().children('.section__servicesFilterListLiItem').addClass('section__servicesFilterListLiItem-active');
+                $(text).parent().parent().parent().parent().parent().parent().children('.section__servicesFilterListLiItem').addClass('section__servicesFilterListLiItem-active');
+
+                $(text).parent().parent().parent().parent().parent().parent().children('.section__servicesFilterListLiItem').children('.section__servicesFilterSignBlock').toggleClass('section__servicesFilterSignBlock-active');
 
                 i = $('.section__servicesFilterListLiItem p').length;
             }
