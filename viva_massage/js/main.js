@@ -38,7 +38,6 @@ $(window).on('resize', function () {
     onResize();
 });
 onResize();
-
 function onResize() {
     var width = $(window).width();
     if (width <= 656) {
@@ -48,18 +47,15 @@ function onResize() {
 
 //mobile menu
 var modal = document.querySelector('.modal');
-
 function toggleModal() {
     modal.classList.toggle('show-modal');
     $('html, body').toggleClass('body-modal');
 }
-
 function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
     }
 }
-
 $('.header__navBurgerLink').click(function () {
     toggleModal();
 });
@@ -67,7 +63,6 @@ $('.modal__contentHeaderClose').click(function () {
     toggleModal();
 });
 window.addEventListener("click", windowOnClick);
-
 $('.modal__contentNavLiBtn').click(function () {
     $(this).parent().children('.modal__contentNavListBlock').slideToggle();
     $(this).toggleClass('modal__contentNavLiBtn-active');
@@ -337,7 +332,6 @@ function itemClick(that, thatClass, thatName) {
         window.location.reload();
     }
 }
-
 function fieldsReset(itemClass) {
     if (itemClass == "section__servicesMobileFilterItem-country") {
         $(".section__servicesMobileFilterItem-city").find('.section__servicesMobileFilterItemText').html("Select a city");
@@ -357,7 +351,6 @@ function fieldsReset(itemClass) {
         sessionStorage.setItem('section__servicesMobileFilterItem-area', null);
     }
 }
-
 function initFilterMobile() {
     var names = getCountries('..section__servicesMobileFilterItem-country');
     var links = getLinks('..section__servicesMobileFilterItem-country');
@@ -367,9 +360,7 @@ function initFilterMobile() {
         itemClick(this);
     });
 }
-
 initFilterMobile();
-
 
 //filter storage
 if (sessionStorage.getItem('opened') != null) {
@@ -435,3 +426,16 @@ if ($(window).width() <= 656) {
     }
 }
 
+//textarea checker
+$(".master__blockFormTextarea").keyup(function () {
+    var maxLen = 3500;
+    this.value = this.value.replace(/[$<>{}]/g, ' ');
+    this.value = this.value.replace("https", '');
+    this.value = this.value.replace("http", '');
+    this.value = this.value.replace("ftp", '');
+    this.value = this.value.replace(/:\/\//g, '');
+    this.value = this.value.replace(/\./g, ". ");
+    this.value = this.value.replace(/  /g, " ");
+    if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
+    $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
+});

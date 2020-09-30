@@ -26,6 +26,13 @@
     font-weight: bold;
     font-display: swap;
 }
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fa-solid-900.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -217,6 +224,13 @@ img[alt]:after {
     width: 10px;
     height: 5px;
 }
+.bookmark {
+    display: block;
+    background: url(../img/icons/bookmark.svg) no-repeat center;
+    background-size: contain;
+    width: 6.25px;
+    height: 8.75px;
+}
 /*ICONS END*/
 
 /*HEADER*/
@@ -375,7 +389,7 @@ p.header__navLink:hover ~ .header__navList {
 
 /*MAIN*/
 .main {
-    padding-top: 30px;
+
 }
 .wrapper {
     max-width: 1200px;
@@ -391,6 +405,7 @@ p.header__navLink:hover ~ .header__navList {
 .section__wrapper {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 30px;
 }
 /*SERVICES*/
 .section__services {
@@ -807,12 +822,12 @@ p.header__navLink:hover ~ .header__navList {
 .section__serviceItemReviewsLink:hover {
     cursor: pointer;
 }
-.section__serviceItemReviewsBlock .rating {
+.rating {
     margin: 0 10px;
     width: 70px;
     background: url('../img/icons/star-0-big.svg') repeat-x 0 0;
 }
-.section__serviceItemReviewsBlock .rating div {
+.rating div {
     height: 17px;
     background: url('../img/icons/star-1-big.svg') repeat-x 0 0;
     font-size: 1px;
@@ -1331,10 +1346,7 @@ p.header__navLink:hover ~ .header__navList {
 .breadcrumb__block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-.breadcrumb__block .wrapper {
-    padding-left: 315px;
+    align-items: center;
 }
 .breadcrumbs {
     display: flex;
@@ -1374,8 +1386,538 @@ p.header__navLink:hover ~ .header__navList {
 }
 .section__servicesItems .breadcrumbs {
     margin: 0 0 10px 0;
+    align-items: flex-start;
 }
 /*BREADCRUMBS END*/
+
+/*THERAPIST*/
+.section__master {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.section__master .wrapper {
+
+}
+.master__block {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 20px 20px 30px 20px;
+}
+.master__blockHeader {
+    margin-bottom: 15px;
+}
+.master__blockHeaderTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.master__blockHeaderTopTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #222222;
+}
+.master__blockHeaderTop .section__serviceItemBtns {
+    position: relative;
+    margin: 0;
+}
+.master__blockHeaderBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.master__blockHeaderBottom .section__serviceItemReviewsBlock {
+    margin-top: 0;
+    align-items: center;
+}
+.master__blockHeaderBottom .section__serviceItemReviewsBlock .rating {
+    margin-left: 0;
+    margin-right: 4px;
+}
+.master__blockHeaderBottom .section__serviceItemReviewsText {
+    margin-right: 4px;
+}
+.master__blockHeaderBottom .section__serviceItemReviewsLink {
+    font-size: 12px;
+}
+.master__blockHeaderBottomLink {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #3E3E3E;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.master__blockHeaderBottomLink:hover {
+    text-decoration: underline;
+}
+.master__blockHeaderBottomBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.master__blockHeaderBottomBtn {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #3E3E3E;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.master__blockHeaderBottomBtn:hover {
+    text-decoration: underline;
+}
+.master__blockHeaderBottomBtn-gray {
+    color: #B4B4B4;
+}
+.master__blockHeaderBottomBtn span {
+    display: none;
+}
+.master__blockContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.master__blockContent .section__servicesItemImgWrapper {
+    min-width: 470px;
+    height: 280px;
+    margin-right: 30px;
+}
+.master__blockContentRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.master__blockContentRight .section__serviceItemIconAndText {
+    margin-bottom: 14px;
+}
+.master__blockContentRight .section__serviceItemText {
+    font-size: 16px;
+    line-height: 17px;
+}
+.master__blockContentRight .gray {
+    font-size: 16px;
+    line-height: 17px;
+}
+.master__blockContentRight .section__serviceItemIconWrapper {
+    margin-right: 12px;
+}
+.master__blockContentRight .services__serviceItemSeparator {
+    margin: 5px 0 20px;
+}
+.master__blockContentTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 17px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+.master__blockContentServices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.master__blockContentServices a {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #212121;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.master__blockContentServices a:hover {
+    text-decoration: underline;
+}
+.master__blockContentServices a:after {
+    content: ',';
+}
+.master__blockContentServices a:last-child:after {
+    content: '.';
+}
+.master__blockContentRightSexual {
+    text-transform: uppercase;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    color: #222222;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 200px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.master__blockAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.master__blockAboutText {
+    margin-top: 3px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222222;
+}
+.master__blockReviews {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    position: relative;
+}
+.master__blockReviewsTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #222222;
+}
+.master__blockReviewsTitleNumber {
+    position: absolute;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #333333;
+    top: 7px;
+    left: 105px;
+}
+.master__blockReviewsStars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+}
+.master__blockReviewsStarsColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.master__blockReviewsStarsColumn:last-child {
+    margin-right: 0;
+}
+.master__blockReviewsStarsColumnText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222222;
+    margin-right: 20px;
+}
+.master__blockReviewsStarsRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+}
+.master__blockReviewsStarsRow .rating {
+    margin: 0 0 -3px 0;
+}
+.master__blockReviewItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 20px 24px 20px;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.master__blockReviewItemTitle-hidden {
+    display: none;
+}
+.master__blockReviewItemName {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222222;
+    margin-bottom: 8px;
+}
+.master__blockReviewItemDate {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #555555;
+    margin-bottom: 13px;
+}
+.master__blockReviewItemText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #4B4B4B;
+}
+.master__blockReviewItemRating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.master__blockReviewItemRatingStars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.master__blockReviewItemRatingStars .rating {
+    margin: 0 4px 0 0;
+}
+.master__blockReviewItemRatingPros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.master__blockReviewItemRatingProsText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #555555;
+    margin-right: 8px;
+}
+.master__blockReviewItemRatingProsText:after {
+    content: '|';
+}
+.master__blockReviewItemRatingProsText:last-child:after {
+    content: '';
+}
+.master__blockReviewItemRatingProsText span {
+    color: #D5B228;
+    font-size: 12px;
+    line-height: 13px;
+    margin-right: 5px;
+}
+.master__blockReviews .section__servicesControls {
+    margin: 0 0 0 0;
+}
+.master__blockReviews .section__servicesControlsBtn {
+    border: 1px solid #DCDCDC;
+}
+.master__blockReviews .section__servicesControlsBtn-text {
+    border: none;
+}
+.master__blockLogIn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.master__blockLogInTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #222222;
+}
+.master__blockLogInList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+.master__blockLogInListLi {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #222222;
+}
+.master__blockLogInListLi a {
+    text-decoration: none;
+}
+.master__blockLogInListLi a:hover {
+    text-decoration: underline;
+}
+.master__blockLogInListLi span {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    color: #545454;
+    margin: 0 20px;
+}
+.master__blockPost {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 100%;
+}
+.master__blockPostTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #222222;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.master__blockPostRating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 3px;
+}
+.master__blockPostRatingItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 17px;
+}
+.master__blockPostRatingItemText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222222;
+    margin-right: 5px;
+}
+.master__blockForm {
+    width: 100%;
+}
+.master__blockFormTextarea {
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #4B4B4B;
+    outline: none;
+    padding: 10px;
+}
+.master__blockFormTextarea::placeholder {
+    color: #838383;
+}
+.master__blockFormBtnBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.master__blockFormBtn {
+    margin-right: 20px;
+    margin-top: 18px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    width: 180px;
+    height: 32px;
+    background: #DD0A6A;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.master__blockFormBtn:hover {
+    text-decoration: underline;
+}
+.master__blockFormBtnBlockSymbols {
+    margin-top: 6px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #555555;
+}
+/*THERAPIST END*/
+
+/*STARS RATING*/
+.rating-select {
+    border: none;
+    float: left;
+}
+.rating-select > input {
+    display: none;
+}
+.rating-select > label:before {
+    margin: 2.5px;
+    font-size: 14px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+.rating-select > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+.rating-select > label {
+    color: #ddd;
+    float: right;
+}
+.rating-select > input:checked ~ label,
+.rating-select:not(:checked) > label:hover,
+.rating-select:not(:checked) > label:hover ~ label {
+    color: #ffdc33;
+}
+.rating-select > input:checked + label:hover,
+.rating-select > input:checked ~ label:hover,
+.rating-select > label:hover ~ input:checked ~ label,
+.rating-select > input:checked ~ label:hover ~ label {
+    color: #F3CB2D;
+}
+/*STARS RATING END*/
 
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
@@ -1554,6 +2096,9 @@ p.header__navLink:hover ~ .header__navList {
     }
     .main {
         padding-top: 0;
+    }
+    .section__wrapper {
+        margin-top: 0;
     }
     .section__servicesItems {
         margin-top: 19px;
