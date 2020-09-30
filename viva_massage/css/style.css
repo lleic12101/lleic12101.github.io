@@ -1832,7 +1832,7 @@ p.header__navLink:hover ~ .header__navList {
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
     border-radius: 4px;
-    resize: none;
+    resize: vertical;
     width: 100%;
     min-height: 150px;
     margin-top: 15px;
@@ -2608,6 +2608,7 @@ p.header__navLink:hover ~ .header__navList {
     .master__blockHeaderBottom .section__serviceItemReviewsLink {
         font-size: 10px;
         line-height: 11px;
+        display: block;
     }
     .master__blockHeaderBottomLink {
         margin-left: 10px;
@@ -2621,7 +2622,7 @@ p.header__navLink:hover ~ .header__navList {
     }
     .master__blockHeaderBottomBtn {
         font-size: 11px;
-        line-height: auto;
+        line-height: unset;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -2637,7 +2638,9 @@ p.header__navLink:hover ~ .header__navList {
     }
     .master__blockHeaderBottomLink {
         display: block;
-        margin-top: 2px;
+        margin-top: 1px;
+        font-size: 11px;
+        line-height: unset;
     }
     /*MASTER END*/
 }
