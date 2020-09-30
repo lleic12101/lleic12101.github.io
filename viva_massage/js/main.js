@@ -439,3 +439,13 @@ $(".master__blockFormTextarea").keyup(function () {
     if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
     $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
 });
+
+//scrollTo
+(function () {
+    link = $('.js-scroll-link');
+    link.on('click', function () {
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+})();

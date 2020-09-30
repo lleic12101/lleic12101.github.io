@@ -1390,7 +1390,7 @@ p.header__navLink:hover ~ .header__navList {
 }
 /*BREADCRUMBS END*/
 
-/*THERAPIST*/
+/*MASTER*/
 .section__master {
     display: flex;
     flex-direction: column;
@@ -1760,7 +1760,7 @@ p.header__navLink:hover ~ .header__navList {
     align-items: center;
     margin-top: 30px;
 }
-.master__blockLogInListLi {
+.master__blockLogInListLi p a {
     font-family: Archivo;
     font-style: normal;
     font-weight: 600;
@@ -1881,7 +1881,7 @@ p.header__navLink:hover ~ .header__navList {
     line-height: 13px;
     color: #555555;
 }
-/*THERAPIST END*/
+/*MASTER END*/
 
 /*STARS RATING*/
 .rating-select {
@@ -2053,6 +2053,17 @@ p.header__navLink:hover ~ .header__navList {
         width: auto;
         margin: 0 3px;
     }
+    /*MASTER*/
+    .master__blockContent {
+        flex-direction: column;
+    }
+    .section__serviceItemHeader {
+        margin-top: 20px;
+    }
+    .master__blockContent .section__servicesItemImgWrapper {
+        min-width: 100%;
+    }
+    /*MASTER END*/
 }
 @media screen and (max-width: 830px) {
     .footer__content {
@@ -2069,6 +2080,19 @@ p.header__navLink:hover ~ .header__navList {
         background-size: auto 100%;
         background-position: center center;
     }
+}
+@media screen and (max-width: 760px) {
+    /*MASTER*/
+    .master__blockPostRating {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .master__blockPostRatingItem {
+        max-width: 260px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    /*MASTER END*/
 }
 @media screen and (max-width: 656px) {
     .footer__content {
@@ -2354,12 +2378,265 @@ p.header__navLink:hover ~ .header__navList {
         line-height: 11px;
     }
     .breadcrumbs {
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     .section__servicesItems .breadcrumbs {
         margin-bottom: 5px;
         margin-top: -10px;
     }
+    /*MASTER*/
+    .master__block {
+        padding: 20px 10px 27px;
+    }
+    .master__blockReviewItem {
+        padding: 10px 10px 14px 10px;
+        margin-bottom: 10px;
+    }
+    .master__blockReviewItemName {
+        margin-bottom: 3px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .master__blockReviewItemDate {
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .master__blockReviewItemText {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .master__blockReviewItemRating {
+        margin-top: 8px;
+    }
+    .master__blockReviewItemRating {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .master__blockReviewItemRatingPros {
+        margin-bottom: 8px;
+    }
+    .master__blockReviewItemRatingProsText {
+        font-size: 10px;
+        line-height: 11px;
+        margin-right: 3px;
+    }
+    .master__blockReviewItemRatingProsText span {
+        margin-right: 0px;
+    }
+    .master__blockLogInList {
+        margin-top: 15px;
+    }
+    .master__blockLogInTitle {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .master__blockLogInListLi span {
+        margin: 0 14px;
+    }
+    .section__master {
+        margin-bottom: 30px;
+    }
+    .master__blockReviews .section__servicesControlsBtn {
+        margin: 0 3px;
+    }
+    .master__blockReviews .section__servicesControlsBtn-arrow {
+        width: 55px;
+    }
+    .master__blockPost {
+        margin-top: 20px;
+    }
+    .master__blockPostTitle {
+        font-size: 16px;
+        line-height: 17px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .master__blockPostRatingItem {
+        margin-left: 7px;
+        margin-bottom: 5px;
+        max-width: 240px;
+    }
+    .master__blockPostRatingItemText {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .master__blockFormTextarea {
+        margin: 10px 10px 0;
+        width: calc(100% - 20px);
+    }
+    .master__blockFormBtnBlockSymbols {
+        margin-right: 10px;
+        margin-top: 6px;
+    }
+    .master__blockFormBtn {
+        margin: 20px auto 0;
+    }
+    .master__blockReviewsTitle {
+        margin-left: 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .master__blockReviewsTitleNumber {
+        font-size: 14px;
+        line-height: 15px;
+        left: 95px;
+        top: 4px;
+    }
+    .master__blockReviewsStars {
+        margin-top: 10px;
+        margin-left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 208px;
+        margin-bottom: 10px;
+    }
+    .master__blockReviewsStarsRow {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .master__blockReviewsStarsColumnText {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .master__blockReviewsStarsColumn {
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .master__blockReviews {
+        margin-top: 17px;
+    }
+    .master__blockAbout {
+        padding-right: 10px;
+        margin-left: 10px;
+    }
+    .master__blockContentTitle {
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 4px;
+    }
+    .master__blockAboutText {
+        font-size: 12px;
+        line-height: 13px;
+        margin-top: 0;
+    }
+    .master__blockContentRightSexual {
+        width: 100%;
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 12px;
+    }
+    .master__blockContent {
+        margin-bottom: 12px;
+        padding: 0 10px;
+    }
+    .master__blockContentServices a {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .master__blockContentTitle {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .master__blockContentRight .services__serviceItemSeparator {
+        margin: 2px 0 12px;
+    }
+    .master__blockContentRight .section__serviceItemText {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .master__blockContentRight .gray {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .master__block {
+        position: relative;
+    }
+    .master__blockHeader {
+        position: absolute;
+        left: 20px;
+        top: 220px;
+        width: calc(100% - 40px);
+    }
+    .master__blockContent .section__servicesItemImgWrapper {
+        height: 200px;
+        margin-bottom: 60px;
+    }
+    .master__blockHeaderTop .section__serviceItemBtns {
+        position: absolute;
+        top: 6px;
+        right: 0;
+    }
+    .master__blockHeaderTop .section__serviceItemBtn {
+        height: 16px;
+        width: 16px;
+        margin-right: 6px;
+    }
+    .master__blockHeaderTop .section__serviceItemBtn:last-child {
+        margin-right: 0;
+    }
+    .master__blockHeaderTop .star {
+        height: 9.33px;
+        width: 9.33px;
+    }
+    .master__blockHeaderTop .home {
+        height: 8px;
+        width: 8px;
+    }
+    .master__blockHeaderTop .car {
+        height: 8px;
+        width: 7.33px;
+    }
+    .master__blockHeaderTop .check {
+        height: 9.33px;
+        width: 7.33px;
+    }
+    .master__blockHeaderTop {
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+    .master__blockHeaderTopTitle {
+        font-size: 16px;
+        line-height: 17px;
+        margin-top: 28px;
+    }
+    .master__blockHeaderBottom .section__serviceItemReviewsLink {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .master__blockHeaderBottomLink {
+        margin-left: 10px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .master__blockHeaderBottomBtns {
+        position: absolute;
+        top: 9px;
+        left: 0;
+    }
+    .master__blockHeaderBottomBtn {
+        font-size: 10px;
+        line-height: 11px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+    }
+    .master__blockHeaderBottomBtn:last-child {
+        margin-left: 10px;
+    }
+    .master__blockHeaderBottomBtn span {
+        display: flex;
+        margin-right: 3.87px;
+        margin-top: 1px;
+    }
+    .master__blockHeaderBottomLink {
+        display: block;
+        margin-top: 2px;
+    }
+    /*MASTER END*/
 }
 @media screen and (max-width: 520px) {
     .footer__rightBlock {
