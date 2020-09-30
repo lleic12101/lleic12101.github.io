@@ -1359,9 +1359,7 @@ p.header__navLink:hover ~ .header__navList {
     display: block;
     max-height: 18.4px;
     white-space: nowrap;
-}
-.breadcrumbs__item {
-    margin-right: 4px;
+    padding-right: 4px;
 }
 .breadcrumbs__item:before {
     content: "\003E";
