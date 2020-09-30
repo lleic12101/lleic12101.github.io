@@ -1377,9 +1377,12 @@ p.header__navLink:hover ~ .header__navList {
     line-height: 13px;
     color: #777777;
     margin: 0;
+    padding: 0;
 }
 .breadcrumbs__item a span {
     text-decoration-line: underline;
+    margin: 0;
+    padding: 0;
 }
 .section__servicesItems .breadcrumb__block .wrapper {
     padding-left: 0;
@@ -1831,7 +1834,7 @@ p.header__navLink:hover ~ .header__navList {
     border-radius: 4px;
     resize: none;
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     margin-top: 15px;
     font-family: Archivo;
     font-style: normal;
@@ -2617,8 +2620,8 @@ p.header__navLink:hover ~ .header__navList {
         left: 0;
     }
     .master__blockHeaderBottomBtn {
-        font-size: 10px;
-        line-height: 11px;
+        font-size: 11px;
+        line-height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
