@@ -1368,7 +1368,6 @@ p.header__navLink:hover ~ .header__navList {
     font-size: 12px;
     line-height: 13px;
     color: #777777;
-    margin-left: 4px;
 }
 .breadcrumbs__item:nth-child(1):before {
     content: '';
@@ -1387,7 +1386,7 @@ p.header__navLink:hover ~ .header__navList {
 }
 .breadcrumbs__item a span {
     text-decoration-line: underline;
-    margin: 0;
+    margin: 0 4px 0 0;
     padding: 0;
     white-space: nowrap;
 }
