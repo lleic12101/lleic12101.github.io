@@ -1360,6 +1360,9 @@ p.header__navLink:hover ~ .header__navList {
     max-height: 18.4px;
     white-space: nowrap;
 }
+.breadcrumbs__item {
+    margin-right: 4px;
+}
 .breadcrumbs__item:before {
     content: "\003E";
     font-family: Archivo;
@@ -1386,7 +1389,7 @@ p.header__navLink:hover ~ .header__navList {
 }
 .breadcrumbs__item a span {
     text-decoration-line: underline;
-    margin: 0 4px 0 0;
+    margin: 0;
     padding: 0;
     white-space: nowrap;
 }
