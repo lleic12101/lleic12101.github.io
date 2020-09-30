@@ -2067,7 +2067,7 @@ p.header__navLink:hover ~ .header__navList {
     .master__blockContent {
         flex-direction: column;
     }
-    .section__serviceItemHeader {
+    .master__blockContent .section__serviceItemHeader {
         margin-top: 20px;
     }
     .master__blockContent .section__servicesItemImgWrapper {
