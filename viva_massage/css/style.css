@@ -1832,7 +1832,7 @@ p.header__navLink:hover ~ .header__navList {
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
     border-radius: 4px;
-    resize: vertical;
+    resize: none;
     width: 100%;
     min-height: 150px;
     margin-top: 15px;
@@ -1841,6 +1841,7 @@ p.header__navLink:hover ~ .header__navList {
     font-weight: normal;
     font-size: 14px;
     line-height: 15px;
+    overflow: hidden;
     color: #4B4B4B;
     outline: none;
     padding: 10px;
@@ -2565,7 +2566,7 @@ p.header__navLink:hover ~ .header__navList {
     }
     .master__blockContent .section__servicesItemImgWrapper {
         height: 200px;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
     }
     .master__blockHeaderTop .section__serviceItemBtns {
         position: absolute;
@@ -2603,11 +2604,11 @@ p.header__navLink:hover ~ .header__navList {
     .master__blockHeaderTopTitle {
         font-size: 16px;
         line-height: 17px;
-        margin-top: 28px;
+        margin-top: 32px;
     }
     .master__blockHeaderBottom .section__serviceItemReviewsLink {
-        font-size: 10px;
-        line-height: 11px;
+        font-size: 11px;
+        line-height: unset;
         display: block;
     }
     .master__blockHeaderBottomLink {
@@ -2621,12 +2622,15 @@ p.header__navLink:hover ~ .header__navList {
         left: 0;
     }
     .master__blockHeaderBottomBtn {
-        font-size: 11px;
+        font-size: 12px;
         line-height: unset;
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 0;
+    }
+    .master__blockHeaderTop {
+        margin-bottom: 9px;
     }
     .master__blockHeaderBottomBtn:last-child {
         margin-left: 10px;
@@ -2638,8 +2642,8 @@ p.header__navLink:hover ~ .header__navList {
     }
     .master__blockHeaderBottomLink {
         display: block;
-        margin-top: 1px;
-        font-size: 11px;
+        margin-top: 0px;
+        font-size: 12px;
         line-height: unset;
     }
     /*MASTER END*/

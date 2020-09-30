@@ -427,7 +427,7 @@ if ($(window).width() <= 656) {
 }
 
 //textarea checker
-$(".master__blockFormTextarea").keyup(function () {
+$(".master__blockFormTextarea").keyup(function (e) {
     var maxLen = 3500;
     this.value = this.value.replace(/[$<>{}]/g, ' ');
     this.value = this.value.replace("https", '');
@@ -438,6 +438,9 @@ $(".master__blockFormTextarea").keyup(function () {
     this.value = this.value.replace(/  /g, " ");
     if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
     $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
+    if (this.scrollTop > 0) {
+        this.style.height = this.scrollHeight + "px";
+    }
 });
 
 //scrollTo
