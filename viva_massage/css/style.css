@@ -1371,8 +1371,7 @@ p.header__navLink:hover ~ .header__navList {
     color: #777777;
 }
 .breadcrumbs__item:nth-child(1):before {
-    content: '';
-    margin-left: 0;
+    display: none;
 }
 .breadcrumbs__item span {
     font-family: Archivo;
