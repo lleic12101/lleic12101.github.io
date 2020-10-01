@@ -1899,6 +1899,7 @@ p.header__navLink:hover ~ .header__navList {
 .rating-select {
     border: none;
     float: left;
+    position: relative;
 }
 .rating-select > input {
     display: none;
@@ -1909,6 +1910,8 @@ p.header__navLink:hover ~ .header__navList {
     font-family: FontAwesome;
     display: inline-block;
     content: "\f005";
+    z-index: 1;
+    position: relative;
 }
 .rating-select > .half:before {
     content: "\f089";
@@ -1928,6 +1931,14 @@ p.header__navLink:hover ~ .header__navList {
 .rating-select > label:hover ~ input:checked ~ label,
 .rating-select > input:checked ~ label:hover ~ label {
     color: #F3CB2D;
+}
+.rating-select .master__blockPostRatingChecker {
+    display: block;
+    transform: scale(.5);
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    z-index: 0;
 }
 /*STARS RATING END*/
 
