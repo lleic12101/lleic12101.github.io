@@ -1998,6 +1998,15 @@ p.header__navLink:hover ~ .header__navList {
     max-width: 280px;
     width: 100%;
     margin-top: 6px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8C8C8C;
+}
+.section__loginTextWrapper-registration {
+    margin-top: 20px;
 }
 .section__loginLink {
     font-family: Archivo;
