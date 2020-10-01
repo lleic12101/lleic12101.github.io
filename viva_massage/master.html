@@ -75,20 +75,22 @@
                             </li>
                         </ul>
                     </nav>
-                    <ul class="header__actionsBlock">
-                        <li>
-                            <a href="#!" class="header__actionLink">
-                                <span class="user header__actionIcon"></span>
-                                Login/Register
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!" class="header__actionLink">
-                                <span class="plus header__actionIcon"></span>
-                                Post An Ad
-                            </a>
-                        </li>
-                    </ul>
+                    <aside>
+                        <ul class="header__actionsBlock">
+                            <li>
+                                <a href="#!" class="header__actionLink">
+                                    <span class="user header__actionIcon"></span>
+                                    Login/Register
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="header__actionLink">
+                                    <span class="plus header__actionIcon"></span>
+                                    Post An Ad
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
         </header>
@@ -316,7 +318,8 @@
                                 </header>
                                 <span class="services__serviceItemSeparator"></span>
                                 <h2 class="master__blockContentTitle">Services</h2>
-                                <nav class="master__blockContentServices">
+                                <p class="master__blockContentServices">
+                                    Services provided by Anna-Belle:<br>
                                     <a href="#!">Thai massage</a>
                                     <a href="#!">Oriental massage</a>
                                     <a href="#!">Reflexology</a>
@@ -331,7 +334,7 @@
                                     <a href="#!">Thai massage</a>
                                     <a href="#!">Oriental massage</a>
                                     <a href="#!">Reflexology</a>
-                                </nav>
+                                </p>
                                 <span class="master__blockContentRightSexual">NOT A SEXUAL SERVICE</span>
                             </div>
                         </div>
@@ -653,7 +656,7 @@
                                     <div class="master__blockPostRating">
                                         <div class="master__blockPostRatingItem">
                                             <span class="master__blockPostRatingItemText">Cleanliness</span>
-                                            <fieldset class="rating-select">
+                                            <fieldset class="rating-select" id="stars">
                                                 <input type="radio" id="star5" name="rating" value="5"/>
                                                 <label class="full" for="star5" title="Awesome - 5 stars"></label>
                                                 <input type="radio" id="star4" name="rating" value="4"/>
@@ -666,7 +669,7 @@
                                                 <label class="full" for="star1" title="Bad - 1 star"></label>
                                             </fieldset>
                                         </div>
-                                        <div class="master__blockPostRatingItem">
+                                        <div class="master__blockPostRatingItem" id="stars1">
                                             <span class="master__blockPostRatingItemText">Friendliness</span>
                                             <fieldset class="rating-select">
                                                 <input type="radio" id="star5-1" name="rating-1" value="5"/>
@@ -681,7 +684,7 @@
                                                 <label class="full" for="star1-1" title="Bad - 1 star"></label>
                                             </fieldset>
                                         </div>
-                                        <div class="master__blockPostRatingItem">
+                                        <div class="master__blockPostRatingItem" id="stars2">
                                             <span class="master__blockPostRatingItemText">Treatments quality</span>
                                             <fieldset class="rating-select">
                                                 <input type="radio" id="star5-2" name="rating-2" value="5"/>

@@ -1538,13 +1538,16 @@ p.header__navLink:hover ~ .header__navList {
     font-size: 20px;
     line-height: 17px;
     color: #222222;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
 }
 .master__blockContentServices {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #212121;
 }
 .master__blockContentServices a {
     font-family: Archivo;
@@ -1553,7 +1556,6 @@ p.header__navLink:hover ~ .header__navList {
     font-size: 16px;
     line-height: 17px;
     color: #212121;
-    margin-right: 5px;
     text-decoration: none;
 }
 .master__blockContentServices a:hover {
@@ -2541,6 +2543,10 @@ p.header__navLink:hover ~ .header__navList {
     .master__blockContent {
         margin-bottom: 12px;
         padding: 0 10px;
+    }
+    .master__blockContentServices {
+        font-size: 12px;
+        line-height: 13px;
     }
     .master__blockContentServices a {
         font-size: 12px;

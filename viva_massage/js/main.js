@@ -441,7 +441,23 @@ $(".master__blockFormTextarea").keyup(function (e) {
     if (this.scrollTop > 0) {
         this.style.height = this.scrollHeight + "px";
     }
+    var rating = $('input[name=rating]:checked').val();
+    var rating1 = $('input[name=rating-1]:checked').val();
+    var rating2 = $('input[name=rating-2]:checked').val();
+    sessionStorage.setItem('formText', this.value);
+    sessionStorage.setItem('rating', rating);
+    sessionStorage.setItem('rating-1', rating1);
+    sessionStorage.setItem('rating-2', rating2);
 });
+if (sessionStorage.getItem('formText') != null) {
+    $(".master__blockFormTextarea").val(sessionStorage.getItem('formText'));
+    var rating = sessionStorage.getItem('rating');
+    var rating1 = sessionStorage.getItem('rating-1');
+    var rating2 = sessionStorage.getItem('rating-2');
+    $('#stars').find('input[value=' + rating + ']').prop('checked', true);
+    $('#stars1').find('input[value=' + rating1 + ']').prop('checked', true);
+    $('#stars2').find('input[value=' + rating2 + ']').prop('checked', true);
+}
 
 //scrollTo
 (function () {
