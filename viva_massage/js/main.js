@@ -36,6 +36,7 @@ $('.header__navCityBtn').click(function () {
 //resize func
 $(window).on('resize', function () {
     onResize();
+    resizeEmptySpace();
 });
 onResize();
 function onResize() {
@@ -473,3 +474,17 @@ if (sessionStorage.getItem('formText') != null) {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 })();
+
+//height of page
+resizeEmptySpace();
+function resizeEmptySpace() {
+    var header = $(".header").innerHeight();
+    var footer = $(".footer").innerHeight();
+    var windowHeight = $(window).innerHeight();
+    var main = $(".main").innerHeight();
+    if ((header + footer + main) < windowHeight) {
+        $(".main").css("height", (windowHeight - (header + footer)));
+    } else {
+        $(".main").css("height", "auto");
+    }
+}
