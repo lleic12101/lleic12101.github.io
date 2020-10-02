@@ -430,11 +430,12 @@ if ($(window).width() <= 656) {
 //textarea checker
 textareaInit();
 function textareaInit() {
-    $(".master__blockFormTextarea").keyup(function (e) {
+    $(".master__blockFormTextarea").on('propertychange input', function (e) {
         var cursor = this.selectionStart;
-        
+        var lengthBefore = this.value.length;
+
         var maxLen = 3500;
-        this.value = this.value.replace(/[$<>{}]/g, ' ');
+        this.value = this.value.replace(/[$<>{}]/g, '');
         this.value = this.value.replace("https", '');
         this.value = this.value.replace("http", '');
         this.value = this.value.replace("ftp", '');
@@ -454,7 +455,9 @@ function textareaInit() {
         sessionStorage.setItem('rating-1', rating1);
         sessionStorage.setItem('rating-2', rating2);
 
-        this.selectionEnd = cursor;
+        var lengthAfter = this.value.length;
+        var result = lengthBefore - lengthAfter;
+        this.selectionEnd = cursor - result;
     });
     $('.master__blockFormTextarea').keypress(function (key) {
         if (key.charCode == 60 ||
