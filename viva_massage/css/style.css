@@ -1855,7 +1855,7 @@ p.header__navLink:hover ~ .header__navList {
     font-size: 14px;
     line-height: 15px;
     overflow: hidden;
-    color: #4B4B4B;
+    color: #838383;
     outline: none;
     padding: 10px;
 }
@@ -1885,6 +1885,9 @@ p.header__navLink:hover ~ .header__navList {
     background: #DD0A6A;
     border-radius: 2px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .master__blockFormBtn:hover {
     text-decoration: underline;
@@ -1917,6 +1920,7 @@ p.header__navLink:hover ~ .header__navList {
     content: "\f005";
     z-index: 1;
     position: relative;
+    cursor: pointer;
 }
 .rating-select > .half:before {
     content: "\f089";
@@ -2392,6 +2396,78 @@ p.header__navLink:hover ~ .header__navList {
     opacity: 1;
 }
 /*FAQ END*/
+
+/*REVIEWS*/
+.master__blockReviewItem-reviews {
+    max-width: 780px;
+}
+.master__blockReviewItem-reviews .master__blockPostRatingItem:first-child {
+    margin-left: 0;
+}
+.master__blockReviewItem-reviews .master__blockPostRating {
+    padding-left: 0;
+}
+.master__blockReviewItemName-reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sections__reviewLink {
+    text-transform: uppercase;
+    color: #898989;
+    margin-left: 10px;
+}
+.sections__reviewLink:hover {
+    text-decoration: none;
+}
+.sections__reviewEditBtnBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sections__reviewEditBtn {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #898989;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: auto;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.sections__reviewEditBtn:hover {
+    text-decoration: none;
+}
+.section__reviewsItems {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__reviewsBtnsBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.master__blockFormBtn-reviews {
+    width: 160px;
+    height: 30px;
+    margin-top: 2px;
+}
+.master__blockForm-reviews {
+    display: none;
+}
+/*REVIEWS END*/
 
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
@@ -3226,6 +3302,46 @@ p.header__navLink:hover ~ .header__navList {
         padding: 10px 10px 22px;
     }
     /*FAQ END*/
+    /*REVIEWS*/
+    .master__blockReviewItemName-reviews {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sections__reviewLinkWrapper {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .sections__reviewLink {
+        font-family: Archivo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        margin-left: 0;
+    }
+    .sections__reviewEditBtn {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .master__blockForm-reviews .master__blockFormTextarea {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .master__blockReviewItem-reviews .master__blockPostRatingItem {
+        margin-left: 0;
+    }
+    .master__blockReviewItem-reviews .master__blockFormBtnBlockSymbols {
+        margin-right: 0;
+    }
+    .section__reviewsBtnsBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .master__blockReviewItem-reviews {
+        padding-bottom: 20px;
+    }
+    /*REVIEWS END*/
 }
 @media screen and (max-width: 520px) {
     .footer__rightBlock {

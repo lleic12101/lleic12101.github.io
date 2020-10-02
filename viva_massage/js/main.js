@@ -435,8 +435,7 @@ $(".master__blockFormTextarea").keyup(function (e) {
     this.value = this.value.replace("http", '');
     this.value = this.value.replace("ftp", '');
     this.value = this.value.replace(/:\/\//g, '');
-    this.value = this.value.replace(/\./g, ". ");
-    this.value = this.value.replace(/  /g, " ");
+    this.value = this.value.replace(/\.(?=\S)/g, ". ");
     if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
     $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
     if (this.scrollTop > 0) {
@@ -450,14 +449,14 @@ $(".master__blockFormTextarea").keyup(function (e) {
     sessionStorage.setItem('rating-1', rating1);
     sessionStorage.setItem('rating-2', rating2);
 });
-if (sessionStorage.getItem('formText') != null) {
+if (sessionStorage.getItem('formText') != null && !$('*').is('.master__blockReviewItem-reviews')) {
     $(".master__blockFormTextarea").val(sessionStorage.getItem('formText'));
     var rating = sessionStorage.getItem('rating');
     var rating1 = sessionStorage.getItem('rating-1');
     var rating2 = sessionStorage.getItem('rating-2');
-    $('#stars').find('input[value=' + rating + ']').prop('checked', true);
-    $('#stars1').find('input[value=' + rating1 + ']').prop('checked', true);
-    $('#stars2').find('input[value=' + rating2 + ']').prop('checked', true);
+    $('.stars').find('input[value=' + rating + ']').prop('checked', true);
+    $('.stars1').find('input[value=' + rating1 + ']').prop('checked', true);
+    $('.stars2').find('input[value=' + rating2 + ']').prop('checked', true);
 
     var maxLen = 3500;
     var that = document.querySelector('.master__blockFormTextarea');
@@ -494,5 +493,71 @@ if ($('*').is('.section__faqItems')) {
     $('.section__faqItemTitle').click(function () {
         $(this).parent().toggleClass('section__faqItem-active');
         $(this).parent().find('.section__faqItemTextBlock').slideToggle();
+    });
+}
+
+//my reviews edit
+if ($('*').is('.master__blockReviewItem-reviews')) {
+    var $form = $(".master__blockForm-reviews");
+    $(".master__blockForm-reviews").remove();
+    $('.sections__reviewEditBtn').click(function () {
+        $(".sections__reviewEditBtnBlock").show();
+        $(".master__blockReviewItemText").show();
+        $(".master__blockReviewItemRating").show();
+        $(".master__blockForm-reviews").hide();
+        
+        $(this).parent().parent().append($form);
+
+        $(this).parent().parent().children(".sections__reviewEditBtnBlock").hide();
+        $(this).parent().parent().children(".master__blockReviewItemText").hide();
+        $(this).parent().parent().children(".master__blockReviewItemRating").hide();
+        $(this).parent().parent().children(".master__blockForm-reviews").show();
+
+        var text = $(this).parent().parent().children(".master__blockReviewItemText").html();
+        text = text.replace(/\s+/g, ' ').trim();
+        $(this).parent().parent().find(".master__blockFormTextarea").val(text);
+
+        var maxLen = 3500;
+        var that = $(this).parent().parent().find('.master__blockFormTextarea')[0];
+        $('.master__blockFormBtnBlockSymbols').html(that.value.length + " / " + maxLen);
+        that.style.height = (that.scrollHeight) + "px";
+
+        var rating = $(this).parent().parent().find(".master__blockReviewItemRatingProsText").children("span")[0].innerHTML;
+        var rating1 = $(this).parent().parent().find(".master__blockReviewItemRatingProsText").children("span")[1].innerHTML;
+        var rating2 = $(this).parent().parent().find(".master__blockReviewItemRatingProsText").children("span")[2].innerHTML;
+
+        $($(this).parent().parent().find("fieldset")[0]).children("input[value=" + rating + "]").prop("checked", true);
+        $($(this).parent().parent().find("fieldset")[1]).children("input[value=" + rating1 + "]").prop("checked", true);
+        $($(this).parent().parent().find("fieldset")[2]).children("input[value=" + rating2 + "]").prop("checked", true);
+
+        $(this).parent().parent().find('.master__blockFormBtn-cancel').click(function () {
+            $(this).parent().parent().parent().parent().children(".sections__reviewEditBtnBlock").show();
+            $(this).parent().parent().parent().parent().children(".master__blockReviewItemText").show();
+            $(this).parent().parent().parent().parent().children(".master__blockReviewItemRating").show();
+            $(this).parent().parent().parent().parent().children(".master__blockForm-reviews").hide();
+        });
+        $(this).parent().parent().find('.master__blockForm-reviews').submit(function (e) {
+            e.preventDefault();
+            $(this).parent().children(".sections__reviewEditBtnBlock").show();
+            $(this).parent().children(".master__blockReviewItemText").show();
+            $(this).parent().children(".master__blockReviewItemRating").show();
+            $(this).parent().children(".master__blockForm-reviews").hide();
+
+            var rating = $(this).serializeArray()[0].value;
+            var rating1 = $(this).serializeArray()[1].value;
+            var rating2 = $(this).serializeArray()[2].value;
+
+            $(this).parent().find(".master__blockReviewItemRatingProsText").children("span")[0].innerHTML = rating;
+            $(this).parent().find(".master__blockReviewItemRatingProsText").children("span")[1].innerHTML = rating1;
+            $(this).parent().find(".master__blockReviewItemRatingProsText").children("span")[2].innerHTML = rating2;
+
+            var result = ((Number(rating) + Number(rating1) + Number(rating2)) / 3).toFixed(1);
+            $(this).parent().find(".section__serviceItemReviewsText").html(result);
+            var width = 20 * result;
+            $(this).parent().find(".rating").children("div").css("width", width + "%");
+
+            var review = $(this).serializeArray()[3].value;
+            $(this).parent().children(".master__blockReviewItemText").html(review);
+        });
     });
 }
