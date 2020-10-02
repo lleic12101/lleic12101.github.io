@@ -431,6 +431,8 @@ if ($(window).width() <= 656) {
 textareaInit();
 function textareaInit() {
     $(".master__blockFormTextarea").keyup(function (e) {
+        var cursor = this.selectionStart;
+        
         var maxLen = 3500;
         this.value = this.value.replace(/[$<>{}]/g, ' ');
         this.value = this.value.replace("https", '');
@@ -451,6 +453,15 @@ function textareaInit() {
         sessionStorage.setItem('rating', rating);
         sessionStorage.setItem('rating-1', rating1);
         sessionStorage.setItem('rating-2', rating2);
+
+        this.selectionEnd = cursor;
+    });
+    $('.master__blockFormTextarea').keypress(function (key) {
+        if (key.charCode == 60 ||
+            key.charCode == 62 ||
+            key.charCode == 123 ||
+            key.charCode == 125 ||
+            key.charCode == 36) return false;
     });
 }
 if (sessionStorage.getItem('formText') != null && !$('*').is('.master__blockReviewItem-reviews')) {
