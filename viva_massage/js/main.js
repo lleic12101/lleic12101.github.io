@@ -428,27 +428,31 @@ if ($(window).width() <= 656) {
 }
 
 //textarea checker
-$(".master__blockFormTextarea").keyup(function (e) {
-    var maxLen = 3500;
-    this.value = this.value.replace(/[$<>{}]/g, ' ');
-    this.value = this.value.replace("https", '');
-    this.value = this.value.replace("http", '');
-    this.value = this.value.replace("ftp", '');
-    this.value = this.value.replace(/:\/\//g, '');
-    this.value = this.value.replace(/\.(?=\S)/g, ". ");
-    if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
-    $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
-    if (this.scrollTop > 0) {
-        this.style.height = this.scrollHeight + "px";
-    }
-    var rating = $('input[name=rating]:checked').val();
-    var rating1 = $('input[name=rating-1]:checked').val();
-    var rating2 = $('input[name=rating-2]:checked').val();
-    sessionStorage.setItem('formText', this.value);
-    sessionStorage.setItem('rating', rating);
-    sessionStorage.setItem('rating-1', rating1);
-    sessionStorage.setItem('rating-2', rating2);
-});
+textareaInit();
+function textareaInit() {
+    $(".master__blockFormTextarea").keyup(function (e) {
+        var maxLen = 3500;
+        this.value = this.value.replace(/[$<>{}]/g, ' ');
+        this.value = this.value.replace("https", '');
+        this.value = this.value.replace("http", '');
+        this.value = this.value.replace("ftp", '');
+        this.value = this.value.replace(/:\/\//g, '');
+        this.value = this.value.replace(/\.(?=\S)/g, ". ");
+        if (this.value.trim() == '') this.value = '';
+        if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
+        $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
+        if (this.scrollTop > 0) {
+            this.style.height = this.scrollHeight + "px";
+        }
+        var rating = $('input[name=rating]:checked').val();
+        var rating1 = $('input[name=rating-1]:checked').val();
+        var rating2 = $('input[name=rating-2]:checked').val();
+        sessionStorage.setItem('formText', this.value);
+        sessionStorage.setItem('rating', rating);
+        sessionStorage.setItem('rating-1', rating1);
+        sessionStorage.setItem('rating-2', rating2);
+    });
+}
 if (sessionStorage.getItem('formText') != null && !$('*').is('.master__blockReviewItem-reviews')) {
     $(".master__blockFormTextarea").val(sessionStorage.getItem('formText'));
     var rating = sessionStorage.getItem('rating');
@@ -505,8 +509,9 @@ if ($('*').is('.master__blockReviewItem-reviews')) {
         $(".master__blockReviewItemText").show();
         $(".master__blockReviewItemRating").show();
         $(".master__blockForm-reviews").hide();
-        
+
         $(this).parent().parent().append($form);
+        textareaInit();
 
         $(this).parent().parent().children(".sections__reviewEditBtnBlock").hide();
         $(this).parent().parent().children(".master__blockReviewItemText").hide();
