@@ -1972,6 +1972,9 @@ p.header__navLink:hover ~ .header__navList {
     line-height: 26px;
     color: #222222;
     margin-bottom: 30px;
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
 }
 .section__loginInput {
     background: #FFFFFF;
@@ -1980,7 +1983,7 @@ p.header__navLink:hover ~ .header__navList {
     width: 280px;
     height: 32px;
     padding-left: 20px;
-    color: #222222;
+    color: #717171;
     font-family: Archivo;
     font-style: normal;
     font-weight: 500;
@@ -2010,6 +2013,10 @@ p.header__navLink:hover ~ .header__navList {
 }
 .section__loginTextWrapper-none {
     margin-top: 0;
+}
+.section__loginTextWrapper-details {
+    margin-top: 6px;
+    margin-bottom: 20px;
 }
 .section__loginLink {
     font-family: Archivo;
@@ -2051,6 +2058,9 @@ p.header__navLink:hover ~ .header__navList {
 .section__loginBtn-mt-small {
     margin-top: 10px;
 }
+.section__loginBtn-small {
+    width: 160px;
+}
 .section__loginDelimiterBlock {
     display: flex;
     flex-direction: row;
@@ -2074,6 +2084,165 @@ p.header__navLink:hover ~ .header__navList {
     color: #9D9D9D;
 }
 /*LOGIN END*/
+
+/*DETAILS*/
+.section__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.section__details .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__detailsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 30px 0;
+}
+.sections__detailsBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.sections__detailsBtn {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #8C8C8C;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    padding: 0 20px;
+    background: #FFFFFF;
+    border-right: 1px solid #E9E9E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sections__detailsBtn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.sections__detailsBtn:last-child {
+    border-radius: 0 4px 4px 0;
+    border-right: none;
+}
+.sections__detailsBtn:hover {
+    text-decoration: underline;
+}
+.sections__detailsBtn-active {
+    color: #DD0A6A;
+}
+.section__detailsForm {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section__detailsSubtitle {
+    margin-bottom: 20px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #222222;
+}
+.section__detailsSubtitle-mt {
+    margin-top: 30px;
+}
+.section__detailsTextAndInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.section__detailsTextAndInput-none {
+    margin-bottom: 0;
+}
+.section__detailsText {
+    margin-bottom: 6px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #8C8C8C;
+}
+.section__detailsCheckboxBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section__detailsCheckboxBlock-details {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.section__detailsCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.section__detailsCheckbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8C8C8C;
+    cursor: pointer;
+    position: relative;
+}
+.section__detailsCheckbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 9px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.section__detailsCheckbox:not(:disabled):checked + label::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #DD0A6A;
+    border-radius: 2px;
+    left: 5px;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.section__detailsCheckbox:disabled + label::before {
+    background-color: #e9ecef;
+}
+/*DETAILS END*/
 
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
@@ -2812,6 +2981,35 @@ p.header__navLink:hover ~ .header__navList {
         width: 103px;
     }
     /*LOGIN END*/
+    /*DETAILS*/
+    .section__loginTitle-details {
+        margin-bottom: 20px;
+    }
+    .section__detailsBlock {
+        width: 300px;
+        padding: 0 0 30px;
+    }
+    .section__detailsForm {
+        align-items: center;
+    }
+    .section__detailsSubtitle {
+        width: 100%;
+        text-align: left;
+    }
+    .section__detailsCheckboxBlock {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sections__detailsBtns {
+        width: 100%;
+        justify-content: center;
+    }
+    .sections__detailsBtn {
+        font-size: 10px;
+        line-height: 11px;
+        padding: 0 10px;
+    }
+    /*DETAILS END*/
 }
 @media screen and (max-width: 520px) {
     .footer__rightBlock {
