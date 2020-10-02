@@ -435,14 +435,15 @@ function textareaInit() {
         var lengthBefore = this.value.length;
 
         var maxLen = 3500;
-        this.value = this.value.replace(/[$<>{}]/g, '');
-        this.value = this.value.replace("https", '');
-        this.value = this.value.replace("http", '');
-        this.value = this.value.replace("ftp", '');
-        this.value = this.value.replace(/:\/\//g, '');
-        this.value = this.value.replace(/\.(?=\S)/g, ". ");
+        this.value = this.value.replace(/[$<>{}]/gi, '');
+        this.value = this.value.replace(/https/gi, '');
+        this.value = this.value.replace(/http/gi, ' ');
+        this.value = this.value.replace(/ftp/gi, '');
+        this.value = this.value.replace(/:\/\//gi, '');
+        // this.value = this.value.replace(/\.(?=\S)/g, ". ");
         if (this.value.trim() == '') this.value = '';
         if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
+
         $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
         if (this.scrollTop > 0) {
             this.style.height = this.scrollHeight + "px";
