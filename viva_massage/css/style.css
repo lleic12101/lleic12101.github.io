@@ -2008,6 +2008,9 @@ p.header__navLink:hover ~ .header__navList {
 .section__loginTextWrapper-registration {
     margin-top: 20px;
 }
+.section__loginTextWrapper-none {
+    margin-top: 0;
+}
 .section__loginLink {
     font-family: Archivo;
     font-style: normal;
@@ -2045,13 +2048,16 @@ p.header__navLink:hover ~ .header__navList {
 .section__loginBtn-mt {
     margin-top: 20px;
 }
+.section__loginBtn-mt-small {
+    margin-top: 10px;
+}
 .section__loginDelimiterBlock {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 .section__loginDelimiterSpan {
     display: block;
