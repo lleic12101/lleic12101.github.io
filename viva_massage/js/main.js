@@ -488,3 +488,11 @@ function resizeEmptySpace() {
         $(".main").css("height", "auto");
     }
 }
+
+//faq tabs
+if ($('*').is('.section__faqItems')) {
+    $('.section__faqItemTitle').click(function () {
+        $(this).parent().toggleClass('section__faqItem-active');
+        $(this).parent().find('.section__faqItemTextBlock').slideToggle();
+    });
+}

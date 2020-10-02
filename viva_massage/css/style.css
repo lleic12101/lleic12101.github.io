@@ -947,6 +947,10 @@ p.header__navLink:hover ~ .header__navList {
     align-items: center;
     padding: 88px 0 85px;
 }
+.section__therapist-faq .wrapper {
+    padding-left: 28px;
+    padding-right: 28px;
+}
 .section__therapistTitle {
     font-family: Archivo, sans-serif;
     font-style: normal;
@@ -954,6 +958,7 @@ p.header__navLink:hover ~ .header__navList {
     font-size: 36px;
     line-height: 39px;
     color: #FFFFFF;
+    text-align: center;
 }
 .section__therapistText {
     font-family: Archivo, sans-serif;
@@ -2286,6 +2291,108 @@ p.header__navLink:hover ~ .header__navList {
 }
 /*404 END*/
 
+/*FAQ*/
+.section__faq {
+
+}
+.section__faq .wrapper {
+
+}
+.section__faqBlock {
+    margin: 5px 0 30px;
+    width: 100%;
+    padding: 30px 30px 25px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section__faqTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39px;
+    color: #222222;
+    margin-bottom: 27px;
+}
+.section__faqItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section__faqItem {
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.section__faqItem:last-child {
+    margin-bottom: 0;
+}
+.section__faqItemTitle {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #222222;
+    padding-left: 30px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.section__faqItemTextBlock {
+    border-top: 1px solid #C4C4C4;
+    padding: 14px 30px 21px;
+    display: none;
+}
+.section__faqItemText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #838383;
+}
+.section__faqItemIcons {
+    position: absolute;
+    top: 17px;
+    right: 30px;
+}
+.section__faqItemIcon {
+    width: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .3s;
+}
+.section__faqItemIcon ~ .filter-plus {
+    width: 16px;
+}
+.section__faqItemIcon ~ .filter-minus {
+    top: 5px;
+    right: 2px;
+    width: 12px;
+}
+.section__faqItemIcon-minus {
+    opacity: 0;
+}
+.section__faqItem-active .section__faqItemIcon-plus {
+    opacity: 0;
+}
+.section__faqItem-active .section__faqItemIcon-minus {
+    opacity: 1;
+}
+/*FAQ END*/
+
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
     .wrapper {
@@ -3073,6 +3180,52 @@ p.header__navLink:hover ~ .header__navList {
         margin-bottom: 25px;
     }
     /*404 END*/
+    /*FAQ*/
+    .section__therapist-faq .wrapper {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+    .section__therapist-faq .section__therapistTitle {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .section__therapist-faq .section__therapistTitle {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .section__therapist-faq .section__therapistText {
+        margin: 20px 0;
+    }
+    .section__faqBlock {
+        margin-top: 0;
+        padding: 10px 10px 20px;
+    }
+    .section__faqItem {
+        margin-bottom: 10px;
+    }
+    .section__faqTitle {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .section__faqItemTitle {
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 17px;
+        height: 36px;
+    }
+    .section__faqItemIcons {
+        top: 12px;
+        right: 10px;
+    }
+    .section__faqItemText {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .section__faqItemTextBlock {
+        padding: 10px 10px 22px;
+    }
+    /*FAQ END*/
 }
 @media screen and (max-width: 520px) {
     .footer__rightBlock {
