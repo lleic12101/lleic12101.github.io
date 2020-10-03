@@ -631,3 +631,52 @@ if ($('*').is('.section__bookmarkedItemDeleteBtn')) {
         resizeEmptySpace();
     });
 }
+
+//edit phone
+if ($('*').is('.section__editFormPhoneFooterBtn-change')) {
+    $('.section__editFormPhoneFooterBtn-change').click(function () {
+        $(this).hide();
+        $(this).parent().children('.section__editFormPhoneFooterWrapper').slideDown();
+        $(this).parent().find('.section__editFormPhoneTextSpan').hide();
+        $(this).parent().find('.section__editFormPhoneRowInput').show();
+
+        var phone = $(this).parent().find('.section__editFormPhoneTextSpan').html();
+        $(this).parent().find('.section__editFormPhoneRowInput').val(phone);
+    });
+    $(".section__editFormPhoneRowInput").mask("9999-999-9999");
+    // $(".section__editFormPhoneRowInput").mask("9999-999-9999", {autoclear: false});
+    $('.section__editFormPhoneFooterRowBtn').click(function () {
+        if ($('.section__editFormPhoneFooterRowInput').val().trim() != '' &&
+            $('.section__editFormPhoneFooterRowInput').val().length == 6) {
+            $(".section__editFormPhoneRowInput").removeClass("section__loginInput-error");
+            $(this).parent().parent().parent().parent().children('.section__editFormPhoneFooterWrapper').slideUp();
+            $(this).parent().parent().parent().parent().find('.section__editFormPhoneTextSpan').show();
+            $(this).parent().parent().parent().parent().find('.section__editFormPhoneRowInput').hide();
+            $(this).parent().parent().parent().parent().find('.section__editFormPhoneFooterBtn-change').show();
+
+            var phoneVal = $(this).parent().parent().parent().parent().find('.section__editFormPhoneRowInput').val();
+            $(this).parent().parent().parent().parent().find('.section__editFormPhoneTextSpan').html(phoneVal);
+        } else {
+            $(".section__editFormPhoneFooterRowInput").addClass("section__loginInput-error");
+        }
+    });
+}
+
+//cities autocomplete
+if ($('*').is('.section__loginInput-cities')) {
+    $(".section__loginInput-cities").autocomplete({
+        source: function (request, response) {
+            $.ajax({
+                url: "https://www.freeads.co.uk/autocomplete?callback=jQuery111309223511907505_1601677440936&term=" + request.term,
+                dataType: "jsonp",
+                data: {
+                    q: request.term
+                },
+                success: function (data) {
+                    response(data);
+                }
+            });
+        },
+        minLength: 2
+    });
+}

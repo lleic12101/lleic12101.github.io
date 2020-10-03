@@ -1992,7 +1992,7 @@ p.header__navLink:hover ~ .header__navList {
     width: 280px;
     height: 32px;
     padding-left: 20px;
-    color: #717171;
+    color: #000000;
     font-family: Archivo;
     font-style: normal;
     font-weight: 500;
@@ -2677,6 +2677,270 @@ p.header__navLink:hover ~ .header__navList {
     margin-bottom: 25px;
 }
 /*MY ADS END*/
+
+/*EDIT AD*/
+.section__editBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.section__editBtn {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #8C8C8C;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    padding: 0 20px;
+    background: #FFFFFF;
+    border-right: 1px solid #E9E9E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section__editBtn-active {
+    color: #DD0A6A;
+}
+.section__editBtn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.section__editBtn:last-child {
+    border-radius: 0 4px 4px 0;
+    border-right: none;
+}
+.section__editBtn:hover {
+    text-decoration: underline;
+}
+.section__editId {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #8C8C8C;
+    margin-bottom: 20px;
+    margin-top: -18px;
+}
+.section__editForm {
+    margin-top: 30px;
+    max-width: 280px;
+}
+.section__editFormText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8C8C8C;
+}
+.section__editFormBtn {
+    width: 280px;
+}
+.section__editFormBtn-disabled {
+    cursor: not-allowed;
+    background: #C4C4C4;
+}
+.section__editFormBtn-disabled:hover {
+    text-decoration: none;
+}
+.section__editFormRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.section__editFormRow .section__detailsTextAndInput {
+    position: relative;
+}
+.section__editFormRow .euro {
+    width: 10px;
+    height: 11.83px;
+    position: absolute;
+    bottom: 9px;
+    left: 10px;
+}
+.section__editFormRow .section__loginInput {
+    width: 130px;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-align: center;
+}
+.section__editFormRow .section__detailsTextAndInput:nth-child(2) .section__detailsText {
+    font-size: 12px;
+    line-height: 13px;
+}
+.section__editForm .master__blockFormTextarea {
+    margin: 0;
+    width: 100%;
+}
+.section__editForm .master__blockFormBtnBlockSymbols {
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 10px;
+    line-height: 11px;
+}
+.section__editForm .master__blockFormBtnBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__editFormTextareaText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    color: #8C8C8C;
+}
+.section__detailsText-edit {
+    display: block;
+}
+.section__editDelimiter {
+    background: #C4C4C4;
+    width: 180px;
+    height: 1px;
+    display: block;
+    margin: 20px auto 12px;
+}
+.section__editFormCheckboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 344px;
+    margin-left: -32px;
+    margin-top: 4px;
+}
+.section__editFormCheckboxesColumn {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+.section__editFormCheckboxesColumn .section__detailsCheckboxBlock {
+    margin-bottom: 11px;
+}
+.section__editFormCheckboxesColumn .section__detailsCheckboxBlock:last-child {
+    margin-bottom: 0;
+}
+.section__editFormCheckboxes-sex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.section__editFormCheckboxes-sex .section__editFormTextareaText {
+    margin-top: 6px;
+}
+.section__editFormPhoneBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.section__editFormPhoneRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section__editFormPhoneRow .section__detailsText {
+    margin-bottom: 0;
+}
+.section__editFormPhoneText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+    margin-left: 14px;
+}
+.section__editFormPhoneTextSpan {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+}
+.section__editFormPhoneFooterWrapper {
+    display: none;
+}
+.section__editFormPhoneFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.section__editFormPhoneFooterBtn {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-decoration-line: underline;
+    color: #898989;
+    cursor: pointer;
+    margin-top: 4px;
+}
+.section__editFormPhoneFooterBtn:hover {
+    text-decoration: none;
+}
+.section__editFormPhoneFooterText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #3A3A3A;
+}
+.section__editFormPhoneFooterRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+.section__editFormPhoneFooterRowInput {
+    width: 120px;
+    height: 30px;
+    padding-left: 24px;
+}
+.section__editFormPhoneFooterRowBtn {
+    width: 140px;
+    height: 30px;
+}
+.section__editFormPhoneRowInput {
+    width: 170px;
+    height: 32px;
+    margin-left: 10px;
+    padding-left: 10px;
+    display: none;
+}
+.section__loginInput-error {
+    border-color: #DD0A6A;
+}
+.section__loginInput-select {
+    padding-top: 3px;
+    background: url(../img/icons/openSelect.svg) no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 250px;
+    cursor: pointer;
+}
+.ui-autocomplete-loading {
+    background: white url("../img/icons/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+/*EDIT AD END*/
 
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
@@ -3627,5 +3891,24 @@ p.header__navLink:hover ~ .header__navList {
     .footer__formText {
         max-width: unset;
     }
+}
+@media screen and (max-width: 420px) {
+    /*EDIT AD*/
+    .section__editFormCheckboxes {
+        flex-direction: column;
+        min-width: 100%;
+        width: 100%;
+        margin-left: 15px;
+    }
+    .section__editFormCheckboxesColumn:first-child {
+        margin-bottom: 11px;
+    }
+    .section__editFormCheckboxes-sex {
+        margin-left: 0;
+    }
+    .section__editFormCheckboxes-sex .section__detailsCheckboxBlock {
+        white-space: nowrap;
+    }
+    /*EDIT AD END*/
 }
 /*MEDIA END*/
