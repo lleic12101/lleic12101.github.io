@@ -581,3 +581,53 @@ if ($('*').is('.master__blockReviewItem-reviews')) {
         });
     });
 }
+
+//delete bookmark
+if ($('*').is('.section__bookmarkedItemDeleteBtn')) {
+    $('.section__bookmarkedItemDeleteBtn').click(function () {
+        var act = $('.section__bookmarkedBtn-act').html();
+        var paused = $('.section__bookmarkedBtn-paused').html();
+        var all = $('.section__bookmarkedBtn-all').html();
+
+        act = act.split("(")[1];
+        act = act.substr(0, act.length - 1);
+        act = Number(act);
+
+        paused = paused.split("(")[1];
+        paused = paused.substr(0, paused.length - 1);
+        paused = Number(paused);
+
+        all = all.split("(")[1];
+        all = all.substr(0, all.length - 1);
+        all = Number(all);
+
+        if ($('.section__bookmarkedBtn-active').hasClass('section__bookmarkedBtn-act')) {
+            if (act - 1 >= 0) {
+                act = act - 1;
+                $('.section__bookmarkedBtn-act').html("Active (" + act + ")");
+                if (all - 1 >= 0) {
+                    all = all - 1;
+                    $('.section__bookmarkedBtn-all').html("All (" + all + ")");
+                }
+                $(this).parent().parent().remove();
+            }
+        } else if ($('.section__bookmarkedBtn-active').hasClass('section__bookmarkedBtn-paused')) {
+            if (paused - 1 >= 0) {
+                paused = paused - 1;
+                $('.section__bookmarkedBtn-paused').html("Paused (" + paused + ")");
+                if (all - 1 >= 0) {
+                    all = all - 1;
+                    $('.section__bookmarkedBtn-all').html("All (" + all + ")");
+                }
+                $(this).parent().parent().remove();
+            }
+        } else if ($('.section__bookmarkedBtn-active').hasClass('section__bookmarkedBtn-all')) {
+            if (all - 1 >= 0) {
+                all = all - 1;
+                $('.section__bookmarkedBtn-all').html("All (" + all + ")");
+                $(this).parent().parent().remove();
+            }
+        }
+        resizeEmptySpace();
+    });
+}
