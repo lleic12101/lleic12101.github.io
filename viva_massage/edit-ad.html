@@ -123,7 +123,7 @@
                                     <p class="section__editFormPhoneText">+44 (0)
                                         <span class="section__editFormPhoneTextSpan">7911-123-456</span>
                                     </p>
-                                    <input type="text" placeholder="Enter phone"
+                                    <input inputmode="numeric" pattern="[0-9]*" type="text" placeholder="Enter phone"
                                            class="section__loginInput section__editFormPhoneRowInput"/>
                                 </div>
                                 <span class="section__editFormPhoneFooterBtn section__editFormPhoneFooterBtn-change">
@@ -135,7 +135,8 @@
                                             verificatoin code.
                                         </span>
                                         <div class="section__editFormPhoneFooterRow">
-                                            <input type="number" placeholder="Enter code"
+                                            <input inputmode="numeric" pattern="[0-9]*" type="number"
+                                                   placeholder="Enter code"
                                                    class="section__loginInput section__editFormPhoneFooterRowInput"/>
                                             <button type="button"
                                                     class="section__loginBtn section__editFormPhoneFooterRowBtn">
@@ -230,12 +231,14 @@
                             <div class="section__editFormRow">
                                 <div class="section__detailsTextAndInput">
                                     <span class="section__detailsText">Incall price per hour</span>
-                                    <input type="number" required class="section__loginInput"/>
+                                    <input inputmode="numeric" pattern="[0-9]*" type="number" required
+                                           class="section__loginInput"/>
                                     <span class="euro"></span>
                                 </div>
                                 <div class="section__detailsTextAndInput">
                                     <span class="section__detailsText">Outcall price per hour</span>
-                                    <input type="number" required class="section__loginInput"/>
+                                    <input inputmode="numeric" pattern="[0-9]*" type="number" required
+                                           class="section__loginInput"/>
                                     <span class="euro"></span>
                                 </div>
                             </div>
