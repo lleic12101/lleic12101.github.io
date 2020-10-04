@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
-        <h1 style="display: none;">Edit ad</h1>
+        <h1 style="display: none;">Post an ad 2</h1>
         <header class="header">
             <div class="wrapper">
                 <div class="header__logoLinkBlock" itemprop="publisher" itemscope=""
@@ -98,55 +98,22 @@
         <div class="main">
             <div class="section__outer section__details section__bookmarked">
                 <div class="wrapper">
-                    <div class="section__detailsBlock">
-                        <div class="sections__detailsBtns">
-                            <button class="sections__detailsBtn">My details</button>
-                            <button class="sections__detailsBtn">My reviews</button>
-                            <button class="sections__detailsBtn">Bookmarked ads</button>
-                            <button class="sections__detailsBtn sections__detailsBtn-active">My ads</button>
-                        </div>
-                        <span class="section__loginTitle section__loginTitle-details">Edit ad</span>
-                        <span class="section__editId">Ad ID 456454566</span>
-                        <div class="section__editBtns">
-                            <button class="section__editBtn section__editBtn-active">Ad details</button>
-                            <button class="section__editBtn">Edit photos</button>
-                        </div>
-                        <form action="#!" class="section__editForm">
-                            <div class="section__detailsTextAndInput">
-                                <span class="section__detailsText">Name*</span>
-                                <input type="text" required class="section__loginInput"/>
+                    <div class="section__postAdBlock">
+                        <span class="section__loginTitle section__loginTitle-details">Post an ad</span>
+                        <div class="section__postAnAdBtnsBlock">
+                            <div class="section__postAnAdDecoBtns">
+                                <span class="section__postAnAdDeco"></span>
+                                <span class="section__postAnAdDecoBtn">Step 1</span>
+                                <span class="section__postAnAdDecoBtn section__postAnAdDecoBtn-active">Step 2</span>
+                                <span class="section__postAnAdDecoBtn">Step 3</span>
                             </div>
-                            <div class="section__editFormPhoneBlock">
-                                <div class="section__editFormPhoneRow">
-                                    <span class="section__detailsText">Phone</span>
-                                    <p class="section__editFormPhoneText">+44 (0)
-                                        <span class="section__editFormPhoneTextSpan">7911-123-456</span>
-                                    </p>
-                                    <input type="text" placeholder="Enter phone"
-                                           class="section__loginInput section__editFormPhoneRowInput"/>
-                                </div>
-                                <span class="section__editFormPhoneFooterBtn section__editFormPhoneFooterBtn-change">
-                                    Change phone number
-                                </span>
-                                <div class="section__editFormPhoneFooterWrapper">
-                                    <div class="section__editFormPhoneFooter">
-                                        <span class="section__editFormPhoneFooterText">We sent a text message with a 6-digit
-                                            verificatoin code.
-                                        </span>
-                                        <div class="section__editFormPhoneFooterRow">
-                                            <input type="number" placeholder="Enter code"
-                                                   class="section__loginInput section__editFormPhoneFooterRowInput"/>
-                                            <button type="button"
-                                                    class="section__loginBtn section__editFormPhoneFooterRowBtn">
-                                                Confirm
-                                            </button>
-                                        </div>
-                                        <span class="section__editFormPhoneFooterBtn section__editFormPhoneFooterBtn-resend">
-                                            Resend code
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="section__postAnAdBtns">
+                                <span class="section__postAnAdBtn">Contact info</span>
+                                <span class="section__postAnAdBtn section__postAnAdBtn-active">Ad details</span>
+                                <span class="section__postAnAdBtn">Upload Photos</span>
                             </div>
+                        </div>
+                        <form action="" class="section__editForm section__postAnAd-step2">
                             <div class="section__detailsTextAndInput section__detailsTextAndInput-none">
                                 <span class="section__detailsText">Location*</span>
                                 <input type="text" placeholder="Start entering your location" required
@@ -338,8 +305,9 @@ Here is another paragraph of input."></textarea>
                                     mark “NOT SEXUAL SEVICE”
                                 </span>
                             </div>
-                            <button type="submit" class="section__loginBtn section__loginBtn-small section__editFormBtn">
-                                Confirm
+                            <button type="submit"
+                                    class="section__loginBtn section__loginBtn-small section__postAnAd section__postAnAd-step2">
+                                Next step
                             </button>
                         </form>
                     </div>
