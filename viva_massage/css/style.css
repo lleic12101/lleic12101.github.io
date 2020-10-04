@@ -2890,6 +2890,12 @@ p.header__navLink:hover ~ .header__navList {
     color: #898989;
     cursor: pointer;
     margin-top: 4px;
+    cursor: pointer;
+}
+.section__editFormPhoneFooterBtn.section__editFormPhoneFooterBtn-change {
+    margin-top: -6px;
+    position: relative;
+    z-index: 1;
 }
 .section__editFormPhoneFooterBtn:hover {
     text-decoration: none;
@@ -3048,6 +3054,20 @@ p.header__navLink:hover ~ .header__navList {
 }
 .section__postAnAdDecoBtn-active {
     color: #DD0A6A;
+}
+.section__postAdBlock .section__editFormPhoneFooterBtn-change {
+    display: none;
+    margin-bottom: -10px;
+}
+.section__editFormPhoneRow {
+    height: 32px;
+}
+.section__postAdBlock .section__editFormPhoneTextSpan {
+    display: none;
+}
+.section__postAnAdPhoneSpan {
+    display: none;
+    margin-right: 15px;
 }
 /*POST AN AD END*/
 
