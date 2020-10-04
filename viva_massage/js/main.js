@@ -735,3 +735,12 @@ if ($('*').is('.section__postAnAd-step1')) {
         });
     });
 }
+
+//add pictures
+if ($('*').is('.section__postAnAdPictureIcon')) {
+    $('.section__postAnAdPictureIcon').click(function () {
+        if (!$(this).parent().hasClass('section__postAnAdPicture-gray')) {
+            $(this).parent().remove();
+        }
+    });
+}
