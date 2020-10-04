@@ -3069,6 +3069,13 @@ p.header__navLink:hover ~ .header__navList {
     display: none;
     margin-right: 15px;
 }
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 /*POST AN AD END*/
 
 /*MEDIA*/
