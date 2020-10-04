@@ -3073,6 +3073,120 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+.section__postAdBlock-3 {
+    width: 580px;
+}
+.section__postAnAdForm-step3 {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.section__postAnAdPictures {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+.section__postAnAdPicture {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0 10px 20px;
+}
+.section__postAnAdPictureImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+.section__postAnAdPictureIcon {
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: url(../img/icons/addPic.svg) no-repeat;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+.section__postAnAdPicture-gray {
+    background: #F3F3F3;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+.section__postAnAdPicture-gray input[type=file] {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none
+}
+.section__postAnAdPicture-gray.label {
+    width: 120px;
+    border: 2px dashed grey;
+    border-radius: 5px;
+    display: block;
+    padding: 1.2em;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center
+}
+.section__postAnAdPicture-gray.label:hover {
+    border: 2px solid #000
+}
+.section__postAnAdPicture-gray .section__postAnAdPictureIcon {
+    transform: rotate(0deg);
+}
+.section__postAnAdPictureGrayIcon {
+    background: url(../img/icons/img.svg) no-repeat;
+    width: 34px;
+    height: 34px;
+    display: block;
+    z-index: 1;
+    position: absolute;
+}
+.section__postAnAdBlockContent-3 {
+    width: 400px;
+    margin-top: 20px;
+}
+.section__postAnAdBlockContentText-small {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8C8C8C;
+    margin: 20px 10px 0;
+}
+.section__postAnAdBlockContentText-title {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #2B2B2B;
+    margin: 0 10px 7px;
+}
+.section__postAnAdBlockContentText {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #8C8C8C;
+    margin: 0 10px;
+}
 /*POST AN AD END*/
 
 /*MEDIA*/
@@ -4002,6 +4116,11 @@ input::-webkit-inner-spin-button {
         margin: 0 6px;
     }
     /*MY ADS END*/
+    /*POST AN AD*/
+    .section__postAdBlock-3 {
+        width: 100%;
+    }
+    /*POST AN AD END*/
 }
 @media screen and (max-width: 520px) {
     .footer__rightBlock {
@@ -4052,6 +4171,43 @@ input::-webkit-inner-spin-button {
     }
     .section__postAdBlock .section__loginTitle-details {
         margin-bottom: 15px;
+    }
+    .section__postAnAdBlockContent-3 {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .section__postAnAdBlockContent-3 .section__editForm {
+        margin-top: 20px;
+    }
+    .section__postAnAdForm-step3 {
+        align-items: center;
+    }
+    .section__postAnAdBtn-step3 {
+        width: calc(100% - 20px);
+    }
+    .section__postAnAdPictures {
+        margin-bottom: 14px;
+        padding: 0 10px;
+    }
+    .section__postAnAdBlockContentText {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .section__postAnAdPicture {
+        margin: 0 5px 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .section__postAnAdPictureGrayIcon {
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+    }
+    .section__postAnAdPictureIcon {
+        height: 12px;
+        width: 12px;
+        background-size: contain;
     }
     /*POST AN AD END*/
 }
