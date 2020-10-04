@@ -640,11 +640,13 @@ if ($('*').is('.section__editFormPhoneFooterBtn-change')) {
         $(this).parent().find('.section__editFormPhoneTextSpan').hide();
         $(this).parent().find('.section__editFormPhoneRowInput').show();
 
+        $(this).parent().parent().find('.section__editFormBtn').prop("disabled", true);
+        $(this).parent().parent().find('.section__editFormBtn').addClass('section__editFormBtn-disabled');
+
         var phone = $(this).parent().find('.section__editFormPhoneTextSpan').html();
         $(this).parent().find('.section__editFormPhoneRowInput').val(phone);
     });
     $(".section__editFormPhoneRowInput").mask("9999-999-9999");
-    // $(".section__editFormPhoneRowInput").mask("9999-999-9999", {autoclear: false});
     $('.section__editFormPhoneFooterRowBtn').click(function () {
         if ($('.section__editFormPhoneFooterRowInput').val().trim() != '' &&
             $('.section__editFormPhoneFooterRowInput').val().length == 6) {
@@ -656,6 +658,9 @@ if ($('*').is('.section__editFormPhoneFooterBtn-change')) {
 
             var phoneVal = $(this).parent().parent().parent().parent().find('.section__editFormPhoneRowInput').val();
             $(this).parent().parent().parent().parent().find('.section__editFormPhoneTextSpan').html(phoneVal);
+
+            $(this).parent().parent().parent().parent().parent().find('.section__editFormBtn').prop("disabled", false);
+            $(this).parent().parent().parent().parent().parent().find('.section__editFormBtn').removeClass('section__editFormBtn-disabled');
         } else {
             $(".section__editFormPhoneFooterRowInput").addClass("section__loginInput-error");
         }
