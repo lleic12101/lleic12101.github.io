@@ -699,7 +699,7 @@ if ($('*').is('.section__postAnAd-step1')) {
                 setTimeout(function () {
                     $(".section__postAnAd-step1").off("submit");
                     $(".section__postAnAd-step1").submit();
-                }, 400);
+                }, 300);
             } else {
                 $(".section__editFormPhoneFooterRowInput").addClass("section__loginInput-error");
             }
