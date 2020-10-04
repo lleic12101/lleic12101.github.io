@@ -680,3 +680,29 @@ if ($('*').is('.section__loginInput-cities')) {
         minLength: 2
     });
 }
+
+//post an ad phone mask
+if ($('*').is('.section__postAnAd-step1')) {
+    $(".section__editFormPhoneRowInput").mask("9999-999-9999");
+    $(".section__postAnAd-step1").submit(function (e) {
+        e.preventDefault();
+        $(this).find('.section__postAnAd-step1').addClass('section__editFormBtn-disabled');
+        $(this).find('.section__postAnAd-step1').prop("disabled", true);
+        $(this).find('.section__editFormPhoneFooterWrapper').slideDown();
+        $(this).find('.section__editFormPhoneRowInput').prop('disabled', true);
+
+        $(this).find('.section__editFormPhoneFooterRowBtn').click(function () {
+            if ($('.section__editFormPhoneFooterRowInput').val().trim() != '' &&
+                $('.section__editFormPhoneFooterRowInput').val().length == 6) {
+                $(".section__editFormPhoneRowInput").removeClass("section__loginInput-error");
+                $(this).parent().parent().parent().parent().children('.section__editFormPhoneFooterWrapper').slideUp();
+                setTimeout(function () {
+                    $(".section__postAnAd-step1").off("submit");
+                    $(".section__postAnAd-step1").submit();
+                }, 400);
+            } else {
+                $(".section__editFormPhoneFooterRowInput").addClass("section__loginInput-error");
+            }
+        });
+    });
+}
