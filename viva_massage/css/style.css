@@ -3016,11 +3016,15 @@ p.header__navLink:hover ~ .header__navList {
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
+    width: 266px;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 29px;
 }
 .section__postAnAdDeco {
     position: absolute;
     top: -10px;
-    left: -3px;
+    left: -8px;
     width: 286px;
     height: 50px;
     background: url(../img/postAnAd/bg.png) no-repeat;
@@ -3032,13 +3036,15 @@ p.header__navLink:hover ~ .header__navList {
     font-size: 14px;
     line-height: 15px;
     color: #8C8C8C;
-    margin: 0 25px;
     position: relative;
     z-index: 1;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.section__postAnAdDecoBtn:nth-child(3) {
+    margin-left: 10px;
 }
 .section__postAnAdDecoBtn-active {
     color: #DD0A6A;
