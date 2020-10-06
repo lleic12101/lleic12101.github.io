@@ -3301,7 +3301,14 @@ input::-webkit-inner-spin-button {
 
 }
 .header__navLink-threatments {
-
+    font-weight: bold;
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #222222;
+    margin-left: 10px;
+    cursor: pointer;
 }
 .header__navListInnerList {
     list-style: none;
@@ -3329,6 +3336,9 @@ input::-webkit-inner-spin-button {
 }
 .header__navListInnerListLi:last-child {
     margin-bottom: 0;
+}
+.header__navListInnerBlock-active .header__navListInnerList {
+    display: block;
 }
 /*TREATMENTS END*/
 
