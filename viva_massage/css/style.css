@@ -3286,6 +3286,9 @@ input::-webkit-inner-spin-button {
     list-style: none;
     display: none;
 }
+.section__menuHidden ul {
+    list-style: none;
+}
 .section__menuContentMore {
     font-family: Archivo, sans-serif;
     font-style: normal;

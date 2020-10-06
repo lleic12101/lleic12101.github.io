@@ -420,6 +420,8 @@ if ($(window).width() <= 656) {
     if (country != null) {
         $('.section__servicesMobileFilter').show();
         $('.header__navCityBtn').addClass("header__navBtn-active");
+        $('.header__navCityBtn').children(".header__navIconClose").show();
+        $('.header__navCityBtn').children(".header__navBtnIcon").hide();
         itemClick(null, 'section__servicesMobileFilterItem-country', country);
     }
     if (city != null) {
