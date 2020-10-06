@@ -231,6 +231,13 @@ img[alt]:after {
     width: 6.25px;
     height: 8.75px;
 }
+.find {
+    display: block;
+    background: url(../img/icons/find.svg) no-repeat center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+}
 /*ICONS END*/
 
 /*HEADER*/
@@ -3349,6 +3356,61 @@ input::-webkit-inner-spin-button {
 }
 /*TREATMENTS END*/
 
+/*FILTER*/
+.section__servicesFilter {
+    background: #FFFFFF;
+}
+.section__servicesFilterTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 5px 10px 7.5px 10px;
+}
+.section__servicesFilterTopLi {
+    width: 49%;
+    margin: 2.5px 0;
+}
+.section__servicesFilterTopLi a {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #222222;
+    text-decoration: none;
+}
+.section__servicesFilterTopLi a:hover {
+    text-decoration: underline;
+}
+.section__servicesFilterTopTitle {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222222;
+    margin-left: 10px;
+    display: block;
+    margin-top: 10px;
+}
+.section__servicesFilter {
+    position: relative;
+}
+.section__servicesFilter .section__loginInput-cities {
+    width: 260px;
+    margin: 10px 10px 0;
+    padding-left: 10px;
+}
+.section__servicesFilterIcon {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 18px;
+    right: 17px;
+}
+/*FILTER END*/
+
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
     .wrapper {
@@ -3553,6 +3615,24 @@ input::-webkit-inner-spin-button {
         display: none;
         margin-right: 0;
         margin-bottom: 0;
+        padding: 5px;
+        width: 100%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .section__servicesFilterTopTitle {
+        display: none;
+    }
+    .section__servicesFilterTop {
+        display: none;
+    }
+    .section__servicesFilter .section__loginInput-cities {
+        margin: 0;
+        width: 100%;
+    }
+    .section__servicesFilterIcon {
+        top: 14px;
+        right: 15px;
     }
     .main {
         padding-top: 0;
