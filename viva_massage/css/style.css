@@ -318,7 +318,7 @@ a.header__navLink:hover {
     padding: 10px 14px 10px 0;
 }
 .header__navList .header__navLink {
-    margin: 10px;
+    margin: 10px 10px 0px;
     width: inherit;
     font-weight: 500;
     max-width: 120px;
@@ -3296,6 +3296,42 @@ input::-webkit-inner-spin-button {
 }
 /*MENU END*/
 
+/*TREATMENTS*/
+.header__navListInnerBlock {
+
+}
+.header__navLink-threatments {
+
+}
+.header__navListInnerList {
+    list-style: none;
+    margin-top: 5px;
+    display: none;
+}
+.header__navIconClose {
+    display: none;
+}
+.header__navListInnerListLi a {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    color: #777777;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+}
+.header__navListInnerListLi a:hover {
+    border-bottom: 1px solid #DD0A6A;
+}
+.header__navListInnerListLi:last-child {
+    margin-bottom: 0;
+}
+/*TREATMENTS END*/
+
 /*MEDIA*/
 @media screen and (max-width: 1220px) {
     .wrapper {
@@ -3625,7 +3661,7 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
     }
     .header__navList .header__navLink {
-        margin: 5px 10px;
+        margin: 5px 10px 0;
     }
     .header__navListBlock:hover {
         background: #F3F3F3;

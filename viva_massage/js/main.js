@@ -761,4 +761,12 @@ if ($('*').is('.section__menuHeader')) {
         $(this).parent().children('.section__menuHidden').slideDown();
         $(this).remove();
     });
+    $('.header__navLink-threatments').click(function () {
+        if (!$(this).parent().find('.header__navListInnerList').hasClass("active")) {
+            $(this).parent().parent().parent().find('.header__navListInnerList').slideUp();
+            $(this).parent().parent().parent().find('.header__navListInnerList').removeClass("active");
+        }
+        $(this).parent().find('.header__navListInnerList').slideDown();
+        $(this).parent().find('.header__navListInnerList').addClass("active");
+    });
 }
