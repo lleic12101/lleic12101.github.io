@@ -316,8 +316,7 @@ function itemClick(that, thatClass, thatName) {
     if (itemClass == "section__servicesMobileFilterItem-country") {
         $(".section__servicesMobileFilterItem-city").show();
         setCountries('.section__servicesMobileFilterItem-city', names, links);
-    }
-    else if (itemClass == "section__servicesMobileFilterItem-city") {
+    } else if (itemClass == "section__servicesMobileFilterItem-city") {
         $(".section__servicesMobileFilterItem-part").show();
         setCountries('.section__servicesMobileFilterItem-part', names, links);
     } else if (itemClass == "section__servicesMobileFilterItem-part") {
@@ -341,8 +340,7 @@ function fieldsReset(itemClass) {
         sessionStorage.setItem('section__servicesMobileFilterItem-city', null);
         sessionStorage.setItem('section__servicesMobileFilterItem-part', null);
         sessionStorage.setItem('section__servicesMobileFilterItem-area', null);
-    }
-    else if (itemClass == "section__servicesMobileFilterItem-city") {
+    } else if (itemClass == "section__servicesMobileFilterItem-city") {
         $(".section__servicesMobileFilterItem-part").find('.section__servicesMobileFilterItemText').html("Select part of the city");
         $(".section__servicesMobileFilterItem-area").find('.section__servicesMobileFilterItemText').html("Select area");
         sessionStorage.setItem('section__servicesMobileFilterItem-part', null);
@@ -742,5 +740,21 @@ if ($('*').is('.section__postAnAdPictureIcon')) {
         if (!$(this).parent().hasClass('section__postAnAdPicture-gray')) {
             $(this).parent().remove();
         }
+    });
+}
+
+//top countries
+if ($('*').is('.section__menuHeader')) {
+    $('.section__menuHeader').click(function () {
+        $(this).toggleClass("section__menuHeader-active");
+        $(this).parent().children(".section__menuContent").slideToggle();
+    });
+    $('.section__menuContentListSpan').click(function () {
+        $(this).parent().toggleClass('section__menuContentListLi-active');
+        $(this).parent().find('.section__menuContentListInnerWrapper').slideToggle();
+    });
+    $('.section__menuContentMore').click(function () {
+        $(this).parent().children('.section__menuHidden').slideDown();
+        $(this).remove();
     });
 }
