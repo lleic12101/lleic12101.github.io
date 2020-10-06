@@ -197,7 +197,7 @@ function textareaInit() {
         this.value = this.value.replace(/ftp/gi, '');
         this.value = this.value.replace(/:\/\//gi, '');
         // this.value = this.value.replace(/\.(?=\S)/g, ". ");
-        if (this.value.trim() == '') this.value = '';
+        if (this.value.trim() === '') this.value = '';
         if (this.value.length > maxLen) this.value = this.value.substr(0, maxLen);
 
         $('.master__blockFormBtnBlockSymbols').html(this.value.length + " / " + maxLen);
@@ -217,11 +217,11 @@ function textareaInit() {
         this.selectionEnd = cursor - result;
     });
     $('.master__blockFormTextarea').keypress(function (key) {
-        if (key.charCode == 60 ||
-            key.charCode == 62 ||
-            key.charCode == 123 ||
-            key.charCode == 125 ||
-            key.charCode == 36) return false;
+        if (key.charCode === 60 ||
+            key.charCode === 62 ||
+            key.charCode === 123 ||
+            key.charCode === 125 ||
+            key.charCode === 36) return false;
     });
 }
 if (sessionStorage.getItem('formText') != null && !$('*').is('.master__blockReviewItem-reviews')) {
