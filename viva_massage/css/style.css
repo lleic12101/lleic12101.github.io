@@ -323,12 +323,12 @@ a.header__navLink:hover {
     font-weight: 500;
     max-width: 120px;
 }
-p.header__navLink:hover ~ .header__navList {
+p.header__navLink.hover:hover ~ .header__navList {
     display: flex;
     flex-direction: column;
     z-index: 10;
 }
-.header__navList:hover {
+.header__navList.hover:hover {
     display: flex;
     flex-direction: column;
 }
@@ -380,6 +380,9 @@ p.header__navLink:hover ~ .header__navList {
 }
 .header__navCityBtn {
     display: none;
+}
+.header__navCityBtn .close {
+    height: 20px;
 }
 .header__navBtnIcon {
     display: none;
@@ -3318,6 +3321,9 @@ input::-webkit-inner-spin-button {
 .header__navIconClose {
     display: none;
 }
+.header__navListInnerListLi {
+    padding: 0 0 5px 15px;
+}
 .header__navListInnerListLi a {
     font-family: Archivo, sans-serif;
     font-style: normal;
@@ -3325,8 +3331,6 @@ input::-webkit-inner-spin-button {
     font-size: 12px;
     line-height: 13px;
     color: #777777;
-    margin-bottom: 5px;
-    margin-left: 15px;
     text-decoration: none;
     transition: .3s;
     border-bottom: 1px solid transparent;
@@ -3666,20 +3670,8 @@ input::-webkit-inner-spin-button {
         padding: 10px 5px 7px;
         z-index: 2;
     }
-    .header__navListBlock:hover .header__navList {
-        display: flex;
-        flex-direction: column;
-    }
     .header__navList .header__navLink {
         margin: 5px 10px 0;
-    }
-    .header__navListBlock:hover {
-        background: #F3F3F3;
-        border-bottom: 2px solid #DD0A6A;
-    }
-    .header__navListBlock:hover p {
-        color: #1E1E1E;
-        font-weight: 600;
     }
     .header {
         box-shadow: none;
@@ -4294,6 +4286,39 @@ input::-webkit-inner-spin-button {
         padding-left: 20px;
     }
     /*MENU END*/
+    /*TREATMENTS*/
+    .header__navLink-threatments {
+        font-size: 14px;
+        line-height: unset;
+        margin-top: 3px;
+    }
+    .header__navListInnerBlock {
+        padding-bottom: 5px;
+    }
+    .header__navListInnerListLi a {
+        font-size: 13px;
+        line-height: unset;
+    }
+    .header__navListBlock .header__navIconClose {
+        height: 20px;
+    }
+
+    .header__navListBlock-active .header__navList {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__navListBlock-active {
+        background: #F3F3F3;
+        border-bottom: 2px solid #DD0A6A;
+    }
+    .header__navListBlock-active p {
+        color: #1E1E1E;
+        font-weight: 600;
+    }
+    p.header__navLink:hover ~ .header__navList {
+        pointer-events: none;
+    }
+    /*TREATMENTS END*/
 }
 @media screen and (max-width: 520px) {
     .footer__rightBlock {
@@ -4389,5 +4414,23 @@ input::-webkit-inner-spin-button {
         background-size: contain;
     }
     /*POST AN AD END*/
+    /*TREATMENTS*/
+    .header__navLink-threatments {
+        font-size: 14px;
+        line-height: unset;
+        margin-top: 3px;
+    }
+    .header__navListInnerBlock {
+        padding-bottom: 5px;
+    }
+    .header__navListInnerListLi a {
+        font-size: 13px;
+        line-height: unset;
+    }
+    .header__navList-treatments {
+        right: -105px;
+        max-width: 300px;
+    }
+    /*TREATMENTS END*/
 }
 /*MEDIA END*/
