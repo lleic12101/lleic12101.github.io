@@ -4318,6 +4318,10 @@ input::-webkit-inner-spin-button {
     p.header__navLink:hover ~ .header__navList {
         pointer-events: none;
     }
+    .header__navList-treatments {
+        right: -105px;
+        max-width: 300px;
+    }
     /*TREATMENTS END*/
 }
 @media screen and (max-width: 520px) {
@@ -4426,10 +4430,6 @@ input::-webkit-inner-spin-button {
     .header__navListInnerListLi a {
         font-size: 13px;
         line-height: unset;
-    }
-    .header__navList-treatments {
-        right: -105px;
-        max-width: 300px;
     }
     /*TREATMENTS END*/
 }
