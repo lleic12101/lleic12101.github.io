@@ -750,6 +750,8 @@ if ($('*').is('.section__menuHeader')) {
         $(this).parent().children(".section__menuContent").slideToggle();
     });
     $('.section__menuContentListSpan').click(function () {
+        $('.section__menuContentListSpan').parent().removeClass('section__menuContentListLi-active');
+        $('.section__menuContentListInnerWrapper').slideUp();
         $(this).parent().toggleClass('section__menuContentListLi-active');
         $(this).parent().find('.section__menuContentListInnerWrapper').slideToggle();
     });
