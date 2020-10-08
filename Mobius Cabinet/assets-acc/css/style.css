@@ -539,7 +539,7 @@ html, body {
     width: 100%;
     margin-bottom: 18px;
     padding-right: 46px;
-    min-height: 52px;
+    /*min-height: 52px;*/
 }
 .main__contentHeadlineLeftBlock {
     display: flex;
