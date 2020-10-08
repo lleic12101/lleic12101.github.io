@@ -2267,6 +2267,7 @@ html, body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        height: auto;
     }
     .main {
         max-width: calc(100%);
@@ -2457,6 +2458,7 @@ html, body {
     .main {
         margin: 78px 10px 10px;
         border-radius: 25px;
+        height: max-content;
         width: calc(100% - 20px);
     }
     .main__contentBlock {
