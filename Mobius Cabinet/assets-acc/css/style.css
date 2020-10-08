@@ -2565,7 +2565,7 @@ html, body {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-        flex: 1 0 auto;
+        /*flex: 1 0 auto;*/
         flex-basis: auto;
     }
 }
