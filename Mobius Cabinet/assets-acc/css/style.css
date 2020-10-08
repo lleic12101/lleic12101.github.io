@@ -538,6 +538,7 @@ html, body {
     width: 100%;
     margin-bottom: 18px;
     padding-right: 46px;
+    min-height: 52px;
 }
 .main__contentHeadlineLeftBlock {
     display: flex;
@@ -635,6 +636,7 @@ html, body {
     font-family: Montserrat-ExtraBold;
     font-size: 45.32px;
     letter-spacing: 1.35px;
+    display: block;
 }
 .main__contentHeadlineLeftBlock .mainSmall__buttons {
     margin-top: 5px;
