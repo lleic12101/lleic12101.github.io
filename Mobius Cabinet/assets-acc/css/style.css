@@ -529,6 +529,7 @@ html, body {
     align-items: flex-start;
     padding: 44px 10px 15px 39px;
     width: 100%;
+    height: max-content;
 }
 .main__contentHeadlineBlock {
     display: flex;
