@@ -539,7 +539,6 @@ html, body {
     width: 100%;
     margin-bottom: 18px;
     padding-right: 46px;
-    /*min-height: 52px;*/
 }
 .main__contentHeadlineLeftBlock {
     display: flex;
@@ -2565,7 +2564,6 @@ html, body {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-        /*flex: 1 0 auto;*/
         flex-basis: auto;
     }
 }
