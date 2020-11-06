@@ -729,10 +729,6 @@ input {
 .form_radio input[type=radio]:checked + label {
     color: #01E2FF;
 }
-/*.form_radio input[type=radio]:checked + label img {*/
-/*    color: #01E2FF;*/
-/*    filter: invert(60%) sepia(46%) saturate(1498%) hue-rotate(147deg) brightness(140%) contrast(120%);*/
-/*}*/
 /*RADIO BUTTON END*/
 
 /*NOTE*/
@@ -951,6 +947,7 @@ input {
         align-items: flex-start;
         padding: 8px 0;
         min-height: 560px;
+        height: 560px;
     }
     .headerTop__langBtn {
         display: flex;

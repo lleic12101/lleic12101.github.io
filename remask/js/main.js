@@ -12,13 +12,15 @@ $(".main__buyControlBtnsBtn").click(function () {
     $(".main__buyControlActive").removeClass("main__buyControlActive-pro");
     $(".main__buyControlActive").removeClass("main__buyControlActive-basic");
     $(".main__buyControlActive").removeClass("main__buyControlActive-lite");
+    
+    document.querySelector("#radio-2").checked = true;
 
     if ($(this).hasClass("main__buyControlBtnsBtn-pro")) {
         $(".main__buyControlActive").addClass("main__buyControlActive-pro");
         $(".main__buyControlNameType").html("PRO");
 
         $(".main__buyControlRadioBtns-label1").html(`9 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-        $(".main__buyControlRadioBtns-label2").html(`17 000 <img src="img/icons/rouble.svg" alt="rouble"/>`);
+        $(".main__buyControlRadioBtns-label2").html(`17 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
 
         $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
@@ -43,7 +45,7 @@ $(".main__buyControlBtnsBtn").click(function () {
         $(".main__buyControlNameType").html("Basic");
 
         $(".main__buyControlRadioBtns-label1").html(`7 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-        $(".main__buyControlRadioBtns-label2").html(`14 000 <img src="img/icons/rouble.svg" alt="rouble"/>`);
+        $(".main__buyControlRadioBtns-label2").html(`14 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
 
         $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
@@ -64,7 +66,7 @@ $(".main__buyControlBtnsBtn").click(function () {
         $(".main__buyControlNameType").html("Lite");
 
         $(".main__buyControlRadioBtns-label1").html(`4 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-        $(".main__buyControlRadioBtns-label2").html(`7 000 <img src="img/icons/rouble.svg" alt="rouble"/>`);
+        $(".main__buyControlRadioBtns-label2").html(`7 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
 
         $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
