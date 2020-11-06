@@ -12,7 +12,7 @@ $(".main__buyControlBtnsBtn").click(function () {
     $(".main__buyControlActive").removeClass("main__buyControlActive-pro");
     $(".main__buyControlActive").removeClass("main__buyControlActive-basic");
     $(".main__buyControlActive").removeClass("main__buyControlActive-lite");
-    
+
     document.querySelector("#radio-2").checked = true;
 
     if ($(this).hasClass("main__buyControlBtnsBtn-pro")) {
@@ -93,7 +93,7 @@ $(window).scroll(function () {
     var a = $(window).scrollTop();
     var b = 60;
     currentScrollTop = a;
-    if (c < currentScrollTop && a > b + b) {
+    if (c < currentScrollTop && a > b + b && !$("body").hasClass("body-fixed")) {
         navbar.addClass("scrollUp");
         $("header .navbar-collapsed-nav").slideUp(300);
     } else if (c > currentScrollTop && !(a <= b)) {
