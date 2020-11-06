@@ -901,7 +901,9 @@ body {
         left: -583px;
         z-index: 11;
         width: 543px;
-        height: 100vh;
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+        min-height: -webkit-fill-available;
         background: #14171E;
         box-shadow: 24px 0px 82px rgba(1, 226, 255, 0.11);
         transition: .3s;
@@ -977,9 +979,6 @@ body {
     .scrollUp .wrapper {
         top: -120px;
     }
-    /*.body-fixed {*/
-    /*    overflow-y: hidden;*/
-    /*}*/
     .header__mobileToggleBlockTop {
         width: 100%;
     }
