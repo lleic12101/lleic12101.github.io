@@ -939,6 +939,7 @@ input {
         background: #1f3741;
         width: 100%;
         height: calc(100vh - 59px);
+        max-height: calc(100vh - 59px);
         overflow-y: auto;
     }
     .header__mobileToggleBlockContent {
