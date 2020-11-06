@@ -99,3 +99,9 @@ $(window).scroll(function () {
     }
     c = currentScrollTop;
 });
+
+//change rouble
+$(".main__buyRoubleRadio").click(function () {
+    $(".main__buyRoubleRadio").parent().find("img").attr("src", "img/icons/rouble.svg");
+    $(this).parent().find("img").attr("src", "img/icons/rouble-blue.svg");
+});
