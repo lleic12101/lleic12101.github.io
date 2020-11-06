@@ -10,6 +10,40 @@
 </head>
 <body>
 <header class="header">
+    <div class="header__mobileToggleBlock">
+        <div class="header__mobileToggleBlockContent">
+            <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
+            <span class="header__mobileToggleDelimiter"></span>
+            <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
+            <span class="header__mobileToggleDelimiter"></span>
+            <a href="#!" class="link-animation headerBottom__link">Купить</a>
+            <span class="header__mobileToggleDelimiter"></span>
+            <a href="#!" class="link-animation headerBottom__link">Контакты</a>
+            <span class="header__mobileToggleDelimiter"></span>
+            <div class="headerTop__office">
+                <img src="img/icons/user.svg" class="headerTop__officeIcon" alt="user"/>
+                <img src="img/icons/user-filled.png" class="headerTop__officeIcon-filled" alt="user"/>
+                <a href="#!" class="headerTop__officeLink">Личный кабинет</a>
+            </div>
+            <div class="headerTop__lang">
+                <div class="headerTop__langBtn">
+                    <p class="headerTop__langText">Изменить язык</p>
+                    <img src="img/icons/list.svg" alt="list" class="list headerTop__langIcon">
+                </div>
+                <div class="headerTop__langItems">
+                    <a href="#!" class="headerTop__langItem">English</a>
+                    <a href="#!" class="headerTop__langItem">中文</a>
+                    <a href="#!" class="headerTop__langItem">Русский</a>
+                    <a href="#!" class="headerTop__langItem">Français</a>
+                    <a href="#!" class="headerTop__langItem">हिंदी</a>
+                    <a href="#!" class="headerTop__langItem">Español</a>
+                    <a href="#!" class="headerTop__langItem">বাংলা</a>
+                    <a href="#!" class="headerTop__langItem">Português</a>
+                    <a href="#!" class="headerTop__langItem">عرب</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="headerTop">
             <div class="headerTop__lang">
@@ -37,7 +71,16 @@
         </div>
         <div class="headerBottom">
             <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
-            <a href="#!" class="link-animation headerBottom__link">Обзор</a>
+            <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
+            <div class="burger burger-1 headerBottom__burgerLink">
+                <input type="checkbox" name="burger1" id="burger1"/>
+                <label for="burger1">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                    <span class="txt">Burger</span>
+                </label>
+            </div>
             <a href="#!" class="headerBottom__logo"><img src="img/logo.svg" alt="logo"></a>
             <a href="#!" class="link-animation headerBottom__link">Купить</a>
             <a href="#!" class="link-animation headerBottom__link">Контакты</a>
@@ -188,6 +231,7 @@
             </div>
             <div class="main__buyControlBlock">
                 <div class="main__buyControlBtns">
+                    <span class="main__buyControlActive main__buyControlActive-pro"></span>
                     <a href="#!" class="main__buyControlBtnsBtn main__buyControlBtnsBtn-pro main__buyControlBtnsBtn-active">PRO</a>
                     <a href="#!" class="main__buyControlBtnsBtn main__buyControlBtnsBtn-basic">Basic</a>
                     <a href="#!" class="main__buyControlBtnsBtn main__buyControlBtnsBtn-lite">Lite</a>

@@ -33,6 +33,9 @@
     font-size: 16px;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 body {
     background: #14171E;
     font-size: 16px;
@@ -40,7 +43,6 @@ body {
     font-family: "Gotham Pro";
     font-style: normal;
     font-weight: normal;
-    overflow-x: hidden;
 }
 
 .wrapper {
@@ -233,9 +235,6 @@ body {
 .headerTop__office:hover .headerTop__officeIcon-filled {
     opacity: 1;
 }
-.headerTop__office:hover {
-
-}
 .headerTop__office .headerTop__officeLink:after {
     content: '';
     width: 100%;
@@ -251,7 +250,75 @@ body {
 .headerTop__office:hover .headerTop__officeLink:after {
     transform: scale(1, 1);
 }
+.headerBottom__burgerLink {
+    display: none;
+}
 /*HEADER END*/
+
+/*BURGER*/
+input {
+    display: none;
+    outline: none;
+}
+.burger {
+    width: 40px;
+    height: 42px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 0px;
+    display: none;
+    z-index: 11;
+}
+.burger label {
+    width: 50px;
+    height: 42px;
+    display: block;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+.bar {
+    width: 100%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    pointer-events: none;
+}
+.bar-1 {
+    top: 4px;
+}
+.bar-2 {
+    top: 18px;
+}
+.bar-3 {
+    top: 32px;
+}
+.txt {
+    display: none;
+}
+.burger-1 input:checked ~ label .bar-1 {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.burger-1 input:checked ~ label .bar-2 {
+    left: -100%;
+}
+.burger-1 input:checked ~ label .bar-3 {
+    top: 18px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.header__mobileToggleBlock {
+    display: none;
+}
+/*BURGER END*/
 
 /*MAIN*/
 .main {
@@ -507,6 +574,7 @@ body {
     height: 740px;
     margin-right: 160px;
     position: relative;
+    z-index: 1;
 }
 .main__buyControlBtns {
     width: 100%;
@@ -517,6 +585,7 @@ body {
     justify-content: space-between;
     background: #14171E;
     border-radius: 6px;
+    position: relative;
 }
 .main__buyControlBtnsBtn {
     width: 120px;
@@ -531,17 +600,41 @@ body {
     font-size: 18px;
     color: #FFFFFF;
     background: transparent;
+    position: relative;
+    z-index: 1;
 }
 .main__buyControlBtnsBtn-active {
-    background: #01E2FF;
     color: #14171E;
 }
 .main__buyControlBtnsBtn:hover {
-    background: #007888;
+    background: rgba(1, 226, 255, .2);
     color: #14171E;
 }
-.main__buyControlBtnsBtn-active:hover {
+.main__buyControlActive {
+    position: absolute;
+    width: 120px;
+    height: 44px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: 500;
+    font-size: 18px;
     background: #01E2FF;
+    left: unset;
+    right: unset;
+    transition: .3s;
+}
+.main__buyControlActive-pro {
+    left: 8px;
+}
+.main__buyControlActive-basic {
+    left: 135px;
+}
+.main__buyControlActive-lite {
+    left: 263px;
 }
 .main__buyControlName {
     display: flex;
@@ -670,3 +763,456 @@ body {
     font-weight: 500;
 }
 /*FOOTER END*/
+
+@media screen and (max-width: 1261px) {
+    .wrapper {
+        width: 100%;
+    }
+    .main__bgName {
+        left: -100px;
+    }
+    .main__remask .wrapper {
+        padding-top: 60px;
+    }
+    .main__levels .wrapper {
+        padding-top: 150px;
+    }
+    .main__buy .wrapper {
+        padding-top: 200px;
+    }
+    .main__buyControlBlock {
+        height: 700px;
+    }
+    .headerBottom__logo {
+        margin: 0 60px;
+    }
+    .main__aboutProsText {
+        width: 400px;
+    }
+    .main__buyControlBlock {
+        margin-right: 0px;
+    }
+    .main__buy .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+    .main__buyImgBlock {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .main__buyImgBlockMask {
+        width: 100%;
+        top: unset;
+        position: relative;
+    }
+    .main__buyImgBlockSmoke-front {
+        z-index: 1;
+        left: -150px;
+    }
+    .main__levelsTextBlock {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main__aboutPros .wrapper {
+        flex-direction: column-reverse;
+    }
+    .main__aboutProsImg {
+        margin: 0 -100px 0 0;
+        width: 100%;
+    }
+    .main__aboutProsText {
+        max-width: 600px;
+        width: auto;
+    }
+    .main__levels .wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main__levelsImg {
+        margin: 0 -100px 0 0;
+        width: 100%;
+    }
+    .main__pros .wrapper {
+        justify-content: center;
+    }
+    .main__prosItemText {
+        width: 130px;
+    }
+    .main__prosItem {
+        height: 190px;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    .main__prosItemIcon {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .main__prosDelimiter {
+        display: none;
+    }
+    .main__prosItemText {
+        font-size: 14px;
+    }
+    .main__prosItemIcon {
+        transform: scale(0.7);
+    }
+    .main__levels .wrapper {
+        padding-top: 110px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .main__pros .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main__bgName {
+        display: none;
+    }
+    .main__prosItem {
+        min-width: 180px;
+        margin: 30px 10px 0;
+    }
+    .header {
+        padding-top: 60px;
+    }
+    .header .wrapper {
+        background: #1f3741;
+        height: 60px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transition: .3s;
+    }
+    .headerTop {
+        display: none;
+    }
+    .headerBottom {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .headerBottom__logo {
+        margin: 0;
+    }
+    .headerBottom__cart {
+        position: relative;
+        bottom: unset;
+        right: unset;
+        transform: translateY(0);
+    }
+    .headerBottom .headerBottom__link {
+        display: none;
+    }
+    .headerBottom__logo img {
+        height: 35px;
+        margin-top: 3px;
+    }
+    .headerBottom__burgerLink {
+        display: flex;
+        margin-top: 3px;
+    }
+    .headerBottom__logoBlock {
+        display: flex;
+        flex-direction: row;
+    }
+    .burger {
+        margin-left: -2px;
+        transform: scale(.45);
+    }
+    .headerBottom__cart {
+        transform: scale(.6);
+    }
+
+    .header__mobileToggleBlock {
+        position: fixed;
+        top: 59px;
+        z-index: 9;
+        background: #1f3741;
+        width: 100%;
+        height: calc(100vh - 59px);
+    }
+    .header__mobileToggleBlockContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 0;
+    }
+    .headerTop__langBtn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .headerTop__langText {
+        margin-left: 9px;
+        margin-right: 0;
+        font-size: 12px;
+    }
+    .header__mobileToggleDelimiter {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #5A5F6D;
+    }
+    .headerBottom__link {
+        margin: 0;
+        padding-left: 20px;
+        font-weight: 500;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 12.5px;
+    }
+    .headerBottom__link:hover:after {
+        display: none;
+    }
+    .headerTop__officeLink {
+        font-size: 12px;
+    }
+    .headerTop__office {
+        margin-left: 20px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .headerTop__langBtn {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-left: 22px;
+    }
+    .headerTop__langItems {
+        margin-left: 15px;
+        top: 17px;
+        padding-bottom: 0;
+    }
+    .headerTop__langItem {
+        font-size: 12px;
+        padding-left: 10px;
+        height: 30px;
+    }
+    .scrollUp .wrapper {
+        top: -60px;
+    }
+    .body-fixed {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer .wrapper {
+        flex-direction: column-reverse;
+    }
+    .footer__text:first-child {
+        margin-top: 10px;
+    }
+    .main__remaskMask {
+        width: 100%;
+        margin: -50px 0 0 0;
+    }
+    .main__levelsTextBlockHeadlineNum {
+        font-size: 100px;
+    }
+    .main__levelsTextBlockHeadlineText {
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    .main__levelsTextBlockItems {
+        padding-left: 25px;
+    }
+    .main__levels .wrapper {
+        padding-top: 80px;
+    }
+    .main__pros .wrapper {
+        padding: 40px 15px;
+    }
+    .main__aboutProsHeadline {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    .main__more .wrapper {
+        padding-top: 80px;
+    }
+    .main__buyControlBlock {
+        height: 670px;
+    }
+    .main__aboutProsText {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 556px) {
+    .main__remaskBrand {
+        width: 290px;
+    }
+    .main__remaskText {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .main__levelsTextBlockItem {
+        margin-bottom: 30px;
+    }
+    .main__levelsTextBlockHeadline {
+        margin-bottom: 30px;
+    }
+    .main__aboutProsImg {
+        margin: 0 -50px 0 0;
+    }
+    .main__levelsImg {
+        margin: 0 -50px 0 0;
+    }
+    .main__remaskMask {
+        margin: -20px 0 0 0;
+    }
+    .main__levels .wrapper {
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .main__prosItemIcon {
+        transform: scale(1);
+        margin-bottom: 10px;
+    }
+    .main__prosItem {
+        height: auto;
+    }
+    .main__pros .wrapper {
+        padding: 20px 15px;
+    }
+    .main__buyControlBlock {
+        height: 650px;
+        width: 100%;
+    }
+    .main__more .wrapper {
+        padding-top: 25px;
+    }
+
+    .main__buyControlBtnsBtn {
+        width: 100px;
+    }
+    .main__buyControlActive {
+        width: 100px;
+    }
+    .main__buyControlActive-lite {
+        left: 278px;
+    }
+    .main__buyControlActive-basic {
+        left: 145px;
+    }
+    .main__aboutProsText {
+        font-size: 14px;
+    }
+    .main__levelsTextBlockItemText {
+        font-size: 16px;
+    }
+    .main__aboutProsHeadline {
+        font-size: 26px;
+        margin-bottom: 10px;
+        line-height: 36px;
+    }
+    .main__aboutProsTextBlock {
+        padding: 0 15px;
+    }
+    .main__moreText {
+        padding: 0 15px;
+    }
+    .main__buyControlActive {
+        display: none;
+    }
+    .main__buyControlBtnsBtn-active {
+        color: #14171E;
+        background: #01E2FF;
+    }
+    .main__buyControlBtnsBtn-active:hover {
+        background: #01E2FF;
+    }
+    .main__buyControlName {
+        margin: 30px 0;
+    }
+    .main__buyControlBlock {
+        height: auto;
+        padding: 0 15px 35px;
+    }
+    .main__buyControlBtn {
+        margin-top: 20px;
+    }
+    .main__buyControlRadioBtns {
+        flex-direction: column;
+    }
+    .main__buyControlInListText {
+        font-size: 16px;
+    }
+    .main__buyControlListItemText {
+        font-size: 16px;
+    }
+    .main__buyControlNameImg {
+        width: 170px;
+    }
+    .main__buyControlNameType {
+        font-size: 40px;
+        margin-bottom: -7px;
+    }
+    .main__more .btn {
+        width: calc(100% - 30px);
+    }
+    .main__buyControlName {
+        justify-content: center;
+    }
+    .main__buySmoke {
+        top: -500px;
+    }
+    .main__levelsTextBlockItemText {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .footer__text {
+        text-align: center;
+        font-size: 12px;
+    }
+    .footer__text:first-child {
+        margin-bottom: 5px;
+    }
+    .footer .wrapper {
+        padding: 10px 10px;
+    }
+    .main__buyControlBlock {
+        padding: 0 0 35px;
+    }
+    .main__buy .wrapper {
+        padding-top: 60px;
+    }
+    .main__buyControlBtnsBtn {
+        width: 88px;
+    }
+    .main__buyControlBtn {
+        margin-top: 10px;
+    }
+    .main__buyImgBlock {
+        margin-bottom: 50px;
+    }
+    .main__levelsTextBlockHeadlineNum {
+        font-size: 80px;
+    }
+    .main__levelsTextBlockHeadlineText {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 0;
+    }
+    .main__levelsTextBlockItems {
+        padding-left: 18px;
+    }
+    .main__levelsTextBlockItemIcon {
+        margin-right: 20px;
+    }
+    .main__remaskBrand {
+        width: 260px;
+    }
+}

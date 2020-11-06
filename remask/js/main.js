@@ -1,12 +1,20 @@
-﻿$(".headerTop__langBtn").click(function () {
+﻿//language menu
+$(".headerTop__langBtn").click(function () {
     $(".headerTop__langItems").slideToggle();
     $(this).find(".list").toggleClass("headerTop__langIcon-rotated");
 });
+
+//buy block
 $(".main__buyControlBtnsBtn").click(function () {
     $(".main__buyControlBtnsBtn").removeClass("main__buyControlBtnsBtn-active");
     $(this).addClass("main__buyControlBtnsBtn-active");
 
+    $(".main__buyControlActive").removeClass("main__buyControlActive-pro");
+    $(".main__buyControlActive").removeClass("main__buyControlActive-basic");
+    $(".main__buyControlActive").removeClass("main__buyControlActive-lite");
+
     if ($(this).hasClass("main__buyControlBtnsBtn-pro")) {
+        $(".main__buyControlActive").addClass("main__buyControlActive-pro");
         $(".main__buyControlNameType").html("PRO");
 
         $(".main__buyControlRadioBtns-label1").html(`9 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
@@ -31,6 +39,7 @@ $(".main__buyControlBtnsBtn").click(function () {
 
         $(".main__buyImgBlockMask").attr("src", "img/main/mask-pro.png");
     } else if ($(this).hasClass("main__buyControlBtnsBtn-basic")) {
+        $(".main__buyControlActive").addClass("main__buyControlActive-basic");
         $(".main__buyControlNameType").html("Basic");
 
         $(".main__buyControlRadioBtns-label1").html(`7 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
@@ -51,6 +60,7 @@ $(".main__buyControlBtnsBtn").click(function () {
 
         $(".main__buyImgBlockMask").attr("src", "img/main/mask-basic.png");
     } else if ($(this).hasClass("main__buyControlBtnsBtn-lite")) {
+        $(".main__buyControlActive").addClass("main__buyControlActive-lite");
         $(".main__buyControlNameType").html("Lite");
 
         $(".main__buyControlRadioBtns-label1").html(`4 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
@@ -67,4 +77,25 @@ $(".main__buyControlBtnsBtn").click(function () {
 
         $(".main__buyImgBlockMask").attr("src", "img/main/mask-lite.png");
     }
+});
+
+//burger menu
+$('#burger1').click(function () {
+    $("html, body").toggleClass("body-fixed");
+    $('.header__mobileToggleBlock').slideToggle();
+});
+
+//sticky header
+var c, currentScrollTop = 0, navbar = $("header");
+$(window).scroll(function () {
+    var a = $(window).scrollTop();
+    var b = 60;
+    currentScrollTop = a;
+    if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+        $("header .navbar-collapsed-nav").slideUp(300);
+    } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp")
+    }
+    c = currentScrollTop;
 });
