@@ -253,72 +253,34 @@ body {
 .headerBottom__burgerLink {
     display: none;
 }
-/*HEADER END*/
-
-/*BURGER*/
-input {
-    display: none;
-    outline: none;
-}
-.burger {
-    width: 40px;
-    height: 42px;
-    position: relative;
-    overflow: hidden;
-    margin-left: 20px;
-    margin-right: 0px;
-    display: none;
-    z-index: 11;
-}
-.burger label {
-    width: 50px;
-    height: 42px;
-    display: block;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    cursor: pointer;
-}
-.bar {
-    width: 100%;
-    height: 3px;
-    display: block;
-    position: absolute;
+.header__closebleMask {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: 0;
     left: 0;
-    border-radius: 10px;
-    background: #fff;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    pointer-events: none;
+    background: rgba(20, 23, 30, 0.2);
+    backdrop-filter: blur(19px);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
-.bar-1 {
-    top: 4px;
-}
-.bar-2 {
-    top: 18px;
-}
-.bar-3 {
-    top: 32px;
-}
-.txt {
-    display: none;
-}
-.burger-1 input:checked ~ label .bar-1 {
-    top: 18px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.burger-1 input:checked ~ label .bar-2 {
-    left: -100%;
-}
-.burger-1 input:checked ~ label .bar-3 {
-    top: 18px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+.header__closebleMask-active {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 .header__mobileToggleBlock {
     display: none;
 }
-/*BURGER END*/
+.header__mobileToggleBlockContent-lang {
+    display: none;
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+/*HEADER END*/
 
 /*MAIN*/
 .main {
@@ -877,17 +839,18 @@ input {
         margin: 30px 10px 0;
     }
     .header {
-        padding-top: 60px;
+        padding-top: 120px;
     }
     .header .wrapper {
-        background: #1f3741;
-        height: 60px;
+        background: #14171E;
+        height: 120px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         position: fixed;
         top: 0;
         left: 0;
         z-index: 10;
         transition: .3s;
+        padding: 0 45px 0 40px;
     }
     .headerTop {
         display: none;
@@ -913,53 +876,49 @@ input {
         display: none;
     }
     .headerBottom__logo img {
-        height: 35px;
+        height: 65px;
         margin-top: 3px;
     }
     .headerBottom__burgerLink {
         display: flex;
         margin-top: 3px;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
     }
     .headerBottom__logoBlock {
         display: flex;
         flex-direction: row;
     }
-    .burger {
-        margin-left: -2px;
-        transform: scale(.45);
-    }
     .headerBottom__cart {
-        transform: scale(.6);
+        transform: scale(1);
     }
 
     .header__mobileToggleBlock {
+        display: block;
         position: fixed;
-        top: 59px;
-        z-index: 9;
-        background: #1f3741;
-        width: 100%;
-        height: calc(100vh - 59px);
-        max-height: calc(100vh - 59px);
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
+        top: 0;
+        left: -583px;
+        z-index: 11;
+        width: 543px;
+        height: 100vh;
+        background: #14171E;
+        box-shadow: 24px 0px 82px rgba(1, 226, 255, 0.11);
+        transition: .3s;
+    }
+    .header__mobileToggleBlock-active {
+        left: 0;
     }
     .header__mobileToggleBlockContent {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 8px 0;
-        min-height: 520px;
+        height: 100%;
+        justify-content: space-between;
     }
-    .headerTop__langBtn {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-left: 20px;
-    }
-    .headerTop__langText {
-        margin-left: 9px;
-        margin-right: 0;
-        font-size: 12px;
+    .header__mobileToggleBlockContent .footer__text, .header__mobileToggleBlockContent-lang .footer__text {
+        margin-left: 40px;
+        margin-bottom: 24px;
     }
     .header__mobileToggleDelimiter {
         display: block;
@@ -969,43 +928,99 @@ input {
     }
     .headerBottom__link {
         margin: 0;
-        padding-left: 20px;
+        padding: 30px 0 30px 40px;
         font-weight: 500;
-        height: 40px;
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
-        font-size: 12.5px;
+        font-size: 24px;
+        line-height: 23px;
+        /*font-size: 12.5px;*/
     }
     .headerBottom__link:hover:after {
         display: none;
     }
     .headerTop__officeLink {
-        font-size: 12px;
+        font-size: 20px;
+        margin-left: 15px;
     }
     .headerTop__office {
-        margin-left: 20px;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-left: 40px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .headerTop__officeIcon {
+        width: 13.47px;
+    }
+    .headerTop__officeIcon-filled {
+        width: 13.47px;
+    }
+    .headerTop__lang {
+        width: 100%;
     }
     .headerTop__langBtn {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        padding-left: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 40px;
+        width: 100%;
+        justify-content: space-between;
     }
-    .headerTop__langItems {
-        margin-left: 15px;
-        top: 17px;
-        padding-bottom: 0;
+    .headerTop__langIcon {
+        transform: rotate(90deg);
     }
-    .headerTop__langItem {
-        font-size: 12px;
-        padding-left: 10px;
-        height: 30px;
+    .headerTop__langText {
+        margin: 0;
+        font-size: 20px;
     }
     .scrollUp .wrapper {
-        top: -60px;
+        top: -120px;
+    }
+    .body-fixed {
+        overflow-y: hidden;
+    }
+    .header__mobileToggleBlockTop {
+        width: 100%;
+    }
+    .header__mobileToggleBlockContent-close {
+        margin: 45px 0 135px 40px;
+        cursor: pointer;
+    }
+    .header__mobileToggleBlockContent-return {
+        margin: 45px 0 45px 40px;
+        cursor: pointer;
+    }
+    .header__mobileToggleBlockContent-lang {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        z-index: 12;
+        justify-content: space-between;
+        transition: .3s;
+        background: #14171E;
+    }
+    .header__mobileToggleBlockContent-lang-active {
+        left: 0;
+    }
+    .headerTop__langItems {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding-bottom: 0;
+        top: unset;
+        position: relative;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+    }
+    .headerTop__langItem {
+        height: 58px;
+        padding-left: 40px;
+        width: 100%;
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1053,6 +1068,72 @@ input {
     .main__buyControlNameType {
         font-size: 34px;
         margin-bottom: -10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 60px;
+    }
+    .header .wrapper {
+        height: 60px;
+        padding: 0 15px;
+    }
+    .headerBottom__burgerLink {
+        width: 26px;
+        height: 23.2px;
+        margin-left: 2px;
+    }
+    .headerBottom__cart {
+        transform: scale(.6);
+    }
+    .headerBottom__logo img {
+        height: 35px;
+        margin-top: 3px;
+    }
+    .scrollUp .wrapper {
+        top: -60px;
+    }
+    .header__mobileToggleBlockContent-close {
+        height: 23.2px;
+        margin: 17px 0 60px 17px;
+    }
+    .header__mobileToggleBlockContent-return {
+        height: 23.2px;
+        margin: 17px 0 60px 17px;
+    }
+    .header__mobileToggleBlockContent .footer__text, .header__mobileToggleBlockContent-lang .footer__text {
+        margin-left: 17px;
+        margin-bottom: 17px;
+        font-size: 12px;
+        max-width: 170px;
+        text-align: left;
+    }
+    .headerBottom__link {
+        font-size: 16px;
+        padding: 10px 0 10px 17px;
+    }
+    .headerTop__office {
+        margin-left: 17px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .headerTop__officeLink {
+        margin-left: 7px;
+        font-size: 16px;
+    }
+    .headerTop__langBtn {
+        padding: 0 17px;
+    }
+    .headerTop__langText {
+        font-size: 16px;
+    }
+    .header__mobileToggleBlock {
+        width: 280px;
+    }
+    .headerTop__langItem {
+        padding-left: 17px;
+        height: 38px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 556px) {

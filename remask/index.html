@@ -12,24 +12,30 @@
 <header class="header">
     <div class="header__mobileToggleBlock">
         <div class="header__mobileToggleBlockContent">
-            <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
-            <span class="header__mobileToggleDelimiter"></span>
-            <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
-            <span class="header__mobileToggleDelimiter"></span>
-            <a href="#!" class="link-animation headerBottom__link">Купить</a>
-            <span class="header__mobileToggleDelimiter"></span>
-            <a href="#!" class="link-animation headerBottom__link">Контакты</a>
-            <span class="header__mobileToggleDelimiter"></span>
-            <div class="headerTop__office">
-                <img src="img/icons/user.svg" class="headerTop__officeIcon" alt="user"/>
-                <img src="img/icons/user-filled.png" class="headerTop__officeIcon-filled" alt="user"/>
-                <a href="#!" class="headerTop__officeLink">Личный кабинет</a>
-            </div>
-            <div class="headerTop__lang">
-                <div class="headerTop__langBtn">
-                    <p class="headerTop__langText">Изменить язык</p>
+            <div class="header__mobileToggleBlockTop">
+                <img src="img/icons/close.svg" alt="close" class="header__mobileToggleBlockContent-close"/>
+
+                <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
+                <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
+                <a href="#!" class="link-animation headerBottom__link">Купить</a>
+                <a href="#!" class="link-animation headerBottom__link">Контакты</a>
+                <div class="headerTop__office">
+                    <img src="img/icons/user.svg" class="headerTop__officeIcon" alt="user"/>
+                    <img src="img/icons/user-filled.png" class="headerTop__officeIcon-filled" alt="user"/>
+                    <a href="#!" class="headerTop__officeLink">Личный кабинет</a>
+                </div>
+                <div class="headerTop__langBtn ">
+                    <p class="headerTop__langText">Русский</p>
                     <img src="img/icons/list.svg" alt="list" class="list headerTop__langIcon">
                 </div>
+            </div>
+
+            <p class="footer__text">2020. Tedison company. Все права защищены</p>
+        </div>
+        <div class="header__mobileToggleBlockContent-lang">
+            <div class="header__mobileToggleBlockTop">
+                <img src="img/icons/back.svg" alt="close" class="header__mobileToggleBlockContent-return"/>
+
                 <div class="headerTop__langItems">
                     <a href="#!" class="headerTop__langItem">English</a>
                     <a href="#!" class="headerTop__langItem">中文</a>
@@ -42,6 +48,8 @@
                     <a href="#!" class="headerTop__langItem">عرب</a>
                 </div>
             </div>
+
+            <p class="footer__text">2020. Tedison company. Все права защищены</p>
         </div>
     </div>
     <div class="wrapper">
@@ -72,15 +80,7 @@
         <div class="headerBottom">
             <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
             <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
-            <div class="burger burger-1 headerBottom__burgerLink">
-                <input type="checkbox" name="burger1" id="burger1"/>
-                <label for="burger1">
-                    <span class="bar bar-1"></span>
-                    <span class="bar bar-2"></span>
-                    <span class="bar bar-3"></span>
-                    <span class="txt">Burger</span>
-                </label>
-            </div>
+            <img src="img/icons/burger.svg" alt="burger" class="headerBottom__burgerLink"/>
             <a href="#!" class="headerBottom__logo"><img src="img/logo.svg" alt="logo"></a>
             <a href="#!" class="link-animation headerBottom__link">Купить</a>
             <a href="#!" class="link-animation headerBottom__link">Контакты</a>
@@ -291,6 +291,7 @@
         <p class="footer__text">Маску можно носить без рекомендации врачей</p>
     </div>
 </footer>
+<div class="header__closebleMask"></div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>

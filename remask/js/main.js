@@ -1,7 +1,11 @@
 ﻿//language menu
 $(".headerTop__langBtn").click(function () {
-    $(".headerTop__langItems").slideToggle();
-    $(this).find(".list").toggleClass("headerTop__langIcon-rotated");
+    if ($(window).width() > 1024) {
+        $(".headerTop__langItems").slideToggle();
+        $(this).find(".list").toggleClass("headerTop__langIcon-rotated");
+    } else if ($(window).width() < 1024) {
+        $(".header__mobileToggleBlockContent-lang").addClass("header__mobileToggleBlockContent-lang-active");
+    }
 });
 
 //buy block
@@ -82,9 +86,24 @@ $(".main__buyControlBtnsBtn").click(function () {
 });
 
 //burger menu
-$('#burger1').click(function () {
+$('.headerBottom__burgerLink').click(function () {
     $("html, body").toggleClass("body-fixed");
-    $('.header__mobileToggleBlock').slideToggle();
+    $('.header__mobileToggleBlock').toggleClass("header__mobileToggleBlock-active");
+    $('.header__closebleMask').toggleClass("header__closebleMask-active");
+});
+$(".header__mobileToggleBlockContent-close").click(function () {
+    $("html, body").removeClass("body-fixed");
+    $('.header__mobileToggleBlock').removeClass("header__mobileToggleBlock-active");
+    $('.header__closebleMask').removeClass("header__closebleMask-active");
+});
+$(".header__mobileToggleBlockContent-return").click(function () {
+    $('.header__mobileToggleBlockContent-lang').removeClass("header__mobileToggleBlockContent-lang-active");
+});
+$('.header__closebleMask').click(function () {
+    $('.header__mobileToggleBlock').removeClass("header__mobileToggleBlock-active");
+    $('.header__mobileToggleBlockContent-lang').removeClass("header__mobileToggleBlockContent-lang-active");
+    $('.header__closebleMask').removeClass("header__closebleMask-active");
+    $("html, body").removeClass("body-fixed");
 });
 
 //sticky header
