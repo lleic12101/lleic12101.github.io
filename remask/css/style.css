@@ -941,6 +941,7 @@ input {
         height: calc(100vh - 59px);
         max-height: calc(100vh - 59px);
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
     .header__mobileToggleBlockContent {
         display: flex;
@@ -1008,7 +1009,7 @@ input {
         top: -60px;
     }
     .body-fixed {
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 }
 @media screen and (max-width: 768px) {
