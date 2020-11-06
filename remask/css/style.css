@@ -381,6 +381,7 @@ input {
 .main__levelsTextBlockHeadline {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     margin-bottom: 41px;
 }
 .main__levelsTextBlockHeadlineNum {
@@ -730,7 +731,7 @@ input {
 }
 .form_radio input[type=radio]:checked + label img {
     color: #01E2FF;
-    filter: invert(61%) sepia(53%) saturate(1498%) hue-rotate(145deg) brightness(140%) contrast(120%);
+    filter: invert(61%) sepia(46%) saturate(1498%) hue-rotate(145deg) brightness(140%) contrast(120%)
 }
 /*RADIO BUTTON END*/
 
@@ -1028,7 +1029,7 @@ input {
     }
     .main__levelsTextBlockHeadlineText {
         font-size: 30px;
-        margin-top: 7px;
+        margin-top: 0;
         line-height: 30px;
         max-width: 300px;
     }
@@ -1056,6 +1057,7 @@ input {
     }
     .main__buyControlNameType {
         font-size: 34px;
+        margin-bottom: -10px;
     }
 }
 @media screen and (max-width: 556px) {
