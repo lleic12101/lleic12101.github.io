@@ -730,7 +730,7 @@ input {
 }
 .form_radio input[type=radio]:checked + label img {
     color: #01E2FF;
-    filter: invert(61%) sepia(53%) saturate(1498%) hue-rotate(145deg) brightness(140%) contrast(107%);
+    filter: invert(61%) sepia(53%) saturate(1498%) hue-rotate(145deg) brightness(140%) contrast(120%);
 }
 /*RADIO BUTTON END*/
 
@@ -862,6 +862,9 @@ input {
     }
     .main__levels .wrapper {
         padding-top: 110px;
+    }
+    .main__remaskScroll {
+        display: none;
     }
 }
 @media screen and (max-width: 1020px) {
@@ -1025,7 +1028,9 @@ input {
     }
     .main__levelsTextBlockHeadlineText {
         font-size: 30px;
-        margin-top: 12px;
+        margin-top: 7px;
+        line-height: 30px;
+        max-width: 300px;
     }
     .main__levelsTextBlockItems {
         padding-left: 25px;
@@ -1048,6 +1053,9 @@ input {
     }
     .main__aboutProsText {
         font-size: 16px;
+    }
+    .main__buyControlNameType {
+        font-size: 34px;
     }
 }
 @media screen and (max-width: 556px) {
@@ -1156,10 +1164,6 @@ input {
     }
     .main__buyControlNameImg {
         width: 170px;
-    }
-    .main__buyControlNameType {
-        font-size: 40px;
-        margin-bottom: -7px;
     }
     .main__more .btn {
         width: calc(100% - 30px);
