@@ -977,9 +977,9 @@ body {
     .scrollUp .wrapper {
         top: -120px;
     }
-    .body-fixed {
-        overflow-y: hidden;
-    }
+    /*.body-fixed {*/
+    /*    overflow-y: hidden;*/
+    /*}*/
     .header__mobileToggleBlockTop {
         width: 100%;
     }
