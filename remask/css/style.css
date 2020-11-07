@@ -126,6 +126,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-right: 65px;
 }
 .headerBottom__link {
     margin: 0 45px;
@@ -286,6 +287,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 /*MAIN END*/
 
@@ -723,9 +725,43 @@ body {
 }
 /*FOOTER END*/
 
+/*THX*/
+.main__thx {
+    background: url(../img/thx/smoke-thx.png) no-repeat;
+    background-size: 100% 100%;
+}
+.main__thx .wrapper {
+    padding-bottom: 140px;
+}
+.main__thxHeadline {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.main__thxText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 565px;
+    margin-bottom: 30px;
+}
+/*THX END*/
+
+/*MAIN MEDIA*/
 @media screen and (max-width: 1261px) {
     .wrapper {
         width: 100%;
+    }
+    .main__remask {
+        background-position: center;
+        background-size: cover;
     }
     .main__bgName {
         left: -100px;
@@ -862,6 +898,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding-right: 0;
     }
     .headerBottom__logo {
         margin: 0;
@@ -1304,3 +1341,44 @@ body {
         width: 260px;
     }
 }
+/*MAIN MEDIA END*/
+
+/*THX MEDIA*/
+@media screen and (max-width: 767px) {
+    .main__thx .wrapper {
+        padding-bottom: 70px;
+    }
+    .main__thxHeadline {
+        font-size: 36px;
+        margin-top: 36px;
+    }
+    .main__thxText {
+        font-size: 16px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 556px) {
+    .main__thxHeadline {
+        font-size: 30px;
+        margin-bottom: 5px;
+        line-height: 36px;
+    }
+    .main__thxText {
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 22px;
+    }
+    .main__thx .wrapper {
+        padding-bottom: 60px;
+    }
+    .main__thxMask {
+        max-width: 356px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 385px) {
+    .main__thx .wrapper {
+        padding-bottom: 30px;
+    }
+}
+/*THX MEDIA END*/
