@@ -1082,11 +1082,13 @@ body {
         padding: 0 15px;
     }
     .headerBottom__burgerLink {
-        height: 18px;
+        height: 21px;
+        width: 18px;
         margin-left: 2px;
     }
     .headerBottom__cart {
         transform: scale(.6);
+
     }
     .headerBottom__logo img {
         height: 35px;
@@ -1096,11 +1098,11 @@ body {
         top: -60px;
     }
     .header__mobileToggleBlockContent-close {
-        height: 18px;
+        height: 21px;
         margin: 17px 0 60px 17px;
     }
     .header__mobileToggleBlockContent-return {
-        height: 18px;
+        height: 21px;
         margin: 17px 0 60px 17px;
     }
     .header__mobileToggleBlockContent .footer__text, .header__mobileToggleBlockContent-lang .footer__text {
@@ -1111,7 +1113,7 @@ body {
         text-align: left;
     }
     .headerBottom__link {
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px 0 10px 17px;
     }
     .headerTop__office {
@@ -1121,13 +1123,13 @@ body {
     }
     .headerTop__officeLink {
         margin-left: 7px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .headerTop__langBtn {
         padding: 0 17px;
     }
     .headerTop__langText {
-        font-size: 16px;
+        font-size: 14px;
     }
     .header__mobileToggleBlock {
         width: 280px;
@@ -1135,7 +1137,7 @@ body {
     .headerTop__langItem {
         padding-left: 17px;
         height: 38px;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 556px) {
