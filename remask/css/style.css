@@ -1082,8 +1082,7 @@ body {
         padding: 0 15px;
     }
     .headerBottom__burgerLink {
-        width: 26px;
-        height: 23.2px;
+        height: 18px;
         margin-left: 2px;
     }
     .headerBottom__cart {
@@ -1097,11 +1096,11 @@ body {
         top: -60px;
     }
     .header__mobileToggleBlockContent-close {
-        height: 23.2px;
+        height: 18px;
         margin: 17px 0 60px 17px;
     }
     .header__mobileToggleBlockContent-return {
-        height: 23.2px;
+        height: 18px;
         margin: 17px 0 60px 17px;
     }
     .header__mobileToggleBlockContent .footer__text, .header__mobileToggleBlockContent-lang .footer__text {
