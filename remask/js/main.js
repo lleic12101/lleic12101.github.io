@@ -15,6 +15,9 @@ function resizeEmptySpace() {
     }
 }
 
+//overlayscrollbar
+// $('body').overlayScrollbars({});
+
 //sticky header
 var c, currentScrollTop = 0, navbar = $("header");
 $(window).scroll(function () {
@@ -212,4 +215,115 @@ if ($('*').is('.main__contacts')) {
             icon: "img/icons/map-point.png",
         });
     }
+}
+
+//inputs
+if ($('*').is('.main__infoInput')) {
+    $(".main__infoInput").change(function () {
+        if ($(this).val().trim() !== "") {
+            $(this).parent().find(".main__infoInputLabel").addClass("main__infoInputLabel-active");
+            $(this).addClass("main__infoInput-active");
+
+            $(this).parent().removeClass("main__infoInputBlockError-required");
+
+            var pattern = $(this).attr("pattern");
+            if (pattern == undefined) return;
+            var returnedVal = null;
+            if ($(this)[0].value.match(pattern) != null && $(this)[0].value.match(pattern) !== "") {
+                returnedVal = $(this)[0].value.match(pattern)[0];
+            }
+            if (($(this)[0].value !== returnedVal) || ($(this)[0].value !== returnedVal && returnedVal != null)) {
+                $(this).parent().addClass("main__infoInputBlockError-bad");
+            } else {
+                $(this).parent().removeClass("main__infoInputBlockError-bad");
+            }
+        } else {
+            $(this).parent().find(".main__infoInputLabel").removeClass("main__infoInputLabel-active");
+            $(this).removeClass("main__infoInput-active");
+        }
+    });
+}
+
+//phone number
+if ($('*').is('.main__infoInput-phone')) {
+    var maskList = $.masksSort($.masksLoad("https://cdn.rawgit.com/andr-04/inputmask-multi/master/data/phone-codes.json"), ['#'], /[0-9]|#/, "mask");
+    var maskOpts = {
+        inputmask: {
+            definitions: {
+                '#': {
+                    validator: "[0-9]",
+                    cardinality: 1
+                }
+            },
+            //clearIncomplete: true,
+            showMaskOnHover: false,
+            autoUnmask: true
+        },
+        match: /[0-9]/,
+        replace: '#',
+        list: maskList,
+        listKey: "mask",
+        onMaskChange: function (maskObj, completed) {
+            if (completed) {
+                var hint = maskObj.name_ru;
+                if (maskObj.desc_ru && maskObj.desc_ru != "") {
+                    hint += " (" + maskObj.desc_ru + ")";
+                }
+            }
+            $(this).attr("placeholder", $(this).inputmask("getemptymask"));
+        }
+    };
+    $('.main__infoInput-phone').inputmasks(maskOpts);
+    $('.main__infoInput-phone').focus(function () {
+        $(this).removeClass("main__infoInput-hidden");
+        $(this).parent().find(".main__infoInputLabel").addClass("main__infoInputLabel-active");
+        $(this).addClass("main__infoInput-active");
+    });
+}
+
+//select
+if ($('*').is('.main__infoSelect')) {
+    $('.main__infoSelect').selectize();
+    $('.main__infoSelect').change(function () {
+        $(this).parent().removeClass("main__infoInputBlockError-required");
+        $(this).parent().find(".selectize-control").removeClass("main__infoInputBlockError-required");
+    });
+}
+
+//check empty fields info 1
+if ($('*').is('.main__infoNextBtn')) {
+    $(".main__infoNextBtn").click(function () {
+        var formBlock = document.querySelector(".main__infoFormBlock-1");
+        var inputs = formBlock.querySelectorAll("input");
+        var errCount = 0;
+        for (var i = 0; i < inputs.length; i++) {
+            if ($(inputs[i]).attr("required") == "required") {
+                if ($(inputs[i]).hasClass("main__infoInput")) {
+                    if ($(inputs[i]).val().trim() === "") {
+                        errCount++;
+                        $(inputs[i]).parent().addClass("main__infoInputBlockError-required");
+                    }
+                }
+            }
+        }
+        var region = $(".main__infoSelect-region").find(".item").html();
+        var town = $(".main__infoSelect-town").find(".item").html()
+        if (region === "Регион*") {
+            $(".main__infoSelect-region").parent().addClass("main__infoInputBlockError-required");
+            errCount++;
+        }
+        if (town === "Город*") {
+            $(".main__infoSelect-town").parent().addClass("main__infoInputBlockError-required");
+            errCount++
+        }
+        console.log(errCount);
+    });
+}
+
+//info select pay
+if ($('*').is('.main__infoPayItem')) {
+    $(".main__infoPayItem").click(function () {
+        $(".main__infoPayItem").removeClass("main__infoPayItem-active");
+        $(this).addClass("main__infoPayItem-active");
+    });
 }

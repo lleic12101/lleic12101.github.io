@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
+    <title>remask</title>
+    <link rel="stylesheet" href="css/selectize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header__mobileToggleBlock">
+        <div class="header__mobileToggleBlockContent">
+            <div class="header__mobileToggleBlockTop">
+                <img src="img/icons/close.svg" alt="close" class="header__mobileToggleBlockContent-close"/>
+
+                <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
+                <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
+                <a href="#!" class="link-animation headerBottom__link">Купить</a>
+                <a href="#!" class="link-animation headerBottom__link">Контакты</a>
+                <div class="headerTop__office">
+                    <img src="img/icons/user.svg" class="headerTop__officeIcon" alt="user"/>
+                    <img src="img/icons/user-filled.png" class="headerTop__officeIcon-filled" alt="user"/>
+                    <a href="#!" class="headerTop__officeLink">Личный кабинет</a>
+                </div>
+                <div class="headerTop__langBtn ">
+                    <p class="headerTop__langText">Русский</p>
+                    <img src="img/icons/list.svg" alt="list" class="list headerTop__langIcon">
+                </div>
+            </div>
+
+            <p class="footer__text">2020. Tedison company. Все права защищены</p>
+        </div>
+        <div class="header__mobileToggleBlockContent-lang">
+            <div class="header__mobileToggleBlockTop">
+                <img src="img/icons/back.svg" alt="close" class="header__mobileToggleBlockContent-return"/>
+
+                <div class="headerTop__langItems">
+                    <a href="#!" class="headerTop__langItem">English</a>
+                    <a href="#!" class="headerTop__langItem">中文</a>
+                    <a href="#!" class="headerTop__langItem">Русский</a>
+                    <a href="#!" class="headerTop__langItem">Français</a>
+                    <a href="#!" class="headerTop__langItem">हिंदी</a>
+                    <a href="#!" class="headerTop__langItem">Español</a>
+                    <a href="#!" class="headerTop__langItem">বাংলা</a>
+                    <a href="#!" class="headerTop__langItem">Português</a>
+                    <a href="#!" class="headerTop__langItem">عرب</a>
+                </div>
+            </div>
+
+            <p class="footer__text">2020. Tedison company. Все права защищены</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="headerTop">
+            <div class="headerTop__lang">
+                <div class="headerTop__langBtn">
+                    <p class="headerTop__langText">Русский</p>
+                    <img src="img/icons/list.svg" alt="list" class="list headerTop__langIcon">
+                </div>
+                <div class="headerTop__langItems">
+                    <a href="#!" class="headerTop__langItem">English</a>
+                    <a href="#!" class="headerTop__langItem">中文</a>
+                    <a href="#!" class="headerTop__langItem">Русский</a>
+                    <a href="#!" class="headerTop__langItem">Français</a>
+                    <a href="#!" class="headerTop__langItem">हिंदी</a>
+                    <a href="#!" class="headerTop__langItem">Español</a>
+                    <a href="#!" class="headerTop__langItem">বাংলা</a>
+                    <a href="#!" class="headerTop__langItem">Português</a>
+                    <a href="#!" class="headerTop__langItem">عرب</a>
+                </div>
+            </div>
+            <div class="headerTop__office">
+                <img src="img/icons/user.svg" class="headerTop__officeIcon" alt="user"/>
+                <img src="img/icons/user-filled.png" class="headerTop__officeIcon-filled" alt="user"/>
+                <a href="#!" class="headerTop__officeLink">Личный кабинет</a>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <a href="#!" class="link-animation headerBottom__link">Узнать больше</a>
+            <a href="#!" class="link-animation headerBottom__link">Фильтры</a>
+            <img src="img/icons/burger.svg" alt="burger" class="headerBottom__burgerLink"/>
+            <a href="#!" class="headerBottom__logo"><img src="img/logo.svg" alt="logo"></a>
+            <a href="#!" class="link-animation headerBottom__link">Купить</a>
+            <a href="#!" class="link-animation headerBottom__link">Контакты</a>
+            <div class="headerBottom__cart">
+                <a href="#!" class="headerBottom__cartLink">
+                    <img src="img/icons/cart.svg" alt="cart" class="headerBottom__icon"/>
+                    <span class="headerBottom__cartNum headerBottom__cartNum-disabled">2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="main__info">
+        <div class="wrapper">
+            <div class="main__infoForms">
+                <div class="main__infoFormBlock main__infoFormBlock-1">
+                    <div class="main__infoFormHeader">
+                        <div class="main__infoFormHeadlineBlock">
+                            <p class="main__infoFormHeadlineNum">1</p>
+                            <p class="main__infoFormHeadline">Информация о доставке</p>
+                        </div>
+                        <a href="#!" class="main__infoFormHeaderChange">Изменить данные</a>
+                    </div>
+                    <div class="main__infoSmallFormBlock">
+                        <p class="main__infoSmallFormHeadline">Персональные данные</p>
+                        <div class="main__infoSmallForm">
+                            <div class="main__infoInputBlock">
+                                <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
+                                       required/>
+                                <label class="main__infoInputLabel">Фамилия*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput" required/>
+                                <label class="main__infoInputLabel">Имя*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">Обязательное для заполнения
+                                    поле</p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" class="main__infoInput main__infoInput-phone main__infoInput-hidden"
+                                       value="7" size="25">
+                                <label class="main__infoInputLabel">Номер телефона</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">Обязательное для заполнения
+                                    поле</p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" class="main__infoInput" required/>
+                                <label class="main__infoInputLabel">Email*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">Обязательное для заполнения
+                                    поле</p>
+                            </div>
+                        </div>
+                        <p class="main__infoSmallFormHeadline">Адрес доставки</p>
+                        <div class="main__infoSmallForm">
+                            <div class="main__infoInputBlock">
+                                <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
+                                       required/>
+                                <label class="main__infoInputLabel">Страна*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <select class="main__infoSelect main__infoSelect-region" required>
+                                    <option selected disabled>Регион*</option>
+                                    <option>Регион 1</option>
+                                    <option>Регион 2</option>
+                                    <option>Регион 3</option>
+                                    <option>Регион 4</option>
+                                    <option>Регион 5</option>
+                                    <option>Регион 6</option>
+                                </select>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <select class="main__infoSelect main__infoSelect-town" required>
+                                    <option selected disabled>Город*</option>
+                                    <option>Город 1</option>
+                                    <option>Город 2</option>
+                                    <option>Город 3</option>
+                                    <option>Город 4</option>
+                                    <option>Город 5</option>
+                                    <option>Город 6</option>
+                                </select>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" pattern="^[0-9]+$" class="main__infoInput main__infoInput-postalCode"
+                                       required/>
+                                <label class="main__infoInputLabel">Почтовый индекс*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" class="main__infoInput main__infoInput-street" required/>
+                                <label class="main__infoInputLabel">Улица*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" class="main__infoInput main__infoInput-house" required/>
+                                <label class="main__infoInputLabel">Номер дома*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                            <div class="main__infoInputBlock">
+                                <input type="text" class="main__infoInput main__infoInput-apartment" required/>
+                                <label class="main__infoInputLabel">Номер квартиры*</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-required">
+                                    Обязательное для заполнения поле
+                                </p>
+                            </div>
+                        </div>
+                        <p class="main__infoSmallFormHeadline">У вас есть промокод?</p>
+                        <div class="main__infoSmallForm">
+                            <div class="main__infoInputBlock">
+                                <input type="text" class="main__infoInput"/>
+                                <label class="main__infoInputLabel">Ввод промокода</label>
+                                <p class="main__infoInputText main__infoInputText-bad">
+                                    Ошибка, проверьте введённые данные
+                                </p>
+                                <p class="main__infoInputText main__infoInputText-succeed">
+                                    Промокод активирован
+                                </p>
+                                <!--Для ошибки добавить блоку main__infoInputBlock класс main__infoInputBlockError-bad -->
+                                <!--Для "Промокод активирован" добавить класс main__infoInputBlockError-succeed-->
+                            </div>
+                            <a href="#!" class="btn main__infoPromoBtn">применить</a>
+                        </div>
+                        <a href="#!" class="btn main__infoNextBtn">далее</a>
+                    </div>
+                    <div class="main__infoFormHeader">
+                        <div class="main__infoFormHeadlineBlock main__infoFormHeadlineBlock-2">
+                            <p class="main__infoFormHeadlineNum">2</p>
+                            <p class="main__infoFormHeadline">Оплата товара</p>
+                        </div>
+                        <a href="#!" class="main__infoFormHeaderChange">Изменить данные</a>
+                    </div>
+                    <div class="main__infoSmallFormBlock">
+                        <p class="main__infoSmallFormHeadline">Выберите способ оплаты</p>
+                        <div class="main__infoPayItems">
+                            <div class="main__infoPayItem">
+                                <img src="img/info/paypal.png" alt="paypal" class="main__infoPayItemIcon"/>
+                            </div>
+                            <div class="main__infoPayItem main__infoPayItem-active">
+                                <img src="img/info/card.png" alt="card" class="main__infoPayItemIcon"/>
+                            </div>
+                            <div class="main__infoPayItem">
+                                <img src="img/info/apple.png" alt="apple" class="main__infoPayItemIcon"/>
+                            </div>
+                            <div class="main__infoPayItem">
+                                <img src="img/info/samsung.png" alt="samsung" class="main__infoPayItemIcon"/>
+                            </div>
+                            <div class="main__infoPayItem">
+                                <img src="img/info/yandex.png" alt="yandex" class="main__infoPayItemIcon"/>
+                            </div>
+                            <div class="main__infoPayItem">
+                                <img src="img/info/qiwi.png" alt="qiwi" class="main__infoPayItemIcon"/>
+                            </div>
+                        </div>
+                        <a href="#!" class="btn main__infoPayBtn">перейти к оплате</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__infoTotal">
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <p class="footer__text">2020. Tedison company. Все права защищены</p>
+        <p class="footer__text">Маску можно носить без рекомендации врачей</p>
+    </div>
+</footer>
+<div class="header__closebleMask"></div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/jquery.inputmask-multi.min.js"></script>
+<script src="js/selectize.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
