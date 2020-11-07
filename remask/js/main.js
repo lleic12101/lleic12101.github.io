@@ -157,3 +157,59 @@ if ($('*').is('.main__buyRoubleRadio')) {
         $(this).parent().find("img").attr("src", "img/icons/rouble-blue.svg");
     });
 }
+
+//map
+if ($('*').is('.main__contacts')) {
+    var map;
+    var marker;
+    var map1;
+    var marker1;
+    var map2;
+    var marker2;
+
+    function initMap() {
+        var myLatLng = {lat: 47.107635, lng: 37.642391};
+
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: myLatLng,
+            zoom: 14,
+        });
+
+        marker = new google.maps.Marker({
+            position: myLatLng,
+            title: "Место на карте",
+            map: map,
+            icon: "img/icons/map-point.png",
+        });
+
+
+        var myLatLng1 = {lat: 42.107635, lng: 20.642391};
+
+        map1 = new google.maps.Map(document.getElementById("map1"), {
+            center: myLatLng1,
+            zoom: 14,
+        });
+
+        marker1 = new google.maps.Marker({
+            position: myLatLng1,
+            title: "Место на карте",
+            map: map1,
+            icon: "img/icons/map-point.png",
+        });
+
+
+        var myLatLng2 = {lat: 47.107635, lng: 40.642391};
+
+        map2 = new google.maps.Map(document.getElementById("map2"), {
+            center: myLatLng2,
+            zoom: 14,
+        });
+
+        marker2 = new google.maps.Marker({
+            position: myLatLng2,
+            title: "Место на карте",
+            map: map2,
+            icon: "img/icons/map-point.png",
+        });
+    }
+}
