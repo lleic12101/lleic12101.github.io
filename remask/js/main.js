@@ -357,3 +357,32 @@ if ($('*').is('.main__infoPayItem')) {
         $(this).addClass("main__infoPayItem-active");
     });
 }
+
+//forms btn
+if ($('*').is('.main__signInBtn')) {
+    $(".main__signInBtn").click(function () {
+        var formBlock = document.querySelector(".main__signIn");
+        var inputs = formBlock.querySelectorAll("input");
+        var errCount = 0;
+        for (var i = 0; i < inputs.length; i++) {
+            if ($(inputs[i]).attr("required") == "required") {
+                if ($(inputs[i]).hasClass("main__infoInput")) {
+                    if ($(inputs[i]).val().trim() === "") {
+                        errCount++;
+                        $(inputs[i]).parent().addClass("main__infoInputBlockError-required");
+                    }
+                }
+            }
+        }
+
+        var input = $('.main__infoInput-phone')[0];
+        var totalLen = input.inputmask.maskset.buffer.length;
+        var curLen = input.inputmask.maskset.p;
+        if (totalLen !== curLen) {
+            $('.main__infoInput-phone').parent().addClass("main__infoInputBlockError-required");
+            errCount++;
+        } else {
+            $('.main__infoInput-phone').parent().removeClass("main__infoInputBlockError-required");
+        }
+    });
+}

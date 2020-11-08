@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
+    <title>remask</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="main__signIn">
+    <img src="img/forms/bg.png" alt="bg" class="main__signInBg"/>
+    <form action="" class="main__signInForm">
+        <p class="main__signInFormTitle">Регистрация</p>
+        <div class="main__infoInputBlock">
+            <input type="text" class="main__infoInput main__infoInput-phone main__infoInput-hidden"
+                   value="7" size="25" required>
+            <label class="main__infoInputLabel">Номер телефона*</label>
+            <p class="main__infoInputText main__infoInputText-bad">
+                Ошибка, проверьте введённые данные
+            </p>
+            <p class="main__infoInputText main__infoInputText-required">Обязательное для заполнения
+                поле</p>
+        </div>
+        <div class="main__infoInputBlock">
+            <input type="text" class="main__infoInput" required/>
+            <label class="main__infoInputLabel">Ваш еmail*</label>
+            <p class="main__infoInputText main__infoInputText-bad">
+                Ошибка, проверьте введённые данные
+            </p>
+            <p class="main__infoInputText main__infoInputText-required">
+                Обязательное для заполнения поле
+            </p>
+        </div>
+        <a href="#!" class="btn btn-light main__signInBtn">Получить пароль</a>
+        <p class="main__signInText">У вас уже есть аккаунт? <a href="#!">Войти</a></p>
+    </form>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/jquery.inputmask-multi.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
