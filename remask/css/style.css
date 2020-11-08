@@ -1236,6 +1236,26 @@ body {
 /*SCROLLBARS END*/
 
 /*MAIN MEDIA*/
+@media screen and (max-width: 1537px) {
+    html {
+        zoom: 0.8;
+        -ms-zoom: 0.8;
+        -webkit-zoom: 0.8;
+        -moz-transform: scale(0.8, 0.8);
+        -moz-transform-origin: left top;
+        width: 125vw;
+    }
+}
+@media screen and (max-width: 1535px) {
+    html {
+        zoom: 1;
+        -ms-zoom: 1;
+        -webkit-zoom: 1;
+        -moz-transform: scale(1, 1);
+        -moz-transform-origin: unset;
+        width: 100vw;
+    }
+}
 @media screen and (max-width: 1261px) {
     .wrapper {
         width: 100%;
