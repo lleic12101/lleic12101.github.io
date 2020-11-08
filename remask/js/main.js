@@ -269,6 +269,15 @@ if ($('*').is('.main__infoInput-phone')) {
                 if (maskObj.desc_ru && maskObj.desc_ru != "") {
                     hint += " (" + maskObj.desc_ru + ")";
                 }
+
+                var input = $('.main__infoInput-phone')[0];
+                var totalLen = input.inputmask.maskset.buffer.length;
+                var curLen = input.inputmask.maskset.p;
+                if (totalLen !== curLen) {
+                    $('.main__infoInput-phone').parent().addClass("main__infoInputBlockError-required");
+                } else {
+                    $('.main__infoInput-phone').parent().removeClass("main__infoInputBlockError-required");
+                }
             }
             $(this).attr("placeholder", $(this).inputmask("getemptymask"));
         }
@@ -308,7 +317,7 @@ if ($('*').is('.main__infoNextBtn')) {
         }
         var region = $(".main__infoSelect-region").find(".item").html();
         var town = $(".main__infoSelect-town").find(".item").html()
-        if (region === "Регион*") {
+        if (region === "Регион/область*") {
             $(".main__infoSelect-region").parent().addClass("main__infoInputBlockError-required");
             errCount++;
         }
@@ -316,7 +325,28 @@ if ($('*').is('.main__infoNextBtn')) {
             $(".main__infoSelect-town").parent().addClass("main__infoInputBlockError-required");
             errCount++
         }
-        console.log(errCount);
+
+        var input = $('.main__infoInput-phone')[0];
+        var totalLen = input.inputmask.maskset.buffer.length;
+        var curLen = input.inputmask.maskset.p;
+        if (totalLen !== curLen) {
+            $('.main__infoInput-phone').parent().addClass("main__infoInputBlockError-required");
+            errCount++;
+        } else {
+            $('.main__infoInput-phone').parent().removeClass("main__infoInputBlockError-required");
+        }
+
+        if (errCount > 0) return;
+        else {
+            $(".main__infoFormBlock-1").addClass("main__infoFormBlock-inactive");
+            $(".main__infoFormBlock-1").find('.main__infoSmallFormBlock').slideUp();
+            $(".main__infoFormBlock-2").removeClass("main__infoFormBlock-inactive");
+            $(".main__infoFormBlock-2").find('.main__infoSmallFormBlock').slideDown();
+        }
+    });
+    $(".main__infoFormHeaderChange").click(function () {
+        $(".main__infoFormBlock-1").removeClass("main__infoFormBlock-inactive");
+        $(".main__infoFormBlock-1").find('.main__infoSmallFormBlock').slideDown();
     });
 }
 

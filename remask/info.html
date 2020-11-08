@@ -121,7 +121,8 @@
                                 </p>
                             </div>
                             <div class="main__infoInputBlock">
-                                <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput" required/>
+                                <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
+                                       required/>
                                 <label class="main__infoInputLabel">Имя*</label>
                                 <p class="main__infoInputText main__infoInputText-bad">
                                     Ошибка, проверьте введённые данные
@@ -131,8 +132,8 @@
                             </div>
                             <div class="main__infoInputBlock">
                                 <input type="text" class="main__infoInput main__infoInput-phone main__infoInput-hidden"
-                                       value="7" size="25">
-                                <label class="main__infoInputLabel">Номер телефона</label>
+                                       value="7" size="25" required>
+                                <label class="main__infoInputLabel">Номер телефона*</label>
                                 <p class="main__infoInputText main__infoInputText-bad">
                                     Ошибка, проверьте введённые данные
                                 </p>
@@ -164,7 +165,7 @@
                             </div>
                             <div class="main__infoInputBlock">
                                 <select class="main__infoSelect main__infoSelect-region" required>
-                                    <option selected disabled>Регион*</option>
+                                    <option selected disabled>Регион/область*</option>
                                     <option>Регион 1</option>
                                     <option>Регион 2</option>
                                     <option>Регион 3</option>
@@ -256,14 +257,15 @@
                         </div>
                         <a href="#!" class="btn main__infoNextBtn">далее</a>
                     </div>
+                </div>
+                <div class="main__infoFormBlock main__infoFormBlock-2 main__infoFormBlock-inactive">
                     <div class="main__infoFormHeader">
                         <div class="main__infoFormHeadlineBlock main__infoFormHeadlineBlock-2">
                             <p class="main__infoFormHeadlineNum">2</p>
                             <p class="main__infoFormHeadline">Оплата товара</p>
                         </div>
-                        <a href="#!" class="main__infoFormHeaderChange">Изменить данные</a>
                     </div>
-                    <div class="main__infoSmallFormBlock">
+                    <div class="main__infoSmallFormBlock main__infoSmallFormBlock-inactive">
                         <p class="main__infoSmallFormHeadline">Выберите способ оплаты</p>
                         <div class="main__infoPayItems">
                             <div class="main__infoPayItem">
@@ -290,7 +292,42 @@
                 </div>
             </div>
             <div class="main__infoTotal">
-
+                <div class="main__infoTotalImgBlock">
+                    <img src="img/info/smoke-product.png" alt="smoke" class="main__infoTotalImg-smoke"/>
+                    <img src="img/info/mask.png" alt="mask" class="main__infoTotalImg"/>
+                </div>
+                <div class="main__infoTotalTextBlock">
+                    <p class="main__infoTotalText">Стоимость товара:</p>
+                    <p class="main__infoTotalText main__infoTotalText-bold">
+                        <span>9 400</span>
+                        <img src="img/icons/rouble.svg" alt="rouble"/>
+                    </p>
+                </div>
+                <div class="main__infoTotalTextBlock">
+                    <p class="main__infoTotalText">Комиссия за перевод:</p>
+                    <p class="main__infoTotalText main__infoTotalText-bold">
+                        <span>400</span>
+                        <img src="img/icons/rouble.svg" alt="rouble"/>
+                    </p>
+                </div>
+                <div class="main__infoTotalTextBlock">
+                    <p class="main__infoTotalText">Скидка:</p>
+                    <p class="main__infoTotalText main__infoTotalText-bold">
+                        <span>-200</span>
+                        <img src="img/icons/rouble.svg" alt="rouble"/>
+                    </p>
+                </div>
+                <div class="main__infoTotalFreeDelivery">
+                    <img src="img/icons/delivery.svg" alt="delivery" class="main__infoTotalFreeDeliveryIcon"/>
+                    <p class="main__infoTotalFreeDeliveryText">БЕСПЛАТНАЯ ДОСТАВКА</p>
+                </div>
+                <div class="main__infoTotalTextBlock main__infoTotalTextBlock-sum">
+                    <p class="main__infoTotalText">Итого:</p>
+                    <p class="main__infoTotalText main__infoTotalText-bold">
+                        <span>9 600</span>
+                        <img src="img/icons/rouble-blue.svg" alt="rouble"/>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
