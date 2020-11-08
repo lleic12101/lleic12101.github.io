@@ -1197,6 +1197,16 @@ body {
     color: #01E2FF;
     font-weight: 500;
 }
+.main__infoSmallForm-house {
+    display: flex;
+    flex-direction: row;
+}
+.selectize-input > * {
+    font-size: 14px;
+}
+.selectize-dropdown .option {
+    font-size: 14px;
+}
 /*INFO END*/
 
 /*SCROLLBARS*/
@@ -1920,3 +1930,227 @@ body {
     }
 }
 /*CONTACTS MEDIA END*/
+
+/*INFO*/
+@media screen and (max-width: 1500px) {
+    .main__infoFormHeadlineBlock {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .main__infoFormHeadlineBlock-2 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .main__info .wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main__infoFormBlock {
+        width: 336px;
+    }
+    .main__infoSmallFormBlock {
+        width: 336px;
+        margin: 0 auto;
+    }
+    .main__infoSmallForm {
+        flex-direction: column;
+        width: 336px;
+    }
+    .main__infoInput-postalCode {
+        width: 100%;
+    }
+    .main__infoInput-street {
+        width: 100%;
+    }
+    .main__infoInputBlock {
+        margin-right: 0;
+        width: 100%;
+    }
+    .main__infoForms {
+        max-width: 100%;
+    }
+    .main__infoSmallForm-house {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main__infoSmallForm-house .main__infoInputBlock {
+        width: auto;
+    }
+    .main__infoSmallForm-house .main__infoInput-house {
+        width: 140px;
+    }
+    .main__infoSmallForm-house .main__infoInput-apartment {
+        width: 172px;
+    }
+    .main__infoPayItems {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 336px;
+        margin-bottom: 10px;
+    }
+    .main__infoPayItem {
+        margin-bottom: 24px;
+        margin-right: 10px;
+    }
+    .main__infoFormHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main__infoFormHeadlineNum {
+        font-size: 100px;
+    }
+    .main__infoFormHeadline {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .main__infoForms {
+        align-items: center;
+    }
+    .main__infoFormHeadlineBlock-2 {
+
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__infoTotal {
+        width: 100%;
+    }
+    .main__infoFormBlock {
+        width: 100%;
+    }
+    .main__infoSmallFormBlock {
+        width: 100%;
+    }
+    .main__infoInputBlock {
+        width: 100%;
+    }
+    .main__infoSmallForm {
+        width: 100%;
+    }
+    .main__infoInput {
+        width: 100%;
+    }
+    .selectize-input {
+        width: 100%;
+        background-position-x: 350px;
+        font-size: 14px;
+    }
+    .selectize-input {
+        width: 100%;
+        background-position-x: 350px;
+        font-size: 14px;
+        padding-left: 16px;
+    }
+    .selectize-input.full {
+        background-position-x: 350px;
+        font-size: 14px;
+        padding-left: 16px;
+    }
+    .selectize-dropdown .option {
+        padding-left: 16px;
+    }
+    .main__infoSmallForm-house .main__infoInput-house {
+        width: calc(100% - 24px);
+    }
+    .main__infoSmallForm-house .main__infoInput-apartment {
+        width: 100%;
+    }
+    .main__info .wrapper {
+        padding-top: 20px;
+    }
+    .main__infoFormHeadlineBlock {
+        max-width: 290px;
+    }
+    .main__infoFormHeadline {
+        margin-left: 20px;
+    }
+    .main__infoTotal {
+        padding: 20px 20px;
+    }
+    .main__infoSmallForm {
+        margin-bottom: 20px;
+    }
+    .main__infoTotalImg {
+        max-width: 100%;
+        width: 100%;
+        object-fit: contain;
+        height: auto;
+    }
+    .main__infoTotalImgBlock {
+        height: auto;
+    }
+    .main__infoInputBlock {
+        margin-top: 16px;
+    }
+    .main__infoPayItem {
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+    .main__infoSmallForm-house .main__infoInput-house {
+        width: calc(100% - 16px);
+    }
+    .main__infoInput {
+        padding-left: 16px;
+    }
+    .main__infoInputLabel {
+        left: -8px;
+    }
+    .main__infoInput:focus ~ .main__infoInputLabel {
+        left: -8px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .selectize-input {
+        background-position-x: 320px;
+    }
+    .selectize-input.full {
+        background-position-x: 320px;
+    }
+    .main__infoTotalText {
+        font-size: 16px;
+    }
+    .main__infoTotalText-bold {
+        font-size: 18px;
+    }
+    .main__infoTotalTextBlock-sum .main__infoTotalText {
+        font-size: 22px;
+    }
+    .main__infoTotalTextBlock-sum .main__infoTotalText {
+        font-size: 22px;
+    }
+    .main__infoTotalTextBlock {
+        margin-bottom: 7px;
+    }
+    .main__infoTotalFreeDelivery {
+        margin-bottom: 20px;
+    }
+    .main__infoTotal {
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .selectize-input {
+        background-position-x: 290px;
+    }
+    .selectize-input.full {
+        background-position-x: 290px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .selectize-input {
+        background-position-x: 250px;
+    }
+    .selectize-input.full {
+        background-position-x: 250px;
+    }
+    .main__infoPayItems {
+        width: 208px;
+    }
+    .main__infoPayItem {
+        margin-right: 0;
+    }
+}
+/*INFO END*/
