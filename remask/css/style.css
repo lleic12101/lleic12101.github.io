@@ -2766,8 +2766,6 @@ body {
     .main__productsItemPriceIcon {
         height: 13px;
     }
-}
-@media screen and (max-width: 648px) {
     .main__productsItemPriceBlock {
         flex-direction: column;
         align-items: flex-start;
@@ -2792,6 +2790,9 @@ body {
     }
     .main__productsSidebarLink {
         padding-left: 20px;
+    }
+    .main__productsItem .main__productItemCartBlockBlue:hover {
+        background: rgba(1, 226, 255, .5);
     }
 }
 @media screen and (max-width: 374px) {
