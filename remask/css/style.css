@@ -1777,6 +1777,13 @@ body {
     align-items: center;
     width: 66px;
 }
+.main__bagCartItemCounterMinusBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    cursor: pointer;
+}
 .main__bagCartItemCounterMinus {
     cursor: default;
 }
@@ -1789,6 +1796,13 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     margin: 0 13px;
+}
+.main__bagCartItemCounterPlusBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    cursor: pointer;
 }
 .main__bagCartItemCounterPlus {
     display: none;
