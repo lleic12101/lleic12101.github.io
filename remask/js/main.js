@@ -415,3 +415,51 @@ if ($('*').is('.main__bagCartItemDelete')) {
         if (Number($($nums[i]).html()) > 1) $($nums[i]).parent().parent().addClass("main__bagCartItemCounter-minus");
     }
 }
+
+//products filter
+if ($('*').is('.main__productsItemsSortBtn')) {
+    $(".main__productsItemsSortBtn").click(function () {
+        if (!$(this).hasClass("main__productsItemsSortBtn-active")) {
+            $(this).addClass("main__productsItemsSortBtn-active");
+            $(".main__productsHeaderSort").addClass("main__productsHeaderSort-active");
+        }
+    });
+    $(".main__productsItemsSortBtnIcon").click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).parent().removeClass("main__productsItemsSortBtn-active");
+
+        checkFilterStatus();
+    });
+    $(".main__productsItemsSortByLink").click(function () {
+        $(".main__productsItemsSortToggleBlock").slideDown();
+        $('.header__closebleMaskFilter').addClass("header__closebleMaskFilter-active");
+    });
+    $('.header__closebleMaskFilter').click(function () {
+        $('.header__closebleMaskFilter').removeClass("header__closebleMaskFilter-active");
+        $(".main__productsItemsSortToggleBlock").slideUp();
+    });
+    $(".main__productsItemsSortToggleLink").click(function () {
+        $(".main__productsItemsSortToggleLink").removeClass("main__productsItemsSortToggleLink-active");
+        $(this).addClass("main__productsItemsSortToggleLink-active");
+        $(".main__productsItemsSortByLink").html($(this).html());
+        $('.header__closebleMaskFilter').removeClass("header__closebleMaskFilter-active");
+        $(".main__productsItemsSortToggleBlock").slideUp();
+        $(".main__productsHeaderSort").addClass("main__productsHeaderSort-active");
+
+        checkFilterStatus();
+    });
+    $(".main__productsHeaderSort").click(function () {
+        $(this).removeClass("main__productsHeaderSort-active");
+        $(".main__productsItemsSortBtn").removeClass("main__productsItemsSortBtn-active");
+        $(".main__productsItemsSortByLink").html("По популярности");
+        $(".main__productsItemsSortToggleLink").removeClass("main__productsItemsSortToggleLink-active");
+        $(".main__productsItemsSortToggleLink-popular").addClass("main__productsItemsSortToggleLink-active");
+    });
+}
+function checkFilterStatus() {
+    var $btns = $(".main__productsItemsSortBtn");
+    for (var i = 0; i < $btns.length; i++) if ($($btns[i]).hasClass("main__productsItemsSortBtn-active")) return;
+    if ($(".main__productsItemsSortByLink").html().trim() !== "По популярности") return;
+    $(".main__productsHeaderSort").removeClass("main__productsHeaderSort-active");
+}
