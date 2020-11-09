@@ -1743,7 +1743,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 306px;
+    max-width: 302px;
+    min-width: 302px;
     width: 100%;
 }
 .main__bagCartItemName {
@@ -1775,7 +1776,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 66px;
+    min-width: 66px;
 }
 .main__bagCartItemCounterMinusBlock {
     display: flex;
@@ -1815,7 +1816,7 @@ body {
     display: block;
     text-align: center;
     margin: 0 10px 0 0;
-    width: 160px;
+    min-width: 160px;
     padding-left: 5px;
     font-size: 16px;
     color: #FFFFFF;
@@ -1829,6 +1830,11 @@ body {
 }
 .main__bagCartItemCounter-minus .main__bagCartItemCounterMinus-blue {
     display: block;
+}
+.main__bagCartItemContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /*BAG END*/
 
@@ -3004,3 +3010,156 @@ body {
     }
 }
 /*PRODUCTS END*/
+
+/*BAG*/
+@media screen and (max-width: 1261px) {
+    .main__bagContent {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .main__bagSpecialItems {
+        width: 603px;
+        flex-wrap: wrap;
+    }
+    .main__bag .wrapper {
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 801px) {
+    .main__bagCartItems {
+        width: 100%;
+        align-items: center;
+    }
+    .main__bagCart {
+        width: 100%;
+        align-items: center;
+    }
+    .main__bagCartItemContent {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .main__bagCartItem {
+        width: 434px;
+        height: auto;
+        padding: 20px;
+        position: relative;
+    }
+    .main__bagCartItemCounter {
+        margin: 10px 0;
+    }
+    .main__bagCartItemNameBlock {
+        max-width: 150px;
+        min-width: unset;
+        margin-bottom: 30px;
+    }
+    .main__bagCartItemDelete {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .main__bagCartItemPrice {
+        padding-left: 0;
+        text-align: left;
+        min-width: unset;
+    }
+    .main__bagCartItemCounter {
+        position: absolute;
+        right: 65px;
+        bottom: 20px;
+        margin: 0 5px 0 0;
+        min-width: unset;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main__bagCart .main__infoSmallForm {
+        width: 434px;
+    }
+}
+@media screen and (max-width: 648px) {
+    .main__bagSpecialItems {
+        width: 100%;
+    }
+    .main__bag .wrapper {
+        padding-bottom: 25px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__bagCart .main__infoSmallForm {
+        width: 100%;
+    }
+    .main__bagCartPromo {
+        width: 100%;
+    }
+    .main__bagCartItem {
+        width: 100%;
+    }
+    .main__bagCartPromo {
+        margin-top: 10px;
+    }
+    .main__bagContent {
+        margin-top: 20px;
+    }
+    .main__bagSpecialBlockTitle {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .main__bag .wrapper {
+        padding-bottom: 15px;
+    }
+    .main__bagCartItemCounter {
+        right: 55px;
+    }
+    .main__bagContent .main__infoTotal {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .main__bagContent .main__infoTotalFreeDelivery {
+        margin: 15px 0;
+    }
+    .main__bagContent .main__infoPromoBtn {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 444px) {
+    .main__bagCartItemCounter {
+        right: 45px;
+    }
+    .main__bagSpecialBlockTitle {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main__bagCartItemCounter {
+        right: 35px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .main__bagCartItemCounter {
+        right: 20px;
+    }
+    .main__bagCartItem {
+        flex-direction: column;
+    }
+    .main__bagCartItemContent {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main__bagCartItemNameBlock {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+@media screen and (max-width: 340px) {
+    .main__bagContent .main__infoTotalText {
+        font-size: 14px;
+    }
+    .main__bagContent .main__infoTotalTextBlock-sum .main__infoTotalText {
+        font-size: 22px;
+    }
+}
+/*BAG END*/
