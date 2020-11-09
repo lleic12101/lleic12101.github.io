@@ -386,3 +386,32 @@ if ($('*').is('.main__signInBtn')) {
         }
     });
 }
+
+//bag btns
+if ($('*').is('.main__bagCartItemDelete')) {
+    $(".main__bagCartItemDelete").click(function () {
+        $(this).parent().remove();
+    });
+    $(".main__bagCartItemCounterMinus").click(function () {
+        var num = $(this).parent().find(".main__bagCartItemCounterNum").html();
+        if (num > 1) {
+            num--;
+            $(this).parent().find(".main__bagCartItemCounterNum").html(num);
+        }
+        if (num == 1) {
+            $(this).parent().removeClass("main__bagCartItemCounter-minus");
+        }
+    });
+    $(".main__bagCartItemCounterPlus").click(function () {
+        var num = $(this).parent().find(".main__bagCartItemCounterNum").html();
+        num++;
+        $(this).parent().find(".main__bagCartItemCounterNum").html(num);
+        if (num > 1) {
+            $(this).parent().addClass("main__bagCartItemCounter-minus");
+        }
+    });
+    var $nums = $(".main__bagCartItemCounterNum");
+    for (var i = 0; i < $nums.length; i++) {
+        if (Number($($nums[i]).html()) > 1) $($nums[i]).parent().addClass("main__bagCartItemCounter-minus");
+    }
+}
