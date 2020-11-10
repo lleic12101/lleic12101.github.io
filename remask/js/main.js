@@ -1,22 +1,32 @@
 ﻿//resize func
 $(window).on('resize', function () {
     resizeEmptySpace();
+
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 resizeEmptySpace();
 function resizeEmptySpace() {
+    $(".main").css("height", "auto");
+
     var header = $(".header").innerHeight();
     var footer = $(".footer").innerHeight();
-    var windowHeight = $(window).innerHeight();
+    var windowHeight = $(window).height();
     var main = $(".main").innerHeight();
+
+    if ($(window).width() >= 1535 && $(window).width() <= 1537) {
+        windowHeight += (windowHeight / 100) * 25;
+    }
+    if ($(window).width() >= 1439 && $(window).width() <= 1441) {
+        windowHeight += (windowHeight / 100) * 25;
+    }
     if ((header + footer + main) < windowHeight) {
         $(".main").css("height", (windowHeight - (header + footer)));
     } else {
         $(".main").css("height", "auto");
     }
 }
-
-//overlayscrollbar
-// $('body').overlayScrollbars({});
 
 //sticky header
 var c, currentScrollTop = 0, navbar = $("header");
@@ -67,12 +77,6 @@ $('.header__closebleMask').click(function () {
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-// We listen to the resize event
-window.addEventListener('resize', () => {
-    // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
 
 //buy block
 if ($('*').is('.main__buyControlBtnsBtn')) {
@@ -532,5 +536,20 @@ if ($('*').is('.main__profileItems')) {
 
         $(".main__profileItem").removeClass("main__profileItem-active");
         $("#" + id + "Tab").addClass("main__profileItem-active");
+
+        resizeEmptySpace();
+    });
+    $(".main__profileFaqItemHeader").click(function () {
+        if ($(this).hasClass("main__profileFaqItemHeader-active")) {
+            $(".main__profileFaqItemHeader").removeClass("main__profileFaqItemHeader-active");
+            $(".main__profileFaqItemContent").slideUp();
+        } else {
+            $(".main__profileFaqItemHeader").removeClass("main__profileFaqItemHeader-active");
+            $(".main__profileFaqItemContent").slideUp();
+            $(this).parent().find(".main__profileFaqItemContent").slideDown();
+            $(this).addClass("main__profileFaqItemHeader-active");
+
+            resizeEmptySpace();
+        }
     });
 }
