@@ -736,6 +736,16 @@ body {
     color: #8B8D91;
     font-weight: 500;
 }
+.footer__link {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #8B8D91;
+    font-weight: 500;
+}
+.footer__link:hover {
+    text-decoration: none;
+}
 /*FOOTER END*/
 
 /*THX*/
@@ -2617,6 +2627,16 @@ body {
 .main__profileOrderHeaderText-price {
 
 }
+
+.main__profileFaqItemContentText a {
+    font-size: 14px;
+    line-height: 130%;
+    color: #01E2FF;
+    text-decoration: underline;
+}
+.main__profileFaqItemContentText a:hover {
+    text-decoration: none;
+}
 /*PROFILE END*/
 
 /*MAIN MEDIA*/
@@ -2981,12 +3001,6 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
-    .footer .wrapper {
-        flex-direction: column-reverse;
-    }
-    .footer__text:first-child {
-        margin-top: 10px;
-    }
     .main__remaskMask {
         width: 100%;
         margin: -50px 0 0 0;
@@ -4174,6 +4188,19 @@ body {
         margin-left: 0;
     }
 
+}
+@media screen and (max-width: 850px) {
+    .footer .wrapper {
+        flex-direction: column-reverse;
+    }
+    .footer__text:last-child {
+        margin-top: 20px;
+    }
+    .footer__link {
+        font-size: 12px;
+        position: absolute;
+        bottom: 45px;
+    }
 }
 @media screen and (max-width: 801px) {
     .main__profileNotificationItems .main__bagCartItem {
