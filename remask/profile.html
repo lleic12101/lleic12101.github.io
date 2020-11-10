@@ -115,8 +115,8 @@
                        class="main__productsSidebarLink">Профиль</a>
                     <a href="#!" id="ordersBtn" class="main__productsSidebarLink">Заказы</a>
                     <a href="#!" id="notificationsBtn" class="main__productsSidebarLink">Уведомления</a>
-                    <a href="#!" id="promocodeBtn" class="main__productsSidebarLink">Промокоды</a>
-                    <a href="#!" id="faqBtn" class="main__productsSidebarLink main__productsSidebarLink-active">FAQ</a>
+                    <a href="#!" id="promocodeBtn" class="main__productsSidebarLink main__productsSidebarLink-active">Промокоды</a>
+                    <a href="#!" id="faqBtn" class="main__productsSidebarLink">FAQ</a>
                     <a href="#!" id="exitBtn" class="main__productsSidebarLink">Выход</a>
                 </div>
                 <div class="main__profileItems">
@@ -313,10 +313,82 @@
                     <div class="main__profileItem" id="notificationsTab">
 
                     </div>
-                    <div class="main__profileItem" id="promocodeTab">
-
+                    <div class="main__profileItem  main__profileItem-active" id="promocodeTab">
+                        <div class="main__profileDataBlock">
+                            <div class="main__profileDataHeadlineBlock">
+                                <p class="main__profileDataHeadline">У вас есть промокод?</p>
+                            </div>
+                            <div class="main__profileDataContent main__profileDataContent-promo">
+                                <div class="main__infoSmallForm">
+                                    <div class="main__infoInputBlock">
+                                        <input type="text" class="main__infoInput"/>
+                                        <label class="main__infoInputLabel">Введите промокод</label>
+                                        <p class="main__infoInputText main__infoInputText-bad">
+                                            Ошибка, проверьте введённые данные
+                                        </p>
+                                        <p class="main__infoInputText main__infoInputText-succeed">
+                                            Промокод активирован
+                                        </p>
+                                        <!--Для ошибки добавить блоку main__infoInputBlock класс main__infoInputBlockError-bad -->
+                                        <!--Для "Промокод активирован" добавить класс main__infoInputBlockError-succeed-->
+                                    </div>
+                                    <a href="#!" class="btn main__infoPromoBtn">применить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__profilePromoHeader">
+                            <p class="main__profilePromoHeaderText main__profilePromoItemText-date">Дата</p>
+                            <p class="main__profilePromoHeaderText main__profilePromoItemText-more">Подробнее</p>
+                            <p class="main__profilePromoHeaderText main__profilePromoItemText-status">Действителен</p>
+                            <p class="main__profilePromoHeaderText main__profilePromoItemText-discount">Скидка</p>
+                        </div>
+                        <div class="main__profilePromoItems">
+                            <div class="main__profilePromoItem">
+                                <p class="main__profilePromoItemText main__profilePromoItemText-date">
+                                    <span>Дата:</span>
+                                    3 нояб., 13:28</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-more">
+                                    <span>Подробнее:</span>
+                                    Черная пятница</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-status">
+                                    <span>Действителен:</span>
+                                    с 11 нояб., 10:00<br>до
+                                    13 нояб., 09:59</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-discount">
+                                    <span>Скидка:</span>5 000 руб</p>
+                            </div>
+                            <div class="main__profilePromoItem">
+                                <p class="main__profilePromoItemText main__profilePromoItemText-date">
+                                    <span>Дата:</span>
+                                    3 нояб., 13:28</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-more">
+                                    <span>Подробнее:</span>
+                                    Черная пятница</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-status">
+                                    <span>Действителен:</span>
+                                    с 11 нояб., 10:00<br>до
+                                    13 нояб., 09:59</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-discount">
+                                    <span>Скидка:</span>5 000 руб</p>
+                            </div>
+                            <div class="main__profilePromoItem">
+                                <p class="main__profilePromoItemText main__profilePromoItemText-date">
+                                    <span>Дата:</span>
+                                    3 нояб., 13:28</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-more">
+                                    <span>Подробнее:</span>
+                                    Скидка -50% для тех кто привел
+                                    нового клиента к нам</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-status">
+                                    <span>Действителен:</span>
+                                    с 11 нояб., 10:00<br>до
+                                    13 нояб., 09:59</p>
+                                <p class="main__profilePromoItemText main__profilePromoItemText-discount">
+                                    <span>Скидка:</span>5 000 руб</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="main__profileItem main__profileItem-active" id="faqTab">
+                    <div class="main__profileItem" id="faqTab">
                         <div class="main__profileFaqItems">
                             <div class="main__profileFaqItem">
                                 <div class="main__profileFaqItemHeader">

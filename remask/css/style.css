@@ -2469,6 +2469,80 @@ body {
     line-height: 20px;
     color: #FFFFFF;
 }
+
+.main__profileDataContent-promo .main__infoInputBlock {
+    margin-top: 0;
+}
+.main__profileDataContent-promo .main__infoSmallForm {
+    margin-bottom: 0;
+}
+.main__profileDataContent-promo .main__infoPromoBtn {
+    margin-top: 0;
+}
+.main__profilePromoHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.main__profilePromoHeaderText {
+    font-size: 14px;
+    color: #5A5F6D;
+    font-weight: 500;
+}
+.main__profilePromoItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main__profilePromoItem {
+    width: 100%;
+    padding: 24px 0 24px 27px;
+    background: #1A222C;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.main__profilePromoItem:last-child {
+    margin-bottom: 0;
+}
+.main__profilePromoItemText {
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.main__profilePromoItemText:first-child {
+    margin-right: 33px;
+}
+.main__profilePromoItemText span {
+    display: none;
+    font-size: 14px;
+    color: #5A5F6D;
+    font-weight: 500;
+}
+.main__profilePromoItemText-date {
+    min-width: 100px;
+    max-width: 100px;
+    margin-right: 60px;
+}
+.main__profilePromoItemText-more {
+    max-width: 240px;
+    width: 100%;
+    margin-right: 83px;
+}
+.main__profilePromoItemText-status {
+    max-width: 135px;
+    min-width: 135px;
+    margin-right: 70px;
+}
+.main__profilePromoItemText-discount {
+    min-width: 80px;
+    max-width: 80px;
+}
 /*PROFILE END*/
 
 /*MAIN MEDIA*/
@@ -3959,11 +4033,31 @@ body {
         max-width: 372px;
 
     }
+
+    .main__profileDataContent-promo .main__infoPromoBtn {
+        margin-top: 16px;
+    }
+    .main__profilePromoItemText-more {
+        max-width: 200px;
+        margin-right: 20px;
+    }
+    .main__profilePromoItemText-status {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .main__profilePromoItemText-more {
+        max-width: 150px;
+    }
+    .main__profilePromoItemText-status {
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width: 1020px) {
     .main__profileItems {
         margin-left: 0;
     }
+
 }
 @media screen and (max-width: 767px) {
     .main__profile .wrapper {
@@ -3977,6 +4071,40 @@ body {
     }
     .main__profileFaqItemHeader {
         padding: 20px 28px 20px 20px;
+    }
+
+    .main__profilePromoItem {
+        flex-direction: column;
+    }
+    .main__profilePromoItemText {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .main__profilePromoItemText:last-child {
+        margin-bottom: 0;
+    }
+    .main__profilePromoItemText span {
+        display: block;
+        min-width: 130px;
+    }
+    .main__profilePromoItemText-more,
+    .main__profilePromoItemText-date,
+    .main__profilePromoItemText-status,
+    .main__profilePromoItemText-discount {
+        width: unset;
+        max-width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+    }
+    .main__profilePromoItemText:first-child {
+        margin-right: 0;
+    }
+    .main__profilePromoHeader {
+        display: none;
+    }
+    .main__profilePromoItem {
+        padding-right: 24px;
     }
 }
 @media screen and (max-width: 648px) {
@@ -4071,6 +4199,13 @@ body {
     .main__profileDataContent {
         padding: 16px;
     }
+    .main__profileDataContent-promo .main__infoPromoBtn {
+        margin-top: 0;
+    }
+
+    .main__profilePromoItem {
+        padding: 16px;
+    }
 }
 @media screen and (max-width: 420px) {
     .main__profileDataInput-half-select .selectize-input {
@@ -4084,6 +4219,14 @@ body {
     }
     .main__profileDataContent .main__infoSmallForm-house .main__infoInput-house {
         width: 100%;
+    }
+
+    .main__profilePromoItemText {
+        font-size: 12px;
+    }
+    .main__profilePromoItemText span {
+        font-size: 12px;
+        min-width: 110px;
     }
 }
 @media screen and (max-width: 390px) {
