@@ -2219,8 +2219,12 @@ body {
 /*CARD END*/
 
 /*PROFILE*/
+.main__profile {
+    height: 100%;
+}
 .main__profile .wrapper {
     padding-bottom: 50px;
+
 }
 .main__profileItems {
     background: #161D25;
@@ -2386,6 +2390,85 @@ body {
     width: 192px;
 }
 
+.main__profileFaqItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main__profileFaqItem {
+    margin-bottom: 12px;
+    background: #1A222C;
+    border-radius: 6px;
+    width: 100%;
+}
+.main__profileFaqItemHeader {
+    border-radius: 6px;
+    width: 100%;
+    padding: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+}
+.main__profileFaqItemHeader:hover {
+    background: rgba(196, 196, 196, .15);
+}
+.main__profileFaqItemHeader-active {
+    background: #01E2FF;
+}
+.main__profileFaqItemHeader-active:hover {
+    background: #01E2FF;
+}
+.main__profileFaqItemHeader-active .main__profileFaqItemTitle {
+    color: #171A21;
+}
+.main__profileFaqItemHeader-active .main__profileFaqItemIcon {
+    opacity: 0;
+}
+.main__profileFaqItemHeader-active .main__profileFaqItemIcon-close {
+    opacity: 1;
+}
+.main__profileFaqItem:last-child {
+    margin-bottom: 0;
+}
+.main__profileFaqItemTitle {
+    font-size: 16px;
+    line-height: 15px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.main__profileFaqItemIconsBlock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28px;
+}
+.main__profileFaqItemIcon {
+    position: absolute;
+    opacity: 1;
+    transition: .3s;
+}
+.main__profileFaqItemIcon-close {
+    opacity: 0;
+}
+.main__profileFaqItemContent {
+    padding: 20px 60px 23px 28px;
+    background: #1A222C;
+    border-radius: 0 0 6px 6px;
+    margin-top: -6px;
+    display: none;
+}
+.main__profileFaqItemContentText {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
 /*PROFILE END*/
 
 /*MAIN MEDIA*/
@@ -3892,6 +3975,9 @@ body {
     .main__profileDataContent .main__infoSmallForm {
         width: 372px;
     }
+    .main__profileFaqItemHeader {
+        padding: 20px 28px 20px 20px;
+    }
 }
 @media screen and (max-width: 648px) {
     .main__profileItems {
@@ -3905,6 +3991,12 @@ body {
     }
     .main__profileDataContent {
         padding: 20px;
+    }
+    .main__profileFaqItemTitle {
+        font-size: 14px;
+    }
+    .main__profileFaqItemContent {
+        padding: 20px 40px 20px 20px;
     }
 }
 @media screen and (max-width: 480px) {
