@@ -2580,6 +2580,43 @@ body {
     width: 100%;
     justify-content: space-between;
 }
+
+.main__profileOrdersItems .main__bagCartItemContent {
+    justify-content: flex-start;
+}
+.main__profileOrdersItems .main__bagCartItemNameBlock {
+    max-width: 320px;
+    width: 100%;
+    min-width: 320px;
+}
+.main__profileOrdersItems .main__bagCartItemName:hover {
+    text-decoration: underline;
+}
+.main__profileOrdersText {
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.main__profileOrdersText-status {
+    max-width: 96px;
+    min-width: 96px;
+    margin-left: 50px;
+}
+.main__profileOrdersText-price {
+    margin-left: 65px;
+}
+.main__profileOrderHeaderText-name {
+    width: 477px;
+    margin-right: 50px;
+}
+.main__profileOrderHeaderText-status {
+    width: 96px;
+    margin-right: 65px;
+}
+.main__profileOrderHeaderText-price {
+
+}
 /*PROFILE END*/
 
 /*MAIN MEDIA*/
@@ -4086,6 +4123,43 @@ body {
         max-width: 340px;
         min-width: unset;
     }
+
+    .main__profileOrdersItems .main__bagCartItemNameBlock {
+        max-width: 270px;
+        min-width: 270px;
+    }
+    .main__profileOrderHeaderText-name {
+        width: 427px;
+        margin-right: 20px;
+    }
+    .main__profileOrdersText-status {
+        margin-left: 20px;
+    }
+    .main__profileOrdersText-price {
+        margin-left: 30px;
+    }
+    .main__profileOrderHeaderText-status {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .main__profileOrdersItems .main__bagCartItemNameBlock {
+        max-width: 240px;
+        min-width: 240px;
+    }
+    .main__profileOrderHeaderText-name {
+        width: 397px;
+        margin-right: 20px;
+    }
+    .main__profileOrdersText-price {
+        margin-left: 20px;
+    }
+    .main__profileOrderHeaderText-status {
+        margin-right: 20px;
+    }
+    .main__profileOrdersText {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 1100px) {
     .main__profilePromoItemText-more {
@@ -4114,6 +4188,23 @@ body {
     }
     .main__profileNotificationItems .main__bagCartItemNameBlock {
         margin-bottom: 10px;
+    }
+
+    .main__profilePromoHeader-orders {
+        display: none;
+    }
+    .main__bagCartItemNameBlock {
+        min-width: unset;
+        max-width: 100%;
+    }
+    .main__profileOrdersText-status {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .main__profileOrdersText-price {
+        position: absolute;
+        right: 20px;
+        bottom: 13px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -4263,6 +4354,19 @@ body {
     .main__profilePromoItem {
         padding: 16px;
     }
+    .main__profileOrdersText-price {
+
+    }
+    .main__profileOrdersText-status {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .main__profileOrdersItems .main__bagCartItemNameBlock {
+        min-width: unset;
+    }
+    .main__bagCartItemName {
+        line-height: 17px;
+    }
 }
 @media screen and (max-width: 420px) {
     .main__profileDataInput-half-select .selectize-input {
@@ -4284,6 +4388,10 @@ body {
     .main__profilePromoItemText span {
         font-size: 12px;
         min-width: 110px;
+    }
+
+    .main__profileOrdersItems .main__bagCartItemNameBlock {
+        margin-bottom: 6px;
     }
 }
 @media screen and (max-width: 390px) {
