@@ -2219,13 +2219,15 @@ body {
 /*CARD END*/
 
 /*PROFILE*/
+.main__profile .wrapper {
+    padding-bottom: 50px;
+}
 .main__profileItems {
     background: #161D25;
     border-radius: 6px;
     width: 100%;
     margin-left: 25px;
     padding: 40px;
-    margin-bottom: 50px;
 }
 .main__profileItem {
     display: none;
@@ -2321,6 +2323,9 @@ body {
     height: 56px;
     margin-right: 24px;
 }
+.main__profileDataBtn:last-child {
+    margin-right: 0;
+}
 .main__profileDataBtn-disabled {
     border: 2px solid #232835;
     background: transparent;
@@ -2362,6 +2367,9 @@ body {
 }
 .main__profileDataInput-index {
     margin: 0 0 24px 24px;
+}
+.main__profileDataInput-index .main__infoInput {
+    width: 200px;
 }
 .main__profileDataInput-street {
     width: 100%;
@@ -3842,3 +3850,164 @@ body {
     }
 }
 /*CARD END*/
+
+/*PROFILE*/
+@media screen and (max-width: 1261px) {
+    .main__profileDataContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__profileDataContent .main__infoSmallForm {
+        flex-direction: column;
+    }
+    .main__profileDataInput-index {
+        margin-left: 0;
+    }
+    .main__profileDataInput-index .main__infoInput {
+        width: 372px;
+    }
+    .main__profileDataInput-street .main__infoInput {
+        width: 372px;
+    }
+    .main__profileDataInput-pass .main__infoInput {
+        width: 372px;
+    }
+    .main__profileDataText {
+        max-width: 372px;
+
+    }
+}
+@media screen and (max-width: 1020px) {
+    .main__profileItems {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main__profile .wrapper {
+        padding-bottom: 25px;
+    }
+    .main__profileDataContent .main__infoInputBlock {
+        width: auto;
+    }
+    .main__profileDataContent .main__infoSmallForm {
+        width: 372px;
+    }
+}
+@media screen and (max-width: 648px) {
+    .main__profileItems {
+        padding: 16px;
+    }
+    .main__profileDataBlock {
+        margin-bottom: 20px;
+    }
+    .main__profileDataBlock:last-child {
+        margin-bottom: 0;
+    }
+    .main__profileDataContent {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__profileDataContent .main__infoInputBlock {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+    .main__profileDataText {
+        margin-top: 0;
+    }
+    .main__profileDataContent .main__infoSmallForm {
+        margin-bottom: 0;
+    }
+    .main__profileDataContent {
+        width: 100%;
+    }
+    .main__profileDataInput-half {
+        width: 100%;
+    }
+    .main__profileDataInput-half .main__infoInput {
+        width: 100%;
+    }
+    .main__profileDataContent .main__infoInputBlock {
+        width: 100%;
+    }
+    .main__profileDataContent .main__infoSmallForm {
+        width: 100%;
+    }
+    .main__profileDataInput-pass .main__infoInput {
+        width: 100%;
+    }
+    .main__profileDataBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__profileDataBtn {
+        margin-right: 0;
+    }
+    .main__profileDataBtn:last-child {
+        margin-top: 16px;
+    }
+    .main__profileDataInput-half-left .main__infoInput {
+        width: 100%;
+    }
+    .main__profileDataInput-half-select .selectize-input {
+        width: 100%;
+    }
+    .main__profileDataInput-index .main__infoInput {
+        width: 100%;
+    }
+    .main__profileDataInput-street .main__infoInput {
+        width: 100%;
+    }
+    .main__profileDataInput-half-select .selectize-input {
+        background-position-x: 300px;
+    }
+    .main__profileDataInput-half-select .selectize-input.full {
+        background-position-x: 300px;
+    }
+    .main__profileDataHeadlineBlock {
+        flex-direction: column;
+    }
+    .main__profileDataHeadlineLink {
+        margin-top: 7px;
+    }
+    .main__profileDataHeadline {
+        font-size: 18px;
+    }
+    .main__profileDataBtn-save:last-child {
+        margin-top: 0;
+    }
+    .main__profileDataContent {
+        padding: 16px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .main__profileDataInput-half-select .selectize-input {
+        background-position-x: 270px;
+    }
+    .main__profileDataInput-half-select .selectize-input.full {
+        background-position-x: 270px;
+    }
+    .main__profileDataContent .main__infoSmallForm-house {
+        flex-direction: column;
+    }
+    .main__profileDataContent .main__infoSmallForm-house .main__infoInput-house {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .main__profileDataInput-half-select .selectize-input {
+        background-position-x: 230px;
+    }
+    .main__profileDataInput-half-select .selectize-input.full {
+        background-position-x: 230px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .main__profileDataInput-half-select .selectize-input {
+        background-position-x: 190px;
+    }
+    .main__profileDataInput-half-select .selectize-input.full {
+        background-position-x: 190px;
+    }
+}
+/*PROFILE END*/
