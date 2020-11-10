@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
+    <title>remask</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="main__signIn main__makeQuestion">
+    <img src="img/forms/bg.png" alt="bg" class="main__signInBg"/>
+    <form action="" class="main__signInForm">
+        <p class="main__signInFormTitle">Задать вопрос</p>
+        <p class="main__restoreText">
+            Авторизовавшись в личном кабинете, вам станет доступен раздел FAQ, где находятся ответы на самые распространенные
+            вопросы. Если у вас остались вопросы,
+            то мы с удовольствием ответим на них.
+        </p>
+        <div class="main__makeQuestionRow">
+            <div class="main__infoInputBlock">
+                <input type="text" class="main__infoInput" required/>
+                <label class="main__infoInputLabel">Email или номер телефона*</label>
+                <p class="main__infoInputText main__infoInputText-bad">
+                    Ошибка, проверьте введённые данные
+                </p>
+                <p class="main__infoInputText main__infoInputText-required">
+                    Обязательное для заполнения поле
+                </p>
+            </div>
+            <div class="main__infoInputBlock">
+                <input type="password" class="main__infoInput" required/>
+                <label class="main__infoInputLabel">Пароль*</label>
+                <p class="main__infoInputText main__infoInputText-bad">
+                    Ошибка, проверьте введённые данные
+                </p>
+                <p class="main__infoInputText main__infoInputText-required">
+                    Обязательное для заполнения поле
+                </p>
+            </div>
+        </div>
+        <div class="main__infoInputBlock main__infoInputBlock-textarea">
+            <textarea class="main__infoInput" required></textarea>
+            <label class="main__infoInputLabel">Введите вопрос*</label>
+            <p class="main__infoInputText main__infoInputText-bad">
+                Ошибка, проверьте введённые данные
+            </p>
+            <p class="main__infoInputText main__infoInputText-required">
+                Обязательное для заполнения поле
+            </p>
+        </div>
+        <a href="#!" class="btn btn-light main__signInBtn main__restoreBtn">Отправить</a>
+    </form>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

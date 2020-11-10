@@ -2639,6 +2639,49 @@ body {
 }
 /*PROFILE END*/
 
+/*ASK SUCCEED*/
+.main__signIn-askSucceed .main__signInForm {
+    width: 564px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main__signIn-askSucceed .main__restoreText {
+    max-width: 473px;
+    margin-bottom: -10px;
+}
+.main__signIn-askSucceed .main__signInFormTitle {
+    text-align: center;
+}
+.main__signInForm .main__infoInputBlock-textarea {
+    margin-top: 24px;
+}
+/*ASK SUCCEED END*/
+
+/*MAKE QUESTION*/
+.main__makeQuestion .main__signInForm {
+    width: 790px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main__makeQuestion .main__restoreText {
+    max-width: 661px;
+}
+.main__makeQuestionRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__makeQuestionRow .main__infoInputBlock:first-child {
+    margin-right: 24px;
+}
+.main__infoInputBlock-textarea .main__infoInput {
+    width: 670px;
+    height: 125px;
+    padding-top: 25px;
+    resize: none;
+}
+/*MAKE QUESTION END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1537px) {
     html {
@@ -3623,6 +3666,15 @@ body {
         margin: 15px;
         padding: 40px 0;
     }
+
+    .main__signIn .main__infoInputBlock-textarea {
+        width: 670px;
+        margin-top: 12px;
+    }
+    .main__makeQuestion .main__signInForm {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 @media screen and (max-width: 380px) {
     .main__signInBtn {
@@ -3659,6 +3711,13 @@ body {
     }
     .main__restoreBtn {
         margin-bottom: 0;
+    }
+    .main__signIn-askSucceed .main__restoreText {
+        margin-bottom: 0;
+    }
+
+    .main__makeQuestionRow {
+        width: 100%;
     }
 }
 /*SIGN IN END*/
@@ -4201,6 +4260,11 @@ body {
         position: absolute;
         bottom: 45px;
     }
+
+    .main__makeQuestion .main__signInForm {
+        width: 100%;
+        margin: 0 15px;
+    }
 }
 @media screen and (max-width: 801px) {
     .main__profileNotificationItems .main__bagCartItem {
@@ -4280,6 +4344,24 @@ body {
     }
     .main__profilePromoItem {
         padding-right: 24px;
+    }
+
+    .main__infoInputBlock-textarea {
+        width: 100%;
+    }
+    .main__infoInputBlock-textarea .main__infoInput {
+        width: 100%
+    }
+    .main__makeQuestionRow {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__makeQuestionRow .main__infoInputBlock:first-child {
+        margin-right: 0;
+    }
+    .main__signIn .main__infoInputBlock-textarea {
+        width: 100%;
+        max-width: 322px;
     }
 }
 @media screen and (max-width: 648px) {
