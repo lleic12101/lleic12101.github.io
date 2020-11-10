@@ -520,3 +520,17 @@ if ($('*').is('.main__cardImgScrolling')) {
         }
     })()
 }
+
+//Profile tabs
+if ($('*').is('.main__profileItems')) {
+    $(".main__productsSidebarLink").click(function () {
+        var id = $(this).attr("id");
+        id = id.substr(0, id.length - 3);
+        if (id === "exit") return;
+        $(".main__productsSidebarLink").removeClass("main__productsSidebarLink-active");
+        $(this).addClass("main__productsSidebarLink-active");
+
+        $(".main__profileItem").removeClass("main__profileItem-active");
+        $("#" + id + "Tab").addClass("main__profileItem-active");
+    });
+}
