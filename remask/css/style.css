@@ -2218,6 +2218,168 @@ body {
 }
 /*CARD END*/
 
+/*PROFILE*/
+.main__profileItems {
+    background: #161D25;
+    border-radius: 6px;
+    width: 100%;
+    margin-left: 25px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+.main__profileItem {
+    display: none;
+    flex-direction: column;
+}
+.main__profileItem-active {
+    display: flex;
+}
+.main__profileDataBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.main__profileDataBlock:last-child {
+    margin-bottom: 0;
+}
+.main__profileDataHeadlineBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.main__profileDataHeadline {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.main__profileDataHeadlineLink {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 14px;
+    color: #5A5F6D;
+    text-decoration: none;
+}
+.main__profileDataHeadlineLink:hover {
+    text-decoration: underline;
+}
+.main__profileDataHeadlineLink-green {
+    color: #4BD948;
+}
+.main__profileDataHeadlineLinkIcon {
+    margin-right: 13px;
+}
+.main__profileDataContent {
+    width: 100%;
+    padding: 32px;
+    background: #1A222C;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main__profileDataInput-half {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+.main__profileDataInput-half .main__infoInput {
+    width: 372px;
+}
+.main__infoInput:disabled {
+    color: #5A5F6D;
+    background: rgba(23, 26, 33, 0.8);
+    border-radius: 6px;
+    border: none;
+}
+.main__profileDataText {
+    font-size: 14px;
+    line-height: 13px;
+    color: #C4C4C4;
+    margin-top: -10px;
+}
+.main__profileDataInput-pass {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.main__profileDataInput-pass .main__infoInput {
+    width: 240px;
+}
+.main__profileDataBtns {
+    display: flex;
+    flex-direction: row;
+}
+.main__profileDataBtn {
+    width: 178px;
+    height: 56px;
+    margin-right: 24px;
+}
+.main__profileDataBtn-disabled {
+    border: 2px solid #232835;
+    background: transparent;
+    color: #5A5F6D;
+    cursor: default;
+    width: 170px;
+}
+.main__profileDataBtn-disabled:hover {
+    border: 2px solid #232835;
+    background: transparent;
+    color: #5A5F6D;
+    cursor: default;
+}
+.main__profileDataContent .main__infoSmallForm {
+    margin-bottom: 24px;
+}
+.main__profileDataInput-half-left {
+    margin-right: 22px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.main__profileDataInput-half-left .main__infoInput {
+    width: 372px;
+}
+.main__profileDataInput-half-select {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.main__profileDataInput-half-select .selectize-input {
+    width: 372px;
+}
+.main__profileDataInput-half-select .selectize-input.full {
+    background-position-x: 330px;
+}
+.main__profileDataInput-half-select .selectize-input,
+.selectize-control.single .selectize-input.input-active {
+    background-position-x: 330px;
+}
+.main__profileDataInput-index {
+    margin: 0 0 24px 24px;
+}
+.main__profileDataInput-street {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+}
+.main__profileDataInput-street .main__infoInput {
+    width: 100%;
+}
+.main__profileDataInput-house .main__infoInput {
+    width: 156px;
+}
+.main__profileDataInput-apartment .main__infoInput {
+    width: 192px;
+}
+
+/*PROFILE END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1537px) {
     html {
