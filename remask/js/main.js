@@ -366,7 +366,7 @@ if ($('*').is('.main__infoPayItem')) {
 if ($('*').is('.main__signInBtn')) {
     $(".main__signInBtn").click(function () {
         var formBlock = document.querySelector(".main__signIn");
-        var inputs = formBlock.querySelectorAll("input");
+        var inputs = formBlock.querySelectorAll(".main__infoInput");
         var errCount = 0;
         for (var i = 0; i < inputs.length; i++) {
             if ($(inputs[i]).attr("required") == "required") {
