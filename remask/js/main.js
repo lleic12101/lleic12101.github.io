@@ -573,3 +573,8 @@ if ($('*').is('.main__infoSmallAddressItems')) {
         $(".main__infoSmallAddressLink").removeClass("main__infoSmallAddressLink-active");
     });
 }
+
+//video autostart
+window.onload = function () {
+    $('video').trigger('play');
+}
