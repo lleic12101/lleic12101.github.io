@@ -306,7 +306,7 @@ body {
 
 /*REMASK*/
 .main__remask {
-    background: url(../img/main/smoke.png) no-repeat;
+    /*background: url(../img/main/smoke.png) no-repeat;*/
     background-size: 100% 100%;
 }
 .main__remask .wrapper {
@@ -315,19 +315,31 @@ body {
     align-items: center;
     padding-top: 126px;
 }
+.main__remaskBrand {
+    position: relative;
+    z-index: 1;
+}
 .main__remaskText {
     font-size: 24px;
     opacity: 0.6;
     margin-top: 27px;
+    position: relative;
+    z-index: 1;
 }
 .main__remaskMask {
     margin-top: -119px;
     margin-right: -210px;
 }
+.main__remaskMask-video {
+    margin-top: -300px;
+}
 .main__remaskScroll {
     margin-top: 0px;
     cursor: pointer;
     animation: breathe 1s ease-in-out infinite;
+}
+.main__remaskScroll-video {
+    margin-top: -185px;
 }
 @keyframes breathe {
     0% {
@@ -354,6 +366,8 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: -105px;
+    position: relative;
+    z-index: 1;
 }
 .main__levelsTextBlockHeadline {
     display: flex;
@@ -392,6 +406,7 @@ body {
 }
 .main__levelsTextBlockItemText {
     max-width: 500px;
+    min-width: 500px;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
@@ -402,6 +417,11 @@ body {
 .main__levelsImg {
     margin-top: -97px;
     margin-right: -350px;
+}
+.main__levelsImg-video1 {
+    transform: scale(.7);
+    margin-left: -400px;
+    margin-top: -200px;
 }
 /*LEVELS END*/
 
@@ -458,6 +478,8 @@ body {
 .main__aboutProsTextBlock {
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 .main__aboutProsHeadline {
     font-weight: 500;
@@ -477,6 +499,18 @@ body {
     margin-left: -120px;
     margin-bottom: -140px;
     margin-top: -60px;
+}
+.main__aboutProsImg-video1 {
+    transform: scale(.6);
+    margin-left: -550px;
+}
+.main__aboutProsImg-video2 {
+    transform: scale(.6);
+    margin-left: -450px;
+}
+.main__aboutProsImg-video3 {
+    transform: scale(.8);
+    margin-left: -600px;
 }
 .main__bgName {
     position: absolute;
@@ -536,10 +570,21 @@ body {
     left: -600px;
     top: -130px;
 }
+.main__buyImgBlockSmoke-behind-video {
+    position: absolute;
+    /*opacity: .3;*/
+    left: -343px;
+    top: -272px;
+}
 .main__buyImgBlockMask {
     position: absolute;
     right: 0;
     top: 100px;
+}
+.main__buyImgBlockMask-video {
+    position: absolute;
+    left: -350px;
+    top: -272px;
 }
 .main__buyImgBlockSmoke-front {
     position: absolute;
@@ -730,6 +775,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 17px 15px;
+    position: relative;
+    z-index: 1;
 }
 .footer__text {
     font-size: 14px;
@@ -2880,6 +2927,22 @@ body {
     .main__levelsTextBlock {
         margin-left: 0;
     }
+    .main__levelsTextBlockItemText {
+        min-width: unset;
+    }
+    .main__buyImgBlockMask-video {
+        top: -400px;
+        left: -100px;
+    }
+    .main__buyControlBlock {
+        margin-top: 300px;
+    }
+    .main__aboutProsImg-video2 {
+        margin-left: -500px;
+    }
+    .main__levelsImg-video1 {
+        margin-left: -450px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .main__aboutPros .wrapper {
@@ -2926,10 +2989,26 @@ body {
         transform: scale(0.7);
     }
     .main__levels .wrapper {
-        padding-top: 110px;
+        padding-top: 40px;
     }
     .main__remaskScroll {
         display: none;
+    }
+
+    .main__levelsImg-video1 {
+        margin: 0 0 -150px 0;
+    }
+    .main__aboutProsImg-video1 {
+        margin: -150px 0;
+    }
+    .main__aboutProsImg-video2 {
+        margin: -150px 0;
+    }
+    .main__aboutProsImg-video3 {
+        margin: -150px 0;
+    }
+    .main__buyImgBlockMask-video {
+        left: -200px;
     }
 }
 @media screen and (max-width: 1020px) {
@@ -3173,6 +3252,32 @@ body {
         font-size: 34px;
         margin-bottom: -10px;
     }
+    .main__remaskMask-video {
+        margin-bottom: -100px;
+        transform: scale(.7);
+    }
+    .main__levelsImg-video1 {
+        transform: scale(.5);
+    }
+    .main__aboutProsImg-video1 {
+        transform: scale(.4);
+        margin: -200px 0 -240px;
+    }
+    .main__aboutProsImg-video2 {
+        transform: scale(.4);
+        margin: -240px 0;
+    }
+    .main__aboutProsImg-video3 {
+        transform: scale(.6);
+    }
+    .main__buyImgBlockMask-video {
+        transform: scale(.8);
+        left: -350px;
+    }
+    .main__levelsImg-video1 {
+        margin-bottom: -240px;
+        margin-top: -300px;
+    }
 }
 @media screen and (max-width: 767px) {
     .header {
@@ -3241,6 +3346,41 @@ body {
         font-size: 14px;
     }
 }
+@media screen and (max-width: 600px) {
+    .main__remaskMask-video {
+        margin-top: -360px;
+        margin-bottom: -200px;
+        margin-left: -80px;
+        transform: scale(.5);
+    }
+    .main__levelsImg-video1 {
+        transform: scale(.4);
+        margin-bottom: -300px;
+    }
+    .main__aboutProsImg-video1 {
+        transform: scale(.3);
+        margin-bottom: -350px;
+        margin-top: -300px;
+    }
+    .main__aboutProsImg-video2 {
+        transform: scale(.3);
+        margin-bottom: -350px;
+        margin-top: -350px;
+    }
+    .main__aboutProsImg-video3 {
+        transform: scale(.4);
+        margin-bottom: -300px;
+        margin-top: -250px;
+        margin-right: -40px;
+    }
+    .main__buyImgBlockMask-video {
+        transform: scale(.6);
+        left: -500px;
+    }
+    .main__buyControlBlock {
+        margin-top: 250px;
+    }
+}
 @media screen and (max-width: 556px) {
     .main__remaskBrand {
         width: 290px;
@@ -3266,6 +3406,41 @@ body {
     }
     .main__levels .wrapper {
         padding-top: 40px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .main__remaskMask-video {
+        margin-top: -420px;
+        margin-bottom: -550px;
+        transform: scale(.3);
+    }
+    .main__levelsImg-video1 {
+        transform: scale(.2);
+        margin-top: -200px;
+        margin-bottom: -400px;
+    }
+    .main__aboutProsImg-video1 {
+        transform: scale(.2);
+        margin-bottom: -400px;
+        margin-top: -350px;
+    }
+    .main__aboutProsImg-video2 {
+        transform: scale(.2);
+        margin-bottom: -400px;
+        margin-top: -400px;
+    }
+    .main__aboutProsImg-video3 {
+        transform: scale(.3);
+        margin-bottom: -370px;
+        margin-top: -350px;
+        margin-left: -40px;
+    }
+    .main__buyImgBlockMask-video {
+        transform: scale(.4);
+        left: -640px;
+    }
+    .main__buyControlBlock {
+        margin-top: 220px;
     }
 }
 @media screen and (max-width: 420px) {
@@ -3403,6 +3578,13 @@ body {
     }
     .main__remaskBrand {
         width: 260px;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    .main__buyImgBlockMask-video {
+        transform: scale(.3);
+        left: -700px;
     }
 }
 /*MAIN MEDIA END*/
