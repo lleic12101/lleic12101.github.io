@@ -553,3 +553,23 @@ if ($('*').is('.main__profileItems')) {
         }
     });
 }
+
+//info select address
+if ($('*').is('.main__infoSmallAddressItems')) {
+    $(".main__infoSmallAddressLink").click(function () {
+        $(this).toggleClass("main__infoSmallAddressLink-active");
+        $(".main__infoSmallAddressItems").slideToggle(300);
+        $('.header__closebleMaskFilter').toggleClass("header__closebleMaskFilter-active");
+    });
+    $(".main__infoSmallAddressItem").click(function () {
+        $(".main__infoSmallAddressItem").removeClass("main__infoSmallAddressItem-active");
+        $(this).addClass("main__infoSmallAddressItem-active");
+        $(".main__infoSmallAddressItems").slideUp(300);
+        $('.header__closebleMaskFilter').removeClass("header__closebleMaskFilter-active");
+    });
+    $('.header__closebleMaskFilter').click(function () {
+        $('.header__closebleMaskFilter').removeClass("header__closebleMaskFilter-active");
+        $(".main__infoSmallAddressItems").slideUp(300);
+        $(".main__infoSmallAddressLink").removeClass("main__infoSmallAddressLink-active");
+    });
+}

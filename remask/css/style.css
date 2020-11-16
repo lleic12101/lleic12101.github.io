@@ -1249,6 +1249,90 @@ body {
 .selectize-dropdown .option {
     font-size: 14px;
 }
+
+.main__infoSmallHeadlineAndAddress {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+.main__infoSmallAddressLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: -8px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+.main__infoSmallAddressLink:hover {
+    text-decoration: underline;
+}
+.main__infoSmallAddressLinkIcon {
+    margin-left: 7px;
+    transition: .3s;
+    transform: rotate(0);
+}
+.main__infoSmallAddressLink-active .main__infoSmallAddressLinkIcon {
+    transform: rotate(180deg);
+}
+.main__infoSmallAddressItems {
+    background: #171A21;
+    border: 1.2px solid #5A5F6D;
+    border-radius: 6px;
+    width: 445px;
+    position: absolute;
+    z-index: 5;
+    top: 22px;
+    right: 24px;
+    display: none;
+}
+.main__infoSmallAddressItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: .3s;
+    padding: 20px;
+}
+.main__infoSmallAddressItem:first-child {
+    border-radius: 6px 6px 0 0;
+}
+.main__infoSmallAddressItem:last-child {
+    border-radius: 0 0 6px 6px;
+}
+.main__infoSmallAddressItemText {
+    transition: .3s;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.main__infoSmallAddressItem-active {
+    background: #01E2FF;
+}
+.main__infoSmallAddressItem-active .main__infoSmallAddressItemText {
+    color: #171A21;
+}
+.main__infoSmallAddressItem:hover {
+    background: rgba(1, 226, 255, .3);
+}
+.main__infoSmallAddressItem:hover .main__infoSmallAddressItemText {
+    color: #171A21;
+}
+.main__infoSmallAddressItem-active:hover {
+    background: #01E2FF;
+}
+.main__infoSmallAddressItem-active:hover .main__infoSmallAddressItemText {
+    color: #171A21;
+}
 /*INFO END*/
 
 /*SCROLLBARS*/
@@ -2682,6 +2766,12 @@ body {
 }
 /*MAKE QUESTION END*/
 
+/*404*/
+.main__404 .main__thxText {
+    max-width: 610px;
+}
+/*404 END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1537px) {
     html {
@@ -3337,6 +3427,10 @@ body {
         margin-bottom: 5px;
         line-height: 36px;
     }
+    .main__thxHeadline {
+        margin-top: 14px;
+        font-size: 24px;
+    }
     .main__thxText {
         font-size: 14px;
         margin-bottom: 20px;
@@ -3350,9 +3444,20 @@ body {
         width: 100%;
     }
 }
+@media screen and (max-width: 420px) {
+    .main__404 .main__thxMask {
+        max-width: 280px;
+    }
+    .main__404 .main__thxText {
+        max-width: 290px;
+    }
+}
 @media screen and (max-width: 385px) {
     .main__thx .wrapper {
         padding-bottom: 30px;
+    }
+    .main__404 .main__thxHeadline {
+        font-size: 20px;
     }
 }
 /*THX MEDIA END*/
@@ -3505,6 +3610,20 @@ body {
     }
     .main__infoFormHeadlineBlock-2 {
 
+    }
+
+    .main__infoSmallHeadlineAndAddress {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main__infoSmallHeadlineAndAddress .main__infoSmallFormHeadline {
+        margin-bottom: 5px;
+    }
+    .main__infoSmallAddressItems {
+        left: 0;
+        right: unset;
+        top: 45px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 480px) {
