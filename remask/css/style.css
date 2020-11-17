@@ -4535,6 +4535,31 @@ body {
         margin-bottom: 15px;
     }
 
+    .main__bagCartItem-order .main__bagCartItemImgBlock {
+        height: 120px;
+        width: 100%;
+    }
+    .main__bagCartItem-order .main__bagCartItemImg {
+        height: 100%;
+    }
+    .main__bagCartItem-order .main__bagCartItemImg-smoke {
+        height: 100%;
+    }
+    .main__bagCartItem-order .main__bagCartItemName {
+        font-size: 13px;
+    }
+    .main__bagCartItem-order .main__bagCartItemNumber {
+        font-size: 11px;
+    }
+    .main__bagCartItem-order .main__profileOrdersText-price {
+        font-size: 11px;
+    }
+    .main__bagCartItem-order .main__bagCartDeliveryHeadline {
+        font-size: 11px;
+    }
+    .main__bagCartItem-order .main__bagCartDeliveryHeadline span {
+        font-size: 11px;
+    }
 }
 @media screen and (max-width: 340px) {
     .main__bagContent .main__infoTotalText {
@@ -4908,7 +4933,7 @@ body {
 
     .main__bagCartDelivery-1 .main__bagCartDeliveryLineFill {
         width: 100%;
-        height: 0;
+        height: 1%;
     }
     .main__bagCartDelivery-2 .main__bagCartDeliveryLineFill {
         width: 100%;
@@ -4931,19 +4956,42 @@ body {
         text-align: left;
     }
     .main__bagCartDelivery-1 .main__bagCartDeliveryText:nth-child(1) {
-        color: #01E2FF;
+        color: #FFFFFF;
     }
     .main__bagCartDelivery-2 .main__bagCartDeliveryText:nth-child(2) {
-        color: #01E2FF;
+        color: #FFFFFF;
+    }
+    .main__bagCartDelivery-2 .main__bagCartDeliveryText:nth-child(1) {
+        color: #FFFFFF;
     }
     .main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(3) {
-        color: #01E2FF;
+        color: #FFFFFF;
+    }
+    .main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(1),
+    .main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(2) {
+        color: #FFFFFF;
     }
     .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(4) {
-        color: #01E2FF;
+        color: #FFFFFF;
+    }
+    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(1),
+    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(2),
+    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(3) {
+        color: #FFFFFF;
     }
     .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(5) {
-        color: #01E2FF;
+        color: #FFFFFF;
+    }
+    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(1),
+    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(2),
+    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(3),
+    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(4) {
+        color: #FFFFFF;
+    }
+
+    .main__bagCartDeliveryCircle {
+        background: transparent;
+        display: none;
     }
 }
 @media screen and (max-width: 648px) {
