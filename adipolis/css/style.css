@@ -1,0 +1,500 @@
+﻿@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MgFuturePol';
+    src: url('../fonts/MgFutureUCPolNormal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+html, body {
+    overflow-x: hidden;
+}
+body {
+    background: #fcfcfe;
+}
+.wrapper {
+    max-width: 1218px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+    padding-top: 20px;
+}
+.header__logoBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.header__logo {
+    width: 52px;
+    border-radius: 50%;
+}
+.header__logoText {
+    font-family: "MgFuturePol";
+    font-size: 42.16px;
+    color: #0c0c0c;
+    margin-left: 15px;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__navLink {
+    margin-right: 50px;
+    font-family: "Mont";
+    font-weight: 600;
+    font-size: 14.17px;
+    color: #353535;
+    text-decoration: none;
+}
+.header__navLink:hover {
+    text-decoration: underline;
+}
+/*HEADER END*/
+
+/*BTN*/
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 9px;
+    background: #f7d84d;
+    box-shadow: 10px 17.321px 65px 0px rgba(0, 0, 0, 0.15);
+    width: 233px;
+    height: 61px;
+    font-family: "Mont";
+    font-size: 20.15px;
+    font-weight: 700;
+    color: #353535;
+    position: relative;
+    z-index: 1;
+}
+.btn:hover {
+    text-decoration: underline;
+}
+.btn-green {
+    background: #8de157;
+}
+.btn-light {
+    background: #fff1cf;
+}
+/*BTN END*/
+
+/*MAIN HEADER*/
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.main__header {
+    padding-bottom: 345px;
+    position: relative;
+    background: url(../img/bg1.png) no-repeat;
+    background-size: auto 100%;
+    background-position: right top;
+}
+.main__headerBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.main__headerContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    margin-top: 115px;
+    position: relative;
+}
+.main__headerContentFeather {
+    position: absolute;
+    left: -100px;
+    top: 165px;
+}
+.main__headerHeadline {
+    font-family: "Mont";
+    font-weight: 700;
+    font-size: 47.8px;
+    color: #353535;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+.main__headerContentText {
+    font-family: "Mont";
+    font-size: 19.9px;
+    color: #353535;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+.main__headerContentBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 18px;
+    position: relative;
+    z-index: 1;
+}
+.main__headerContentBtn {
+    margin-right: 37px;
+}
+.main__headerContentBtn-instagram {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.main__headerContentBtnIcon {
+    width: 58px;
+}
+/*MAIN HEADER END*/
+
+/*BODY*/
+.main__body {
+    background: #7bd496 url(../img/bg2.png) no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+.main__body .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 123px 0 85px 0;
+}
+.main__bodyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 650px;
+    position: relative;
+}
+.main__bodyHeadline {
+    font-family: "ProximaNova";
+    font-weight: 600;
+    font-size: 41.17px;
+    color: #353535;
+    text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+}
+.main__bodyText {
+    font-family: "Mont";
+    font-weight: 300;
+    font-size: 17.2px;
+    color: #000000;
+    line-height: 27.76px;
+    margin-bottom: 27px;
+    text-indent: 17px;
+    position: relative;
+    z-index: 1;
+}
+.main__bodyContentBtn {
+    margin-top: 14px;
+}
+.main__bodyContentFeather {
+    position: absolute;
+    right: -100px;
+    bottom: 50px;
+}
+/*BODY END*/
+
+/*FOOD*/
+.main__food {
+    background: #ff9db8 url(../img/bg3.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__food .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 140px 0 150px;
+}
+.main__foodContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 780px;
+    position: relative;
+}
+.main__foodContentFeather {
+    position: absolute;
+    left: -120px;
+    bottom: -20px;
+}
+.main__foodContentImg {
+    position: absolute;
+    height: 668px;
+    right: 0;
+}
+/*FOOD END*/
+
+/*BEAUTY*/
+.main__beauty {
+    background: #f8f8f8 url(../img/beauty.png) no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+.main__beauty .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.main__beautyHeadline {
+    font-family: "ProximaNova";
+    font-size: 41.17px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 90px;
+}
+.main__beautyItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.main__beautyItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 120px;
+}
+.main__beautyItemImg {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+.main__beautyItemTextBlock {
+    display: flex;
+    flex-direction: column;
+}
+.main__beautyItemHeadline {
+    font-family: "Mont";
+    font-size: 21.5px;
+    color: #353535;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.main__beautyItemText {
+    font-family: "Mont";
+    font-size: 15.36px;
+    color: #353535;
+    font-weight: 400;
+    max-width: 240px;
+    margin-left: 4px;
+}
+.main__beautyFeather {
+    position: absolute;
+    left: -70px;
+    top: 140px;
+}
+.main__beautyFeather-1 {
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+}
+/*BEAUTY END*/
+
+/*COSMETIC*/
+.main__cosmetic {
+    background: #f1ce79 url(../img/bg4.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main__cosmetic .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0 145px 0;
+}
+.main__cosmeticContentFeather {
+    position: absolute;
+    right: -60px;
+    bottom: -70px;
+}
+.main__cosmeticImg {
+    margin-left: -52px;
+}
+/*COSMETIC END*/
+
+/*MAIN FOOTER*/
+.main__footer {
+
+}
+.main__footer .wrapper {
+    padding-top: 100px;
+}
+.main__footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 73px;
+}
+.main__footerContentHeadline {
+    font-family: "ProximaNova";
+    font-size: 41.17px;
+    color: #353535;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.main__footerContentTabsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1111px;
+}
+.main__footerContentBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.main__footerContentBtn {
+    border-radius: 9px;
+    background-color: rgb(248, 249, 251);
+    box-shadow: 10px 17.321px 65px 0px rgba(0, 0, 0, 0.07);
+    width: 232px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: "Mont";
+    font-size: 20.15px;
+    color: #8b8b8b;
+    font-weight: 700;
+    transition: .3s;
+}
+.main__footerContentBtn-2 {
+    width: 323px;
+}
+.main__footerContentBtn-3 {
+    width: 262px;
+}
+.main__footerContentBtn:hover {
+    text-decoration: underline;
+}
+.main__footerContentBtn-active {
+    color: #353535;
+    background-color: rgb(243, 212, 137);
+}
+.main__footerContentBtn-active:hover {
+    text-decoration: none;
+}
+.main__footerContentTabs {
+    width: 100%;
+}
+.main__footerContentTab {
+    border-radius: 11px;
+    background-color: #f8f9fb;
+    box-shadow: 10px 17.321px 65px 0px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    padding: 70px 78px 98px 64px;
+    display: none;
+    flex-direction: column;
+}
+.main__footerContentTab-active {
+    display: flex;
+}
+.main__footerContentTabRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 28px;
+}
+.main__footerContentTabRow:last-child {
+    margin-bottom: 0;
+}
+.main__footerContentTabRowText {
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 19.35px;
+    color: #353535;
+}
+.main__footerContentTabRowPrice {
+    font-family: "Mont";
+    font-weight: 700;
+    font-size: 19.35px;
+    color: #353535;
+    margin-left: 40px;
+    min-width: 100px;
+}
+/*MAIN FOOTER END*/
+
+/*FOOTER*/
+.footer {
+    padding: 73px 0;
+}
+.footer .header__logoBlock {
+    margin-bottom: 17px;
+}
+.footer__textBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__text {
+    font-family: "Mont";
+    font-weight: 600;
+    font-size: 15.7px;
+    color: #353535;
+}
+/*FOOTER END*/
