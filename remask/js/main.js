@@ -122,7 +122,12 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">Кабель USB Type-C для зарядки</p>
                     </div>`);
 
-            $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            if ($(window).width() > 767) {
+                $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            } else {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/6.png");
+            }
             // $(".main__buyImgBlockMask").attr("src", "img/main/mask-pro.png");
         } else if ($(this).hasClass("main__buyControlBtnsBtn-basic")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-basic");
@@ -144,7 +149,12 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">Фильтр, состоящий из 3 компонентов</p>
                     </div>`);
 
-            $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06_Lite.mp4");
+            if ($(window).width() > 767) {
+                $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06_Lite.mp4");
+            } else {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/6-lite.png");
+            }
             // $(".main__buyImgBlockMask").attr("src", "img/main/mask-basic.png");
         } else if ($(this).hasClass("main__buyControlBtnsBtn-lite")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-lite");
@@ -162,7 +172,12 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">1 внешняя LED-маска</p>
                     </div>`);
 
-            $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            if ($(window).width() > 767) {
+                $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            } else {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/6.png");
+            }
             // $(".main__buyImgBlockMask").attr("src", "img/main/mask-lite.png");
         }
     });
