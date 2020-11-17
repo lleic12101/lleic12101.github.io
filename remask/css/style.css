@@ -3202,7 +3202,7 @@ body {
     }
     .header {
         padding-top: 120px;
-        z-index: 10;
+        z-index: 11;
     }
     .header .wrapper {
         background: #14171E;
@@ -3211,7 +3211,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 10;
+        z-index: 11;
         transition: .3s;
         padding: 0 45px 0 40px;
     }
