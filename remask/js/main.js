@@ -5,6 +5,14 @@ $(window).on('resize', function () {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    //mobile videos
+    if ($('*').is('video')) {
+        if ($(window).width() < 767) {
+            $(".main__levelsImg-video1").attr("src", " ");
+            $(".main__buyImgBlockMask-video").attr("src", " ");
+        }
+    }
 });
 resizeEmptySpace();
 function resizeEmptySpace() {
@@ -114,12 +122,13 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">Кабель USB Type-C для зарядки</p>
                     </div>`);
 
-            $(".main__buyImgBlockMask").attr("src", "img/main/mask-pro.png");
+            $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            // $(".main__buyImgBlockMask").attr("src", "img/main/mask-pro.png");
         } else if ($(this).hasClass("main__buyControlBtnsBtn-basic")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-basic");
             $(".main__buyControlNameType").html("Basic");
 
-            $(".main__buyControlRadioBtns-label1").html(`7 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label1").html(`7 900 <img src="img/icons/rouble.svg" alt="rouble"/>`);
             $(".main__buyControlRadioBtns-label2").html(`14 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
 
             $(".main__buyControlList").html(`<div class="main__buyControlListItem">
@@ -135,13 +144,14 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">Фильтр, состоящий из 3 компонентов</p>
                     </div>`);
 
-            $(".main__buyImgBlockMask").attr("src", "img/main/mask-basic.png");
+            $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06_Lite.mp4");
+            // $(".main__buyImgBlockMask").attr("src", "img/main/mask-basic.png");
         } else if ($(this).hasClass("main__buyControlBtnsBtn-lite")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-lite");
             $(".main__buyControlNameType").html("Lite");
 
-            $(".main__buyControlRadioBtns-label1").html(`4 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-            $(".main__buyControlRadioBtns-label2").html(`7 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label1").html(`3 300 <img src="img/icons/rouble.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label2").html(`6 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
 
             $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
@@ -152,7 +162,8 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">1 внешняя LED-маска</p>
                     </div>`);
 
-            $(".main__buyImgBlockMask").attr("src", "img/main/mask-lite.png");
+            $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            // $(".main__buyImgBlockMask").attr("src", "img/main/mask-lite.png");
         }
     });
 }
@@ -574,7 +585,19 @@ if ($('*').is('.main__infoSmallAddressItems')) {
     });
 }
 
-//video autostart
-window.onload = function () {
-    $('video').trigger('play');
+//mob video index
+if ($('*').is('video')) {
+    //video autostart
+    window.onload = function () {
+        $('video').trigger('play');
+    }
+    //mobile videos
+    if ($('*').is('video')) {
+        if ($(window).width() < 767) {
+            $(".main__levelsImg-video1").attr("src", " ");
+            $(".main__buyImgBlockMask-video").attr("src", " ");
+        }
+    }
 }
+
+

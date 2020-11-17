@@ -114,7 +114,8 @@ body {
 
 /*HEADER*/
 .header {
-
+    position: relative;
+    z-index: 1;
 }
 .headerTop {
     display: flex;
@@ -2820,6 +2821,15 @@ body {
 /*404 END*/
 
 /*MAIN MEDIA*/
+@media screen and (min-width: 1921px) {
+    .main__remaskMask-video {
+        transform: scale(1.1);
+    }
+    .main__buyImgBlockMask-video {
+        transform: scale(1.1);
+        top: -340px;
+    }
+}
 @media screen and (max-width: 1537px) {
     html {
         zoom: 0.8;
@@ -3025,6 +3035,7 @@ body {
     }
     .header {
         padding-top: 120px;
+        z-index: 10;
     }
     .header .wrapper {
         background: #14171E;
@@ -3345,6 +3356,7 @@ body {
         height: 38px;
         font-size: 14px;
     }
+
 }
 @media screen and (max-width: 600px) {
     .main__remaskMask-video {
