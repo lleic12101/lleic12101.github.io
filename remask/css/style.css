@@ -2829,7 +2829,7 @@ body {
     border-radius: 3px;
 }
 .main__bagCartDeliveryCircle {
-    display: block;
+    display: none;
     width: 8px;
     height: 8px;
     background: #3C424A;
@@ -2853,7 +2853,7 @@ body {
 }
 
 .main__bagCartDelivery-1 .main__bagCartDeliveryLineFill {
-    width: 0;
+    width: 1%;
 }
 .main__bagCartDelivery-1 .main__bagCartDeliveryCircle-1 {
     background: #01E2FF;
@@ -2932,6 +2932,40 @@ body {
 }
 .main__profileFaqItemContentText a:hover {
     text-decoration: none;
+}
+
+.main__bagCartDelivery-1 .main__bagCartDeliveryText:nth-child(1) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-2 .main__bagCartDeliveryText:nth-child(2) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-2 .main__bagCartDeliveryText:nth-child(1) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(3) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(1),
+.main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(2) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(4) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(1),
+.main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(2),
+.main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(3) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(5) {
+    color: #FFFFFF;
+}
+.main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(1),
+.main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(2),
+.main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(3),
+.main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(4) {
+    color: #FFFFFF;
 }
 /*PROFILE END*/
 
@@ -4954,39 +4988,6 @@ body {
 
     .main__bagCartDeliveryText {
         text-align: left;
-    }
-    .main__bagCartDelivery-1 .main__bagCartDeliveryText:nth-child(1) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-2 .main__bagCartDeliveryText:nth-child(2) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-2 .main__bagCartDeliveryText:nth-child(1) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(3) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(1),
-    .main__bagCartDelivery-3 .main__bagCartDeliveryText:nth-child(2) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(4) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(1),
-    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(2),
-    .main__bagCartDelivery-4 .main__bagCartDeliveryText:nth-child(3) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(5) {
-        color: #FFFFFF;
-    }
-    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(1),
-    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(2),
-    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(3),
-    .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(4) {
-        color: #FFFFFF;
     }
 
     .main__bagCartDeliveryCircle {
