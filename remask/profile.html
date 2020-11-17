@@ -113,10 +113,10 @@
                 <div class="main__productsSidebar">
                     <a href="#!" id="profileBtn"
                        class="main__productsSidebarLink">Профиль</a>
-                    <a href="#!" id="ordersBtn" class="main__productsSidebarLink">Заказы</a>
+                    <a href="#!" id="ordersBtn" class="main__productsSidebarLink main__productsSidebarLink-active">Заказы</a>
                     <a href="#!" id="notificationsBtn" class="main__productsSidebarLink">Уведомления</a>
                     <a href="#!" id="promocodeBtn" class="main__productsSidebarLink">Промокоды</a>
-                    <a href="#!" id="faqBtn" class="main__productsSidebarLink main__productsSidebarLink-active">FAQ</a>
+                    <a href="#!" id="faqBtn" class="main__productsSidebarLink">FAQ</a>
                     <a href="#!" id="exitBtn" class="main__productsSidebarLink">Выход</a>
                 </div>
                 <div class="main__profileItems">
@@ -307,75 +307,200 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__profileItem" id="ordersTab">
-                        <div class="main__profilePromoHeader main__profilePromoHeader-orders">
+                    <div class="main__profileItem main__profileItem-active" id="ordersTab">
+                        <div class="main__profilePromoHeader main__profilePromoHeader-orders main__profileOrderHeader">
                             <p class="main__profilePromoHeaderText main__profileOrderHeaderText-name">Наименование</p>
-                            <p class="main__profilePromoHeaderText main__profileOrderHeaderText-status">Статус</p>
                             <p class="main__profilePromoHeaderText main__profileOrderHeaderText-price">Цена</p>
                         </div>
                         <div class="main__profileNotificationItems main__profileOrdersItems">
-                            <div class="main__bagCartItem">
+                            <div class="main__bagCartItem main__bagCartItem-order">
                                 <div class="main__bagCartItemImgBlock">
                                     <img src="img/bag/smoke.png" alt="mask" class="main__bagCartItemImg-smoke"/>
                                     <img src="img/bag/mask.png" alt="mask" class="main__bagCartItemImg"/>
                                 </div>
                                 <div class="main__bagCartItemContent">
-                                    <div class="main__bagCartItemNameBlock">
-                                        <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
-                                        <p class="main__bagCartItemNumber">Экспресс-накладная №<span>08524219581984</span>
-                                        </p>
-                                        <p class="main__bagCartItemDate">18.10.2020, 20:25</p>
+                                    <div class="main__bagCartItemContentHeadline">
+                                        <div class="main__bagCartItemNameBlock">
+                                            <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
+                                            <p class="main__bagCartItemNumber">Номер отслеживания: 08524219581984</p>
+                                        </div>
+                                        <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
                                     </div>
-                                    <p class="main__profileOrdersText main__profileOrdersText-status">Ожидает на складе</p>
-                                    <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
+                                    <div class="main__bagCartDeliveryBlock">
+                                        <p class="main__bagCartDeliveryHeadline">
+                                            Ориентировочное время доставки:
+                                            <span>02 Дек - 09 Дек</span>
+                                        </p>
+                                        <div class="main__bagCartDelivery main__bagCartDelivery-1">
+                                            <div class="main__bagCartDeliveryLine">
+                                                <span class="main__bagCartDeliveryLineFill"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-1"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-2"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-3"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-4"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-5"></span>
+                                            </div>
+                                            <div class="main__bagCartDeliveryTextBlock">
+                                                <p class="main__bagCartDeliveryText">Заказ размещен</p>
+                                                <p class="main__bagCartDeliveryText">Обрабатывается</p>
+                                                <p class="main__bagCartDeliveryText">Подготовка<br> к отправке</p>
+                                                <p class="main__bagCartDeliveryText">Отправлен</p>
+                                                <p class="main__bagCartDeliveryText">Доставлен</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="main__bagCartItem">
+                            <div class="main__bagCartItem main__bagCartItem-order">
                                 <div class="main__bagCartItemImgBlock">
                                     <img src="img/bag/smoke.png" alt="mask" class="main__bagCartItemImg-smoke"/>
                                     <img src="img/bag/mask.png" alt="mask" class="main__bagCartItemImg"/>
                                 </div>
                                 <div class="main__bagCartItemContent">
-                                    <div class="main__bagCartItemNameBlock">
-                                        <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
-                                        <p class="main__bagCartItemNumber">Экспресс-накладная №<span>08524219581984</span>
-                                        </p>
-                                        <p class="main__bagCartItemDate">18.10.2020, 20:25</p>
+                                    <div class="main__bagCartItemContentHeadline">
+                                        <div class="main__bagCartItemNameBlock">
+                                            <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
+                                            <p class="main__bagCartItemNumber">Номер отслеживания: 08524219581984</p>
+                                        </div>
+                                        <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
                                     </div>
-                                    <p class="main__profileOrdersText main__profileOrdersText-status">Завершено</p>
-                                    <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
+                                    <div class="main__bagCartDeliveryBlock">
+                                        <p class="main__bagCartDeliveryHeadline">
+                                            Ориентировочное время доставки:
+                                            <span>02 Дек - 09 Дек</span>
+                                        </p>
+                                        <div class="main__bagCartDelivery main__bagCartDelivery-2">
+                                            <div class="main__bagCartDeliveryLine">
+                                                <span class="main__bagCartDeliveryLineFill"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-1"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-2"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-3"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-4"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-5"></span>
+                                            </div>
+                                            <div class="main__bagCartDeliveryTextBlock">
+                                                <p class="main__bagCartDeliveryText">Заказ размещен</p>
+                                                <p class="main__bagCartDeliveryText">Обрабатывается</p>
+                                                <p class="main__bagCartDeliveryText">Подготовка<br> к отправке</p>
+                                                <p class="main__bagCartDeliveryText">Отправлен</p>
+                                                <p class="main__bagCartDeliveryText">Доставлен</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="main__bagCartItem">
+                            <div class="main__bagCartItem main__bagCartItem-order">
                                 <div class="main__bagCartItemImgBlock">
                                     <img src="img/bag/smoke.png" alt="mask" class="main__bagCartItemImg-smoke"/>
                                     <img src="img/bag/mask.png" alt="mask" class="main__bagCartItemImg"/>
                                 </div>
                                 <div class="main__bagCartItemContent">
-                                    <div class="main__bagCartItemNameBlock">
-                                        <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
-                                        <p class="main__bagCartItemNumber">Экспресс-накладная №<span>08524219581984</span>
-                                        </p>
-                                        <p class="main__bagCartItemDate">18.10.2020, 20:25</p>
+                                    <div class="main__bagCartItemContentHeadline">
+                                        <div class="main__bagCartItemNameBlock">
+                                            <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
+                                            <p class="main__bagCartItemNumber">Номер отслеживания: 08524219581984</p>
+                                        </div>
+                                        <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
                                     </div>
-                                    <p class="main__profileOrdersText main__profileOrdersText-status">Отменён</p>
-                                    <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
+                                    <div class="main__bagCartDeliveryBlock">
+                                        <p class="main__bagCartDeliveryHeadline">
+                                            Ориентировочное время доставки:
+                                            <span>02 Дек - 09 Дек</span>
+                                        </p>
+                                        <div class="main__bagCartDelivery main__bagCartDelivery-3">
+                                            <div class="main__bagCartDeliveryLine">
+                                                <span class="main__bagCartDeliveryLineFill"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-1"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-2"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-3"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-4"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-5"></span>
+                                            </div>
+                                            <div class="main__bagCartDeliveryTextBlock">
+                                                <p class="main__bagCartDeliveryText">Заказ размещен</p>
+                                                <p class="main__bagCartDeliveryText">Обрабатывается</p>
+                                                <p class="main__bagCartDeliveryText">Подготовка<br> к отправке</p>
+                                                <p class="main__bagCartDeliveryText">Отправлен</p>
+                                                <p class="main__bagCartDeliveryText">Доставлен</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="main__bagCartItem">
+                            <div class="main__bagCartItem main__bagCartItem-order">
                                 <div class="main__bagCartItemImgBlock">
                                     <img src="img/bag/smoke.png" alt="mask" class="main__bagCartItemImg-smoke"/>
                                     <img src="img/bag/mask.png" alt="mask" class="main__bagCartItemImg"/>
                                 </div>
                                 <div class="main__bagCartItemContent">
-                                    <div class="main__bagCartItemNameBlock">
-                                        <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
-                                        <p class="main__bagCartItemNumber">Экспресс-накладная №<span>08524219581984</span>
-                                        </p>
-                                        <p class="main__bagCartItemDate">18.10.2020, 20:25</p>
+                                    <div class="main__bagCartItemContentHeadline">
+                                        <div class="main__bagCartItemNameBlock">
+                                            <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
+                                            <p class="main__bagCartItemNumber">Номер отслеживания: 08524219581984</p>
+                                        </div>
+                                        <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
                                     </div>
-                                    <p class="main__profileOrdersText main__profileOrdersText-status">Завершено</p>
-                                    <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
+                                    <div class="main__bagCartDeliveryBlock">
+                                        <p class="main__bagCartDeliveryHeadline">
+                                            Ориентировочное время доставки:
+                                            <span>02 Дек - 09 Дек</span>
+                                        </p>
+                                        <div class="main__bagCartDelivery main__bagCartDelivery-4">
+                                            <div class="main__bagCartDeliveryLine">
+                                                <span class="main__bagCartDeliveryLineFill"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-1"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-2"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-3"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-4"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-5"></span>
+                                            </div>
+                                            <div class="main__bagCartDeliveryTextBlock">
+                                                <p class="main__bagCartDeliveryText">Заказ размещен</p>
+                                                <p class="main__bagCartDeliveryText">Обрабатывается</p>
+                                                <p class="main__bagCartDeliveryText">Подготовка<br> к отправке</p>
+                                                <p class="main__bagCartDeliveryText">Отправлен</p>
+                                                <p class="main__bagCartDeliveryText">Доставлен</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__bagCartItem main__bagCartItem-order">
+                                <div class="main__bagCartItemImgBlock">
+                                    <img src="img/bag/smoke.png" alt="mask" class="main__bagCartItemImg-smoke"/>
+                                    <img src="img/bag/mask.png" alt="mask" class="main__bagCartItemImg"/>
+                                </div>
+                                <div class="main__bagCartItemContent">
+                                    <div class="main__bagCartItemContentHeadline">
+                                        <div class="main__bagCartItemNameBlock">
+                                            <a href="#!" class="main__bagCartItemName">Лицевая маска с клапаном</a>
+                                            <p class="main__bagCartItemNumber">Номер отслеживания: 08524219581984</p>
+                                        </div>
+                                        <p class="main__profileOrdersText main__profileOrdersText-price">17 000 руб</p>
+                                    </div>
+                                    <div class="main__bagCartDeliveryBlock">
+                                        <p class="main__bagCartDeliveryHeadline">
+                                            Ориентировочное время доставки:
+                                            <span>02 Дек - 09 Дек</span>
+                                        </p>
+                                        <div class="main__bagCartDelivery main__bagCartDelivery-5">
+                                            <div class="main__bagCartDeliveryLine">
+                                                <span class="main__bagCartDeliveryLineFill"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-1"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-2"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-3"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-4"></span>
+                                                <span class="main__bagCartDeliveryCircle main__bagCartDeliveryCircle-5"></span>
+                                            </div>
+                                            <div class="main__bagCartDeliveryTextBlock">
+                                                <p class="main__bagCartDeliveryText">Заказ размещен</p>
+                                                <p class="main__bagCartDeliveryText">Обрабатывается</p>
+                                                <p class="main__bagCartDeliveryText">Подготовка<br> к отправке</p>
+                                                <p class="main__bagCartDeliveryText">Отправлен</p>
+                                                <p class="main__bagCartDeliveryText">Доставлен</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -519,7 +644,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__profileItem main__profileItem-active" id="faqTab">
+                    <div class="main__profileItem" id="faqTab">
                         <div class="main__profileFaqItems">
                             <div class="main__profileFaqItem">
                                 <div class="main__profileFaqItemHeader">
