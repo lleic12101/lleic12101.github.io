@@ -11,6 +11,7 @@
     <title>Адиполис</title>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
+<body>
 <main class="main">
     <div class="main__header">
         <div class="wrapper">
@@ -19,13 +20,30 @@
                     <img src="img/logo.png" alt="logo" class="header__logo"/>
                     <p class="header__logoText">Адипосис</p>
                 </div>
+                <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+                <label for="checkbox1">
+                    <div class="hamburger hamburger1">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
                 <nav class="header__nav">
-                    <a href="#!" class="header__navLink">Диетология</a>
-                    <a href="#!" class="header__navLink">Аппартное похудение</a>
-                    <a href="#!" class="header__navLink">Косметология</a>
-                    <a href="#!" class="header__navLink">Цены</a>
+                    <a href="#food" class="header__navLink js-scroll-link">Диетология</a>
+                    <a href="#beauty" class="header__navLink js-scroll-link">Аппартное похудение</a>
+                    <a href="#cosmetic" class="header__navLink js-scroll-link">Косметология</a>
+                    <a href="#price" class="header__navLink js-scroll-link">Цены</a>
                 </nav>
             </header>
+            <div class="header__navToggleBlock-mobile">
+                <nav class="header__nav">
+                    <a href="#food" class="header__navLink js-scroll-link">Диетология</a>
+                    <a href="#beauty" class="header__navLink js-scroll-link">Аппартное похудение</a>
+                    <a href="#cosmetic" class="header__navLink js-scroll-link">Косметология</a>
+                    <a href="#price" class="header__navLink js-scroll-link">Цены</a>
+                </nav>
+            </div>
             <div class="main__headerContent">
                 <h2 class="main__headerHeadline">
                     Самые вкусные программы для сброса веса!
@@ -74,7 +92,7 @@
             </div>
         </div>
     </div>
-    <div class="main__food">
+    <div class="main__food" id="food">
         <div class="wrapper">
             <div class="main__foodContent">
                 <h2 class="main__bodyHeadline">
@@ -98,7 +116,7 @@
         </div>
         <img src="img/food.png" alt="feather" class="main__foodContentImg"/>
     </div>
-    <div class="main__beauty">
+    <div class="main__beauty" id="beauty">
         <div class="wrapper">
             <h2 class="main__beautyHeadline">Всё для красоты Вашего тела в одном месте!</h2>
             <div class="main__beautyItems">
@@ -151,7 +169,7 @@
             <img src="img/feather5-1.png" alt="feather" class="main__beautyFeather-1"/>
         </div>
     </div>
-    <div class="main__cosmetic">
+    <div class="main__cosmetic" id="cosmetic">
         <div class="wrapper">
             <img src="img/face.png" alt="face" class="main__cosmeticImg"/>
             <div class="main__bodyContent">
@@ -177,7 +195,7 @@
             </div>
         </div>
     </div>
-    <div class="main__footer">
+    <div class="main__footer" id="price">
         <div class="wrapper">
             <div class="main__footerContent">
                 <h2 class="main__footerContentHeadline">Сколько стоят наши услуги</h2>
@@ -311,7 +329,7 @@
         </div>
     </div>
 </main>
-<body>
+<div class="header__closebleMask"></div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>

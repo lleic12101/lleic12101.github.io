@@ -48,7 +48,8 @@ body {
     background: #fcfcfe;
 }
 .wrapper {
-    max-width: 1218px;
+    max-width: 1208px;
+    padding: 0 15px;
     width: 100%;
     margin: 0 auto;
 }
@@ -89,6 +90,25 @@ body {
 .header__navLink:hover {
     text-decoration: underline;
 }
+.header__closebleMask {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.header__closebleMask-active {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.header__navToggleBlock-mobile {
+    display: none;
+}
 /*HEADER END*/
 
 /*BTN*/
@@ -121,6 +141,71 @@ body {
     background: #fff1cf;
 }
 /*BTN END*/
+
+/*HAMBURGER MENU*/
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+h1 {
+    text-align: center;
+}
+.hamburger {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+.bar1 {
+    top: 0;
+}
+.bar2,
+.bar3 {
+    top: 13px;
+}
+.bar3 {
+    right: 0;
+}
+.bar4 {
+    bottom: 0;
+}
+.checkbox1:checked + label > .hamburger1 > .bar1 {
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+/*HAMBURGER MENU END*/
 
 /*MAIN HEADER*/
 .main {
@@ -199,7 +284,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 123px 0 85px 0;
+    padding: 123px 15px 85px;
 }
 .main__bodyContent {
     display: flex;
@@ -217,6 +302,7 @@ body {
     margin-bottom: 35px;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 .main__bodyText {
     font-family: "Mont";
@@ -253,7 +339,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 140px 0 150px;
+    padding: 140px 15px 150px;
 }
 .main__foodContent {
     display: flex;
@@ -294,6 +380,7 @@ body {
     font-weight: 600;
     color: #353535;
     margin-bottom: 90px;
+    text-align: center;
 }
 .main__beautyItems {
     display: flex;
@@ -355,7 +442,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 140px 0 145px 0;
+    padding: 140px 15px 145px;
 }
 .main__cosmeticContentFeather {
     position: absolute;
@@ -364,6 +451,7 @@ body {
 }
 .main__cosmeticImg {
     margin-left: -52px;
+    margin-right: 20px;
 }
 /*COSMETIC END*/
 
@@ -498,3 +586,344 @@ body {
     color: #353535;
 }
 /*FOOTER END*/
+
+/*MEDIA*/
+@media screen and (max-width: 1300px) {
+    .main__foodContent {
+        max-width: 650px;
+    }
+    .main__header {
+        padding-bottom: 130px;
+    }
+}
+@media screen and (max-width: 1208px) {
+    .wrapper {
+        width: 100%;
+    }
+    .footer {
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 1141px) {
+    .main__foodContentImg {
+        right: -40px;
+    }
+    .main__footerContentTabsBlock {
+        width: 100%;
+    }
+    .main__footerContent {
+        margin-bottom: 0;
+    }
+    .main__footer .wrapper {
+        padding-top: 50px;
+    }
+    .main__footerContentHeadline {
+        margin-bottom: 30px;
+    }
+    .footer {
+        padding-top: 50px;
+    }
+    .main__cosmetic .wrapper {
+        padding: 50px 15px;
+    }
+    .main__beauty .wrapper {
+        padding: 50px 15px 0;
+    }
+    .main__food .wrapper {
+        padding: 50px 15px;
+    }
+    .main__foodContentImg {
+        height: 500px;
+        right: 0;
+    }
+    .main__body .wrapper {
+        padding: 50px 15px;
+    }
+    .main__headerContent {
+        margin-top: 70px;
+    }
+    .main__header {
+        padding-bottom: 100px;
+    }
+    .main__footerContentTab {
+        padding-bottom: 70px;
+    }
+    .main__footerContentBtn {
+        width: 215px;
+    }
+    .main__footerContentBtn-2 {
+        width: 270px;
+    }
+    .main__footerContentBtn-3 {
+        width: 232px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .main__header {
+        background: url(../img/bg1.png) no-repeat;
+        background-position: 140px top;
+        background-size: auto 100%;
+    }
+    .main__foodContentImg {
+        display: none;
+    }
+    .main__foodContent {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main__bodyContent {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main__bodyHeadline {
+        margin-bottom: 25px;
+    }
+    .main__cosmeticImg {
+        display: none;
+    }
+    .main__body {
+        background: #7bd496;
+    }
+    .main__footerContentBtns {
+        flex-direction: column;
+    }
+    .main__footerContentBtn {
+        width: 290px;
+        margin-bottom: 10px;
+    }
+    .main__footerContentBtn:last-child {
+        margin-bottom: 0;
+    }
+    .footer__textBlock {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main__beautyItems {
+        flex-direction: column;
+    }
+    .main__beautyItem {
+        margin-bottom: 30px;
+    }
+    .main__beautyHeadline {
+        margin-bottom: 30px;
+    }
+    .main__beauty {
+        background: #f8f8f8 url(../img/beauty.png) no-repeat;
+        background-position: -200px;
+        background-size: auto 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main__footerContentTab {
+        padding: 40px;
+    }
+    .main__header {
+        background: none;
+        padding-bottom: 50px;
+    }
+    .main__headerContent {
+        margin-top: 40px;
+    }
+    .main__headerHeadline {
+        font-size: 40px;
+    }
+
+    .main {
+        padding-top: 60px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger .bar {
+        background: black;
+    }
+    .header {
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        height: 60px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background: #f8f8f8;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .header__logoBlock {
+        margin-bottom: 0;
+    }
+    .header__logoText {
+        margin-bottom: 2px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__navToggleBlock-mobile {
+        display: none;
+        position: fixed;
+        z-index: 9;
+        right: 0;
+        top: 59px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background: #f8f8f8;
+        border-bottom-left-radius: 6px;
+    }
+    .header__navToggleBlock-mobile .header__nav {
+        display: flex;
+    }
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 15px 20px;
+    }
+    .header__navLink {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .header__navLink:last-child {
+        margin-bottom: 0;
+    }
+
+    .main__body .wrapper {
+        padding: 30px 15px;
+    }
+    .main__food .wrapper {
+        padding: 30px 15px;
+    }
+    .main__beauty .wrapper {
+        padding: 30px 15px 0;
+    }
+    .main__cosmetic .wrapper {
+        padding: 30px 15px;
+    }
+    .main__footer .wrapper {
+        padding-top: 30px;
+    }
+    .footer {
+        padding-top: 30px;
+    }
+    .main__bodyHeadline {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+    .main__beautyHeadline {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+    .main__footerContentHeadline {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .main__beauty {
+        background: #f8f8f8;
+    }
+    .main__beautyItems {
+        align-items: center;
+    }
+    .main__beautyItem {
+        max-width: 440px;
+        width: 100%;
+    }
+    .main__header {
+        padding-bottom: 30px;
+    }
+    .main__headerContent {
+        margin-top: 20px;
+    }
+    .main__headerHeadline {
+        font-size: 34px;
+    }
+    .main__headerContentBtns {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__headerContentBtns .main__headerContentBtn {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer__text {
+        font-size: 13px;
+    }
+    .footer .header__logoBlock {
+        margin-bottom: 10px;
+    }
+
+    .main__footerContentTabRowText {
+        font-size: 16px;
+    }
+    .main__footerContentTabRowPrice {
+        font-size: 16px;
+        min-width: 70px;
+        margin-left: 15px;
+    }
+    .main__footerContentHeadline {
+        text-align: center;
+    }
+    .main__footerContentBtns {
+        margin-bottom: 10px;
+    }
+    .main__bodyHeadline {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .main__beautyHeadline {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .main__footerContentHeadline {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .main__bodyText {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__footerContentBtn {
+        width: 100%;
+    }
+    .main__footerContentTab {
+        padding: 30px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+    .main__beautyItemHeadline {
+        margin-bottom: 10px;
+    }
+    .main__beautyItemImg {
+        width: 90px;
+        height: 90px;
+    }
+    .main__headerHeadline {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .main__headerContentText {
+        font-size: 18px;
+    }
+    .main__bodyContentBtn {
+        margin-top: 0;
+    }
+    .main__headerContentBtn {
+        font-size: 18px;
+    }
+    .main__header {
+        padding-bottom: 25px;
+    }
+    .main__footerContentBtn {
+        font-size: 18px;
+    }
+}
+/*MEDIA END*/
