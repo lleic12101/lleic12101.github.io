@@ -122,13 +122,16 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">Кабель USB Type-C для зарядки</p>
                     </div>`);
 
-            if ($(window).width() > 767) {
-                $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            if (!$('.main__buyControlColor-white').hasClass("main__buyControlColor-active")) {
+                $(".main__buyImgBlockMask-video").attr("src", "video/pro-black.mp4");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/pro-black.png");
             } else {
-                $(".main__buyImgBlockMask-video").attr("src", " ");
-                $(".main__buyImgBlockMask-video").attr("poster", "video/png/6.png");
+                $(".main__buyImgBlockMask-video").attr("src", "video/pro-white.mp4");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/pro-white.png");
             }
-            // $(".main__buyImgBlockMask").attr("src", "img/main/mask-pro.png");
+            if ($(window).width() < 768) {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+            }
         } else if ($(this).hasClass("main__buyControlBtnsBtn-basic")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-basic");
             $(".main__buyControlNameType").html("Basic");
@@ -149,13 +152,16 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
                         <p class="main__buyControlListItemText">Фильтр, состоящий из 3 компонентов</p>
                     </div>`);
 
-            if ($(window).width() > 767) {
-                $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06_Lite.mp4");
+            if (!$('.main__buyControlColor-white').hasClass("main__buyControlColor-active")) {
+                $(".main__buyImgBlockMask-video").attr("src", "video/basic-black.mp4");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/basic-black.png");
             } else {
-                $(".main__buyImgBlockMask-video").attr("src", " ");
-                $(".main__buyImgBlockMask-video").attr("poster", "video/png/6-lite.png");
+                $(".main__buyImgBlockMask-video").attr("src", "video/basic-white.mp4");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/basic-white.png");
             }
-            // $(".main__buyImgBlockMask").attr("src", "img/main/mask-basic.png");
+            if ($(window).width() < 768) {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+            }
         } else if ($(this).hasClass("main__buyControlBtnsBtn-lite")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-lite");
             $(".main__buyControlNameType").html("Lite");
@@ -166,19 +172,45 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
             $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
                         <p class="main__buyControlListItemText">3 размера лицевых масок (S, M, L)</p>
-                    </div>
-                    <div class="main__buyControlListItem">
+                    </div><div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
                         <p class="main__buyControlListItemText">1 внешняя LED-маска</p>
                     </div>`);
 
-            if ($(window).width() > 767) {
-                $(".main__buyImgBlockMask-video").attr("src", "video/Animation_06.mp4");
+            if (!$('.main__buyControlColor-white').hasClass("main__buyControlColor-active")) {
+                $(".main__buyImgBlockMask-video").attr("src", "video/lite-black.mp4");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/lite-black.png");
             } else {
-                $(".main__buyImgBlockMask-video").attr("src", " ");
-                $(".main__buyImgBlockMask-video").attr("poster", "video/png/6.png");
+                $(".main__buyImgBlockMask-video").attr("src", "video/lite-white.mp4");
+                $(".main__buyImgBlockMask-video").attr("poster", "video/png/lite-white.png");
             }
-            // $(".main__buyImgBlockMask").attr("src", "img/main/mask-lite.png");
+            if ($(window).width() < 768) {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+            }
+        }
+    });
+    $('.main__buyControlColor').click(function () {
+        $(".main__buyControlColor").removeClass("main__buyControlColor-active");
+        $(this).addClass("main__buyControlColor-active");
+
+        var poster, src;
+        poster = $(".main__buyImgBlockMask-video").attr("poster");
+        poster = poster.split('/')[2];
+        poster = poster.split('-')[0];
+
+        if ($('.main__buyControlColor-white').hasClass("main__buyControlColor-active")) {
+            src = "video/" + poster + "-white.mp4";
+            poster = "video/png/" + poster + "-white.png";
+        } else {
+            src = "video/" + poster + "-black.mp4";
+            poster = "video/png/" + poster + "-black.png";
+        }
+
+        $(".main__buyImgBlockMask-video").attr("src", src);
+        $(".main__buyImgBlockMask-video").attr("poster", poster);
+
+        if ($(window).width() < 768) {
+            $(".main__buyImgBlockMask-video").attr("src", " ");
         }
     });
 }
