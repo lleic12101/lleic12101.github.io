@@ -1513,6 +1513,10 @@ body {
     background: #01E2FF;
     color: #171A21;
 }
+.main__productsItemsContent {
+	max-width: 935px;
+    width: 100%;
+}
 .main__productsItems {
     display: flex;
     flex-direction: row;
