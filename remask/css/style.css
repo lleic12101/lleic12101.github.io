@@ -691,6 +691,9 @@ body {
     font-size: 18px;
     margin-bottom: 14px;
 }
+.main__buyControlInListText-color {
+    margin-top: 13px;
+}
 .main__buyControlList {
     display: flex;
     flex-direction: column;
@@ -713,6 +716,31 @@ body {
 .main__buyControlBtn {
     width: 100%;
     margin-top: 30px;
+}
+
+.main__buyControlColors {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    padding-bottom: 5px;
+}
+.main__buyControlColor {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    margin-right: 24px;
+    border: 1px solid #01E2FF;
+}
+.main__buyControlColor:hover {
+    border: 2px solid #01E2FF;
+}
+.main__buyControlColor-active {
+    border: 3px solid #01E2FF;
+}
+.main__buyControlColor-active:hover {
+    border: 3px solid #01E2FF;
 }
 /*BUY END*/
 
@@ -1514,7 +1542,7 @@ body {
     color: #171A21;
 }
 .main__productsItemsContent {
-	max-width: 935px;
+    max-width: 935px;
     width: 100%;
 }
 .main__productsItems {
