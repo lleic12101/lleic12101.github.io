@@ -333,6 +333,7 @@ body {
 }
 .main__remaskMask-video {
     margin-top: -300px;
+    min-height: 1080px;
 }
 .main__remaskScroll {
     margin-top: 0px;
