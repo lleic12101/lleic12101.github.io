@@ -7,6 +7,7 @@
     <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
     <title>remask</title>
     <link rel="stylesheet" href="css/selectize.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -176,7 +177,7 @@
                         </div>
                         <div class="main__infoSmallForm">
                             <div class="main__infoInputBlock">
-                                <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
+                                <input type="text" id="country" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
                                        required/>
                                 <label class="main__infoInputLabel">Страна*</label>
                                 <p class="main__infoInputText main__infoInputText-bad">
@@ -187,15 +188,18 @@
                                 </p>
                             </div>
                             <div class="main__infoInputBlock">
-                                <select class="main__infoSelect main__infoSelect-region" required>
-                                    <option selected disabled>Регион/область*</option>
-                                    <option>Регион 1</option>
-                                    <option>Регион 2</option>
-                                    <option>Регион 3</option>
-                                    <option>Регион 4</option>
-                                    <option>Регион 5</option>
-                                    <option>Регион 6</option>
-                                </select>
+                                <input type="text" id="region" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
+                                       required/>
+                                <label class="main__infoInputLabel">Регион/область*</label>
+<!--                                <select class="main__infoSelect main__infoSelect-region" required>-->
+<!--                                    <option selected disabled>Регион/область*</option>-->
+<!--                                    <option>Регион 1</option>-->
+<!--                                    <option>Регион 2</option>-->
+<!--                                    <option>Регион 3</option>-->
+<!--                                    <option>Регион 4</option>-->
+<!--                                    <option>Регион 5</option>-->
+<!--                                    <option>Регион 6</option>-->
+<!--                                </select>-->
                                 <p class="main__infoInputText main__infoInputText-bad">
                                     Ошибка, проверьте введённые данные
                                 </p>
@@ -204,15 +208,18 @@
                                 </p>
                             </div>
                             <div class="main__infoInputBlock">
-                                <select class="main__infoSelect main__infoSelect-town" required>
-                                    <option selected disabled>Город*</option>
-                                    <option>Город 1</option>
-                                    <option>Город 2</option>
-                                    <option>Город 3</option>
-                                    <option>Город 4</option>
-                                    <option>Город 5</option>
-                                    <option>Город 6</option>
-                                </select>
+                                <input type="text" id="city" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
+                                       required/>
+                                <label class="main__infoInputLabel">Город*</label>
+<!--                                <select class="main__infoSelect main__infoSelect-town" required>-->
+<!--                                    <option selected disabled>Город*</option>-->
+<!--                                    <option>Город 1</option>-->
+<!--                                    <option>Город 2</option>-->
+<!--                                    <option>Город 3</option>-->
+<!--                                    <option>Город 4</option>-->
+<!--                                    <option>Город 5</option>-->
+<!--                                    <option>Город 6</option>-->
+<!--                                </select>-->
                                 <p class="main__infoInputText main__infoInputText-bad">
                                     Ошибка, проверьте введённые данные
                                 </p>
@@ -220,6 +227,22 @@
                                     Обязательное для заполнения поле
                                 </p>
                             </div>
+
+                            <div class="main__infoColumn">
+<!--                                <h4>Страна</h4>-->
+<!--                                <div class="ui-widget">-->
+<!--                                    <input class="form-control" id="country" type="text" placeholder="Начните вводить название страны">-->
+<!--                                </div>-->
+<!--                                <h4>Регион</h4>-->
+<!--                                <div class="ui-widget">-->
+<!--                                    <input class="form-control" id="region" type="text" placeholder="Начните вводить название региона">-->
+<!--                                </div>-->
+<!--                                <h4>Город</h4>-->
+<!--                                <div class="ui-widget">-->
+<!--                                    <input class="form-control" id="city" type="text" placeholder="Начните вводить название города">-->
+<!--                                </div>-->
+                            </div>
+
                             <div class="main__infoInputBlock">
                                 <input type="text" pattern="^[0-9]+$" class="main__infoInput main__infoInput-postalCode"
                                        required/>
@@ -368,6 +391,9 @@
 <script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/jquery.inputmask-multi.min.js"></script>
 <script src="js/selectize.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDChrew11fyT0bJt-kPLedO-UDFb6oBBFI&libraries=places"
+        type="text/javascript"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
