@@ -681,7 +681,7 @@ $('#country').keyup(function(){
         //log(request);
         autocomplete_service.getPlacePredictions(request, google_addresses_callback);//делаем запрос в гугл
         function google_addresses_callback(results, status) {
-            console.log(results);
+            //console.log(results);
             if (status == google.maps.places.PlacesServiceStatus.OK) {
                 var counter = 0;
                 $.each(results, function (index, result) {
@@ -697,7 +697,7 @@ $('#country').keyup(function(){
                         return false;
                     }
                     if (in_array("country", result.types)) {
-                        log(result);
+                        //log(result);
                     }
                 });
             }
