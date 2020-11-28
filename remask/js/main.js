@@ -660,6 +660,16 @@ if ($('*').is('video')) {
 //country api
 if ($('*').is('#country')) {
     $(document).ready(function() {
+        $(".main__infoInput").on('propertychange input', function (e) {
+            if ($(this).val().trim() !== "") {
+                $(this).parent().find(".main__infoInputLabel").addClass("main__infoInputLabel-active");
+                $(this).addClass("main__infoInput-active");
+            } else {
+                $(this).parent().find(".main__infoInputLabel").removeClass("main__infoInputLabel-active");
+                $(this).removeClass("main__infoInput-active");
+            }
+        });
+
         var log = function(e){//облегчаем себе жизнь
             return(console.log(e));
         }
