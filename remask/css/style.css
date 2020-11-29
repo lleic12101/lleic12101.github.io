@@ -550,7 +550,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 74px;
+    margin-bottom: 124px;
+    transform: scale(1.2);
 }
 .main__moreVideoPreview {
     width: calc(100% - 30px);
@@ -3153,6 +3154,10 @@ body {
     }
     .main__signIn {
         height: 100vh;
+    }
+    .main__moreVideoBlock {
+        transform: scale(1);
+        margin-bottom: 74px;
     }
 }
 @media screen and (max-width: 1441px) {
