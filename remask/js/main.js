@@ -96,14 +96,14 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
         $(".main__buyControlActive").removeClass("main__buyControlActive-basic");
         $(".main__buyControlActive").removeClass("main__buyControlActive-lite");
 
-        document.querySelector("#radio-2").checked = true;
+        document.querySelector("#radio-1").checked = true;
 
         if ($(this).hasClass("main__buyControlBtnsBtn-pro")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-pro");
             $(".main__buyControlNameType").html("PRO");
 
-            $(".main__buyControlRadioBtns-label1").html(`9 400 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-            $(".main__buyControlRadioBtns-label2").html(`17 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label1").html(`9 400 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label2").html(`17 000 <img src="img/icons/rouble.svg" alt="rouble"/>`);
 
             $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
@@ -136,8 +136,8 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
             $(".main__buyControlActive").addClass("main__buyControlActive-basic");
             $(".main__buyControlNameType").html("Basic");
 
-            $(".main__buyControlRadioBtns-label1").html(`7 900 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-            $(".main__buyControlRadioBtns-label2").html(`14 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label1").html(`7 900 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label2").html(`14 000 <img src="img/icons/rouble.svg" alt="rouble"/>`);
 
             $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
@@ -166,8 +166,8 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
             $(".main__buyControlActive").addClass("main__buyControlActive-lite");
             $(".main__buyControlNameType").html("Lite");
 
-            $(".main__buyControlRadioBtns-label1").html(`3 300 <img src="img/icons/rouble.svg" alt="rouble"/>`);
-            $(".main__buyControlRadioBtns-label2").html(`6 000 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label1").html(`3 300 <img src="img/icons/rouble-blue.svg" alt="rouble"/>`);
+            $(".main__buyControlRadioBtns-label2").html(`6 000 <img src="img/icons/rouble.svg" alt="rouble"/>`);
 
             $(".main__buyControlList").html(`<div class="main__buyControlListItem">
                         <img src="img/icons/circle.svg" alt="circle" class="main__buyControlListItemIcon"/>
