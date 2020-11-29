@@ -5523,6 +5523,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
     }
     .main__makeBtn {
         width: 70px;
@@ -5553,6 +5554,31 @@ body {
     }
     .main__makeAccount .main__restoreBtn {
         width: 100%;
+    }
+    .main__makeBtn {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 0;
+    }
+    .main__makeBtnIcon {
+        transform: scale(1.2);
+    }
+    .main__makeAccountText {
+        font-size: 13px;
+        text-align: center;
+    }
+    .main__makeAccountCheckBlock {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .main__makeBtn {
+        width: 55px;
+        height: 55px;
+    }
+    .main__makeBtnIcon {
+        margin-right: 0;
+        transform: scale(1.2);
     }
 }
 /*REGISTRATION END*/
