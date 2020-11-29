@@ -3174,6 +3174,9 @@ body {
     .main__signIn {
         height: 125vh;
     }
+    .main__more .wrapper {
+        width: 1430px;
+    }
 }
 @media screen and (max-width: 1439px) {
     html {
@@ -3186,6 +3189,9 @@ body {
     }
     .main__signIn {
         height: 100vh;
+    }
+    .main__more .wrapper {
+        width: 1261px;
     }
 }
 @media screen and (max-width: 1261px) {
