@@ -575,11 +575,11 @@ body {
     height: 131px;
     width: 131px;
     transition: none;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 /*MORE BTN END*/
 
@@ -1470,7 +1470,7 @@ body {
     font-weight: 500;
     font-family: "Gotham Pro";
     background-color: #01E2FF;
-    border:none;
+    border: none;
     outline: none;
 }
 /*UI AUTOSELECT END*/
@@ -3120,6 +3120,182 @@ body {
 }
 /*404 END*/
 
+/*MAKE ACCOUNT*/
+.main__makeAccount {
+    min-height: 100vh;
+    height: auto;
+}
+.main__makeAccount .main__signInForm {
+    width: 924px;
+}
+.main__makeAccount .main__signInFormTitle {
+    margin-bottom: 10px;
+}
+.main__makeAccountText {
+    font-weight: 500;
+    font-size: 14px;
+    color: #8B8D91;
+    margin-bottom: 15px;
+}
+.main__makeAccountText a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #01E2FF;
+    text-decoration: none;
+}
+.main__makeAccountText a:hover {
+    text-decoration: underline;
+}
+.main__makeAccountColumns {
+    display: flex;
+    flex-direction: row;
+}
+.main__makeAccountColumn {
+    display: flex;
+    flex-direction: column;
+}
+.main__makeAccount .main__infoInput {
+    width: 336px;
+}
+.main__makeAccount .main__restoreBtn {
+    width: 336px;
+}
+.main__makeAccount .main__infoInputBlock {
+    margin-top: 16px;
+}
+.main__infoInputBlock-small {
+    max-width: 160px;
+}
+.main__infoInputBlock-small .main__infoInput {
+    width: 160px;
+}
+.main__makeAccount .main__makeQuestionRow .main__infoInputBlock:first-child {
+    margin-right: 16px;
+}
+
+.main__makeAccountColumn-btns {
+    margin-top: 54px;
+}
+.main__makeAccountColumn-delimiter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9px;
+    margin: 0 37px;
+}
+.main__makeAccountColumnLine {
+    background: rgba(139, 141, 145, .2);
+    width: 1px;
+    margin: 7px;
+    height: 173.11px;
+}
+.main__makeAccountColumnText {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(139, 141, 145, .2);
+}
+.main__makeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    width: 336px;
+    height: 56px;
+
+    background: #171A21;
+    border: 1.2px solid #8B8D91;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    margin-bottom: 16px;
+
+    transition: .3s;
+}
+.main__makeBtn:last-child {
+    margin-bottom: 0;
+}
+.main__makeBtn:hover {
+    background: #01E2FF;
+}
+.main__makeBtnIcon {
+    margin-right: 10px;
+}
+.main__makeBtnText {
+    transition: .3s;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 190px;
+}
+.main__makeBtn:hover .main__makeBtnText {
+    color: #171A21;
+}
+
+.main__makeAccountCheckBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 336px;
+    margin-bottom: -4px;
+    margin-top: 20px;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    user-select: none;
+    cursor: pointer;
+}
+.custom-checkbox + label p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #8B8D91;
+    line-height: 16px;
+}
+.custom-checkbox + label a {
+    font-weight: 500;
+    font-size: 12px;
+    color: #01E2FF;
+    text-decoration: none;
+}
+.custom-checkbox + label a:hover {
+    text-decoration: underline;
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1.2px solid #01E2FF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60% 60%;
+    margin-top: 3px;
+}
+.custom-checkbox:checked + label::before {
+    background-image: url(../img/reg/check.svg);
+}
+.main__makeAccountLight {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    opacity: .4;
+}
+/*MAKE ACCOUNT END*/
+
 /*MAIN MEDIA*/
 @media screen and (min-width: 1921px) {
     .main__remaskMask-video {
@@ -4341,6 +4517,10 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .main__infoInputText {
+        line-height: 16px;
+    }
 }
 @media screen and (max-width: 380px) {
     .main__signInBtn {
@@ -5307,3 +5487,72 @@ body {
     }
 }
 /*PROFILE END*/
+
+/*REGISTRATION*/
+@media screen and (max-width: 900px) {
+    .main__makeAccount .main__signInForm {
+        width: 100%;
+        margin: 15px;
+    }
+    .main__makeAccount {
+        height: auto;
+    }
+    .main__makeAccountColumn-btns {
+        margin-top: 7px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .main__makeAccountColumns {
+        flex-direction: column-reverse;
+    }
+    .main__makeAccountColumn-delimiter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 15px 0;
+    }
+    .main__makeAccount .main__makeQuestionRow {
+        flex-direction: row;
+    }
+    .main__makeAccountColumnLine {
+        height: 1px;
+        width: 45%;
+    }
+    .main__makeAccountColumn-btns {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main__makeBtn {
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 0;
+    }
+    .main__makeBtnIcon {
+        margin-right: 0;
+        transform: scale(1.5);
+    }
+    .main__makeBtnText {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main__makeAccount .main__signInForm {
+        padding: 15px;
+    }
+    .main__makeBtn {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .main__makeAccount .main__infoInputBlock {
+        margin-top: 12px;
+    }
+    .main__makeAccount .main__restoreBtn {
+        width: 100%;
+    }
+}
+/*REGISTRATION END*/
