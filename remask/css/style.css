@@ -3177,6 +3177,9 @@ body {
     .main__more .wrapper {
         width: 1430px;
     }
+    .main__moreVideoBlock {
+        margin-bottom: 74px;
+    }
 }
 @media screen and (max-width: 1439px) {
     html {
@@ -3192,6 +3195,9 @@ body {
     }
     .main__more .wrapper {
         width: 1261px;
+    }
+    .main__moreVideoBlock {
+        margin-bottom: 0px;
     }
 }
 @media screen and (max-width: 1261px) {
