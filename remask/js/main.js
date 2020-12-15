@@ -96,7 +96,9 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
         $(".main__buyControlActive").removeClass("main__buyControlActive-basic");
         $(".main__buyControlActive").removeClass("main__buyControlActive-lite");
 
-        document.querySelector("#radio-1").checked = true;
+        if ($('*').is('.main__buyControlRadioBtns')) {
+            document.querySelector("#radio-1").checked = true;
+        }
 
         if ($(this).hasClass("main__buyControlBtnsBtn-pro")) {
             $(".main__buyControlActive").addClass("main__buyControlActive-pro");
@@ -189,28 +191,32 @@ if ($('*').is('.main__buyControlBtnsBtn')) {
             }
         }
     });
+}
+if ($('*').is('.main__buyControlColor')) {
     $('.main__buyControlColor').click(function () {
         $(".main__buyControlColor").removeClass("main__buyControlColor-active");
         $(this).addClass("main__buyControlColor-active");
 
-        var poster, src;
-        poster = $(".main__buyImgBlockMask-video").attr("poster");
-        poster = poster.split('/')[2];
-        poster = poster.split('-')[0];
+        if ($('*').is('.main__buyControlRadioBtns')) {
+            var poster, src;
+            poster = $(".main__buyImgBlockMask-video").attr("poster");
+            poster = poster.split('/')[2];
+            poster = poster.split('-')[0];
 
-        if ($('.main__buyControlColor-white').hasClass("main__buyControlColor-active")) {
-            src = "video/" + poster + "-white.mp4";
-            poster = "video/png/" + poster + "-white.png";
-        } else {
-            src = "video/" + poster + "-black.mp4";
-            poster = "video/png/" + poster + "-black.png";
-        }
+            if ($('.main__buyControlColor-white').hasClass("main__buyControlColor-active")) {
+                src = "video/" + poster + "-white.mp4";
+                poster = "video/png/" + poster + "-white.png";
+            } else {
+                src = "video/" + poster + "-black.mp4";
+                poster = "video/png/" + poster + "-black.png";
+            }
 
-        $(".main__buyImgBlockMask-video").attr("src", src);
-        $(".main__buyImgBlockMask-video").attr("poster", poster);
+            $(".main__buyImgBlockMask-video").attr("src", src);
+            $(".main__buyImgBlockMask-video").attr("poster", poster);
 
-        if ($(window).width() < 768) {
-            $(".main__buyImgBlockMask-video").attr("src", " ");
+            if ($(window).width() < 768) {
+                $(".main__buyImgBlockMask-video").attr("src", " ");
+            }
         }
     });
 }
@@ -537,7 +543,7 @@ if ($('*').is('.main__cardContentSizeBtn')) {
 }
 if ($('*').is('.main__cardImgScrolling')) {
     (function () {
-        var a = document.querySelector('.main__cardImgScrolling'), b = null, P = 170;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
+        var a = document.querySelector('.main__cardImgScrolling'), b = null, P = 50;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
         window.addEventListener('scroll', Ascroll, false);
         document.body.addEventListener('scroll', Ascroll, false);
         function Ascroll() {
@@ -550,7 +556,7 @@ if ($('*').is('.main__cardImgScrolling')) {
                         }
                     }
                     b = document.createElement('div');
-                    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+                    b.style.cssText = s + ' display: flex; flex-direction: column; align-items: center; box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
                     a.insertBefore(b, a.firstChild);
                     var l = a.childNodes.length;
                     for (var i = 1; i < l; i++) {
@@ -648,18 +654,18 @@ if ($('*').is('video')) {
 }
 
 //autoscroll
-(function (){
+(function () {
     link = $('.js-scroll-link');
     link.on('click', function () {
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1500);
+        $('body,html').animate({scrollTop: top}, 1500);
     });
 })();
 
 //country api
 if ($('*').is('#country')) {
-    $(document).ready(function() {
+    $(document).ready(function () {
         $(".main__infoInput").on('propertychange input', function (e) {
             if ($(this).val().trim() !== "") {
                 $(this).parent().find(".main__infoInputLabel").addClass("main__infoInputLabel-active");
@@ -670,8 +676,8 @@ if ($('*').is('#country')) {
             }
         });
 
-        var log = function(e){//облегчаем себе жизнь
-            return(console.log(e));
+        var log = function (e) {//облегчаем себе жизнь
+            return (console.log(e));
         }
         var autocomplete_service = new google.maps.places.AutocompleteService();//подключаем гуглосервис
         var counrty_val = ' ';//это сюда будем писать значения наших местоположений
@@ -683,10 +689,10 @@ if ($('*').is('#country')) {
         var city_list = [];
         var district_list = [];
 
-        $('#country').keyup(function(){
+        $('#country').keyup(function () {
             country_val = $('#country').val();//получаем буквы из нашего инпута для страны
 
-            if(country_val){
+            if (country_val) {
                 var request = {
                     input: country_val,
                 };
@@ -700,7 +706,7 @@ if ($('*').is('#country')) {
                             //log(result);
                             function in_array(value, array) {
                                 for (var i = 0; i < array.length; i++) {
-                                    if (array[i] == value){
+                                    if (array[i] == value) {
                                         country_list[counter] = result.description;//заполняем результатами из гугла список подсказок во всплывашке
                                         counter++;
                                         return true;
@@ -712,8 +718,7 @@ if ($('*').is('#country')) {
                                 //log(result);
                             }
                         });
-                    }
-                    else{
+                    } else {
                         log('no result');
                     }
                 }
@@ -724,15 +729,15 @@ if ($('*').is('#country')) {
                     change: displayItem
                 });
                 function displayItem(event, ui) {//если автоподстановка произошла, забираем новое значение
-                    if(ui.item){
+                    if (ui.item) {
                         country_val = ui.item.label;
                     }
                 }
             }
         });
         //в принципе дальше по аналогии с небольшими изменениями
-        $('#region').keyup(function(){
-            region_val = country_val+' '+$('#region').val();//дописываем к значению инпута, значение предведущего инпута
+        $('#region').keyup(function () {
+            region_val = country_val + ' ' + $('#region').val();//дописываем к значению инпута, значение предведущего инпута
             var request = {
                 input: region_val,
             };
@@ -745,7 +750,7 @@ if ($('*').is('#country')) {
                         //log(result);
                         function in_array(value, array) {
                             for (var i = 0; i < array.length; i++) {
-                                if (array[i] == value){
+                                if (array[i] == value) {
                                     var formated = result.description;
                                     formated = formated.split(',');//отсекаем значение предведущего инпута. в подсказке оно нам не нужно
                                     region_list[counter] = formated[0];
@@ -759,25 +764,24 @@ if ($('*').is('#country')) {
                             //log(result);
                         }
                     });
-                }
-                else{
+                } else {
                     log('no result')
                 }
             }
-            $( "#region" ).autocomplete({
+            $("#region").autocomplete({
                 source: region_list,
                 focus: displayItem,
                 select: displayItem,
                 change: displayItem
             });
             function displayItem(event, ui) {
-                if(ui.item){
+                if (ui.item) {
                     region_val = ui.item.label;
                 }
             }
         });
-        $('#city').keyup(function(){
-            city_val = region_val+' '+$('#city').val();
+        $('#city').keyup(function () {
+            city_val = region_val + ' ' + $('#city').val();
             var request = {
                 input: city_val,
             };
@@ -790,7 +794,7 @@ if ($('*').is('#country')) {
                         //log(result);
                         function in_array(value, array) {
                             for (var i = 0; i < array.length; i++) {
-                                if (array[i] == value){
+                                if (array[i] == value) {
                                     var formated = result.description;
                                     formated = formated.split(',');
                                     city_list[counter] = formated[0];
@@ -804,19 +808,18 @@ if ($('*').is('#country')) {
                             //log(result);
                         }
                     });
-                }
-                else{
+                } else {
                     log('no result')
                 }
             }
-            $( "#city" ).autocomplete({
+            $("#city").autocomplete({
                 source: city_list,
                 focus: displayItem,
                 select: displayItem,
                 change: displayItem
             });
             function displayItem(event, ui) {
-                if(ui.item){
+                if (ui.item) {
                     city_val = ui.item.label;
                 }
             }
@@ -826,39 +829,41 @@ if ($('*').is('#country')) {
 
 //video preview
 'use strict';
-function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
-r(function(){
+function r(f) {
+    /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
+}
+r(function () {
     if (!document.getElementsByClassName) {
         // Поддержка IE8
-        var getElementsByClassName = function(node, classname) {
+        var getElementsByClassName = function (node, classname) {
             var a = [];
-            var re = new RegExp('(^| )'+classname+'( |$)');
+            var re = new RegExp('(^| )' + classname + '( |$)');
             var els = node.getElementsByTagName("*");
-            for(var i=0,j=els.length; i < j; i++)
-                if(re.test(els[i].className))a.push(els[i]);
+            for (var i = 0, j = els.length; i < j; i++)
+                if (re.test(els[i].className)) a.push(els[i]);
             return a;
         }
-        var videos = getElementsByClassName(document.body,"youtube");
+        var videos = getElementsByClassName(document.body, "youtube");
     } else {
         var videos = document.getElementsByClassName("youtube");
     }
     var nb_videos = videos.length;
-    for (var i=0; i < nb_videos; i++) {
+    for (var i = 0; i < nb_videos; i++) {
         // Находим постер для видео, зная ID нашего видео
         // videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
         // Размещаем над постером кнопку Play, чтобы создать эффект плеера
         var play = document.createElement("div");
-        play.setAttribute("class","play");
+        play.setAttribute("class", "play");
         videos[i].appendChild(play);
-        videos[i].onclick = function() {
+        videos[i].onclick = function () {
             // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
             var iframe = document.createElement("iframe");
             var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-            if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
-            iframe.setAttribute("src",iframe_url);
-            iframe.setAttribute("frameborder",'0');
+            if (this.getAttribute("data-params")) iframe_url += '&' + this.getAttribute("data-params");
+            iframe.setAttribute("src", iframe_url);
+            iframe.setAttribute("frameborder", '0');
             // Высота и ширина iFrame будет как у элемента-родителя
-            iframe.style.width  = this.style.width;
+            iframe.style.width = this.style.width;
             iframe.style.height = this.style.height;
             // Заменяем начальное изображение (постер) на iFrame
             this.parentNode.replaceChild(iframe, this);
@@ -866,5 +871,90 @@ r(function(){
     }
 });
 
+//swiper slider main
+if ($('*').is('.swiper-container-1')) {
+    var mySwiper = new Swiper('.swiper-container-1', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 100,
+        centeredSlides: true,
+        simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+    })
+    var mySwiper1 = new Swiper('.swiper-container-2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 100,
+        centeredSlides: true,
+        simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+    })
+    var mySwiper2 = new Swiper('.swiper-container-3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 100,
+        centeredSlides: true,
+        simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+    })
+    var mySwiper3 = new Swiper('.swiper-container-4', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 100,
+        centeredSlides: true,
+        simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+    })
+    $('.swiper-button-prev').click(function () {
+        mySwiper.slidePrev();
+        setTimeout(function () {
+            mySwiper1.slidePrev();
+        }, 200);
+        setTimeout(function () {
+            mySwiper3.slidePrev();
+        }, 300);
+        setTimeout(function () {
+            mySwiper2.slidePrev();
+        }, 500);
+    });
+    $('.swiper-button-next').click(function () {
+        mySwiper.slideNext();
+        setTimeout(function () {
+            mySwiper1.slideNext();
+        }, 200);
+        setTimeout(function () {
+            mySwiper3.slideNext();
+        }, 300);
+        setTimeout(function () {
+            mySwiper2.slideNext();
+        }, 500);
+    });
+}
 
-
+//delivery hover
+$(".main__cardContentDeliveryIcon").hover(function () {
+    $(".main__cardContentDeliveryText").removeClass("main__cardContentDeliveryText-active");
+});
+$(".main__cardContentDeliveryIcon").mouseover(function () {
+    $(".main__cardContentDeliveryText").addClass("main__cardContentDeliveryText-active");
+});

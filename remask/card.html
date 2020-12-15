@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
     <title>remask</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -114,54 +115,101 @@
                     <div class="main__cardImgScrolling">
                         <img src="img/card/smoke.png" alt="smoke" class="main__cardImg-smoke"/>
                         <img src="img/card/mask.png" alt="mask" class="main__cardImg"/>
+                        <div class="main__cardGallery">
+                            <a href="img/card/gallery-1.png" data-fancybox="gallery" class="main__cardGalleryItem">
+                                <img src="img/card/gallery-1.png" alt="img" class="main__cardGalleryItemImg"/>
+                            </a>
+                            <a href="img/card/gallery-2.png" data-fancybox="gallery" class="main__cardGalleryItem">
+                                <img src="img/card/gallery-2.png" alt="img" class="main__cardGalleryItemImg"/>
+                            </a>
+                            <a href="img/card/gallery-3.png" data-fancybox="gallery" class="main__cardGalleryItem">
+                                <img src="img/card/gallery-3.png" alt="img" class="main__cardGalleryItemImg"/>
+                            </a>
+                            <a href="img/card/gallery-4.png" data-fancybox="gallery" class="main__cardGalleryItem">
+                                <img src="img/card/gallery-4.png" alt="img" class="main__cardGalleryItemImg"/>
+                            </a>
+                            <a href="img/card/gallery-5.png" data-fancybox="gallery" class="main__cardGalleryItem">
+                                <img src="img/card/gallery-5.png" alt="img" class="main__cardGalleryItemImg"/>
+                            </a>
+                            <a href="https://youtu.be/E6UKs2_Wo-0" data-fancybox="gallery"
+                               class="main__cardGalleryItem">
+                                <div class="main__cardGalleryItemVideo">
+                                    <img src="img/card/video.svg" alt="icon" class="main__cardGalleryItemVideoIcon"/>
+                                    <p class="main__cardGalleryItemVideoText">Смотреть видео</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="main__cardContent">
-                    <p class="main__cardContentTitle">Лицевая маска с капроном</p>
-                    <p class="main__cardContentProtocol">Артикул <span>HBFKB344HBKBFI7V</span></p>
+                    <!--                    <p class="main__cardContentTitle">Лицевая маска с капроном</p>-->
+                    <!--                    <p class="main__cardContentProtocol">Артикул <span>HBFKB344HBKBFI7V</span></p>-->
+                    <div class="main__buyControlBtns">
+                        <span class="main__buyControlActive main__buyControlActive-pro"></span>
+                        <a href="#!"
+                           class="main__buyControlBtnsBtn main__buyControlBtnsBtn-pro main__buyControlBtnsBtn-active">PRO</a>
+                        <a href="#!" class="main__buyControlBtnsBtn main__buyControlBtnsBtn-basic">Basic</a>
+                        <a href="#!" class="main__buyControlBtnsBtn main__buyControlBtnsBtn-lite">Lite</a>
+                    </div>
+                    <div class="main__buyControlName">
+                        <img src="img/main/name.png" alt="name" class="main__buyControlNameImg"/>
+                        <p class="main__buyControlNameType">PRO</p>
+                    </div>
                     <div class="main__cardContentPriceAndDelivery">
                         <p class="main__cardContentPrice">
                             <span>9 800</span>
                             <img src="img/icons/rouble-blue.svg" alt="rouble" class="main__cardContentPriceIcon"/>
                         </p>
                         <div class="main__cardContentDelivery">
-                            <img src="img/icons/delivery-white.svg" alt="delivery" class="main__cardContentDeliveryIcon"/>
+                            <img src="img/icons/delivery-white.svg" alt="delivery"
+                                 class="main__cardContentDeliveryIcon"/>
                             <p class="main__cardContentDeliveryText">Бесплатная доставка по всему миру</p>
                         </div>
                     </div>
-                    <div class="main__cardContentControls">
-                        <div class="main__cardContentControlBlock">
-                            <p class="main__cardContentControlTitle">Количество</p>
-                            <div class="main__cardContentCounter">
-                                <div class="main__bagCartItemCounterMinusBlock">
-                                    <img src="img/icons/minus.svg" alt="minus" class="main__bagCartItemCounterMinus"/>
-                                    <img src="img/icons/minus-blue.svg" alt="minus"
-                                         class="main__bagCartItemCounterMinus main__bagCartItemCounterMinus-blue"/>
-                                </div>
-                                <p class="main__bagCartItemCounterNum">1</p>
-                                <div class="main__bagCartItemCounterPlusBlock">
-                                    <img src="img/icons/add.svg" alt="add" class="main__bagCartItemCounterPlus"/>
-                                    <img src="img/icons/add-blue.svg" alt="add"
-                                         class="main__bagCartItemCounterPlus main__bagCartItemCounterPlus-blue"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main__cardContentControlBlock">
-                            <p class="main__cardContentControlTitle">Размер</p>
-                            <div class="main__cardContentSizeBtns">
-                                <a href="#!" class="main__cardContentSizeBtn main__cardContentSizeBtn-active">S</a>
-                                <a href="#!" class="main__cardContentSizeBtn">M</a>
-                                <a href="#!" class="main__cardContentSizeBtn">L</a>
-                            </div>
+                    <div class="main__cardContentControlBlock main__cardContentControlBlock-colors">
+                        <p class="main__cardContentControlTitle">Цвет</p>
+                        <div class="main__buyControlColors">
+                            <a href="#!"><img src="img/main/black.png" alt="black"
+                                              class="main__buyControlColor main__buyControlColor-active"/></a>
+                            <a href="#!"><img src="img/main/white.png" alt="white"
+                                              class="main__buyControlColor main__buyControlColor-white"/></a>
                         </div>
                     </div>
+                    <!--                    <div class="main__cardContentControls">-->
+                    <!--                        <div class="main__cardContentControlBlock">-->
+                    <!--                            <p class="main__cardContentControlTitle">Количество</p>-->
+                    <!--                            <div class="main__cardContentCounter">-->
+                    <!--                                <div class="main__bagCartItemCounterMinusBlock">-->
+                    <!--                                    <img src="img/icons/minus.svg" alt="minus" class="main__bagCartItemCounterMinus"/>-->
+                    <!--                                    <img src="img/icons/minus-blue.svg" alt="minus"-->
+                    <!--                                         class="main__bagCartItemCounterMinus main__bagCartItemCounterMinus-blue"/>-->
+                    <!--                                </div>-->
+                    <!--                                <p class="main__bagCartItemCounterNum">1</p>-->
+                    <!--                                <div class="main__bagCartItemCounterPlusBlock">-->
+                    <!--                                    <img src="img/icons/add.svg" alt="add" class="main__bagCartItemCounterPlus"/>-->
+                    <!--                                    <img src="img/icons/add-blue.svg" alt="add"-->
+                    <!--                                         class="main__bagCartItemCounterPlus main__bagCartItemCounterPlus-blue"/>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="main__cardContentControlBlock">-->
+                    <!--                            <p class="main__cardContentControlTitle">Размер</p>-->
+                    <!--                            <div class="main__cardContentSizeBtns">-->
+                    <!--                                <a href="#!" class="main__cardContentSizeBtn main__cardContentSizeBtn-active">S</a>-->
+                    <!--                                <a href="#!" class="main__cardContentSizeBtn">M</a>-->
+                    <!--                                <a href="#!" class="main__cardContentSizeBtn">L</a>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                     <a href="#!" class="btn btn-light main__cardContentBtn">добавить в корзину</a>
                     <p class="main__cardContentTextTitle">О товаре</p>
                     <p class="main__cardContentText">
-                        Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания
+                        Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные
+                        задания
                         по разработке модели развития. Равным образом дальнейшее развитие различных форм деятельности
                         обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Равным образом
-                        консультация с широким активом представляет собой интересный эксперимент проверки систем массового
+                        консультация с широким активом представляет собой интересный эксперимент проверки систем
+                        массового
                         участия.
                     </p>
                     <p class="main__cardContentTextTitle">Описание товара</p>
@@ -187,7 +235,8 @@
                     </div>
                     <div class="main__cardContentTextRow">
                         <p class="main__cardContentText-left">Юр. адрес импортера:</p>
-                        <p class="main__cardContentText-right">Республика Беларусь, 220034, гМинск, ул. Чапаева, д.3 каб 326,
+                        <p class="main__cardContentText-right">Республика Беларусь, 220034, гМинск, ул. Чапаева, д.3 каб
+                            326,
                             блок 4</p>
                     </div>
                     <div class="main__cardContentTextRow">
@@ -423,12 +472,39 @@
 </main>
 <footer class="footer">
     <div class="wrapper">
-        <p class="footer__text">2020. Tedison company. Все права защищены</p>
-        <p class="footer__text">Маску можно носить без рекомендации врачей</p>
+        <div class="footer__top">
+            <div class="footer__pages">
+                <a href="#!" class="footer__link">Пользовательское соглашение</a>
+                <a href="#!" class="footer__link">Политика защиты персональной информации</a>
+                <a href="#!" class="footer__link">Документы и сертификаты</a>
+            </div>
+            <div class="footer__topRight">
+                <div class="footer__social">
+                    <p class="footer__title">Мы в соц сетях</p>
+                    <div class="footer__socialLinks">
+                        <a href="#!" class="footer__socialLink"><img src="img/main/fb.svg" alt="fb"
+                                                                     class="footer__socialIcon"/></a>
+                        <a href="#!" class="footer__socialLink"><img src="img/main/yt.svg" alt="youtube"
+                                                                     class="footer__socialIcon"/></a>
+                        <a href="#!" class="footer__socialLink"><img src="img/main/insta.svg" alt="inst"
+                                                                     class="footer__socialIcon"/></a>
+                    </div>
+                </div>
+                <div class="footer__question">
+                    <p class="footer__title">Остались вопросы?</p>
+                    <a href="#!" class="footer__questionBtn">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__text">2020. Tedison company. Все права защищены</p>
+            <p class="footer__text">Маску можно носить без рекомендации врачей</p>
+        </div>
     </div>
 </footer>
 <div class="header__closebleMask"></div>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

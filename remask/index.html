@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
     <title>remask</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -219,11 +220,89 @@
     <div class="main__more">
         <div class="wrapper">
             <div class="main__moreVideoBlock">
-                <img src="img/main/video.png" alt="video" class="main__moreVideoPreview" />
+                <img src="img/main/video.png" alt="video" class="main__moreVideoPreview"/>
                 <div class="youtube" id="g_V-s5DePbU" style="width: 1400px; height: 851.50px;"></div>
             </div>
+        </div>
+
+        <div class="main__sliders">
+            <div class="swiper-container swiper-container-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/slider/img1.png" class="main__sliderImg" alt="img"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider/img2.png" class="main__sliderImg" alt="img"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider/img3.png" class="main__sliderImg" alt="img"/>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container swiper-container-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-1.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-1"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-2.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-1"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-3.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-1"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container swiper-container-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-4.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-2"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-5.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-2"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-6.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-2"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container swiper-container-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-7.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-3"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-8.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-3"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__sliderSmallBlock">
+                            <img src="img/slider/small-9.png" alt="img" class="main__sliderSmallImg main__sliderSmallImg-3"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="wrapper">
             <a href="#buy" class="btn main__moreBtn js-scroll-link">
-<!--                <img src="img/icons/play.svg" alt="play" class="main__moreBtnIcon"/>-->
+                <!--                <img src="img/icons/play.svg" alt="play" class="main__moreBtnIcon"/>-->
                 Перейти к покупке
             </a>
             <p class="main__moreText">
@@ -302,13 +381,39 @@
 </main>
 <footer class="footer">
     <div class="wrapper">
-        <p class="footer__text">2020. Tedison company. Все права защищены</p>
-        <a href="#!" class="footer__link">Задать вопрос</a>
-        <p class="footer__text">Маску можно носить без рекомендации врачей</p>
+        <div class="footer__top">
+            <div class="footer__pages">
+                <a href="#!" class="footer__link">Пользовательское соглашение</a>
+                <a href="#!" class="footer__link">Политика защиты персональной информации</a>
+                <a href="#!" class="footer__link">Документы и сертификаты</a>
+            </div>
+            <div class="footer__topRight">
+                <div class="footer__social">
+                    <p class="footer__title">Мы в соц сетях</p>
+                    <div class="footer__socialLinks">
+                        <a href="#!" class="footer__socialLink"><img src="img/main/fb.svg" alt="fb"
+                                                                     class="footer__socialIcon"/></a>
+                        <a href="#!" class="footer__socialLink"><img src="img/main/yt.svg" alt="youtube"
+                                                                     class="footer__socialIcon"/></a>
+                        <a href="#!" class="footer__socialLink"><img src="img/main/insta.svg" alt="inst"
+                                                                     class="footer__socialIcon"/></a>
+                    </div>
+                </div>
+                <div class="footer__question">
+                    <p class="footer__title">Остались вопросы?</p>
+                    <a href="#!" class="footer__questionBtn">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__text">2020. Tedison company. Все права защищены</p>
+            <p class="footer__text">Маску можно носить без рекомендации врачей</p>
+        </div>
     </div>
 </footer>
 <div class="header__closebleMask"></div>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

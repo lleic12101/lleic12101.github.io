@@ -15,49 +15,15 @@
     <img src="img/reg/light.png" alt="light" class="main__makeAccountLight"/>
     <!--    <img src="img/forms/bg.png" alt="bg" class="main__signInBg"/>-->
     <form action="" class="main__signInForm">
-        <p class="main__signInFormTitle">Регистрация</p>
+        <p class="main__signInFormTitle">Войти в личный кабинет</p>
         <p class="main__makeAccountText">
-            Если у вас уже есть аккаунт, <a href="#!">авторизуйтесь</a>
+            У Вас нет аккаунта? <a href="#!">Зарегистрироваться</a>
         </p>
-        <div class="main__makeAccountColumns">
+        <div class="main__makeAccountColumns main__makeAccountColumns-login">
             <div class="main__makeAccountColumn">
-                <div class="main__makeQuestionRow">
-                    <div class="main__infoInputBlock main__infoInputBlock-small">
-                        <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
-                               required/>
-                        <label class="main__infoInputLabel">Имя</label>
-                        <p class="main__infoInputText main__infoInputText-bad">
-                            Ошибка, проверьте введённые данные
-                        </p>
-                        <p class="main__infoInputText main__infoInputText-required">
-                            Обязательное для заполнения поле
-                        </p>
-                    </div>
-                    <div class="main__infoInputBlock main__infoInputBlock-small">
-                        <input type="text" pattern="^([а-яёА-Яa-zA-ZЁ\- ]{3,26})" class="main__infoInput"
-                               required/>
-                        <label class="main__infoInputLabel">Фамилия</label>
-                        <p class="main__infoInputText main__infoInputText-bad">
-                            Ошибка, проверьте введённые данные
-                        </p>
-                        <p class="main__infoInputText main__infoInputText-required">
-                            Обязательное для заполнения поле
-                        </p>
-                    </div>
-                </div>
                 <div class="main__infoInputBlock">
                     <input type="text" class="main__infoInput" required/>
                     <label class="main__infoInputLabel">Email*</label>
-                    <p class="main__infoInputText main__infoInputText-bad">
-                        Ошибка, проверьте введённые данные
-                    </p>
-                    <p class="main__infoInputText main__infoInputText-required">Обязательное для заполнения
-                        поле</p>
-                </div>
-                <div class="main__infoInputBlock">
-                    <input type="text" class="main__infoInput main__infoInput-phone main__infoInput-hidden"
-                           value="7" size="25" required>
-                    <label class="main__infoInputLabel">Телефон*</label>
                     <p class="main__infoInputText main__infoInputText-bad">
                         Ошибка, проверьте введённые данные
                     </p>
@@ -73,12 +39,10 @@
                     <p class="main__infoInputText main__infoInputText-required">Обязательное для заполнения
                         поле</p>
                 </div>
-                <div class="main__makeAccountCheckBlock">
-                    <input type="checkbox" class="custom-checkbox" id="policy" name="policy" value="yes">
-                    <label for="policy"><p>При регистрации аккаунта, Вы соглашаетесь с нашим <a href="#!">Пользовательским
-                        соглашением</a></p></label>
-                </div>
-                <a href="#!" class="btn btn-light main__signInBtn main__restoreBtn">Регистрация</a>
+                <p class="main__makeAccountText main__makeAccountText-signIn">
+                    Забыли пароль? <a href="#!">Восстановить</a>
+                </p>
+                <a href="#!" class="btn btn-light main__signInBtn main__restoreBtn">Войти</a>
             </div>
             <div class="main__makeAccountColumn main__makeAccountColumn-delimiter">
                 <span class="main__makeAccountColumnLine"></span>
@@ -107,8 +71,6 @@
     </form>
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.inputmask.bundle.min.js"></script>
-<script src="js/jquery.inputmask-multi.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
