@@ -49,6 +49,7 @@ $(window).scroll(function () {
         navbar.removeClass("scrollUp")
     }
     c = currentScrollTop;
+    checkScroll();
 });
 
 //language menu
@@ -885,6 +886,9 @@ if ($('*').is('.swiper-container-1')) {
         fadeEffect: {
             crossFade: true
         },
+        noSwiping: true,
+        followFinger: false,
+        allowTouchMove: false,
     })
     var mySwiper1 = new Swiper('.swiper-container-2', {
         // Optional parameters
@@ -898,6 +902,9 @@ if ($('*').is('.swiper-container-1')) {
         fadeEffect: {
             crossFade: true
         },
+        noSwiping: true,
+        followFinger: false,
+        allowTouchMove: false,
     })
     var mySwiper2 = new Swiper('.swiper-container-3', {
         // Optional parameters
@@ -911,6 +918,9 @@ if ($('*').is('.swiper-container-1')) {
         fadeEffect: {
             crossFade: true
         },
+        noSwiping: true,
+        followFinger: false,
+        allowTouchMove: false,
     })
     var mySwiper3 = new Swiper('.swiper-container-4', {
         // Optional parameters
@@ -924,6 +934,9 @@ if ($('*').is('.swiper-container-1')) {
         fadeEffect: {
             crossFade: true
         },
+        noSwiping: true,
+        followFinger: false,
+        allowTouchMove: false,
     })
     $('.swiper-button-prev').click(function () {
         mySwiper.slidePrev();
@@ -958,3 +971,22 @@ $(".main__cardContentDeliveryIcon").hover(function () {
 $(".main__cardContentDeliveryIcon").mouseover(function () {
     $(".main__cardContentDeliveryText").addClass("main__cardContentDeliveryText-active");
 });
+
+//scrollup btn
+// при нажатии на кнопку scrollup
+$('.scrollup').click(function () {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({
+        scrollTop: 0
+    }, 1000);
+})
+function checkScroll() {
+    if ($(this).scrollTop() > 200) {
+        // то сделать кнопку scrollup видимой
+        $('.scrollup').fadeIn();
+    }
+    // иначе скрыть кнопку scrollup
+    else {
+        $('.scrollup').fadeOut();
+    }
+}

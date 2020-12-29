@@ -97,10 +97,18 @@
 <main class="main">
     <div class="main__remask">
         <div class="wrapper">
-            <img src="img/brand.svg" alt="name" class="main__remaskBrand"/>
-            <p class="main__remaskText">Больше, чем просто маска</p>
+            <div class="main__remaskBlock main__remaskBlock-mobile">
+                <img src="img/brand.svg" alt="name" class="main__remaskBrand"/>
+                <p class="main__remaskText">Больше, чем просто маска</p>
+            </div>
+            <div class="main__remaskBlock">
+                <img src="img/brand.svg" alt="name" class="main__remaskBrand"/>
+                <p class="main__remaskText">Больше, чем просто маска</p>
+                <a href="#buy" class="js-scroll-link btn btn-light main__remaskBtn">КУПИТЬ</a>
+            </div>
             <video poster="video/png/1.png" autoplay playsinline muted loop
                    class="main__remaskMask-video" src="video/Animation_01.mp4" type="video/mp4"></video>
+            <a href="#buy" class="js-scroll-link btn btn-light main__remaskBtn main__remaskBtn-mobile">КУПИТЬ</a>
             <a href="#levels" class="js-scroll-link main__remaskScroll main__remaskScroll-video">
                 <img src="img/icons/scroll.svg" alt="scroll"/>
             </a>
@@ -311,6 +319,66 @@
             </p>
         </div>
     </div>
+    <div class="main__blog">
+        <div class="wrapper">
+            <p class="main__blogTitle">Новости</p>
+            <div class="main__blogItems">
+                <a href="#!" class="main__newsItem main__newsItem-small">
+                    <div class="main__newsItemImgBlock">
+                        <img src="img/news/img2.png" alt="img" class="main__newsItemImg"/>
+                        <span class="main__newsItemImgFilter"></span>
+                    </div>
+                    <div class="main__newsItemTextBlock">
+                        <p class="main__newsItemTitle">
+                            Gmail to stop working for some users next year – are you affected by this Google change?
+                        </p>
+                        <p class="main__newsItemText">
+                            GMAIL and other Google software will stop working for some users in 2021. Here's who is affected
+                            and how to get ready for this dramatic change from Google.
+                        </p>
+                        <p class="main__newsItemLink">rambler.ru</p>
+                    </div>
+                    <span class="main__newsItemBorder"></span>
+                </a>
+                <a href="#!" class="main__newsItem main__newsItem-small">
+                    <div class="main__newsItemImgBlock">
+                        <img src="img/news/img2.png" alt="img" class="main__newsItemImg"/>
+                        <span class="main__newsItemImgFilter"></span>
+                    </div>
+                    <div class="main__newsItemTextBlock main__newsItemTextBlock-linkOff">
+                        <p class="main__newsItemTitle">
+                            Gmail to stop working for some users next year – are you affected by this Google change?
+                        </p>
+                        <p class="main__newsItemText">
+                            GMAIL and other Google software will stop working for some users in 2021. Here's who is affected
+                            and how to get ready for this dramatic change from Google.
+                        </p>
+                    </div>
+                    <span class="main__newsItemBorder"></span>
+                </a>
+                <a href="#!" class="main__newsItem main__newsItem-small">
+                    <div class="main__newsItemImgBlock">
+                        <img src="img/news/img2.png" alt="img" class="main__newsItemImg"/>
+                        <span class="main__newsItemImgFilter"></span>
+                    </div>
+                    <div class="main__newsItemTextBlock">
+                        <p class="main__newsItemTitle">
+                            Gmail to stop working for some users next year – are you affected by this Google change?
+                        </p>
+                        <p class="main__newsItemText">
+                            GMAIL and other Google software will stop working for some users in 2021. Here's who is affected
+                            and how to get ready for this dramatic change from Google.
+                        </p>
+                        <p class="main__newsItemLink">unsplash.com</p>
+                    </div>
+                    <span class="main__newsItemBorder"></span>
+                </a>
+            </div>
+            <a href="#!" class="btn main__moreBtn">
+                Смотреть все новости
+            </a>
+        </div>
+    </div>
     <div class="main__buy" id="buy">
         <div class="wrapper">
             <div class="main__buyImgBlock">
@@ -380,6 +448,10 @@
     </div>
 </main>
 <footer class="footer">
+    <div class="scrollup">
+        <img src="img/up.svg" alt="up" class="scrollup__img"/>
+        <img src="img/up-hover.svg" alt="up" class="scrollup__img scrollup__img-hover"/>
+    </div>
     <div class="wrapper">
         <div class="footer__top">
             <div class="footer__pages">

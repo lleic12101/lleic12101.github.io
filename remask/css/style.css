@@ -107,6 +107,8 @@ body {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    z-index: 7;
+    position: relative;
 }
 .btn:hover {
     background: #01E2FF;
@@ -341,6 +343,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 126px;
+    position: relative;
 }
 .main__remaskBrand {
     position: relative;
@@ -359,6 +362,7 @@ body {
 }
 .main__remaskMask-video {
     margin-top: -300px;
+    margin-right: -630px;
     min-height: 1080px;
 }
 .main__remaskScroll {
@@ -379,6 +383,24 @@ body {
     100% {
         transform: translateY(0px);
     }
+}
+.main__remaskBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 70px;
+    top: 250px;
+}
+.main__remaskBlock-mobile {
+    align-items: center;
+    display: none;
+}
+.main__remaskBtn {
+    margin-top: 60px;
+}
+.main__remaskBtn-mobile {
+    display: none;
 }
 /*REMASK END*/
 
@@ -1064,6 +1086,39 @@ body {
     bottom: 0;
     left: 0;
 }
+.main__contactsEmails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main__contactsEmailTitle {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.main__contactsEmailBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 50px 40px;
+    width: 145px;
+}
+.main__contactsEmailGray {
+    font-size: 14px;
+    color: #8B8D91;
+    margin-bottom: 10px;
+}
+.main__contactsEmailText {
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+}
 /*CONTACTS END*/
 
 /*INFO*/
@@ -1174,6 +1229,18 @@ body {
     font-family: "Gotham Pro";
     outline: none;
     transition: .3s;
+}
+.main__infoInput::-webkit-input-placeholder {
+    color: transparent;
+}
+.main__infoInput::-moz-placeholder {
+    color: transparent;
+}
+.main__infoInput:-moz-placeholder {
+    color: transparent;
+}
+.main__infoInput:-ms-input-placeholder {
+    color: transparent;
 }
 .main__infoInput:focus {
     border: 1.2px solid #01E2FF;
@@ -2252,6 +2319,14 @@ body {
     font-weight: 500;
     font-size: 14px;
 }
+.main__bagCartItemNumber a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+.main__bagCartItemNumber a:hover {
+    text-decoration: none;
+}
 .main__bagCartItemDate {
     font-size: 12px;
     color: #5A5F6D;
@@ -2368,6 +2443,10 @@ body {
     width: 618px;
     position: relative;
     z-index: 1;
+}
+.main__cardContent .main__buyControlRadioBtns {
+    max-width: 390px;
+    margin: 30px 0 0;
 }
 .main__cardContentTitle {
     font-size: 40px;
@@ -2977,6 +3056,12 @@ body {
     width: 100%;
     justify-content: space-between;
 }
+.main__profileNotificationItemsText {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
 
 .main__profileOrdersItems .main__bagCartItemContent {
     justify-content: flex-start;
@@ -3221,6 +3306,19 @@ body {
 .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(3),
 .main__bagCartDelivery-5 .main__bagCartDeliveryText:nth-child(4) {
     color: #FFFFFF;
+}
+
+.main__pay_order {
+    background: #00aeef;
+    text-decoration: none;
+    color: white;
+    padding: 12px 14px 10px;
+    right: 1px;
+    margin: 26px 0px 5px;
+    float: right;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 12;
 }
 /*PROFILE END*/
 
@@ -3523,12 +3621,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    max-width: 1000px;
 }
 .main__certificateImg {
     width: 400px;
-    margin: 0 20px;
+    margin: 20px;
+    min-height: 565px;
 }
 /*CERTIFICATE END*/
 
@@ -3627,7 +3728,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     max-width: 455px;
-    margin: 0 0 60px 40px;
+    margin: 0 0 40px 40px;
     position: relative;
 }
 .main__newsItemTitle {
@@ -3700,6 +3801,21 @@ body {
 .main__newsItem-small .main__newsItemText {
     display: none;
 }
+.main__newsItemLink {
+    font-weight: 500;
+    line-height: 15px;
+    text-transform: lowercase;
+    color: #01E2FF;
+    text-decoration: none;
+    display: block;
+    margin-top: 23px;
+}
+.main__newsItemLink:hover {
+    text-decoration: underline;
+}
+.main__newsItemTextBlock-linkOff {
+    padding-bottom: 38px;
+}
 /*NEWS END*/
 
 /*NEWS PAGE*/
@@ -3734,7 +3850,95 @@ body {
     display: block;
     border-left: 4px solid #01E2FF;
 }
+.main__newsPageTextImg {
+    padding: 0 40px 40px 0;
+    width: 40%;
+}
 /*NEWS PAGE END*/
+
+/*MAIN BLOG BLOCK*/
+.main__blog {
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+.main__blog .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__blog .main__newsItem {
+    margin: 16px;
+}
+.main__blogTitle {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main__blogItems {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+/*MAIN BLOG BLOCK END*/
+
+/*SCROLLUP*/
+.scrollup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background: #122B34;
+    border-radius: 6px;
+    transition: .3s;
+    cursor: pointer;
+    z-index: 8;
+}
+.scrollup__img {
+    opacity: 1;
+    transition: .3s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(.7);
+}
+.scrollup__img-hover {
+    opacity: 0;
+}
+.scrollup:hover {
+    background: #01E2FF;
+}
+.scrollup:hover .scrollup__img {
+    opacity: 0;
+}
+.scrollup:hover .scrollup__img-hover {
+    opacity: 1;
+}
+/*SCROLLUP END*/
+
+/*HEIGHT FIX*/
+.main__levelsImg-video1 {
+    min-height: 756px;
+}
+.main__aboutProsImg-video1 {
+    min-height: 648px;
+}
+.main__aboutProsImg-video2 {
+    min-height: 648px;
+}
+.main__aboutProsImg-video3 {
+    min-height: 864px;
+}
+/*HEIGHT FIX END*/
 
 /*MAIN MEDIA*/
 @media screen and (min-width: 1921px) {
@@ -3826,6 +4030,15 @@ body {
     .main__remask {
         background-position: center;
         background-size: cover;
+    }
+    .main__remaskBlock {
+        top: 200px;
+    }
+    .main__remaskBtn {
+        margin-top: 30px;
+    }
+    .main__remaskText {
+        margin-top: 20px;
     }
     .main__bgName {
         left: -100px;
@@ -3958,6 +4171,9 @@ body {
     .main__remaskScroll {
         display: none;
     }
+    .main__remaskBlock {
+        left: 30px;
+    }
 
     .main__levelsImg-video1 {
         margin: 0 0 -150px 0;
@@ -3983,6 +4199,10 @@ body {
     }
     .main__moreVideoBlock iframe {
         height: 550px !important;
+    }
+
+    .scrollup {
+        visibility: hidden;
     }
 }
 @media screen and (max-width: 1020px) {
@@ -4188,6 +4408,23 @@ body {
     }
     .main__certificateImg {
         width: 90%;
+    }
+
+    .main__remaskBlock {
+        display: none;
+    }
+    .main__remaskBlock-mobile {
+        display: flex;
+        position: relative;
+        top: unset;
+        left: unset;
+    }
+    .main__remaskMask-video {
+        margin-right: 0;
+    }
+    .main__remaskBtn-mobile {
+        display: flex;
+        margin-top: -120px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -4466,7 +4703,7 @@ body {
 }
 @media screen and (max-width: 460px) {
     .main__remaskMask-video {
-        margin-top: -420px;
+        margin-top: -370px;
         margin-bottom: -550px;
         transform: scale(.3);
     }
@@ -4507,6 +4744,10 @@ body {
     }
     .main__moreVideoBlock iframe {
         height: 260px !important;
+    }
+
+    .main__remaskBtn-mobile {
+        margin-top: 210px;
     }
 }
 @media screen and (max-width: 420px) {
@@ -4642,12 +4883,21 @@ body {
     .main__remaskBrand {
         width: 260px;
     }
-
+    .main__remaskBtn-mobile {
+        margin-top: 170px;
+    }
 }
 @media screen and (max-width: 360px) {
     .main__buyImgBlockMask-video {
         transform: scale(.3);
         left: -700px;
+    }
+
+    .main__remaskBtn-mobile {
+        margin-top: 170px;
+    }
+    .main__remaskMask-video {
+        margin-top: -420px;
     }
 }
 /*MAIN MEDIA END*/
@@ -4737,6 +4987,11 @@ body {
         margin-top: 50px;
     }
 }
+@media screen and (max-width: 767px) {
+    .main__contactsEmailBlock {
+        margin: 0 30px 30px;
+    }
+}
 @media screen and (max-width: 480px) {
     .main__contactsItemBlock-address {
         max-width: 280px;
@@ -4771,9 +5026,28 @@ body {
         font-size: 24px;
         margin-bottom: 16px;
     }
+
+    .main__contactsEmailBlock {
+        margin: 0 10px 20px;
+    }
+    .main__contactsEmailTitle {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .main__contactsEmailBlock {
+        margin: 0 0 10px;
+    }
+    .main__contactsEmailText {
+        font-size: 16px;
+    }
+    .main__contactsEmailGray {
+        margin-bottom: 5px;
+    }
 }
 /*CONTACTS MEDIA END*/
-
 /*INFO*/
 @media screen and (max-width: 1500px) {
     .main__infoFormHeadlineBlock {
@@ -5011,7 +5285,6 @@ body {
     }
 }
 /*INFO END*/
-
 /*SIGN IN*/
 @media screen and (max-width: 767px) {
     .main__signIn .main__infoInputBlock {
@@ -5089,7 +5362,6 @@ body {
     }
 }
 /*SIGN IN END*/
-
 /*PRODUCTS*/
 @media screen and (max-width: 1020px) {
     .main__productsHeaderTitle {
@@ -5280,7 +5552,6 @@ body {
     }
 }
 /*PRODUCTS END*/
-
 /*BAG*/
 @media screen and (max-width: 1261px) {
     .main__bagContent {
@@ -5458,7 +5729,6 @@ body {
     }
 }
 /*BAG END*/
-
 /*CARD*/
 @media screen and (max-width: 1180px) {
     .main__cardBlock {
@@ -5584,7 +5854,6 @@ body {
     }
 }
 /*CARD END*/
-
 /*PROFILE*/
 @media screen and (max-width: 1261px) {
     .main__profileDataContent {
@@ -5998,6 +6267,10 @@ body {
     .main__bagCartItemName {
         line-height: 17px;
     }
+
+    .main__profileNotificationItemsText {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 420px) {
     .main__profileDataInput-half-select .selectize-input {
@@ -6046,7 +6319,6 @@ body {
     }
 }
 /*PROFILE END*/
-
 /*REGISTRATION*/
 @media screen and (max-width: 900px) {
     .main__makeAccount .main__signInForm {
@@ -6141,7 +6413,6 @@ body {
     }
 }
 /*REGISTRATION END*/
-
 /*FOOTER*/
 @media screen and (max-width: 1261px) {
     .footer__top {
@@ -6224,7 +6495,6 @@ body {
     }
 }
 /*FOOTER END*/
-
 /*NEWS*/
 @media screen and (max-width: 1261px) {
     .main__newsItems {
@@ -6251,6 +6521,14 @@ body {
     }
     .main__newsItem-small-page .main__newsItemImgFilter {
         background: linear-gradient(90.44deg, #1A222C 5.26%, rgba(26, 34, 44, 0) 69.8%);
+    }
+
+    .main__blogItems {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width: 860px) {
@@ -6283,6 +6561,21 @@ body {
     }
     .main__productsHeaderTitle {
         line-height: unset;
+    }
+
+    .main__blog .main__newsItem-small {
+        width: 100%;
+    }
+    .main__blog {
+        margin: 70px 0 80px;
+    }
+    .main__blogItems {
+        margin: 20px 0;
+    }
+
+    .main__newsPageTextImg {
+        width: 100%;
+        padding: 0 0 20px 0;
     }
 }
 @media screen and (max-width: 660px) {
@@ -6321,6 +6614,10 @@ body {
     }
     .main__newsPageImg {
         height: 260px;
+    }
+
+    .main__certificateImg {
+        min-height: auto;
     }
 }
 @media screen and (max-width: 480px) {
@@ -6361,6 +6658,23 @@ body {
     }
     .main__newsPageImg {
         height: 200px;
+    }
+    .main__newsItemLink {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .main__newsItemTextBlock-linkOff {
+        padding-bottom: 0;
+    }
+    .main__blogTitle {
+        font-size: 24px;
+    }
+    .main__blog .main__newsItem {
+        margin: 8px 0;
+    }
+    .main__blog {
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 400px) {
