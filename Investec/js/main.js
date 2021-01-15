@@ -49,3 +49,9 @@ $('.header__closeableMask').click(function () {
     $('.header__nav-mobile').slideUp();
     $("html, body").removeClass("body-fixed");
 });
+
+//FAQ btns
+$(".main__questionsItemHeader").click(function () {
+    $(this).parent().toggleClass("main__questionsItem-active");
+    $(this).parent().find(".main__questionsItemAnswer").slideToggle();
+});
