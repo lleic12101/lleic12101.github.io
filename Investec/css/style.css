@@ -626,7 +626,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 15px 50px;
+    padding: 100px 35px 50px;
 }
 .footer__top {
     width: 100%;
@@ -720,6 +720,36 @@ body {
 }
 /*FOOTER END*/
 
+/*BREADCRUMBS*/
+.main__breadcrumbs {
+    width: 100%;
+    padding-top: 126px;
+}
+.main__breadcrumbs .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 35px;
+}
+.main__breadcrumbsLink {
+    color: #A7AEB7;
+    text-decoration: none;
+}
+.main__breadcrumbsLink:hover {
+    text-decoration: underline;
+}
+.main__breadcrumbsLink-white {
+    color: #ffffff;
+}
+.main__breadcrumbsLink-white:hover {
+    text-decoration: none;
+}
+.main__breadcrumbsIcon {
+    margin: 5px 10px 0;
+}
+/*BREADCRUMBS END*/
+
 /*OWL DOTS*/
 .owl-dots {
     display: flex;
@@ -744,6 +774,28 @@ body {
     background: #1F3DFF;
 }
 /*OWL DOTS END*/
+
+/*TERMS*/
+.main__terms {
+    width: 100%;
+}
+.main__terms .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+.main__termsTitle {
+    margin-bottom: 40px;
+}
+.main__termsHeadline {
+    font-weight: 700;
+    font-size: 18px;
+}
+.main__termsText {
+    line-height: 25.2px;
+    margin-bottom: 20px;
+}
+/*TERMS END*/
 
 /*ANIMATIONS*/
 @keyframes arrow {
@@ -838,9 +890,6 @@ body {
     }
 }
 @media screen and (max-width: 880px) {
-    .header .wrapper {
-        border-bottom: none;
-    }
     .header__logo {
         height: 21px;
     }
@@ -1159,6 +1208,7 @@ body {
     }
 }
 /*MAIN MEDIA END*/
+
 /*FOOTER MEDIA*/
 @media screen and (max-width: 1023px) {
     .footer__topText:first-child {
@@ -1215,3 +1265,24 @@ body {
     }
 }
 /*FOOTER MEDIA END*/
+
+/*TERMS*/
+@media screen and (max-width: 1023px) {
+    .main__breadcrumbs {
+        padding-top: 80px;
+    }
+    .main__terms .wrapper {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 680px) {
+    .main__breadcrumbs .wrapper {
+        padding: 20px 35px;
+    }
+    .main__termsTitle {
+        font-size: 30px;
+        line-height: 39px;
+        margin-bottom: 20px;
+    }
+}
+/*TERMS END*/
