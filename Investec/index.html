@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />-->
     <title>Investec</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header class="header">
     <div class="wrapper">
         <a href="#!" class="header__logoLink"><img src="img/logo.png" alt="logo" class="header__logo"/></a>
-        <nav class="header__nav">
-            <a href="#!" class="header__navLink header__navLink-active">Главная</a>
-            <a href="#!" class="header__navLink">О нас</a>
-            <a href="#!" class="header__navLink">Инвесторам</a>
-            <a href="#!" class="header__navLink">FAQ</a>
-            <a href="#!" class="header__navLink">Контакты</a>
-        </nav>
+        <div class="header__nav-mobile">
+            <nav class="header__nav">
+                <a href="#!" class="header__navLink header__navLink-active">Главная</a>
+                <a href="#!" class="header__navLink">О нас</a>
+                <a href="#!" class="header__navLink">Инвесторам</a>
+                <a href="#!" class="header__navLink">FAQ</a>
+                <a href="#!" class="header__navLink">Контакты</a>
+            </nav>
+        </div>
+        <div class="header__burger">
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-1"/>
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-2"/>
+        </div>
     </div>
+    <div class="header__closeableMask"></div>
 </header>
 <main class="main">
     <div class="main__header">
@@ -42,16 +50,16 @@
                     </a>
                     <a href="#!" class="main__headerContentBtn main__headerContentBtn-dark">Авторизация</a>
                 </div>
-                <div class="main__headerContentScroll">
+                <a href="#about" class="js-scroll-link main__headerContentScroll">
                     <img src="img/main/figure.svg" alt="figure" class="main__headerContentScrollImg"/>
                     <img src="img/icons/arrow-down.svg" alt="arrow-down" class="main__headerContentScrollIcon"/>
-                </div>
+                </a>
             </div>
             <img src="img/main/img.png" alt="img" class="main__headerImg"/>
         </div>
     </div>
     <div class="main__about">
-        <div class="wrapper">
+        <div class="wrapper" id="about">
             <img src="img/main/decor.png" alt="decor" class="main__aboutImg"/>
             <div class="main__aboutTextBlock">
                 <p class="main__title main__aboutTextBlockTitle">О компании</p>
@@ -126,208 +134,106 @@
     <div class="main__tariffs">
         <div class="wrapper">
             <p class="main__title main__tariffsTitle">Наши тарифы</p>
-            <!--            <div class="main__tariffsItems">-->
-            <!--                <div class="main__tariffsItem">-->
-            <!--                    <p class="main__tariffsItemTitle">Start Pack</p>-->
-            <!--                    <span class="main__tariffsItemDelimiter"></span>-->
-            <!--                    <div class="main__tariffsItemPercentBlock">-->
-            <!--                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span> 0.3<span-->
-            <!--                                class="main__tariffsItemPercent-percent">%</span></p>-->
-            <!--                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span> 0.5<span-->
-            <!--                                class="main__tariffsItemPercent-percent">%</span></p>-->
-            <!--                    </div>-->
-            <!--                    <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">10-1000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.3%</p>-->
-            <!--                    </div>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">1001-3000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.4%</p>-->
-            <!--                    </div>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">3001-5000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.5%</p>-->
-            <!--                    </div>-->
-            <!--                    <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">-->
-            <!--                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>-->
-            <!--                        Депозит в конце срока-->
-            <!--                    </p>-->
-            <!--                    <p class="main__tariffsItemTextPoint">-->
-            <!--                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>-->
-            <!--                        Ежедневные начисления-->
-            <!--                    </p>-->
-            <!--                </div>-->
-            <!--                <div class="main__tariffsItem">-->
-            <!--                    <p class="main__tariffsItemTitle">Standart Pack</p>-->
-            <!--                    <span class="main__tariffsItemDelimiter"></span>-->
-            <!--                    <div class="main__tariffsItemPercentBlock">-->
-            <!--                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span> 0.5<span-->
-            <!--                                class="main__tariffsItemPercent-percent">%</span></p>-->
-            <!--                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span> 1<span-->
-            <!--                                class="main__tariffsItemPercent-percent">%</span></p>-->
-            <!--                    </div>-->
-            <!--                    <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">10-1000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.3%</p>-->
-            <!--                    </div>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">1001-3000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.4%</p>-->
-            <!--                    </div>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">3001-5000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.5%</p>-->
-            <!--                    </div>-->
-            <!--                    <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">-->
-            <!--                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>-->
-            <!--                        Депозит в конце срока-->
-            <!--                    </p>-->
-            <!--                    <p class="main__tariffsItemTextPoint">-->
-            <!--                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>-->
-            <!--                        Ежедневные начисления-->
-            <!--                    </p>-->
-            <!--                </div>-->
-            <!--                <div class="main__tariffsItem">-->
-            <!--                    <p class="main__tariffsItemTitle">Pro Pack</p>-->
-            <!--                    <span class="main__tariffsItemDelimiter"></span>-->
-            <!--                    <div class="main__tariffsItemPercentBlock">-->
-            <!--                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span> 1<span-->
-            <!--                                class="main__tariffsItemPercent-percent">%</span></p>-->
-            <!--                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span> 3<span-->
-            <!--                                class="main__tariffsItemPercent-percent">%</span></p>-->
-            <!--                    </div>-->
-            <!--                    <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">10-1000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.3%</p>-->
-            <!--                    </div>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">1001-3000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.4%</p>-->
-            <!--                    </div>-->
-            <!--                    <div class="main__tariffsItemTextBlock">-->
-            <!--                        <p class="main__tariffsItemText">3001-5000$</p>-->
-            <!--                        <p class="main__tariffsItemText">0.5%</p>-->
-            <!--                    </div>-->
-            <!--                    <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">-->
-            <!--                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>-->
-            <!--                        Депозит в конце срока-->
-            <!--                    </p>-->
-            <!--                    <p class="main__tariffsItemTextPoint">-->
-            <!--                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>-->
-            <!--                        Ежедневные начисления-->
-            <!--                    </p>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="main__tariffsItem">
-                            <p class="main__tariffsItemTitle">Start Pack</p>
-                            <span class="main__tariffsItemDelimiter"></span>
-                            <div class="main__tariffsItemPercentBlock">
-                                <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span> 0.3<span
-                                        class="main__tariffsItemPercent-percent">%</span></p>
-                                <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span> 0.5<span
-                                        class="main__tariffsItemPercent-percent">%</span></p>
-                            </div>
-                            <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">10-1000$</p>
-                                <p class="main__tariffsItemText">0.3%</p>
-                            </div>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">1001-3000$</p>
-                                <p class="main__tariffsItemText">0.4%</p>
-                            </div>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">3001-5000$</p>
-                                <p class="main__tariffsItemText">0.5%</p>
-                            </div>
-                            <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">
-                                <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
-                                Депозит в конце срока
-                            </p>
-                            <p class="main__tariffsItemTextPoint">
-                                <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
-                                Ежедневные начисления
-                            </p>
-                        </div>
+            <div class="owl-carousel main__tariffsItems">
+                <div class="main__tariffsItem">
+                    <p class="main__tariffsItemTitle">Start Pack</p>
+                    <span class="main__tariffsItemDelimiter"></span>
+                    <div class="main__tariffsItemPercentBlock">
+                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span>
+                            0.3<span
+                                    class="main__tariffsItemPercent-percent">%</span></p>
+                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span>
+                            0.5<span
+                                    class="main__tariffsItemPercent-percent">%</span></p>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="main__tariffsItem">
-                            <p class="main__tariffsItemTitle">Standart Pack</p>
-                            <span class="main__tariffsItemDelimiter"></span>
-                            <div class="main__tariffsItemPercentBlock">
-                                <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span> 0.5<span
-                                        class="main__tariffsItemPercent-percent">%</span></p>
-                                <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span>
-                                    1<span
-                                            class="main__tariffsItemPercent-percent">%</span></p>
-                            </div>
-                            <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">10-1000$</p>
-                                <p class="main__tariffsItemText">0.3%</p>
-                            </div>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">1001-3000$</p>
-                                <p class="main__tariffsItemText">0.4%</p>
-                            </div>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">3001-5000$</p>
-                                <p class="main__tariffsItemText">0.5%</p>
-                            </div>
-                            <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">
-                                <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
-                                Депозит в конце срока
-                            </p>
-                            <p class="main__tariffsItemTextPoint">
-                                <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
-                                Ежедневные начисления
-                            </p>
-                        </div>
+                    <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">10-1000$</p>
+                        <p class="main__tariffsItemText">0.3%</p>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="main__tariffsItem">
-                            <p class="main__tariffsItemTitle">Pro Pack</p>
-                            <span class="main__tariffsItemDelimiter"></span>
-                            <div class="main__tariffsItemPercentBlock">
-                                <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span>
-                                    1<span
-                                            class="main__tariffsItemPercent-percent">%</span></p>
-                                <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span>
-                                    3<span
-                                            class="main__tariffsItemPercent-percent">%</span></p>
-                            </div>
-                            <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">10-1000$</p>
-                                <p class="main__tariffsItemText">0.3%</p>
-                            </div>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">1001-3000$</p>
-                                <p class="main__tariffsItemText">0.4%</p>
-                            </div>
-                            <div class="main__tariffsItemTextBlock">
-                                <p class="main__tariffsItemText">3001-5000$</p>
-                                <p class="main__tariffsItemText">0.5%</p>
-                            </div>
-                            <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">
-                                <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
-                                Депозит в конце срока
-                            </p>
-                            <p class="main__tariffsItemTextPoint">
-                                <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
-                                Ежедневные начисления
-                            </p>
-                        </div>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">1001-3000$</p>
+                        <p class="main__tariffsItemText">0.4%</p>
                     </div>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">3001-5000$</p>
+                        <p class="main__tariffsItemText">0.5%</p>
+                    </div>
+                    <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">
+                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
+                        Депозит в конце срока
+                    </p>
+                    <p class="main__tariffsItemTextPoint">
+                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
+                        Ежедневные начисления
+                    </p>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="main__tariffsItem">
+                    <p class="main__tariffsItemTitle">Standart Pack</p>
+                    <span class="main__tariffsItemDelimiter"></span>
+                    <div class="main__tariffsItemPercentBlock">
+                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span>
+                            0.5<span
+                                    class="main__tariffsItemPercent-percent">%</span></p>
+                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span>
+                            1<span
+                                    class="main__tariffsItemPercent-percent">%</span></p>
+                    </div>
+                    <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">10-1000$</p>
+                        <p class="main__tariffsItemText">0.3%</p>
+                    </div>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">1001-3000$</p>
+                        <p class="main__tariffsItemText">0.4%</p>
+                    </div>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">3001-5000$</p>
+                        <p class="main__tariffsItemText">0.5%</p>
+                    </div>
+                    <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">
+                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
+                        Депозит в конце срока
+                    </p>
+                    <p class="main__tariffsItemTextPoint">
+                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
+                        Ежедневные начисления
+                    </p>
+                </div>
+                <div class="main__tariffsItem">
+                    <p class="main__tariffsItemTitle">Pro Pack</p>
+                    <span class="main__tariffsItemDelimiter"></span>
+                    <div class="main__tariffsItemPercentBlock">
+                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">от</span>
+                            1<span
+                                    class="main__tariffsItemPercent-percent">%</span></p>
+                        <p class="main__tariffsItemPercent"><span class="main__tariffsItemPercent-word">до</span>
+                            3<span
+                                    class="main__tariffsItemPercent-percent">%</span></p>
+                    </div>
+                    <a href="#!" class="main__tariffsItemBtn">на 10 дней</a>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">10-1000$</p>
+                        <p class="main__tariffsItemText">0.3%</p>
+                    </div>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">1001-3000$</p>
+                        <p class="main__tariffsItemText">0.4%</p>
+                    </div>
+                    <div class="main__tariffsItemTextBlock">
+                        <p class="main__tariffsItemText">3001-5000$</p>
+                        <p class="main__tariffsItemText">0.5%</p>
+                    </div>
+                    <p class="main__tariffsItemTextPoint main__tariffsItemTextPoint-margin">
+                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
+                        Депозит в конце срока
+                    </p>
+                    <p class="main__tariffsItemTextPoint">
+                        <img src="img/icons/check.svg" alt="check" class="main__tariffsItemTextPointIcon"/>
+                        Ежедневные начисления
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -442,7 +348,7 @@
     </div>
 </footer>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
