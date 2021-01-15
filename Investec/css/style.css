@@ -47,6 +47,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 9;
 }
 .header .wrapper {
     display: flex;
@@ -725,6 +726,8 @@ body {
 .main__breadcrumbs {
     width: 100%;
     padding-top: 126px;
+    position: relative;
+    z-index: 1;
 }
 .main__breadcrumbs .wrapper {
     display: flex;
@@ -931,6 +934,85 @@ body {
     display: none;
 }
 /*INVESTORS END*/
+
+/*HISTORY*/
+.main__history {
+    background: url("../img/main/bg4.png") no-repeat;
+    background-position: top right;
+    background-size: 100% 100%;
+    margin-top: -229.4px;
+    padding-top: 229.4px;
+    padding-bottom: 337px;
+    position: relative;
+}
+.main__history .main__investorsContent {
+    margin-top: 100px;
+}
+.main__historyDecor {
+    position: absolute;
+    animation: breathe 1.3s ease-in-out infinite;
+}
+.main__historyDecor-1 {
+    left: -40px;
+}
+.main__historyDecor-2 {
+    top: 900px;
+    right: 50px;
+}
+.main__historyOdds .main__oddsTitle {
+    text-align: center;
+}
+.main__historyOdds {
+    background-size: 100% 100%;
+}
+.main__historyOdds .main__oddsItems {
+    max-width: 100%;
+}
+.main__historyOdds .main__oddsBlock {
+    margin-left: 0;
+}
+.main__historyOdds .main__oddsItem {
+    max-width: 255px;
+}
+
+.main__historyCertificate {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.main__historyCertificate .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.main__historyCertificateContent {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__historyCertificateTitle {
+    margin-bottom: 15px;
+}
+.main__historyCertificateBtn {
+    margin-top: 35px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #1F3DFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+    width: 234px;
+    height: 60px;
+    transition: .3s;
+    border-radius: 5px;
+}
+.main__historyCertificateBtn:hover {
+    background: #0928e0;
+}
+/*HISTORY END*/
 
 /*ANIMATIONS*/
 @keyframes arrow {
@@ -1515,3 +1597,63 @@ body {
     }
 }
 /*INVESTORS END*/
+
+/*HISTORY*/
+@media screen and (max-width: 1023px) {
+    .main__history {
+        background: none;
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 120px;
+    }
+    .main__historyCertificate .main__investorsText {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 780px) {
+    .main__historyCertificate .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__historyCertificateImg {
+        width: 270px;
+        margin-bottom: 20px;
+    }
+    .main__historyCertificateContent {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 680px) {
+    .main__history {
+        padding-bottom: 0;
+    }
+    .main__historyDecor {
+        display: none;
+    }
+    .main__history .main__investorsContent {
+        margin-top: 7px;
+    }
+    .main__history .main__investorsText {
+        max-width: unset;
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__history .main__investorsText {
+        margin-bottom: 20px;
+    }
+    .main__historyCertificateTitle {
+        margin-bottom: 10px;
+    }
+    .main__historyCertificateBtn {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .main__historyCertificateImg {
+        margin-bottom: 15px;
+    }
+    .main__historyCertificate {
+        margin-bottom: 20px;
+    }
+}
+/*HISTORY END*/
