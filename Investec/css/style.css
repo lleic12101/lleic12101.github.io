@@ -327,7 +327,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     max-width: 924px;
     width: 100%;
 }
@@ -469,6 +469,7 @@ body {
     width: 100%;
     background: url(../img/main/bg2.png) no-repeat;
     background-position: right;
+    margin-top: 30px;
 }
 .main__why .wrapper {
     display: flex;
@@ -904,6 +905,37 @@ body {
 }
 /*QUESTIONS END*/
 
+/*INVESTORS*/
+.main__investors {
+    width: 100%;
+    margin-top: -80px;
+}
+.main__investors .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main__investorsContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.main__investorsTitle {
+    margin-bottom: 13px;
+}
+.main__investorsText {
+    line-height: 25.6px;
+    max-width: 585px;
+}
+.main__investorsImg {
+    margin-right: 27px;
+}
+.main__investorsImg-mobile {
+    display: none;
+}
+/*INVESTORS END*/
+
 /*ANIMATIONS*/
 @keyframes arrow {
     0% {
@@ -1091,6 +1123,7 @@ body {
 
     .main__why .wrapper {
         padding: 60px 35px;
+        margin-top: 30px;
     }
     .main__whyTextPointBlock {
         margin: 30px 0;
@@ -1102,7 +1135,7 @@ body {
         padding-top: 55px;
     }
     .main__tariffsItems {
-        margin: 25px 0 50px;
+        margin: 25px 0 20px;
     }
 
     .main__oddsBlock {
@@ -1427,3 +1460,46 @@ body {
     }
 }
 /*QUESTIONS MEDIA END*/
+
+/*INVESTORS*/
+@media screen and (max-width: 1023px) {
+    .main__investors {
+        margin-top: 0;
+    }
+    .main__investors .wrapper {
+        flex-direction: column;
+    }
+    .main__investorsContent {
+        margin-top: 7px;
+        display: flex;
+
+        align-items: center;
+        width: 100%;
+    }
+    .main__investorsImg {
+        display: none;
+    }
+    .main__investorsImg-mobile {
+        display: block;
+        margin-right: 0;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .main__investorsText {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .main__investorsTitle {
+        max-width: unset;
+        font-size: 46px;
+        margin-bottom: 3px;
+    }
+    .main__investorsImg-mobile {
+        width: 255px;
+    }
+    .main__investorsImg-mobile {
+        margin-bottom: 10px;
+    }
+}
+/*INVESTORS END*/
