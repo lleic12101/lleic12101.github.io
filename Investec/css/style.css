@@ -613,10 +613,6 @@ body {
     margin-bottom: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 8.33%, #FFFFFF 51.04%, rgba(255, 255, 255, 0.1) 90.1%, rgba(255, 255, 255, 0) 100%);
 }
-.main-index .wrapper {
-    padding-left: 35px;
-    padding-right: 35px;
-}
 /*MAIN END*/
 
 /*FOOTER*/
@@ -968,6 +964,22 @@ body {
     }
     .header {
         padding: 0 15px;
+    }
+    .main__ref .wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .main__odds .wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .main__about .wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .main__header .wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
     }
 }
 @media screen and (max-width: 1023px) {
