@@ -5,6 +5,8 @@ if ($('*').is('.owl-carousel')) {
         responsiveClass: true,
         dots: true,
         dotsEach: true,
+        autoplay: true,
+        autoplayTimeout: 10000,
         responsive: {
             0: {
                 items: 1,
