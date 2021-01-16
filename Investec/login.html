@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />-->
+    <title>Investec</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink"><img src="img/logo.png" alt="logo" class="header__logo"/></a>
+        <div class="header__nav-mobile">
+            <nav class="header__nav">
+                <a href="#!" class="header__navLink header__navLink-active">Главная</a>
+                <a href="#!" class="header__navLink">О нас</a>
+                <a href="#!" class="header__navLink">Инвесторам</a>
+                <a href="#!" class="header__navLink">FAQ</a>
+                <a href="#!" class="header__navLink">Контакты</a>
+            </nav>
+        </div>
+        <div class="header__burger">
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-1"/>
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-2"/>
+        </div>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<main class="main">
+    <div class="main__register main__register-small">
+        <div class="wrapper">
+            <form action="#!" class="main__contactsContentForm">
+                <p class="main__registerTitle">Авторизация</p>
+                <div class="main__nameAndInput">
+                    <div class="main__nameAndInputHeader">
+                        <p class="main__nameAndInputHeaderName">Никнейм или почта</p>
+                        <div class="main__nameAndInputHeaderAlert">
+                            <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInputFooter">
+                        <input type="text" class="main__nameAndInputFooterInput" required/>
+                        <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                    </div>
+                </div>
+                <div class="main__nameAndInput">
+                    <div class="main__nameAndInputHeader">
+                        <p class="main__nameAndInputHeaderName">Пароль</p>
+                        <div class="main__nameAndInputHeaderAlert">
+                            <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInputFooter">
+                        <input type="password" class="main__nameAndInputFooterInput" required/>
+                        <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                    </div>
+                </div>
+                <a href="#!" class="main__registerLink">Забыли пароль?</a>
+                <div class="main__nameAndInput">
+                    <div class="main__nameAndInputHeader">
+                        <p class="main__nameAndInputHeaderName">Капча</p>
+                        <div class="main__nameAndInputHeaderAlert">
+                            <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInputFooter main__nameAndInputFooter-captcha">
+                        <p class="main__nameAndInputFooterNumber">341</p>
+                        <input type="text" class="main__nameAndInputFooterInput" required/>
+                        <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                    </div>
+                </div>
+                <button class="main__contactsContentFormBtn">Авторизироватся</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__top">
+            <a href="#!" class="header__logoLink"><img src="img/logo.png" alt="logo" class="header__logo"/></a>
+            <div class="footer__topTextBlock">
+                <a href="tel:74922414900" class="footer__topText">+7 (4922) 414900</a>
+                <a href="mailto:investec@support.ru" class="footer__topText">investec@support.ru</a>
+            </div>
+            <div class="footer__topBtns">
+                <a href="#!" class="footer__topBtn"><img src="img/icons/pm.svg" alt="pm" class="footer__topBtnIcon"/></a>
+                <a href="#!" class="footer__topBtn"><img src="img/icons/eth.svg" alt="eth" class="footer__topBtnIcon"/></a>
+                <a href="#!" class="footer__topBtn"><img src="img/icons/btc.svg" alt="btc" class="footer__topBtnIcon"/></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <nav class="header__nav">
+                <a href="#!" class="header__navLink header__navLink-active">Главная</a>
+                <a href="#!" class="header__navLink">О нас</a>
+                <a href="#!" class="header__navLink">Инвесторам</a>
+                <a href="#!" class="header__navLink">FAQ</a>
+                <a href="#!" class="header__navLink">Контакты</a>
+            </nav>
+            <p class="footer__bottomCopyright">© Investec. 2019 All rights reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

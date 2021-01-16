@@ -1,4 +1,33 @@
-﻿//tariffs slider
+﻿//resize func
+if ($('*').is('.main__register-small')) {
+    $(window).on('resize', function () {
+        resizeEmptySpace();
+    });
+    resizeEmptySpace();
+    function resizeEmptySpace() {
+        $(".main").css("height", "auto");
+
+        var header = $(".header").innerHeight();
+        var footer = $(".footer").innerHeight();
+        var windowHeight = $(window).height();
+        var main = $(".main").innerHeight();
+
+        if ($(window).width() >= 1535 && $(window).width() <= 1537) {
+            windowHeight += (windowHeight / 100) * 25;
+        }
+        if ($(window).width() >= 1439 && $(window).width() <= 1441) {
+            windowHeight += (windowHeight / 100) * 25;
+        }
+        if ((header + footer + main) < windowHeight) {
+            $(".main").css("height", (windowHeight - (header + footer)));
+        } else {
+            $(".main").css("height", "auto");
+        }
+    }
+}
+
+
+//tariffs slider
 if ($('*').is('.owl-carousel')) {
     $('.owl-carousel').owlCarousel({
         loop: true,

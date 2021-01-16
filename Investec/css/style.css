@@ -124,6 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .main__header {
@@ -1300,6 +1301,23 @@ body {
 .main__nameAndInputFooter-captcha .main__nameAndInputFooterInput {
     padding-left: 83px;
 }
+
+.main__register-small .wrapper {
+    max-width: 430px;
+    margin-bottom: 0;
+}
+.main__registerLink {
+    font-size: 14px;
+    color: #A7AEB7;
+}
+.main__registerText {
+    font-size: 14px;
+    line-height: 20.6px;
+    margin: 13px 0;
+}
+.main__registerText span {
+    font-weight: 700;
+}
 /*REGISTER END*/
 
 /*CHECKBOX*/
@@ -2135,6 +2153,9 @@ body {
     }
     .custom-checkbox + label {
         margin-top: 10px;
+    }
+    .main__registerText {
+        text-align: center;
     }
 }
 /*REGISTER END*/
