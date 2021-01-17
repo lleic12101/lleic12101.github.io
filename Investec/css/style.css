@@ -2648,16 +2648,17 @@ body {
         margin-top: 15px;
     }
     .crm__sidebarNavLink-mb {
-        margin-bottom: 15px;
+        margin-bottom: 23px;
     }
     .header__nav-mobile .header__navLink.crm__sidebarNavLink-mb {
-        margin-bottom: 15px;
+        margin-bottom: 23px;
     }
     .crm__sidebarUserImgBlock {
         margin-left: 0;
     }
     .crm__sidebarUser {
         margin-bottom: 15px;
+        min-width: 180px;
     }
 
     .crm__exc:last-child {
@@ -2684,6 +2685,9 @@ body {
     }
     .crm__exc {
         margin-bottom: 20px;
+    }
+    .crm__income {
+        max-width: 317px;
     }
 }
 @media screen and (max-width: 750px) {
