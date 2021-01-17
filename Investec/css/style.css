@@ -1137,6 +1137,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .main__nameAndInputFooter:before {
     position: absolute;
@@ -1531,7 +1532,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 32px;
     flex-wrap: wrap;
@@ -1826,6 +1827,50 @@ body {
 }
 .main__tariffsItem-active:after {
     opacity: .6;
+}
+
+.crm__settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 493px;
+    padding: 50px;
+    background: #152435;
+    border-radius: 10px;
+}
+.crm__settings .crm__incomeTitle {
+    margin-bottom: 30px;
+}
+.crm__settings-pb {
+    padding-bottom: 35px;
+    margin-bottom: 26px;
+}
+.crm__settings-pb:last-child {
+    margin-bottom: 0;
+}
+.crm__settingsTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 18px;
+}
+.crm__settingsTextBlockItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.crm__settingsText {
+    font-size: 14px;
+    color: #A7AEB7;
+}
+.crm__settingsText-bold {
+    color: #ffffff;
+    font-size: 16px;
+}
+.crm__settings .main__contactsContentFormBtn-crm {
+    margin-top: 10px;
 }
 /*CRM END*/
 .crm__background {
@@ -2634,6 +2679,9 @@ body {
     .crm__contentRow {
         flex-wrap: wrap;
     }
+    .crm__contentRow-settings {
+        justify-content: center;
+    }
     .crm__exc {
         margin-bottom: 32px;
     }
@@ -2642,6 +2690,12 @@ body {
     }
     .main__tariffsItems-crm .main__tariffsItem {
         margin-bottom: 25px;
+    }
+    .crm__settings {
+        margin-bottom: 20px;
+    }
+    .crm__settings-pb {
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 1050px) {
@@ -2790,6 +2844,36 @@ body {
     }
     .main__tariffsItems-crm .main__tariffsItem {
         margin: 0 auto 20px;
+    }
+    .crm__contentRow-settings {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 533px) {
+    .crm__settings {
+        width: 100%;
+    }
+    .crm__contentRow-settings .crm__contentColumn {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .crm__settings {
+        padding: 20px;
+    }
+    .crm__settings .crm__incomeTitle {
+        margin-bottom: 15px;
+    }
+    .crm__settingsTextBlock {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .crm__settingsTextBlockItem:first-child {
+        margin-bottom: 10px;
+    }
+    .crm__settings-pb {
+        padding-bottom: 10px;
     }
 }
 @media screen and (max-width: 357px) {
