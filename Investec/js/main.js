@@ -29,27 +29,60 @@ if ($('*').is('.main__register-small')) {
 
 //tariffs slider
 if ($('*').is('.owl-carousel')) {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        responsiveClass: true,
-        dots: true,
-        dotsEach: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2,
-                dots: true,
-            },
-            1024: {
-                items: 3,
-                loop: false,
+    if ($('*').is(".crm__pay")) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            dots: true,
+            dotsEach: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            margin: 24,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                680: {
+                    
+                    items: 1,
+                },
+                681: {
+                    items: 2,
+                    dots: true,
+                },
+                1400: {
+                    items: 2,
+                    loop: true,
+                },
+                1401: {
+                    items: 3,
+                    loop: false,
+                }
             }
-        }
-    });
+        });
+    } else {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            dots: true,
+            dotsEach: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                    dots: true,
+                },
+                1024: {
+                    items: 3,
+                    loop: false,
+                }
+            }
+        });
+    }
 }
 
 //autoscroll
@@ -194,5 +227,18 @@ if ($('*').is(".main__nameAndInputFooterInput")) {
     $(".main__nameAndInputFooterInput").focus(function () {
         $(".main__nameAndInputFooterInput").parent().parent().removeClass("main__nameAndInput-active");
         $(this).parent().parent().addClass("main__nameAndInput-active");
+    });
+}
+
+//crm select
+if ($('*').is(".crm__pay")) {
+    $(".crm__exc").click(function () {
+        $(".crm__exc").removeClass("crm__exc-active");
+        $(this).addClass("crm__exc-active");
+    });
+    $(".main__tariffsItem").click(function () {
+        $(".main__tariffsItem").removeClass("main__tariffsItem-active");
+        $(this).addClass("main__tariffsItem-active");
+        console.log(123);
     });
 }
