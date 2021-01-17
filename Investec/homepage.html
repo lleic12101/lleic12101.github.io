@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+<header class="header header-mobile">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink"><img src="img/logo.png" alt="logo" class="header__logo"/></a>
+        <div class="header__nav-mobile">
+            <nav class="header__nav">
+                <div class="crm__sidebarUser">
+                    <div class="crm__sidebarUserImgBlock">
+                        <span class="crm__sidebarUserImgBg"></span>
+                        <img src="img/crm/user.png" alt="user" class="crm__sidebarUserImg"/>
+                    </div>
+                    <div class="crm__sidebarUserTextBlock">
+                        <p class="crm__sidebarUserText crm__sidebarUserText-bold">dmitrydeputat</p>
+                        <p class="crm__sidebarUserText">Ukraine</p>
+                    </div>
+                </div>
+                <a href="#!" class="header__navLink header__navLink-active">Главная</a>
+                <a href="#!" class="header__navLink">Открыть депозит</a>
+                <a href="#!" class="header__navLink">Ваши депозиты</a>
+                <a href="#!" class="header__navLink">История транзакций</a>
+                <a href="#!" class="header__navLink">Вывести средства</a>
+                <a href="#!" class="header__navLink">Моя команда</a>
+                <a href="#!" class="header__navLink crm__sidebarNavLink-mt">Настройки аккаунта</a>
+                <a href="#!" class="header__navLink crm__sidebarNavLink-mb">Безопасность</a>
+                <a href="#!" class="header__navLink">Выход</a>
+            </nav>
+        </div>
+        <div class="header__burger">
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-1"/>
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-2"/>
+        </div>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
 <main class="crm">
     <aside class="crm__sidebar">
         <img src="img/logo.png" alt="logo" class="crm__sidebarLogo"/>
@@ -98,8 +131,6 @@
                     </p>
                     <a href="#!" class="main__contactsContentFormBtn main__contactsContentFormBtn-crm">Узнать детальнее</a>
                 </div>
-            </div>
-            <div class="crm__contentRow">
                 <div class="crm__contentColumn crm__contentColumn-btns">
                     <a href="#!" class="crm__depositBtn crm__background">Внести депозит</a>
                     <a href="#!" class="crm__depositBtn crm__background">Вывести с депозита</a>

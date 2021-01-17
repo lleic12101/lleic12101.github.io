@@ -1534,12 +1534,14 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+    flex-wrap: wrap;
 }
 .crm__income {
     width: 664px;
     height: 318px;
     background: #152435;
     border-radius: 10px;
+    margin-bottom: 32px;
 }
 .crm__incomeHeader {
     display: flex;
@@ -1623,6 +1625,7 @@ body {
     background: linear-gradient(130.13deg, #112467 -45.25%, #0C1C31 104.85%);
     border-radius: 10px;
     padding: 20px;
+    margin-bottom: 32px;
 }
 .main__contactsContentFormBtn-crm {
     width: 100%;
@@ -1754,6 +1757,9 @@ body {
 }
 .crm__excIcon {
 
+}
+.header-mobile {
+    display: none;
 }
 /*CRM END*/
 .crm__background {
@@ -2553,3 +2559,189 @@ body {
     }
 }
 /*REGISTER END*/
+
+/*CRM*/
+@media screen and (max-width: 1400px) {
+    .crm__content {
+        max-width: 664px;
+    }
+    .crm__contentRow {
+        flex-wrap: wrap;
+    }
+    .crm__exc {
+        margin-bottom: 32px;
+    }
+    .crm__contentColumn-btns {
+        margin-bottom: 32px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .crm__wrapper {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .crm__wrapper {
+        padding-top: 120px;
+    }
+    .crm__sidebar {
+        display: none;
+    }
+    .crm__contentRow:last-child {
+        margin-bottom: 0;
+    }
+    .header-mobile {
+        display: block;
+        background: #152435;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .header-mobile .wrapper {
+        border-bottom: none;
+    }
+
+    .header-mobile .header__logo {
+        height: 21px;
+    }
+    .header-mobile .header__burger {
+        display: flex;
+    }
+    .header-mobile .header .header__nav {
+        display: none;
+    }
+
+    .header-mobile .header__nav-mobile {
+        z-index: 11;
+        position: absolute;
+        top: 95px;
+        right: 15px;
+        background: #0C1C2D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .header-mobile .header__nav-mobile .header__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 25px 2px 15px;
+        border-radius: 5px;
+        border: 1px solid rgba(31, 61, 255, 0.8);
+    }
+    .header-mobile .header__navLink {
+        margin-left: 0;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    .header-mobile .header__burger-active .header__burgerIcon-1 {
+        transform: rotate(45deg);
+        margin-bottom: -2px;
+    }
+    .header-mobile .header__burger-active .header__burgerIcon-2 {
+        transform: rotate(-45deg);
+    }
+
+    .header-mobile .header__nav-mobile {
+        display: none;
+    }
+    .crm__sidebarNavLink-mt {
+        margin-top: 15px;
+    }
+    .crm__sidebarNavLink-mb {
+        margin-bottom: 15px;
+    }
+    .header__nav-mobile .header__navLink.crm__sidebarNavLink-mb {
+        margin-bottom: 15px;
+    }
+    .crm__sidebarUserImgBlock {
+        margin-left: 0;
+    }
+    .crm__sidebarUser {
+        margin-bottom: 15px;
+    }
+
+    .crm__exc:last-child {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .crm__wrapper {
+        padding: 100px 20px 20px;
+    }
+    .crm__income {
+        margin-bottom: 20px;
+    }
+    .crm__contentColumn-btns {
+        height: 305px;
+        margin-bottom: 20px;
+    }
+    .crm__promo {
+        margin-bottom: 20px;
+        height: 305px;
+    }
+    .crm__contentRow {
+        margin-bottom: 20px;
+    }
+    .crm__exc {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .crm__contentRow {
+        flex-direction: column;
+    }
+    .crm__info {
+        margin-bottom: 20px;
+    }
+    .crm__promo {
+        height: unset;
+    }
+    .crm__income {
+        width: 100%;
+        height: auto;
+    }
+    .crm__incomeContentDecor {
+        display: none;
+    }
+    .crm__incomeContentItem {
+        margin-bottom: 30px;
+    }
+    .crm__incomeContent {
+        padding: 27px 15px 0;
+    }
+}
+@media screen and (max-width: 357px) {
+    .crm__promo {
+        width: 100%;
+    }
+    .crm__contentColumn-btns {
+        width: 100%;
+    }
+    .crm__depositBtn {
+        width: 100%;
+        font-size: 16px;
+    }
+    .crm__info {
+        width: 100%;
+    }
+    .crm__ref {
+        width: 100%;
+    }
+    .crm__infoItem {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+    }
+    .crm__infoItemText-white {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .crm__exc {
+        width: 100%;
+    }
+    .crm__incomeTitle {
+        font-size: 16px;
+    }
+}
+/*CRM END*/
