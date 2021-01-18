@@ -266,3 +266,21 @@ if ($('*').is(".crm__securityCircle")) {
         }
     });
 }
+
+//deposits btn
+if ($('*').is(".crm__depositsBtn")) {
+    $(".crm__depositsBtn").click(function () {
+        $(".crm__depositsBtn").removeClass("crm__depositsBtn-active");
+        $(this).addClass("crm__depositsBtn-active");
+    });
+}
+
+//list nav btn
+if ($('*').is(".crm__depositsNavBtn")) {
+    $(".crm__depositsNavBtn").click(function () {
+        if (!$(this).hasClass("crm__depositsNavBtnArrow")) {
+            $(".crm__depositsNavBtn").removeClass("crm__depositsNavBtn-active");
+            $(this).addClass("crm__depositsNavBtn-active");
+        }
+    });
+}
