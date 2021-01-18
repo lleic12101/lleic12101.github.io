@@ -43,7 +43,7 @@ if ($('*').is('.owl-carousel')) {
                     items: 1,
                 },
                 680: {
-                    
+
                     items: 1,
                 },
                 681: {
@@ -240,5 +240,29 @@ if ($('*').is(".crm__pay")) {
         $(".main__tariffsItem").removeClass("main__tariffsItem-active");
         $(this).addClass("main__tariffsItem-active");
         console.log(123);
+    });
+}
+
+//crm security
+if ($('*').is(".crm__securityCircle")) {
+    $(".crm__securityCircle").click(function () {
+        if ($(this).parent().parent().hasClass("crm__securityBlock-check")) {
+            if ($(this).hasClass("crm__securityCircle-1")) {
+                $(this).parent().parent().addClass("crm__securityBlock-enabled");
+            } else {
+                $(this).parent().parent().removeClass("crm__securityBlock-enabled");
+            }
+        } else {
+            $(this).parent().parent().removeClass("crm__securityBlock-medium");
+            $(this).parent().parent().removeClass("crm__securityBlock-high");
+            $(this).parent().parent().removeClass("crm__securityBlock-paranoic");
+            if ($(this).hasClass("crm__securityCircle-1")) {
+                $(this).parent().parent().addClass("crm__securityBlock-medium");
+            } else if ($(this).hasClass("crm__securityCircle-2")) {
+                $(this).parent().parent().addClass("crm__securityBlock-high");
+            } else if ($(this).hasClass("crm__securityCircle-3")) {
+                $(this).parent().parent().addClass("crm__securityBlock-paranoic");
+            }
+        }
     });
 }

@@ -1872,6 +1872,124 @@ body {
 .crm__settings .main__contactsContentFormBtn-crm {
     margin-top: 10px;
 }
+
+.crm__security {
+    width: 512px;
+    padding: 30px 30px 40px 30px;
+    background: #152435;
+    border-radius: 10px;
+}
+.crm__securityTitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.crm__securityDelimiter {
+    display: block;
+    width: 452px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 14.31%, #FFFFFF 48.96%, rgba(255, 255, 255, 0.6) 81.77%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.1;
+    margin-bottom: 30px;
+}
+.crm__security .main__contactsContentFormBtn-crm {
+    width: 317px;
+    margin-top: 20px;
+}
+.crm__securityBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.crm__securityLineBlock {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.crm__securityLineNames {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.crm__securityLineName {
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.crm__securityLine {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #FFFFFF;
+}
+.crm__securityCircle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: -5px;
+    cursor: pointer;
+}
+.crm__securityLine-blue {
+    position: absolute;
+    height: 3px;
+    width: 0;
+    top: 0;
+    background: #1F3DFF;
+}
+.crm__securityCircle-1 {
+    left: 36%;
+}
+.crm__securityCircle-2 {
+    left: 64.5%;
+}
+.crm__securityCircle-3 {
+    left: 93.5%;
+}
+
+.crm__securityBlock-ip .crm__securityCircle-4,
+.crm__securityBlock-medium .crm__securityCircle-1,
+.crm__securityBlock-enabled .crm__securityCircle-1,
+.crm__securityBlock-check .crm__securityCircle-4,
+.crm__securityBlock-high .crm__securityCircle-1,
+.crm__securityBlock-high .crm__securityCircle-2,
+.crm__securityBlock-paranoic .crm__securityCircle-1,
+.crm__securityBlock-paranoic .crm__securityCircle-2,
+.crm__securityBlock-paranoic .crm__securityCircle-3 {
+    background: #1F3DFF;
+    border: 2px solid #FFFFFF;
+}
+
+.crm__securityBlock-medium .crm__securityLine-blue {
+    width: 35%;
+}
+.crm__securityBlock-high .crm__securityLine-blue {
+    width: 60%;
+}
+.crm__securityBlock-paranoic .crm__securityLine-blue {
+    width: 91%;
+}
+.crm__securityBlock-medium .crm__securityCircle-4 {
+    border: 2px solid #FFFFFF;
+}
+.crm__securityBlock-enabled .crm__securityCircle-4 {
+    background: #ffffff;
+    border: none;
+}
+
+.crm__securityBlock-check {
+    max-width: 190px;
+}
+.crm__securityBlock-check .crm__securityCircle-1 {
+    left: 86%;
+}
 /*CRM END*/
 .crm__background {
     position: relative;
@@ -2849,6 +2967,17 @@ body {
         align-items: center;
     }
 }
+@media screen and (max-width: 552px) {
+    .crm__security {
+        width: 100%;
+    }
+    .crm__securityLine {
+        width: 102%;
+    }
+    .crm__security .main__contactsContentFormBtn-crm {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 533px) {
     .crm__settings {
         width: 100%;
@@ -2874,6 +3003,24 @@ body {
     }
     .crm__settings-pb {
         padding-bottom: 10px;
+    }
+    .crm__securityTitle {
+        margin-bottom: 30px;
+    }
+    .crm__security {
+        padding: 20px;
+    }
+    .crm__securityLineNames {
+        margin-bottom: 20px;
+    }
+    .crm__securityDelimiter {
+        margin-bottom: 20px;
+    }
+    .crm__security .main__contactsContentFormBtn-crm {
+        margin-top: 10px;
+    }
+    .crm__securityTitle {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 357px) {
