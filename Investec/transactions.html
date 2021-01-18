@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />-->
+    <title>Investec</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header header-mobile">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink"><img src="img/logo.png" alt="logo" class="header__logo"/></a>
+        <div class="header__nav-mobile">
+            <nav class="header__nav">
+                <div class="crm__sidebarUser">
+                    <div class="crm__sidebarUserImgBlock">
+                        <span class="crm__sidebarUserImgBg"></span>
+                        <img src="img/crm/user.png" alt="user" class="crm__sidebarUserImg"/>
+                    </div>
+                    <div class="crm__sidebarUserTextBlock">
+                        <p class="crm__sidebarUserText crm__sidebarUserText-bold">dmitrydeputat</p>
+                        <p class="crm__sidebarUserText">Ukraine</p>
+                    </div>
+                </div>
+                <a href="#!" class="header__navLink header__navLink-active">Главная</a>
+                <a href="#!" class="header__navLink">Открыть депозит</a>
+                <a href="#!" class="header__navLink">Ваши депозиты</a>
+                <a href="#!" class="header__navLink">История транзакций</a>
+                <a href="#!" class="header__navLink">Вывести средства</a>
+                <a href="#!" class="header__navLink">Моя команда</a>
+                <a href="#!" class="header__navLink crm__sidebarNavLink-mt">Настройки аккаунта</a>
+                <a href="#!" class="header__navLink crm__sidebarNavLink-mb">Безопасность</a>
+                <a href="#!" class="header__navLink">Выход</a>
+            </nav>
+        </div>
+        <div class="header__burger">
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-1"/>
+            <img src="img/icons/line.svg" alt="line" class="header__burgerIcon header__burgerIcon-2"/>
+        </div>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<main class="crm">
+    <aside class="crm__sidebar">
+        <img src="img/logo.png" alt="logo" class="crm__sidebarLogo"/>
+        <div class="crm__sidebarUser">
+            <div class="crm__sidebarUserImgBlock">
+                <span class="crm__sidebarUserImgBg"></span>
+                <img src="img/crm/user.png" alt="user" class="crm__sidebarUserImg"/>
+            </div>
+            <div class="crm__sidebarUserTextBlock">
+                <p class="crm__sidebarUserText crm__sidebarUserText-bold">dmitrydeputat</p>
+                <p class="crm__sidebarUserText">Ukraine</p>
+            </div>
+        </div>
+        <nav class="crm__sidebarNav">
+            <a href="#!" class="crm__sidebarNavLink crm__sidebarNavLink-active">Главная</a>
+            <a href="#!" class="crm__sidebarNavLink">Открыть депозит</a>
+            <a href="#!" class="crm__sidebarNavLink">Ваши депозиты</a>
+            <a href="#!" class="crm__sidebarNavLink">История транзакций</a>
+            <a href="#!" class="crm__sidebarNavLink">Вывести средства</a>
+            <a href="#!" class="crm__sidebarNavLink">Моя команда</a>
+            <a href="#!" class="crm__sidebarNavLink crm__sidebarNavLink-mt">Настройки аккаунта</a>
+            <a href="#!" class="crm__sidebarNavLink crm__sidebarNavLink-mb">Безопасность</a>
+            <a href="#!" class="crm__sidebarNavLink">Выход</a>
+        </nav>
+    </aside>
+    <div class="crm__wrapper">
+        <div class="crm__content">
+            <div class="crm__contentRow crm__contentRow-transactions">
+                <div class="crm__contentColumn crm__contentColumn-fields">
+                    <div class="main__nameAndInput main__nameAndInput-select">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Тип транзакции</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <select type="text" class="main__nameAndInputFooterInput" required>
+                                <option selected>Депозит</option>
+                                <option>Вывод</option>
+                                <option>Реферал</option>
+                                <option>Ввод</option>
+                            </select>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Период с</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                            </div>
+                        </div>
+                        <div class="crm__transactionsBtnsRow">
+                            <div class="main__nameAndInputFooter main__nameAndInputFooter-month">
+                                <input type="text" class="main__nameAndInputFooterInput" required/>
+                                <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                            </div>
+                            <div class="main__nameAndInputFooter main__nameAndInputFooter-day">
+                                <input type="text" class="main__nameAndInputFooterInput" required/>
+                                <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                            </div>
+                            <div class="main__nameAndInputFooter main__nameAndInputFooter-year">
+                                <input type="text" class="main__nameAndInputFooterInput" required/>
+                                <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="crm__contentColumn crm__contentColumn-fields">
+                    <div class="main__nameAndInput main__nameAndInput-select">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Валюта</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <select type="text" class="main__nameAndInputFooterInput" required>
+                                <option selected>Perfect Money</option>
+                                <option>Ethereum</option>
+                                <option>Bitcoin</option>
+                            </select>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Период по</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Некорректные данные</p>
+                            </div>
+                        </div>
+                        <div class="crm__transactionsBtnsRow">
+                            <div class="main__nameAndInputFooter main__nameAndInputFooter-month">
+                                <input type="text" class="main__nameAndInputFooterInput" required/>
+                                <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                            </div>
+                            <div class="main__nameAndInputFooter main__nameAndInputFooter-day">
+                                <input type="text" class="main__nameAndInputFooterInput" required/>
+                                <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                            </div>
+                            <div class="main__nameAndInputFooter main__nameAndInputFooter-year">
+                                <input type="text" class="main__nameAndInputFooterInput" required/>
+                                <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="crm__transactionsBtn">
+                    <img src="img/icons/arrow.svg" alt="arrow" class="crm__transactionsBtnIcon"/>
+                </button>
+            </div>
+            <div class="crm__contentRow">
+                <div class="crm__deposits crm__background">
+                    <div class="crm__depositsWrapper crm__transactionsWrapper">
+                        <div class="crm__transactionsHeader">
+                            <p class="crm__transactionsHeaderText crm__transactionsText-1">Тип транзакции</p>
+                            <p class="crm__transactionsHeaderText crm__transactionsText-2">Сума транзакции</p>
+                            <p class="crm__transactionsHeaderText crm__transactionsText-3">Дата транзакции</p>
+                        </div>
+                        <div class="crm__transactionsContent">
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                            <span class="crm__depositsDelimiter"></span>
+                            <div class="crm__transactionsItem">
+                                <p class="crm__transactionsText crm__transactionsText-1">Коммисия от реферала</p>
+                                <div class="crm__depositsItemColumn crm__depositsItemColumn-wallet crm__transactionsText-2">
+                                    <p class="crm__depositsWallet">Perfect Money</p>
+                                    <p class="crm__depositsSum">98.514 <span>$</span></p>
+                                </div>
+                                <p class="crm__transactionsText crm__transactionsText-3">Jan-7-2021 07:40:35 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="crm__contentRow">
+                <div class="crm__depositsNavBlock">
+                    <a href="#!"
+                       class="crm__depositsNavBtn crm__background crm__depositsNavBtnArrow crm__depositsNavBtnArrow-l">
+                        <img src="img/icons/navArrow.svg" alt="arrow"
+                             class="crm__depositsNavBtnArrow-left"/>
+                    </a>
+                    <a href="#!" class="crm__depositsNavBtn crm__background crm__depositsNavBtn-active">1</a>
+                    <a href="#!" class="crm__depositsNavBtn crm__background">2</a>
+                    <a href="#!" class="crm__depositsNavBtn crm__background">3</a>
+                    <a href="#!" class="crm__depositsNavBtn crm__background">4</a>
+                    <a href="#!" class="crm__depositsNavBtn crm__background">5</a>
+                    <a href="#!"
+                       class="crm__depositsNavBtn crm__background crm__depositsNavBtnArrow crm__depositsNavBtnArrow-r">
+                        <img src="img/icons/navArrow.svg" alt="arrow"
+                             class="crm__depositsNavBtnArrow-right"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1226,6 +1226,31 @@ body {
     height: auto;
     padding: 1px 0;
 }
+
+.main__nameAndInput-select .main__nameAndInputFooterInput {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: #0B1B2D url(../img/icons/select.svg) no-repeat right center;
+    background-position: calc(100% - 15px);
+}
+.crm__transactionsBtnsRow {
+    display: flex;
+    flex-direction: row;
+}
+.main__nameAndInputFooter-month {
+    width: 112px;
+    margin-right: 20px;
+}
+.main__nameAndInputFooter-year {
+    width: 75px;
+}
+.main__nameAndInputFooter-day {
+    width: 55px;
+    margin-right: 20px;
+}
 /*NAME AND INPUT END*/
 
 /*REGISTER*/
@@ -2072,6 +2097,7 @@ body {
     margin-bottom: 30px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 14.31%, #FFFFFF 48.96%, rgba(255, 255, 255, 0.6) 81.77%, rgba(255, 255, 255, 0) 100%);
     opacity: 0.1;
+    min-width: 815px;
 }
 .crm__depositsItem .main__tariffsItemTextPoint-margin {
     margin-bottom: 18px;
@@ -2134,6 +2160,81 @@ body {
 }
 .crm__depositsNavBtnArrow-left {
     height: 19px;
+}
+
+.crm__transactionsWrapper {
+    padding: 0;
+
+}
+.crm__transactionsHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 45px 20px 50px;
+    background: rgba(255, 255, 255, 0.04);
+    min-width: 915px;
+}
+.crm__transactionsHeaderText {
+    font-size: 18px;
+    font-weight: 700;
+}
+.crm__transactionsContent {
+    padding: 30px 45px 0 50px;
+    min-width: 915px;
+}
+.crm__transactionsItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.crm__transactionsText {
+    font-size: 18px;
+}
+.crm__transactionsText-1 {
+    width: 290px;
+}
+.crm__transactionsText-2 {
+    width: 200px;
+}
+.crm__transactionsText-3 {
+    width: 195px;
+}
+
+.crm__contentColumn-fields {
+    width: 294px;
+    margin-right: 30px;
+}
+.crm__contentRow-transactions {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.crm__transactionsBtn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background: #1F3DFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.crm__transactionsBtn:hover {
+    background: rgba(31, 61, 255, 0.6);
+}
+.crm__transactionsBtnIcon {
+
+}
+.crm__contentColumn-fields .main__nameAndInput:last-child {
+    margin-bottom: 0;
 }
 /*CRM END*/
 .crm__background {
@@ -2960,6 +3061,13 @@ body {
     .crm__settings-pb {
         margin-bottom: 20px;
     }
+    .crm__contentRow-transactions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .crm__contentColumn-fields .main__nameAndInput:last-child {
+        margin-bottom: 20px;
+    }
 }
 @media screen and (max-width: 1050px) {
     .crm__wrapper {
@@ -3151,6 +3259,19 @@ body {
     .crm__depositsDelimiter {
         margin-bottom: 20px;
     }
+
+    .crm__transactionsWrapper {
+        padding: 0;
+    }
+    .crm__transactionsItem {
+        margin-bottom: 20px;
+    }
+    .crm__transactionsHeader {
+        padding: 20px;
+    }
+    .crm__transactionsContent {
+        padding: 20px 20px 0 20px;
+    }
 }
 @media screen and (max-width: 533px) {
     .crm__settings {
@@ -3199,6 +3320,13 @@ body {
 
     .crm__depositsNavBtn {
         margin: 0 5px;
+    }
+    .crm__contentColumn-fields {
+        width: 100%;
+        margin-right: 0;
+    }
+    .crm__transactionsBtn {
+        width: 100%;
     }
 }
 @media screen and (max-width: 357px) {
