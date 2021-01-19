@@ -2236,6 +2236,70 @@ body {
 .crm__contentColumn-fields .main__nameAndInput:last-child {
     margin-bottom: 0;
 }
+
+.crm__teamWrapper .crm__transactionsText-1 {
+    width: 250px;
+}
+.crm__teamWrapper .crm__transactionsText-3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.crm__contentRow-team .crm__incomeContentItemText {
+    font-size: 18px;
+    font-weight: 400;
+}
+.crm__contentRow-team .crm__incomeContentItemText-bold {
+    font-weight: 700;
+    font-size: 25px;
+}
+.crm__contentRow-team .crm__exc {
+    padding-left: 20px;
+}
+.crm__contentRow-teamLine {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px 0;
+}
+.crm__teamBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.crm__teamBlockCircle {
+    font-weight: 800;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #303c45;
+    background: linear-gradient(133.17deg, rgba(255, 255, 255, 0.3) -17.2%, rgba(255, 255, 255, 0) 100%);
+    margin-bottom: 5px;
+}
+.crm__teamBlockText {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.crm__teamBlock-active .crm__teamBlockCircle {
+    background: linear-gradient(131.95deg, rgba(31, 61, 255, 0.5) -28.29%, rgba(31, 61, 255, 0) 105%);
+    border: 2px solid #152b91;
+}
+.crm__teamDelimiter {
+    display: block;
+    height: 1px;
+    max-width: 356px;
+    width: 100%;
+    margin: 0 30px 25px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 14.31%, #FFFFFF 48.96%, rgba(255, 255, 255, 0.6) 81.77%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.4;
+}
 /*CRM END*/
 .crm__background {
     position: relative;
@@ -3068,10 +3132,22 @@ body {
     .crm__contentColumn-fields .main__nameAndInput:last-child {
         margin-bottom: 20px;
     }
+    .crm__teamDelimiter {
+        max-width: 160px;
+    }
+    .crm__contentRow-teamLine {
+        margin-top: 0;
+    }
+    .crm__contentRow-team {
+        margin-bottom: 0;
+    }
 }
 @media screen and (max-width: 1050px) {
     .crm__wrapper {
         padding-top: 20px;
+    }
+    .crm__contentRow-team {
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -3218,6 +3294,15 @@ body {
     }
     .crm__contentRow-settings {
         align-items: center;
+    }
+    .crm__contentRow-teamLine {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .crm__teamDelimiter {
+        margin: 0 10px 25px;
     }
 }
 @media screen and (max-width: 552px) {
