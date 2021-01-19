@@ -284,3 +284,11 @@ if ($('*').is(".crm__depositsNavBtn")) {
         }
     });
 }
+
+//line btn
+if ($('*').is(".crm__teamBlock")) {
+    $(".crm__teamBlock").click(function () {
+        $(".crm__teamBlock").removeClass("crm__teamBlock-active");
+        $(this).addClass("crm__teamBlock-active");
+    });
+}
