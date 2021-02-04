@@ -362,8 +362,7 @@ body {
     max-width: 480px;
     font-size: 18px;
     line-height: 150%;
-    color: #18191F;
-    opacity: 0.5;
+    color: rgba(24, 25, 31, 0.5);
     margin-bottom: 25px;
 }
 
@@ -395,8 +394,7 @@ body {
     max-width: 510px;
     font-size: 18px;
     line-height: 150%;
-    color: #191234;
-    opacity: 0.5;
+    color: rgba(25, 18, 52, 0.5);
 }
 .main__aboutImg-mobile {
     display: none;
@@ -576,8 +574,7 @@ body {
     font-size: 18px;
     line-height: 150%;
     text-align: center;
-    color: #191234;
-    opacity: 0.5;
+    color: rgba(25, 18, 52, 0.5);
     max-width: 450px;
     margin-top: 10px;
 }
@@ -984,6 +981,11 @@ body {
     }
     .main__reasonsItem {
         margin: 0 0 30px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__reasonsItem {
+        width: 100%;
     }
 }
 /*MEDIA END*/
