@@ -82,6 +82,7 @@ body {
     justify-content: center;
     text-decoration: none;
     transition: .3s;
+    white-space: nowrap;
 }
 .btn:hover {
     background: #0371e5;
