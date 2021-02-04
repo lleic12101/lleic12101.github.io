@@ -16,25 +16,40 @@
         <a href="#!" class="header__logoLink">
             <img src="img/logo.svg" alt="logo" class="header__logo"/>
         </a>
-        <nav class="header__nav">
-            <a href="#!" class="header__navItem link-animation">Home</a>
-            <a href="#!" class="header__navItem link-animation">About Us</a>
-            <a href="#!" class="header__navItem link-animation">For Investors</a>
-            <a href="#!" class="header__navItem link-animation">FAQ</a>
-            <a href="#!" class="header__navItem link-animation">Contacts</a>
-            <div class="header__navLangBlock">
-                <div class="header__navLangHeader">
-                    <p class="header__navLangText">Eng</p>
-                    <img src="img/icons/langDrop.svg" alt="drop" class="header__navLangIcon"/>
+        <div class="header__navWrapper">
+            <nav class="header__nav">
+                <a href="#!" class="header__navItem link-animation">Home</a>
+                <a href="#!" class="header__navItem link-animation">About Us</a>
+                <a href="#!" class="header__navItem link-animation">For Investors</a>
+                <a href="#!" class="header__navItem link-animation">FAQ</a>
+                <a href="#!" class="header__navItem link-animation">Contacts</a>
+                <div class="header__navLangBlock">
+                    <div class="header__navLangHeader">
+                        <p class="header__navLangText">Eng</p>
+                        <img src="img/icons/langDrop.svg" alt="drop" class="header__navLangIcon"/>
+                    </div>
+                    <div class="header__navLangItems">
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Rus</a>
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Ukr</a>
+                    </div>
                 </div>
-                <div class="header__navLangItems">
-                    <a href="#!" class="header__navLangText link-animation header__navLangItem">Rus</a>
-                    <a href="#!" class="header__navLangText link-animation header__navLangItem">Ukr</a>
-                </div>
-            </div>
-        </nav>
-        <a href="#!" class="btn btn-white">Sign In</a>
+                <a href="#!" class="btn btn-white header__navBtn-mobile">Sign In</a>
+            </nav>
+        </div>
+        <a href="#!" class="btn btn-white header__navBtn">Sign In</a>
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="56" onclick="this.classList.toggle('active')">
+            <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
+            <path
+                    class="line middle"
+                    d="m 70,50 h -40"/>
+            <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
+        </svg>
     </div>
+    <div class="header__closeableMask"></div>
 </header>
 <main class="main">
     <img src="img/main/decor-1.svg" alt="decor" class="main__decor main__decor-1"/>
@@ -75,7 +90,7 @@
         </div>
     </div>
     <div class="main__plans">
-        <div class="wrapper">
+        <div class="wrapper main__filter-mobile">
             <p class="main__title">Our Plans</p>
             <div class="owl-carousel main__plansItems main__filter">
                 <div class="main__plansItem">
@@ -103,26 +118,26 @@
                     </div>
                     <a href="#!" class="btn btn-white">Get Started</a>
                 </div>
-                <div class="main__plansItem">
+                <div class="main__plansItem main__plansItem-blue">
                     <p class="main__plansItemMoney">$1000–10000</p>
                     <p class="main__plansItemTitle">Standart –<span>1.2%</span></p>
                     <p class="main__plansItemText">Some text about the plan pricing and settings for client</p>
                     <span class="main__plansItemDelimiter"></span>
                     <div class="main__plansItemCheck">
                         <div class="main__plansItemIconBlock">
-                            <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                            <img src="img/icons/check-white.svg" alt="check" class="main__plansItemIcon"/>
                         </div>
                         <p class="main__plansItemCheckText">Deposit for 20 days</p>
                     </div>
                     <div class="main__plansItemCheck">
                         <div class="main__plansItemIconBlock">
-                            <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                            <img src="img/icons/check-white.svg" alt="check" class="main__plansItemIcon"/>
                         </div>
                         <p class="main__plansItemCheckText">Daily charges</p>
                     </div>
                     <div class="main__plansItemCheck">
                         <div class="main__plansItemIconBlock">
-                            <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                            <img src="img/icons/check-white.svg" alt="check" class="main__plansItemIcon"/>
                         </div>
                         <p class="main__plansItemCheckText">Deposit at the end of the term</p>
                     </div>

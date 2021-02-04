@@ -11,7 +11,7 @@ if ($('*').is('.owl-carousel')) {
             0: {
                 items: 1,
             },
-            600: {
+            680: {
                 items: 2,
                 dots: true,
             },
@@ -22,3 +22,16 @@ if ($('*').is('.owl-carousel')) {
         }
     });
 }
+
+//burger menu
+$('.ham').click(function () {
+    $("html, body").toggleClass("body-fixed");
+    $('.header__navWrapper').toggleClass("header__navWrapper-active");
+    $('.header__closeableMask').addClass("header__closeableMask-active");
+});
+$('.header__closeableMask').click(function () {
+    $('.ham').removeClass("active");
+    $('.header__closeableMask').removeClass("header__closeableMask-active");
+    $('.header__navWrapper').removeClass("header__navWrapper-active");
+    $("html, body").removeClass("body-fixed");
+});
