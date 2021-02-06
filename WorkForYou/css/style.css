@@ -715,6 +715,27 @@ body {
 }
 /*ABOUT US END*/
 
+/*INVESTORS*/
+.main__investors .wrapper {
+    align-items: center;
+}
+
+.main__investors .main__referralItems {
+    margin-top: 50px;
+}
+.main__investorsDelimiter {
+    width: 100%;
+    max-width: 1050px;
+    display: block;
+    height: 1px;
+    background: #0080FF;
+    margin-bottom: 75px;
+}
+.main__investors .main__plansItems {
+    margin-top: 0;
+}
+/*INVESTORS END*/
+
 /*FOOTER*/
 .footer {
     width: 100%;
@@ -820,6 +841,12 @@ body {
     }
     .main__plansItem {
         margin: 15px;
+    }
+    .main__investorsDelimiter {
+        display: none;
+    }
+    .main__investors .main__plansItems {
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 1090px) {
@@ -1123,6 +1150,13 @@ body {
 
     .main__title-margin {
         margin-bottom: 50px;
+    }
+
+    .main__investors .main__referralItems {
+        margin-top: 30px;
+    }
+    .main__investors .main__plansItems {
+        padding-bottom: 30px;
     }
 }
 @media screen and (max-width: 640px) {
