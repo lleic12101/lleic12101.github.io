@@ -96,3 +96,19 @@ $(".main__faqTabItemHeader").click(function () {
         resizeEmptySpace();
     }
 });
+
+//contacts form
+$(".main__contactsFormSuccessIcon").click(function () {
+    $(".main__contactsForm")[0].reset();
+    $(".main__contactsForm").removeClass("main__contactsForm-mobile");
+    $(".main__contactsFormSuccess").removeClass("main__contactsFormSuccess-active");
+});
+$(".main__contactsForm").submit(function (e) {
+    if ($(window).width() > 870) {
+        e.preventDefault();
+        $(".main__contactsFormSuccess").addClass("main__contactsFormSuccess-active");
+    } else {
+        $(".main__contactsForm").addClass("main__contactsForm-mobile");
+        $(".main__contactsFormSuccess").addClass("main__contactsFormSuccess-active");
+    }
+});
