@@ -874,6 +874,13 @@ body {
     }
 }
 @media screen and (max-width: 980px) {
+    .main__breadcrumbs {
+        margin-top: 10px;
+    }
+    .main__breadcrumbs .wrapper {
+        padding-left: 10px;
+    }
+
     .main {
         padding-top: 56px;
     }
@@ -1086,13 +1093,6 @@ body {
         margin-bottom: 0;
     }
 
-    .main__breadcrumbs {
-        margin-top: 10px;
-    }
-    .main__breadcrumbs .wrapper {
-        padding-left: 10px;
-    }
-
     .main__default {
         padding: 0 15px;
         border-radius: unset;
@@ -1127,6 +1127,9 @@ body {
 @media screen and (max-width: 480px) {
     .main__reasonsItem {
         width: 100%;
+    }
+    .main__aboutPage .main__reasonsItem {
+        max-width: 100%;
     }
 }
 /*MEDIA END*/
