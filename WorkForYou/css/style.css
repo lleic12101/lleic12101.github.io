@@ -647,6 +647,11 @@ body {
 .main__breadcrumbsLink-active {
     color: #0080FF;
     cursor: default;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 /*BREADCRUMBS END*/
 
@@ -735,6 +740,116 @@ body {
     margin-top: 0;
 }
 /*INVESTORS END*/
+
+/*FAQ*/
+.main__faq {
+
+}
+.main__faq .wrapper {
+    align-items: center;
+}
+.main__faqBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 970px;
+    width: 100%;
+    justify-content: space-between;
+}
+.main__faqBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 110px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(25, 18, 52, 0.05);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.main__faqBtnIcon {
+    margin-bottom: 11px;
+    transition: .3s;
+}
+.main__faqBtnIcon path {
+    fill: #0080FF;
+}
+.main__faqBtnText {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #191234;
+    max-width: 116px;
+    transition: .3s;
+}
+.main__faqBtn:hover,
+.main__faqBtn-active {
+    background: #0080FF;
+    box-shadow: 0px 15px 50px rgba(41, 147, 252, 0.3);
+    border-radius: 20px;
+}
+.main__faqBtn:hover .main__faqBtnIcon path,
+.main__faqBtn-active .main__faqBtnIcon path {
+    fill: #FFFFFF;
+}
+.main__faqBtn:hover .main__faqBtnText,
+.main__faqBtn-active .main__faqBtnText {
+    color: #FFFFFF;
+}
+
+.main__faqTabs {
+    max-width: 970px;
+    margin-top: 50px;
+    width: 100%;
+}
+.main__faqTab {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.main__faqTab-active {
+    display: flex;
+}
+.main__faqTabItem {
+    width: 100%;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: 1px solid #0080FF;
+    border-radius: 20px;
+
+}
+.main__faqTabItemHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 24px 33px 24px 30px;
+}
+.main__faqTabItemTitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #191234;
+}
+.main__faqTabItemText {
+    font-size: 18px;
+    line-height: 27px;
+    color: #191234;
+    opacity: 0.5;
+    display: none;
+    margin: -9px 33px 24px 30px;
+}
+.main__faqTabItemIcon {
+    transition: .3s;
+}
+.main__faqTabItemHeader-active .main__faqTabItemIcon {
+    transform: rotate(180deg);
+}
+/*FAQ END*/
 
 /*FOOTER*/
 .footer {
@@ -988,6 +1103,35 @@ body {
     .main__aboutImg {
         max-width: 400px;
     }
+
+    .main__faqBtns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main__faqBtn {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 75px;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .main__faqBtnText {
+        margin-left: 22px;
+        max-width: 207px;
+        width: 100%;
+        text-align: left;
+    }
+    .main__faqBtnIcon {
+        margin-bottom: 0;
+        min-width: 27px;
+    }
+    .main__faqBtn:last-child {
+        margin-bottom: 0;
+    }
+    .main__faqTabs {
+        margin-top: 40px;
+    }
 }
 @media screen and (max-width: 870px) {
     .main__header .wrapper {
@@ -1157,6 +1301,31 @@ body {
     }
     .main__investors .main__plansItems {
         padding-bottom: 30px;
+    }
+
+    .main__faqBtns {
+        margin-top: -30px;
+    }
+    .main__faqTabItem {
+        border-radius: 10px;
+    }
+    .main__faqTabItemTitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .main__faqTabItemIcon {
+        min-width: 14px;
+        width: 14px;
+        margin-left: 14px;
+    }
+    .main__faqTabItemHeader {
+        padding: 0 20px;
+        height: 77px;
+    }
+    .main__faqTabItemText {
+        font-size: 14px;
+        line-height: 21px;
+        margin: -23px 20px 22px 20px;
     }
 }
 @media screen and (max-width: 640px) {

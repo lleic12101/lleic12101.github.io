@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>WorkForYou</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink">
+            <img src="img/logo.svg" alt="logo" class="header__logo"/>
+        </a>
+        <div class="header__navWrapper">
+            <nav class="header__nav">
+                <a href="#!" class="header__navItem link-animation">Home</a>
+                <a href="#!" class="header__navItem link-animation">About Us</a>
+                <a href="#!" class="header__navItem link-animation">For Investors</a>
+                <a href="#!" class="header__navItem link-animation">FAQ</a>
+                <a href="#!" class="header__navItem link-animation">Contacts</a>
+                <div class="header__navLangBlock">
+                    <div class="header__navLangHeader">
+                        <p class="header__navLangText">Eng</p>
+                        <img src="img/icons/langDrop.svg" alt="drop" class="header__navLangIcon"/>
+                    </div>
+                    <div class="header__navLangItems">
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Rus</a>
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Ukr</a>
+                    </div>
+                </div>
+                <a href="#!" class="btn btn-white header__navBtn-mobile">Sign In</a>
+            </nav>
+        </div>
+        <a href="#!" class="btn btn-white header__navBtn">Sign In</a>
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="56" onclick="this.classList.toggle('active')">
+            <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
+            <path
+                    class="line middle"
+                    d="m 70,50 h -40"/>
+            <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
+        </svg>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<main class="main">
+    <img src="img/main/decor-1.svg" alt="decor" class="main__decor main__decorAbout-1"/>
+    <img src="img/main/decor-2.svg" alt="decor" class="main__decor main__decorAbout-2"/>
+    <div class="main__breadcrumbs">
+        <div class="wrapper">
+            <p class="main__breadcrumbsLink link-animation">Home</p>
+            <a href="#!" class="main__breadcrumbsLink main__breadcrumbsLink-active">FAQ</a>
+        </div>
+    </div>
+    <div class="main__faq">
+        <div class="wrapper main__filter main__default">
+            <p class="main__title main__title-margin">Frequently asked Questions</p>
+            <div class="main__faqBtns">
+                <div id="tab1btn" class="main__faqBtn main__faqBtn-active">
+                    <svg class="main__faqBtnIcon" width="27" height="27" viewBox="0 0 27 27"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.1667 26.625H1.83333C1.02792 26.625 0.375 25.9721 0.375 25.1667V14.5208C0.375 14.1007 0.556301 13.701 0.872292 13.4242L3.29167 11.3125V1.83333C3.29167 1.02792 3.94458 0.375 4.75 0.375H25.1667C25.9721 0.375 26.625 1.02792 26.625 1.83333V25.1667C26.625 25.9721 25.9721 26.625 25.1667 26.625ZM9.125 6.68813C9.4781 6.68854 9.81905 6.81704 10.0846 7.04979L17.3763 13.43C17.6913 13.7052 17.8729 14.1025 17.875 14.5208V23.7083H23.7083V3.29167H6.20833V8.76042L8.16396 7.04833C8.43008 6.81578 8.77159 6.68778 9.125 6.68813ZM7.66667 19.3333H10.5833V23.7083H14.9583V15.1873L9.125 10.0831L3.29167 15.1873V23.7083H7.66667V19.3333Z"/>
+                    </svg>
+                    <p class="main__faqBtnText">Questions about the company</p>
+                </div>
+                <div id="tab2btn" class="main__faqBtn">
+                    <svg class="main__faqBtnIcon" width="27" height="27" viewBox="0 0 27 27"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.374999 23.7083L0.375 3.29167C0.375 1.68083 1.68084 0.374999 3.29167 0.374999L9.125 0.374999L9.125 3.29167L3.29167 3.29167L3.29167 23.7083L23.7083 23.7083L23.7083 3.29167L17.875 3.29167L17.875 0.375L23.7083 0.375C25.3192 0.375 26.625 1.68084 26.625 3.29167L26.625 23.7083C26.625 25.3192 25.3192 26.625 23.7083 26.625L3.29166 26.625C1.68083 26.625 0.374999 25.3192 0.374999 23.7083ZM7.66667 12.0417L12.0417 12.0417L12.0417 0.374999L14.9583 0.374999L14.9583 12.0417L19.3333 12.0417L13.5 19.3333L7.66667 12.0417Z"/>
+                    </svg>
+                    <p class="main__faqBtnText">Referral program questions</p>
+                </div>
+                <div id="tab3btn" class="main__faqBtn">
+                    <svg class="main__faqBtnIcon" width="31" height="29" viewBox="0 0 31 29" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.0834 28.625H0.916748V14.0416C0.916748 12.4308 2.22258 11.125 3.83341 11.125H9.66675V3.83329C9.66675 2.22246 10.9726 0.916626 12.5834 0.916626H18.4167C20.0276 0.916626 21.3334 2.22246 21.3334 3.83329V8.20829H27.1667C28.7776 8.20829 30.0834 9.51413 30.0834 11.125V28.625ZM21.3334 11.125V25.7083H27.1667V11.125H21.3334ZM12.5834 3.83329V25.7083H18.4167V3.83329H12.5834ZM3.83341 14.0416V25.7083H9.66675V14.0416H3.83341Z"/>
+                    </svg>
+
+                    <p class="main__faqBtnText">Investment issues</p>
+                </div>
+                <div id="tab4btn" class="main__faqBtn">
+                    <svg class="main__faqBtnIcon" width="31" height="31" viewBox="0 0 31 31" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.916748 3.83329V24.25L7.91675 19C8.42106 18.6203 9.03548 18.4155 9.66675 18.4166H21.3334C22.9442 18.4166 24.2501 17.1108 24.2501 15.5V3.83329C24.2501 2.22246 22.9442 0.916626 21.3334 0.916626H3.83341C2.22258 0.916626 0.916748 2.22246 0.916748 3.83329ZM3.83341 18.4166V3.83329H21.3334V15.5H8.6955C8.06414 15.4983 7.44956 15.7031 6.9455 16.0833L3.83341 18.4166Z"/>
+                        <path d="M30.0834 30.0833V11.125C30.0834 9.51413 28.7776 8.20829 27.1667 8.20829V24.25L24.0547 21.9166C23.5506 21.5365 22.936 21.3316 22.3047 21.3333H8.20841C8.20841 22.9441 9.51425 24.25 11.1251 24.25H21.3334C21.9647 24.2488 22.5791 24.4536 23.0834 24.8333L30.0834 30.0833Z"/>
+                    </svg>
+
+                    <p class="main__faqBtnText">Other questions</p>
+                </div>
+            </div>
+            <div class="main__faqTabs">
+                <div class="main__faqTab main__faqTab-active" id="tab1">
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation?</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation?</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation?</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__faqTab" id="tab2">
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 2</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 2</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 2</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__faqTab" id="tab3">
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 3</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 3</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 3</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__faqTab" id="tab4">
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 4</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 4</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                    <div class="main__faqTabItem">
+                        <div class="main__faqTabItemHeader">
+                            <p class="main__faqTabItemTitle">Paid or free account activation? 4</p>
+                            <img src="img/icons/itemDown.svg" alt="item" class="main__faqTabItemIcon"/>
+                        </div>
+                        <p class="main__faqTabItemText">
+                            You can open a deposit and start investing using cryptocurrencies such as Bitcoin, Litecoin,
+                            Ethereum, Perfect Money, Dogecoin, BitcoinCash, DashCoin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__left">
+            <a href="#!" class="footer__logoLink">
+                <img src="img/logo-white.svg" alt="logo" class="footer__logo"/>
+            </a>
+            <div class="footer__leftContent">
+                <p class="footer__text">Copyright 2020 WorkForYou</p>
+                <p class="footer__text">All rights reserved</p>
+                <div class="footer__leftBtns">
+                <span class="footer__leftBtn">
+                    <img src="img/icons/pm.svg" alt="pm" class="footer__leftBtnIcon"/>
+                </span>
+                    <span class="footer__leftBtn">
+                    <img src="img/icons/eth.svg" alt="eth" class="footer__leftBtnIcon"/>
+                </span>
+                    <span class="footer__leftBtn">
+                    <img src="img/icons/btc.svg" alt="btc" class="footer__leftBtnIcon"/>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__right">
+            <p class="footer__rightTitle">Company</p>
+            <nav class="footer__rightItems">
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">Home</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">For Investors</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">Contacts</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">About Us</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">Questions</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
