@@ -112,7 +112,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 .main__nameAndInputHeader {
     display: flex;
@@ -169,7 +169,7 @@ body {
     justify-content: center;
     padding: 0 10px;
     right: 0;
-    top: -6px;
+    top: -5px;
     opacity: 0;
     transition: .3s;
 }
@@ -221,6 +221,22 @@ body {
 .main__nameAndInputFooter-day {
     width: 55px;
     margin-right: 20px;
+}
+.main__nameAndInputFooter-captcha .main__nameAndInputFooterInput {
+    padding-left: 83px;
+}
+.main__nameAndInputFooterNumber {
+    padding-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20px;
+    border-right: solid 1px #0080FF;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0B1B2D;
 }
 /*NAME AND INPUT END*/
 
@@ -303,6 +319,78 @@ body {
     box-shadow: unset;
 }
 /*OWL DOTS END*/
+
+/*CHECKBOX*/
+.main__checkboxBlock {
+    margin-bottom: -9px;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    font-size: 14px;
+    line-height: 140%;
+    color: #0B1B2D;
+}
+.custom-checkbox + label a {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #0B1B2D;
+}
+.custom-checkbox + label a:hover {
+    text-decoration: none;
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-bottom: 2px;
+
+    border: 1px solid #0080FF;
+    border-radius: 3px;
+}
+.custom-checkbox:checked + label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #3796f3;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked) + label::before {
+    border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+    background-color: #FFFFFF;
+}
+/*CHECKBOX END*/
 
 /*HEADER*/
 .header {
@@ -1039,7 +1127,7 @@ body {
 }
 .btn-contacts {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 18px;
 }
 .main__contactsFormSuccess {
     visibility: hidden;
@@ -1099,6 +1187,54 @@ body {
     display: none;
 }
 /*CONTACTS END*/
+
+/*REGISTRATION*/
+.main__decorRegistration-1 {
+    left: -199px;
+    top: 60px;
+}
+.main__decorRegistration-2 {
+    top: 604px;
+    right: -169px;
+}
+.main__decorRegistration-3 {
+    top: 950px;
+    left: -165px;
+}
+.main__registration {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__registrationForm {
+    margin: 60px 15px 0;
+    padding: 45px 50px 50px;
+    width: 430px;
+    background: rgba(241, 250, 255, 0.8);
+    border: 2px solid #0080FF;
+    border-radius: 30px;
+}
+.main__registrationFormTitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #191234;
+    margin-bottom: 10px;
+}
+.main__registrationForm .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+.main__registrationDelimiter {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #0080FF;
+    margin: 30px 0;
+}
+/*REGISTRATION END*/
 
 /*FOOTER*/
 .footer {
@@ -1274,6 +1410,10 @@ body {
     }
 }
 @media screen and (max-width: 980px) {
+    .main__registrationForm {
+        margin-top: 50px;
+    }
+
     .main__breadcrumbs {
         margin-top: 10px;
     }
@@ -1640,6 +1780,20 @@ body {
     }
     .main__aboutPage .main__reasonsItem {
         max-width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main__registrationForm {
+        width: 100%;
+        padding: 0 25px;
+        background: transparent;
+        border: unset;
+    }
+    .main__registrationDelimiter {
+        opacity: .2;
+    }
+    .main__registrationFormTitle {
+        margin-bottom: 20px;
     }
 }
 /*MEDIA END*/
