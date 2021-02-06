@@ -1196,6 +1196,11 @@ body {
 /*FOOTER END*/
 
 /*MEDIA*/
+@media screen and (max-width: 1450px) {
+    .main__decor-4 {
+        display: none;
+    }
+}
 @media screen and (max-width: 1230px) {
     .wrapper {
         width: 100%;
@@ -1636,8 +1641,5 @@ body {
     .main__aboutPage .main__reasonsItem {
         max-width: 100%;
     }
-}
-@media screen and (max-width: 480px) {
-
 }
 /*MEDIA END*/
