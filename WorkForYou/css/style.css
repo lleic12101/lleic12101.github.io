@@ -562,7 +562,7 @@ body {
 
 .main__referral {
     width: 100%;
-    margin: 40px 0 60px;
+    margin: 40px 0 0;
 }
 .main__referral .wrapper {
     border-radius: 40px;
@@ -608,6 +608,77 @@ body {
 }
 /*MAIN END*/
 
+/*BREADCRUMBS*/
+.main__breadcrumbs {
+    margin: -3px 0 50px 0;
+}
+.main__breadcrumbs .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main__breadcrumbsLink {
+    font-size: 16px;
+    color: #191234;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.main__breadcrumbsLink:before {
+    content: url(../img/icons/breadcrumb-black.svg);
+    margin-right: 9px;
+}
+.main__breadcrumbsLink-active:before {
+    content: url(../img/icons/breadcrumb.svg);
+}
+.main__breadcrumbsLink:first-child {
+    margin-left: 0;
+}
+.main__breadcrumbsLink:first-child:before {
+    content: '';
+    margin-right: 0;
+}
+.main__breadcrumbsLink.link-animation:after {
+    font-size: 16px;
+    background: #191234;
+    bottom: 1px;
+}
+.main__breadcrumbsLink-active {
+    color: #0080FF;
+    cursor: default;
+}
+/*BREADCRUMBS END*/
+
+/*TERMS*/
+.main__terms .wrapper {
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15px;
+}
+.main__termsItems {
+    max-width: 970px;
+    margin-top: 60px;
+}
+.main__termsHeadline {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #191234;
+}
+.main__termsText {
+    line-height: 140%;
+    font-size: 18px;
+    color: #191234;
+    margin-bottom: 27px;
+}
+.main__termsText:last-child {
+    margin-bottom: 0;
+}
+/*TERMS END*/
+
 /*FOOTER*/
 .footer {
     width: 100%;
@@ -616,6 +687,7 @@ body {
     border-radius: 100px 100px 0px 0px;
     position: relative;
     z-index: 10;
+    margin-top: 100px;
 }
 .footer .wrapper {
     display: flex;
@@ -928,6 +1000,7 @@ body {
     .main__referral .wrapper {
         padding: 50px 15px;
         border-radius: 10px;
+        margin-bottom: -50px;
     }
     .main__referralItem {
         margin: 0 20px;
@@ -943,6 +1016,7 @@ body {
     .footer {
         background: #0080FF;
         border-radius: 30px 30px 0px 0px;
+        margin-top: 50px;
     }
     .footer__right {
         display: none;
@@ -975,8 +1049,32 @@ body {
     .footer__text:nth-child(1) {
         margin-bottom: 0;
     }
+
+    .main__breadcrumbs {
+        margin-top: 10px;
+    }
+    .main__breadcrumbs .wrapper {
+        padding-left: 10px;
+    }
+
+    .main__terms .wrapper {
+        padding: 0 15px;
+    }
+    .main__termsText {
+        margin-bottom: 20px;
+    }
+    .main__termsItems {
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width: 640px) {
+    .main__filter {
+        background: transparent;
+    }
+    .main__header.main__filter,
+    .main__referral .main__filter {
+        background: rgba(248, 252, 255, 0.9);
+    }
     .main__decor {
         display: none;
     }
