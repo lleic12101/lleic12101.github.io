@@ -651,16 +651,17 @@ body {
 /*BREADCRUMBS END*/
 
 /*TERMS*/
-.main__terms .wrapper {
+.main__default {
     border-radius: 70px;
+    padding: 100px 15px;
+}
+.main__terms .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 15px;
 }
 .main__termsItems {
     max-width: 970px;
-    margin-top: 60px;
 }
 .main__termsHeadline {
     font-weight: bold;
@@ -678,6 +679,41 @@ body {
     margin-bottom: 0;
 }
 /*TERMS END*/
+
+/*ABOUT US*/
+.main__title-margin {
+    margin-bottom: 60px;
+}
+.main__aboutPage .wrapper {
+    align-items: center;
+}
+.main__decorAbout-1 {
+    right: -61px;
+    top: 296px;
+}
+.main__decorAbout-2 {
+    left: 70px;
+    top: 734px;
+}
+.main__aboutPageText {
+    font-size: 18px;
+    line-height: 160%;
+    color: #191234;
+    max-width: 970px;
+}
+.main__aboutPage .main__reasonsItems {
+    max-width: 970px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.main__aboutPage .main__reasonsItem {
+    max-width: 303px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+}
+/*ABOUT US END*/
 
 /*FOOTER*/
 .footer {
@@ -1057,17 +1093,17 @@ body {
         padding-left: 10px;
     }
 
+    .main__default {
+        padding: 0 15px;
+        border-radius: unset;
+    }
     .main__terms .wrapper {
         padding: 0 15px;
     }
     .main__termsText {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
-    .main__termsItems {
-        margin-top: 50px;
-    }
-}
-@media screen and (max-width: 640px) {
+
     .main__filter {
         background: transparent;
     }
@@ -1078,6 +1114,12 @@ body {
     .main__decor {
         display: none;
     }
+
+    .main__title-margin {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 640px) {
     .main__reasonsItem {
         margin: 0 0 30px 0;
     }
