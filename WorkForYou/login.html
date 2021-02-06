@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>WorkForYou</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink">
+            <img src="img/logo.svg" alt="logo" class="header__logo"/>
+        </a>
+        <div class="header__navWrapper">
+            <nav class="header__nav">
+                <a href="#!" class="header__navItem link-animation">Home</a>
+                <a href="#!" class="header__navItem link-animation">About Us</a>
+                <a href="#!" class="header__navItem link-animation">For Investors</a>
+                <a href="#!" class="header__navItem link-animation">FAQ</a>
+                <a href="#!" class="header__navItem link-animation">Contacts</a>
+                <div class="header__navLangBlock">
+                    <div class="header__navLangHeader">
+                        <p class="header__navLangText">Eng</p>
+                        <img src="img/icons/langDrop.svg" alt="drop" class="header__navLangIcon"/>
+                    </div>
+                    <div class="header__navLangItems">
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Rus</a>
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Ukr</a>
+                    </div>
+                </div>
+                <a href="#!" class="btn btn-white header__navBtn-mobile">Sign In</a>
+            </nav>
+        </div>
+        <a href="#!" class="btn btn-white header__navBtn">Sign In</a>
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="56" onclick="this.classList.toggle('active')">
+            <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
+            <path
+                    class="line middle"
+                    d="m 70,50 h -40"/>
+            <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
+        </svg>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<main class="main">
+    <img src="img/main/decor-1.svg" alt="decor" class="main__decor main__decorRegistration-1"/>
+    <img src="img/main/decor-2.svg" alt="decor" class="main__decor main__decorAuthorization-2"/>
+    <div class="main__registration">
+        <form action="#!" class="main__registrationForm main__registrationForm-login">
+            <p class="main__registrationFormTitle">Authorization</p>
+            <div class="main__nameAndInput">
+                <div class="main__nameAndInputHeader">
+                    <p class="main__nameAndInputHeaderName">Nickname or Email</p>
+                    <div class="main__nameAndInputHeaderAlert">
+                        <p class="main__nameAndInputHeaderAlertText">Incorrect data</p>
+                    </div>
+                </div>
+                <div class="main__nameAndInputFooter">
+                    <input type="text" class="main__nameAndInputFooterInput" required/>
+                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                </div>
+            </div>
+            <div class="main__nameAndInput">
+                <div class="main__nameAndInputHeader">
+                    <p class="main__nameAndInputHeaderName">Password</p>
+                    <div class="main__nameAndInputHeaderAlert">
+                        <p class="main__nameAndInputHeaderAlertText">Incorrect data</p>
+                    </div>
+                </div>
+                <div class="main__nameAndInputFooter">
+                    <input type="password" class="main__nameAndInputFooterInput" required/>
+                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                </div>
+            </div>
+            <a href="#!" class="main__loginLink">Forgot password?</a>
+            <div class="main__nameAndInput">
+                <div class="main__nameAndInputHeader">
+                    <p class="main__nameAndInputHeaderName">Capcha</p>
+                    <div class="main__nameAndInputHeaderAlert">
+                        <p class="main__nameAndInputHeaderAlertText">Incorrect data</p>
+                    </div>
+                </div>
+                <div class="main__nameAndInputFooter main__nameAndInputFooter-captcha">
+                    <p class="main__nameAndInputFooterNumber">341</p>
+                    <input type="text" class="main__nameAndInputFooterInput" required/>
+                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                </div>
+            </div>
+            <button class="btn">Login</button>
+        </form>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__left">
+            <a href="#!" class="footer__logoLink">
+                <img src="img/logo-white.svg" alt="logo" class="footer__logo"/>
+            </a>
+            <div class="footer__leftContent">
+                <p class="footer__text">Copyright 2020 WorkForYou</p>
+                <p class="footer__text">All rights reserved</p>
+                <div class="footer__leftBtns">
+                <span class="footer__leftBtn">
+                    <img src="img/icons/pm.svg" alt="pm" class="footer__leftBtnIcon"/>
+                </span>
+                    <span class="footer__leftBtn">
+                    <img src="img/icons/eth.svg" alt="eth" class="footer__leftBtnIcon"/>
+                </span>
+                    <span class="footer__leftBtn">
+                    <img src="img/icons/btc.svg" alt="btc" class="footer__leftBtnIcon"/>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__right">
+            <p class="footer__rightTitle">Company</p>
+            <nav class="footer__rightItems">
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">Home</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">For Investors</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">Contacts</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">About Us</a>
+                </div>
+                <div class="footer__rightItemBlock">
+                    <a href="#!" class="footer__rightItem link-animation">Questions</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
