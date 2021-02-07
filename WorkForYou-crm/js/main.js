@@ -11,6 +11,8 @@ function copyToClipboard(){
     $temp.val($('.main__referralInput').val()).select();
     document.execCommand("copy");
     $temp.remove();
+
+    $(".main__referralInputCopied").text("copied");
 }
 
 //burger menu

@@ -615,6 +615,7 @@ body {
     border: 1px solid rgba(255,255,255,.6);
     border-radius: 5px;
     margin-left: 73px;
+    position: relative;
 }
 .main__referralInput {
     border:none;
@@ -628,6 +629,17 @@ body {
     background: none;
     height: 100%;
     cursor: text;
+}
+.main__referralInputCopied {
+    position: absolute;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    bottom: 2px;
+    right: 68px;
+    z-index: 1;
 }
 .main__referralBtn {
     display: flex;
@@ -907,6 +919,9 @@ body {
         width:100%;
         font-size: 16px;
     }
+    .main__referralBtn-mobile:hover {
+        border: 1px solid #FFFFFF;
+    }
     .main__referralIcon {
         display: none;
     }
@@ -1053,6 +1068,11 @@ body {
     }
     .main__statisticItem:last-child {
         margin-bottom: 0;
+    }
+    .main__referralInputCopied {
+        right: 8px;
+        bottom: 64px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 810px) {
