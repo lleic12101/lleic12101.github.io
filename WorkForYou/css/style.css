@@ -410,6 +410,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.header__logo {
+    max-height: 39px;
+}
 .header__nav {
     display: flex;
     flex-direction: row;
@@ -1330,6 +1333,9 @@ body {
     justify-content: center;
     margin-bottom: 29px;
 }
+.footer__logo {
+    max-height: 39px;
+}
 .footer__text {
     margin-bottom: 10px;
     font-size: 18px;
@@ -1489,7 +1495,7 @@ body {
     }
 
     .main {
-        padding-top: 56px;
+        padding-top: 70px;
     }
     .main__header {
         margin-top: 0;
@@ -1500,7 +1506,7 @@ body {
         padding: 15px 0;
         background: #FFFFFF;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        height: 56px;
+        height: 70px;
         z-index: 11;
     }
     .header__navBtn {
@@ -1521,7 +1527,7 @@ body {
     }
     .header__navWrapper {
         position: fixed;
-        top: 66px;
+        top: 80px;
         right: -220px;
         width: 200px;
         background: #FFFFFF;
