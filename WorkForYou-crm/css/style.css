@@ -1439,6 +1439,43 @@ input::-webkit-inner-spin-button {
     border-color: #0080FF;
 }
 
+.main__teamHeader-transactions {
+    margin-top: -24px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.main__teamHeader-transactions .main__nameAndInput {
+    margin-bottom: 0;
+}
+.main__nameAndInput-deposit {
+    min-width: 195px;
+    width: 195px;
+}
+.main__nameAndInput-currency {
+    min-width: 195px;
+    width: 195px;
+}
+.main__nameAndInput-from {
+    min-width: 262px;
+    width: 262px;
+}
+.main__nameAndInput-to {
+    min-width: 282px;
+    width: 282px;
+}
+.main__transactionsBtn {
+    width: 50px;
+    height: 50px;
+    background: #0080FF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.main__transactionsBtn:hover {
+    background: #0b69d2;
+}
 /*MAIN END*/
 
 /*MEDIA*/
@@ -1891,6 +1928,10 @@ input::-webkit-inner-spin-button {
     }
     .main__teamHeader {
         padding-right: 15px;
+    }
+
+    .main__teamHeader-transactions {
+        margin-top: -5px;
     }
 }
 @media screen and (max-width: 810px) {
