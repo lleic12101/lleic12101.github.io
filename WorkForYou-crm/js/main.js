@@ -27,3 +27,28 @@ $('.header__closeableMask').click(function () {
     $('.header__navWrapper').removeClass("header__navWrapper-active");
     $("html, body").removeClass("body-fixed");
 });
+
+//plans slider
+if ($('*').is('.owl-carousel')) {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        dots: true,
+        dotsEach: true,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            730: {
+                items: 2,
+                dots: true,
+            },
+            1210: {
+                items: 3,
+                loop: false,
+            }
+        }
+    });
+}

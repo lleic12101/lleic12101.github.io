@@ -52,7 +52,7 @@
                     <img src="img/icons/link1.svg" alt="link" class="header__navLinkIcon" />
                     My account
                 </a>
-                <a href="#!" class="header__navLink">
+                <a href="#!" class="header__navLink header__navLink-active">
                     <img src="img/icons/link2.svg" alt="link" class="header__navLinkIcon" />
                     Open Deposit
                 </a>
@@ -64,7 +64,7 @@
                     <img src="img/icons/link4.svg" alt="link" class="header__navLinkIcon" />
                     Transactions
                 </a>
-                <a href="#!" class="header__navLink header__navLink-active">
+                <a href="#!" class="header__navLink">
                     <img src="img/icons/link5.svg" alt="link" class="header__navLinkIcon" />
                     Withdraw
                 </a>
@@ -125,51 +125,81 @@
                 </div>
             </div>
         </div>
-        <div class="main__balance">
-            <div class="main__block main__balanceBlock">
-                <div class="main__balanceTop">
-                    <div class="main__statisticItem">
-                        <p class="main__statisticText main__statisticText-bold">2.784 <span>USD</span></p>
-                        <p class="main__statisticText">Account Balance</p>
+        <div class="owl-carousel main__plansItems">
+            <div class="main__plansItem">
+                <p class="main__plansItemMoney">$5–1000</p>
+                <p class="main__plansItemTitle">Standart –<span>1.1%</span></p>
+                <p class="main__plansItemText">Some text about the plan pricing and settings for client</p>
+                <span class="main__plansItemDelimiter"></span>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
                     </div>
-                    <div class="main__balanceBtns">
-                        <a href="#!" class="btn btn-white main__balanceBtn">Withdraw</a>
-                        <a href="#!" class="btn main__balanceBtn">Open deposit</a>
-                    </div>
+                    <p class="main__plansItemCheckText">Deposit for 20 days</p>
                 </div>
-                <div class="main__balanceBottom">
-                    <div class="main__balanceBottomItem">
-                        <span class="main__balanceDelimiter"></span>
-                        <p class="main__balanceBottomText">2.784 <span>USD</span></p>
-                        <div class="main__balanceWallet">
-                            <img src="img/icons/pm.svg" alt="pm" class="main__balanceWalletIcon" />
-                            <p class="main__balanceWalletText main__balanceWalletText-red">Perfect Money</p>
-                        </div>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
                     </div>
-                    <div class="main__balanceBottomItem">
-                        <span class="main__balanceDelimiter main__balanceDelimiter-orange"></span>
-                        <p class="main__balanceBottomText">2.584 <span>USD</span></p>
-                        <div class="main__balanceWallet">
-                            <img src="img/icons/btc.svg" alt="btc" class="main__balanceWalletIcon" />
-                            <p class="main__balanceWalletText main__balanceWalletText-orange">Bitcoin</p>
-                        </div>
-                    </div>
-                    <div class="main__balanceBottomItem">
-                        <span class="main__balanceDelimiter main__balanceDelimiter-black"></span>
-                        <p class="main__balanceBottomText">2.172 <span>USD</span></p>
-                        <div class="main__balanceWallet">
-                            <img src="img/icons/eth.svg" alt="eth" class="main__balanceWalletIcon" />
-                            <p class="main__balanceWalletText">Ethereum</p>
-                        </div>
-                    </div>
+                    <p class="main__plansItemCheckText">Daily charges</p>
                 </div>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Deposit at the end of the term</p>
+                </div>
+                <a href="#!" class="btn btn-white">Get Started</a>
             </div>
-            <div class="main__balanceBtns main__balanceBtns-mobile">
-                <a href="#!" class="btn btn-white main__balanceBtn">Withdraw</a>
-                <a href="#!" class="btn main__balanceBtn">Open deposit</a>
+            <div class="main__plansItem main__plansItem-blue">
+                <p class="main__plansItemMoney">$1000–10000</p>
+                <p class="main__plansItemTitle">Standart –<span>1.2%</span></p>
+                <p class="main__plansItemText">Some text about the plan pricing and settings for client</p>
+                <span class="main__plansItemDelimiter"></span>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check-white.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Deposit for 20 days</p>
+                </div>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check-white.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Daily charges</p>
+                </div>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check-white.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Deposit at the end of the term</p>
+                </div>
+                <a href="#!" class="btn btn-white">Get Started</a>
             </div>
-            <div class="main__block main__balanceSpace">
-                <img src="img/illustration.svg" alt="img" class="main__balanceSpaceImg" />
+            <div class="main__plansItem">
+                <p class="main__plansItemMoney">$10000–20000</p>
+                <p class="main__plansItemTitle">Pro –<span>1.3%</span></p>
+                <p class="main__plansItemText">Some text about the plan pricing and settings for client</p>
+                <span class="main__plansItemDelimiter"></span>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Deposit for 40 days</p>
+                </div>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Daily charges</p>
+                </div>
+                <div class="main__plansItemCheck">
+                    <div class="main__plansItemIconBlock">
+                        <img src="img/icons/check.svg" alt="check" class="main__plansItemIcon"/>
+                    </div>
+                    <p class="main__plansItemCheckText">Deposit at the end of the term</p>
+                </div>
+                <a href="#!" class="btn btn-white">Get Started</a>
             </div>
         </div>
         <div class="main__wallets">
