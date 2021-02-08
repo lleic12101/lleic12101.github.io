@@ -76,7 +76,7 @@ body {
     width: 210px;
     height: 62px;
     background: #0080FF;
-    box-shadow: 0px 10px 20px rgba(26, 130, 233, 0.2);
+    box-shadow: 0 10px 20px rgba(26, 130, 233, 0.2);
     border-radius: 10px;
     font-weight: bold;
     font-size: 20px;
@@ -208,7 +208,7 @@ body {
     appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    background: #0B1B2D url(../img/icons/select.svg) no-repeat right center;
+    background: #FFFFFF url(../img/icons/select.svg) no-repeat right center;
     background-position: calc(100% - 15px);
 }
 .crm__transactionsBtnsRow {
@@ -241,6 +241,13 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #0B1B2D;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 /*NAME AND INPUT END*/
 
@@ -327,7 +334,7 @@ body {
     height: 10px;
     opacity: 1;
     background: #FFFFFF;
-    box-shadow: 0px 0px 5px rgba(0, 128, 255, 0.25);
+    box-shadow: 0 0 5px rgba(0, 128, 255, 0.25);
     border-radius: 50%;
     transition: .3s;
     margin: 0 7.5px;
@@ -510,7 +517,7 @@ body {
 }
 .main__block {
     background: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
 .main__user {
@@ -580,7 +587,7 @@ body {
     flex-direction: row;
     align-items: center;
     background: #0080FF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     width: 100%;
     height: 80px;
@@ -798,6 +805,86 @@ body {
 .main__balanceWalletText-orange {
     color: #FF8700;
 }
+
+.main__wallets {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.main__walletsItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 99px;
+}
+.main__walletsItemIcon {
+    margin-right: 10px;
+}
+.main__walletsItemText {
+    font-family: Circe;
+    font-weight: bold;
+    font-size: 25.35px;
+    line-height: 37px;
+    color: #232323;
+}
+.main__walletsItemText-red {
+    color: #ED1019;
+}
+.main__walletsItemText-orange {
+    color: #FF8700;
+}
+
+.main__withdrawBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.main__withdrawItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 380px;
+}
+.main__withdrawItem:first-child {
+    margin-right: 30px;
+}
+.main__withdrawItemText {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0B1B2D;
+    opacity: 0.5;
+}
+.main__withdrawItem .main__nameAndInputFooterInput {
+    border-radius: 10px;
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191234;
+}
+.main__withdrawBtn {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 146px;
+    height: 50px;
+    background: #0080FF;
+    box-shadow: 0px 10px 20px rgba(26, 130, 233, 0.2);
+    border-radius: 0px 10px 10px 0px;
+    font-family: Circe;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+}
 /*MAIN END*/
 
 /*MEDIA*/
@@ -884,6 +971,9 @@ body {
     }
     .header__navLangHeader {
         margin: 5px 0 15px;
+    }
+    .main__wallets {
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 1210px) {
@@ -1063,7 +1153,7 @@ body {
         padding: 25px 15px;
         margin-bottom: 20px;
         background: #FFFFFF;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         border-radius: 10px;
     }
     .main__statisticItem:last-child {
@@ -1073,6 +1163,41 @@ body {
         right: 8px;
         bottom: 64px;
         font-size: 12px;
+    }
+
+    .main__wallets {
+        max-width: 790px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .main__walletsItem {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 55px;
+    }
+    .main__walletsItem:last-child {
+        margin-bottom: 0;
+    }
+    .main__walletsItemText {
+        font-size: 20px;
+    }
+    .main__walletsItemIcon {
+        height: 30px;
+    }
+
+    .main__withdrawBlock {
+        width: 100%;
+        max-width: 790px;
+        flex-direction: column;
+    }
+    .main__withdrawItem:first-child {
+        margin-right: 0;
+    }
+    .main__withdrawBtn {
+        font-size: 18px;
+    }
+    .main__withdrawItem {
+        width: 100%;
     }
 }
 @media screen and (max-width: 810px) {
