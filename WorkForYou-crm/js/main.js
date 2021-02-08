@@ -52,3 +52,15 @@ if ($('*').is('.owl-carousel')) {
         }
     });
 }
+
+//select pay
+$(".main__walletsItem").click(function () {
+    $(".main__walletsItem").removeClass("main__walletsItem-active");
+    $(this).addClass("main__walletsItem-active");
+});
+
+//plan select
+$(".main__plansItem").click(function () {
+    $(".main__plansItem").removeClass("main__plansItem-blue");
+    $(this).addClass("main__plansItem-blue");
+});
