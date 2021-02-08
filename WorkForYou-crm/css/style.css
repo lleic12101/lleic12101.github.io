@@ -1254,6 +1254,136 @@ input::-webkit-inner-spin-button {
 .main__security .main__nameAndInputFooterInput {
     border-radius: 10px;
 }
+
+.main__tableBlock {
+    margin-bottom: 30px;
+    padding: 40px 0 40px 40px;
+    width: 100%;
+    overflow-x: auto;
+}
+.main__tableBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.main__tableBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+    border: 1px solid #0080FF;
+    border-radius: 6px;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    font-family: Circe;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #0080FF;
+    text-decoration: none;
+    padding-top: 3px;
+    transition: .3s;
+}
+.main__tableBtn:first-child,
+.main__tableBtn:last-child{
+    padding-top: 0;
+}
+.main__tableBtn:hover {
+    color: #FFFFFF;
+    background: #0080FF;
+}
+.main__tableBtn-active {
+    color: #FFFFFF;
+    background: #0080FF;
+}
+.main__depositsBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__depositsBtn {
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.main__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1120px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.main__tableItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10px;
+    border-bottom: 1px solid rgba(25, 18, 52, 0.1);
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main__tableItem:hover {
+    background: #f1f1f1;
+}
+.main__tableItem:last-child {
+    border-bottom: unset;
+}
+.main__tableItemText {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #191234;
+}
+.main__tableItemText span {
+    margin: 0 30px;
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 16px;
+}
+.main__tableItemText-bold {
+    font-family: Circe;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+}
+.main__tableItemWallet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 270px;
+}
+.main__tableItemWalletIcon {
+    max-height: 30px;
+    margin-right: 10px;
+}
+.main__tableItemWalletText {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #191234;
+    white-space: nowrap;
+}
+.main__tableItemWalletText span {
+    font-family: Circe;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #191234;
+    margin: 0 2px 0 3px;
+}
 /*MAIN END*/
 
 /*MEDIA*/
@@ -1653,6 +1783,32 @@ input::-webkit-inner-spin-button {
     .main__securityRadioBlock {
         margin-bottom: 20px;
         margin-top: -5px;
+    }
+
+    .main__tableBlock {
+        padding: 15px 0 15px 15px;
+        margin-bottom: 20px;
+    }
+    .main__tableItem {
+        padding: 20px 10px;
+    }
+    .main__table {
+        padding-right: 15px;
+        margin-top: 10px;
+    }
+    .main__tableBtn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .main__tableItemText-bold {
+        font-size: 18px;
+    }
+    .main__tableItemWalletText {
+        font-size: 16px;
+    }
+    .main__tableItemWalletText span {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 810px) {
