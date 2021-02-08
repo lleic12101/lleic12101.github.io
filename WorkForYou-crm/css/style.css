@@ -73,6 +73,7 @@ body {
 
 /*BUTTON*/
 .btn {
+    font-family: Circe;
     width: 210px;
     height: 62px;
     background: #0080FF;
@@ -350,6 +351,62 @@ input::-webkit-inner-spin-button {
     box-shadow: unset;
 }
 /*OWL DOTS END*/
+
+/*CHECKBOX*/
+.main__checkboxBlock {
+    margin-bottom: -9px;
+    position: relative;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: rgba(25, 18, 52, 0.5);
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-bottom: 2px;
+
+    border: 1px solid #0080FF;
+    border-radius: 3px;
+}
+.custom-checkbox:checked + label::after {
+    content: '';
+    display: block;
+    background: #0b76ef;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    position: absolute;
+    left: 4px;
+    bottom: 9px;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+    background-color: #FFFFFF;
+}
+/*CHECKBOX END*/
 
 /*HEADER*/
 .header__logo {
@@ -887,6 +944,9 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
     color: #191234;
 }
+.main__withdrawItem input {
+    padding-right: 160px;
+}
 .main__withdrawBtn {
     top: 0;
     right: 0;
@@ -1127,6 +1187,72 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     line-height: 130%;
     text-align: center;
+}
+
+.main__secutiryWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__security {
+    width: 100%;
+    max-width: 790px;
+    padding: 50px;
+}
+.main__securityText {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #191234;
+}
+.main__securityText a {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #0080FF;
+    text-decoration: underline;
+}
+.main__securityText a:hover {
+    text-decoration: unset;
+}
+.main__securityRadioBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.main__securityRadioBlock .main__checkboxBlock {
+    margin-right: 50px;
+}
+.btn-security {
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.main__securityText-list {
+    margin-bottom: 15px;
+}
+.main__securityQR {
+    max-height: 70px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+.main__security .main__nameAndInput {
+    max-width: 480px;
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+.main__security input {
+    padding-right: 160px;
+}
+.main__security .main__nameAndInputFooterInput {
+    border-radius: 10px;
 }
 /*MAIN END*/
 
@@ -1501,6 +1627,32 @@ input::-webkit-inner-spin-button {
     }
     .main__settingItemBtn {
         margin-top: 9px;
+    }
+
+    .main__secutiryWrapper {
+        align-items: center;
+    }
+    .main__security {
+        padding: 15px;
+    }
+    .main__securityText {
+        font-size: 16px;
+    }
+    .main__securityText a {
+        font-size: 16px;
+    }
+    .main__securityText-list {
+        margin-bottom: 10px;
+    }
+    .main__securityQR {
+        margin-bottom: 5px;
+    }
+    .btn-security {
+        margin-bottom: 20px;
+    }
+    .main__securityRadioBlock {
+        margin-bottom: 20px;
+        margin-top: -5px;
     }
 }
 @media screen and (max-width: 810px) {
