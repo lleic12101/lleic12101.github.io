@@ -347,6 +347,9 @@ input::-webkit-inner-spin-button {
 /*OWL DOTS END*/
 
 /*HEADER*/
+.header__logo {
+    max-height: 39px;
+}
 .header {
     background: #0080FF;
     padding: 52px 0 69px;
