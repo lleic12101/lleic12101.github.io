@@ -1331,7 +1331,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
+	margin-top: -15px;
 }
 .footer__logo {
     max-height: 39px;
@@ -1721,6 +1722,7 @@ body {
         align-items: center;
     }
     .footer__logoLink {
+		margin-top: unset;
         margin-bottom: 30px;
     }
     .footer__leftBtns {
