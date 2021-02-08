@@ -1345,24 +1345,21 @@ input::-webkit-inner-spin-button {
     line-height: 130%;
     color: #191234;
 }
-.main__tableItemText span {
-    margin: 0 30px;
-    font-family: Circe;
-    font-weight: normal;
-    font-size: 16px;
-}
 .main__tableItemText-bold {
     font-family: Circe;
     font-weight: bold;
     font-size: 20px;
     line-height: 29px;
 }
+.main__tableItemText-date span {
+    margin: 0 30px;
+}
 .main__tableItemWallet {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    min-width: 270px;
+    min-width: 200px;
 }
 .main__tableItemWalletIcon {
     max-height: 30px;
@@ -1375,6 +1372,7 @@ input::-webkit-inner-spin-button {
     line-height: 27px;
     color: #191234;
     white-space: nowrap;
+    width: 100%;
 }
 .main__tableItemWalletText span {
     font-family: Circe;
@@ -1384,6 +1382,63 @@ input::-webkit-inner-spin-button {
     color: #191234;
     margin: 0 2px 0 3px;
 }
+
+.main__teamHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 40px;
+    min-width: 1120px;
+}
+.main__teamReferrals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__teamReferralsItem {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    height: 45px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.main__teamReferralsItemText {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #191234;
+}
+.main__teamReferralsItemText span {
+    color: #0080FF;
+}
+.main__teamHeader .main__referralLinkBlock {
+    width: 346px;
+    height: 45px;
+    border-color: rgba(0, 128, 255, 0.5);
+    margin-left: 0;
+}
+.main__teamHeader .main__referralInput {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #0080FF;
+}
+.main__teamHeader .main__referralInputCopied {
+    color: #0080FF;
+}
+.main__teamHeader .main__referralBtn {
+    border-color: #0080FF;
+}
+
 /*MAIN END*/
 
 /*MEDIA*/
@@ -1809,6 +1864,33 @@ input::-webkit-inner-spin-button {
     }
     .main__tableItemWalletText span {
         font-size: 18px;
+    }
+
+    .main__teamHeader .main__referralLinkBlock {
+        width: 346px;
+        height: 45px;
+        border: 1px solid #0080FF;
+        flex-direction: row;
+    }
+    .main__teamHeader .main__referralInput {
+        padding-left: 30px;
+        text-align: left;
+        width: 320px;
+    }
+    .main__teamHeader .main__referralBtn {
+        display: flex;
+    }
+    .main__teamReferralsItemText {
+        font-size: 16px;
+    }
+    .main__teamHeader .main__referralInputCopied {
+        right: 61px;
+        bottom: 2px;
+        color: #0080FF;
+        z-index: 1;
+    }
+    .main__teamHeader {
+        padding-right: 15px;
     }
 }
 @media screen and (max-width: 810px) {
