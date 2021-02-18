@@ -1417,6 +1417,67 @@ input[type="number"]:focus {
 }
 /*ROADMAP END*/
 
+/*CONTACTS*/
+.main__contactsLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.main__contactsLink {
+    background: #FFFFFF;
+    border: 2px solid #7B839D;
+    border-radius: 65px;
+    padding: 0 20px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.main__contactsLink:last-child {
+    margin-right: 0;
+}
+.main__contactsThanks {
+    width: 583px;
+    height: 351px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin: 120px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__contactsThanksText {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #1B253C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.main__contactsThanksText span {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #1B253C;
+    margin-top: -6px;
+}
+.main__contacts-success {
+
+}
+.main__contacts-success .wrapper {
+}
+
+/*CONTACTS END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1230px) {
     .wrapper {
@@ -1962,6 +2023,34 @@ input[type="number"]:focus {
     }
     .main__roadmapBlock {
         margin-top: 20px;
+    }
+
+    .main__contactsThanks {
+        margin: 0 0 30px;
+        height: unset;
+        width: unset;
+        box-shadow: unset;
+        background: unset;
+    }
+    .main__contactsLinks {
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+    }
+    .main__contactsLink {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .main__contactsLink:last-child {
+        margin-bottom: 20px;
+    }
+    .main__contactsThanksText {
+        font-size: 28px;
+    }
+    .main__contactsThanksText span {
+        font-size: 21px;
+        margin-top: -19px;
     }
 }
 /*MAIN MEDIA END*/
