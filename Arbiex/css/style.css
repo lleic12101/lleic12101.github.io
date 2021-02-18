@@ -367,6 +367,71 @@ input[type="number"]:focus {
 }
 /*INPUT END*/
 
+/*CHECKBOX*/
+.main__checkboxBlock {
+    position: relative;
+    width: 100%;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1B253C;
+}
+.custom-checkbox + label a {
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1B253C;
+}
+.custom-checkbox + label a:hover {
+    text-decoration: none;
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-bottom: 2px;
+
+    border: 1px solid #7B839D;
+    border-radius: 3px;
+}
+.custom-checkbox:checked + label::after {
+    content: '';
+    display: block;
+    background: #1B253C;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    position: absolute;
+    left: 4px;
+    bottom: 11px;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+    background-color: #FFFFFF;
+}
+/*CHECKBOX END*/
+
 /*HEADER*/
 .header {
     width: 100%;
@@ -1693,6 +1758,38 @@ input[type="number"]:focus {
 }
 /*CONTACTS END*/
 
+/*REGISTRATION*/
+.main__formBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 80px 0 0 0;
+    padding: 0 15px;
+}
+.main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 330px;
+    width: 100%;
+}
+.main__form .btn-form {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 15px;
+    box-shadow: none;
+}
+.main__formTitle {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #191234;
+    margin-bottom: 18px;
+}
+/*REGISTRATION END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1230px) {
     .wrapper {
@@ -1919,6 +2016,13 @@ input[type="number"]:focus {
     }
     .main__faqTabs {
         margin-top: 20px;
+    }
+
+    .main__formBlock {
+        margin-top: 60px;
+    }
+    .main__formTitle {
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 820px) {
@@ -2300,6 +2404,11 @@ input[type="number"]:focus {
     }
     .main__contactsFormTitle {
         font-size: 30px;
+    }
+
+    .main__formBlock {
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 }
 /*MAIN MEDIA END*/
