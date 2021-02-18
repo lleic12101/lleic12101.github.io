@@ -45,11 +45,11 @@ if ($('*').is('.owl-carousel')) {
             0: {
                 items: 1,
             },
-            680: {
+            820: {
                 items: 2,
                 dots: true,
             },
-            1024: {
+            1230: {
                 items: 3,
                 loop: false,
             }
