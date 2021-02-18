@@ -26,7 +26,9 @@ function resizeEmptySpace() {
         windowHeight += (windowHeight / 100) * 25;
     }
     if ((header + footer + main) < windowHeight) {
-        $(".main").css("height", (windowHeight - (header + footer)));
+        if ($(window).width() < 1023) {
+            $(".main").css("height", (windowHeight - (header + footer)) + 75);
+        } else $(".main").css("height", (windowHeight - (header + footer)) - 75);
     } else {
         $(".main").css("height", "auto");
     }

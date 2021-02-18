@@ -1819,6 +1819,35 @@ input[type="number"]:focus {
 }
 /*LOGIN END*/
 
+/*THANKS*/
+.main__formMessage {
+    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid #1B253C;
+    border-radius: 15px;
+}
+.main__formMessageText {
+    max-width: 330px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -5px;
+    font-weight: normal;
+    line-height: 27px;
+    color: #1B253C;
+}
+.main__formMessageText a {
+    font-weight: normal;
+    line-height: 27px;
+    color: #1B253C;
+}
+.main__formMessageText a:hover {
+    text-decoration: none;
+}
+.main__formMessage-recovery .main__formMessageText {
+    margin-bottom: 0;
+}
+/*THANKS END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1230px) {
     .wrapper {
@@ -2052,6 +2081,11 @@ input[type="number"]:focus {
     }
     .main__formTitle {
         margin-bottom: 0;
+    }
+
+    .main__formMessageText {
+        margin-top: 15px;
+        margin-bottom: 35px;
     }
 }
 @media screen and (max-width: 820px) {
@@ -2438,6 +2472,13 @@ input[type="number"]:focus {
     .main__formBlock {
         margin-top: 40px;
         margin-bottom: 20px;
+    }
+    .main__formMessage {
+        padding: 30px 24px;
+    }
+    .main__formMessage .main__formTitle {
+        font-size: 20px;
+        line-height: unset;
     }
 }
 /*MAIN MEDIA END*/
