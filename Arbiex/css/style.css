@@ -960,6 +960,27 @@ input[type="number"]:focus {
 }
 /*STRATEGY END*/
 
+/*TERMS*/
+.main__termsText {
+    font-weight: normal;
+    line-height: 140%;
+    color: #7B839D;
+}
+.main__termsText span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+}
+.main__decorTerms-1 {
+    top: 100px;
+    left: -450px;
+}
+.main__decorTerms-2 {
+    top: 1437px;
+    right: -129px;
+}
+/*TERMS END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1230px) {
     .wrapper {
@@ -1219,14 +1240,19 @@ input[type="number"]:focus {
         font-size: 40px;
     }
 
-    .main__decorAbout-1 {
-        display: none;
-    }
-    .main__decorAbout-2 {
+    .main__decorAbout-1,
+    .main__decorAbout-2,
+    .main__decorTerms-1,
+    .main__decorTerms-2 {
         display: none;
     }
 }
 @media screen and (max-width: 720px) {
+    .main__breadcrumbs {
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
     .footer .wrapper {
         padding: 40px 15px;
     }
