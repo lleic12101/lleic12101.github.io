@@ -394,6 +394,9 @@ input[type="number"]:focus {
 .main__headerBtn:first-child {
     margin-right: 40px;
 }
+.main__headerBtn-mobile {
+    display: none;
+}
 
 .main__aboutBlock {
     width: 100%;
