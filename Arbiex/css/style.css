@@ -1790,6 +1790,35 @@ input[type="number"]:focus {
 }
 /*REGISTRATION END*/
 
+/*LOGIN*/
+.main__formLoginBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main__formLoginLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+.main__formLoginLink {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1B253C;
+    min-width: 125px;
+    text-align: right;
+}
+.main__formLoginLink:first-child {
+    margin-bottom: 9px;
+}
+.main__formLoginLink:hover {
+    text-decoration: none;
+}
+/*LOGIN END*/
+
 /*MAIN MEDIA*/
 @media screen and (max-width: 1230px) {
     .wrapper {
