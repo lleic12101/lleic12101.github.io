@@ -926,8 +926,39 @@ input[type="number"]:focus {
 .main__about .btn {
     margin-top: 20px;
 }
-
 /*ABOUT END*/
+
+/*STRATEGY*/
+.main__strategy .wrapper {
+    align-items: flex-start;
+}
+.main__strategy .main__aboutContentText {
+    max-width: 435px;
+}
+.main__strategyItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding-top: 40px;
+}
+.main__strategyItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 270px;
+    width: 100%;
+    margin: 0 0 35px 30px;
+}
+.main__strategyItemIcon {
+    margin-bottom: 25px;
+}
+.main__strategyItemText {
+    font-weight: normal;
+    line-height: 160%;
+    color: #7B839D;
+}
+/*STRATEGY END*/
 
 /*MAIN MEDIA*/
 @media screen and (max-width: 1230px) {
@@ -1103,6 +1134,10 @@ input[type="number"]:focus {
         width: 140%;
     }
     .main__aboutContentText {
+        max-width: 100%;
+    }
+
+    .main__strategy .main__aboutContentText {
         max-width: 100%;
     }
 }
@@ -1326,6 +1361,19 @@ input[type="number"]:focus {
     }
     .main__headerDecor-2 {
         display: none;
+    }
+
+    .main__strategyItems {
+        max-width: 100%;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .main__strategyItem {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .main__strategyItem:last-child {
+        margin-bottom: 20px;
     }
 }
 /*MAIN MEDIA END*/
