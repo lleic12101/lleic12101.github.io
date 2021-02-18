@@ -69,3 +69,30 @@ $('.header__closeableMask').click(function () {
     $('.header__navWrapper').removeClass("header__navWrapper-active");
     $("html, body").removeClass("body-fixed");
 });
+
+//tabs
+$('.main__faqBtn').click(function () {
+    $('.main__faqBtn').removeClass('main__faqBtn-active');
+    $(this).addClass('main__faqBtn-active');
+
+    var id = $(this).attr("id");
+    id = id.substr(0, id.length - 3);
+
+    $('.main__faqTab').removeClass("main__faqTab-active");
+    $("#" + id).addClass("main__faqTab-active");
+});
+
+//faq
+$(".main__faqTabItemHeader").click(function () {
+    if ($(this).hasClass("main__faqTabItemHeader-active")) {
+        $(".main__faqTabItemHeader").removeClass("main__faqTabItemHeader-active");
+        $(".main__faqTabItemText").slideUp();
+    } else {
+        $(".main__faqTabItemHeader").removeClass("main__faqTabItemHeader-active");
+        $(".main__faqTabItemText").slideUp();
+        $(this).parent().find(".main__faqTabItemText").slideDown();
+        $(this).addClass("main__faqTabItemHeader-active");
+
+        resizeEmptySpace();
+    }
+});
