@@ -208,18 +208,17 @@ body {
     height: 26px;
 }
 .main__nameAndInputHeaderName {
-    color: rgba(11, 27, 45, 0.5);
+    color: #1B253C;
     transition: .3s;
     position: absolute;
-    left: 18px;
-    top: 19px;
+    left: 14px;
+    top: 20px;
     z-index: 2;
 
     font-weight: normal;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.002em;
-    color: #7B839D;
 
     background: #FFFFFF;
     padding: 0 6px;
@@ -237,7 +236,7 @@ body {
     width: 100%;
     height: 100%;
     outline: none;
-    padding-left: 24px;
+    padding-left: 20px;
 
     background: #FFFFFF;
     border: 1px solid #7B839D;
@@ -1370,6 +1369,12 @@ input[type="number"]:focus {
     }
     .main__paymentBlock .main__nameAndInput {
         width: calc(100% - 60px);
+    }
+    .main__nameAndInputFooterInput {
+        font-size: 16px;
+    }
+    .main__crmBtn {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 1023px) {
