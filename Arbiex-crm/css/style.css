@@ -212,7 +212,7 @@ body {
     transition: .3s;
     position: absolute;
     left: 18px;
-    top: 20px;
+    top: 19px;
     z-index: 2;
 
     font-weight: normal;
@@ -225,7 +225,7 @@ body {
     padding: 0 6px;
 }
 .main__nameAndInputFooter {
-    height: 56px;
+    height: 64px;
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -241,11 +241,10 @@ body {
 
     background: #FFFFFF;
     border: 1px solid #7B839D;
-    border-radius: 8px;
+    border-radius: 5px;
 
     font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     color: #19233B;
@@ -889,14 +888,8 @@ input[type="number"]:focus {
 }
 .main__nameAndInput-addFunds {
     width: 300px;
-    margin-top: -21px;
+    margin-top: -25px;
     margin-right: 20px;
-}
-.main__nameAndInput-addFunds .main__nameAndInputFooterInput {
-    height: 64px;
-}
-.main__nameAndInput-addFunds .main__nameAndInputHeaderName {
-    top: 14.5px;
 }
 .main__crmBtn {
     width: 300px;
@@ -995,6 +988,29 @@ input[type="number"]:focus {
     margin-bottom: 20px;
 }
 /*TRANSFER END*/
+
+/*E-WALLETS*/
+.main__paymentBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__paymentItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main__paymentItem .main__addFundsItemCircle {
+    margin-right: 14px;
+}
+.main__paymentItem .main__nameAndInput {
+    width: 405px;
+}
+.main__paymentBlock .main__crmBtn {
+    width: 170px;
+}
+/*E-WALLETS END*/
 
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
@@ -1339,6 +1355,21 @@ input[type="number"]:focus {
 
     .main__transferBlock .main__nameAndInput {
         margin-bottom: 18px;
+    }
+
+    .main__paymentBlock {
+        max-width: 600px;
+        width: 100%;
+    }
+    .main__paymentBlock .main__crmBtn {
+        width: 100%;
+    }
+    .main__paymentItem {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .main__paymentBlock .main__nameAndInput {
+        width: calc(100% - 60px);
     }
 }
 @media screen and (max-width: 1023px) {
