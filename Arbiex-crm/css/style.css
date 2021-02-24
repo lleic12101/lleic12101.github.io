@@ -983,6 +983,19 @@ input[type="number"]:focus {
 }
 /*STATUS END*/
 
+/*TRANSFER*/
+.main__transferBlock {
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+    width: 100%;
+}
+.main__transferBlock .main__nameAndInput {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/*TRANSFER END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
@@ -1322,6 +1335,10 @@ input[type="number"]:focus {
     }
     .main__addFundsConfirmItemText {
         font-size: 16px;
+    }
+
+    .main__transferBlock .main__nameAndInput {
+        margin-bottom: 18px;
     }
 }
 @media screen and (max-width: 1023px) {
