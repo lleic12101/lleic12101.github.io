@@ -904,6 +904,85 @@ input[type="number"]:focus {
 }
 /*ADD FUNDS END*/
 
+/*ADD FUNDS CONFIRMATION*/
+.main__addFundsBlock-confirm {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #7B839D;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 50px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__addFundsConfirmTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #191234;
+    margin-bottom: 20px;
+}
+.main__addFundsConfirmItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid rgba(25, 18, 52, 0.1);
+}
+.main__addFundsConfirmItem:last-child {
+    border-bottom: unset;
+}
+.main__addFundsConfirmItemText {
+    font-weight: normal;
+    line-height: 100%;
+    color: #191234;
+}
+.main__addFundsConfirmItemText-bold {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1B253C;
+}
+.main__addFundsConfirmItem .main__addFundsItemCircle {
+    margin-right: 0;
+}
+/*ADD FUNDS CONFIRMATION END*/
+
+/*STATUS*/
+.main__status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #28D24E;
+    border-radius: 2px;
+    padding: 2px 4px;
+    height: 20px;
+}
+.main__status-uncompleted {
+    background: #ED1019;
+}
+.main__status-processed {
+    background: #FFD600;
+}
+.main__status-canceled {
+    background: #C4C4C4;
+}
+.main__status-other {
+    background: #FF8700;
+}
+.main__statusIcon {
+    margin-right: 3px;
+}
+.main__statusText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+/*STATUS END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
@@ -1224,6 +1303,25 @@ input[type="number"]:focus {
     }
     .main__decor {
         display: none;
+    }
+    .main__contentTitle {
+        font-size: 20px;
+    }
+
+    .main__addFundsBlock-confirm {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px 15px 5px 15px;
+    }
+    .main__addFundsConfirmItem {
+        height: 60px;
+    }
+    .main__addFundsConfirmTitle {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .main__addFundsConfirmItemText {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 1023px) {
