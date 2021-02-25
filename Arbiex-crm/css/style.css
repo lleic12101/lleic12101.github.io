@@ -1713,6 +1713,53 @@ input[type="number"]:focus {
 }
 /*SETTINGS END*/
 
+/*POPUP*/
+.main__contentPopUp {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.main__contentPopUp-active {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+.main__contentPopUpMsg {
+    width: 350px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 2px solid #28D24E;
+    border-left: 10px solid #28D24E;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.main__contentPopUpMsg-red {
+    border: 2px solid #ED1019;
+    border-left: 10px solid #ED1019;
+}
+.main__contentPopUpMsgText {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #28D24E;
+}
+.main__contentPopUpMsg-red .main__contentPopUpMsgText {
+    color: #ED1019;
+}
+/*POPUP END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {

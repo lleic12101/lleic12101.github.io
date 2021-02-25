@@ -97,3 +97,8 @@ $('.main__settingsBtn').click(function () {
     $('.main__settingsTab').removeClass("main__settingsTab-active");
     $("#" + id).addClass("main__settingsTab-active");
 });
+
+//popud remove
+$('.main__contentPopUp-active').click(function () {
+    $(this).removeClass('main__contentPopUp-active');
+});
