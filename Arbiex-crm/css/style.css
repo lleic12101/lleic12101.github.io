@@ -287,11 +287,11 @@ body {
 
 .main__nameAndInputFooterInput-textarea {
     padding: 15px 24px 10px 24px;
-    min-height: 159px;
+    min-height: 112px;
     resize: none;
 }
 .main__nameAndInput-textarea .main__nameAndInputFooter {
-    height: auto;
+    height: 100%;
     padding: 1px 0;
 }
 
@@ -1011,6 +1011,27 @@ input[type="number"]:focus {
 }
 /*E-WALLETS END*/
 
+/*TICKETS*/
+.main__ticketsBlock {
+    max-width: 465px;
+    width: 100%;
+}
+.main__ticketsBlock .main__crmBtn {
+    width: 100%;
+}
+.main__contentTitleBtn {
+    width: 180px;
+    height: 50px;
+    background: #1B253C;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #46DDCF;
+}
+/*TICKETS END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
@@ -1375,6 +1396,14 @@ input[type="number"]:focus {
     }
     .main__crmBtn {
         font-size: 18px;
+    }
+
+    .main__contentTitleBtn {
+        max-width: 465px;
+        width: 100%;
+        margin: 5px 0 10px;
+        box-shadow: unset;
+        border-radius: 8px;
     }
 }
 @media screen and (max-width: 1023px) {
