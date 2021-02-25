@@ -72,3 +72,16 @@ $('.main__depositItem').click(function () {
     $('.main__depositItem').removeClass('main__depositItem-active');
     $(this).addClass('main__depositItem-active');
 });
+
+//knob
+if ($('*').is('.dial')) {
+    $(".dial").knob({
+        width: 170,
+        height: 170,
+        fgColor: "#1B253C",
+        inputColor: "#FFFFFF",
+        lineCap: "round",
+        thickness: .14,
+        bgColor: "rgba(123, 131, 157, 0.6)",
+    });
+}

@@ -1370,7 +1370,7 @@ input[type="number"]:focus {
 }
 /*TEAM END*/
 
-/*DEPOSITS*/
+/*DEPOSIT*/
 .main__content-deposit {
     flex-direction: column;
 }
@@ -1456,6 +1456,128 @@ input[type="number"]:focus {
     font-weight: 600;
     line-height: 27px;
     color: #19233B;
+}
+/*DEPOSIT END*/
+
+/*DEPOSITS*/
+.main__depositsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__depositsItem {
+    width: 100%;
+    background: #FFFFFF url(../img/home/bg-lines3.png) no-repeat;
+    background-position: right bottom;
+    border-radius: 5px;
+    padding: 40px 50px 50px 40px;
+    border: 1px solid #7B839D;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__depositsItemText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #7B839D;
+    margin-bottom: 30px;
+}
+.main__depositsItemText:last-child {
+    margin-bottom: 0;
+}
+.main__depositsItemText span {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: right;
+    color: #1B253C;
+}
+.main__depositsItemText .main__status {
+    margin-left: 10px;
+}
+.main__depositsItemText-big {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__depositsItemText-big span {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1B253C;
+    margin-left: 0;
+    margin-top: 10px;
+}
+.main__depositsItemText-big span span {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #1B253C;
+    margin-left: 0;
+}
+.main__depositsItemText-bold {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__depositsItemText-bold:first-child {
+    margin-bottom: 47px;
+}
+.main__depositsItemText-bold span {
+    margin-left: 0;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: #1B253C;
+    margin-top: 10px;
+}
+.main__depositsItemText-bold span span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #1B253C;
+    margin-left: 0;
+}
+
+.main__depositsItemColumn-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__depositsItemCircleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.main__depositsItemCircleText {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: #1B253C;
+    position: absolute;
+}
+.main__depositsItemCircleText span {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main__depositsItemCircleBlockText {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #7B839D;
+    max-width: 128px;
 }
 /*DEPOSITS END*/
 
@@ -1922,6 +2044,28 @@ input[type="number"]:focus {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .main__depositsItem {
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 465px;
+        width: 100%;
+        padding: 15px;
+    }
+    .main__depositsItemText-bold:first-child {
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    .main__depositsItemText {
+        margin-bottom: 15px;
+    }
+    .main__depositsItemColumn {
+        max-width: 100%;
+        width: 100%;
+    }
+    .main__depositsItemColumn:first-child {
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 720px) {
