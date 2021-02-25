@@ -1265,6 +1265,7 @@ input[type="number"]:focus {
     width: 229px;
     margin-right: 0;
     margin-top: -19px;
+    cursor: pointer;
 }
 .main__nameAndInput-team .main__nameAndInputFooterInput {
     font-weight: normal;
@@ -1273,6 +1274,7 @@ input[type="number"]:focus {
     display: flex;
     color: #1B253C;
     height: 56px;
+    cursor: pointer;
 }
 .main__nameAndInput-team .main__nameAndInputHeaderName {
     top: 22.5px;
