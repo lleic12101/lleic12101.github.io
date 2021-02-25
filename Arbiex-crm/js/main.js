@@ -85,3 +85,15 @@ if ($('*').is('.dial')) {
         bgColor: "rgba(123, 131, 157, 0.6)",
     });
 }
+
+//settings
+$('.main__settingsBtn').click(function () {
+    $('.main__settingsBtn').removeClass('main__settingsBtn-active');
+    $(this).addClass('main__settingsBtn-active');
+
+    var id = $(this).attr("id");
+    id = id.substr(0, id.length - 3);
+
+    $('.main__settingsTab').removeClass("main__settingsTab-active");
+    $("#" + id).addClass("main__settingsTab-active");
+});

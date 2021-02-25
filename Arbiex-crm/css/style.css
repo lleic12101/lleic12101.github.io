@@ -253,7 +253,7 @@ body {
     opacity: 0;
     transition: .3s;
     position: absolute;
-    right: 15px;
+    right: 25px;
 }
 .main__nameAndInputHeaderAlert {
     position: absolute;
@@ -1581,6 +1581,138 @@ input[type="number"]:focus {
 }
 /*DEPOSITS END*/
 
+/*SETTINGS*/
+.main__content-settings {
+    flex-direction: column;
+}
+.main__settingsBtns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main__settingsBtn {
+    width: 230px;
+    height: 57px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(27, 37, 60, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 40px;
+    transition: .3s;
+}
+.main__settingsBtnText {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #7B839D;
+}
+.main__settingsBtn:hover .main__settingsBtnText,
+.main__settingsBtn-active .main__settingsBtnText {
+    color: #46DDCF;
+}
+.main__settingsBtn:hover,
+.main__settingsBtn-active {
+    background: #1B253C;
+}
+.main__settingsTabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main__settingsTab {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main__settingsTab-active {
+    display: flex;
+}
+.main__settingsTabBtn {
+    width: 170px;
+    height: 56px;
+    background: #1B253C;
+    border: 1px solid #1B253C;
+    border-radius: 8px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.main__settingsBlock {
+    width: 465px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #7B839D;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.main__settingsBlockTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1B253C;
+    margin-bottom: 20px;
+}
+.main__settingsBlock .main__nameAndInputFooterAlert {
+    opacity: 1;
+}
+.main__settingsBlock .main__nameAndInput-addFunds {
+    margin-bottom: 25px;
+    width: 100%;
+}
+.main__settingsBlock .main__nameAndInputFooterInput {
+    font-size: 13px;
+    padding-right: 55px;
+}
+.main__settingsBlock .main__nameAndInput-addFunds:last-child {
+    margin-bottom: 0;
+}
+.main__settingsRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.main__settingsRow .main__settingsBlock {
+    max-width: 465px;
+    width: 100%;
+}
+.main__settingsRow .main__settingsBlock:first-child {
+    margin-right: 40px;
+}
+.main__settingsBlockText {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #1B253C;
+    margin-bottom: 20px;
+}
+.main__settingsBlockText span {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #1B253C;
+    margin-left: 10px;
+}
+.main__settingsBlock .main__nameAndInput-time {
+    margin-bottom: 20px;
+}
+.main__settingsBlock .main__checkboxBlock {
+    margin-bottom: 24px;
+}
+.main__settingsBlock .main__checkboxBlock .custom-checkbox + label {
+    margin-top: 0;
+}
+.main__settingsBlock .main__checkboxBlock:last-child {
+    margin-bottom: 0;
+}
+/*SETTINGS END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
@@ -2014,6 +2146,36 @@ input[type="number"]:focus {
         margin-top: 10px;
         margin-right: 0;
     }
+
+    .main__settingsRow {
+        flex-direction: column;
+    }
+    .main__settingsRow .main__settingsBlock:first-child {
+        margin-bottom: 15px;
+    }
+    .main__settingsBtns {
+        margin-bottom: 20px;
+    }
+    .main__settingsTabBtn {
+        margin-top: 15px;
+    }
+    .main__settingsBlock {
+        padding: 15px;
+        max-width: 465px;
+        width: 100%;
+    }
+    .main__settingsBlockTitle {
+        margin-bottom: 10px;
+    }
+    .main__settingsBlock .main__checkboxBlock {
+        margin-bottom: 13px;
+    }
+    .main__settingsBlock .main__checkboxBlock:last-child {
+        margin-bottom: 0;
+    }
+    .main__settingsBlock .main__nameAndInput-addFunds {
+        margin-bottom: 15px;
+    }
 }
 @media screen and (max-width: 1023px) {
     .footer__right {
@@ -2066,6 +2228,22 @@ input[type="number"]:focus {
     }
     .main__depositsItemColumn:first-child {
         margin-top: 20px;
+    }
+    .main__depositsBlock .main__tableBtns {
+        margin-top: 0;
+    }
+
+    .main__settingsBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__settingsBtn {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .main__settingsBtn:last-child {
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 720px) {
