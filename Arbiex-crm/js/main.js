@@ -52,3 +52,17 @@ $('.main__teamInfoBtn').click(function () {
     $('.main__teamInfoBtn').removeClass('main__teamInfoBtn-active');
     $(this).addClass('main__teamInfoBtn-active');
 });
+
+//copy to clipboard
+$('.main__nameAndInput-team').click(function () {
+    copyToClipboard();
+});
+function copyToClipboard() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($('.main__nameAndInputFooterInput').val()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(".main__referralInputCopied").text("copied");
+}
