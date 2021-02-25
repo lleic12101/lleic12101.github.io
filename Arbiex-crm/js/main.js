@@ -46,3 +46,9 @@ $('.main__addFundsItem').click(function () {
     $('.main__addFundsItem').removeClass('main__addFundsItem-active');
     $(this).addClass('main__addFundsItem-active');
 });
+
+//team btns
+$('.main__teamInfoBtn').click(function () {
+    $('.main__teamInfoBtn').removeClass('main__teamInfoBtn-active');
+    $(this).addClass('main__teamInfoBtn-active');
+});

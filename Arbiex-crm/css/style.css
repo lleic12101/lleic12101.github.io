@@ -1196,6 +1196,7 @@ input[type="number"]:focus {
     padding: 20px 30px;
     transition: .3s;
     border-radius: 5px;
+    min-height: 86px;
 }
 .main__tableContentRow:hover {
     background: #FAFAFA;
@@ -1254,13 +1255,118 @@ input[type="number"]:focus {
 .main__tableItem-id {
     width: 65px;
 }
-.main__tableItem-id.main__tableContentItem {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
-}
 /*OPERATIONS END*/
+
+/*TEAM*/
+.main__contentTitleBlock-team {
+    height: 56px;
+}
+.main__nameAndInput-team {
+    width: 229px;
+    margin-right: 0;
+    margin-top: -19px;
+}
+.main__nameAndInput-team .main__nameAndInputFooterInput {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    color: #1B253C;
+    height: 56px;
+}
+.main__nameAndInput-team .main__nameAndInputHeaderName {
+    top: 22.5px;
+}
+
+.main__tableItem-email {
+    width: 200px;
+}
+.main__tableItem-teamDate {
+    width: 105px;
+}
+.main__tableItem-referralBonus {
+    width: 120px;
+}
+.main__tableItem-referralBonus.main__tableContentItem {
+    color: #28D24E;
+}
+.main__tableItem-referralFunds {
+    width: 120px;
+}
+
+.main__teamInfoBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.main__teamInfoTextBlocks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__teamInfoTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+.main__teamInfoTextBlock:last-child {
+    margin-right: 0;
+}
+.main__teamInfoText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #7B839D;
+}
+.main__teamInfoText-bold {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #1B253C;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+.main__teamInfoText-bold span {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.main__teamInfoBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__teamInfoBtn {
+    width: 140px;
+    height: 57px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(27, 37, 60, 0.1);
+    border-radius: 15px;
+    font-weight: normal;
+    line-height: 27px;
+    color: #7B839D;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.main__teamInfoBtn-active,
+.main__teamInfoBtn:hover {
+    background: #1B253C;
+    box-shadow: 0px 10px 10px rgba(27, 37, 60, 0.1);
+    border-radius: 15px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #46DDCF;
+}
+/*TEAM END*/
 
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
@@ -1655,6 +1761,11 @@ input[type="number"]:focus {
     .main__ticketsChatFooterTextarea {
         margin-bottom: 15px;
     }
+
+    .main__nameAndInput-team {
+        max-width: 465px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1023px) {
     .footer__right {
@@ -1666,6 +1777,25 @@ input[type="number"]:focus {
     }
     .footer__rightItemsColumn:first-child {
         margin-right: 100px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .main__teamInfoBlock {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main__teamInfoTextBlock {
+        margin-right: 50px;
+    }
+    .main__teamInfoBtns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .main__teamInfoBtn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 720px) {
@@ -1694,6 +1824,15 @@ input[type="number"]:focus {
     }
     .footer__logoLink {
         margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .main__teamInfoTextBlocks {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main__teamInfoTextBlock {
+        margin-right: 0;
     }
 }
 /*MEDIA END*/
