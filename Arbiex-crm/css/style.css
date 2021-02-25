@@ -1116,6 +1116,114 @@ input[type="number"]:focus {
 }
 /*TICKETS-CHAT END*/
 
+/*TICKETS LIST*/
+.main__tableBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__tableBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.main__tableBtn {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #777F99;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #777F99;
+    text-decoration: none;
+    transition: .3s;
+    margin: 0 5px;
+}
+.main__tableBtn-active,
+.main__tableBtn:hover {
+    background: #1B253C;
+    color: #FFFFFF;
+}
+.main__tableBtn-left path,
+.main__tableBtn-right path {
+    stroke: #777F99;
+    transition: .3s;
+}
+.main__tableBtn-left:hover path,
+.main__tableBtn-right:hover path {
+    stroke: #FFFFFF;
+}
+
+.main__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.main__tableHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFAFA;
+    border-radius: 5px;
+    padding: 22px 30px;
+    min-width: 970px;
+}
+.main__tableHeaderItem {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main__tableContent {
+    min-width: 970px;
+}
+.main__tableContentRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    transition: .3s;
+    border-radius: 5px;
+}
+.main__tableContentRow:hover {
+    background: #FAFAFA;
+}
+.main__tableContentItem {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B253C;
+}
+
+.main__tableItem-date {
+    width: 110px;
+}
+.main__tableItem-subject {
+    width: 320px;
+}
+.main__tableItem-answer {
+    width: 80px;
+}
+.main__tableItem-status {
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/*TICKETS LIST END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
