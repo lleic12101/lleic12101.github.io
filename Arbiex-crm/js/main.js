@@ -66,3 +66,9 @@ function copyToClipboard() {
 
     $(".main__referralInputCopied").text("copied");
 }
+
+//deposit select
+$('.main__depositItem').click(function () {
+    $('.main__depositItem').removeClass('main__depositItem-active');
+    $(this).addClass('main__depositItem-active');
+});
