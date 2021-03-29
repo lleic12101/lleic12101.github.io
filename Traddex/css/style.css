@@ -119,40 +119,67 @@ body {
 /*BUTTON END*/
 
 /*BURGER MENU*/
-.ham {
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+h1 {
+    text-align: center;
+}
+.hamburger {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
     display: none;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
-.hamRotate.active {
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+.bar1 {
+    top: 0;
+}
+.bar2,
+.bar3 {
+    top: 13px;
+}
+.bar3 {
+    right: 0;
+}
+.bar4 {
+    bottom: 0;
+}
+.checkbox1:checked + label > .hamburger1 > .bar1 {
     transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
 }
-.hamRotate180.active {
-    transform: rotate(180deg);
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
 }
-.line {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: #19233B;;
-    stroke-width: 5.5;
-    stroke-linecap: round;
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
 }
-.ham4 .top {
-    stroke-dasharray: 40 121;
-}
-.ham4 .bottom {
-    stroke-dasharray: 40 121;
-}
-.ham4.active .top {
-    stroke-dashoffset: -68px;
-}
-.ham4.active .bottom {
-    stroke-dashoffset: -68px;
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
 }
 
 .header__closeableMask {
@@ -1168,9 +1195,11 @@ input[type="number"]:focus {
         padding: 0 15px;
         max-width: 100%;
     }
-    .ham {
+    .hamburger {
         display: block;
-        margin: -15px;
+    }
+    .hamburger .bar {
+        background: black;
     }
     .header {
         position: fixed;
