@@ -71,8 +71,8 @@
 <aside class="aside">
     <div class="aside__row">
         <a class="aside__item aside__item-active">
-            <img src="img/icons/fire.svg" alt="icon" class="aside__itemIcon"/>
-            <p class="aside__itemText">Реквизиты</p>
+            <img src="img/icons/img.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">История операций</p>
         </a>
         <img src="img/icons/lang-drop.svg" alt="icon" class="aside__rowIcon"/>
     </div>
@@ -93,7 +93,7 @@
             <img src="img/icons/pulse.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">Депозиты</p>
         </a>
-        <a class="aside__item">
+        <a class="aside__item aside__item-active">
             <img src="img/icons/img.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">История операций</p>
         </a>
@@ -101,7 +101,7 @@
             <img src="img/icons/calendar.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">Команда</p>
         </a>
-        <a class="aside__item aside__item-active">
+        <a class="aside__item">
             <img src="img/icons/fire.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">Реквизиты</p>
         </a>
@@ -116,64 +116,43 @@
     </div>
 </aside>
 <main class="main">
-    <div class="main-header">
+    <div class="main-header main-header__center">
         <div class="wrapper">
-            <p class="main__title">Платежные реквизиты</p>
+            <p class="main__title main__title-margin">История</p>
         </div>
     </div>
     <div class="main-content">
         <div class="wrapper">
-            <form class="main-requisites">
-                <div class="main-requisites__item">
-                    <div class="main-requisites__itemImgBlock">
-                        <img src="img/requisites/pm.png" alt="icon" class="main-requisites__itemImg"/>
-                    </div>
-                    <div class="main-requisites__itemInput">
-                        <input type="text" class="main__nameAndInputFooterInput"/>
-                    </div>
+            <div class="main-history__info">
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Номер операции:</p>
+                    <p class="main-history__infoItemText-big">1232189</p>
                 </div>
-                <div class="main-requisites__item">
-                    <div class="main-requisites__itemImgBlock">
-                        <img src="img/requisites/btc.png" alt="icon" class="main-requisites__itemImg"/>
-                    </div>
-                    <div class="main-requisites__itemInput">
-                        <input type="text" class="main__nameAndInputFooterInput"/>
-                    </div>
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Статус:</p>
+                    <p class="main-history__infoItemText-green">Выполнена</p>
                 </div>
-                <div class="main-requisites__item">
-                    <div class="main-requisites__itemImgBlock">
-                        <img src="img/requisites/eth.png" alt="icon" class="main-requisites__itemImg"/>
-                    </div>
-                    <div class="main-requisites__itemInput">
-                        <input type="text" class="main__nameAndInputFooterInput"/>
-                    </div>
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Дата:</p>
+                    <p class="main-history__infoItemText"><span>28 января 2021, 18:02</span></p>
                 </div>
-                <div class="main-requisites__item">
-                    <div class="main-requisites__itemImgBlock">
-                        <img src="img/requisites/bch.png" alt="icon" class="main-requisites__itemImg"/>
-                    </div>
-                    <div class="main-requisites__itemInput">
-                        <input type="text" class="main__nameAndInputFooterInput"/>
-                    </div>
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Платежная система:</p>
+                    <p class="main-history__infoItemText"><span>PerfectMoney</span></p>
                 </div>
-                <div class="main-requisites__item">
-                    <div class="main-requisites__itemImgBlock">
-                        <img src="img/requisites/ltc.png" alt="icon" class="main-requisites__itemImg"/>
-                    </div>
-                    <div class="main-requisites__itemInput">
-                        <input type="text" class="main__nameAndInputFooterInput"/>
-                    </div>
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Сумма:</p>
+                    <p class="main-history__infoItemText"><span>200.00</span> USD</p>
                 </div>
-                <div class="main-requisites__item">
-                    <div class="main-requisites__itemImgBlock">
-                        <img src="img/requisites/dc.png" alt="icon" class="main-requisites__itemImg"/>
-                    </div>
-                    <div class="main-requisites__itemInput">
-                        <input type="text" class="main__nameAndInputFooterInput"/>
-                    </div>
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Изменено:</p>
+                    <p class="main-history__infoItemText"><span>28 января 2021, 18:02</span></p>
                 </div>
-                <button class="btn">Сохранить</button>
-            </form>
+                <div class="main-history__infoItem">
+                    <p class="main-history__infoItemText">Отработано:</p>
+                    <p class="main-history__infoItemText"><span>28 января 2021, 18:02</span></p>
+                </div>
+            </div>
         </div>
     </div>
 </main>

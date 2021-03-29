@@ -1057,13 +1057,107 @@ input[type="number"]:focus {
 
 /*REQUISITES*/
 .main-header {
+    width: 100%;
+}
+.main-header .wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 96px;
+}
+.main-content {
     width: 100%;
 }
+.main-content .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 96px;
+}
+.main-requisites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px 30px 50px 50px;
+}
+.main-requisites__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main-requisites__itemImgBlock {
+    max-height: 40px;
+    min-width: 196px;
+}
+.main-requisites__itemInput {
+    margin-left: 50px;
+    width: 100%;
+    height: 64px;
+}
+.main-requisites .btn {
+    width: 266px;
+    height: 64px;
+    margin-top: 10px;
+}
 /*REQUISITES END*/
+
+/*HISTORY INFO*/
+.main__title-margin {
+    margin-bottom: 20px;
+}
+.main-header__center .wrapper {
+    justify-content: center;
+}
+.main-history__info {
+    width: 673px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 30px;
+}
+.main-history__infoItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main-history__infoItem:last-child {
+    margin-bottom: 0;
+}
+.main-history__infoItemText {
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+.main-history__infoItemText span {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.8);
+}
+.main-history__infoItemText-big {
+    font-weight: bold;
+    font-size: 46px;
+    letter-spacing: 7px;
+    color: #02A0FC;
+}
+.main-history__infoItemText-green {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    color: #34B53A;
+}
+/*HISTORY INFO END*/
 
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
@@ -1340,6 +1434,12 @@ input[type="number"]:focus {
         border-bottom: 3px solid #F5F5F9;
     }
 }
+@media screen and (max-width: 1180px) {
+    .main-header .wrapper,
+    .main-content .wrapper {
+        padding: 0 15px;
+    }
+}
 @media screen and (max-width: 1070px) {
     .main-settings {
         flex-wrap: wrap;
@@ -1424,12 +1524,52 @@ input[type="number"]:focus {
         font-size: 24px;
         margin: 20px 0 10px;
     }
+
+    .main-header .main__title {
+        margin: 15px 0 10px;
+    }
+    .main-requisites {
+        padding: 15px;
+    }
+    .main-requisites__item {
+        margin-bottom: 10px;
+    }
+    .main-requisites .btn {
+        margin-top: 5px;
+    }
+    .main-requisites__itemImgBlock {
+        min-width: 130px;
+    }
+    .main-requisites__itemImg {
+        width: 130px;
+    }
+    .main-requisites__itemInput {
+        margin-left: 20px;
+        height: 50px;
+    }
+
+    .main-header__center .wrapper {
+        justify-content: space-between;
+    }
+    .main-history__info {
+        width: 100%;
+        padding: 15px;
+    }
+    .main-history__infoItem {
+        margin-bottom: 15px;
+    }
 }
 @media screen and (max-width: 850px) {
 
 }
 @media screen and (max-width: 720px) {
-
+    .main-history__infoItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-history__infoItem {
+        margin-bottom: 20px;
+    }
 }
 @media screen and (max-width: 500px) {
     .main-reg__formColumn {
@@ -1451,6 +1591,20 @@ input[type="number"]:focus {
     .main-settings__columnWrapper {
         width: 100%;
         padding: 15px;
+    }
+
+    .main-requisites__itemImgBlock {
+        min-width: 100px;
+    }
+    .main-requisites__itemImg {
+        width: 100px;
+    }
+    .main-requisites .btn {
+        width: 100%;
+        height: 50px;
+    }
+    .main__title {
+        font-size: 20px;
     }
 }
 /*MEDIA END*/
