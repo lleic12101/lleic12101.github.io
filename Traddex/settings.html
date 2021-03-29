@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Traddex</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink header__logoLink-mobile">
+            <img src="img/logo.svg" alt="logo" class="header__logo"/>
+        </a>
+        <div class="header__navWrapper">
+            <a href="#!" class="header__logoLink">
+                <img src="img/logo.svg" alt="logo" class="header__logo"/>
+            </a>
+            <nav class="header__nav">
+                <a href="#!" class="header__navItem link-animation">Главная</a>
+                <a href="#!" class="header__navItem link-animation">О нас</a>
+                <a href="#!" class="header__navItem link-animation">Инвесторам</a>
+                <a href="#!" class="header__navItem link-animation">Faq</a>
+                <a href="#!" class="header__navItem link-animation">Контакты</a>
+            </nav>
+            <div class="header__account">
+                <div class="header__navLangBlock">
+                    <div class="header__navLangHeader">
+                        <img src="img/icons/ru.svg" alt="icon" class="header__navLangFlag"/>
+                        <p class="header__navLangText">Русский</p>
+                        <img src="img/icons/lang-drop.svg" alt="drop" class="header__navLangIcon"/>
+                    </div>
+                    <div class="header__navLangItems">
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Английский</a>
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Русский</a>
+                    </div>
+                </div>
+                <div class="header__accountBalance">
+                    <a href="#!" class="header__accountBtn">
+                        <img src="img/icons/plus.svg" alt="icon" class="header__accountBtnIcon"/>
+                    </a>
+                    <img src="img/icons/coins.svg" alt="icon" class="header__accountBalanceIcon"/>
+                    <p class="header__accountText">2023 $</p>
+                </div>
+                <div class="header__accountUser">
+                    <div class="header__accountUserCircle">
+                        <img src="img/icons/user.svg" alt="icon" class="header__accountUserIcon"/>
+                    </div>
+                    <div class="header__accountUserBlock">
+                        <div class="header__accountUserContent">
+                            <p class="header__accountUserText">Ilya_Yatselenko</p>
+                            <a href="#!" class="header__accountUserExit link-animation">Выход</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="56" onclick="this.classList.toggle('active')">
+            <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
+            <path
+                    class="line middle"
+                    d="m 70,50 h -40"/>
+            <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
+        </svg>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<aside class="aside">
+    <div class="aside__row">
+        <a class="aside__item aside__item-active">
+            <img src="img/icons/settings.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Настройки</p>
+        </a>
+        <img src="img/icons/lang-drop.svg" alt="icon" class="aside__rowIcon"/>
+    </div>
+    <div class="aside__items">
+        <a class="aside__item">
+            <img src="img/icons/user-menu.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Личный кабинет</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/coins.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Открыть депозит</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/cloud.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Вывести средства</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/pulse.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Депозиты</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/img.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">История операций</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/calendar.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Команда</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/fire.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Реквизиты</p>
+        </a>
+        <a class="aside__item">
+            <img src="img/icons/circle.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Тикеты</p>
+        </a>
+        <a class="aside__item aside__item-active">
+            <img src="img/icons/settings.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Настройки</p>
+        </a>
+    </div>
+</aside>
+<main class="main">
+    <div class="main-settings">
+        <div class="main-settings__column">
+            <p class="main__title">Профиль</p>
+            <form class="main-settings__columnWrapper">
+                <div class="main-settings__columnContent">
+                    <div class="main-settings__avatarBlock">
+                        <img src="img/avatar.png" alt="img" class="main-settings__avatarImg"/>
+                        <span class="main-settings__avatarStatus"></span>
+                    </div>
+                    <div class="main-settings__textBlock">
+                        <p class="main-settings__text">Ваш логин:</p>
+                        <p class="main-settings__text-bold">IlyaYatselenko</p>
+                    </div>
+                    <div class="main-settings__textBlock main-settings__textBlock-margin">
+                        <p class="main-settings__text">Ваш email:</p>
+                        <p class="main-settings__text-bold">yafoxfire@gmail.com</p>
+                    </div>
+                    <span class="main-settings__delimiter"></span>
+                    <a href="#!" class="btn btn-white">Изменить пароль</a>
+                    <a href="#!" class="btn btn-white">Изменить e-mail</a>
+                    <span class="main-settings__delimiter"></span>
+                </div>
+                <button class="btn">Реквизиты</button>
+            </form>
+        </div>
+        <div class="main-settings__column">
+            <p class="main__title">Личные данные</p>
+            <form class="main-settings__columnWrapper">
+                <div class="main-settings__columnContent">
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">ФИО</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Город</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Telegram</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <p class="main__nameAndInputHeaderName">Skype</p>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Сохранить</button>
+            </form>
+        </div>
+        <div class="main-settings__column">
+            <p class="main__title">Реквизиты</p>
+            <form class="main-settings__columnWrapper">
+                <div class="main-settings__columnContent">
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <img src="img/requisites/pm.png" alt="icon" class="main__nameAndInputHeaderImg"/>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <img src="img/requisites/btc.png" alt="icon" class="main__nameAndInputHeaderImg"/>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <img src="img/requisites/eth.png" alt="icon" class="main__nameAndInputHeaderImg"/>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <img src="img/requisites/bch.png" alt="icon"
+                                 class="main__nameAndInputHeaderImg main__nameAndInputHeaderImg-bch"/>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <img src="img/requisites/ltc.png" alt="icon" class="main__nameAndInputHeaderImg"/>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInput">
+                        <div class="main__nameAndInputHeader">
+                            <img src="img/requisites/dc.png" alt="icon" class="main__nameAndInputHeaderImg"/>
+                            <div class="main__nameAndInputHeaderAlert">
+                                <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                            </div>
+                        </div>
+                        <div class="main__nameAndInputFooter">
+                            <input type="text" class="main__nameAndInputFooterInput" required/>
+                            <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</main>
+<div class="aside-mask"></div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -15,13 +15,12 @@ function resizeEmptySpace() {
     $(".main").css("height", "auto");
 
     var header = $(".aside").innerHeight();
-    var footer = $(".footer").innerHeight();
     var windowHeight = $('body').height();
     var main = $(".main").innerHeight();
 
-    if ((header + footer + main) < windowHeight) {
+    if ((header + main) < windowHeight) {
         if ($(window).width() < 1400) {
-            $(".main").css("height", (windowHeight - (header + footer)) + 70);
+            $(".main").css("height", (windowHeight - header) + 60);
         }
     } else {
         $(".main").css("height", "auto");
@@ -40,6 +39,19 @@ $('.header__closeableMask').click(function () {
     $('.header__navWrapper').removeClass("header__navWrapper-active");
     $("html, body").removeClass("body-fixed");
 });
+
+//menu
+$('.aside__row').click(function () {
+    $('.aside__items').toggle();
+    $('.aside__rowIcon').toggleClass('aside__rowIcon-active');
+});
+
+//withdrawal
+$('.main-withdrawal__item').click(function () {
+    $('.main-withdrawal__item').removeClass('main-withdrawal__item-active');
+    $(this).addClass('main-withdrawal__item-active');
+});
+
 
 //addFunds
 $('.main__addFundsItem').click(function () {

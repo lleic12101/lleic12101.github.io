@@ -73,13 +73,13 @@
 <aside class="aside">
     <div class="aside__row">
         <a class="aside__item aside__item-active">
-            <img src="img/icons/user-menu.svg" alt="icon" class="aside__itemIcon"/>
-            <p class="aside__itemText">Личный кабинет</p>
+            <img src="img/icons/settings.svg" alt="icon" class="aside__itemIcon"/>
+            <p class="aside__itemText">Настройки</p>
         </a>
         <img src="img/icons/lang-drop.svg" alt="icon" class="aside__rowIcon"/>
     </div>
     <div class="aside__items">
-        <a class="aside__item aside__item-active">
+        <a class="aside__item">
             <img src="img/icons/user-menu.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">Личный кабинет</p>
         </a>
@@ -111,14 +111,46 @@
             <img src="img/icons/circle.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">Тикеты</p>
         </a>
-        <a class="aside__item">
+        <a class="aside__item aside__item-active">
             <img src="img/icons/settings.svg" alt="icon" class="aside__itemIcon"/>
             <p class="aside__itemText">Настройки</p>
         </a>
     </div>
 </aside>
 <main class="main">
+    <div class="main-reg main-reg__login main-reg__margin main-reg__inputCenter">
+        <p class="main-reg__title">Смена <span>e-mail</span></p>
+        <form action="#!" class="main-reg__form">
+            <div class="main-reg__formColumn main-reg__formColumn-center">
+                <div class="main__nameAndInput">
+                    <div class="main__nameAndInputHeader">
+                        <p class="main__nameAndInputHeaderName">Пароль*</p>
+                        <div class="main__nameAndInputHeaderAlert">
+                            <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInputFooter">
+                        <input type="password" class="main__nameAndInputFooterInput" required/>
+                        <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                    </div>
+                </div>
+                <div class="main__nameAndInput">
+                    <div class="main__nameAndInputHeader">
+                        <p class="main__nameAndInputHeaderName">Новый e-mail*</p>
+                        <div class="main__nameAndInputHeaderAlert">
+                            <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                        </div>
+                    </div>
+                    <div class="main__nameAndInputFooter">
+                        <input type="text" class="main__nameAndInputFooterInput" required/>
+                        <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                    </div>
+                </div>
+                <button class="btn">Сменить</button>
+            </div>
+        </form>
 
+    </div>
 </main>
 <div class="aside-mask"></div>
 <script src="js/jquery-3.4.1.min.js"></script>
