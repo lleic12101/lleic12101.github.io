@@ -52,21 +52,14 @@ $('.main-withdrawal__item').click(function () {
     $(this).addClass('main-withdrawal__item-active');
 });
 
-
-//addFunds
-$('.main__addFundsItem').click(function () {
-    $('.main__addFundsItem').removeClass('main__addFundsItem-active');
-    $(this).addClass('main__addFundsItem-active');
-});
-
-//team btns
-$('.main__teamInfoBtn').click(function () {
-    $('.main__teamInfoBtn').removeClass('main__teamInfoBtn-active');
-    $(this).addClass('main__teamInfoBtn-active');
+//deposit
+$('.main-tariffs__item').click(function () {
+    $('.main-tariffs__item').removeClass('main-tariffs__item-active');
+    $(this).addClass('main-tariffs__item-active');
 });
 
 //copy to clipboard
-$('.main__nameAndInput-team').click(function () {
+$('.main-header__copy').click(function () {
     copyToClipboard();
 });
 function copyToClipboard() {
@@ -76,23 +69,11 @@ function copyToClipboard() {
     document.execCommand("copy");
     $temp.remove();
 
-    $(".main__referralInputCopied").text("copied");
+    $(".main__nameAndInputCopied").text("copied");
 }
 
 //deposit select
-$('.main__depositItem').click(function () {
-    $('.main__depositItem').removeClass('main__depositItem-active');
-    $(this).addClass('main__depositItem-active');
-});
-
-//settings
-$('.main__settingsBtn').click(function () {
-    $('.main__settingsBtn').removeClass('main__settingsBtn-active');
-    $(this).addClass('main__settingsBtn-active');
-
-    var id = $(this).attr("id");
-    id = id.substr(0, id.length - 3);
-
-    $('.main__settingsTab').removeClass("main__settingsTab-active");
-    $("#" + id).addClass("main__settingsTab-active");
+$('.main-team__btns .btn').click(function () {
+    $('.main-team__btns .btn').removeClass('btn-white__active');
+    $(this).addClass('btn-white__active');
 });
