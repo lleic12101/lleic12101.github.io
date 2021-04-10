@@ -1,4 +1,19 @@
-﻿//scrollup btn
+﻿//scroll to
+(function () {
+    link = $('.js-scroll-link');
+    link.on('click', function () {
+        var id = $(this).attr('href');
+        var top = $(id).offset().top;
+        if (($(window).width() <= 1537 && $(window).width() >= 1459) ||
+            ($(window).width() <= 1457 && $(window).width() >= 1025)) {
+            top -= (top / 100) * 20;
+            console.log(1);
+        }
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+})();
+
+//scrollup btn
 $('.scrollup').click(function () {
     $("html, body").animate({
         scrollTop: 0
