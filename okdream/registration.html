@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <title>Ok, dream!</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<main class="main main-auth">
+    <div class="main-auth__imgBlock">
+        <img src="img/auth/logo.png" alt="img" class="main-auth__logo"/>
+    </div>
+    <div class="main-auth__formBlock">
+        <form action="#!" class="main-auth__form">
+            <h1 class="main-auth__title">Регистрация</h1>
+            <div class="main-auth__inviter">
+                <p class="main-auth__inviterText">Вас приглашает:</p>
+                <div class="main-auth__inviterBlock">
+                    <div class="main-auth__inviterTextBlock">
+                        <p class="main-auth__inviterName">vicael</p>
+                        <p class="main-auth__inviterNumber">+380665789032</p>
+                    </div>
+                    <div class="main-auth__inviterAvatar">
+                        <img src="img/auth/avatar.png" alt="img" class="main-auth__inviterAvatarImg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="main-input__block">
+                <input type="text" class="main-input__input" placeholder="Введите логин..."/>
+                <p class="main-input__error">При вводе используются только латинские буквы</p>
+            </div>
+            <div class="main-input__block">
+                <input type="email" class="main-input__input" placeholder="Введите e-mail..."/>
+                <p class="main-input__error">При вводе используются только латинские буквы</p>
+            </div>
+            <div class="main-input__block">
+                <input type="password" class="main-input__input" placeholder="Введите пароль..."/>
+                <p class="main-input__error">При вводе используются только латинские буквы</p>
+            </div>
+            <div class="main__checkboxBlock">
+                <input type="checkbox" class="custom-checkbox" id="policy" name="policy" value="yes" required>
+                <label for="policy">Принимаю <a href="#!">пользовательское соглашение</a></label>
+            </div>
+            <button class="button main-auth__button">Зарегистрироваться</button>
+            <p class="main-auth__link">
+                Уже есть аккаунт? <a href="#!">Войти</a>
+            </p>
+        </form>
+    </div>
+</main>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

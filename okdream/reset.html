@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <title>Ok, dream!</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<main class="main main-auth">
+    <div class="main-auth__imgBlock">
+        <img src="img/auth/logo.png" alt="img" class="main-auth__logo"/>
+    </div>
+    <div class="main-auth__formBlock">
+        <form action="#!" class="main-auth__form main-auth__form-reset">
+            <h1 class="main-auth__title">Восстановление пароля</h1>
+            <p class="main-auth__text">
+                Ввведите ваш e-mail. Вы получите письмо со ссылкой для создания нового пароля.
+            </p>
+            <div class="main-input__block">
+                <input type="email" class="main-input__input" placeholder="Введите e-mail..."/>
+                <p class="main-input__error">При вводе используются только латинские буквы</p>
+            </div>
+            <button class="button main-auth__button">Получить новый пароль</button>
+            <p class="main-auth__link">
+                <a href="#!">Вернуться к авторизации</a>
+            </p>
+        </form>
+    </div>
+</main>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

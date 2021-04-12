@@ -1018,6 +1018,240 @@ html, body {
 }
 /*FOOTER END*/
 
+/*AUTH*/
+.main-auth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.main-auth__imgBlock {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: url(../img/auth/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-auth__logo {
+
+}
+.main-auth__formBlock {
+    width: 42%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-auth__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    max-width: 400px;
+    width: 100%;
+}
+.main-auth__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    color: #273A31;
+    margin-bottom: 60px;
+}
+.main-auth__button {
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+.main-auth__link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+    margin-top: 50px;
+}
+.main-auth__link a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #273A31;
+}
+.main-auth__link a:hover {
+    text-decoration: none;
+}
+.main-auth__forgot {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #273A31;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.main-auth__forgot:hover {
+    text-decoration: none;
+}
+.main-auth__form .main-input__block {
+    width: 100%;
+}
+.main-auth__form .main-input__input {
+    height: 50px;
+    padding-left: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+}
+/*AUTH END*/
+
+/*RESET*/
+.main-auth__form-reset .main-auth__title {
+    font-size: 30px;
+    line-height: 140%;
+}
+.main-auth__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+    margin-bottom: 30px;
+}
+.main-auth__form-reset .main-auth__button {
+    margin-top: 10px;
+}
+/*RESET END*/
+
+/*CHECKBOX*/
+.main__checkboxBlock {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+}
+.custom-checkbox + label a {
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #273A31;
+}
+.custom-checkbox + label a:hover {
+    text-decoration: none;
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-bottom: 2px;
+
+    border: 1px solid #12AF65;
+    border-radius: 2px;
+}
+.custom-checkbox:checked + label::after {
+    content: '';
+    display: block;
+    background: #12AF65;
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    position: absolute;
+    left: 3px;
+    bottom: 7px;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+    background-color: #FFFFFF;
+}
+/*CHECKBOX END*/
+
+/*REGISTRATION*/
+.main-auth__inviter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.main-auth__inviterText {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+    margin-bottom: 13px;
+}
+.main-auth__inviterBlock {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #6A7DE0;
+    border-radius: 2px;
+    padding: 0 50px;
+}
+.main-auth__inviterTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-auth__inviterName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+.main-auth__inviterNumber {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+.main-auth__inviterAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.main-auth__inviterAvatarImg {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #FFFFFF;
+}
+/*REGISTRATION END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
@@ -1063,6 +1297,9 @@ html, body {
     html, body {
         min-height: 125vh;
     }
+    .main-auth {
+        height: 125vh;
+    }
 }
 @media screen and (max-width: 1459px) {
     html {
@@ -1079,6 +1316,9 @@ html, body {
     }
     html, body {
         min-height: 100vh;
+    }
+    .main-auth {
+        height: 100vh;
     }
 }
 @media screen and (max-width: 1457px) {
@@ -1097,6 +1337,9 @@ html, body {
     html, body {
         min-height: 125vh;
     }
+    .main-auth {
+        height: 125vh;
+    }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1025px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (                min-resolution: 192dpi) and ( max-width: 1025px), only screen and (                min-resolution: 2dppx) and ( max-width: 1025px) {
     html {
@@ -1113,6 +1356,9 @@ html, body {
     }
     html, body {
         min-height: 100vh;
+    }
+    .main-auth {
+        height: 100vh;
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1020px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1020px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1020px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1020px), only screen and (                min-resolution: 192dpi) and ( max-width: 1020px), only screen and (                min-resolution: 2dppx) and ( max-width: 1020px) {
@@ -1136,6 +1382,9 @@ html, body {
 @media screen and (max-width: 1160px) {
     .main {
         padding-top: 58px;
+    }
+    .main-auth {
+        padding-top: 0;
     }
     .header {
         margin-top: 0;
@@ -1559,6 +1808,127 @@ html, body {
     }
     .main-pros .wrapper {
         align-items: flex-start;
+    }
+
+    .main-auth__imgBlock {
+        display: none;
+    }
+    .main-auth__formBlock {
+        width: 100%;
+    }
+    .main-auth__form {
+        min-width: 280px;
+        width: 280px;
+    }
+    .main-auth__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 140%;
+        color: #273A31;
+        margin-bottom: 50px;
+    }
+    .main-auth__form .main-input__input {
+        width: 280px;
+        height: 50px;
+        padding-left: 24px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 170%;
+    }
+    .main-auth__forgot {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 170%;
+        color: #12AF65;
+        margin-top: 10px;
+    }
+    .main-auth__link {
+        margin-top: 30px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 170%;
+        color: #1C2523;
+    }
+    .main-auth__link a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 170%;
+        color: #12AF65;
+    }
+    .main-auth__link-reg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-auth__link-reg a {
+        margin-top: 10px;
+    }
+    .main-auth__button {
+        height: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    .main-auth__form-reset .main-auth__title {
+        font-size: 20px;
+    }
+
+    .main-auth__inviter {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .main-auth__inviterText {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 170%;
+        color: #1C2523;
+        margin-bottom: 10px;
+    }
+    .main-auth__inviterBlock {
+        height: 70px;
+        padding: 0 17px 0 24px;
+    }
+    .main-auth__inviterName {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 170%;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+    .main-auth__inviterNumber {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 170%;
+        color: #FFFFFF;
+    }
+    .main-auth__inviterAvatar {
+        width: 40px;
+        height: 40px;
+    }
+    .main__checkboxBlock {
+        margin-top: 10px;
+    }
+    .custom-checkbox + label::before {
+        margin-right: 15px;
+    }
+    .custom-checkbox + label {
+        align-items: flex-start;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 170%;
+        color: #1C2523;
+    }
+    .custom-checkbox + label a {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 170%;
+        color: #12AF65;
+    }
+    .custom-checkbox:checked + label::after {
+        bottom: 26px;
     }
 }
 @media screen and (max-width: 800px) {
