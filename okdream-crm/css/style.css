@@ -1803,7 +1803,7 @@ html, body {
         }
     }
 }
-@media screen and (max-width: 1537px) {
+@media screen and (max-width: 1535px) {
     html {
         zoom: 1;
         -ms-zoom: 1;
@@ -1827,4 +1827,5 @@ html, body {
         width: 100vw;
     }
 }
+
 /*RESPONSIVE FIX END*/
