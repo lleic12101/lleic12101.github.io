@@ -413,7 +413,7 @@
                     <a href="#!" class="button main-block__button">Перевести</a>
                 </div>
             </div>
-            <div class="main-block main-block__disabled">
+            <div class="main-block">
                 <div class="main-block__header main-color__blue">
                     <h3 class="main-block__headerText">Вывод средств</h3>
                 </div>
@@ -431,7 +431,7 @@
                         <input type="password" class="main-input__input" placeholder="Введите ваш финасовый пароль..."/>
                         <p class="main-input__error">При вводе используются только латинские буквы</p>
                     </div>
-                    <a href="#!" class="button main-block__button">Вывести</a>
+                    <a href="#!" class="button main-block__button button-modal2">Вывести</a>
                 </div>
             </div>
         </div>
@@ -569,6 +569,19 @@
         <p class="main-copyright">© 2021 Naming - Все права защищены</p>
     </div>
 </main>
+<div class="modal" id="modal2" onclick="void(0)">
+    <form action="#!" class="modal__content">
+        <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
+        <img src="img/modal/ask.png" alt="img" class="modal__img"/>
+        <p class="modal__text">
+            Вы подтверждаете вывод средств?
+        </p>
+        <div class="modal__buttons">
+            <button class="modal__button">Да</button>
+            <button class="modal__button modal__button-red">Нет</button>
+        </div>
+    </form>
+</div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>
