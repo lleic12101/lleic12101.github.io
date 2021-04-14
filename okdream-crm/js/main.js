@@ -53,5 +53,3 @@ $('.header-currency__close').click(function (e) {
     //     $('.header-currency__dropdown').css({"display": ""});
     // }, 300);
 });
-
-console.log($(window).width());
