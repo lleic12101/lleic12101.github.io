@@ -1592,9 +1592,14 @@ html, body {
     font-size: 14px;
     line-height: 170%;
     color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .main-profile__avatarHoverLink:hover {
     text-decoration: none;
+}
+.main-profile__avatarHoverInput {
+    display: none;
 }
 .main-profile__avatar:hover .main-profile__avatarHover {
     opacity: 1;
