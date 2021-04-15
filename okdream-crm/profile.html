@@ -241,11 +241,11 @@
                         <img src="img/icons/home.svg" alt="icon" class="aside-item__icon"/>
                         Главная
                     </a>
-                    <a href="#!" class="aside-item aside-item-active">
+                    <a href="#!" class="aside-item">
                         <img src="img/icons/finance.svg" alt="icon" class="aside-item__icon"/>
                         Финансы
                     </a>
-                    <a href="#!" class="aside-item">
+                    <a href="#!" class="aside-item aside-item-active">
                         <img src="img/icons/profile.svg" alt="icon" class="aside-item__icon"/>
                         Профиль
                     </a>
@@ -291,11 +291,11 @@
             <img src="img/icons/home.svg" alt="icon" class="aside-item__icon"/>
             Главная
         </a>
-        <a href="#!" class="aside-item aside-item-active">
+        <a href="#!" class="aside-item">
             <img src="img/icons/finance.svg" alt="icon" class="aside-item__icon"/>
             Финансы
         </a>
-        <a href="#!" class="aside-item">
+        <a href="#!" class="aside-item aside-item-active">
             <img src="img/icons/profile.svg" alt="icon" class="aside-item__icon"/>
             Профиль
         </a>
@@ -326,274 +326,144 @@
     </aside>
     <div class="main-content">
         <div class="main-header">
-            <h2 class="main-header__title">Финансы</h2>
-            <div class="main-header__textBlock">
-                <p class="main-header__text">Денежные операции</p>
-                <p class="main-header__text">История операций</p>
-            </div>
-        </div>
-        <div class="main-items main-items__small">
-            <div class="main-items__item">
-                <div class="main-items__itemTextBlock">
-                    <p class="main-items__itemText">Мой баланс</p>
-                    <p class="main-items__itemAmount">0<span>$</span></p>
-                </div>
-            </div>
-            <div class="main-items__item main-color__red">
-                <div class="main-items__itemTextBlock">
-                    <p class="main-items__itemText">Чистая прибыль</p>
-                    <p class="main-items__itemAmount">0<span>$</span></p>
-                </div>
-            </div>
-            <div class="main-items__item main-color__blue">
-                <div class="main-items__itemTextBlock">
-                    <p class="main-items__itemText">Выведено средств</p>
-                    <p class="main-items__itemAmount">0<span>$</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="main-header">
-            <h2 class="main-header__title">Денежные операции</h2>
-            <p class="main-header__text">Пополнение и вывод производятся через платежную систему <a href="#!">Perfect
-                money</a>
+            <h2 class="main-header__title">Мой профиль</h2>
+            <p class="main-header__breadcrumbs">
+                <a href="#!">Главная</a> > Мой профиль
             </p>
         </div>
-        <p class="main-header__text main-header__text-mobile">Пополнение и вывод производятся через платежную систему <a
-                href="#!">Perfect
-            money</a>
-        </p>
-        <div class="main-notify main-notify__error">
+        <div class="main-notify main-notify__error main-notify__error-small">
             <p class="main-notify__text">
-                Вы не установили <span>финансовый пароль</span>. Далее чтобы продолжить работу перейдите в профиль и
-                установите его.
-                Финансовый пароль необходим для безопасности ваших денег.
+                Заполните ваш профиль, чтобы продолжить работу на платформе Ok,dream.
             </p>
-            <a href="#!" class="main-notify__button">Перейти в профиль</a>
         </div>
+        <div class="main-profile">
+            <div class="main-profile__avatarBlock">
+                <div class="main-profile__avatar">
+                    <!--                    Если нету фото, комментируем строку ниже-->
+                    <img src="img/avatar.png" alt="img" class="main-profile__avatarImg"/>
+                    <div class="main-profile__avatarHover">
+                        <!--                        Меняем тексты, иконки, взависимости от того есть ли у юзера фото-->
+                        <img src="img/icons/avatarUser.svg" alt="icon" class="main-profile__avatarHoverIcon"/>
+                        <!--                        <img src="img/icons/avatarUpload.svg" alt="icon" class="main-profile__avatarHoverIcon"/>-->
+                        <a href="#!" class="main-profile__avatarHoverLink">Сменить фото</a>
+                        <!--                        <a href="#!" class="main-profile__avatarHoverLink">Загрузить фото</a>-->
+                    </div>
+                </div>
+                <p class="main-profile__avatarName">Kalustayuv</p>
+                <p class="main-profile__avatarEmail">Kalustayuv@gmail.com</p>
+            </div>
+            <form action="#!" class="main-profile__dataBlock">
+                <div class="main-profile__dataRow">
+                    <div class="main-profile__dataColumn">
+                        <div class="main-input__block">
+                            <p class="main-input__name">Имя</p>
+                            <input type="text" class="main-input__input" placeholder="Введите ваше имя..."/>
+                            <p class="main-input__error">При вводе используются только латинские буквы</p>
+                        </div>
+                        <div class="main-input__block">
+                            <p class="main-input__name">Фамилия</p>
+                            <input type="text" class="main-input__input" placeholder="Введите вашу фамилию..."/>
+                            <p class="main-input__error">При вводе используются только латинские буквы</p>
+                        </div>
+                    </div>
+                    <div class="main-profile__dataColumn">
+                        <div class="main-input__block">
+                            <p class="main-input__name">Телефон</p>
+                            <input type="text" class="main-input__input main-input__input-phone"
+                                   placeholder="+3 8  _ _ _   _ _ _  _ _  _ _"
+                                   value="38" size="25"/>
+                            <p class="main-input__error">При вводе используются только латинские буквы</p>
+                        </div>
+                        <div class="main-input__block">
+                            <p class="main-input__name">Скайп</p>
+                            <input type="text" class="main-input__input" placeholder="Введите ваш скайп..."/>
+                            <p class="main-input__error">При вводе используются только латинские буквы</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button-modal1">Сохранить</button>
+            </form>
+        </div>
+        <div class="main-header"></div>
         <div class="main-items">
             <div class="main-block">
                 <div class="main-block__header">
-                    <h3 class="main-block__headerText">Пополнение баланса</h3>
-                </div>
-                <div class="main-block__content">
-                    <div class="main-input__block main-input__block-icon">
-                        <p class="main-input__name">Сумма пополнения</p>
-                        <input type="text" class="main-input__input" placeholder="Введите сумму пополнения..."/>
-                        <div class="main-input__iconBlock">
-                            <img src="img/icons/dollar.svg" alt="icon" class="main-input__icon"/>
-                        </div>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <a href="#!" class="button main-block__button">Пополнить</a>
-                </div>
-            </div>
-            <div class="main-block main-block__disabled">
-                <div class="main-block__header main-color__red">
-                    <h3 class="main-block__headerText">Внутренний перевод</h3>
+                    <h3 class="main-block__headerText">Мой кошелек</h3>
                 </div>
                 <div class="main-block__content">
                     <div class="main-input__block">
-                        <p class="main-input__name">Логин получателя</p>
-                        <input type="text" class="main-input__input" placeholder="Введите логин получаеля..."/>
+                        <p class="main-input__name">Ваш кошелек Perfect Money</p>
+                        <input type="text" class="main-input__input" placeholder="P1 _ _ _ _ _ _ _ _ _ "/>
                         <p class="main-input__error">При вводе используются только латинские буквы</p>
                     </div>
-                    <div class="main-input__block main-input__block-icon">
-                        <p class="main-input__name">Сумма пополнения</p>
-                        <input type="text" class="main-input__input" placeholder="Введите сумму пополнения..."/>
-                        <div class="main-input__iconBlock">
-                            <img src="img/icons/dollar.svg" alt="icon" class="main-input__icon"/>
-                        </div>
+                    <a href="#!" class="button main-block__button button-modal1">Сохранить</a>
+                </div>
+            </div>
+            <div class="main-block">
+                <div class="main-block__header main-color__red">
+                    <h3 class="main-block__headerText">Финансовый пароль</h3>
+                </div>
+                <div class="main-block__content">
+                    <div class="main-input__block">
+                        <p class="main-input__name">Ваш пароль</p>
+                        <input type="password" class="main-input__input" placeholder="Введите имеющийся пароль..."/>
                         <p class="main-input__error">При вводе используются только латинские буквы</p>
                     </div>
                     <div class="main-input__block">
                         <p class="main-input__name">Финансовый пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Введите ваш финасовый пароль..."/>
+                        <input type="password" class="main-input__input" placeholder="Введите финансовый пароль..."/>
                         <p class="main-input__error">При вводе используются только латинские буквы</p>
                     </div>
-                    <a href="#!" class="button main-block__button">Перевести</a>
+                    <div class="main-input__block">
+                        <p class="main-input__name">Повторите финансовый пароль</p>
+                        <input type="password" class="main-input__input" placeholder="Повторите финансовый пароль..."/>
+                        <p class="main-input__error">При вводе используются только латинские буквы</p>
+                    </div>
+                    <a href="#!" class="button main-block__button button-modal1">Сохранить</a>
                 </div>
             </div>
             <div class="main-block">
                 <div class="main-block__header main-color__blue">
-                    <h3 class="main-block__headerText">Вывод средств</h3>
+                    <h3 class="main-block__headerText">Изменение пароля</h3>
                 </div>
                 <div class="main-block__content">
-                    <div class="main-input__block main-input__block-icon">
-                        <p class="main-input__name">Сумма пополнения</p>
-                        <input type="text" class="main-input__input" placeholder="Введите сумму пополнения..."/>
-                        <div class="main-input__iconBlock">
-                            <img src="img/icons/dollar.svg" alt="icon" class="main-input__icon"/>
-                        </div>
+                    <div class="main-input__block">
+                        <p class="main-input__name">Ваш пароль</p>
+                        <input type="password" class="main-input__input" placeholder="Введите имеющийся пароль..."/>
                         <p class="main-input__error">При вводе используются только латинские буквы</p>
                     </div>
                     <div class="main-input__block">
-                        <p class="main-input__name">Финансовый пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Введите ваш финасовый пароль..."/>
+                        <p class="main-input__name">Новый пароль</p>
+                        <input type="password" class="main-input__input" placeholder="Введите новый пароль..."/>
                         <p class="main-input__error">При вводе используются только латинские буквы</p>
                     </div>
-                    <a href="#!" class="button main-block__button button-modal2">Вывести</a>
+                    <div class="main-input__block">
+                        <p class="main-input__name">Повторите новый пароль</p>
+                        <input type="password" class="main-input__input" placeholder="Повторите новый пароль..."/>
+                        <p class="main-input__error">При вводе используются только латинские буквы</p>
+                    </div>
+                    <a href="#!" class="button main-block__button button-modal1">Сохранить</a>
                 </div>
             </div>
-        </div>
-        <div class="main-header">
-            <h2 class="main-header__title">История операций</h2>
-            <div class="main-header__selectBlock">
-                <p class="main-header__text">Показывать по</p>
-                <select class="main-header__select">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option selected>6</option>
-                </select>
-                <p class="main-header__text">записей</p>
-            </div>
-        </div>
-        <div class="main-history">
-            <div class="main-history__header">
-                <p class="main-history__text main-history__text-sum">Сумма</p>
-                <p class="main-history__text main-history__text-operation">Операция</p>
-                <p class="main-history__text main-history__text-matrix">Матрица</p>
-                <p class="main-history__text main-history__text-time">Время</p>
-            </div>
-            <div class="main-history__items">
-                <!--                Пустая строка в таблице-->
-                <!--                <div class="main-history__item">-->
-                <!--                    <div class="main-history__itemWrapper">-->
-                <!--                        <div class="main-history__sign"></div>-->
-                <!--                        <p class="main-history__text main-history__text-sum"></p>-->
-                <!--                        <p class="main-history__text main-history__text-operation"></p>-->
-                <!--                        <p class="main-history__text main-history__text-matrix"></p>-->
-                <!--                        <p class="main-history__text main-history__text-time"></p>-->
-                <!--                    </div>-->
-                <!--                    <p class="main-history__item-mobile">У вас нету операций</p>-->
-                <!--                </div>-->
-                <div class="main-history__item">
-                    <div class="main-history__itemWrapper">
-                        <div class="main-history__sign">
-                                        <span class="main-history__signBlock">
-                                            <img src="img/icons/plus.svg" alt="icon" class="main-history__signIcon"/>
-                                        </span>
-                        </div>
-                        <p class="main-history__text main-history__text-sum">25 $</p>
-                        <p class="main-history__text main-history__text-operation">Реферальные отчисления от Aleksandr11</p>
-                        <p class="main-history__text main-history__text-matrix">START#1</p>
-                        <p class="main-history__text main-history__text-time">2021-01-09 17:50:01</p>
-                    </div>
-                    <p class="main-history__item-mobile">
-                        Реферальные отчисления от Aleksandr11 с матрицы START#1
-                    </p>
-                </div>
-                <div class="main-history__item">
-                    <div class="main-history__itemWrapper">
-                        <div class="main-history__sign">
-                                        <span class="main-history__signBlock main-history__signBlock-red">
-                                            <img src="img/icons/plus.svg" alt="icon" class="main-history__signIcon"/>
-                                        </span>
-                        </div>
-                        <p class="main-history__text main-history__text-sum">25 $</p>
-                        <p class="main-history__text main-history__text-operation">Реферальные отчисления от Aleksandr11</p>
-                        <p class="main-history__text main-history__text-matrix">START#1</p>
-                        <p class="main-history__text main-history__text-time">2021-01-09 17:50:01</p>
-                    </div>
-                    <p class="main-history__item-mobile">
-                        Реферальные отчисления от Aleksandr11 с матрицы START#1
-                    </p>
-                </div>
-                <div class="main-history__item">
-                    <div class="main-history__itemWrapper">
-                        <div class="main-history__sign">
-                                        <span class="main-history__signBlock">
-                                            <img src="img/icons/plus.svg" alt="icon" class="main-history__signIcon"/>
-                                        </span>
-                        </div>
-                        <p class="main-history__text main-history__text-sum">25 $</p>
-                        <p class="main-history__text main-history__text-operation">Реферальные отчисления от Aleksandr11</p>
-                        <p class="main-history__text main-history__text-matrix">START#1</p>
-                        <p class="main-history__text main-history__text-time">2021-01-09 17:50:01</p>
-                    </div>
-                    <p class="main-history__item-mobile">
-                        Реферальные отчисления от Aleksandr11 с матрицы START#1
-                    </p>
-                </div>
-                <div class="main-history__item">
-                    <div class="main-history__itemWrapper">
-                        <div class="main-history__sign">
-                                        <span class="main-history__signBlock main-history__signBlock-red">
-                                            <img src="img/icons/plus.svg" alt="icon" class="main-history__signIcon"/>
-                                        </span>
-                        </div>
-                        <p class="main-history__text main-history__text-sum">25 $</p>
-                        <p class="main-history__text main-history__text-operation">Реферальные отчисления от Aleksandr11</p>
-                        <p class="main-history__text main-history__text-matrix">START#1</p>
-                        <p class="main-history__text main-history__text-time">2021-01-09 17:50:01</p>
-                    </div>
-                    <p class="main-history__item-mobile">
-                        Реферальные отчисления от Aleksandr11 с матрицы START#1
-                    </p>
-                </div>
-                <div class="main-history__item">
-                    <div class="main-history__itemWrapper">
-                        <div class="main-history__sign">
-                                        <span class="main-history__signBlock">
-                                            <img src="img/icons/plus.svg" alt="icon" class="main-history__signIcon"/>
-                                        </span>
-                        </div>
-                        <p class="main-history__text main-history__text-sum">25 $</p>
-                        <p class="main-history__text main-history__text-operation">Реферальные отчисления от Aleksandr11</p>
-                        <p class="main-history__text main-history__text-matrix">START#1</p>
-                        <p class="main-history__text main-history__text-time">2021-01-09 17:50:01</p>
-                    </div>
-                    <p class="main-history__item-mobile">
-                        Реферальные отчисления от Aleksandr11 с матрицы START#1
-                    </p>
-                </div>
-                <div class="main-history__item">
-                    <div class="main-history__itemWrapper">
-                        <div class="main-history__sign">
-                                        <span class="main-history__signBlock main-history__signBlock-red">
-                                            <img src="img/icons/plus.svg" alt="icon" class="main-history__signIcon"/>
-                                        </span>
-                        </div>
-                        <p class="main-history__text main-history__text-sum">25 $</p>
-                        <p class="main-history__text main-history__text-operation">Реферальные отчисления от Aleksandr11</p>
-                        <p class="main-history__text main-history__text-matrix">START#1</p>
-                        <p class="main-history__text main-history__text-time">2021-01-09 17:50:01</p>
-                    </div>
-                    <p class="main-history__item-mobile">
-                        Реферальные отчисления от Aleksandr11 с матрицы START#1
-                    </p>
-                </div>
-            </div>
-            <div class="main-history__pagination">
-                <a href="#!" class="main-history__paginationArrow">
-                    <img src="img/icons/left.svg" alt="icon" class="main-history__paginationArrowIcon"/>
-                </a>
-                <p class="main-history__paginationText"> 1 из 10</p>
-                <a href="#!" class="main-history__paginationArrow">
-                    <img src="img/icons/right.svg" alt="icon" class="main-history__paginationArrowIcon"/>
-                </a>
-            </div>
-            <a href="#!" class="button main-history__button">Больше операций</a>
         </div>
         <p class="main-copyright">© 2021 Naming - Все права защищены</p>
     </div>
 </main>
-<div class="modal" id="modal2" onclick="void(0)">
+<div class="modal" id="modal1" onclick="void(0)">
     <form action="#!" class="modal__content">
         <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
-        <img src="img/modal/ask.png" alt="img" class="modal__img"/>
+        <img src="img/modal/success.png" alt="img" class="modal__img"/>
         <p class="modal__text">
-            Вы подтверждаете вывод средств?
+            Ваш кошелек успешно изменен
         </p>
         <div class="modal__buttons">
-            <button class="modal__button">Да</button>
-            <button class="modal__button modal__button-red">Нет</button>
+            <button class="modal__button">Ок</button>
         </div>
     </form>
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/jquery.inputmask-multi.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
