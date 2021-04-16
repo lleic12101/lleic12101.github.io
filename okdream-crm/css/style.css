@@ -1971,10 +1971,8 @@ html, body {
 
 .main-marketing__block {
     width: 440px;
-    padding: 30px 50px 40px;
     display: flex;
     flex-direction: column;
-    border-left: 5px solid #15C377;
     margin-bottom: 30px;
     background: #FFFFFF;
     box-shadow: 0 10px 30px rgba(162, 219, 192, 0.1);
@@ -1989,18 +1987,23 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 50px;
+    transition: .3s;
+    border-left: 5px solid #15C377;
 }
 .main-marketing__blockHeaderText {
     font-weight: 600;
     font-size: 18px;
     line-height: 170%;
     color: #12AF65;
+    transition: .3s;
 }
 .main-marketing__blockHeaderLink {
     font-weight: 500;
     font-size: 14px;
     line-height: 170%;
     color: #12AF65;
+    transition: .3s;
 }
 .main-marketing__blockHeaderLink:hover {
     text-decoration: none;
@@ -2011,9 +2014,20 @@ html, body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-top: 1px solid #E9E9E9;
-    padding-top: 30px;
-    margin-top: 30px;
+    padding: 30px 50px 40px;
+    border-left: 5px solid #15C377;
+    position: relative;
+    transition: .3s;
+}
+.main-marketing__blockContent:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background: #E9E9E9;
+    height: 1px;
+    width: calc(100% - 100px);
+    transition: .3s;
 }
 .main-marketing__blockTextBlock {
     display: flex;
@@ -2033,17 +2047,39 @@ html, body {
     line-height: 170%;
     color: #273A31;
 }
-.main-marketing__block-red {
+.main-marketing__block:hover .main-marketing__blockHeader {
+    background: #15C377;
+}
+.main-marketing__block:hover .main-marketing__blockHeaderText,
+.main-marketing__block:hover .main-marketing__blockHeaderLink {
+    color: #FFFFFF;
+}
+.main-marketing__block:hover .main-marketing__blockContent:before {
+    opacity: 0;
+}
+.main-marketing__block:hover .main-marketing__blockContent {
+    border-color: #FFFFFF;
+}
+
+.main-marketing__block-red .main-marketing__blockContent,
+.main-marketing__block-red .main-marketing__blockHeader {
     border-color: #E06A6A;
 }
 .main-marketing__block-red .main-marketing__blockHeaderText {
     color: #E06A6A;
 }
-.main-marketing__block-blue {
+.main-marketing__block-red:hover .main-marketing__blockHeader {
+    background: #E06A6A;
+}
+.main-marketing__block-blue .main-marketing__blockContent,
+.main-marketing__block-blue .main-marketing__blockHeader {
     border-color: #6A7DE0;
 }
 .main-marketing__block-blue .main-marketing__blockHeaderText {
     color: #6A7DE0;
+}
+.main-marketing__block-blue:hover .main-marketing__blockHeader {
+    background: #6A7DE0;
 }
 /*MARKETING END*/
 
@@ -2574,7 +2610,9 @@ html, body {
     .main-marketing__block {
         width: 290px;
         margin-bottom: 20px;
-        padding: 25px 30px 30px;
+    }
+    .main-marketing__blockHeader {
+        padding: 25px 30px;
     }
     .main-marketing__blockHeaderText {
         font-size: 14px;
@@ -2583,8 +2621,7 @@ html, body {
         font-size: 12px;
     }
     .main-marketing__blockContent {
-        margin-top: 26px;
-        padding-top: 24px;
+        padding: 24px 30px 30px 30px;
         flex-direction: column;
         align-items: flex-start;
         position: relative;
@@ -2600,7 +2637,7 @@ html, body {
     .main-marketing__blockTextBlock:nth-child(1) {
         position: absolute;
         top: 38px;
-        right: 0;
+        right: 30px;
         flex-direction: column;
         align-items: center;
     }
@@ -2613,6 +2650,10 @@ html, body {
     }
     .main-marketing__blockValue span {
         display: none;
+    }
+    .main-marketing__blockContent:before {
+        width: calc(100% - 60px);
+        left: 30px;
     }
 
     .main-reviews__block {
