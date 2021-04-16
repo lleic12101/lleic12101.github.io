@@ -1804,6 +1804,13 @@ html, body {
 .main-tools__blockLink:hover {
     text-decoration: underline;
 }
+.main-tools__blockLink-green {
+    color: #12AF65;
+    text-decoration: underline;
+}
+.main-tools__blockLink-green:hover {
+    text-decoration: none;
+}
 /*TOOLS END*/
 
 /*MEDIA*/
