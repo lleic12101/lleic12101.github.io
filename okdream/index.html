@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
     <title>Ok, dream!</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css?v=1.0.0"/>
 </head>
 <body>
 <header class="header">
@@ -19,14 +19,14 @@
             <img src="img/icons/logo-mobile.svg" alt="icon"/>
         </a>
         <div class="header-block">
-            <a href="#!" class="header-logo">
+            <a href="/" class="header-logo">
                 <div class="header-logo__circle">
                     <p class="header-logo__circleText">Ok</p>
                 </div>
                 <p class="header-logo__text">dream!</p>
             </a>
             <nav class="header-nav">
-                <a href="#!" class="header-nav__link header-nav__link-active">Главная</a>
+                <a href="#top" class="header-nav__link js-scroll-link header-nav__link-active">Главная</a>
                 <a href="#pros" class="header-nav__link js-scroll-link">Преимущества</a>
                 <a href="#marketing" class="header-nav__link js-scroll-link">Маркетинг</a>
                 <a href="#contacts" class="header-nav__link js-scroll-link">Контакты</a>
@@ -34,8 +34,8 @@
         </div>
         <div class="header-block">
             <div class="header-buttons">
-                <a href="#!" class="button button-white header-buttons__button">Вход</a>
-                <a href="#!" class="button header-buttons__button">Регистрация</a>
+                <a href="/signIn.html" class="button button-white header-buttons__button">Вход</a>
+                <a href="/registration.html" class="button header-buttons__button">Регистрация</a>
             </div>
             <div class="header-lang">
                 <div class="header-lang__block">
@@ -72,7 +72,7 @@
                     <!--<img src="img/icons/signIn.svg" alt="icon" class="header-mobile__icon"/>-->
                 </div>
                 <nav class="header-mobile__nav">
-                    <a href="#!" class="header-mobile__navLink header-mobile__navLink-active">Главная</a>
+                    <a href="#top" class="header-mobile__navLink js-scroll-link header-mobile__navLink-active">Главная</a>
                     <a href="#pros" class="header-mobile__navLink js-scroll-link">Преимущества</a>
                     <a href="#marketing" class="header-mobile__navLink js-scroll-link">Маркетинг</a>
                     <a href="#contacts" class="header-mobile__navLink js-scroll-link">Контакты</a>
@@ -108,7 +108,7 @@
 </header>
 <main class="main">
     <img src="img/main/decor-1.png" alt="decor" class="main-decor main-decor__1"/>
-    <div class="main-header">
+    <div class="main-header" id="top">
         <div class="wrapper">
             <div class="main-header__content">
                 <h1 class="main-header__title">
@@ -294,8 +294,8 @@
                 <h1 class="main__title main-questions__title">Остались вопросы?</h1>
                 <img src="img/main/questions-mobile.png" alt="img" class="main-questions__img main-questions__img-mobile"/>
                 <p class="main__text main-questions__text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis
+                    Спроси меня!
+                    Мы с радостью ответим на твои сообщения или звонки!
                 </p>
                 <form action="#!" class="main-questions__form">
                     <div class="main-input__block">
@@ -316,15 +316,15 @@
     <div class="footer-content">
         <div class="wrapper">
             <div class="footer-left">
-                <a href="#!" class="header-logo">
+                <a href="/" class="header-logo">
                     <div class="header-logo__circle">
                         <p class="header-logo__circleText">Ok</p>
                     </div>
                     <p class="header-logo__text">dream!</p>
                 </a>
                 <div class="header-buttons">
-                    <a href="#!" class="button button-white header-buttons__button">Вход</a>
-                    <a href="#!" class="button header-buttons__button">Регистрация</a>
+                    <a href="/signIn.html" class="button button-white header-buttons__button">Вход</a>
+                    <a href="/registration.html" class="button header-buttons__button">Регистрация</a>
                 </div>
             </div>
             <div class="footer-right">
@@ -363,7 +363,7 @@
         <p class="footer-copyright__text">© 2021 Ok, dream! - Все права защищены</p>
     </div>
 </footer>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js?v=1.0.0"></script>
+<script src="js/main.js?v=1.0.0"></script>
 </body>
 </html>

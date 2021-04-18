@@ -32,14 +32,14 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
         }
         var id = $(this).attr('href');
         var top = $(id).offset().top;
-        if (($(window).width() <= 1537 && $(window).width() >= 1459) ||
-            ($(window).width() <= 1457 && $(window).width() >= 1025)) {
-            top -= (top / 100) * 20;
-        }
-        if ($(window).width() <= 1160) {
+        if ($(window).width() > 1537) {
+            top -= 100;
+        } else if ($(window).width() < 1024) {
             top -= 58;
         }
-        $('body,html').animate({scrollTop: top}, 1500);
+        if ($(window).width() >= 1537 || $(window).width() <= 1025) {
+            $('html').animate({scrollTop: top}, 1500);
+        }
     });
 })();
 
@@ -58,21 +58,18 @@ function checkScroll() {
 }
 
 //sticky header
-// var c, currentScrollTop = 0, navbar = $("header");
 $(window).scroll(function () {
-    // var a = $(window).scrollTop();
-    // var b = 60;
-    //
-    // currentScrollTop = a;
-    //
-    // if (c < currentScrollTop && a > b + b && !$("body").hasClass("body-fixed")) {
-    //     navbar.addClass("scrollUp");
-    //     $("header .navbar-collapsed-nav").slideUp(300);
-    // } else if (c > currentScrollTop && !(a <= b)) {
-    //     navbar.removeClass("scrollUp")
-    // }
-    //
-    // c = currentScrollTop;
-
     checkScroll();
+
+    //header shower
+    if ($(window).scrollTop() > 200) {
+        $('.header').addClass("header-scrolled");
+    } else {
+        $('.header').removeClass("header-scrolled");
+    }
 });
+if ($(window).scrollTop() > 200) {
+    $('.header').addClass("header-scrolled");
+} else {
+    $('.header').removeClass("header-scrolled");
+}
