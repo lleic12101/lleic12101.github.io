@@ -2702,6 +2702,10 @@ html, body {
 .main-table__userBuy:hover {
     text-decoration: none;
 }
+
+.main-table__block-empty .main-table__userAvatarImg {
+    border-color: transparent;
+}
 /*TABLE END*/
 
 /*MEDIA*/
@@ -4086,6 +4090,7 @@ html, body {
     }
     .main-table__userBuy {
         font-size: 10px;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 800px) {
