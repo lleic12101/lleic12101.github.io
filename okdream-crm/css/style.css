@@ -173,6 +173,23 @@ html, body {
 .main-input__block-icon .main-input__input {
     padding-right: 50px;
 }
+.main-input__eye {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    filter: invert(95%) sepia(23%) saturate(118%) hue-rotate(83deg) brightness(89%) contrast(95%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    cursor: pointer;
+}
+.main-input__eye-active {
+    filter: invert(46%) sepia(96%) saturate(695%) hue-rotate(112deg) brightness(90%) contrast(86%);
+}
+.main-input__block:hover .main-input__eye {
+    opacity: 1;
+    visibility: visible;
+}
 /*INPUT*/
 
 /*HEADER*/
@@ -1024,6 +1041,8 @@ html, body {
     padding-bottom: 30px;
     border-bottom: 1px solid #CDDDD6;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
 }
 .main-header__title {
     font-weight: 600;
@@ -1675,6 +1694,7 @@ html, body {
 .main-columns__column {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .main-tools__item {
     width: 930px;
@@ -2275,6 +2295,415 @@ html, body {
 }
 /*NEWS END*/
 
+/*TABLE*/
+.main-table__block {
+    width: 930px;
+    height: 948px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 30px rgba(162, 219, 192, 0.1);
+    border-radius: 2px;
+}
+.main-table__manage {
+    width: 440px;
+    height: 948px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 30px rgba(162, 219, 192, 0.1);
+    border-radius: 2px;
+    padding: 50px;
+}
+.main-table__manageTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.main-table__manageText {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+}
+.main-table__manageText span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    color: #12AF65;
+}
+.main-table__manageButton {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.main-table__dropdownBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+.main-table__dropdownArrow {
+    margin-left: 20px;
+}
+.main-table__dropdown {
+    position: absolute;
+    top: 48px;
+    left: -49px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #FFFFFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+
+    width: 278px;
+    box-shadow: 0 4px 20px rgba(68, 81, 74, 0.1);
+    padding: 10px 0;
+}
+.main-table__dropdownBlock:hover .main-table__dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.main-table__dropdownItem {
+    width: 100%;
+    padding: 11px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+    background: transparent;
+    text-decoration: none;
+}
+.main-table__dropdownItem span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: #1C2523;
+    transition: .3s;
+}
+.main-table__dropdownItemCircle {
+    display: block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #12AF65;
+}
+.main-table__dropdownItem-active,
+.main-table__dropdownItem:hover {
+    background: #EFF9F4;
+}
+.main-table__dropdownItem-active span,
+.main-table__dropdownItem:hover span {
+    color: #12AF65;
+}
+
+.main-header__breadcrumbs-mobile {
+    display: none;
+}
+
+.main-table__action {
+    position: absolute;
+    display: none;
+    height: 30px;
+    width: 103px;
+    background: #12AF65;
+    box-shadow: 0 4px 20px rgba(30, 132, 77, 0.2);
+    transform: rotate(-90deg);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+.main-table__actionText {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.main-table__mask {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    background: rgba(39, 58, 49, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.main-table__mask-active {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.main-table__manageLink {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #12AF65;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main-table__manageLink:hover {
+    text-decoration: none;
+}
+.main-input__block-margin {
+    margin-top: 10px;
+}
+
+.main-table__select {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-table__selectHeader {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #A2DBC0;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px 0 30px;
+    cursor: pointer;
+}
+.main-table__selectHeaderIcon {
+    margin-left: 12px;
+}
+.main-table__selectItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+}
+.main-table__selectItemText {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+}
+.main-table__selectItemText span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #12AF65;
+}
+.main-table__selectListWrapper {
+    width: 100%;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 250px;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(68, 81, 74, 0.1);
+    display: none;
+}
+.main-table__selectList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-table__selectDelimiter {
+    width: calc(100% - 60px);
+    margin: 15px 30px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.main-table__selectDelimiterText {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 170%;
+    color: #9CB0A8;
+}
+.main-table__selectDelimiterText span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 170%;
+    color: #12AF65;
+}
+.main-table__selectList .main-table__selectItem {
+    padding: 0 30px;
+    min-height: 39px;
+    cursor: pointer;
+}
+.main-table__selectList .main-table__selectItem:hover {
+    background: #EFF9F4;
+}
+
+.main-table__manage .main-input__input {
+    border-color: #A2DBC0;
+}
+
+.main-table__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.main-table__row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.main-table__user {
+    border-bottom: 1px solid #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+.main-table__userAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 13px;
+}
+.main-table__userAvatarBlock {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.main-table__userAvatarImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #12AF65;
+    transition: .3s;
+}
+.main-table__userAvatarButton {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 2px solid #E06A6A;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+    bottom: -13px;
+}
+.main-table__userAvatarIcon {
+    transition: .3s;
+}
+.main-table__userAvatarIcon-locked {
+    position: absolute;
+    opacity: 0;
+}
+.main-table__userAvatarButton:hover,
+.main-table__userAvatarButton-active {
+    background: #E06A6A;
+}
+.main-table__userAvatarButton:hover .main-table__userAvatarIcon,
+.main-table__userAvatarButton-active .main-table__userAvatarIcon {
+    opacity: 0;
+}
+.main-table__userAvatarButton:hover .main-table__userAvatarIcon-locked,
+.main-table__userAvatarButton-active .main-table__userAvatarIcon-locked {
+    opacity: 1;
+}
+.main-table__userAvatarButton:hover ~ .main-table__userAvatarBlock .main-table__userAvatarImg,
+.main-table__userAvatarButton-active ~ .main-table__userAvatarBlock .main-table__userAvatarImg {
+    border-color: #E06A6A;
+}
+.main-table__userName {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #273A31;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.main-table__userNameIcon {
+    margin-left: 5px;
+}
+.main-table__userId {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #9CB0A8;
+}
+.main-table__userLink {
+    margin-top: 30px;
+    display: flex;
+}
+.main-table__userLink-top {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.main-table__rowGroup {
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-table__row:nth-child(1) {
+    width: 400px;
+}
+.main-table__row:nth-child(1) .main-table__user {
+    width: 100%;
+}
+.main-table__row:nth-child(2) {
+    width: 528px;
+    height: 306px;
+}
+.main-table__row:nth-child(3) {
+    width: 670px;
+    height: 276px;
+}
+
+.main-table__rowGroup .main-table__user {
+    border-bottom: unset;
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-table__rowGroup .main-table__userAvatarBlock {
+    width: 100px;
+    height: 100px;
+}
+
+.main-table__userBuy {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #12AF65;
+    margin-bottom: 15px;
+}
+.main-table__userBuy:hover {
+    text-decoration: none;
+}
+/*TABLE END*/
+
 /*MEDIA*/
 @media screen and (max-width: 1535px) {
     .header {
@@ -2819,6 +3248,99 @@ html, body {
     }
     .main-news__text-list:before {
         margin-right: 20px;
+    }
+
+    .main-input__eye {
+        right: 16px;
+        top: 53px;
+        height: 20px;
+    }
+
+    .main-table__block {
+        width: 610px;
+        height: 774px;
+    }
+    .main-table__manage {
+        width: 290px;
+        height: 774px;
+        padding: 30px;
+    }
+    .main-table__manageTextBlock {
+        margin-bottom: 30px;
+    }
+    .main-table__manageText {
+        font-size: 14px;
+    }
+    .main-table__manageText span {
+        font-size: 14px;
+    }
+    .main-table__dropdown {
+        left: 0;
+        top: 38px;
+        width: 230px;
+    }
+    .main-table__dropdownItem {
+        padding: 10px 30px;
+    }
+    .main-table__dropdownItem span {
+        font-size: 14px;
+    }
+    .main-table__dropdownArrow {
+        width: 10px;
+        margin-left: 15px;
+    }
+    .main-table__userLinkIcon {
+        width: 15px;
+    }
+    .main-table__userLink {
+        margin-top: 15px;
+    }
+    .main-table__userLink-top {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .main-table__userId {
+        font-size: 12px;
+    }
+    .main-table__userName {
+        font-size: 12px;
+    }
+    .main-table__userAvatarButton {
+        width: 24px;
+        height: 24px;
+        bottom: -12px;
+    }
+    .main-table__block {
+        padding-top: 0;
+    }
+    .main-table__userAvatarBlock {
+        width: 100px;
+        height: 100px;
+    }
+    .main-table__rowGroup .main-table__userAvatarBlock {
+        width: 80px;
+        height: 80px;
+    }
+    .main-table__user {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main-table__row:nth-child(1) {
+        width: 309px;
+    }
+    .main-table__row:nth-child(2) {
+        width: 429px;
+        height: 250px;
+    }
+    .main-table__row:nth-child(3) {
+        width: 510px;
+        height: 234px;
+    }
+    .main-table__userBuy {
+        font-size: 12px;
+    }
+    .main-table__rowGroup {
+        width: 204px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -3428,6 +3950,142 @@ html, body {
     }
     .main-news__headerName {
         margin-bottom: 15px;
+    }
+
+    .main-header__breadcrumbs-mobile {
+        display: block;
+        margin-top: -8px;
+        margin-bottom: 16px;
+    }
+    .main-table__block {
+        max-width: 380px;
+        width: calc(100% + 32px);
+        height: 597px;
+        box-shadow: 0 10px 30px rgba(162, 219, 192, 0.1);
+    }
+    .main-table__action {
+        display: flex;
+        left: -53px;
+        top: 68px;
+    }
+    .main-table__manage {
+        position: fixed;
+        left: -230px;
+        top: 0;
+        width: 216px;
+        height: 100%;
+        z-index: 8;
+        box-shadow: 0 4px 20px rgba(30, 132, 77, 0.2);
+        transition: .3s;
+        padding: 84px 16px 24px;
+        overflow-y: auto;
+    }
+    .main-table__manage-active {
+        left: 0;
+    }
+    .main-table__manageTextBlock {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+    .main-table__manageText:first-child {
+        margin-bottom: 16px;
+    }
+    .main-table__manageText {
+        font-size: 12px;
+    }
+    .main-table__manageText span {
+        font-size: 12px;
+    }
+    .main-table__manageButton {
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    .main-table__manage .main-input__name {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .main-table__selectHeader {
+        height: 40px;
+        padding: 0 17px 0 9px;
+    }
+    .main-table__selectItemText {
+        font-size: 10px;
+    }
+    .main-table__selectItemText span {
+        font-size: 10px;
+    }
+    .main-table__selectDelimiter {
+        width: calc(100% - 30px);
+        margin: 10px 15px 8px;
+        padding-bottom: 8px;
+    }
+    .main-table__selectDelimiterText {
+        font-size: 10px;
+    }
+    .main-table__selectDelimiterText span {
+        font-size: 10px;
+    }
+    .main-table__selectList .main-table__selectItem {
+        padding: 0 15px;
+        min-height: 30px;
+    }
+    .main-table__selectListWrapper {
+        top: 40px;
+    }
+    .main-table__manageLink {
+        margin: 16px 0 40px;
+        font-size: 10px;
+    }
+    .main-table__manage .main-input__input {
+        height: 40px;
+    }
+    .main-table__selectHeaderIcon {
+        width: 6px;
+        margin-left: 8px;
+    }
+
+    .main-table__user {
+        padding-top: 24px;
+        padding-bottom: 15px;
+    }
+    .main-table__userLink-top {
+        margin-bottom: 5px;
+    }
+    .main-table__userId {
+        font-size: 10px;
+    }
+    .main-table__userName {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .main-table__userNameIcon {
+        width: 12px;
+    }
+    .main-table__userAvatarBlock {
+        width: 80px;
+        height: 80px;
+    }
+    .main-table__rowGroup .main-table__userAvatarBlock {
+        width: 60px;
+        height: 60px;
+    }
+    .main-table__row:nth-child(1) {
+        width: 151px;
+    }
+    .main-table__row:nth-child(2) {
+        width: 299px;
+        height: 214px;
+    }
+    .main-table__row:nth-child(3) {
+        width: 328px;
+        height: 194px;
+    }
+    .main-table__rowGroup {
+        width: 152px;
+    }
+    .main-table__userBuy {
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 800px) {

@@ -84,6 +84,15 @@ $('.button-modal1').click(function () {
 $('.button-modal2').click(function () {
     toggleModal('modal2');
 });
+$('.button-modal3').click(function () {
+    toggleModal('modal3');
+});
+$('.button-modal4').click(function () {
+    toggleModal('modal4');
+});
+$('.button-modal5').click(function () {
+    toggleModal('modal5');
+});
 
 //phone number
 if ($('*').is('.main-input__input-phone')) {
@@ -125,3 +134,47 @@ if ($('*').is('.main-input__input-phone')) {
     };
     $('.main-input__input-phone').inputmasks(maskOpts);
 }
+
+//password show
+$('.main-input__eye').click(function () {
+    if ($(this).parent().find('.main-input__input').get(0).type === 'text') {
+        $(this).parent().find('.main-input__input').get(0).type = 'password';
+        $(this).removeClass('main-input__eye-active');
+    } else {
+        $(this).parent().find('.main-input__input').get(0).type = 'text';
+        $(this).addClass('main-input__eye-active');
+    }
+});
+
+//table mobile button
+$('.main-table__action').click(function () {
+    $('.main-table__manage').addClass('main-table__manage-active');
+    $('.main-table__mask').addClass('main-table__mask-active');
+});
+$('.main-table__mask').click(function () {
+    $('.main-table__manage').removeClass('main-table__manage-active');
+    $(this).removeClass('main-table__mask-active');
+});
+
+//table select
+$('.main-table__selectHeader').click(function () {
+    $(this).parent().find('.main-table__selectListWrapper').slideToggle();
+});
+$('.main-table__selectList .main-table__selectItem').click(function () {
+    $(this).parent().parent().parent().find('.main-table__selectHeader').find('.main-table__selectItemText')[0].innerHTML =
+        $(this).find('.main-table__selectItemText')[0].innerHTML;
+    $(this).parent().parent().parent().find('.main-table__selectHeader').find('.main-table__selectItemText')[1].innerHTML =
+        $(this).find('.main-table__selectItemText')[1].innerHTML;
+    $(this).parent().parent().parent().find('.main-table__selectListWrapper').slideUp();
+});
+
+//table user lock button
+$('.main-table__userAvatarButton').click(function () {
+    if ($(this).hasClass('main-table__userAvatarButton-active')) {
+        $(this).removeClass('main-table__userAvatarButton-active');
+        toggleModal('modal5');
+    } else {
+        toggleModal('modal4');
+        $(this).addClass('main-table__userAvatarButton-active');
+    }
+});

@@ -245,7 +245,7 @@
                         <img src="img/icons/finance.svg" alt="icon" class="aside-item__icon"/>
                         Финансы
                     </a>
-                    <a href="/profile.html" class="aside-item aside-item-active">
+                    <a href="/profile.html" class="aside-item">
                         <img src="img/icons/profile.svg" alt="icon" class="aside-item__icon"/>
                         Профиль
                     </a>
@@ -259,7 +259,7 @@
                             <img src="img/icons/about.svg" alt="icon" class="aside-item__icon"/>
                             О проекте
                             <img src="img/icons/arrow.svg" alt="icon"
-                                 class="aside-item__aboutArrow aside-item__aboutArrow-active"/>
+                                 class="aside-item__aboutArrow"/>
                         </div>
                         <div class="aside-about__wrapper">
                             <ul class="aside-about__items">
@@ -295,7 +295,7 @@
             <img src="img/icons/finance.svg" alt="icon" class="aside-item__icon"/>
             Финансы
         </a>
-        <a href="/profile.html" class="aside-item aside-item-active">
+        <a href="/profile.html" class="aside-item">
             <img src="img/icons/profile.svg" alt="icon" class="aside-item__icon"/>
             Профиль
         </a>
@@ -308,7 +308,7 @@
             <div class="aside-item">
                 <img src="img/icons/about.svg" alt="icon" class="aside-item__icon"/>
                 О проекте
-                <img src="img/icons/arrow.svg" alt="icon" class="aside-item__aboutArrow aside-item__aboutArrow-active"/>
+                <img src="img/icons/arrow.svg" alt="icon" class="aside-item__aboutArrow"/>
             </div>
             <div class="aside-about__wrapper">
                 <ul class="aside-about__items">
@@ -326,145 +326,330 @@
     </aside>
     <div class="main-content">
         <div class="main-header">
-            <h2 class="main-header__title">Мой профиль</h2>
+            <div class="main-table__dropdownBlock">
+                <h2 class="main-header__title">
+                    Стол 1
+                    <img src="img/icons/table-arrow.svg" alt="icon" class="main-table__dropdownArrow"/>
+                </h2>
+                <div class="main-table__dropdown">
+                    <a href="#!" class="main-table__dropdownItem main-table__dropdownItem-active">
+                        <span>Стол 1</span>
+                        <span class="main-table__dropdownItemCircle"></span>
+                    </a>
+                    <a href="#!" class="main-table__dropdownItem">
+                        <span>Стол 2</span>
+                        <span>$30</span>
+                    </a>
+                    <a href="#!" class="main-table__dropdownItem">
+                        <span>Стол 3</span>
+                        <span>$60</span>
+                    </a>
+                    <a href="#!" class="main-table__dropdownItem">
+                        <span>Стол 4</span>
+                        <span>$120</span>
+                    </a>
+                    <a href="#!" class="main-table__dropdownItem">
+                        <span>Стол 5</span>
+                        <span>$240</span>
+                    </a>
+                </div>
+            </div>
+
             <p class="main-header__breadcrumbs">
-                <a href="#!">Главная</a> > Мой профиль
+                <a href="#!">Главная</a> > <a href="#!">Ok, start!</a> > <a href="#!">Cтол 1</a> > Kalustayuv [648919]
             </p>
         </div>
-        <div class="main-notify main-notify__error main-notify__error-small">
-            <p class="main-notify__text">
-                Заполните ваш профиль, чтобы продолжить работу на платформе Ok,dream.
-            </p>
-        </div>
-        <div class="main-profile">
-            <div class="main-profile__avatarBlock">
-                <div class="main-profile__avatar">
-                    <!--                    Если нету фото, комментируем строку ниже-->
-                    <img src="img/avatar.png" alt="img" class="main-profile__avatarImg"/>
-                    <div class="main-profile__avatarHover">
-                        <!--                        Меняем тексты, иконки, взависимости от того есть ли у юзера фото-->
-                        <img src="img/icons/avatarUser.svg" alt="icon" class="main-profile__avatarHoverIcon"/>
-                        <!--                        <img src="img/icons/avatarUpload.svg" alt="icon" class="main-profile__avatarHoverIcon"/>-->
-                        <input class="main-profile__avatarHoverInput" type="file" id="file" name="file">
-                        <!--                        <label class="main-profile__avatarHoverLink" for="file">Загрузить фото</label>-->
-                        <label class="main-profile__avatarHoverLink" for="file">Сменить фото</label>
+        <p class="main-header__breadcrumbs main-header__breadcrumbs-mobile">
+            <a href="#!">Главная</a> > <a href="#!">Ok, start!</a> > <a href="#!">Cтол 1</a> > Kalustayuv [648919]
+        </p>
+        <div class="main-columns">
+            <div class="main-columns__column">
+                <div class="main-table__block">
+                    <div class="main-table__row">
+                        <div class="main-table__user">
+                            <a href="#!" class="main-table__userLink main-table__userLink-top">
+                                <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                            </a>
+                            <p class="main-table__userId">[641989]</p>
+                            <p class="main-table__userName">
+                                Kalustayuv
+                                <img src="img/icons/user-dollar.svg" alt="icon" class="main-table__userNameIcon"/>
+                            </p>
+                            <div class="main-table__userAvatar">
+                                <a href="#!" class="main-table__userAvatarButton">
+                                    <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                    <img src="img/icons/locked.svg" alt="icon"
+                                         class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                </a>
+                                <div class="main-table__userAvatarBlock">
+                                    <img src="img/avatar.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-table__row">
+                        <div class="main-table__user">
+                            <p class="main-table__userId">[641911]</p>
+                            <p class="main-table__userName">
+                                Monet56
+                                <img src="img/icons/user-dollar.svg" alt="icon" class="main-table__userNameIcon"/>
+                            </p>
+                            <div class="main-table__userAvatar">
+                                <a href="#!" class="main-table__userAvatarButton">
+                                    <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                    <img src="img/icons/locked.svg" alt="icon"
+                                         class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                </a>
+                                <div class="main-table__userAvatarBlock">
+                                    <img src="img/avatar3.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                </div>
+                            </div>
+                            <a href="#!" class="main-table__userLink">
+                                <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                            </a>
+                        </div>
+                        <div class="main-table__user">
+                            <p class="main-table__userId">[641719]</p>
+                            <p class="main-table__userName">
+                                Vicael
+                                <img src="img/icons/user-copy.svg" alt="icon" class="main-table__userNameIcon"/>
+                            </p>
+                            <div class="main-table__userAvatar">
+                                <a href="#!" class="main-table__userAvatarButton main-table__userAvatarButton-active">
+                                    <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                    <img src="img/icons/locked.svg" alt="icon"
+                                         class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                </a>
+                                <div class="main-table__userAvatarBlock">
+                                    <img src="img/avatar4.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                </div>
+                            </div>
+                            <a href="#!" class="main-table__userLink">
+                                <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-table__row">
+                        <div class="main-table__rowGroup">
+                            <div class="main-table__user">
+                                <p class="main-table__userId">[641912]</p>
+                                <p class="main-table__userName">
+                                    Kukolka12
+                                    <img src="img/icons/user-dollar.svg" alt="icon" class="main-table__userNameIcon"/>
+                                </p>
+                                <div class="main-table__userAvatar">
+                                    <a href="#!" class="main-table__userAvatarButton">
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                        <img src="img/icons/locked.svg" alt="icon"
+                                             class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                    </a>
+                                    <div class="main-table__userAvatarBlock">
+                                        <img src="img/avatar5.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                    </div>
+                                </div>
+                                <a href="#!" class="main-table__userLink">
+                                    <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                                </a>
+                            </div>
+                            <div class="main-table__user">
+                                <p class="main-table__userId">[641911]</p>
+                                <p class="main-table__userName">
+                                    Monet56
+                                    <img src="img/icons/user-copy.svg" alt="icon" class="main-table__userNameIcon"/>
+                                </p>
+                                <div class="main-table__userAvatar">
+                                    <a href="#!" class="main-table__userAvatarButton">
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                        <img src="img/icons/locked.svg" alt="icon"
+                                             class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                    </a>
+                                    <div class="main-table__userAvatarBlock">
+                                        <img src="img/avatar3.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                    </div>
+                                </div>
+                                <a href="#!" class="main-table__userLink">
+                                    <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-table__rowGroup">
+                            <div class="main-table__user">
+                                <p class="main-table__userId">[641911]</p>
+                                <p class="main-table__userName">
+                                    Luke3456
+                                    <img src="img/icons/user-dollar.svg" alt="icon" class="main-table__userNameIcon"/>
+                                </p>
+                                <div class="main-table__userAvatar">
+                                    <a href="#!" class="main-table__userAvatarButton main-table__userAvatarButton-active">
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                        <img src="img/icons/locked.svg" alt="icon"
+                                             class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                    </a>
+                                    <div class="main-table__userAvatarBlock">
+                                        <img src="img/avatar6.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                    </div>
+                                </div>
+                                <a href="#!" class="main-table__userLink">
+                                    <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                                </a>
+                            </div>
+                            <div class="main-table__user">
+                                <p class="main-table__userId">[641891]</p>
+                                <p class="main-table__userName">
+                                    Kukolka12
+                                    <img src="img/icons/user-dollar.svg" alt="icon" class="main-table__userNameIcon"/>
+                                </p>
+                                <div class="main-table__userAvatar">
+                                    <a href="#!" class="main-table__userAvatarButton main-table__userAvatarButton-active">
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__userAvatarIcon"/>
+                                        <img src="img/icons/locked.svg" alt="icon"
+                                             class="main-table__userAvatarIcon main-table__userAvatarIcon-locked"/>
+                                    </a>
+                                    <div class="main-table__userAvatarBlock">
+                                        <img src="img/avatar5.png" alt="avatar" class="main-table__userAvatarImg"/>
+                                    </div>
+                                </div>
+                                <a href="#!" class="main-table__userLink">
+                                    <img src="img/icons/user-dots.svg" alt="icon" class="main-table__userLinkIcon"/>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="main-profile__avatarName">Kalustayuv</p>
-                <p class="main-profile__avatarEmail">Kalustayuv@gmail.com</p>
+                <div class="main-table__action">
+                    <p class="main-table__actionText">действия</p>
+                </div>
             </div>
-            <form action="#!" class="main-profile__dataBlock">
-                <div class="main-profile__dataRow">
-                    <div class="main-profile__dataColumn">
-                        <div class="main-input__block">
-                            <p class="main-input__name">Имя</p>
-                            <input type="text" class="main-input__input" placeholder="Введите ваше имя..."/>
-                            <p class="main-input__error">При вводе используются только латинские буквы</p>
+            <div class="main-columns__column">
+                <div class="main-table__manage">
+                    <div class="main-table__manageTextBlock">
+                        <p class="main-table__manageText">Мест куплено: <span>10</span></p>
+                        <p class="main-table__manageText">Клонов: <span>5</span></p>
+                    </div>
+                    <a href="#!" class="button main-table__manageButton">Купить место ($ 10)</a>
+                    <div class="main-input__block">
+                        <p class="main-input__name">Список мест:</p>
+                        <div class="main-table__select">
+                            <div class="main-table__selectHeader">
+                                <div class="main-table__selectItem">
+                                    <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                    <p class="main-table__selectItemText"><span>clone</span></p>
+                                </div>
+                                <img src="img/icons/select.svg" alt="icon" class="main-table__selectHeaderIcon"/>
+                            </div>
+                            <div class="main-table__selectListWrapper">
+                                <div class="main-table__selectList">
+                                    <div class="main-table__selectDelimiter">
+                                        <p class="main-table__selectDelimiterText">15 февраля 2021</p>
+                                        <p class="main-table__selectDelimiterText"><span>4</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                        <p class="main-table__selectItemText"><span>clone</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                        <p class="main-table__selectItemText"><span>buyed</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                        <p class="main-table__selectItemText"><span>clone</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                        <p class="main-table__selectItemText"><span>buyed</span></p>
+                                    </div>
+                                    <div class="main-table__selectDelimiter">
+                                        <p class="main-table__selectDelimiterText">15 февраля 2021</p>
+                                        <p class="main-table__selectDelimiterText"><span>2</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                        <p class="main-table__selectItemText"><span>clone</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">[641989] 23:37:32</p>
+                                        <p class="main-table__selectItemText"><span>buyed</span></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="main-input__block">
-                            <p class="main-input__name">Фамилия</p>
-                            <input type="text" class="main-input__input" placeholder="Введите вашу фамилию..."/>
-                            <p class="main-input__error">При вводе используются только латинские буквы</p>
+                    </div>
+                    <a href="#!" class="main-table__manageLink">Следующее место</a>
+                    <div class="main-input__block">
+                        <p class="main-input__name">Поиск по логину:</p>
+                        <input type="password" class="main-input__input" placeholder="Введите логин..."/>
+                        <p class="main-input__error">При вводе используются только латинские буквы</p>
+                    </div>
+                    <div class="main-input__block main-input__block-margin">
+                        <p class="main-input__name">Блокировки:</p>
+                        <div class="main-table__select">
+                            <div class="main-table__selectHeader">
+                                <div class="main-table__selectItem">
+                                    <p class="main-table__selectItemText">della [641989] <span>[ 1 ]</span></p>
+                                </div>
+                                <img src="img/icons/select.svg" alt="icon" class="main-table__selectHeaderIcon"/>
+                            </div>
+                            <div class="main-table__selectListWrapper">
+                                <div class="main-table__selectList">
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 1 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 2 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 3 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 4 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 5 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 6 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 7 ]</span></p>
+                                    </div>
+                                    <div class="main-table__selectItem">
+                                        <p class="main-table__selectItemText">della [641989] <span>[ 8 ]</span></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="main-profile__dataColumn">
-                        <div class="main-input__block">
-                            <p class="main-input__name">Телефон</p>
-                            <input type="text" class="main-input__input main-input__input-phone"
-                                   placeholder="+3 8  _ _ _   _ _ _  _ _  _ _"
-                                   value="38" size="25"/>
-                            <p class="main-input__error">При вводе используются только латинские буквы</p>
-                        </div>
-                        <div class="main-input__block">
-                            <p class="main-input__name">Скайп</p>
-                            <input type="text" class="main-input__input" placeholder="Введите ваш скайп..."/>
-                            <p class="main-input__error">При вводе используются только латинские буквы</p>
-                        </div>
-                    </div>
                 </div>
-                <button class="button button-modal1">Сохранить</button>
-            </form>
-        </div>
-        <div class="main-header"></div>
-        <div class="main-items">
-            <div class="main-block">
-                <div class="main-block__header">
-                    <h3 class="main-block__headerText">Мой кошелек</h3>
-                </div>
-                <div class="main-block__content">
-                    <div class="main-input__block">
-                        <p class="main-input__name">Ваш кошелек Perfect Money</p>
-                        <input type="text" class="main-input__input" placeholder="P1 _ _ _ _ _ _ _ _ _ "/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <a href="#!" class="button main-block__button button-modal1">Сохранить</a>
-                </div>
-            </div>
-            <div class="main-block">
-                <div class="main-block__header main-color__red">
-                    <h3 class="main-block__headerText">Финансовый пароль</h3>
-                </div>
-                <div class="main-block__content">
-                    <div class="main-input__block">
-                        <p class="main-input__name">Ваш пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Введите имеющийся пароль..."/>
-                        <img src="img/icons/eye.svg" alt="icon" class="main-input__eye"/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <div class="main-input__block">
-                        <p class="main-input__name">Финансовый пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Введите финансовый пароль..."/>
-                        <img src="img/icons/eye.svg" alt="icon" class="main-input__eye"/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <div class="main-input__block">
-                        <p class="main-input__name">Повторите финансовый пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Повторите финансовый пароль..."/>
-                        <img src="img/icons/eye.svg" alt="icon" class="main-input__eye"/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <a href="#!" class="button main-block__button button-modal1">Сохранить</a>
-                </div>
-            </div>
-            <div class="main-block">
-                <div class="main-block__header main-color__blue">
-                    <h3 class="main-block__headerText">Изменение пароля</h3>
-                </div>
-                <div class="main-block__content">
-                    <div class="main-input__block">
-                        <p class="main-input__name">Ваш пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Введите имеющийся пароль..."/>
-                        <img src="img/icons/eye.svg" alt="icon" class="main-input__eye"/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <div class="main-input__block">
-                        <p class="main-input__name">Новый пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Введите новый пароль..."/>
-                        <img src="img/icons/eye.svg" alt="icon" class="main-input__eye"/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <div class="main-input__block">
-                        <p class="main-input__name">Повторите новый пароль</p>
-                        <input type="password" class="main-input__input" placeholder="Повторите новый пароль..."/>
-                        <img src="img/icons/eye.svg" alt="icon" class="main-input__eye"/>
-                        <p class="main-input__error">При вводе используются только латинские буквы</p>
-                    </div>
-                    <a href="#!" class="button main-block__button button-modal1">Сохранить</a>
-                </div>
+                <div class="main-table__mask"></div>
             </div>
         </div>
         <p class="main-copyright">© 2021 Naming - Все права защищены</p>
     </div>
 </main>
-<div class="modal" id="modal1" onclick="void(0)">
+<div class="modal" id="modal4" onclick="void(0)">
     <form action="#!" class="modal__content">
         <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
-        <img src="img/modal/success.png" alt="img" class="modal__img"/>
+        <img src="img/modal/block.png" alt="img" class="modal__img"/>
         <p class="modal__text">
-            Ваш кошелек успешно изменен
+            Вы заблокировали пользователя <span>Vicael</span>
         </p>
         <div class="modal__buttons">
             <button class="modal__button">Ок</button>
+            <button class="modal__button modal__button-gray">Отмена</button>
+        </div>
+    </form>
+</div>
+<div class="modal" id="modal5" onclick="void(0)">
+    <form action="#!" class="modal__content">
+        <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
+        <img src="img/modal/unblock.png" alt="img" class="modal__img"/>
+        <p class="modal__text">
+            Вы разблокировали пользователя <span>Vicael</span>
+        </p>
+        <div class="modal__buttons">
+            <button class="modal__button">Ок</button>
+            <button class="modal__button modal__button-gray">Отмена</button>
         </div>
     </form>
 </div>
