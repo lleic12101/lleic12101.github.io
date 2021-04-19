@@ -178,3 +178,14 @@ $('.main-table__userAvatarButton').click(function () {
         $(this).addClass('main-table__userAvatarButton-active');
     }
 });
+
+//team open user
+$('.main-team__tableItem').click(function (e) {
+    e.stopPropagation();
+    if ($(this).find('.main-team__tableItemDropdown').length > 0) {
+        $(this).toggleClass('main-team__tableItem-active');
+    }
+});
+$('.main-team__tableItemContactsLink').click(function (e) {
+    e.stopPropagation();
+});
