@@ -55,7 +55,7 @@
 
 html, body {
     background: #F4F4F4;
-    min-width: 1140px;
+    min-width: 1200px;
 }
 
 .wrapper {
@@ -454,6 +454,212 @@ html, body {
     color: #1C2523;
 }
 /*REVIEWS END*/
+
+/*DELETE BUTTON*/
+.main-delete__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 35px;
+    min-width: 100%;
+    background: #E06A6A;
+    transition: .3s;
+    text-decoration: none;
+}
+.main-delete__button:hover {
+    background: #D06666;
+}
+.main-delete__buttonSpan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+    height: 35px;
+    background: #D06666;
+    border-radius: 2px;
+}
+.main-delete__buttonText {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 170%;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+}
+/*DELETE BUTTON END*/
+
+/*USER*/
+.main-title__textBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-title__text-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #273A31;
+
+}
+.main-title__text-info:last-child {
+    margin-left: 80px;
+}
+.main-title__text-info span {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    color: #12AF65;
+}
+.main-title__text-info span span {
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #12AF65;
+}
+
+.main-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-table__item {
+    width: 100%;
+    min-height: 95px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 34px 0 34px 30px;
+}
+.main-table__item:last-child {
+    margin-bottom: 0;
+}
+.main-table__itemText {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #1C2523;
+}
+.main-table__itemText span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: #12AF65;
+}
+.main-table__itemText a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #12AF65;
+}
+.main-table__itemText a:hover {
+    text-decoration: none;
+}
+
+.main-table__item-number {
+    min-width: 66px;
+}
+.main-table__item-money {
+    min-width: 190px;
+}
+.main-table__item-for {
+    min-width: 380px;
+    max-width: 380px;
+    margin-right: 65px;
+}
+.main-table__item-date {
+    min-width: 250px;
+}
+
+.main-table__item-button {
+    height: calc(100% + 68px);
+    margin-top: -34px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    color: #12AF65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #F0F0F0;
+    background: transparent;
+}
+.main-table__item-blocked {
+    border: 1px solid #E06A6A;
+}
+.main-table__item-blocked .main-table__item-button {
+    background: #E06A6A;
+    border-left: 1px solid #E06A6A;
+    color: #FFFFFF;
+}
+
+.main-title__block-user .main-title {
+    font-size: 20px;
+}
+.main-title__block-user .main-title__text-info {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 170%;
+    color: #828F8A;
+}
+.main-title__block-user .main-title__text-info span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    margin-left: 11px;
+    color: #1C2523;
+}
+.main-title__block-user .main-delete__button {
+    min-width: 162px;
+}
+
+.main-user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 138px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 30px rgba(162, 219, 192, 0.1);
+    border-radius: 2px;
+    margin-bottom: 70px;
+    padding: 0 65px;
+}
+.main-user__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-user__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #273A31;
+}
+.main-user__text:last-child {
+    margin-top: 30px;
+}
+.main-user__text span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 170%;
+    color: #828F8A;
+    min-width: 95px;
+    text-align: left;
+}
+/*USER END*/
 
 /*MODAL*/
 .modal {
