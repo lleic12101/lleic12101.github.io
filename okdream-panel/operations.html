@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <title>Ok, dream!</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header-block">
+            <a href="#!" class="header-logo">
+                <img src="img/logo.svg" alt="logo" class="header-logo__img"/>
+            </a>
+            <p class="header-name">Admin</p>
+        </div>
+        <nav class="header-nav">
+            <a href="#!" class="header-nav__link header-nav__link-message">Пользователи</a>
+            <a href="#!" class="header-nav__link header-nav__link-active">Финансовые операции</a>
+            <a href="#!" class="header-nav__link header-nav__link-message">Отзывы</a>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="wrapper">
+        <div class="main-title__block">
+            <p class="main-title">Финансовые операции<span class="red">(+5)</span></p>
+        </div>
+        <div class="main-filter">
+            <div class="main-filter__column">
+                <p class="main-filter__text">По сумме</p>
+                <input type="text" class="main-filter__input" placeholder="Введите сумму..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По логину</p>
+                <input type="text" class="main-filter__input" placeholder="Введите логин..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По кошельку</p>
+                <input type="text" class="main-filter__input" placeholder="Введите кошелек..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По дате</p>
+                <input type="date" class="main-filter__input main-filter__input-date" placeholder="Выберите дату..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По типу</p>
+                <div class="main-table__select main-filter__input-select">
+                    <div class="main-table__selectHeader">
+                        <div class="main-table__selectItem">
+                            <p class="main-table__selectItemText">Все операции</p>
+                        </div>
+                        <img src="img/icons/select.svg" alt="icon" class="main-table__selectHeaderIcon"/>
+                    </div>
+                    <div class="main-table__selectListWrapper">
+                        <div class="main-table__selectList">
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Все операции</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Переводы</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Вывод средств</p>
+                            </div>
+                            <span class="main-table__selectListDelimiter"></span>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Новые</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Подтвержденные</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Заблокированные</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-table main-table__margin">
+            <div class="main-table__header">
+                <p class="main-table__itemText main-table__item-money1">Сумма</p>
+                <p class="main-table__itemText main-table__item-for1">Операция</p>
+                <p class="main-table__itemText main-table__item-date1">Время</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">1</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Вывод средств от <a href="#!">Aleksandr11</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">2</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Перевод средств от <a href="#!">Aleksandr11</a>
+                    пользователю <a href="#!">Kalustayuv</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">3</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Перевод средств от <a href="#!">Aleksandr11</a>
+                    пользователю <a href="#!">Kalustayuv</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">4</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Вывод средств от <a href="#!">Aleksandr11</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">5</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Вывод средств от <a href="#!">Aleksandr11</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-title__block">
+            <p class="main-title">20 декабря 2021<span class="green">(5)</span></p>
+        </div>
+        <div class="main-table">
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">1</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Вывод средств от <a href="#!">Aleksandr11</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">2</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Перевод средств от <a href="#!">Aleksandr11</a>
+                    пользователю <a href="#!">Kalustayuv</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">3</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Перевод средств от <a href="#!">Aleksandr11</a>
+                    пользователю <a href="#!">Kalustayuv</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+            <div class="main-table__item main-table__item-blocked">
+                <p class="main-table__itemText main-table__item-number">4</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Вывод средств от <a href="#!">Aleksandr11</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal3"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Blocked</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number">5</p>
+                <p class="main-table__itemText main-table__item-money1"><span>25 $</span></p>
+                <p class="main-table__itemText main-table__item-for1">Вывод средств от <a href="#!">Aleksandr11</a></p>
+                <p class="main-table__itemText main-table__item-date1">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-info button-modal2"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+        </div>
+        <p class="main-copyright">© 2021 Ok, dream! - Все права защищены</p>
+    </div>
+</main>
+<div class="modal" id="modal2" onclick="void(0)">
+    <form action="#!" class="modal__content modal__content-2">
+        <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
+        <div class="modal__columns">
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">Тип:</span>
+                    <span class="bold">перевод</span>
+                </p>
+            </div>
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">Сумма:</span>
+                    <span class="bold">200 $</span>
+                </p>
+            </div>
+        </div>
+        <span class="modal__delimiter"></span>
+        <div class="modal__columns">
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">От (логин):</span>
+                    <a href="#!" class="link">Kalustayuv</a>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">От (кошелек):</span>
+                    <span class="light">P1 041345510</span>
+                </p>
+            </div>
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">К (логин):</span>
+                    <a href="#!" class="link">Aleksandr111</a>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">К (кошелек):</span>
+                    <span class="light">P1 041345510</span>
+                </p>
+            </div>
+        </div>
+        <span class="modal__delimiter"></span>
+        <div class="modal__columns">
+            <div class="modal__column modal__column-center">
+                <p class="modal__text">
+                    <span class="gray">Регистрация:</span>
+                    <span class="light">2021-01-09 17:50:01</span>
+                </p>
+            </div>
+            <div class="modal__column">
+                <a href="#!" class="main-delete__button">
+                <span class="main-delete__buttonSpan">
+                    <img src="img/icons/delete.svg" alt="icon" class="main-delete__buttonImg"/>
+                </span>
+                    <span class="main-delete__buttonText">Заблокировать</span>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal" id="modal3" onclick="void(0)">
+    <form action="#!" class="modal__content modal__content-2">
+        <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
+        <div class="modal__columns">
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">Тип:</span>
+                    <span class="bold">вывод средств</span>
+                </p>
+            </div>
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">Сумма:</span>
+                    <span class="bold">200 $</span>
+                </p>
+            </div>
+        </div>
+        <span class="modal__delimiter"></span>
+        <div class="modal__columns">
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">С (логин):</span>
+                    <a href="#!" class="link">Kalustayuv</a>
+                </p>
+                <p class="modal__text modal__column-center">
+                    <span class="gray">Дата:</span>
+                    <span class="light">2021-01-09 17:50:01</span>
+                </p>
+            </div>
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">На (кошелек):</span>
+                    <span class="light">P1 041345510</span>
+                </p>
+                <a href="#!" class="main-delete__button main-delete__button-green">
+                        <span class="main-delete__buttonSpan">
+                            <img src="img/icons/accept.svg" alt="icon" class="main-delete__buttonImg"/>
+                        </span>
+                    <span class="main-delete__buttonText">Разблокировать</span>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

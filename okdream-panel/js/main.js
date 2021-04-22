@@ -11,7 +11,7 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 //modal
-$('.modal__close, .modal__button').click(function () {
+$('.modal__close, .main-delete__button').click(function () {
     toggleModal();
 });
 function toggleModal(id) {
@@ -41,4 +41,14 @@ $('.button-modal2').click(function () {
 });
 $('.button-modal3').click(function () {
     toggleModal('modal3');
+});
+
+//table select
+$('.main-table__selectHeader').click(function () {
+    $(this).parent().find('.main-table__selectListWrapper').slideToggle();
+});
+$('.main-table__selectList .main-table__selectItem').click(function () {
+    $(this).parent().parent().slideUp();
+    $(this).parent().parent().parent().find('.main-table__selectHeader').find('.main-table__selectItemText')[0].innerHTML =
+        $(this).find('.main-table__selectItemText')[0].innerHTML;
 });

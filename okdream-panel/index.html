@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -29,9 +29,256 @@
 </header>
 <main class="main">
     <div class="wrapper">
-
+        <div class="main-title__block">
+            <p class="main-title">Пользователи<span class="red">(+5)</span></p>
+        </div>
+        <div class="main-filter">
+            <div class="main-filter__column">
+                <p class="main-filter__text">По дате</p>
+                <input type="date" class="main-filter__input main-filter__input-date" placeholder="Выберите дату..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По имени</p>
+                <input type="text" class="main-filter__input" placeholder="Введите имя..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По логину</p>
+                <input type="text" class="main-filter__input" placeholder="Введите логин..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По кошельку</p>
+                <input type="text" class="main-filter__input" placeholder="Введите кошелек..."/>
+            </div>
+            <div class="main-filter__column">
+                <p class="main-filter__text">По типу</p>
+                <div class="main-table__select main-filter__input-select">
+                    <div class="main-table__selectHeader">
+                        <div class="main-table__selectItem">
+                            <p class="main-table__selectItemText">Все операции</p>
+                        </div>
+                        <img src="img/icons/select.svg" alt="icon" class="main-table__selectHeaderIcon"/>
+                    </div>
+                    <div class="main-table__selectListWrapper">
+                        <div class="main-table__selectList">
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Все пользователи</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Новые</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Подтвержденные</p>
+                            </div>
+                            <div class="main-table__selectItem">
+                                <p class="main-table__selectItemText">Заблокированные</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-table main-table__margin">
+            <div class="main-table__header main-table__header-padding">
+                <p class="main-table__itemText main-table__item-date2">Дата регистрации</p>
+                <p class="main-table__itemText main-table__item-name">Имя</p>
+                <p class="main-table__itemText main-table__item-login">Логин</p>
+                <p class="main-table__itemText main-table__item-wallet">Кошелек</p>
+                <p class="main-table__itemText main-table__item-info1">Дополнительно</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">1</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">2</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">3</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">4</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">5</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <div class="main-reviews__buttons">
+                    <a href="#!" class="main-reviews__button">
+                        <img src="img/icons/accept.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                    <a href="#!" class="main-reviews__button main-reviews__button-red">
+                        <img src="img/icons/delete.svg" alt="icon" class="main-reviews__buttonIcon"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-title__block">
+            <p class="main-title">20 декабря 2021<span class="green">(5)</span></p>
+        </div>
+        <div class="main-table">
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">1</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">2</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">3</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+            <div class="main-table__item main-table__item-blocked">
+                <p class="main-table__itemText main-table__item-number1">4</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Blocked</p>
+            </div>
+            <div class="main-table__item">
+                <p class="main-table__itemText main-table__item-number1">5</p>
+                <p class="main-table__itemText main-table__item-date2">2021-01-09 17:50:01</p>
+                <p class="main-table__itemText main-table__item-name">Клименко Юля</p>
+                <p class="main-table__itemText main-table__item-login">Kalustayuv</p>
+                <p class="main-table__itemText main-table__item-wallet">P1 041345510</p>
+                <p class="main-table__itemText main-table__item-info1 button-modal1"><a href="#!">Информация</a></p>
+                <p href="#!" class="main-table__item-button">Confirmed</p>
+            </div>
+        </div>
+        <p class="main-copyright">© 2021 Ok, dream! - Все права защищены</p>
     </div>
 </main>
+<div class="modal" id="modal1" onclick="void(0)">
+    <form action="#!" class="modal__content">
+        <img src="img/icons/close.svg" alt="icon" class="modal__close"/>
+        <div class="modal__columns">
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">Логин:</span>
+                    <span class="green">Kalustayuv</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">Имя:</span>
+                    <span class="bold">Юлия Клименко</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">E-mail:</span>
+                    <span class="bold">Kalustayuv@gmail</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">Телефон:</span>
+                    <span class="bold">+3 8 050 776 89 03</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">Skype:</span>
+                    <span class="bold">Kalustayuv-skype</span>
+                </p>
+            </div>
+            <div class="modal__column">
+                <p class="modal__text">
+                    <span class="gray">Регистрация:</span>
+                    <span class="light">2021-01-09 17:50:01</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">Кошелек:</span>
+                    <span class="bold">P1 041345510</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">Баланс</span>
+                    <span class="bold">200 $</span>
+                </p>
+                <p class="modal__text">
+                    <span class="gray">Выведено</span>
+                    <span class="bold">200 $</span>
+                </p>
+                <a href="#!" class="modal__link">Финансовые операции</a>
+            </div>
+        </div>
+        <a href="#!" class="main-delete__button">
+                <span class="main-delete__buttonSpan">
+                    <img src="img/icons/delete.svg" alt="icon" class="main-delete__buttonImg"/>
+                </span>
+            <span class="main-delete__buttonText">Заблокировать</span>
+        </a>
+        <!--        <a href="#!" class="main-delete__button main-delete__button-green">-->
+        <!--                <span class="main-delete__buttonSpan">-->
+        <!--                    <img src="img/icons/accept.svg" alt="icon" class="main-delete__buttonImg"/>-->
+        <!--                </span>-->
+        <!--            <span class="main-delete__buttonText">Разблокировать</span>-->
+        <!--        </a>-->
+    </form>
+</div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>
