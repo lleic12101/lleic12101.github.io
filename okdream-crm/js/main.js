@@ -161,11 +161,11 @@ $('.main-table__selectHeader').click(function () {
     $(this).parent().find('.main-table__selectListWrapper').slideToggle();
 });
 $('.main-table__selectList .main-table__selectItem').click(function () {
+	$(this).parent().parent().slideUp();
     $(this).parent().parent().parent().find('.main-table__selectHeader').find('.main-table__selectItemText')[0].innerHTML =
         $(this).find('.main-table__selectItemText')[0].innerHTML;
     $(this).parent().parent().parent().find('.main-table__selectHeader').find('.main-table__selectItemText')[1].innerHTML =
         $(this).find('.main-table__selectItemText')[1].innerHTML;
-    $(this).parent().parent().parent().find('.main-table__selectListWrapper').slideUp();
 });
 
 //table user lock button
