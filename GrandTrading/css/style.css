@@ -1061,50 +1061,115 @@ body {
 }
 /*MAIN END*/
 
-/*BREADCRUMBS*/
-.main__breadcrumbs {
-    margin: -3px 0 50px 0;
+/*ABOUT*/
+.main-about__img {
+    width: calc(100% + 120px);
+    margin: 0 -60px;
 }
-.main__breadcrumbs .wrapper {
+.main-about__page {
+    padding-top: 0;
+}
+/*ABOUT END*/
+
+/*INVESTORS*/
+.main-investors__text {
+    margin: 30px auto;
+}
+.main-plans__page {
+    padding-top: 0;
+}
+/*INVESTORS END*/
+
+/*TERMS*/
+.main-terms__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.main-terms__row:last-child {
+    margin-bottom: 0;
+}
+.main-terms__column {
+    width: 380px;
+}
+.main-terms__column:last-child {
+    width: 790px;
+    padding-top: 13px;
+}
+.main-terms__name {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.main-terms__rule {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 10px;
+}
+.main-terms__rule:last-child {
+    margin-bottom: 0;
+}
+.main-terms__rule-margin {
+    margin-left: 20px;
+}
+.main-terms__rule-bigMargin {
+    margin-left: 40px;
+}
+/*TERMS END*/
+
+/*BREADCRUMBS*/
+.main-breadcrumbs {
+    margin: 10px 0 50px 0;
+}
+.main-breadcrumbs .wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
-.main__breadcrumbsLink {
+.main-breadcrumbs__link {
+    font-weight: normal;
     font-size: 16px;
-    color: #191234;
+    line-height: 130%;
+    color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
     margin-right: 10px;
 }
-.main__breadcrumbsLink:before {
-    content: url(../img/icons/breadcrumb-black.svg);
-    margin-right: 9px;
+.main-breadcrumbs__link:hover {
+    text-decoration: underline;
 }
-.main__breadcrumbsLink-active:before {
+.main-breadcrumbs__link:before {
+    content: url(../img/icons/breadcrumb-white.svg);
+    margin-right: 10px;
+}
+.main-breadcrumbs__link-active:before {
     content: url(../img/icons/breadcrumb.svg);
 }
-.main__breadcrumbsLink:first-child {
+.main-breadcrumbs__link:first-child {
     margin-left: 0;
 }
-.main__breadcrumbsLink:first-child:before {
+.main-breadcrumbs__link:first-child:before {
     content: '';
     margin-right: 0;
 }
-.main__breadcrumbsLink.link-animation:after {
-    font-size: 16px;
-    background: #191234;
-    bottom: 1px;
-}
-.main__breadcrumbsLink-active {
-    color: #0080FF;
+.main-breadcrumbs__link-active {
+    color: #F83999;
     cursor: default;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+}
+.main-breadcrumbs__link-active:hover {
+    text-decoration: none;
 }
 /*BREADCRUMBS END*/
 
@@ -1551,7 +1616,7 @@ body {
         padding-top: 30px;
     }
     .main {
-        padding: 60px 0 30px;
+        padding: 60px 0 50px;
     }
     .main-plans__item {
         margin-bottom: 10px;
@@ -1726,17 +1791,54 @@ body {
     .main-header__decor-5 {
         top: 450px;
     }
+
+    .main-about__img {
+        height: 287px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .main-breadcrumbs {
+        margin-bottom: 30px;
+    }
+
+    .main-investors__text {
+        margin: 0 10px;
+    }
+
+    .main-terms__row {
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-terms__name {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .main-terms__rule {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .main-terms__column {
+        width: 100%;
+    }
+    .main-terms__column:last-child {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .main-terms__rule-margin,
+    .main-terms__rule-bigMargin {
+        margin-left: 0;
+    }
+
+    .main-plans__page,
+    .main-about__page {
+        padding-top: 0;
+    }
 }
 @media screen and (max-width: 980px) {
     .main__registrationForm {
         margin-top: 50px;
-    }
-
-    .main__breadcrumbs {
-        margin-top: 10px;
-    }
-    .main__breadcrumbs .wrapper {
-        padding-left: 10px;
     }
 }
 @media screen and (max-width: 870px) {
