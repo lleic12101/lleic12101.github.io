@@ -14,19 +14,15 @@ function resizeEmptySpace() {
 
     $(".main").css("height", "auto");
 
-    var header = $(".header").innerHeight();
     var footer = $(".footer").innerHeight();
     var windowHeight = $(window).height();
     var main = $(".main").innerHeight();
 
-    if ($(window).width() >= 1535 && $(window).width() <= 1537) {
+    if ($(window).width() >= 1025 && $(window).width() <= 1537) {
         windowHeight += (windowHeight / 100) * 25;
     }
-    if ($(window).width() >= 1439 && $(window).width() <= 1441) {
-        windowHeight += (windowHeight / 100) * 25;
-    }
-    if ((header + footer + main) < windowHeight) {
-        $(".main").css("height", (windowHeight - (header + footer)));
+    if ((footer + main) < windowHeight) {
+        $(".main").css("height", (windowHeight - footer));
     } else {
         $(".main").css("height", "auto");
     }
@@ -36,11 +32,11 @@ function resizeEmptySpace() {
 $('.ham').click(function () {
     $("html, body").toggleClass("body-fixed");
     $('.header-nav__wrapper-mobile').toggleClass("header-nav__wrapper-active");
-    $('.header-mask').addClass("header-mask__active");
+    $('.header-mask').toggleClass("header-mask__active");
 });
 $('.header-mask').click(function () {
     $('.ham').removeClass("active");
-    $('.header-mask').removeClass("header-mask-active");
+    $('.header-mask').removeClass("header-mask__active");
     $('.header-nav__wrapper').removeClass("header-nav__wrapper-active");
     $("html, body").removeClass("body-fixed");
 });
@@ -55,6 +51,12 @@ $('.main__faqBtn').click(function () {
 
     $('.main__faqTab').removeClass("main__faqTab-active");
     $("#" + id).addClass("main__faqTab-active");
+});
+
+//plans open
+$('.main-plans__show').click(function () {
+    $('.main-plans__items-hidden').slideDown();
+    $(this).fadeOut();
 });
 
 //faq
