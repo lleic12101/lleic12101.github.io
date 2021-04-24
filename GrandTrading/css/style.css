@@ -31,7 +31,7 @@
     font-style: normal;
     font-weight: normal;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: SFProDisplay;
+    font-family: SFProDisplay, sans-serif;
 }
 
 html, body {
@@ -99,21 +99,22 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 11px;
+    margin-bottom: 20px;
 }
 .main__nameAndInputHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 15px;
     position: relative;
+    margin-bottom: 5px;
 }
 .main__nameAndInputHeaderName {
+    font-weight: normal;
     font-size: 14px;
-    margin-bottom: 5px;
-    line-height: 21px;
-    color: rgba(11, 27, 45, 0.5);
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.5);
     transition: .3s;
 }
 .main__nameAndInputFooter {
@@ -129,16 +130,17 @@ body {
     width: 100%;
     height: 100%;
     outline: none;
-    padding-left: 20px;
+    padding-left: 15px;
 
+    font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
-    color: #191234;
+    line-height: 19px;
+    color: #FFFFFF;
 
-    background: #FFFFFF;
-    border: 1px solid #0080FF;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .main__nameAndInputFooterAlert {
     opacity: 0;
@@ -148,22 +150,19 @@ body {
 }
 .main__nameAndInputHeaderAlert {
     position: absolute;
-    height: 25px;
-    background: #FF0000;
-    border-radius: 2px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
-    right: 0;
-    top: -5px;
+    right: 15px;
     opacity: 0;
     transition: .3s;
 }
 .main__nameAndInputHeaderAlertText {
+    font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
+    line-height: 100%;
+    color: #FF0000;
 }
 .main__nameAndInput-error .main__nameAndInputFooterInput {
     border: 1px solid #FF0000;
@@ -176,9 +175,9 @@ body {
 }
 
 .main__nameAndInputFooterInput-textarea {
-    padding: 15px 20px 10px;
-    min-height: 145px;
-    resize: vertical;
+    padding: 15px;
+    min-height: 155px;
+    resize: none;
 }
 .main__nameAndInput-textarea .main__nameAndInputFooter {
     height: auto;
@@ -191,12 +190,8 @@ body {
     appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    background: #0B1B2D url(../img/icons/select.svg) no-repeat right center;
+    /*background: #0B1B2D url(../img/icons/select.svg) no-repeat right center;*/
     background-position: calc(100% - 15px);
-}
-.crm__transactionsBtnsRow {
-    display: flex;
-    flex-direction: row;
 }
 .main__nameAndInputFooter-month {
     width: 112px;
@@ -1123,6 +1118,246 @@ body {
 }
 /*TERMS END*/
 
+/*FAQ*/
+.main-faq__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main-faq__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-faq__button {
+    width: 380px;
+    height: 70px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 30px rgba(25, 18, 52, 0.05));
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+}
+.main-faq__button:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(95.71deg, #FD5A16 0%, #CC32CD 137.59%);
+    transition: .3s;
+}
+.main-faq__button:last-child {
+    margin-bottom: 0;
+}
+.main-faq__button-active,
+.main-faq__button:hover {
+    box-shadow: 0 5px 15px rgba(222, 65, 141, 0.25);
+    border: none;
+}
+.main-faq__button-active:before,
+.main-faq__button:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+.main-faq__buttonText {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-faq__tabs {
+    width: 790px;
+    display: flex;
+    flex-direction: column;
+}
+.main-faq__tab {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.main-faq__tab-active {
+    display: flex;
+}
+.main-faq__tabItem {
+    width: 100%;
+    background: #2C2C42;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.main-faq__tabItem:last-child {
+    margin-bottom: 0;
+}
+.main-faq__tabItemHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 25px 20px 24px;
+}
+.main-faq__tabItemTitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.main-faq__tabItemIcon {
+    transition: .3s;
+}
+.main-faq__tabItemText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, .7);
+    display: none;
+    margin: -6px 70px 24px 20px;
+}
+.main-faq__tabItemHeader-active .main-faq__tabItemIcon {
+    transform: rotate(180deg);
+}
+/*FAQ END*/
+
+/*CONTACTS*/
+.main-contacts__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 380px;
+}
+.main-contacts__infoText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 30px;
+}
+.main-contacts__infoData {
+    margin-bottom: 20px;
+    width: 380px;
+    height: 70px;
+    background: linear-gradient(95.71deg, #FD5A16 0%, #CC32CD 137.59%);
+    box-shadow: 0 5px 15px rgba(222, 65, 141, 0.25);
+    border-radius: 2px;
+    padding-left: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-contacts__infoData-mobile {
+    display: none;
+}
+.main-contacts__infoData:last-child {
+    margin-bottom: 0;
+}
+.main-contacts__infoDataImg {
+    margin-right: 18px;
+}
+.main-contacts__infoDataText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.main-contacts__form {
+    position: relative;
+    width: 790px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(268.08deg, #445073 -1.02%, #354060 57.17%, #343F60 100%);
+    box-shadow: 0 10px 20px rgba(24, 30, 51, 0.25);
+    border-radius: 2px;
+}
+.main-contacts__formRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -5px;
+}
+.main-contacts__formRow .main__nameAndInput {
+    width: 350px;
+}
+.main-contacts__button {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.main-contacts__formSuccess {
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(268.08deg, #445073 -1.02%, #354060 57.17%, #343F60 100%);
+    box-shadow: 0 10px 20px rgba(24, 30, 51, 0.25);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-contacts__formSuccess-active {
+    visibility: visible;
+    opacity: 1;
+}
+.main-contacts__formSuccessIcon {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+    z-index: 3;
+}
+.main-contacts__formSuccessTitle {
+    background: linear-gradient(95.71deg, #FD5A16 0%, #CC32CD 137.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 67px;
+    line-height: 80px;
+    color: #000000;
+}
+.main-contacts__formSuccessText {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 313px;
+}
+/*CONTACTS END*/
+
 /*BREADCRUMBS*/
 .main-breadcrumbs {
     margin: 10px 0 50px 0;
@@ -1172,95 +1407,6 @@ body {
     text-decoration: none;
 }
 /*BREADCRUMBS END*/
-
-/*REGISTRATION*/
-.main__decorRegistration-1 {
-    left: -199px;
-    top: 60px;
-}
-.main__decorRegistration-2 {
-    top: 604px;
-    right: -169px;
-}
-.main__decorRegistration-3 {
-    top: 950px;
-    left: -165px;
-}
-.main__registration {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main__registrationForm {
-    margin: 60px 15px 0;
-    padding: 45px 50px 50px;
-    width: 430px;
-    background: #f3fbfe;
-    border: 2px solid #0080FF;
-    border-radius: 30px;
-}
-.main__registrationFormTitle {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 35px;
-    text-align: center;
-    color: #191234;
-    margin-bottom: 10px;
-}
-.main__registrationForm .btn {
-    width: 100%;
-    margin-top: 30px;
-}
-.main__registrationDelimiter {
-    display: block;
-    height: 1px;
-    width: 100%;
-    background: #0080FF;
-    margin: 30px 0;
-}
-/*REGISTRATION END*/
-
-/*LOGIN*/
-.main__decorAuthorization-2 {
-    top: 437px;
-    right: -204px;
-}
-.main__loginLink {
-    display: block;
-    font-size: 14px;
-    line-height: 21px;
-    color: #0B1B2D;
-    opacity: 0.5;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    margin: 7px 0 5px;
-}
-.main__loginLink:hover {
-    text-decoration: underline;
-}
-/*LOGIN*/
-
-/*THANKS*/
-.main__registrationThanksText {
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: #191234;
-    max-width: 280px;
-    margin: 0 auto;
-}
-.main__registrationThanksText span {
-    font-size: 14px;
-    font-weight: bold;
-}
-.main__registrationForm-btn .btn {
-    margin-top: 20px;
-}
-/*THANKS END*/
 
 /*FOOTER*/
 .footer {
@@ -1365,6 +1511,97 @@ body {
 
 }
 /*FOOTER END*/
+
+
+/*REGISTRATION*/
+.main__decorRegistration-1 {
+    left: -199px;
+    top: 60px;
+}
+.main__decorRegistration-2 {
+    top: 604px;
+    right: -169px;
+}
+.main__decorRegistration-3 {
+    top: 950px;
+    left: -165px;
+}
+.main__registration {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__registrationForm {
+    margin: 60px 15px 0;
+    padding: 45px 50px 50px;
+    width: 430px;
+    background: #f3fbfe;
+    border: 2px solid #0080FF;
+    border-radius: 30px;
+}
+.main__registrationFormTitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #191234;
+    margin-bottom: 10px;
+}
+.main__registrationForm .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+.main__registrationDelimiter {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #0080FF;
+    margin: 30px 0;
+}
+/*REGISTRATION END*/
+
+/*LOGIN*/
+.main__decorAuthorization-2 {
+    top: 437px;
+    right: -204px;
+}
+.main__loginLink {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0B1B2D;
+    opacity: 0.5;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 7px 0 5px;
+}
+.main__loginLink:hover {
+    text-decoration: underline;
+}
+/*LOGIN*/
+
+/*THANKS*/
+.main__registrationThanksText {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #191234;
+    max-width: 280px;
+    margin: 0 auto;
+}
+.main__registrationThanksText span {
+    font-size: 14px;
+    font-weight: bold;
+}
+.main__registrationForm-btn .btn {
+    margin-top: 20px;
+}
+/*THANKS END*/
+
 
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
@@ -1834,6 +2071,104 @@ body {
     .main-plans__page,
     .main-about__page {
         padding-top: 0;
+    }
+
+    .main-faq__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-faq__buttons {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-faq__button {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 75px;
+    }
+    .main-faq__tabs {
+        width: 100%;
+    }
+    .main-faq__tabItem {
+        margin-bottom: 10px;
+    }
+    .main-faq__tabItemTitle {
+        font-size: 16px;
+    }
+    .main-faq__tabItemText {
+        font-size: 14px;
+        line-height: 140%;
+        margin: -13px 15px 27px;
+    }
+    .main-faq__tabItemIcon {
+        width: 14px;
+    }
+    .main-faq__tabItemHeader {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-contacts__infoData {
+        display: none;
+    }
+    .main-contacts__infoData-mobile {
+        display: flex;
+        margin-bottom: 20px;
+        height: 60px;
+        padding-left: 15px;
+        width: 100%;
+    }
+    .main-contacts__content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .main-contacts__info {
+        width: 100%;
+    }
+    .main-contacts__infoText {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 160%;
+    }
+    .main-contacts__form {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+        height: auto;
+    }
+    .main-contacts__formRow {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .main-contacts__formRow .main__nameAndInput {
+        width: 100%;
+    }
+    .main-contacts__button {
+        margin-top: 0;
+        width: 100%;
+    }
+    .main-contacts__formSuccessIcon {
+        top: 10px;
+        right: 10px;
+    }
+    .main-contacts__formSuccessTitle {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .main-contacts__formSuccessText {
+        font-size: 15px;
+        line-height: 140%;
+        max-width: 234px;
+    }
+
+    .main__nameAndInput {
+        margin-bottom: 15px;
+    }
+    .main__nameAndInputFooterInput-textarea {
+        min-height: 130px;
     }
 }
 @media screen and (max-width: 980px) {

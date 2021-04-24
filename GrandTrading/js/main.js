@@ -42,15 +42,30 @@ $('.header-mask').click(function () {
 });
 
 //tabs
-$('.main__faqBtn').click(function () {
-    $('.main__faqBtn').removeClass('main__faqBtn-active');
-    $(this).addClass('main__faqBtn-active');
+$('.main-faq__buttonText').click(function () {
+    $('.main-faq__button').removeClass('main-faq__button-active');
+    $(this).parent().addClass('main-faq__button-active');
 
-    var id = $(this).attr("id");
+    var id = $(this).parent().attr("id");
     id = id.substr(0, id.length - 3);
 
-    $('.main__faqTab').removeClass("main__faqTab-active");
-    $("#" + id).addClass("main__faqTab-active");
+    $('.main-faq__tab').removeClass("main-faq__tab-active");
+    $("#" + id).addClass("main-faq__tab-active");
+});
+
+//faq
+$(".main-faq__tabItemHeader").click(function () {
+    if ($(this).hasClass("main-faq__tabItemHeader-active")) {
+        $(".main-faq__tabItemHeader").removeClass("main-faq__tabItemHeader-active");
+        $(".main-faq__tabItemText").slideUp();
+    } else {
+        $(".main-faq__tabItemHeader").removeClass("main-faq__tabItemHeader-active");
+        $(".main-faq__tabItemText").slideUp();
+        $(this).parent().find(".main-faq__tabItemText").slideDown();
+        $(this).addClass("main-faq__tabItemHeader-active");
+
+        resizeEmptySpace();
+    }
 });
 
 //plans open
@@ -59,33 +74,12 @@ $('.main-plans__show').click(function () {
     $(this).fadeOut();
 });
 
-//faq
-$(".main__faqTabItemHeader").click(function () {
-    if ($(this).hasClass("main__faqTabItemHeader-active")) {
-        $(".main__faqTabItemHeader").removeClass("main__faqTabItemHeader-active");
-        $(".main__faqTabItemText").slideUp();
-    } else {
-        $(".main__faqTabItemHeader").removeClass("main__faqTabItemHeader-active");
-        $(".main__faqTabItemText").slideUp();
-        $(this).parent().find(".main__faqTabItemText").slideDown();
-        $(this).addClass("main__faqTabItemHeader-active");
-
-        resizeEmptySpace();
-    }
-});
-
 //contacts form
-$(".main__contactsFormSuccessIcon").click(function () {
-    $(".main__contactsForm")[0].reset();
-    $(".main__contactsForm").removeClass("main__contactsForm-mobile");
-    $(".main__contactsFormSuccess").removeClass("main__contactsFormSuccess-active");
+$(".main-contacts__formSuccessIcon").click(function () {
+    $(".main-contacts__form")[0].reset();
+    $(".main-contacts__formSuccess").removeClass("main-contacts__formSuccess-active");
 });
-$(".main__contactsForm").submit(function (e) {
-    if ($(window).width() > 870) {
-        e.preventDefault();
-        $(".main__contactsFormSuccess").addClass("main__contactsFormSuccess-active");
-    } else {
-        $(".main__contactsForm").addClass("main__contactsForm-mobile");
-        $(".main__contactsFormSuccess").addClass("main__contactsFormSuccess-active");
-    }
+$(".main-contacts__form").submit(function (e) {
+    e.preventDefault();
+    $(".main-contacts__formSuccess").addClass("main-contacts__formSuccess-active");
 });
