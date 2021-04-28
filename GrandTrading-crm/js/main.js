@@ -8,14 +8,7 @@ $(window).on('resize', function () {
 //burger menu
 $('.ham').click(function () {
     $("html, body").toggleClass("body-fixed");
-    $('.header-nav__wrapper-mobile').toggleClass("header-nav__wrapper-active");
-    $('.header-mask').toggleClass("header-mask__active");
-});
-$('.header-mask').click(function () {
-    $('.ham').removeClass("active");
-    $('.header-mask').removeClass("header-mask__active");
-    $('.header-nav__wrapper').removeClass("header-nav__wrapper-active");
-    $("html, body").removeClass("body-fixed");
+    $('.aside').toggleClass("aside-active");
 });
 
 //copy to clipboard

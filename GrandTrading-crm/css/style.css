@@ -1171,7 +1171,7 @@ body {
         min-height: 125vh;
     }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1025px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (                min-resolution: 192dpi) and ( max-width: 1025px), only screen and (                min-resolution: 2dppx) and ( max-width: 1025px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1125px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1125px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1125px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1125px), only screen and (                min-resolution: 192dpi) and ( max-width: 1125px), only screen and (                min-resolution: 2dppx) and ( max-width: 1025px) {
     html {
         zoom: 1;
         -ms-zoom: 1;
@@ -1191,7 +1191,7 @@ body {
         min-height: 100vh;
     }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1020px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1020px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1020px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1020px), only screen and (                min-resolution: 192dpi) and ( max-width: 1020px), only screen and (                min-resolution: 2dppx) and ( max-width: 1020px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1120px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1120px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1120px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1120px), only screen and (                min-resolution: 192dpi) and ( max-width: 1120px), only screen and (                min-resolution: 2dppx) and ( max-width: 1020px) {
     html {
         zoom: 1;
         -ms-zoom: 1;
@@ -1214,22 +1214,14 @@ body {
         width: 100%;
     }
     .wrapper-lines {
-        width: 1200px;
-    }
-}
-@media screen and (max-width: 1026px) {
-    .wrapper {
-        padding: 0 10px;
-    }
-
-    .ham {
-        display: block;
+        display: none;
     }
 
     .header {
         height: 60px;
         z-index: 11;
         box-shadow: unset;
+        display: flex;
     }
     .header .wrapper {
         padding: 0 10px;
@@ -1238,45 +1230,53 @@ body {
         background: #212138;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
     }
-    .header-nav {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-        padding: 30px 0 10px;
-        height: auto;
+
+    .ham {
+        display: block;
     }
-    .header-nav__wrapper {
+
+    .main {
+        padding-left: 0;
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+    .aside {
         position: fixed;
         top: -150%;
         left: 0;
         width: 100%;
+        max-width: 100%;
         height: calc(100vh - 60px);
         background: #212138;
         transition: .7s;
         z-index: 10;
-        display: none;
+        padding: 30px 0 20px;
+        overflow-x: hidden;
     }
-    .header-nav__wrapper-mobile {
-        display: block;
-        padding: 0 10px;
-    }
-    .header-nav__wrapper-active {
+    .aside-active {
         top: 59px;
         overflow-y: scroll;
     }
-    .header-nav__item {
-        height: unset;
-        padding-bottom: 7px;
-        margin-left: 0;
-        margin-bottom: 0;
-        margin-top: 33px;
+    .aside__logoLink {
+        display: none;
     }
-    .header-nav__item:first-child {
-        margin-top: 0;
+    .aside-lang {
+        margin-bottom: 20px;
     }
-    .header-nav__langBlock {
-        margin: 20px 0 30px 0;
+    .aside-time {
+        margin-bottom: 35px;
     }
+    .aside-nav__item {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+
     .body-fixed {
         overflow-y: hidden;
     }
@@ -1291,25 +1291,127 @@ body {
         display: none;
     }
 
-    .main-title {
-        margin-bottom: 30px;
-    }
-    .main-text {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .main-about,
-    .main-plans,
-    .main-advantages,
-    .main-information {
-        padding: 30px 0;
-    }
-    .main-referral {
-        padding-top: 30px;
-    }
     .main {
-        padding: 60px 0 50px;
+        padding: 60px 10px 40px;
     }
+    .main-content {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .main-header__textBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 19px;
+    }
+    .main-header__textBlock:first-child {
+        flex-direction: row-reverse;
+    }
+    .main-header__textBlock:last-child {
+        margin-bottom: 0;
+    }
+    .main-header__name {
+        margin-bottom: 0;
+    }
+    .main-header__text {
+        margin-bottom: 0;
+    }
+
+    .main-title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .main-title__left {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-title__balance {
+        width: auto;
+        margin-left: 0;
+    }
+    .main-title__right {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-title__button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .main-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .main-link__circle {
+        display: none;
+    }
+    .main-link__input {
+        width: 100%;
+        height: 50px;
+        background: rgba(255, 255, 255, .05);
+        border-radius: 3px;
+        padding-left: 20px;
+    }
+    .main-link__button {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .main-balance {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .main-balance__item {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 112px;
+    }
+    .main-balance__item:last-child {
+        margin-bottom: 0;
+    }
+    .main-balance__itemTextBlock {
+        margin: 20px 0;
+    }
+    .main-balance__itemLine {
+        margin-right: 18px;
+    }
+
+    .main-withdraw {
+        margin-bottom: 20px;
+    }
+    .main-withdraw__item {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .main-withdraw__itemLeft {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-withdraw__itemText {
+        margin: 20px 0;
+    }
+
+
     .main-plans__item {
         margin-bottom: 10px;
     }
@@ -1370,8 +1472,7 @@ body {
         margin-top: 20px;
     }
 
-    .main-plans__page,
-    .main-about__page {
+    .main-plans__page {
         padding-top: 0;
     }
 
