@@ -1247,7 +1247,7 @@ body {
         left: 0;
         width: 100%;
         max-width: 100%;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 59px);
         background: #212138;
         transition: .7s;
         z-index: 10;
