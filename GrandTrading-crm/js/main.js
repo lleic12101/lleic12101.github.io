@@ -24,3 +24,17 @@ function copyToClipboard() {
 
     $(".main-link__copied").text("copied");
 }
+
+//withdraw
+$('.main-output__item').click(function () {
+    $('.main-output__item').removeClass('main-output__item-active');
+    $(this).addClass('main-output__item-active');
+});
+
+//plan
+$('.main-plans__itemButton').click(function () {
+    $('.main-plans__item').removeClass('main-plans__item-active');
+    $('.main-plans__itemButton').html("Select plan");
+    $(this).parent().parent().addClass('main-plans__item-active');
+    $(this).html("Selected");
+});

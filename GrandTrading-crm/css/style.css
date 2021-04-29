@@ -616,9 +616,10 @@ body {
     max-width: 1030px;
     padding-top: 30px;
     margin: 0 35px;
+    padding-bottom: 5px;
     width: 100%;
     position: relative;
-    min-height: 100vh;
+    min-height: 916px;
 }
 
 .main-header {
@@ -778,6 +779,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 .main-balance__item {
     width: 235px;
@@ -906,13 +908,69 @@ body {
     text-decoration: underline;
 }
 
-.main-plans {
-    padding: 50px 0;
+.main-output {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
 }
+.main-output__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 235px;
+    height: 70px;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main-output__itemLine {
+    display: block;
+    height: 100%;
+    min-width: 2px;
+    background: linear-gradient(179.91deg, #FD5A16 0%, #CC32CD 100%);
+    border-radius: 3px 0 0 3px;
+    margin-right: 8px;
+    opacity: 0;
+    transition: .3s;
+}
+.main-output__item .main-withdraw__walletName {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.main-output__item .main-withdraw__walletRect {
+    margin-right: 10px;
+}
+.main-output__item-active .main-output__itemLine {
+    opacity: 1;
+}
+
+.main-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.main-form__button {
+    width: 235px;
+    height: 50px;
+}
+.main-form .main__nameAndInput {
+    width: 235px;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
 .main-plans__items {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 30px;
 }
 .main-plans__items-hidden {
     margin-top: 30px;
@@ -926,7 +984,7 @@ body {
     align-items: center;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .main-plans__item:last-child {
     margin-bottom: 0;
@@ -939,7 +997,7 @@ body {
     border-radius: 3px 0 0 3px;
 }
 .main-plans__itemNameBlock {
-    width: 375px;
+    min-width: 294px;
     height: 250px;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 3px 0 0 3px;
@@ -950,10 +1008,10 @@ body {
 }
 .main-plans__itemName {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 100%;
     color: #FFFFFF;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 .main-plans__itemPercent {
     font-weight: bold;
@@ -974,8 +1032,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 438px;
-    padding-left: 88px;
+    min-width: 376px;
+    padding-left: 55px;
 }
 .main-plans__itemListRow {
     display: flex;
@@ -1011,7 +1069,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 380px;
+    width: 320px;
 }
 .main-plans__itemText {
     font-weight: bold;
@@ -1056,7 +1114,7 @@ body {
     display: none;
 }
 .main-plans__item-disabled .main-plans__itemNameBlock {
-    width: 380px;
+    width: 299px;
 }
 .main-plans__item-disabled .main-plans__itemName {
     color: #94949F;
@@ -1079,6 +1137,9 @@ body {
 .main-plans__item-disabled .main-plans__itemText {
     color: #94949F;
     margin-bottom: 0;
+}
+.main-plans__item-active .main-plans__itemButton {
+    border: 2px solid #FFFFFF;
 }
 /*MAIN END*/
 
@@ -1292,7 +1353,7 @@ body {
     }
 
     .main {
-        padding: 60px 10px 40px;
+        padding: 60px 10px 20px;
     }
     .main-content {
         margin: 0;
@@ -1378,6 +1439,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        margin-bottom: 20px;
     }
     .main-balance__item {
         width: 100%;
@@ -1411,6 +1473,32 @@ body {
         margin: 20px 0;
     }
 
+    .main-form {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .main-form .main__nameAndInput {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .main-form__button {
+        width: 100%;
+    }
+
+    .main-output {
+        margin-bottom: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-output__item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .main-output__item:last-child {
+        margin-bottom: 0;
+    }
 
     .main-plans__item {
         margin-bottom: 10px;
@@ -1427,10 +1515,11 @@ body {
         display: flex;
         flex-direction: column;
         height: auto;
-        max-width: 380px;
+        max-width: 100%;
     }
     .main-plans__items {
         align-items: center;
+        margin-bottom: 20px;
     }
     .main-plans__itemNameBlock {
         width: 100%;
@@ -1450,6 +1539,7 @@ body {
     }
     .main-plans__itemList {
         width: 100%;
+        min-width: unset;
         padding: 17px 30px 16px;
     }
     .main-plans__itemListText {
@@ -1470,6 +1560,9 @@ body {
     }
     .main-plans__show {
         margin-top: 20px;
+    }
+    .main-plans__item-disabled .main-plans__itemNameBlock {
+        width: 100%;
     }
 
     .main-plans__page {
