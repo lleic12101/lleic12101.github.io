@@ -38,3 +38,9 @@ $('.main-plans__itemButton').click(function () {
     $(this).parent().parent().addClass('main-plans__item-active');
     $(this).html("Selected");
 });
+
+//team
+$('.main-title__button-team').click(function () {
+    $('.main-title__button').removeClass('button-active');
+    $(this).addClass('button-active');
+});

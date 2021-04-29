@@ -58,7 +58,7 @@ body {
     left: 1190px;
     top: 25px;
 
-    border: 2px solid #E04285;
+    border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
 
@@ -80,8 +80,15 @@ body {
 
     box-shadow: 0 5px 15px rgba(222, 65, 141, 0.25);
 }
-.button:hover {
-    border: 2px solid #FFFFFF;
+.button:hover,
+.button-active {
+    background: #FFFFFF;
+    color: #000000;
+}
+.button-disabled:hover {
+    color: #FFFFFF;
+    cursor: default;
+    background: transparent;
 }
 .button-color {
     box-shadow: 0 5px 15px rgba(222, 65, 141, 0.25);
@@ -91,6 +98,7 @@ body {
 .button-color:hover {
     background: linear-gradient(95.71deg, #FD5A16 0%, #CC32CD 137.59%);
     border: 2px solid #FFFFFF;
+    color: #FFFFFF;
 }
 /*BUTTON END*/
 
@@ -190,19 +198,23 @@ body {
     appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    /*background: #0B1B2D url(../img/icons/select.svg) no-repeat right center;*/
+    background: #2C2C42 url(../img/icons/select.svg) no-repeat right center;
     background-position: calc(100% - 15px);
 }
+.crm__transactionsBtnsRow {
+    display: flex;
+    flex-direction: row;
+}
 .main__nameAndInputFooter-month {
-    width: 112px;
-    margin-right: 20px;
+    width: 84px;
+    margin-right: 5px;
 }
 .main__nameAndInputFooter-year {
-    width: 75px;
+    width: 68px;
 }
 .main__nameAndInputFooter-day {
-    width: 55px;
-    margin-right: 20px;
+    width: 48px;
+    margin-right: 5px;
 }
 .main__nameAndInputFooter-captcha .main__nameAndInputFooterInput {
     padding-left: 99px;
@@ -220,6 +232,28 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+}
+.main__nameAndInput-deposit {
+    min-width: 101px;
+    width: 101px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.main__nameAndInput-currency {
+    min-width: 146px;
+    width: 146px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.main__nameAndInput-from {
+    margin-bottom: 0;
+    width: 210px;
+    margin-right: 10px;
+}
+.main__nameAndInput-to {
+    margin-bottom: 0;
+    width: 210px;
+    margin-right: 10px;
 }
 /*NAME AND INPUT END*/
 
@@ -344,6 +378,123 @@ body {
     background-color: #FFFFFF;
 }
 /*CHECKBOX END*/
+
+/*RADIOBUTTON*/
+/* main styles */
+.switch {
+    width: 58px;
+    position: relative;
+}
+.switch input {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.switch input:checked {
+    z-index: 1;
+}
+.switch input:checked + label {
+    opacity: 1;
+    cursor: default;
+}
+.switch input:not(:checked) + label:hover {
+    opacity: 0.5;
+}
+.switch label {
+    color: #fff;
+    opacity: 0.33;
+    transition: opacity 0.25s ease;
+    cursor: pointer;
+}
+.switch .toggle-outside {
+    height: 100%;
+    border-radius: 30px;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.25s ease all;
+}
+.switch .toggle-inside {
+    background: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+    position: absolute;
+    transition: 0.25s ease all;
+}
+.switch--horizontal {
+    width: 58px;
+    height: 30px;
+    margin: 0;
+    font-size: 0;
+}
+.switch--horizontal input {
+    height: 30px;
+    width: 58px;
+    left: 0;
+    margin: 0;
+}
+.switch--horizontal label {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    display: inline-block;
+    width: 58px;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+.switch--horizontal label {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    display: inline-block;
+    width: 58px;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+.switch--horizontal label:last-of-type {
+    margin-left: 29px;
+}
+.switch--horizontal .toggle-outside {
+    background: rgba(255, 255, 255, .1);
+    position: absolute;
+    width: 58px;
+    left: 0;
+}
+.switch--horizontal .toggle-inside {
+    height: 28px;
+    width: 28px;
+}
+.switch--horizontal input:checked ~ .toggle-outside .toggle-inside {
+    left: 0;
+}
+.switch--horizontal input ~ input:checked ~ .toggle-outside .toggle-inside {
+    left: 29px;
+}
+.switch--no-label label {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.switch--no-label input:checked ~ .toggle-outside .toggle-inside {
+    background: #797C8E;
+}
+.switch--no-label input ~ input:checked ~ .toggle-outside {
+    background: rgba(255, 255, 255, .1);
+}
+.switch--no-label input ~ input:checked ~ .toggle-outside .toggle-inside {
+    background: linear-gradient(95.71deg, #FD5A16 0%, #CC32CD 137.59%);
+    box-shadow: 0 5px 15px rgba(222, 65, 141, 0.25);
+}
+.switch--no-label.switch--horizontal {
+    width: 58px;
+}
+.switch--no-label.switch--horizontal input,
+.switch--no-label.switch--horizontal .toggle-outside {
+    left: 0;
+}
+/* mixin */
+/*RADIOBUTTON END*/
 
 /*HEADER*/
 .header {
@@ -1188,6 +1339,257 @@ body {
 }
 /*CONFIRMATION END*/
 
+/*SETTINGS*/
+.main-settings {
+    width: 765px;
+    background: linear-gradient(268.08deg, rgba(68, 80, 115, 0.5) -1.02%, rgba(53, 64, 96, 0.5) 57.17%, rgba(52, 63, 96, 0.5) 100%);
+    box-shadow: 0 10px 20px rgba(24, 30, 51, 0.25);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+.main-settings__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.main-settings__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-settings .main__nameAndInput {
+    width: 340px;
+}
+.main-settings__button {
+    width: 340px;
+    height: 50px;
+    margin-top: 10px;
+}
+/*SETTINGS END*/
+
+/*SECURITY*/
+.main-security__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+}
+.main-security__row .main__nameAndInput {
+    width: 205px;
+    margin-bottom: 0;
+}
+.main-security__button {
+    width: 236px;
+    height: 50px;
+    margin-left: 30px;
+}
+.main-security__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.main-security__text a {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.main-security__text a:hover {
+    text-decoration: none;
+}
+.main-security__img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.main-security__radioRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main-security__radioRow-margin {
+    margin-bottom: 30px;
+}
+.main-security__radioBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 205px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.main-security__radioBlock:last-child {
+    margin-right: 0;
+}
+.main-security__radioText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+/*SECURITY END*/
+
+/*NAVIGATION*/
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.main-navigation__item {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+.main-navigation__item:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(95.71deg, #FD5A16 0%, #CC32CD 137.59%);
+    transition: .3s;
+    z-index: -1;
+    left: 0;
+}
+.main-navigation__item:hover:before,
+.main-navigation__item-active:before {
+    opacity: 1;
+    visibility: visible;
+}
+/*NAVIGATION END*/
+
+/*MY DEPOSITS*/
+.main-title__button-deposits {
+    margin-right: 30px;
+}
+.main-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.main-table__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.main-table__item:last-child {
+    margin-bottom: 0;
+}
+.main-table__text-plan {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    min-width: 279px;
+}
+.main-table__text-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    min-width: 279px;
+}
+.main-table__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.main-table__text-date {
+    min-width: 255px;
+}
+.main-table__text-date1 {
+    margin-right: 28px;
+}
+.main-table__text-ends {
+    min-width: 279px;
+}
+
+.main-table__item .main-withdraw__walletRect {
+    margin-right: 10px;
+}
+.main-table__item .main-withdraw__walletName {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+/*MY DEPOSITS END*/
+
+/*TEAM*/
+.main-title__right-team .main-title__button {
+    margin-left: 30px;
+}
+.main-link__team {
+    margin-bottom: 10px;
+}
+.main-table__team .main-table__item {
+    justify-content: space-between;
+}
+.main-table__team .main-withdraw__itemWallet {
+    min-width: 187px;
+}
+/*TEAM END*/
+
+/*TRANSACTIONS*/
+.main-table__transactions.main-table__team .main-withdraw__itemWallet {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.main-title__right-transactions {
+    align-items: flex-end;
+}
+.main-title__right-transactions .main__nameAndInputHeader {
+    padding-left: 5px;
+}
+.main-title__right-transactions .main__nameAndInputHeaderName {
+    white-space: nowrap;
+}
+.main-title__right-transactions .main-title__button {
+    width: 58px;
+    height: 50px;
+    margin-bottom: 0;
+}
+/*TRANSACTIONS END*/
+
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
     html {
@@ -1627,6 +2029,111 @@ body {
     }
     .main-confirmation__button {
         max-width: 100%;
+    }
+
+    .main-settings {
+        width: 100%;
+        padding: 10px;
+    }
+    .main-settings__button {
+        width: 100%;
+        margin-top: 0;
+    }
+    .main-settings__title {
+        margin-bottom: 10px;
+    }
+    .main-settings__row {
+        flex-direction: column;
+    }
+    .main-settings .main__nameAndInput {
+        width: 100%;
+    }
+
+    .main-security__row {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 0;
+    }
+    .main-security__button {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .main-security__text {
+        margin-bottom: 10px;
+    }
+    .main-security__img {
+        margin-bottom: 10px;
+    }
+    .main-security__radioRow-margin {
+        margin-bottom: 10px;
+    }
+    .main-security__radioRow {
+        width: 100%;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 400px;
+    }
+    .main-security__radioBlock {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .main-security__radioBlock:last-child {
+        margin-bottom: 0;
+    }
+
+    .main-title__right {
+        flex-direction: column;
+    }
+    .main-title__button-deposits {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .main-table {
+        margin-bottom: 20px;
+    }
+    .main-table__item {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-table__text-plan {
+        margin-bottom: 10px;
+    }
+    .main-table__text {
+        margin-bottom: 10px;
+    }
+    .main-table__text:last-child {
+        margin-bottom: 0;
+    }
+    .main-navigation__item {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .main-title__right-team .main-title__button {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .main-title__right-team .main-title__button:last-child {
+        margin-bottom: 0;
+    }
+    .main-table__text-name {
+        margin-bottom: 10px;
+    }
+    .main-table__team .main-withdraw__itemWallet {
+        margin-top: 10px;
+    }
+
+    .main-title__right-transactions {
+        align-items: flex-start;
+    }
+    .main-title__right-transactions .main__nameAndInput {
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 980px) {
