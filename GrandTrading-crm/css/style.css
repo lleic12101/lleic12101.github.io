@@ -824,7 +824,9 @@ body {
     line-height: 24px;
     color: #FFFFFF;
 }
+/*MAIN END*/
 
+/*WITHDRAW*/
 .main-withdraw {
     width: 100%;
     display: flex;
@@ -965,7 +967,9 @@ body {
     margin-right: 30px;
     margin-bottom: 0;
 }
+/*WITHDRAW END*/
 
+/*OPEN DEPOSIT*/
 .main-plans__items {
     display: flex;
     flex-direction: column;
@@ -1141,7 +1145,48 @@ body {
 .main-plans__item-active .main-plans__itemButton {
     border: 2px solid #FFFFFF;
 }
-/*MAIN END*/
+/*OPEN DEPOSIT END*/
+
+/*CONFIRMATION*/
+.main-confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-confirmation__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 3px;
+}
+.main-confirmation__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 59px;
+    padding: 0 30px;
+}
+.main-confirmation__item:nth-child(even) {
+    background: rgba(255, 255, 255, .05)
+}
+.main-confirmation__itemText {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.main-confirmation__button {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+}
+/*CONFIRMATION END*/
 
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
@@ -1574,6 +1619,14 @@ body {
     }
     .main__nameAndInputFooterInput-textarea {
         min-height: 130px;
+    }
+
+    .main-confirmation__items {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .main-confirmation__button {
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 980px) {
