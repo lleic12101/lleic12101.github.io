@@ -39,9 +39,14 @@ html, body {
     height: 100%;
 }
 
+html {
+    background: #171617 url(../img/grid.svg);
+}
+
 body {
     position: relative;
-    background: #171617 url(../img/grid.svg);
+    background: url(../img/bg.png) no-repeat top right;
+    background-size: auto 100%;
 }
 
 .wrapper {
@@ -365,7 +370,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+    min-height: calc(100% - 110px);
+}
+.main-decor {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 /*MAIN END*/
 
@@ -387,6 +397,7 @@ body {
     line-height: 34px;
     color: #FFFFFF;
     margin-bottom: 30px;
+    white-space: nowrap;
 }
 .main-form__row {
     width: 100%;
@@ -423,16 +434,23 @@ body {
 
 /*LOGIN*/
 .main-form__login {
-    width: 410px;
+    width: 400px;
+    margin-top: 20px;
+    align-items: center;
+}
+.main-form__login .main-form__title {
+    text-align: center;
+    width: 600px;
+    margin-left: -100px;
 }
 .main-form__loginLink {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 100%;
     color: #FFFFFF;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin: -5px 0 15px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
 }
 .main-form__loginLink:hover {
     text-decoration: none;
@@ -440,23 +458,27 @@ body {
 .main-form__login .main-form__button {
     width: 100%;
 }
-.main-form__button-margin {
-    margin-top: 5px;
-}
 /*LOGIN*/
 
 /*RESET-2*/
 .main-form__text {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
     color: #FFFFFF;
-    max-width: 277px;
-    margin: -10px auto 0;
+    width: 500px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+.main-form__text span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
 }
 .main-form__text-margin {
-    margin-bottom: 20px;
+    margin: -10px 0 30px -50px
 }
 /*RESET-2 END*/
 
@@ -647,24 +669,13 @@ body {
     }
 }
 @media screen and (max-width: 870px) {
-    .main__loginLink {
-        text-decoration: underline;
-        margin-bottom: 4px;
-    }
-    .main__loginLink:hover {
-        text-decoration: none;
-    }
-    .main__registrationForm-login .btn {
-        margin-top: 20px;
-    }
-
     .main-form {
         width: 100%;
         margin: 30px 0;
     }
     .main-form__title {
         font-size: 20px;
-        line-height: 19px;
+        line-height: 26px;
         margin-bottom: 20px;
     }
     .main-form__row {
@@ -681,22 +692,27 @@ body {
     .main-form__button {
         width: 100%;
     }
+
+    .main-form__login .main-form__title {
+        text-align: center;
+        width: unset;
+        margin-left: 0;
+        white-space: pre-wrap;
+    }
+    .main-form__text {
+        width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .main-form__text span {
+        font-size: 16px;
+    }
+    .main-form__text-margin {
+        margin-bottom: 20px;
+        margin-top: -5px;
+    }
 }
 @media screen and (max-width: 810px) {
-    .main-form__loginLink {
-        margin: 5px 0 20px;
-    }
-    .main-form__button-margin {
-        margin-top: 10px;
-    }
-
-    .main-form__text {
-        font-size: 16px;
-        line-height: 19px;
-        margin-top: -15px;
-    }
-    .main-form__text-thanks {
-        margin: -10px auto 20px;
-    }
 }
 /*MEDIA END*/

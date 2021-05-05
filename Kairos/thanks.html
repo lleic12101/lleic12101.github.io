@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>GrandTrading</title>
+    <title>Kairos</title>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -13,141 +13,33 @@
         <a href="#!" class="header-logo__link">
             <img src="img/logo.svg" alt="logo" class="header__logo"/>
         </a>
+        <div class="header-mask"></div>
         <div class="header-nav__wrapper">
             <nav class="header-nav">
-                <a href="#!" class="header-nav__item">Home</a>
-                <a href="#!" class="header-nav__item">About</a>
-                <a href="#!" class="header-nav__item">For Investors</a>
-                <a href="#!" class="header-nav__item">FAQ</a>
-                <a href="#!" class="header-nav__item">Contacts</a>
-                <div class="header-nav__langBlock">
-                    <div class="header-nav__langHeader">
-                        <img src="img/icons/flag.svg" alt="icon" class="header-nav__langIcon"/>
-                        <p class="header-nav__langText">Eng</p>
-                    </div>
-                    <div class="header-nav__langItems">
-                        <div class="header-nav__langItem">
-                            <img src="img/icons/flag-ru.svg" alt="icon" class="header-nav__langIcon"/>
-                            <p class="header-nav__langText">Ru</p>
-                        </div>
-                        <div class="header-nav__langItem">
-                            <img src="img/icons/flag-ua.svg" alt="icon" class="header-nav__langIcon"/>
-                            <p class="header-nav__langText">Ukr</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-nav__buttons">
-                    <a href="#!" class="button button-color header-nav__button">Registration</a>
-                    <a href="#!" class="button header-nav__button">Sign In</a>
-                </div>
+                <a href="#!" class="header-nav__item">Интро</a>
+                <a href="#!" class="header-nav__item">Кто мы</a>
+                <a href="#!" class="header-nav__item">Инвесторам</a>
+                <a href="#!" class="header-nav__item header-nav__item-active">Планы</a>
+                <a href="#!" class="header-nav__item">Контакты</a>
             </nav>
         </div>
-        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="56" onclick="this.classList.toggle('active')">
-            <path
-                    class="line top"
-                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
-            <path
-                    class="line middle"
-                    d="m 70,50 h -40"/>
-            <path
-                    class="line bottom"
-                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
-        </svg>
+        <img src="img/icons/burger.svg" alt="icon" class="header-burger"/>
     </div>
-    <div class="header-nav__wrapper header-nav__wrapper-mobile">
-        <nav class="header-nav">
-            <a href="#!" class="header-nav__item header-nav__item-active">Home</a>
-            <a href="#!" class="header-nav__item">About</a>
-            <a href="#!" class="header-nav__item">For Investors</a>
-            <a href="#!" class="header-nav__item">FAQ</a>
-            <a href="#!" class="header-nav__item">Contacts</a>
-            <div class="header-nav__langBlock">
-                <div class="header-nav__langHeader">
-                    <img src="img/icons/flag.svg" alt="icon" class="header-nav__langIcon"/>
-                    <p class="header-nav__langText">Eng</p>
-                </div>
-                <div class="header-nav__langItems">
-                    <div class="header-nav__langItem">
-                        <img src="img/icons/flag-ru.svg" alt="icon" class="header-nav__langIcon"/>
-                        <p class="header-nav__langText">Ru</p>
-                    </div>
-                    <div class="header-nav__langItem">
-                        <img src="img/icons/flag-ua.svg" alt="icon" class="header-nav__langIcon"/>
-                        <p class="header-nav__langText">Ukr</p>
-                    </div>
-                </div>
-            </div>
-            <div class="header-nav__buttons">
-                <a href="#!" class="button button-color header-nav__button">Registration</a>
-                <a href="#!" class="button header-nav__button">Sign In</a>
-            </div>
-        </nav>
-    </div>
-    <div class="header-mask"></div>
 </header>
 <main class="main">
-    <div class="wrapper wrapper-lines">
-        <span class="main-line main-line__1"></span>
-        <span class="main-line main-line__2"></span>
-        <span class="main-line main-line__3"></span>
-        <span class="main-line main-line__4"></span>
-        <span class="main-line main-line__5"></span>
-        <span class="main-line main-line__6"></span>
-    </div>
     <div class="main-registration">
         <div class="wrapper">
             <form action="#!" class="main-form main-form__login">
-                <h1 class="main-form__title">Thank you for register</h1>
-                <p class="main-form__text main-form__text-thanks">
-                    Dear depikoner2, thank you for registering in our system. A confirmation email has been
-                    sent to your email.
+                <h1 class="main-form__title">Благодарим за регистрацию!</h1>
+                <p class="main-form__text main-form__text-margin">
+                    Уважаемый <span>depikoner_1990</span>, спасибо Вам за то что зарегистрировались в нашей системе. Письмо с подтверждением Email
+                    отправлено на Вашу почту.
                 </p>
-                <button class="button button-color main-form__button">Confirm Email</button>
+                <button class="button main-form__button">Подтвердить Email</button>
             </form>
         </div>
     </div>
 </main>
-<footer class="footer">
-    <div class="wrapper">
-        <div class="footer-left">
-            <a href="#!" class="footer-logo__link">
-                <img src="img/logo.svg" alt="logo" class="footer-logo__img"/>
-            </a>
-            <div class="footer-left__content">
-                <p class="footer-left__text">
-                    Am no an listening depending up believing. Enough around remove to barton agreed regret
-                    in or it advantage mr estimable be commanded.
-                </p>
-                <p class="footer-left__text">GrandTrading 2020. All rights reserved.</p>
-            </div>
-        </div>
-        <nav class="footer-nav">
-            <a href="#!" class="footer-nav__link footer-nav__link-active">Home</a>
-            <a href="#!" class="footer-nav__link">About</a>
-            <a href="#!" class="footer-nav__link">For Investors</a>
-            <a href="#!" class="footer-nav__link">FAQ</a>
-            <a href="#!" class="footer-nav__link">Contacts</a>
-            <a href="#!" class="footer-nav__link">Terms and Conditions</a>
-        </nav>
-        <div class="footer-right">
-            <div class="footer-right__buttons">
-                <span class="footer-right__button">
-                    <img src="img/icons/pm.svg" alt="icon" class="footer-right__buttonIcon"/>
-                </span>
-                <span class="footer-right__button">
-                    <img src="img/icons/eth.svg" alt="icon" class="footer-right__buttonIcon"/>
-                </span>
-                <span class="footer-right__button">
-                    <img src="img/icons/btc.svg" alt="icon" class="footer-right__buttonIcon"/>
-                </span>
-                <span class="footer-right__button">
-                    <img src="img/icons/ltc.svg" alt="icon" class="footer-right__buttonIcon"/>
-                </span>
-            </div>
-        </div>
-        <p class="footer-left__text footer-left__text-mobile">GrandTrading 2020.<br> All rights reserved.</p>
-    </div>
-</footer>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>
