@@ -103,7 +103,7 @@ body {
     padding-left: 25px;
 
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     color: #FFFFFF;
 
@@ -166,14 +166,17 @@ body {
     padding: 1px 0;
 }
 
-.main__nameAndInput-select .main__nameAndInputFooterInput {
+.main__nameAndInput-select .main__nameAndInputInput {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    /*background: #0B1B2D url(../img/icons/select.svg) no-repeat right center;*/
-    background-position: calc(100% - 15px);
+    background: #585858 url(../img/icons/select.svg) no-repeat right center;
+    background-position: calc(100% - 20px);
+    padding-left: 15px;
+    font-size: 14px;
+    height: 50px;
 }
 .main__nameAndInputFooter-month {
     width: 112px;
@@ -201,6 +204,15 @@ body {
     font-size: 18px;
     line-height: 17px;
     color: #FFFFFF;
+}
+
+.main__nameAndInputText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    margin-left: 25px;
 }
 /*NAME AND INPUT END*/
 
@@ -449,6 +461,28 @@ body {
     color: #FFFFFF;
 }
 
+.main-content__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-content__navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.main-content__navLink:hover {
+    text-decoration: underline;
+}
 .main-plans {
     display: flex;
     flex-direction: row;
@@ -571,11 +605,6 @@ body {
 }
 .main-systems__item:last-child {
     margin-right: 0;
-}
-
-.selected::before {
-    opacity: 1;
-    visibility: visible;
 }
 
 .main-input__block {
@@ -704,6 +733,313 @@ body {
 }
 /*INDEX END*/
 
+/*DEPOSITS*/
+.main-deposits {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.main-deposits__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    position: relative;
+}
+.main-deposits__item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+
+    background: linear-gradient(227.39deg, #171617 4.04%, #626262 73.96%);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35), 0 4px 25px rgba(0, 0, 0, 0.25);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-deposits__item:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+.main-deposits__item:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__itemHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.main-deposits__itemHeaderName {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.main-deposits__itemHeaderName span {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.main-deposits__itemHeaderDate {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.main-deposits__itemFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 10px;
+}
+.main-deposits__itemFooterTextBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-deposits__itemFooterText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-deposits__itemFooterText:first-child {
+    min-width: 372px;
+}
+.main-deposits__itemFooterText::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: #FFFFFF;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.main-deposits__itemFooterText span {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+/*DEPOSITS END*/
+
+/*ADDITION*/
+.selected::before {
+    opacity: 1;
+    visibility: visible;
+}
+/*ADDITION END*/
+
+/*SECURITY*/
+.main-security {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    border-top: 1px solid #FFFFFF;
+    margin-bottom: 20px;
+}
+.main-security__text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.main-security__radioBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+.main-security__radioBlock label {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 27px;
+}
+.main-security__radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*SECURITY END*/
+
+/*SETTINGS*/
+.main-settings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(227.39deg, #171617 4.04%, #626262 73.96%);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    padding: 30px 50px 10px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.main-settings .main__nameAndInput {
+    max-width: 425px;
+}
+/*SETTINGS END*/
+
+/*TEAM*/
+.main-team {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.main-team__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.main-team__item:last-child {
+    margin-bottom: 0;
+    border-bottom: unset;
+}
+.main-team__itemText {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.main-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+.main-table__wrapper {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-table__header {
+    min-width: 980px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 27px 0 26px 30px;
+    background: linear-gradient(227.39deg, #171617 4.04%, #626262 73.96%);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+}
+.main-table__item {
+    min-width: 980px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 27px 0 26px 30px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.main-table__item:last-child {
+    border-bottom: unset;
+}
+.main-table__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.main-table__text-nickname {
+    min-width: 330px;
+}
+.main-table__text-email {
+    min-width: 347px;
+}
+.main-table__text-deposit {
+    min-width: 219px;
+}
+
+.main-table__text-type {
+    min-width: 280px;
+}
+.main-table__text-sum {
+    min-width: 150px;
+}
+.main-table__text-system {
+    min-width: 270px;
+}
+
+.main-table__item .main-table__text-deposit,
+.main-table__item .main-table__text-system,
+.main-table__item .main-table__text-sum,
+.main-table__item .main-table__text-type {
+    font-weight: normal;
+}
+/*TEAM END*/
+
+/*TRANSACTIONS*/
+.main-transactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(227.39deg, #171617 4.04%, #626262 73.96%);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+.main-transactions__columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-transactions__column {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+}
+.main-transactions__button {
+    width: 174px;
+    height: 50px;
+    font-size: 14px;
+}
+.main-transactions__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-transactions__row .main__nameAndInput {
+    width: 32%;
+}
+/*TRANSACTIONS END*/
 
 /*RESPONSIVE FIX*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1537px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1537px), only screen and (                min-resolution: 192dpi) and ( max-width: 1537px), only screen and (                min-resolution: 2dppx) and ( max-width: 1537px) {
@@ -944,6 +1280,161 @@ body {
 
     .main-header__value {
         font-size: 80px;
+    }
+
+    .main-deposits__item {
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+    .main-deposits__itemHeader {
+        margin-bottom: 20px;
+    }
+    .main-deposits__itemFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+    .main-deposits__itemFooterTextBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .main-deposits__itemFooterText {
+        margin-bottom: 15px;
+    }
+    .main-deposits__itemFooterText:last-child {
+        margin-bottom: 0;
+    }
+
+    .main-security__text {
+        font-size: 18px;
+    }
+    .main-security__radioBlock label {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .main-security__radioBlock {
+        margin-top: 10px;
+    }
+    .main-security__radioBlock {
+        flex-wrap: wrap;
+    }
+    .main-security__radio {
+        margin-bottom: 10px;
+    }
+    .main-security {
+        margin-bottom: 10px;
+    }
+
+    .main-settings {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .main-settings .main__nameAndInput {
+        max-width: 100%;
+    }
+    .main-settings .main__nameAndInput:last-child {
+        margin-bottom: 0;
+    }
+    .main__nameAndInputText {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .main-settings:last-child {
+        margin-bottom: 0;
+    }
+
+    .main-team__itemText {
+        font-size: 16px;
+    }
+    .main-team__item {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .main-team {
+        margin-bottom: 20px;
+    }
+    .main-table__header {
+        padding: 20px 0 20px 20px;
+    }
+    .main-table__item {
+        padding: 20px 0 20px 20px;
+    }
+    .main-table__text {
+        font-size: 16px;
+    }
+    .main-content__img {
+        width: 20px;
+    }
+
+    .main-transactions {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .main-transactions__columns {
+        flex-direction: column;
+    }
+    .main-transactions__columns .main__nameAndInput {
+        margin-bottom: 10px;
+    }
+    .main-transactions__button {
+        margin-top: 10px;
+    }
+    .main-transactions__column {
+        width: 100%;
+    }
+    .main__nameAndInput-select .main__nameAndInputInput {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .main-deposits__item {
+        padding: 10px;
+    }
+    .main-content__header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-content__navLink:first-child {
+        margin-left: 0;
+    }
+    .main-content__nav {
+        margin-top: 15px;
+    }
+    .main-deposits__itemHeaderName {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .main-deposits__itemHeaderName span {
+        font-size: 24px;
+    }
+    .main-deposits__itemHeaderDate {
+        font-size: 18px;
+    }
+    .main-deposits__itemHeader {
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-content__navLink {
+        margin-left: 6.8px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .main-deposits__itemFooterText:first-child {
+        min-width: 100%;
+    }
+    .main-deposits__item:before {
+        top: -4px;
+        left: -4px;
+    }
+    .main-content__navLinkIcon {
+        height: 12px;
     }
 }
 @media screen and (max-width: 540px) {
