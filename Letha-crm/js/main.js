@@ -53,6 +53,12 @@ $('.main-dashboard__button').click(function () {
     $(this).addClass('main-dashboard__button-active');
 });
 
+//addfunds/withdrawal item buttons
+$('.main-addfunds__items-buttons .main-addfunds__item').click(function () {
+    $('.main-addfunds__item').removeClass('main-addfunds__item-active');
+    $(this).addClass('main-addfunds__item-active');
+});
+
 
 //withdrawal
 $('.main-withdrawal__item').click(function () {
