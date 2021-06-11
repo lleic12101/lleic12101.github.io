@@ -1,5 +1,11 @@
 ﻿@font-face {
     font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
     src: url('../fonts/Poppins-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
@@ -307,8 +313,8 @@ h1 {
 }
 
 .main__nameAndInputFooterInput-textarea {
-    padding: 15px 24px 10px 24px;
-    min-height: 256px;
+    padding: 18px 20px 10px;
+    min-height: 275px;
     resize: none;
     font-weight: normal;
     font-size: 18px;
@@ -1100,6 +1106,577 @@ input[type="number"]:focus {
 }
 /*WALLET END*/
 
+/*DEPOSITS*/
+.main-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -50px;
+}
+.main-columns .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main-column:first-child {
+    max-width: 440px;
+}
+.main-column:last-child {
+    max-width: 910px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.main-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1B253C;
+    transition: .3s;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.main-nav__item:hover,
+.main-nav__item-active {
+    background: #0B42D5;
+    color: #FFFFFF;
+}
+.main-nav__itemIcon {
+    transition: .3s;
+}
+.main-nav__item:hover .main-nav__itemIcon,
+.main-nav__item-active .main-nav__itemIcon {
+    filter: invert(100%);
+}
+
+.main-deposits__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main-deposits__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #FFFFFF url(../img/shadow-deposits.png) no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 290px;
+}
+.main-deposits__item:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__itemLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+}
+.main-deposits__itemLeftRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 18px;
+    margin-bottom: 39px;
+}
+.main-deposits__itemLeftRow:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__item .main-confirm__itemTagText {
+    font-size: 18px;
+}
+.main-deposits__itemLeftText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #898989;
+}
+.main-deposits__itemLeftText-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main-deposits__itemLeftText-big {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main-deposits__itemLeftText-big span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #1B253C;
+}
+
+.main-deposits__itemRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 460px;
+    width: 100%;
+}
+.main-deposits__itemRightFill {
+    margin-bottom: 10px;
+    height: 72px;
+    width: 100%;
+    background: #F4F4F4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.main-deposits__itemRightFillLine {
+    display: block;
+    background: #0B42D5;
+    border-radius: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main-deposits__itemRightFillText {
+    position: relative;
+    z-index: 1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #0B42D5;
+}
+.main-deposits__itemRightFillText-white {
+    color: #FFFFFF;
+}
+.main-deposits__itemRightText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1B253C;
+    margin-bottom: 30px;
+}
+.main-deposits__itemRightRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+.main-deposits__itemRightTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-deposits__itemRightRowText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #898989;
+}
+.main-deposits__itemRightRowValue {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main-deposits__itemRightRowValue span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #1B253C;
+}
+/*DEPOSITS END*/
+
+/*DEPOSIT*/
+.main-deposits__items-deposit {
+
+}
+.main-deposits__items-deposit .main-deposits__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-deposits__items-deposit .main-deposits__itemLeftText-bold {
+    font-size: 20px;
+}
+.main-deposits__items-deposit .main-deposits__itemLeftRow {
+    margin-bottom: 25px;
+}
+.main-deposits__items-deposit .main-deposits__itemLeftRow:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__itemButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    transition: .3s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #0B42D5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    width: 248px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.main-deposits__itemButton:hover {
+    background: #2150d7;
+    box-shadow: none;
+}
+
+.main-deposits__itemTariff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    position: relative;
+    z-index: 1;
+}
+.main-deposits__itemTariffImg {
+    margin-bottom: 15px;
+}
+.main-deposits__itemTariffName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #303236;
+    margin-bottom: 10px;
+}
+.main-deposits__itemTariffPercent {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #303236;
+}
+.main-deposits__itemTariffPercent span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303236;
+}
+.main-deposits__item-orange {
+    background: linear-gradient(161.34deg, #FF9A02 0%, #FF3F02 100%);
+    position: relative;
+}
+.main-deposits__item-orange:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: url(../img/shadow-deposits-light.png);
+    background-size: cover;
+}
+.main-deposits__item-orange .main-deposits__itemTariffName,
+.main-deposits__item-orange .main-deposits__itemTariffPercent,
+.main-deposits__item-orange .main-deposits__itemTariffPercent span,
+.main-deposits__item-orange .main-deposits__itemLeftText,
+.main-deposits__item-orange .main-deposits__itemLeftText-bold {
+    color: #FFFFFF;
+}
+.main-deposits__item-orange .main-deposits__itemButton {
+    background: #FFFFFF;
+    color: #FF5D09;
+}
+.main-deposits__item-orange .main-deposits__itemButton:hover {
+    background: #f3f3f3;
+}
+
+.main-deposit__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.main-deposit__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 35px rgba(25, 35, 59, 0.05);
+    border-radius: 5px;
+    padding: 17px 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #303236;
+    text-decoration: none;
+    transition: .3s;
+}
+.main-deposit__item:hover,
+.main-deposit__item-active {
+    background: #0B42D5;
+    color: #FFFFFF;
+}
+.main-deposit__item:last-child {
+    margin-bottom: 0;
+}
+.main-deposit__itemIcon {
+    height: 46px;
+    margin-right: 20px;
+}
+
+.main-deposit__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.main-deposit__form .main-addfunds__blockInputBlock {
+    width: 440px;
+    margin-bottom: 0;
+}
+.main-deposit__form .main-addfunds__blockButton {
+    width: 440px;
+}
+/*DEPOSIT END*/
+
+/*OPERATIONS*/
+.main-operations {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-operations .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-table__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.main-table__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    min-width: 1380px;
+}
+.main-table__headerText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main-table__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1380px;
+    min-width: 1380px;
+}
+.main-table__item {
+    width: 100%;
+    height: 101px;
+    background: #FFFFFF url(../img/shadow-operations.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding-left: 30px;
+}
+.main-table__item:last-child {
+    margin-bottom: 0;
+}
+.main-table__itemBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-table__itemIcon {
+    height: 46px;
+}
+.main-table__item .main-confirm__itemTagText {
+    font-size: 18px;
+}
+.main-table__itemText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1B253C;
+}
+
+.main-table__itemText-date {
+    min-width: 170px;
+}
+.main-table__itemText-type {
+    min-width: 185px;
+}
+.main-table__itemText-system {
+    min-width: 214px;
+}
+.main-table__itemText-coming {
+    min-width: 219px;
+}
+.main-table__itemText-coming.main-table__itemText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #28D24E;
+}
+.main-table__itemText-costs {
+    min-width: 200px;
+}
+.main-table__itemText-costs.main-table__itemText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ED1019;
+}
+.main-table__itemText-id {
+    min-width: 174px;
+}
+.main-table__itemText-status {
+
+}
+/*OPERATIONS END*/
+
+/*TICKET*/
+.main-ticket__create {
+    width: 100%;
+    padding: 50px 55px 55px;
+    background: #FFFFFF url(../img/shadow-ticket.png) no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-ticket__createTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.main-ticket__createButton {
+    width: 330px;
+    height: 55px;
+    margin-top: 5px;
+}
+.main-ticket__createButton .btn__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+}
+.main-ticket__create .main__nameAndInputFooter {
+    max-width: 100%;
+}
+
+.main-ticket__empty {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.main-ticket__emptyTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 180%;
+    color: #1B253C;
+    margin-bottom: -10px;
+}
+.main-ticket__emptyText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 180%;
+    color: #1B253C;
+}
+/*TICKET END*/
+
 /*LINK ANIMATION*/
 .link-animation {
     position: relative;
@@ -1479,6 +2056,24 @@ input[type="number"]:focus {
     .main-addfunds__items-wallet .main-addfunds__blockButton {
         margin-right: 30px;
     }
+
+    .main-columns {
+        margin-bottom: 0;
+    }
+    .main-columns .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-column:first-child {
+        margin-bottom: 30px;
+    }
+
+    .main-table__item {
+        box-shadow: none;
+    }
+    .main-table__header {
+        box-shadow: none;
+    }
 }
 @media screen and (max-width: 1180px) {
     .main-addfunds__itemsWrapper {
@@ -1551,6 +2146,63 @@ input[type="number"]:focus {
     }
     .btn {
         font-size: 16px;
+    }
+
+    .main-deposits__item {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 15px;
+        max-width: 440px;
+    }
+    .main-deposits__itemLeft {
+        max-width: 460px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-deposits__itemRightRow {
+        padding: 0;
+    }
+    .main-deposits__itemRightText {
+        margin-bottom: 20px;
+    }
+    .main-deposits__itemLeftRow {
+        margin-bottom: 20px;
+    }
+
+    .main-deposit__form {
+        flex-direction: column;
+        align-items: center;
+        max-width: 440px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .main-deposit__items {
+        margin-top: 15px;
+    }
+    .main-deposit__form .main-addfunds__blockInputBlock {
+        margin-bottom: 10px;
+    }
+    .main-deposits__items-deposit .main-deposits__item {
+        flex-direction: column;
+    }
+    .main-deposits__itemLeft {
+        margin-bottom: 20px;
+    }
+    .main-deposit__form .main-addfunds__blockInputBlock {
+        width: 100%;
+    }
+    .main-deposit__form .main-addfunds__blockButton {
+        width: 100%;
+    }
+
+    .main-deposits__item {
+        background: #FFFFFF;
+    }
+    .main-deposits__item-orange:after {
+        content: '';
+    }
+    .main-deposits__item-orange {
+        background: linear-gradient(161.34deg, #FF9A02 0%, #FF3F02 100%);
     }
 }
 @media screen and (max-width: 850px) {
@@ -1656,6 +2308,51 @@ input[type="number"]:focus {
     .main-addfunds__items-wallet .main-addfunds__blockButton {
         margin: 0;
         height: 80px;
+    }
+
+    .main-column:first-child {
+        margin-bottom: 15px;
+    }
+    .main-deposits__item {
+        margin-bottom: 15px;
+    }
+
+    .main-table__header {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        height: 60px;
+    }
+    .main-table__item {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        height: 80px;
+    }
+
+    .main-ticket__create {
+        padding: 15px;
+    }
+    .main-ticket__createTitle {
+        margin-bottom: 15px;
+    }
+    .main-ticket__createButton {
+        max-width: 330px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .main-ticket__empty {
+        padding: 15px;
+    }
+    .main-ticket__emptyTitle {
+        line-height: unset;
+        font-size: 24px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .main-ticket__emptyText {
+        font-size: 22px;
+        line-height: unset;
+        text-align: center;
     }
 }
 @media screen and (max-width: 720px) {

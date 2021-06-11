@@ -59,18 +59,12 @@ $('.main-addfunds__items-buttons .main-addfunds__item').click(function () {
     $(this).addClass('main-addfunds__item-active');
 });
 
-
-//withdrawal
-$('.main-withdrawal__item').click(function () {
-    $('.main-withdrawal__item').removeClass('main-withdrawal__item-active');
-    $(this).addClass('main-withdrawal__item-active');
-});
-
 //deposit
-$('.main-tariffs__item').click(function () {
-    $('.main-tariffs__item').removeClass('main-tariffs__item-active');
-    $(this).addClass('main-tariffs__item-active');
+$('.main-deposit__item').click(function () {
+    $('.main-deposit__item').removeClass('main-deposit__item-active');
+    $(this).addClass('main-deposit__item-active');
 });
+
 
 //copy to clipboard
 $('.main-header__copy').click(function () {
@@ -85,9 +79,3 @@ function copyToClipboard() {
 
     $(".main__nameAndInputCopied").text("copied");
 }
-
-//deposit select
-$('.main-team__btns .btn').click(function () {
-    $('.main-team__btns .btn').removeClass('btn-white__active');
-    $(this).addClass('btn-white__active');
-});
