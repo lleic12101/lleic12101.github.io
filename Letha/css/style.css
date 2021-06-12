@@ -137,7 +137,9 @@ body {
 
 .header__logo {
     outline: none;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     min-width: 170px;
     height: 30px;
     -webkit-box-flex: 0;
@@ -150,11 +152,12 @@ body {
     font-size: 25px;
     line-height: 100%;
     color: #fff;
+    justify-content: flex-start;
 }
 
 .header__logo img {
-    height: 36px;
-    width: 170px;
+    height: 20px;
+    transition: .3s;
 }
 
 .header__menu {
@@ -456,6 +459,9 @@ body {
 
 .color-black {
     color: #303236;
+}
+.color-black img {
+    filter: invert(100%);
 }
 
 .black-bgrn {
