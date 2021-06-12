@@ -2432,23 +2432,6 @@ input[type="number"]:focus {
 }
 @media screen and (max-width: 1459px) {
     html {
-        zoom: 0.8;
-        -ms-zoom: 0.8;
-        -webkit-zoom: 0.8;
-        -moz-transform: scale(0.8, 0.8);
-        -moz-transform-origin: left top;
-    }
-    @supports (-moz-appearance:none) {
-        html {
-            width: 125vw;
-        }
-    }
-    html, body {
-        min-height: 125vh;
-    }
-}
-@media screen and (max-width: 1457px) {
-    html {
         zoom: 1;
         -ms-zoom: 1;
         -webkit-zoom: 1;
@@ -2462,6 +2445,23 @@ input[type="number"]:focus {
     }
     html, body {
         min-height: 100vh;
+    }
+}
+@media screen and (max-width: 1457px) {
+    html {
+        zoom: 0.8;
+        -ms-zoom: 0.8;
+        -webkit-zoom: 0.8;
+        -moz-transform: scale(0.8, 0.8);
+        -moz-transform-origin: left top;
+    }
+    @supports (-moz-appearance:none) {
+        html {
+            width: 125vw;
+        }
+    }
+    html, body {
+        min-height: 125vh;
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 1025px), only screen and (        min-device-pixel-ratio: 2) and ( max-width: 1025px), only screen and (                min-resolution: 192dpi) and ( max-width: 1025px), only screen and (                min-resolution: 2dppx) and ( max-width: 1025px) {
