@@ -1748,8 +1748,10 @@ input[type="number"]:focus {
 .main-ticket__insideItemTextBlock {
     background: #DCDCDC;
     border-radius: 2px;
-    display: flex;
+    display: inline-block;
     padding: 20px;
+    overflow-y: hidden;
+    min-height: 60px;
 }
 .main-ticket__insideItemText {
     font-family: Poppins, sans-serif;
