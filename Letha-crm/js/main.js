@@ -27,8 +27,7 @@ function resizeEmptySpace() {
     }
     if ((header + footer + main) < windowHeight) {
         if ($(window).width() < 1200) {
-            // $(".main").css("height", (windowHeight - (header + footer)) + 60);
-            $(".main").css("height", (windowHeight - (header + footer)));
+            $(".main").css("height", (windowHeight - (header + footer)) + 60);
         } else $(".main").css("height", (windowHeight - (header + footer)));
     } else {
         $(".main").css("height", "auto");
