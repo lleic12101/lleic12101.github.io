@@ -1,0 +1,807 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Letha Holdings</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="wrapper">
+            <a href="#!" class="header__logoLink header__logoLink-mobile">
+                <img src="img/logo.svg" alt="logo" class="header__logo"/>
+            </a>
+            <div class="header__mobileWrapper">
+                <a href="#!" class="header__logoLink">
+                    <img src="img/logo.svg" alt="logo" class="header__logo"/>
+                </a>
+                <div class="header__account">
+                    <p class="header__accountName">
+                        <img src="img/icons/name.svg" alt="icon" class="header__accountNameIcon"/>
+                        <span>Dmitry Deputat</span>
+                    </p>
+                    <p class="header__accountBalance">Balance: <span>76513,17 USD</span></p>
+                    <p class="header__accountTime">
+                        1 may 2021
+                        <img src="img/icons/time.svg" alt="icon" class="header__accountTimeIcon"/>
+                        <span>15:04</span>
+                    </p>
+                </div>
+                <nav class="header__nav header__nav-mobile">
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/dashboard.svg" alt="icon" class="header__navItemIcon"/>
+                        Dashboard
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/addfunds.svg" alt="icon" class="header__navItemIcon"/>
+                        Add Funds
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/deposits.svg" alt="icon" class="header__navItemIcon"/>
+                        Deposits
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/operations.svg" alt="icon" class="header__navItemIcon"/>
+                        Operations
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/withdrawal.svg" alt="icon" class="header__navItemIcon"/>
+                        Withdrawal
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/wallets.svg" alt="icon" class="header__navItemIcon"/>
+                        E-wallets
+                    </a>
+                    <a href="#!" class="header__navItem header__navItem-active">
+                        <img src="img/icons/team.svg" alt="icon" class="header__navItemIcon"/>
+                        Team
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/tickets.svg" alt="icon" class="header__navItemIcon"/>
+                        Tickets
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/settings.svg" alt="icon" class="header__navItemIcon"/>
+                        Settings
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/exit.svg" alt="icon" class="header__navItemIcon"/>
+                        Exit
+                    </a>
+                </nav>
+                <div class="header__navLangBlock">
+                    <div class="header__navLangHeader">
+                        <p class="header__navLangText">Eng</p>
+                        <img src="img/icons/lang-drop.svg" alt="drop" class="header__navLangIcon"/>
+                    </div>
+                    <div class="header__navLangItems">
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Eng</a>
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Ru</a>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="wrapper">
+            <nav class="header__nav">
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/dashboard.svg" alt="icon" class="header__navItemIcon"/>
+                    Dashboard
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/addfunds.svg" alt="icon" class="header__navItemIcon"/>
+                    Add Funds
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/deposits.svg" alt="icon" class="header__navItemIcon"/>
+                    Deposits
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/operations.svg" alt="icon" class="header__navItemIcon"/>
+                    Operations
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/withdrawal.svg" alt="icon" class="header__navItemIcon"/>
+                    Withdrawal
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/wallets.svg" alt="icon" class="header__navItemIcon"/>
+                    E-wallets
+                </a>
+                <a href="#!" class="header__navItem header__navItem-active">
+                    <img src="img/icons/team.svg" alt="icon" class="header__navItemIcon"/>
+                    Team
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/tickets.svg" alt="icon" class="header__navItemIcon"/>
+                    Tickets
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/settings.svg" alt="icon" class="header__navItemIcon"/>
+                    Settings
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/exit.svg" alt="icon" class="header__navItemIcon"/>
+                    Exit
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<main class="main">
+    <div class="main-breadcrumbs">
+        <div class="wrapper">
+            <p class="main-breadcrumbs__link">Home</p>
+            <a href="#!" class="main-breadcrumbs__link main-breadcrumbs__link-active">Team Earning</a>
+        </div>
+    </div>
+    <div class="main-columns">
+        <div class="wrapper">
+            <div class="main-column">
+                <div class="main-team__clipboard">
+                    <input type="text" class="main-team__clipboardInput" value="https://cu-be.cc/?ref=dptts" readonly/>
+                    <span class="main__nameAndInputCopied"></span>
+                    <a href="#!" class="main-team__clipboardButton">
+                        <img src="img/icons/copy.svg" alt="icon" class="main-team__clipboardButtonIcon"/>
+                    </a>
+                </div>
+                <div class="main-team__buttons">
+                    <a href="#!" class="main-team__button main-team__button-active">Level 1</a>
+                    <a href="#!" class="main-team__button">Level 2</a>
+                    <a href="#!" class="main-team__button">Level 3</a>
+                </div>
+                <div class="main-team__textBlock">
+                    <p class="main-team__text">Referral Bonus:</p>
+                    <p class="main-team__sum">1500 <span>USD</span></p>
+                    <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                    <div class="main-team__menu">
+                        <p class="main-team__menuText">
+                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.00133 ETH
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000003 USDT
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000124 BTC
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124123 XRP
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124141 LTC
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.00133 ETH
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000003 USDT
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000124 BTC
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124123 XRP
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124141 LTC
+                        </p>
+                    </div>
+                </div>
+                <div class="main-team__textBlock">
+                    <p class="main-team__text">Referral Bonus:</p>
+                    <p class="main-team__sum">1300 <span>USD</span></p>
+                    <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                    <div class="main-team__menu">
+                        <p class="main-team__menuText">
+                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.00133 ETH
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000003 USDT
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000124 BTC
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124123 XRP
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124141 LTC
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.00133 ETH
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000003 USDT
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.0000124 BTC
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124123 XRP
+                        </p>
+                        <p class="main-team__menuText">
+                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                            0.124141 LTC
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column">
+                <div class="main-table main-table__tickets main-team__table">
+                    <div class="main-table__wrapper">
+                        <div class="main-table__header">
+                            <p class="main-table__headerText main-table__itemText-login">Login:</p>
+                            <p class="main-table__headerText main-table__itemText-date2">Date:</p>
+                            <p class="main-table__headerText main-table__itemText-bonus">Refferal Bonus:</p>
+                            <p class="main-table__headerText main-table__itemText-funds">Refferal Funds:</p>
+                        </div>
+                        <div class="main-table__items">
+                            <div class="main-table__item">
+                                <p class="main-table__itemText main-table__itemText-login">depikoner_1091</p>
+                                <p class="main-table__itemText main-table__itemText-date2">Feb-07-2021</p>
+                                <div class="main-table__itemMenu main-table__itemText-bonus">
+                                    <p class="main-table__itemText main-table__itemText-bonus">
+                                        1347.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-table__itemMenu main-table__itemText-funds">
+                                    <p class="main-table__itemText main-table__itemText-funds">
+                                        47.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-table__item">
+                                <p class="main-table__itemText main-table__itemText-login">depikoner_1091</p>
+                                <p class="main-table__itemText main-table__itemText-date2">Feb-07-2021</p>
+                                <div class="main-table__itemMenu main-table__itemText-bonus">
+                                    <p class="main-table__itemText main-table__itemText-bonus">
+                                        1347.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-table__itemMenu main-table__itemText-funds">
+                                    <p class="main-table__itemText main-table__itemText-funds">
+                                        47.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-table__item">
+                                <p class="main-table__itemText main-table__itemText-login">depikoner_1091</p>
+                                <p class="main-table__itemText main-table__itemText-date2">Feb-07-2021</p>
+                                <div class="main-table__itemMenu main-table__itemText-bonus">
+                                    <p class="main-table__itemText main-table__itemText-bonus">
+                                        1347.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-table__itemMenu main-table__itemText-funds">
+                                    <p class="main-table__itemText main-table__itemText-funds">
+                                        47.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-table__item">
+                                <p class="main-table__itemText main-table__itemText-login">depikoner_1091</p>
+                                <p class="main-table__itemText main-table__itemText-date2">Feb-07-2021</p>
+                                <div class="main-table__itemMenu main-table__itemText-bonus">
+                                    <p class="main-table__itemText main-table__itemText-bonus">
+                                        1347.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-table__itemMenu main-table__itemText-funds">
+                                    <p class="main-table__itemText main-table__itemText-funds">
+                                        47.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-table__item">
+                                <p class="main-table__itemText main-table__itemText-login">depikoner_1091</p>
+                                <p class="main-table__itemText main-table__itemText-date2">Feb-07-2021</p>
+                                <div class="main-table__itemMenu main-table__itemText-bonus">
+                                    <p class="main-table__itemText main-table__itemText-bonus">
+                                        1347.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-table__itemMenu main-table__itemText-funds">
+                                    <p class="main-table__itemText main-table__itemText-funds">
+                                        47.16 USD
+                                        <img src="img/icons/open.svg" alt="icon" class="main-table__itemTextIcon"/>
+                                    </p>
+                                    <div class="main-team__menu">
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/eth.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether2.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/btc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ripple.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/ltc.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/binance.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.00133 ETH
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/pm.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000003 USDT
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/doge.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.0000124 BTC
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/dash.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124123 XRP
+                                        </p>
+                                        <p class="main-team__menuText">
+                                            <img src="img/icons/tether.svg" alt="icon" class="main-team__menuTextIcon"/>
+                                            0.124141 LTC
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-nav">
+                        <a href="#!" class="main-nav__item">
+                            <img src="img/icons/left.svg" alt="icon" class="main-nav__itemIcon"/>
+                        </a>
+                        <a href="#!" class="main-nav__item">1</a>
+                        <a href="#!" class="main-nav__item main-nav__item-active">2</a>
+                        <a href="#!" class="main-nav__item">3</a>
+                        <a href="#!" class="main-nav__item">4</a>
+                        <a href="#!" class="main-nav__item">5</a>
+                        <a href="#!" class="main-nav__item">
+                            <img src="img/icons/right.svg" alt="icon" class="main-nav__itemIcon"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink">
+            <img src="img/logo.svg" alt="logo" class="header__logo"/>
+        </a>
+        <div class="footer__textBlock">
+            <p class="footer__text">support@letha.holding</p>
+            <p class="footer__text">Cecilia Chapman Mankato Mississippi 96522</p>
+        </div>
+        <p class="footer__copyright">Copyright Ⓒ 2021, Letha Holdings</p>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Letha Holdings</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="wrapper">
+            <a href="#!" class="header__logoLink header__logoLink-mobile">
+                <img src="img/logo.svg" alt="logo" class="header__logo"/>
+            </a>
+            <div class="header__mobileWrapper">
+                <a href="#!" class="header__logoLink">
+                    <img src="img/logo.svg" alt="logo" class="header__logo"/>
+                </a>
+                <div class="header__account">
+                    <p class="header__accountName">
+                        <img src="img/icons/name.svg" alt="icon" class="header__accountNameIcon"/>
+                        <span>Dmitry Deputat</span>
+                    </p>
+                    <p class="header__accountBalance">Balance: <span>76513,17 USD</span></p>
+                    <p class="header__accountTime">
+                        1 may 2021
+                        <img src="img/icons/time.svg" alt="icon" class="header__accountTimeIcon"/>
+                        <span>15:04</span>
+                    </p>
+                </div>
+                <nav class="header__nav header__nav-mobile">
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/dashboard.svg" alt="icon" class="header__navItemIcon"/>
+                        Dashboard
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/addfunds.svg" alt="icon" class="header__navItemIcon"/>
+                        Add Funds
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/deposits.svg" alt="icon" class="header__navItemIcon"/>
+                        Deposits
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/operations.svg" alt="icon" class="header__navItemIcon"/>
+                        Operations
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/withdrawal.svg" alt="icon" class="header__navItemIcon"/>
+                        Withdrawal
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/wallets.svg" alt="icon" class="header__navItemIcon"/>
+                        E-wallets
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/team.svg" alt="icon" class="header__navItemIcon"/>
+                        Team
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/tickets.svg" alt="icon" class="header__navItemIcon"/>
+                        Tickets
+                    </a>
+                    <a href="#!" class="header__navItem header__navItem-active">
+                        <img src="img/icons/settings.svg" alt="icon" class="header__navItemIcon"/>
+                        Settings
+                    </a>
+                    <a href="#!" class="header__navItem">
+                        <img src="img/icons/exit.svg" alt="icon" class="header__navItemIcon"/>
+                        Exit
+                    </a>
+                </nav>
+                <div class="header__navLangBlock">
+                    <div class="header__navLangHeader">
+                        <p class="header__navLangText">Eng</p>
+                        <img src="img/icons/lang-drop.svg" alt="drop" class="header__navLangIcon"/>
+                    </div>
+                    <div class="header__navLangItems">
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Eng</a>
+                        <a href="#!" class="header__navLangText link-animation header__navLangItem">Ru</a>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+                <div class="hamburger hamburger1">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="wrapper">
+            <nav class="header__nav">
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/dashboard.svg" alt="icon" class="header__navItemIcon"/>
+                    Dashboard
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/addfunds.svg" alt="icon" class="header__navItemIcon"/>
+                    Add Funds
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/deposits.svg" alt="icon" class="header__navItemIcon"/>
+                    Deposits
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/operations.svg" alt="icon" class="header__navItemIcon"/>
+                    Operations
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/withdrawal.svg" alt="icon" class="header__navItemIcon"/>
+                    Withdrawal
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/wallets.svg" alt="icon" class="header__navItemIcon"/>
+                    E-wallets
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/team.svg" alt="icon" class="header__navItemIcon"/>
+                    Team
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/tickets.svg" alt="icon" class="header__navItemIcon"/>
+                    Tickets
+                </a>
+                <a href="#!" class="header__navItem header__navItem-active">
+                    <img src="img/icons/settings.svg" alt="icon" class="header__navItemIcon"/>
+                    Settings
+                </a>
+                <a href="#!" class="header__navItem">
+                    <img src="img/icons/exit.svg" alt="icon" class="header__navItemIcon"/>
+                    Exit
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="header__closeableMask"></div>
+</header>
+<main class="main">
+    <div class="main-breadcrumbs">
+        <div class="wrapper">
+            <p class="main-breadcrumbs__link">Home</p>
+            <a href="#!" class="main-breadcrumbs__link main-breadcrumbs__link-active">Settings</a>
+        </div>
+    </div>
+    <div class="main-columns">
+        <div class="wrapper">
+            <div class="main-column">
+                <div class="main-settings__buttons">
+                    <div class="main-settings__button main-settings__button-active" id="tab1btn">
+                        <img src="img/icons/user.svg" alt="icon" class="main-settings__buttonIcon"/>
+                        <p class="main-settings__buttonText">Personal Settings</p>
+                    </div>
+                    <div class="main-settings__button" id="tab2btn">
+                        <img src="img/icons/mail.svg" alt="icon" class="main-settings__buttonIcon"/>
+                        <p class="main-settings__buttonText">Email Settings</p>
+                    </div>
+                    <div class="main-settings__button" id="tab3btn">
+                        <img src="img/icons/password.svg" alt="icon" class="main-settings__buttonIcon"/>
+                        <p class="main-settings__buttonText">Password Settings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column">
+                <div class="main-settings__tabs">
+                    <div class="main-settings__tab main-settings__tab-active" id="tab1">
+                        <form action="#!" class="main-settings__form">
+                            <p class="main-settings__formTitle">User Settings</p>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Your login</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="text" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/user.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Your Email:</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="email" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/mail.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Your time zone (from GMT)</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter main__nameAndInputFooter-time">
+                                    <input type="date" class="main__nameAndInputFooterInput" required/>
+                                    <!--                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>-->
+                                    <!--                                    <img src="img/icons/clock.svg" alt="icon" class="main__nameAndInputFooterIcon"/>-->
+                                </div>
+                            </div>
+                            <div class="main__checkboxBlock">
+                                <input type="checkbox" class="custom-checkbox" id="policy" name="policy" value="yes" required>
+                                <label for="policy">Don’t be notified to email</label>
+                            </div>
+                            <button class="btn"><p class="btn__text">Save Changes</p></button>
+                        </form>
+                        <form action="#!" class="main-settings__form main-settings__form-security">
+                            <div class="main-settings__form-securityWrapper">
+                                <p class="main-settings__formTitle">User Settings</p>
+                                <div class="main__checkboxBlock">
+                                    <input type="checkbox" class="custom-checkbox" id="control1" name="control1" value="yes" required>
+                                    <label for="control1">Control IP-address change</label>
+                                </div>
+                                <div class="main__checkboxBlock">
+                                    <input type="checkbox" class="custom-checkbox" id="control2" name="control2" value="yes" required>
+                                    <label for="control2">Bind session to IP-address</label>
+                                </div>
+                                <div class="main__checkboxBlock">
+                                    <input type="checkbox" class="custom-checkbox" id="control3" name="control3" value="yes" required>
+                                    <label for="control3">Disallow parallel sessions</label>
+                                </div>
+                                <div class="main__checkboxBlock">
+                                    <input type="checkbox" class="custom-checkbox" id="control4" name="control4" value="yes" required>
+                                    <label for="control4">Auto logout in N minutes</label>
+                                </div>
+                            </div>
+                            <button class="btn"><p class="btn__text">Save Changes</p></button>
+                        </form>
+                        <div class="main-settings__google">
+                            <div class="main-settings__googleImgBlock">
+                                <img src="img/qr.png" alt="img" class="main-settings__googleImg"/>
+                            </div>
+                            <div class="main-settings__googleContent">
+                                <p class="main-settings__formTitle">Google Authenticator</p>
+                                <p class="main-settings__googleContentText">
+                                    To activate Google Authenticator, pick the key:
+                                </p>
+                                <span class="main-settings__googleContentCode">CULRCL4C66SQWTDP</span>
+                                <p class="main-settings__googleContentText">and enter the code from the app:</p>
+                                <div class="main__nameAndInput">
+                                    <div class="main__nameAndInputFooter">
+                                        <input type="text" class="main__nameAndInputFooterInput" required/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-settings__tab" id="tab2">
+                        <form action="#!" class="main-settings__form">
+                            <p class="main-settings__formTitle">Email Settings</p>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Old Password</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="password" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/password.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">New Email</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="email" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/mail.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Capcha</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Incorrect data</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter main__nameAndInputFooter-captcha">
+                                    <p class="main__nameAndInputFooterNumber">338191</p>
+                                    <input type="text" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                </div>
+                            </div>
+                            <button class="btn"><p class="btn__text">Confirm change</p></button>
+                        </form>
+                    </div>
+                    <div class="main-settings__tab" id="tab3">
+                        <form action="#!" class="main-settings__form">
+                            <p class="main-settings__formTitle">Password Settings</p>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Old Password</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="password" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/password.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">New Password</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="password" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/password.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <div class="main__nameAndInput">
+                                <div class="main__nameAndInputHeader">
+                                    <p class="main__nameAndInputHeaderName">Confirm New Password</p>
+                                    <div class="main__nameAndInputHeaderAlert">
+                                        <p class="main__nameAndInputHeaderAlertText">Type the correct name</p>
+                                    </div>
+                                </div>
+                                <div class="main__nameAndInputFooter">
+                                    <input type="password" class="main__nameAndInputFooterInput" required/>
+                                    <img src="img/icons/alert.svg" alt="alert" class="main__nameAndInputFooterAlert"/>
+                                    <img src="img/icons/password.svg" alt="icon" class="main__nameAndInputFooterIcon"/>
+                                </div>
+                            </div>
+                            <button class="btn"><p class="btn__text">Register</p></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal1" onclick="void(0)">
+        <form action="#!" class="modal__content">
+            <div class="modal__contentHeader">
+                <img src="img/check.svg" alt="icon" class="modal__contentHeaderIcon"/>
+            </div>
+            <div class="modal__contentTextBlock">
+                <p class="modal__contentText">Password successfully changed</p>
+            </div>
+        </form>
+    </div>
+    <div class="modal" id="modal2" onclick="void(0)">
+        <form action="#!" class="modal__content">
+            <div class="modal__contentHeader modal__contentHeader-red">
+                <img src="img/error.svg" alt="icon" class="modal__contentHeaderIcon"/>
+            </div>
+            <div class="modal__contentTextBlock">
+                <p class="modal__contentText">Incorrect password. Try Again</p>
+            </div>
+        </form>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <a href="#!" class="header__logoLink">
+            <img src="img/logo.svg" alt="logo" class="header__logo"/>
+        </a>
+        <div class="footer__textBlock">
+            <p class="footer__text">support@letha.holding</p>
+            <p class="footer__text">Cecilia Chapman Mankato Mississippi 96522</p>
+        </div>
+        <p class="footer__copyright">Copyright Ⓒ 2021, Letha Holdings</p>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
