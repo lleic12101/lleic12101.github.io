@@ -1,6 +1,12 @@
 .top-bar {
     background-color: #0B42D5;
-    padding-top: 0px;
+    padding-top: 0;
+}
+.top-bar {
+    background: #0B42D5 url("../images/top-bg.png") no-repeat center bottom;
+}
+.top-bar .container-new {
+    padding-top: 37px;
 }
 
 .container-new {
@@ -23,9 +29,16 @@
     color: #85A0EA;
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
 
 .breadcrumbs a.active {
     color: #ffffff;
+}
+.breadcrumbs a.active:hover {
+    text-decoration: none;
+    cursor: default;
 }
 
 .top-bar-header {
@@ -79,6 +92,12 @@
 @media screen and (max-width: 600px) {
     .top-bar-header {
         padding: 10px 0 10px 0;
+    }
+    .top-bar {
+        background: #0B42D5;
+    }
+    .top-bar .container-new {
+        padding-top: 0;
     }
     .images-content {
         justify-content: center;

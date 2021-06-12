@@ -1,0 +1,315 @@
+.container-new.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto 70px auto;
+}
+
+.form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 30px 0 0;
+}
+
+.main__contactsContentForm {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 50px;
+    max-height: 620px;
+    height: 100%;
+}
+
+.main__registerTitle {
+    font-family: Jost;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 40px;
+}
+
+.main__nameAndInputFooterInput {
+    width: 100%;
+    height: 55px;
+    padding: 18px 20px 19px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303236;
+    background: #FFFFFF;
+    border: 1px solid #898989;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.main__nameAndInputFooterTextarea {
+    width: 100%;
+    height: 165px;
+    padding: 18px 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303236;
+    background: #FFFFFF;
+    border: 1px solid #898989;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.main__nameAndInputFooterAlert {
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    right: 15px;
+}
+
+.main__nameAndInputFooter-captcha {
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+.main__nameAndInputFooter-captcha .main__nameAndInputFooterInput {
+    padding-left: 126px;
+    margin-bottom: 0;
+}
+
+.main__nameAndInputFooterNumber {
+    padding-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20px;
+    border-right: solid 1px #9198A0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303236;
+}
+
+.btn-form {
+    width: 100%;
+    padding: 14px;
+    margin-top: 0;
+}
+
+.map {
+    max-width: 670px;
+    width: 100%;
+    position: relative;
+}
+
+.buttons {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+
+.buttons a {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.buttons .email a {
+    background-color: #0B42D5;
+    text-decoration: none;
+    color: #FFFFFF;
+    max-width: 210px;
+    width: 100%;
+    padding: 20px 19px 20px 20px;
+    display: table;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.buttons .address a {
+    background-color: #0B42D5;
+    text-decoration: none;
+    color: #FFFFFF;
+    max-width: 430px;
+    width: 100%;
+    padding: 20px 42px;
+    border-radius: 5px;
+    display: table;
+    text-align: center;
+}
+
+.main__contactsMapBlock {
+    width: 100%;
+    height: 532px;
+    background: rgba(27, 37, 60, 0.5);
+    position: relative;
+}
+
+/* contact success */
+
+.contact-success {
+    margin-right: 30px;
+    max-width: 500px;
+    width: 100%;
+    padding: 165px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-success__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-success__bg {
+    width: 100%;
+    height: 100px;
+    background-color: #0B42D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-success__bg img {
+    width: 72px;
+    height: 72px;
+}
+
+.contact-success__title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    color: #000000;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-success__text {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-success__btn {
+    margin-top: 30px;
+    max-width: 270px;
+    width: 100%;
+}
+
+
+/* contact success end */
+
+@media all and (max-width: 1200px) {
+    .buttons .address a {
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 1155px) {
+    .container-new.contacts {
+        align-items: center;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons a {
+        max-width: 100% !important;
+    }
+    .buttons .email a {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .container-new.contacts {
+        flex-direction: column-reverse;
+    }
+    .main__contactsContentForm {
+        padding-top: 30px;
+    }
+    .form {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .contact-success {
+        padding: 20px 0 30px;
+        margin-right: 0;
+        max-width: 670px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .top-bar-header {
+        font-size: 39px;
+        padding: 20px 0 20px 0;
+    }
+    .container-new.contacts {
+        padding: 0;
+        margin: 0;
+    }
+    .map .map-image img {
+        max-height: 250px;
+    }
+    .buttons {
+        margin-top: 20px;
+    }
+    .buttons a {
+        max-width: 290px !important;
+        margin: 0 auto;
+    }
+    .buttons .address a {
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .main__contactsContentForm {
+        padding: 20px 15px 30px;
+    }
+    .main__registerTitle {
+        margin-bottom: 20px;
+    }
+    .main__nameAndInputFooterInput,
+    .main__nameAndInputFooterTextarea {
+        margin-bottom: 10px;
+    }
+    .contact-success {
+        padding: 20px 15px 30px;
+    }
+}

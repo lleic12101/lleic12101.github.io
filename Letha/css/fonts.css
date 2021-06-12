@@ -1,0 +1,62 @@
+/* @font-face {
+    font-family: 'Jost Medium';
+    src: url('../fonts/Jost-Medium.woff2') format('woff2'),
+         url('../fontsJost-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Jost Medium';
+    src: url('../fonts/Jost-Medium.eot');
+    src: url('../fonts/Jost-Medium.woff') format('woff'),
+        url('../fonts/Jost-Medium.woff2') format('woff2'),
+        url('../fonts/Jost-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Jost Regular';
+    src: url('../fonts/Jost-Regular.woff2') format('woff2'),
+         url('../fontsJost-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Jost Regular';
+    src: url('../fonts/Jost-Regular.eot');
+    src: url('../fonts/Jost-Regular.woff') format('woff'),
+        url('../fonts/Jost-Regular.woff2') format('woff2'),
+         url('../fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Jost SemiBold';
+    src: url('../fonts/Jost-SemiBold.woff2') format('woff2'),
+         url('../fontsJost-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Jost SemiBold';
+    src: url('../fonts/Jost-SemiBold.eot');
+    src: url('../fonts/Jost-SemiBold.woff') format('woff'),
+        url('../fonts/Jost-SemiBold.woff2') format('woff2'),
+        url('../fonts/Jost-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Medium.woff') format('woff'),
+         url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
