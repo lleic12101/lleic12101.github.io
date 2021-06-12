@@ -9,10 +9,6 @@ $(window).on('resize', function () {
 
 resizeEmptySpace();
 
-window.addEventListener('scroll', function (e) {
-    resizeEmptySpace();
-});
-
 function resizeEmptySpace() {
     // if ($('*').is('.main__certificate')) return;
 
