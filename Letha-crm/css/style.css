@@ -1745,6 +1745,12 @@ input[type="number"]:focus {
     padding: 0 20px;
     margin-bottom: 10px;
 }
+.main-ticket__insideItemTextBlock {
+    background: #DCDCDC;
+    border-radius: 2px;
+    display: flex;
+    padding: 20px;
+}
 .main-ticket__insideItemText {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -1753,10 +1759,6 @@ input[type="number"]:focus {
     line-height: 160%;
     text-align: right;
     color: #1B253C;
-    background: #DCDCDC;
-    border-radius: 2px;
-    display: inline-block;
-    padding: 20px;
 }
 .main-ticket__insideItem-left {
     align-items: flex-start;
@@ -1765,10 +1767,12 @@ input[type="number"]:focus {
     text-align: left;
     width: 100%;
 }
+.main-ticket__insideItem-left .main-ticket__insideItemTextBlock {
+    background: #0B42D5;
+}
 .main-ticket__insideItem-left .main-ticket__insideItemText {
     text-align: left;
     color: #FFFFFF;
-    background: #0B42D5;
 }
 .main-ticket__insideForm {
     width: 100%;
