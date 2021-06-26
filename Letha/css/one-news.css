@@ -311,6 +311,229 @@ h3.news-name {
     margin-left: 4px;
 }
 
+.investors {
+    margin: 50px 0;
+}
+.investors-title {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #303236;
+    margin-bottom: 20px;
+}
+.investors-text {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #898989;
+    margin-bottom: 50px;
+}
+.investors-text:last-child {
+    margin-bottom: 0;
+}
+.investors-graph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0;
+}
+.investors-graph__img {
+    max-width: 100%;
+}
+.investors-graph__img-mobile {
+    display: none;
+}
+
+.main-deposits__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+.main-deposits__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #FFFFFF;
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: 170px;
+    border-radius: 5px;
+}
+.main-deposits__item:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__itemLeftWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-deposits__itemLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    position: relative;
+    z-index: 1;
+}
+.main-deposits__itemLeftRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 18px;
+    margin-bottom: 39px;
+}
+.main-deposits__itemLeftRow:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__item .main-confirm__itemTagText {
+    font-size: 18px;
+}
+.main-deposits__itemLeftText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #898989;
+}
+.main-deposits__itemLeftText-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main-deposits__itemLeftText-big {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1B253C;
+}
+.main-deposits__itemLeftText-big span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #1B253C;
+}
+
+.main-deposits__items-deposit .main-deposits__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-deposits__items-deposit .main-deposits__itemLeftText-bold {
+    font-size: 20px;
+}
+.main-deposits__items-deposit .main-deposits__itemLeftRow {
+    margin-bottom: 25px;
+}
+.main-deposits__items-deposit .main-deposits__itemLeftRow:last-child {
+    margin-bottom: 0;
+}
+.main-deposits__itemButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    transition: .3s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #0B42D5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    width: 248px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.main-deposits__itemButton:hover {
+    background: #2150d7;
+    box-shadow: none;
+}
+
+.main-deposits__itemTariff {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 320px;
+}
+.main-deposits__itemTariffImg {
+    width: 65px;
+    height: 65px;
+}
+.main-deposits__itemTariffName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #303236;
+    margin-left: 15px;
+}
+.main-deposits__itemTariffPercent {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #303236;
+}
+.main-deposits__itemTariffPercent span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303236;
+}
+.main-deposits__item-orange {
+    background: linear-gradient(161.34deg, #FF9A02 0%, #FF3F02 100%);
+    position: relative;
+}
+.main-deposits__item-orange .main-deposits__itemTariffName,
+.main-deposits__item-orange .main-deposits__itemTariffPercent,
+.main-deposits__item-orange .main-deposits__itemTariffPercent span,
+.main-deposits__item-orange .main-deposits__itemLeftText,
+.main-deposits__item-orange .main-deposits__itemLeftText-bold {
+    color: #FFFFFF;
+}
+.main-deposits__item-orange .main-deposits__itemButton {
+    background: #FFFFFF;
+    color: #FF5D09;
+}
+.main-deposits__item-orange .main-deposits__itemButton:hover {
+    background: #f3f3f3;
+}
+.main-deposits__itemDelimiter {
+    height: 110px;
+    width: 1px;
+    background: #0B42D5;
+    opacity: 0.15;
+    display: block;
+    margin: 0 50px;
+}
+.main-deposits__item-orange .main-deposits__itemDelimiter {
+    background: #FFFFFF;
+}
+
 @media screen and (max-width: 1023px) {
     .news-tab {
         display: flex;
@@ -423,6 +646,66 @@ h3.news-name {
     .helpful__itemText {
         font-size: 14px;
         line-height: unset;
+    }
+
+    .investors {
+        margin: 30px 0;
+    }
+    .investors-title {
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+    .investors-text {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+    .investors-graph {
+        margin: 30px 0;
+    }
+    .investors-graph__img {
+        display: none;
+    }
+    .investors-graph__img-mobile {
+        display: block;
+    }
+
+    .main-deposits__items-deposit .main-deposits__item {
+        flex-direction: column;
+        padding: 15px;
+        min-height: unset;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-deposits__itemTariff {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .main-deposits__itemLeftWrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .main-deposits__itemLeftWrapper .main-deposits__itemDelimiter {
+        display: none;
+        margin-top: 25px;
+    }
+    .main-deposits__itemLeftWrapper .main-deposits__itemDelimiter:first-child {
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin: 15px 0 17px 0;
+    }
+    .main-deposits__itemLeft {
+        width: 100%;
+    }
+    .main-deposits__itemLeft:last-child {
+        margin-top: 25px;
+    }
+    .main-deposits__items {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
