@@ -15,7 +15,7 @@ $(document).ready(function() {
             $('.login').addClass('login-scroll');
             $('.header__menu-link').addClass('color-black');
             $('.header__mob-menu span').addClass('menu2');
-            $('.header__settings .lang img').attr('src', 'images/arrow-down-black.svg');
+            $('.header__settings .lang-arrow').attr('src', 'images/arrow-down-black.svg');
         } else {
             $('header').removeClass('sticky');
             $('.main').css('padding-top', '0');
@@ -25,7 +25,7 @@ $(document).ready(function() {
             $('.login').removeClass('login-scroll');
             $('.header__menu-link').removeClass('color-black');
             $('.header__mob-menu span').removeClass('menu2');
-            $('.header__settings .lang img').attr('src', 'images/arrow-down.svg');
+            $('.header__settings .lang-arrow').attr('src', 'images/arrow-down.svg');
         }
     }
 
@@ -47,13 +47,6 @@ $(document).ready(function() {
         $('.lang-choise').slideUp(300);
         $('.header__settings .lang img').removeClass('rotate-arrow');
     });
-
-    // language choise
-    $('.lang').click(function() {
-        $('.lang-choise').slideToggle(300);
-        $('.header__settings .lang img').toggleClass('rotate-arrow');
-    });
-
 
     // custom select
     var x, i, j, l, ll, selElmnt, a, b, c;
@@ -151,4 +144,20 @@ $('.sub-button').click(function () {
     $('.accordion').removeClass("accordion-active");
     $("#" + id).addClass("accordion-active");
 
+});
+
+//header sub menu
+$('.header__menu-linkBlock .header__menu-link').click(function () {
+    $('.header__menu-linkBlock').toggleClass('header__menu-linkBlock-active');
+    $('.header__menu-linkMenuWrapper').slideToggle();
+});
+$('.header__menu-linkMenuItem').click(function () {
+    $('.header__menu-linkBlock').removeClass('header__menu-linkBlock-active');
+    $('.header__menu-linkMenuWrapper').slideUp();
+});
+
+// language choise
+$('.lang').click(function() {
+    $('.lang-choice-wrapper').slideToggle(300);
+    $('.header__settings .lang-arrow').toggleClass('rotate-arrow');
 });
