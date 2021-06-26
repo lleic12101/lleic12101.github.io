@@ -19,24 +19,24 @@
 <body>
 
 <script src="js/jquery-3.5.1.min.js"></script>
-<!--<script>-->
-<!--    $('html, body').addClass('bgc');-->
-<!--    $(window).on('load', function () {-->
-<!--        var $preloader = $('.preloader'),-->
-<!--            $gif = $('.preloader').find('.preloader__gif');-->
-<!--        $gif.delay(800).fadeOut('slow');-->
-<!--        $preloader.delay(1000).fadeOut('slow');-->
-<!--        setTimeout(function () {-->
-<!--            $('html, body').removeClass('bgc');-->
-<!--        }, 1300);-->
-<!--    });-->
-<!--</script>-->
-<!--<div class="preloader">-->
-<!--    <video class="preloader__gif" loop muted autoplay>-->
-<!--        <source src="images/preloader.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>-->
-<!--    </video>-->
-<!--    &lt;!&ndash;    <img src="images/preloader.mp4" class="preloader__gif"  alt="preloader"/>&ndash;&gt;-->
-<!--</div>-->
+<script>
+    $('html, body').addClass('bgc');
+    $(window).on('load', function () {
+        var $preloader = $('.preloader'),
+            $gif = $('.preloader').find('.preloader__gif');
+        $gif.delay(800).fadeOut('slow');
+        $preloader.delay(1000).fadeOut('slow');
+        setTimeout(function () {
+            $('html, body').removeClass('bgc');
+        }, 1300);
+    });
+</script>
+<div class="preloader">
+    <video class="preloader__gif" loop muted autoplay>
+        <source src="images/preloader.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+    <!--    <img src="images/preloader.mp4" class="preloader__gif"  alt="preloader"/>-->
+</div>
 
 <header class="header" id="header">
     <div class="container">
