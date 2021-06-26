@@ -161,3 +161,19 @@ $('.lang').click(function () {
     $('.lang-choice-wrapper').slideToggle(300);
     $('.header__settings .lang-arrow').toggleClass('rotate-arrow');
 });
+
+//slider
+if ($('*').is('.helpful')) {
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.helpful__arrow-right',
+            prevEl: '.helpful__arrow-left',
+        },
+    });
+}

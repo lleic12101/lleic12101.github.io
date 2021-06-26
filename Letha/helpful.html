@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Poppins:wght@500&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/style-about.css">
     <link rel="stylesheet" href="css/style-strategy.css">
@@ -111,44 +111,53 @@
         <div class="breadcrumbs">
             <a href="index.html">Home</a>
             <p>/</p>
-            <a href="news.html">Latest News</a>
-            <p>/</p>
-            <a class="active" href="one-news.html">The composition of our team was formed.</a>
+            <a class="active" href="one-news.html">About Us</a>
         </div>
         <h2 class="top-bar-header">
-            Legal Documents
+            Helpful Information
         </h2>
     </div>
 </div>
-<div class="container-new">
-    <div class="news-content">
-        <div class="news-tab-certificate">
-            <a data-fancybox="gallery" href="images/certificate.pdf" class="certificate-link">
-                <img class="certificate-link__img" src="images/certificate.jpg" alt="certificate"/>
-            </a>
-            <div class="news-tab__content">
-                <div class="news-tab__contentWrapper">
-                    <p class="news-date">Letha Holding</p>
-                    <h3 class="news-name">
-                        Company Sertificate
-                    </h3>
-                    <p class="news-p">
-                        We are attracted by the computer games industry (development, publishing and promotion of games) because it is one of the
-                        fastest growing branches of computer technology and, at the same time, the global entertainment. A powerful ecosystem is being
-                        formed around a core consisting of: teams and e-sportsmen, leagues and tournaments, e-sports audiences and communities, game
-                        publishers and developers, media and media companies. The composition of our team was formed and is formed of professionals
-                        with experience in well-known companies in the online sports. <br><br>
-
-                        We are attracted by the computer games industry (development, publishing and promotion of games) because it is one of the
-                        fastest growing branches of computer technology and, at the same time, the global entertainment. A powerful ecosystem is being
-                        formed around a core consisting of: teams and e-sportsmen, leagues and tournaments, e-sports audiences and communities, game
-                        publishers and developers, media and media companies. The composition of our team was formed and is formed of professionals
-                        with experience in well-known companies in the online sports.
-                    </p>
-                </div>
-                <a href="#!" class="btn certificate-button"><p class="btn__text">Сheck the certificate</p></a>
+<div class="container-new container-new">
+    <div class="swiper-container helpful">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide helpful__item">
+                <p class="helpful__itemTitle">Heading of the full name video 1</p>
+                <iframe class="helpful__itemVideo" src="https://www.youtube.com/embed/whv6KtrXIc0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="helpful__itemText">
+                    Artificial intelligence based on neural networks built using the newest algorithms for self-learning, analysis and compariso
+                    eurons in
+                    which will be self corrected, based on the history of success and failure, taking into account the correlation of the objects.
+                </p>
+            </div>
+            <div class="swiper-slide helpful__item">
+                <p class="helpful__itemTitle">Heading of the full name video 2</p>
+                <iframe class="helpful__itemVideo" src="https://www.youtube.com/embed/whv6KtrXIc0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="helpful__itemText">
+                    Artificial intelligence based on neural networks built using the newest algorithms for self-learning, analysis and compariso
+                    eurons in
+                    which will be self corrected, based on the history of success and failure, taking into account the correlation of the objects.
+                </p>
+            </div>
+            <div class="swiper-slide helpful__item">
+                <p class="helpful__itemTitle">Heading of the full name video 3</p>
+                <iframe class="helpful__itemVideo" src="https://www.youtube.com/embed/whv6KtrXIc0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="helpful__itemText">
+                    Artificial intelligence based on neural networks built using the newest algorithms for self-learning, analysis and compariso
+                    eurons in
+                    which will be self corrected, based on the history of success and failure, taking into account the correlation of the objects.
+                </p>
             </div>
         </div>
+        <span class="helpful__arrow helpful__arrow-left">
+            <img src="images/left.svg" alt="icon" class="helpful__arrowIcon"/>
+        </span>
+        <span class="helpful__arrow helpful__arrow-right">
+            <img src="images/right.svg" alt="icon" class="helpful__arrowIcon"/>
+        </span>
     </div>
 </div>
 
@@ -257,7 +266,7 @@
     </div>
 </footer>
 
-<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>
