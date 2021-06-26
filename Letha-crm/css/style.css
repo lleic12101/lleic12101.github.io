@@ -452,12 +452,13 @@ input[type="number"]:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -10px;
 }
 .header__logoLink-mobile {
     display: none;
 }
 .header__logo {
-    max-height: 26px;
+    max-height: 50px;
 }
 .header__mobileWrapper {
     width: 100%;
