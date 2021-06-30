@@ -30,7 +30,7 @@
     });
 </script>
 <div class="preloader">
-    <video class="preloader__gif" controls="true" loop muted autoplay>
+    <video class="preloader__gif" playsinline preload="yes" loop muted autoplay>
         <source src="images/preloader.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
     <!--    <img src="images/preloader.mp4" class="preloader__gif"  alt="preloader"/>-->
@@ -92,9 +92,13 @@
             <a href="#" class="mob-menu-link">Contact</a>
             <div class="mob-menu-link__block">
                 <span class="mob-menu-link">Helpful Information</span>
-                <span class="mob-menu-link-small">Link Page 1</span>
-                <span class="mob-menu-link-small">Link Page 2</span>
-                <span class="mob-menu-link-small">Link Page 3</span>
+                <div class="mob-menu-link__wrapper">
+                    <div class="mob-menu-links">
+                        <span class="mob-menu-link-small">Link Page 1</span>
+                        <span class="mob-menu-link-small">Link Page 2</span>
+                        <span class="mob-menu-link-small">Link Page 3</span>
+                    </div>
+                </div>
             </div>
             <button class="btn mob-menu-btn"><p class="btn__text">Login</p></button>
         </div>

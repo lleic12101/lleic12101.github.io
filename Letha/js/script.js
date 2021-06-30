@@ -177,3 +177,8 @@ if ($('*').is('.helpful')) {
         },
     });
 }
+
+//mob more link
+$('.mob-menu-link__block .mob-menu-link').click(function () {
+    $('.mob-menu-link__wrapper').slideToggle();
+});
