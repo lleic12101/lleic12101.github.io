@@ -1,0 +1,54 @@
+.terms-tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3.subhead {
+    width: 380px;
+    font-size: 28px;
+    margin: 0 30px 0 0;
+}
+
+.terms-text {
+    font-size: 18px;
+    color: #898989;
+    max-width: 790px;
+}
+
+.terms-text p {
+    margin: 0 0 15px 0;
+}
+
+.terms-text p:last-child {
+    margin: 0 0 40px 0;
+}
+
+.terms-text p.last {
+    margin: 0 0 50px;
+}
+
+.first-tab {
+    margin: 50px 0 0 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .terms-tab {
+        display: block;
+    }
+    h3.subhead {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .terms-text {
+        max-width: 100%;
+    }
+    .first-tab {
+        margin: 30px 0 0 0;
+    }
+    .terms-text p.last {
+        margin: 0 0 30px;
+    }
+    .terms-text p:last-child {
+        margin: 0 0 30px 0;
+    }
+}
