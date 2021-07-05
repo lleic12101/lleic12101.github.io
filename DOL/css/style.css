@@ -26,6 +26,13 @@
     font-weight: normal;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: Roboto, 'Roboto', sans-serif;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 html, body {
@@ -182,8 +189,8 @@ body {
 .main-conversation__avatarImg {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: top;
     border-radius: 50%;
 }
 .main-conversation__avatarAnimation {
