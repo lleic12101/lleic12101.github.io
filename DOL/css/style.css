@@ -349,6 +349,16 @@ body {
     cursor: pointer;
     transition: .3s;
 }
+.main-conversation__dataButtonAnimation {
+    display: none;
+    position: absolute;
+    animation: rotate 0.7s linear infinite;
+    width: 34px;
+    height: 34px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
 .main-conversation:hover .main-conversation__dataButton {
     opacity: 1;
     visibility: visible;
@@ -451,9 +461,6 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
     transition: .3s;
 }
-/*.main-conversation__videoButton:hover .main-conversation__videoButtonIcon {*/
-/*    box-shadow: 0 0 4px rgba(0, 0, 0, .1);*/
-/*}*/
 .main-conversation__videoFooter {
     position: absolute;
     width: 100%;
