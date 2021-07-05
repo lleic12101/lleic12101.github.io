@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>DOL</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header-logo">
+            <p class="header-logo__text">2019</p>
+            <a href="#!" class="header-logo__link">
+                <img src="img/logo.png" alt="logo" class="header-logo__img"/>
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="#!" class="header-nav__link">INFORMATION</a>
+            <a href="#!" class="header-nav__link">CONTACT US</a>
+            <a href="#!" class="header-nav__link">ABOUT US</a>
+            <a href="#!" class="header-nav__link">BLOG</a>
+        </nav>
+        <div class="header-social">
+            <a href="#!" class="header-social__link">
+                <img src="img/icons/fb.png" alt="icon" class="header-social__icon"/>
+            </a>
+            <a href="#!" class="header-social__link">
+                <img src="img/icons/yt.png" alt="icon" class="header-social__icon"/>
+            </a>
+            <a href="#!" class="header-social__link">
+                <img src="img/icons/insta.png" alt="icon" class="header-social__icon"/>
+            </a>
+            <a href="#!" class="header-social__link">
+                <img src="img/icons/twitter.png" alt="icon" class="header-social__icon"/>
+            </a>
+            <a href="#!" class="header-social__link">
+                <img src="img/icons/linkedIn.png" alt="icon" class="header-social__icon"/>
+            </a>
+            <a href="#!" class="header-social__link">
+                <img src="img/icons/g.png" alt="icon" class="header-social__icon"/>
+            </a>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="wrapper">
+        <div class="main-column">
+            <div class="main-conversation">
+                <div class="main-conversation__item">
+                    <div class="main-conversation__video">
+                        <div class="main-conversation__videoBlock"></div>
+                        <div class="main-conversation__videoFooter">
+                            <img src="img/icons/fullscreen.png" alt="icon" class="main-conversation__videoFooterFullscreen"/>
+                        </div>
+                    </div>
+                    <div class="main-conversation__avatar">
+                        <img src="img/avatar.jpg" alt="img" class="main-conversation__avatarImg"/>
+                        <img src="img/avatar-animation.png" alt="img" class="main-conversation__avatarAnimation "/>
+                        <img src="img/avatar-online.png" alt="icon" class="main-conversation__avatarStatus active"/>
+                        <img src="img/avatar-money.png" alt="img" class="main-conversation__avatarMoney"/>
+                        <div class="main-conversation__avatarEllipsis active">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="main-conversation__balance">
+                        <div class="main-conversation__balanceRow">
+                            <img src="img/icons/coins.png" alt="icon" class="main-conversation__balanceIcon"/>
+                            <p class="main-conversation__balanceAmount">3467</p>
+                        </div>
+                        <p class="main-conversation__balanceText active">free minute</p>
+                    </div>
+                    <div class="main-conversation__data">
+                        <p class="main-conversation__dataName">KHRISTINA-MIRABELLA</p>
+                        <p class="main-conversation__dataId">497272</p>
+                        <div class="main-conversation__dataButtons">
+                            <img src="img/icons/msg.jpg" alt="icon" class="main-conversation__dataMessage"/>
+                            <img src="img/waveform.png" alt="img" class="main-conversation__dataAudio active"/>
+                            <div class="main-conversation__dataButton">
+                                <span class="main-conversation__dataButtonMoney active">$</span>
+                                <img src="img/buttons/msg-red.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                                <img src="img/buttons/msg-green.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/msg-white.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                            </div>
+                            <div class="main-conversation__dataButton" id="conversation-change">
+                                <span class="main-conversation__dataButtonMoney">$</span>
+                                <img src="img/buttons/video-red.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/video-green.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                                <img src="img/buttons/video-white.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                            </div>
+                            <div class="main-conversation__dataButton">
+                                <span class="main-conversation__dataButtonMoney">$</span>
+                                <img src="img/buttons/audio-red.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/audio-green.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                                <img src="img/buttons/audio-white.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                            </div>
+                            <div class="main-conversation__dataButton">
+                                <img src="img/buttons/gift-red.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/gift-green.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                                <img src="img/buttons/gift-white.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                            </div>
+                            <div class="main-conversation__dataButton">
+                                <img src="img/buttons/ban-red.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-conversation__center">
+                    <div class="main-conversation__stop">
+                        <img src="img/icons/tel.png" alt="icon" class="main-conversation__stopIcon"/>
+                        <p class="main-conversation__stopTime">1:33:12</p>
+                    </div>
+                </div>
+                <!--
+                Если ещё не выбрана Ж, то добавлять класс main-conversation__item-long, чтобы элемент был на всю ширину
+                 <div class="main-conversation__item main-conversation__item-long">
+                -->
+                <div class="main-conversation__item">
+                    <div class="main-conversation__video">
+                        <div class="main-conversation__videoBlock"></div>
+                        <div class="main-conversation__videoButtons">
+                            <div class="main-conversation__videoButton">
+                                <img src="img/buttons/eye-white.png" alt="icon" class="main-conversation__videoButtonIcon active"/>
+                            </div>
+                            <div class="main-conversation__videoButton">
+                                <img src="img/buttons/eye-white.png" alt="icon" class="main-conversation__videoButtonIcon active"/>
+                            </div>
+                        </div>
+                        <div class="main-conversation__videoFooter"></div>
+                    </div>
+                    <div class="main-conversation__avatar">
+                        <img src="img/avatar.jpg" alt="img" class="main-conversation__avatarImg"/>
+                        <img src="img/avatar-animation.png" alt="img" class="main-conversation__avatarAnimation active"/>
+                        <img src="img/avatar-online.png" alt="icon" class="main-conversation__avatarStatus active"/>
+                        <img src="img/avatar-money.png" alt="img" class="main-conversation__avatarMoney active"/>
+                        <div class="main-conversation__avatarEllipsis">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="main-conversation__balance active">
+                        <div class="main-conversation__balanceRow">
+                            <img src="img/icons/coins.png" alt="icon" class="main-conversation__balanceIcon"/>
+                            <p class="main-conversation__balanceAmount">3467</p>
+                        </div>
+                        <p class="main-conversation__balanceText active">free minute</p>
+                    </div>
+                    <div class="main-conversation__data">
+                        <p class="main-conversation__dataName">JOHNY THE BEST</p>
+                        <p class="main-conversation__dataId">706276</p>
+                        <div class="main-conversation__dataButtons">
+                            <img src="img/icons/msg.jpg" alt="icon" class="main-conversation__dataMessage"/>
+                            <img src="img/waveform.png" alt="img" class="main-conversation__dataAudio active"/>
+                            <div class="main-conversation__dataButton">
+                                <img src="img/buttons/video-red.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/video-green.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/video-white.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                            </div>
+                            <div class="main-conversation__dataButton">
+                                <img src="img/buttons/audio-red.png" alt="icon" class="main-conversation__dataButtonIcon active"/>
+                                <img src="img/buttons/audio-green.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                                <img src="img/buttons/audio-white.png" alt="icon" class="main-conversation__dataButtonIcon"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-chat">
+
+            </div>
+        </div>
+        <div class="main-list">
+
+        </div>
+    </div>
+</main>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
