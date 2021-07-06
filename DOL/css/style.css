@@ -151,6 +151,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    position: relative;
 }
 .main-list {
     height: 100%;
@@ -432,6 +433,7 @@ body {
     font-weight: normal;
     font-size: 9px;
     color: #FFFFFF;
+    display: none;
 }
 
 .main-conversation__video {
@@ -598,13 +600,12 @@ body {
     overflow-y: auto;
     padding-right: 18px;
     max-height: calc(100vh - 315px);
-    position: relative;
 }
 .main-chat__items:before {
     content: '';
     position: absolute;
     display: block;
-    top: 0;
+    top: 15px;
     left: 0;
     width: 100%;
     height: 19px;
@@ -615,7 +616,7 @@ body {
     content: '';
     position: absolute;
     display: block;
-    bottom: 0;
+    bottom: 80px;
     left: 0;
     width: 100%;
     height: 19px;
@@ -656,6 +657,7 @@ body {
     font-size: 18px;
     line-height: 18px;
     position: relative;
+    user-select: text;
 }
 .main-chat__itemText:before {
     content: url(../img/icons/chat-arrow.png);
@@ -749,8 +751,346 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
 }
 /*CHAT END*/
-/*MAIN END*/
 
+/*CONTACTS-LIST*/
+.main-list__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-height: 70px;
+    height: 70px;
+    padding-top: 30px;
+}
+.main-list__button {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+.main-list__buttonText {
+    font-weight: normal;
+    color: #053969;
+    font-size: 18px;
+    line-height: 12px;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+}
+.main-list__button:hover .main-list__buttonText,
+.main-list__button-active .main-list__buttonText {
+    color: #467def;
+}
+.main-list__buttonCounter {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: normal;
+    width: 14px;
+    height: 14px;
+    background: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 9px;
+    right: -16px;
+    padding-top: 1px;
+}
+.main-list__button-counter {
+    margin-right: 10px;
+}
+
+.main-list__tabs {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 170px);
+    position: relative;
+}
+.main-list__tab {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 6px;
+}
+.main-list__tab:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+.main-list__tab-active {
+    display: flex;
+}
+
+.main-list__contact {
+    position: relative;
+    width: calc(100% - 20px);
+    border-width: 2px;
+    border-color: rgb(217, 238, 255);
+    border-style: solid;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.9px 2.1px rgba(0, 10, 79, 0.09);
+    min-height: 78px;
+    height: 78px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 7px;
+    margin-bottom: 12px;
+}
+.main-list__contact:last-child {
+    margin-bottom: 10px;
+}
+
+.main-list__contactAvatarBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+    margin-right: 10px;
+}
+.main-list__contactAvatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.main-list__contactAvatarStatus {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    left: 6px;
+    top: -2px;
+}
+.main-list__contactAvatarCounter {
+    font-weight: normal;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 17px;
+    background: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #FFFFFF;
+    padding-left: 1px;
+    padding-bottom: 2px;
+    top: -2px;
+    right: 5px;
+    display: none;
+}
+.main-list__contactAvatarButton {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    transition: .3s;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    object-fit: cover;
+}
+.main-list__contactAvatarButton:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+.main-list__contactAvatarButton-video {
+    left: 8px;
+}
+.main-list__contactAvatarButton-audio {
+    right: 8px;
+}
+
+.main-list__contactData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-list__contactDataRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.main-list__contactDataRow:last-child {
+    margin-bottom: 0;
+}
+.main-list__contactDataIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    margin-right: 6px;
+}
+.main-list__contactDataText {
+    font-weight: normal;
+    color: #053969;
+    font-size: 14px;
+    line-height: 12px;
+}
+.main-list__contactDataText-bold {
+    font-weight: normal;
+    color: #053969;
+    font-size: 24px;
+    line-height: 12px;
+}
+.main-list__contactDataText-age {
+    font-weight: bold;
+    font-size: 14px;
+    color: #c6d1e3;
+    line-height: 12px;
+    margin-left: 7px;
+}
+.main-list__contactButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 11px;
+    bottom: 7px;
+}
+.main-list__contactButtonsText {
+    font-weight: normal;
+    color: #ff0000;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    display: none;
+    right: 45px;
+    white-space: nowrap;
+    bottom: 0;
+}
+.main-list__contactButton {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    transition: .3s;
+    margin-left: 6px;
+    cursor: pointer;
+    display: none;
+}
+.main-list__contactButton-unban {
+    display: none;
+}
+.main-list__contactButton:first-child {
+    margin-left: 0;
+}
+.main-list__contactButton:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+
+.main-list__contact-selected {
+    border-width: 2px;
+    border-color: rgb(70, 125, 239);
+    border-style: solid;
+}
+.main-list__contact-banned {
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
+    border-style: solid;
+}
+.main-list__contact-banned .main-list__contactDataRow:last-child {
+    display: none;
+}
+.main-list__contact-banned .main-list__contactDataRow:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.main-list__invitation {
+    width: 100%;
+    min-height: 105px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 8.55px 0.45px rgba(0, 0, 0, 0.21);
+    padding: 12px 12px 10px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.main-list__invitation:last-child {
+    margin-bottom: 0;
+}
+.main-list__invitationAvatar {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.main-list__invitationData {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main-list__invitationText {
+    font-size: 11px;
+    color: #053969;
+    font-weight: normal;
+    line-height: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.main-list__invitationText span {
+    font-weight: bold;
+    font-size: 11px;
+    color: #053969;
+    line-height: 12px;
+}
+.main-list__invitationButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.main-list__invitationButton {
+    width: 32%;
+    height: 26px;
+    background: #2f80ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s;
+}
+.main-list__invitationButton:hover {
+    background: #1261cb;
+}
+.main-list__invitationButtonText {
+    font-size: 9.6px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 7px;
+}
+.main-list__invitationButton-red {
+    background: #ff0000;
+}
+.main-list__invitationButton-red:hover {
+    background: #e30808;
+}
+/*CONTACTS-LIST END*/
+/*MAIN END*/
 /*TOOLS*/
 .active {
     display: flex;

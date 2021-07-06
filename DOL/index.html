@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>DOL</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="OverlayScrollbars/css/OverlayScrollbars.css"/>
 </head>
 <body>
 <header class="header">
@@ -115,7 +114,7 @@
                 <div class="main-conversation__center">
                     <div class="main-conversation__stop">
                         <img src="img/icons/tel.png" alt="icon" class="main-conversation__stopIcon"/>
-                        <p class="main-conversation__stopTime">1:33:12</p>
+                        <p class="main-conversation__stopTime active">1:33:12</p>
                     </div>
                 </div>
                 <!--
@@ -136,7 +135,7 @@
                         <div class="main-conversation__videoFooter"></div>
                     </div>
                     <div class="main-conversation__avatar">
-                        <img src="img/avatar.jpg" alt="img" class="main-conversation__avatarImg"/>
+                        <img src="img/avatar-man.jpg" alt="img" class="main-conversation__avatarImg"/>
                         <img src="img/avatar-animation.png" alt="img" class="main-conversation__avatarAnimation active"/>
                         <img src="img/avatar-online.png" alt="icon" class="main-conversation__avatarStatus active"/>
                         <img src="img/avatar-money.png" alt="img" class="main-conversation__avatarMoney active"/>
@@ -177,7 +176,7 @@
             <div class="main-chat">
                 <div class="main-chat__items">
                     <div class="main-chat__item main-chat__item-right">
-                        <img src="img/avatar.jpg" alt="avatar" class="main-chat__itemAvatar"/>
+                        <img src="img/avatar-man.jpg" alt="avatar" class="main-chat__itemAvatar"/>
                         <p class="main-chat__itemText">
                             I want to meet you
                         </p>
@@ -194,7 +193,7 @@
                         </p>
                     </div>
                     <div class="main-chat__item main-chat__item-right">
-                        <img src="img/avatar.jpg" alt="avatar" class="main-chat__itemAvatar"/>
+                        <img src="img/avatar-man.jpg" alt="avatar" class="main-chat__itemAvatar"/>
                         <p class="main-chat__itemText">
                             I want to meet you
                         </p>
@@ -211,7 +210,7 @@
                         </p>
                     </div>
                     <div class="main-chat__item main-chat__item-right">
-                        <img src="img/avatar.jpg" alt="avatar" class="main-chat__itemAvatar"/>
+                        <img src="img/avatar-man.jpg" alt="avatar" class="main-chat__itemAvatar"/>
                         <p class="main-chat__itemText">
                             I want to meet you
                         </p>
@@ -228,7 +227,7 @@
                         </p>
                     </div>
                     <div class="main-chat__item main-chat__item-right">
-                        <img src="img/avatar.jpg" alt="avatar" class="main-chat__itemAvatar"/>
+                        <img src="img/avatar-man.jpg" alt="avatar" class="main-chat__itemAvatar"/>
                         <p class="main-chat__itemText">
                             I want to meet you
                         </p>
@@ -268,12 +267,588 @@
             </div>
         </div>
         <div class="main-list">
-
+            <div class="main-list__buttons">
+                <div class="main-list__button main-list__button-active" id="contactsBtn">
+                    <p class="main-list__buttonText">CONTACT LIST</p>
+                </div>
+                <div class="main-list__button main-list__button-counter" id="invitationsBtn">
+                    <p class="main-list__buttonText">INVITATIONS</p>
+                    <span class="main-list__buttonCounter">14</span>
+                </div>
+            </div>
+            <div class="main-list__tabs">
+                <div class="main-list__tab main-list__tab-active" id="contactsTab">
+                    <div class="main-list__contact main-list__contact-selected">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio active"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-online.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter active">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video active"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton active"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton"/>
+                        </div>
+                    </div>
+                    <div class="main-list__contact main-list__contact-banned">
+                        <div class="main-list__contactAvatarBlock">
+                            <img src="img/avatar.jpg" alt="img" class="main-list__contactAvatar"/>
+                            <img src="img/avatar-offline-gray.png" alt="icon" class="main-list__contactAvatarStatus"/>
+                            <span class="main-list__contactAvatarCounter">74</span>
+                            <img src="img/buttons/video-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-video"/>
+                            <img src="img/buttons/audio-green.png" alt="icon"
+                                 class="main-list__contactAvatarButton main-list__contactAvatarButton-audio"/>
+                        </div>
+                        <div class="main-list__contactData">
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/user.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText-bold">Alisa</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/id.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">785130</p>
+                            </div>
+                            <div class="main-list__contactDataRow">
+                                <div class="main-list__contactDataIcon">
+                                    <img src="img/icons/location.png" alt="icon"/>
+                                </div>
+                                <p class="main-list__contactDataText">Kiev, Ukraine</p>
+                                <p class="main-list__contactDataText-age">21 age</p>
+                            </div>
+                        </div>
+                        <div class="main-list__contactButtons main-list__contactButtons-unban">
+                            <p class="main-list__contactButtonsText active">Baned lady<br>Click to unban</p>
+                            <img src="img/buttons/msg-white.png" alt="icon" class="main-list__contactButton"/>
+                            <img src="img/buttons/ban.png" alt="icon" class="main-list__contactButton"/>
+                            <img src="img/buttons/unban.png" alt="icon" class="main-list__contactButton active"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-list__tab" id="invitationsTab">
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list__invitation">
+                        <img src="img/avatar.jpg" alt="img" class="main-list__invitationAvatar"/>
+                        <div class="main-list__invitationData">
+                            <p class="main-list__invitationText">
+                                <span>Alisa-MIRABELLA</span> (562334) wrote 23.02.2021 at 04:55
+                                Hello my dear! I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat! By the way did you kissed her. I missed you so much. Lets go
+                                to videochat!
+                            </p>
+                            <div class="main-list__invitationButtons">
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">DELETE</p>
+                                </div>
+                                <div class="main-list__invitationButton main-list__invitationButton-red">
+                                    <p class="main-list__invitationButtonText">BAN</p>
+                                </div>
+                                <div class="main-list__invitationButton">
+                                    <p class="main-list__invitationButtonText">START CHAT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
