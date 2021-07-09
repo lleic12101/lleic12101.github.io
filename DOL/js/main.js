@@ -41,5 +41,29 @@ for (var i = 0; i < chat_imgs.length; i++) {
         doc.querySelector('.main-chat__viewer').classList.add('visible');
         doc.querySelector('.main-chat__viewerImg').src = this.src;
     };
-
 }
+
+//modal
+var modal = document.querySelector('.modal');
+function toggleModal() {
+    modal.classList.toggle('show-modal');
+}
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+// toggleModal();
+window.addEventListener("click", windowOnClick);
+
+//smiles
+doc.getElementById("smileButton").onclick = function () {
+    doc.querySelector('#stickerBlock').classList.remove('visible');
+    doc.querySelector('#smileBlock').classList.toggle('visible');
+};
+
+//stickers
+doc.getElementById("stickerButton").onclick = function () {
+    doc.querySelector('#smileBlock').classList.remove('visible');
+    doc.querySelector('#stickerBlock').classList.toggle('visible');
+};

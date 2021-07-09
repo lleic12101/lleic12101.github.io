@@ -736,6 +736,7 @@ body {
     display: flex;
     margin: 0 8px;
     cursor: pointer;
+    position: relative;
 }
 .main-chat__buttonIcon {
     width: 34px;
@@ -752,6 +753,10 @@ body {
     max-width: 292px;
     width: 100%;
     cursor: pointer;
+}
+.main-chat__itemSmile {
+    max-width: 60px;
+    width: 100%;
 }
 .main-chat__viewer {
     display: none;
@@ -771,7 +776,6 @@ body {
     z-index: 3;
     object-fit: contain;
     object-position: center;
-    cursor: pointer;
 }
 .main-chat__viewerClose {
     position: absolute;
@@ -811,6 +815,7 @@ body {
     visibility: visible;
 }
 /*CHAT END*/
+
 /*CONTACTS-LIST*/
 .main-list__buttons {
     display: flex;
@@ -1207,6 +1212,48 @@ body {
     width: 100%;
 }
 /*CONTACTS-LIST END*/
+
+/*SMILES*/
+.main-chat__smiles {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 286px;
+    max-height: 176px;
+    height: 176px;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1.408px 2.649px 5.6px 1.4px rgba(0, 0, 0, 0.21);
+    top: -195px;
+    z-index: 4;
+    left: -126px;
+}
+.main-chat__smiles-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    z-index: 4;
+    display: none;
+}
+.main-chat__smile {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    transition: .3s;
+    padding: 5px;
+}
+.main-chat__smile:hover {
+    background: #f1f1f1;
+}
+.main-chat__smiles.visible ~ .main-chat__smiles-icon {
+    display: block;
+}
+/*SMILES END*/
 /*MAIN END*/
 
 /*TOOLS*/
@@ -1225,6 +1272,42 @@ body {
     }
 }
 /*ANIMATION END*/
+
+/*MODAL*/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 10;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px 40px;
+    height: auto;
+    width: 987px;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/*MODAL END*/
 
 /*MEDIA*/
 @media screen and (max-width: 1230px) {
