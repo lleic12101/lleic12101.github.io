@@ -21,3 +21,25 @@ doc.getElementById("invitationsBtn").onclick = function () {
     doc.querySelector('#invitationsBtn').classList.add('main-list__button-active');
     doc.querySelector('#contactsBtn').classList.remove('main-list__button-active');
 };
+doc.getElementById("closeNewInvitations").onclick = function () {
+    doc.querySelector('#newInvitations').classList.remove('visible');
+};
+
+//scroll chat to top
+window.onload = function () {
+    doc.querySelector(".main-chat__items").scrollTop = doc.querySelector(".main-chat__items").scrollHeight;
+};
+
+//chat viewer
+doc.getElementById("closeViewer").onclick = function () {
+    doc.querySelector('.main-chat__viewer').classList.remove('visible');
+};
+var chat_imgs = doc.querySelectorAll(".main-chat__itemImg");
+for (var i = 0; i < chat_imgs.length; i++) {
+    chat_imgs[i].onclick = function () {
+        console.log(123);
+        doc.querySelector('.main-chat__viewer').classList.add('visible');
+        doc.querySelector('.main-chat__viewerImg').src = this.src;
+    };
+
+}

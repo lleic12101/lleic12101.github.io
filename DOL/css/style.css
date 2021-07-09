@@ -594,9 +594,6 @@ body {
 .main-chat__items {
     width: calc(100% + 10px);
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     overflow-y: auto;
     padding-right: 18px;
     max-height: calc(100vh - 315px);
@@ -750,8 +747,70 @@ body {
 .main-chat__button:hover .main-chat__buttonIcon {
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
 }
-/*CHAT END*/
 
+.main-chat__itemImg {
+    max-width: 292px;
+    width: 100%;
+    cursor: pointer;
+}
+.main-chat__viewer {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 3;
+}
+.main-chat__viewerImg {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+}
+.main-chat__viewerClose {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    transition: .3s;
+}
+.main-chat__viewerClose:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+.main-chat__viewerSave {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-chat__viewerSave:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+.main-chat__viewerImg:hover ~ .main-chat__viewerSave,
+.main-chat__viewerSave:hover {
+    opacity: 1;
+    visibility: visible;
+}
+/*CHAT END*/
 /*CONTACTS-LIST*/
 .main-list__buttons {
     display: flex;
@@ -1012,7 +1071,7 @@ body {
 
 .main-list__invitation {
     width: 100%;
-    min-height: 105px;
+    min-height: 110px;
     margin-bottom: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 8.55px 0.45px rgba(0, 0, 0, 0.21);
@@ -1060,39 +1119,98 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: flex-end;
+    margin-top: 8px;
 }
 .main-list__invitationButton {
-    width: 32%;
+    display: flex;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.main-list__invitationButtonIcon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+.main-list__invitationButton:first-child {
+    margin-left: 0;
+}
+.main-list__invitationButton:hover .main-list__invitationButtonIcon {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+
+.main-invitations {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, .8);
+
+}
+.main-invitations__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+    max-height: 100%;
+}
+.main-invitations__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: #467def;
+    min-height: 40px;
+    height: 40px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.main-invitations__headerText {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 14px;
+    margin: 0 15px;
+}
+.main-invitations__headerButton {
+    width: 102px;
     height: 26px;
-    background: #2f80ed;
+    border-radius: 4px;
+    background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 10px;
+    color: #467def;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
     transition: .3s;
 }
-.main-list__invitationButton:hover {
-    background: #1261cb;
+.main-invitations__headerButton:hover {
+    background: #f5f0f0;
 }
-.main-list__invitationButtonText {
-    font-size: 9.6px;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 7px;
-}
-.main-list__invitationButton-red {
-    background: #ff0000;
-}
-.main-list__invitationButton-red:hover {
-    background: #e30808;
+.main-invitations__items {
+    max-height: 340px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 /*CONTACTS-LIST END*/
 /*MAIN END*/
+
 /*TOOLS*/
-.active {
+.visible {
     display: flex;
 }
 /*TOOLS END*/
