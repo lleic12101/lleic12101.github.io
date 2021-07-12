@@ -629,6 +629,7 @@ body {
     flex-direction: row;
     align-items: flex-end;
     margin-bottom: 30px;
+    position: relative;
 }
 .main-chat__item:first-child {
     margin-top: 15px;
@@ -643,25 +644,32 @@ body {
     object-position: top;
     border-radius: 50%;
     margin-right: 6px;
+    min-width: 33px;
 }
-.main-chat__itemText {
-    max-width: 715px;
-    padding: 10px 14px;
+
+.main-chat__itemBlock {
+    /*max-width: 715px;*/
+    max-width: 690px;
+    position: relative;
     background: #e5ebf0;
     border-radius: 8px 8px 8px 0;
+    padding: 10px 14px;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+.main-chat__itemText {
     font-weight: normal;
     color: #636a89;
     font-size: 18px;
     line-height: 18px;
-    position: relative;
     user-select: text;
 }
-.main-chat__itemText:before {
+.main-chat__itemBlock:before {
     content: url(../img/icons/chat-arrow.png);
     display: block;
     position: absolute;
-    left: -7px;
-    bottom: -3px;
+    left: -9px;
+    bottom: -5px;
 }
 .main-chat__item-right {
     flex-direction: row-reverse;
@@ -670,18 +678,20 @@ body {
     margin-right: 0;
     margin-left: 6px;
 }
-.main-chat__item-right .main-chat__itemText {
-    color: #ffffff;
+.main-chat__item-right .main-chat__itemBlock {
     background: #569eeb;
     border-radius: 8px 8px 0 8px;
 }
-.main-chat__item-right .main-chat__itemText:before {
+.main-chat__item-right .main-chat__itemText {
+    color: #ffffff;
+}
+.main-chat__item-right .main-chat__itemBlock:before {
     content: url(../img/icons/chat-arrow-blue.png);
     display: block;
     position: absolute;
     right: -7px;
     left: unset;
-    bottom: -3px;
+    bottom: -5px;
 }
 .main-chat__form {
     width: 100%;
@@ -814,6 +824,74 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+.main-chat__itemTranslate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px;
+    border-color: rgb(114, 167, 238);
+    border-style: solid;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 25px 0 10px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    right: -191px;
+    top: 0;
+    min-width: 183px;
+    width: 183px;
+    z-index: 1;
+}
+.main-chat__itemBlock-bottom .main-chat__itemTranslate {
+    top: unset;
+    bottom: 0;
+}
+
+.main-chat__itemTranslateIcon {
+    min-width: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+.main-chat__itemTranslateItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-chat__itemTranslateItem {
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    color: #636a89;
+    border-bottom: 1px solid rgb(70, 125, 239);
+    min-width: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+}
+.main-chat__itemTranslateItem:last-child {
+    border-bottom: unset;
+}
+.main-chat__itemTranslateItem:hover {
+    text-decoration: underline;
+}
+
+.main-chat__itemBlock-translate:hover .main-chat__itemTranslate {
+    opacity: 1;
+    visibility: visible;
+}
+.main-chat__itemBlock-translate:hover {
+    background: #f6f8fa;
+    border: 1px solid #2f80ed;
+}
 /*CHAT END*/
 
 /*CONTACTS-LIST*/
@@ -856,6 +934,9 @@ body {
     bottom: 9px;
     right: -16px;
     padding-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-list__button-counter {
     margin-right: 10px;
@@ -954,6 +1035,8 @@ body {
     top: -2px;
     right: 5px;
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 .main-list__contactAvatarButton {
     width: 24px;
@@ -1103,20 +1186,24 @@ body {
     align-items: center;
     width: 100%;
 }
-.main-list__invitationText {
-    font-size: 11px;
-    color: #053969;
-    font-weight: normal;
-    line-height: 12px;
+.main-list__invitationTextBlock {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
-.main-list__invitationText span {
+.main-list__invitationName {
     font-weight: bold;
     font-size: 11px;
     color: #053969;
+    line-height: 12px;
+    float: left;
+    margin-right: 3px;
+}
+.main-list__invitationText {
+    font-size: 11px;
+    color: #053969;
+    font-weight: normal;
     line-height: 12px;
 }
 .main-list__invitationButtons {

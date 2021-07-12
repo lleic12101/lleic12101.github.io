@@ -4,6 +4,7 @@
 doc.getElementById("conversation-change").onclick = function () {
     doc.querySelector('.main-conversation').classList.toggle('main-conversation-video');
     doc.querySelector('.main-chat__items').classList.toggle('main-chat__items-short');
+    doc.querySelector(".main-chat__items").scrollTop = doc.querySelector(".main-chat__items").scrollHeight;
 };
 
 //contacts list tabs
