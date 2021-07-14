@@ -54,7 +54,10 @@ function windowOnClick(event) {
         toggleModal();
     }
 }
-// toggleModal();
+toggleModal();
+doc.querySelector(".modal-content__close").onclick = function () {
+    toggleModal();
+};
 window.addEventListener("click", windowOnClick);
 
 //smiles
